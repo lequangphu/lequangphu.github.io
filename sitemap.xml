@@ -2,10 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://lequangphu.github.io/index.html</loc>
-    <lastmod>2023-03-26T10:51:45.059Z</lastmod>
+    <lastmod>2023-03-27T05:48:14.360Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lequangphu.github.io/blog/posts/post-with-code/index.html</loc>
+    <lastmod>2023-03-27T05:48:14.700Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lequangphu.github.io/blog/posts/welcome/index.html</loc>
+    <lastmod>2023-03-27T05:48:15.008Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lequangphu.github.io/blog/index.html</loc>
+    <lastmod>2023-03-27T05:48:15.342Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lequangphu.github.io/blog/about.html</loc>
+    <lastmod>2023-03-27T05:48:15.638Z</lastmod>
   </url>
   <url>
     <loc>https://lequangphu.github.io/about.html</loc>
-    <lastmod>2023-03-26T10:51:45.336Z</lastmod>
+    <lastmod>2023-03-27T05:48:15.918Z</lastmod>
   </url>
 </urlset>
