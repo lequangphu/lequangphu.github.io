@@ -9,7 +9,7 @@
 <meta name="author" content="Lê Quang Phú">
 <meta name="dcterms.date" content="2023-03-27">
 
-<title>Lê Quang Phú - BuildOnBase Supply Side Growth</title>
+<title>Lê Quang Phú - Base’s Supply Side Growth</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -179,7 +179,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <div class="quarto-title-block"><div><h1 class="title">BuildOnBase Supply Side Growth</h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Code</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li><li><hr class="dropdown-divider"></li><li><a id="quarto-view-source" class="dropdown-item" href="javascript:void(0)" role="button">View Source</a></li></ul></div></div>
+      <div class="quarto-title-block"><div><h1 class="title">BuildOnBase Supply Side Growth</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i></button></div></div>
                                 <div class="quarto-categories">
                 <div class="quarto-category">analysis</div>
                 <div class="quarto-category">crypto</div>
@@ -262,8 +262,6 @@ Tip
 </div>
 </div>
 <div class="cell" data-execution_count="1">
-<details>
-<summary>Code</summary>
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># import packages</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> altair <span class="im">as</span> alt</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
@@ -282,21 +280,15 @@ Tip
 <span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>    query_result_set <span class="op">=</span> sdk.query(sql)</span>
 <span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> query_result_set.records</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 </section>
 <section id="processing-capacity" class="level2">
 <h2 class="anchored" data-anchor-id="processing-capacity">Processing Capacity</h2>
 <div class="cell" data-execution_count="2">
-<details>
-<summary>Code</summary>
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># get query result</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>df_tx_status <span class="op">=</span> pd.DataFrame(get_query_result(<span class="st">'resource/tx_status.sql'</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <div class="cell" data-execution_count="3">
-<details>
-<summary>Code</summary>
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Convert the blocktime column to a datetime object</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>df_tx_status[<span class="st">'blocktime'</span>] <span class="op">=</span> pd.to_datetime(df_tx_status[<span class="st">'blocktime'</span>])</span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -325,7 +317,6 @@ Tip
 <span id="cb3-26"><a href="#cb3-26" aria-hidden="true" tabindex="-1"></a>).interactive()</span>
 <span id="cb3-27"><a href="#cb3-27" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb3-28"><a href="#cb3-28" aria-hidden="true" tabindex="-1"></a>layer_chart</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 <div id="fig-1" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 
@@ -389,15 +380,10 @@ Tip
 </div>
 <p>Since launched on Feb 23. BOB processed mostly between 100k and 200k transactions per day and fail rate mostly less than 5%, let’s consider these numbers as baseline. Total transactions peaked on Mar 6 at 564k, and fail rate also peaked at 17%. Since then, both total transactions and faile rate have decreased to the baseline.</p>
 <div class="cell" data-execution_count="4">
-<details>
-<summary>Code</summary>
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># get query result</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>df_tx_type <span class="op">=</span> pd.DataFrame(get_query_result(<span class="st">'resource/tx_type.sql'</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <div class="cell" data-execution_count="5">
-<details>
-<summary>Code</summary>
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>chart <span class="op">=</span> alt.Chart(df_tx_type).mark_arc().encode(</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    color<span class="op">=</span>alt.Color(<span class="st">'tx_type'</span>, title<span class="op">=</span><span class="st">'Transaction Type'</span>),</span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>    tooltip<span class="op">=</span>[</span>
@@ -414,7 +400,6 @@ Tip
 <span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>).interactive()</span>
 <span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>chart</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 <div id="fig-2" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 
@@ -500,15 +485,10 @@ Why would developer deploy a contract several times?
 <section id="contracts-over-time" class="level3">
 <h3 class="anchored" data-anchor-id="contracts-over-time">Contracts Over Time</h3>
 <div class="cell" data-execution_count="6">
-<details>
-<summary>Code</summary>
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># get query result</span></span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>df_cg <span class="op">=</span> pd.DataFrame(get_query_result(<span class="st">'resource/contract_growth.sql'</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <div class="cell" data-execution_count="7">
-<details>
-<summary>Code</summary>
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Convert the blocktime column to a datetime object</span></span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>df_cg[<span class="st">'blocktime'</span>] <span class="op">=</span> pd.to_datetime(df_cg[<span class="st">'blocktime'</span>])</span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -529,7 +509,6 @@ Why would developer deploy a contract several times?
 <span id="cb7-18"><a href="#cb7-18" aria-hidden="true" tabindex="-1"></a>).interactive()</span>
 <span id="cb7-19"><a href="#cb7-19" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb7-20"><a href="#cb7-20" aria-hidden="true" tabindex="-1"></a>chart</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 <div id="fig-3" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 
@@ -610,15 +589,10 @@ Why would developer deploy a contract several times?
 <section id="contracts-conversion-over-time" class="level3">
 <h3 class="anchored" data-anchor-id="contracts-conversion-over-time">Contracts Conversion Over Time</h3>
 <div class="cell" data-execution_count="8">
-<details>
-<summary>Code</summary>
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># get query result</span></span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>df_cc <span class="op">=</span> pd.DataFrame(get_query_result(<span class="st">'resource/contract_conversion.sql'</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <div class="cell" data-execution_count="9">
-<details>
-<summary>Code</summary>
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Convert the blocktime column to a datetime object</span></span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>df_cc[<span class="st">'blocktime'</span>] <span class="op">=</span> pd.to_datetime(df_cc[<span class="st">'blocktime'</span>])</span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -638,7 +612,6 @@ Why would developer deploy a contract several times?
 <span id="cb9-17"><a href="#cb9-17" aria-hidden="true" tabindex="-1"></a>).interactive()</span>
 <span id="cb9-18"><a href="#cb9-18" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb9-19"><a href="#cb9-19" aria-hidden="true" tabindex="-1"></a>chart</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 <div id="fig-4" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 
@@ -734,15 +707,10 @@ Note
 </div>
 </div>
 <div class="cell" data-execution_count="10">
-<details>
-<summary>Code</summary>
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># get query result</span></span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>df_dg <span class="op">=</span> pd.DataFrame(get_query_result(<span class="st">'resource/dev_growth.sql'</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <div class="cell" data-execution_count="11">
-<details>
-<summary>Code</summary>
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Convert the blocktime column to a datetime object</span></span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>df_dg[<span class="st">'blocktime'</span>] <span class="op">=</span> pd.to_datetime(df_dg[<span class="st">'blocktime'</span>])</span>
 <span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -763,7 +731,6 @@ Note
 <span id="cb11-18"><a href="#cb11-18" aria-hidden="true" tabindex="-1"></a>).interactive()</span>
 <span id="cb11-19"><a href="#cb11-19" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb11-20"><a href="#cb11-20" aria-hidden="true" tabindex="-1"></a>chart</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 <div id="fig-5" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 
@@ -840,15 +807,10 @@ Note
 <section id="developers-conversion-over-time" class="level3">
 <h3 class="anchored" data-anchor-id="developers-conversion-over-time">Developers Conversion Over Time</h3>
 <div class="cell" data-execution_count="12">
-<details>
-<summary>Code</summary>
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># get query result</span></span>
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>df_dc <span class="op">=</span> pd.DataFrame(get_query_result(<span class="st">'resource/dev_conversion.sql'</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <div class="cell" data-execution_count="13">
-<details>
-<summary>Code</summary>
 <div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Convert the blocktime column to a datetime object</span></span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>df_dc[<span class="st">'blocktime'</span>] <span class="op">=</span> pd.to_datetime(df_dc[<span class="st">'blocktime'</span>])</span>
 <span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -866,7 +828,6 @@ Note
 <span id="cb13-15"><a href="#cb13-15" aria-hidden="true" tabindex="-1"></a>).interactive()</span>
 <span id="cb13-16"><a href="#cb13-16" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb13-17"><a href="#cb13-17" aria-hidden="true" tabindex="-1"></a>chart</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 <div id="fig-6" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 
@@ -936,15 +897,10 @@ Note
 <section id="age-and-deployed-contracts" class="level3">
 <h3 class="anchored" data-anchor-id="age-and-deployed-contracts">Age and Deployed Contracts</h3>
 <div class="cell" data-execution_count="14">
-<details>
-<summary>Code</summary>
 <div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># get query result</span></span>
 <span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>df_devByDCon <span class="op">=</span> pd.DataFrame(get_query_result(<span class="st">'resource/devby_dcon.sql'</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <div class="cell" data-execution_count="15">
-<details>
-<summary>Code</summary>
 <div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>chart <span class="op">=</span> alt.Chart(df_devByDCon).mark_circle(color<span class="op">=</span><span class="st">'blue'</span>).encode(</span>
 <span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>    alt.X(<span class="st">'age:Q'</span>, axis<span class="op">=</span>alt.Axis(title<span class="op">=</span><span class="st">'Age (weeks)'</span>, <span class="bu">format</span><span class="op">=</span><span class="st">',.0f'</span>, tickMinStep<span class="op">=</span><span class="dv">1</span>)),</span>
 <span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>    alt.Y(<span class="st">'contracts:Q'</span>, axis<span class="op">=</span>alt.Axis(title<span class="op">=</span><span class="st">'Deployed Contracts'</span>, <span class="bu">format</span><span class="op">=</span><span class="st">',.0f'</span>), scale<span class="op">=</span>alt.Scale(<span class="bu">type</span><span class="op">=</span><span class="st">'log'</span>)),</span>
@@ -961,7 +917,6 @@ Note
 <span id="cb15-14"><a href="#cb15-14" aria-hidden="true" tabindex="-1"></a>).interactive()</span>
 <span id="cb15-15"><a href="#cb15-15" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb15-16"><a href="#cb15-16" aria-hidden="true" tabindex="-1"></a>chart</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 <div id="fig-7" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 
@@ -1036,15 +991,10 @@ Note
 <section id="deploy-frequency-and-adopted-contracts" class="level3">
 <h3 class="anchored" data-anchor-id="deploy-frequency-and-adopted-contracts">Deploy Frequency and Adopted Contracts</h3>
 <div class="cell" data-execution_count="16">
-<details>
-<summary>Code</summary>
 <div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co"># get query result</span></span>
 <span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>df_devByACon <span class="op">=</span> pd.DataFrame(get_query_result(<span class="st">'resource/devby_acon.sql'</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <div class="cell" data-execution_count="17">
-<details>
-<summary>Code</summary>
 <div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>chart <span class="op">=</span> alt.Chart(df_devByACon).mark_circle(color<span class="op">=</span><span class="st">'blue'</span>).encode(</span>
 <span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>    alt.X(<span class="st">'deploy_freq:Q'</span>, axis<span class="op">=</span>alt.Axis(title<span class="op">=</span><span class="st">'Deploy Frequency (contracts per day)'</span>, <span class="bu">format</span><span class="op">=</span><span class="st">',.1f'</span>)),</span>
 <span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>    alt.Y(<span class="st">'contracts:Q'</span>, axis<span class="op">=</span>alt.Axis(title<span class="op">=</span><span class="st">'Adopted Contracts'</span>, <span class="bu">format</span><span class="op">=</span><span class="st">',.0f'</span>)),</span>
@@ -1061,7 +1011,6 @@ Note
 <span id="cb17-14"><a href="#cb17-14" aria-hidden="true" tabindex="-1"></a>).interactive()</span>
 <span id="cb17-15"><a href="#cb17-15" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb17-16"><a href="#cb17-16" aria-hidden="true" tabindex="-1"></a>chart</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 <div id="fig-8" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 
@@ -1137,8 +1086,6 @@ Note
 <section id="bob-guild.xyz" class="level2">
 <h2 class="anchored" data-anchor-id="bob-guild.xyz">BOB Guild.XYZ</h2>
 <div class="cell" data-execution_count="18">
-<details>
-<summary>Code</summary>
 <div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co"># read guild.xyz request url and assign to a variable</span></span>
 <span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(<span class="st">'resource/request_guildXyz.txt'</span>) <span class="im">as</span> f:</span>
 <span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>    url <span class="op">=</span> f.read()</span>
@@ -1154,11 +1101,8 @@ Note
 <span id="cb18-13"><a href="#cb18-13" aria-hidden="true" tabindex="-1"></a>        members.append(item[<span class="st">'memberCount'</span>])</span>
 <span id="cb18-14"><a href="#cb18-14" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb18-15"><a href="#cb18-15" aria-hidden="true" tabindex="-1"></a>df_role <span class="op">=</span> pd.DataFrame({<span class="st">'name'</span>: names, <span class="st">'members'</span>: members})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 </div>
 <div class="cell" data-execution_count="19">
-<details>
-<summary>Code</summary>
 <div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>chart <span class="op">=</span> alt.Chart(df_role).mark_bar().encode(</span>
 <span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>    alt.X(<span class="st">'members'</span>, axis<span class="op">=</span>alt.Axis(title<span class="op">=</span><span class="st">'Members'</span>, <span class="bu">format</span><span class="op">=</span><span class="st">',.0f'</span>)),</span>
 <span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>    alt.Y(<span class="st">'name'</span>, axis<span class="op">=</span>alt.Axis(title<span class="op">=</span><span class="st">'Role Name'</span>)),</span>
@@ -1174,7 +1118,6 @@ Note
 <span id="cb19-13"><a href="#cb19-13" aria-hidden="true" tabindex="-1"></a>).interactive()</span>
 <span id="cb19-14"><a href="#cb19-14" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb19-15"><a href="#cb19-15" aria-hidden="true" tabindex="-1"></a>chart</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 <div id="fig-9" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 
@@ -1436,23 +1379,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
 <div class="sourceCode" id="cb20" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "BuildOnBase Supply Side Growth"</span></span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Base's Supply Side Growth"</span></span>
 <span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> "2023-03-27"</span></span>
 <span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a><span class="an">categories:</span><span class="co"> [analysis, crypto]</span></span>
 <span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a><span class="an">image:</span><span class="co"> "Base_Blog_header.png"</span></span>
 <span id="cb20-6"><a href="#cb20-6" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
 <span id="cb20-7"><a href="#cb20-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-8"><a href="#cb20-8" aria-hidden="true" tabindex="-1"></a><span class="fu">## Introduction to BuildOnBase</span></span>
+<span id="cb20-8"><a href="#cb20-8" aria-hidden="true" tabindex="-1"></a><span class="fu">## Introduction to Base</span></span>
 <span id="cb20-9"><a href="#cb20-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-10"><a href="#cb20-10" aria-hidden="true" tabindex="-1"></a>BuildOnBase (BOB) is a protocol, a smartcontract platform based on Optimism Stack. We can also view it as a marketplace which has 2 sides: supply and demand.</span>
+<span id="cb20-10"><a href="#cb20-10" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Base</span><span class="co">](https://base.org/)</span> is a protocol, a smartcontract platform based on Optimism Stack. We can also view it as a marketplace which has 2 sides: supply and demand.</span>
 <span id="cb20-11"><a href="#cb20-11" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb20-12"><a href="#cb20-12" aria-hidden="true" tabindex="-1"></a>On the demand side are users, who use smartcontracts to achieve their goals in the decentralized world. And on the supply side are developers, who build those smartcontracts.</span>
 <span id="cb20-13"><a href="#cb20-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-14"><a href="#cb20-14" aria-hidden="true" tabindex="-1"></a>Growing a marketplace needs both sides to grow. It's always better to grow fast, especially in the early days like an 1-month old BOB.</span>
+<span id="cb20-14"><a href="#cb20-14" aria-hidden="true" tabindex="-1"></a>Growing a marketplace needs both sides to grow. It's always better to grow fast, especially in the early days like an 1-month old Base.</span>
 <span id="cb20-15"><a href="#cb20-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-16"><a href="#cb20-16" aria-hidden="true" tabindex="-1"></a>As you can see at the title, in this document, I will examine the supply side growth of BOB. I started doing this with a question in mind: "What metrics would I want to see analyzed if I was the BOB team?". The demand side is as important as the supply side, however, at the testnet phase, I think examining the supply side is more valuable.</span>
+<span id="cb20-16"><a href="#cb20-16" aria-hidden="true" tabindex="-1"></a>As you can see at the title, in this document, I will examine the supply side growth of Base. I started doing this with a question in mind: "What metrics would I want to see analyzed if I was the Base team?". The demand side is as important as the supply side, however, at the testnet phase, I think examining the supply side is more valuable.</span>
 <span id="cb20-17"><a href="#cb20-17" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-18"><a href="#cb20-18" aria-hidden="true" tabindex="-1"></a>But first, let's briefly look at BOB testnet processing capacity such as transactions, fail/success rate, and success transaction by transaction type.</span>
+<span id="cb20-18"><a href="#cb20-18" aria-hidden="true" tabindex="-1"></a>But first, let's briefly look at Base testnet processing capacity such as transactions, fail/success rate, and success transaction by transaction type.</span>
 <span id="cb20-19"><a href="#cb20-19" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb20-20"><a href="#cb20-20" aria-hidden="true" tabindex="-1"></a>::: callout-tip</span>
 <span id="cb20-21"><a href="#cb20-21" aria-hidden="true" tabindex="-1"></a>All charts below are interactive which you can scroll/click/drag/hover to change scale, zoom in/out, or view detail. This is very helpful when reading charts, especially reading charts which have outliers and log scale doesn't add much value, thus hard to see normal data points without interactive mode.</span>
@@ -1520,7 +1463,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb20-89"><a href="#cb20-89" aria-hidden="true" tabindex="-1"></a>layer_chart</span>
 <span id="cb20-90"><a href="#cb20-90" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb20-91"><a href="#cb20-91" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-92"><a href="#cb20-92" aria-hidden="true" tabindex="-1"></a>Since launched on Feb 23. BOB processed mostly between 100k and 200k transactions per day and fail rate mostly less than 5%, let's consider these numbers as baseline. Total transactions peaked on Mar 6 at 564k, and fail rate also peaked at 17%. Since then, both total transactions and faile rate have decreased to the baseline.</span>
+<span id="cb20-92"><a href="#cb20-92" aria-hidden="true" tabindex="-1"></a>Since launched on Feb 23. Base processed mostly between 100k and 200k transactions per day and fail rate mostly less than 5%, let's consider these numbers as baseline. Total transactions peaked on Mar 6 at 564k, and fail rate also peaked at 17%. Since then, both total transactions and faile rate have decreased to the baseline.</span>
 <span id="cb20-93"><a href="#cb20-93" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb20-96"><a href="#cb20-96" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
 <span id="cb20-97"><a href="#cb20-97" aria-hidden="true" tabindex="-1"></a><span class="co"># get query result</span></span>
@@ -1549,9 +1492,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb20-122"><a href="#cb20-122" aria-hidden="true" tabindex="-1"></a>chart</span>
 <span id="cb20-123"><a href="#cb20-123" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb20-124"><a href="#cb20-124" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-125"><a href="#cb20-125" aria-hidden="true" tabindex="-1"></a>In total 5.4M success transactions: the shares are 73% normal (by contracts users), 24% system (by BOB), 2% deploying contract (by developers).</span>
+<span id="cb20-125"><a href="#cb20-125" aria-hidden="true" tabindex="-1"></a>In total 5.4M success transactions: the shares are 73% normal (by contracts users), 24% system (by Base), 2% deploying contract (by developers).</span>
 <span id="cb20-126"><a href="#cb20-126" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-127"><a href="#cb20-127" aria-hidden="true" tabindex="-1"></a>A developer can deploy a contract several times on BOB, each deploy is 1 transactions with unique contract address. Thus using deploying contract transaction numbers to evaluate the supply side growth of BOB (or other EVM protocols) is not quite accurate. A more accurate way is by counting interacted contracts (i.e. contract users interacted with).</span>
+<span id="cb20-127"><a href="#cb20-127" aria-hidden="true" tabindex="-1"></a>A developer can deploy a contract several times on Base, each deploy is 1 transactions with unique contract address. Thus using deploying contract transaction numbers to evaluate the supply side growth of Base (or other EVM protocols) is not quite accurate. A more accurate way is by counting interacted contracts (i.e. contract users interacted with).</span>
 <span id="cb20-128"><a href="#cb20-128" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb20-129"><a href="#cb20-129" aria-hidden="true" tabindex="-1"></a>::: {.callout-note collapse="true"}</span>
 <span id="cb20-130"><a href="#cb20-130" aria-hidden="true" tabindex="-1"></a><span class="fu">### Why would developer deploy a contract several times?</span></span>
@@ -1606,7 +1549,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb20-183"><a href="#cb20-183" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb20-184"><a href="#cb20-184" aria-hidden="true" tabindex="-1"></a>:   count contracts at first time interacted by any user who is not the contract creator</span>
 <span id="cb20-185"><a href="#cb20-185" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-186"><a href="#cb20-186" aria-hidden="true" tabindex="-1"></a>Deployed contracts has been growing much faster than both interacted contracts and adopted contracts. BOB currently has 130K deployed contracts, 12K interacted contracts, and almost 1K adopted contracts. Each smaller level is 10x lesser than the bigger one.</span>
+<span id="cb20-186"><a href="#cb20-186" aria-hidden="true" tabindex="-1"></a>Deployed contracts has been growing much faster than both interacted contracts and adopted contracts. Base currently has 130K deployed contracts, 12K interacted contracts, and almost 1K adopted contracts. Each smaller level is 10x lesser than the bigger one.</span>
 <span id="cb20-187"><a href="#cb20-187" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb20-188"><a href="#cb20-188" aria-hidden="true" tabindex="-1"></a><span class="fu">### Contracts Conversion Over Time</span></span>
 <span id="cb20-189"><a href="#cb20-189" aria-hidden="true" tabindex="-1"></a></span>
@@ -1646,7 +1589,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb20-227"><a href="#cb20-227" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb20-228"><a href="#cb20-228" aria-hidden="true" tabindex="-1"></a>From 2 conversion rates above, it can be summarized as **for every 10 deployed contracts, only 1 got interacted by any user, and for every 10 interacted contracts, only 1 got adopted by normal users**.</span>
 <span id="cb20-229"><a href="#cb20-229" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-230"><a href="#cb20-230" aria-hidden="true" tabindex="-1"></a>To close the big conversion gap from deployed to interacted to adopted, it needs more effort growing the demand side of the BOB Growth team.</span>
+<span id="cb20-230"><a href="#cb20-230" aria-hidden="true" tabindex="-1"></a>To close the big conversion gap from deployed to interacted to adopted, it needs more effort growing the demand side of the Base Growth team.</span>
 <span id="cb20-231"><a href="#cb20-231" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb20-232"><a href="#cb20-232" aria-hidden="true" tabindex="-1"></a>::: callout-note</span>
 <span id="cb20-233"><a href="#cb20-233" aria-hidden="true" tabindex="-1"></a>You might wonder why there are 117K deploy contract transaction, but total contracts deployed is 124K. The reason is 1 deploy contract transaction may have more than 1 contract deployed.</span>
@@ -1697,7 +1640,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb20-282"><a href="#cb20-282" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb20-283"><a href="#cb20-283" aria-hidden="true" tabindex="-1"></a>:   count developers at the first time any user interacts with any of their deployed contracts</span>
 <span id="cb20-284"><a href="#cb20-284" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-285"><a href="#cb20-285" aria-hidden="true" tabindex="-1"></a>Similar to contracts, developers who deploy contracts grow much faster than those have contracts adopted by users. As of Mar 24, BOB has 37K deployed developers and 282 adopted developers.</span>
+<span id="cb20-285"><a href="#cb20-285" aria-hidden="true" tabindex="-1"></a>Similar to contracts, developers who deploy contracts grow much faster than those have contracts adopted by users. As of Mar 24, Base has 37K deployed developers and 282 adopted developers.</span>
 <span id="cb20-286"><a href="#cb20-286" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb20-287"><a href="#cb20-287" aria-hidden="true" tabindex="-1"></a><span class="fu">### Developers Conversion Over Time</span></span>
 <span id="cb20-288"><a href="#cb20-288" aria-hidden="true" tabindex="-1"></a></span>
@@ -1811,7 +1754,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb20-408"><a href="#cb20-408" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb20-409"><a href="#cb20-409" aria-hidden="true" tabindex="-1"></a>There are 2 outlier developers which have quite opposite results, one deploys 26 contracts per day and has 400 adopted contracts, the other deploys 53 contracts per day and only has 9 adopted contracts.</span>
 <span id="cb20-410"><a href="#cb20-410" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-411"><a href="#cb20-411" aria-hidden="true" tabindex="-1"></a><span class="fu">## BOB Guild.XYZ</span></span>
+<span id="cb20-411"><a href="#cb20-411" aria-hidden="true" tabindex="-1"></a><span class="fu">## Base Guild.XYZ</span></span>
 <span id="cb20-412"><a href="#cb20-412" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb20-415"><a href="#cb20-415" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
 <span id="cb20-416"><a href="#cb20-416" aria-hidden="true" tabindex="-1"></a><span class="co"># read guild.xyz request url and assign to a variable</span></span>
@@ -1833,7 +1776,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb20-432"><a href="#cb20-432" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb20-435"><a href="#cb20-435" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
 <span id="cb20-436"><a href="#cb20-436" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: fig-9</span></span>
-<span id="cb20-437"><a href="#cb20-437" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: BuildOnBase Guild.XYZ Members</span></span>
+<span id="cb20-437"><a href="#cb20-437" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: Base Guild.XYZ Members</span></span>
 <span id="cb20-438"><a href="#cb20-438" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb20-439"><a href="#cb20-439" aria-hidden="true" tabindex="-1"></a>chart <span class="op">=</span> alt.Chart(df_role).mark_bar().encode(</span>
 <span id="cb20-440"><a href="#cb20-440" aria-hidden="true" tabindex="-1"></a>    alt.X(<span class="st">'members'</span>, axis<span class="op">=</span>alt.Axis(title<span class="op">=</span><span class="st">'Members'</span>, <span class="bu">format</span><span class="op">=</span><span class="st">',.0f'</span>)),</span>
@@ -1844,7 +1787,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb20-445"><a href="#cb20-445" aria-hidden="true" tabindex="-1"></a>        alt.Tooltip(<span class="st">'members:Q'</span>, title<span class="op">=</span><span class="st">'Members'</span>, <span class="bu">format</span><span class="op">=</span><span class="st">',.0f'</span>)</span>
 <span id="cb20-446"><a href="#cb20-446" aria-hidden="true" tabindex="-1"></a>    ]</span>
 <span id="cb20-447"><a href="#cb20-447" aria-hidden="true" tabindex="-1"></a>).properties(</span>
-<span id="cb20-448"><a href="#cb20-448" aria-hidden="true" tabindex="-1"></a>    <span class="co"># title='BuildOnBase Guild.XYZ Members',</span></span>
+<span id="cb20-448"><a href="#cb20-448" aria-hidden="true" tabindex="-1"></a>    <span class="co"># title='Base Guild.XYZ Members',</span></span>
 <span id="cb20-449"><a href="#cb20-449" aria-hidden="true" tabindex="-1"></a>    width<span class="op">=</span><span class="dv">500</span>,</span>
 <span id="cb20-450"><a href="#cb20-450" aria-hidden="true" tabindex="-1"></a>    height<span class="op">=</span><span class="dv">400</span></span>
 <span id="cb20-451"><a href="#cb20-451" aria-hidden="true" tabindex="-1"></a>).interactive()</span>
@@ -1852,17 +1795,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb20-453"><a href="#cb20-453" aria-hidden="true" tabindex="-1"></a>chart</span>
 <span id="cb20-454"><a href="#cb20-454" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb20-455"><a href="#cb20-455" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-456"><a href="#cb20-456" aria-hidden="true" tabindex="-1"></a>A quick introduction to Guild.XYZ: Guild is a platform that allows users to create private gated communities. BOB team created the BOB on the same day of the testnet launch to manage and grow their community. To join the guild, each member must acquires a role by completing some actions.</span>
+<span id="cb20-456"><a href="#cb20-456" aria-hidden="true" tabindex="-1"></a>A quick introduction to Guild.XYZ: Guild is a platform that allows users to create private gated communities. Base team created the Base on the same day of the testnet launch to manage and grow their community. To join the guild, each member must acquires a role by completing some actions.</span>
 <span id="cb20-457"><a href="#cb20-457" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb20-458"><a href="#cb20-458" aria-hidden="true" tabindex="-1"></a>You can read more about each role <span class="co">[</span><span class="ot">here</span><span class="co">](https://guild.xyz/buildonbase)</span></span>
 <span id="cb20-459"><a href="#cb20-459" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-460"><a href="#cb20-460" aria-hidden="true" tabindex="-1"></a>What I want to focus on is the Shadowy Super Coder role, who stars BOB github repository (i.e. the developers). Currently, there are 25K of them and we know in the previous section that BOB has around 36K developers who have deployed contracts on BOB, which means only 2/3 of BOB developer base are aware of the BOB Guild on Guild.XYZ.</span>
+<span id="cb20-460"><a href="#cb20-460" aria-hidden="true" tabindex="-1"></a>What I want to focus on is the Shadowy Super Coder role, who stars Base github repository (i.e. the developers). Currently, there are 25K of them and we know in the previous section that Base has around 36K developers who have deployed contracts on Base, which means only 2/3 of Base developer base are aware of the Base Guild on Guild.XYZ.</span>
 <span id="cb20-461"><a href="#cb20-461" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-462"><a href="#cb20-462" aria-hidden="true" tabindex="-1"></a>The goal of having a guild is to build and grow the community of both sides: Demand and Supply. The BOB growth team should dig deeper into this and find a way to onboard more developers to the Guild.</span>
+<span id="cb20-462"><a href="#cb20-462" aria-hidden="true" tabindex="-1"></a>The goal of having a guild is to build and grow the community of both sides: Demand and Supply. The Base growth team should dig deeper into this and find a way to onboard more developers to the Guild.</span>
 <span id="cb20-463"><a href="#cb20-463" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb20-464"><a href="#cb20-464" aria-hidden="true" tabindex="-1"></a><span class="fu">## Final Thoughts</span></span>
 <span id="cb20-465"><a href="#cb20-465" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-466"><a href="#cb20-466" aria-hidden="true" tabindex="-1"></a>On the surface, BOB supply side seems to be growing very fast with both number of developers who deploy contracts and number of deployed contracts are increasing rapidly. However, taking a closer look, we can see that true usage which represented by number of adopted developers and adopted contracts (i.e used by normal users) is relatively small. Improving the conversion from deployed to adopted is the question for the growth team at BOB to answer and I hope this article has provided some insight into which questions should the team ask.</span>
+<span id="cb20-466"><a href="#cb20-466" aria-hidden="true" tabindex="-1"></a>On the surface, Base supply side seems to be growing very fast with both number of developers who deploy contracts and number of deployed contracts are increasing rapidly. However, taking a closer look, we can see that true usage which represented by number of adopted developers and adopted contracts (i.e used by normal users) is relatively small. Improving the conversion from deployed to adopted is the question for the growth team at Base to answer and I hope this article has provided some insight into which questions should the team ask.</span>
 </code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
