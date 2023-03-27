@@ -1,0 +1,9 @@
+---
+title: "Xin Chào"
+date: "2023-03-27"
+categories: [news]
+---
+
+Chào mừng đến với bài viết đầu tiên của tôi trên blog này. Đây là blog cá nhân và tôi sẽ viết về nhiều chủ đề khác nhau. Tuỳ thuộc vào chủ đề mà ngôn ngữ của bài viết cũng sẽ khác nhau, either English hoặc tiếng Việt 😁.
+
+![](thumbnail.jpg)

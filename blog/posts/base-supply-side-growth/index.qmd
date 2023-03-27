@@ -1,0 +1,428 @@
+---
+title: "BuildOnBase Supply Side Growth"
+date: "2023-03-27"
+categories: [analysis, crypto]
+image: "image.jpg"
+---
+
+## Introduction to BuildOnBase
+
+BuildOnBase (BOB) is a protocol, a smartcontract platform based on Optimism Stack. We can also view it as a marketplace which has 2 sides: supply and demand.
+
+On the demand side are users, who use smartcontracts to achieve their goals in the decentralized world. And on the supply side are developers, who build those smartcontracts.
+
+Growing a marketplace needs both sides to grow. It's always better to grow fast, especially in the early days like an 1-month old BOB.
+
+As you can see at the title, in this document, I will examine the supply side growth of BOB. I started doing this with a question in mind: "What metrics would I want to see analyzed if I was the BOB team?". The demand side is as important as the supply side, however, at the testnet phase, I think examining the supply side is more valuable.
+
+But first, let's briefly look at BOB testnet processing capacity such as transactions, fail/success rate, and success transaction by transaction type.
+
+::: callout-tip
+All charts below are interactive which you can scroll/click/drag/hover to change scale, zoom in/out, or view detail. This is very helpful when reading charts, especially reading charts which have outliers and log scale doesn't add much value, thus hard to see normal data points without interactive mode.
+:::
+
+```{python}
+# import packages
+import altair as alt
+import pandas as pd
+import requests
+from shroomdk import ShroomDK
+
+# read api key and assign to a variable
+with open('/Users/phu/FlipsideCrypto/api_key.txt') as f:
+    api_key = f.read()
+sdk = ShroomDK(api_key)
+
+# define a function to read sql and get query result set with shroomdk
+def get_query_result(sql_file_path:str):
+    with open(sql_file_path) as f:
+        sql = f.read()
+    query_result_set = sdk.query(sql)
+
+    return query_result_set.records
+```
+
+## Processing Capacity
+
+```{python}
+# get query result
+df_tx_status = pd.DataFrame(get_query_result('resource/tx_status.sql'))
+```
+
+```{python}
+#| label: fig-1
+#| fig-cap: Total Transactions & Fail Rate Over Time
+
+# Convert the blocktime column to a datetime object
+df_tx_status['blocktime'] = pd.to_datetime(df_tx_status['blocktime'])
+
+chart1 = alt.Chart(df_tx_status).mark_bar().encode(
+    x=alt.X('blocktime:T', axis=alt.Axis(title='Date', format='%b-%d')),
+    y=alt.Y('total_txs:Q', axis=alt.Axis(title='Total Transactions', format=',.0f')),
+    tooltip=[
+        alt.Tooltip('blocktime:T', title='Date', format='%b-%d'),
+        alt.Tooltip('total_txs:Q', title='Total Transactions', format=',.0f'),
+        alt.Tooltip('success_txs:Q', title='Success Transactions', format=',.0f'),
+        alt.Tooltip('success_pct:Q', title='Success Rate', format='.0%'),
+        alt.Tooltip('fail_txs:Q', title='Fail Transactions', format=',.0f'),
+        alt.Tooltip('fail_pct:Q', title='Fail Rate', format='.0%')
+    ]
+)
+
+chart2 = alt.Chart(df_tx_status).mark_line(color='red').encode(
+    x=alt.X('blocktime:T', axis=alt.Axis(title='Date', format='%b-%d')),
+    y=alt.Y('fail_pct:Q', axis=alt.Axis(title='Fail Rate', format='.0%'))
+)
+
+layer_chart = (chart1 + chart2).resolve_scale(y='independent').properties(
+    # title='Total Transactions & Fail Rate Over Time',
+    width=500,
+    height=400
+).interactive()
+
+layer_chart
+```
+
+Since launched on Feb 23. BOB processed mostly between 100k and 200k transactions per day and fail rate mostly less than 5%, let's consider these numbers as baseline. Total transactions peaked on Mar 6 at 564k, and fail rate also peaked at 17%. Since then, both total transactions and faile rate have decreased to the baseline.
+
+```{python}
+# get query result
+df_tx_type = pd.DataFrame(get_query_result('resource/tx_type.sql'))
+```
+
+```{python}
+#| label: fig-2
+#| fig-cap: Success Transaction by Type
+
+chart = alt.Chart(df_tx_type).mark_arc().encode(
+    color=alt.Color('tx_type', title='Transaction Type'),
+    tooltip=[
+        alt.Tooltip('tx_type', title='Transaction Type'),
+        alt.Tooltip('txs', title='Transaction', format=',.0f'),
+        alt.Tooltip('txs_pct', title='% in Total', format='.0%')
+    ],
+    theta='txs',
+    radius=alt.value(100)
+).properties(
+    # title='Success Transaction by Type',
+    width=500,
+    height=400
+).interactive()
+
+chart
+```
+
+In total 5.4M success transactions: the shares are 73% normal (by contracts users), 24% system (by BOB), 2% deploying contract (by developers).
+
+A developer can deploy a contract several times on BOB, each deploy is 1 transactions with unique contract address. Thus using deploying contract transaction numbers to evaluate the supply side growth of BOB (or other EVM protocols) is not quite accurate. A more accurate way is by counting interacted contracts (i.e. contract users interacted with).
+
+::: {.callout-note collapse="true"}
+### Why would developer deploy a contract several times?
+
+A developer may deploy a contract several times for various reasons. One reason is to test the contract's functionality and ensure that it works as intended before deploying it to the main network. Another reason is to create multiple instances of the same contract with different parameters or configurations. Additionally, deploying a new version of a contract can be necessary if there are bugs or security vulnerabilities in the previous version that need to be fixed. Finally, developers may deploy contracts multiple times for auditing purposes or to compare different versions of the same contract.
+:::
+
+## Supply Side Growth
+
+### Contracts Over Time
+
+```{python}
+# get query result
+df_cg = pd.DataFrame(get_query_result('resource/contract_growth.sql'))
+```
+
+```{python}
+#| label: fig-3
+#| fig-cap: Aggregate Contracts Over Time
+
+# Convert the blocktime column to a datetime object
+df_cg['blocktime'] = pd.to_datetime(df_cg['blocktime'])
+
+chart = alt.Chart(df_cg).mark_area().encode(
+    alt.X('blocktime:T', axis=alt.Axis(title='Date', format='%b-%d')),
+    alt.Y('agg_contracts:Q', axis=alt.Axis(title='Aggregate Contracts', format=',.0f'), stack=None),
+    alt.Color('grp', title='Contract Type'),
+    tooltip=[
+        alt.Tooltip('blocktime:T', title='Date'),
+        alt.Tooltip('grp:N', title='Contract Type'),
+        alt.Tooltip('agg_contracts:Q', title='Aggregate Contracts', format=',.0f'),
+        alt.Tooltip('contracts:Q', title='Daily New Contracts', format=',.0f')
+    ]
+).properties(
+    # title='Aggregate Contracts Over Time',
+    width=500,
+    height=400
+).interactive()
+
+chart
+```
+
+Deployed Contracts
+
+:   count contracts at deployed time
+
+Interacted Contracts
+
+:   count contracts at first time interacted by any user
+
+Adopted Contracts
+
+:   count contracts at first time interacted by any user who is not the contract creator
+
+Deployed contracts has been growing much faster than both interacted contracts and adopted contracts. BOB currently has 130K deployed contracts, 12K interacted contracts, and almost 1K adopted contracts. Each smaller level is 10x lesser than the bigger one.
+
+### Contracts Conversion Over Time
+
+```{python}
+# get query result
+df_cc = pd.DataFrame(get_query_result('resource/contract_conversion.sql'))
+```
+
+```{python}
+#| label: fig-4
+#| fig-cap: Contracts Conversion Rate Over Time
+
+# Convert the blocktime column to a datetime object
+df_cc['blocktime'] = pd.to_datetime(df_cc['blocktime'])
+
+chart = alt.Chart(df_cc).mark_line().encode(
+    alt.X('blocktime:T', axis=alt.Axis(title='Date', format='%b-%d')),
+    alt.Y('conversion_rate:Q', axis=alt.Axis(title='Conversion Rate', format='.1%')),
+    alt.Color('grp', title='Conversion Type'),
+    tooltip=[
+        alt.Tooltip('blocktime:T', title='Date'),
+        alt.Tooltip('grp:N', title='Conversion Type'),
+        alt.Tooltip('conversion_rate:Q', title='Conversion Rate', format='.1%'),
+    ]
+).properties(
+    # title='Contracts Conversion Rate Over Time',
+    width=500,
+    height=400
+).interactive()
+
+chart
+```
+
+The conversion rate from deployed to interacted started with 88% on Feb 23, and then dropped sharply to 28% on Feb 27. Since then, it has decreased gradually to 9% recently.
+
+The conversion rate from interacted to adopted mostly plateau, started with 6% and recently at around 9%.
+
+From 2 conversion rates above, it can be summarized as **for every 10 deployed contracts, only 1 got interacted by any user, and for every 10 interacted contracts, only 1 got adopted by normal users**.
+
+To close the big conversion gap from deployed to interacted to adopted, it needs more effort growing the demand side of the BOB Growth team.
+
+::: callout-note
+You might wonder why there are 117K deploy contract transaction, but total contracts deployed is 124K. The reason is 1 deploy contract transaction may have more than 1 contract deployed.
+:::
+
+### Developers Over Time
+
+::: callout-note
+With developers, I don't count interacted level because interaction of a developer with their own contracts doesn't add signal to their contracts true adoption.
+:::
+
+```{python}
+# get query result
+df_dg = pd.DataFrame(get_query_result('resource/dev_growth.sql'))
+```
+
+```{python}
+#| label: fig-5
+#| fig-cap: Aggregate Developers Over Time
+
+# Convert the blocktime column to a datetime object
+df_dg['blocktime'] = pd.to_datetime(df_dg['blocktime'])
+
+chart = alt.Chart(df_dg).mark_area().encode(
+    alt.X('blocktime:T', axis=alt.Axis(title='Date', format='%b-%d')),
+    alt.Y('agg_devs:Q', axis=alt.Axis(title='Aggregate Developers', format=',.0f'), stack=None),
+    alt.Color('grp', title='Developer Type'),
+    tooltip=[
+        alt.Tooltip('blocktime:T', title='Date'),
+        alt.Tooltip('grp:N', title='Developer Type'),
+        alt.Tooltip('agg_devs:Q', title='Aggregate Developers', format=',.0f'),
+        alt.Tooltip('devs:Q', title='Daily New Developers', format=',.0f')
+    ]
+).properties(
+    # title='Aggregate Developers Over Time',
+    width=500,
+    height=400
+).interactive()
+
+chart
+```
+
+Deployed Devs
+
+:   count developers at the time of deploying their first contract
+
+Adopted Devs
+
+:   count developers at the first time any user interacts with any of their deployed contracts
+
+Similar to contracts, developers who deploy contracts grow much faster than those have contracts adopted by users. As of Mar 24, BOB has 37K deployed developers and 282 adopted developers.
+
+### Developers Conversion Over Time
+
+```{python}
+# get query result
+df_dc = pd.DataFrame(get_query_result('resource/dev_conversion.sql'))
+```
+
+```{python}
+#| label: fig-6
+#| fig-cap: Deployed to Adopted Developers Conversion Rate Over Time
+
+# Convert the blocktime column to a datetime object
+df_dc['blocktime'] = pd.to_datetime(df_dc['blocktime'])
+
+chart = alt.Chart(df_dc).mark_line().encode(
+    alt.X('blocktime:T', axis=alt.Axis(title='Date', format='%b-%d')),
+    alt.Y('conversion_rate:Q', axis=alt.Axis(title='Conversion Rate', format='.1%')),
+    tooltip=[
+        alt.Tooltip('blocktime:T', title='Date'),
+        alt.Tooltip('conversion_rate:Q', title='Conversion Rate', format='.1%')
+    ]
+).properties(
+    # title='Deployed to Adopted Developers Conversion Rate Over Time',
+    width=500,
+    height=400
+).interactive()
+
+chart
+```
+
+The conversion from deployed to adopted started at 3.7% on Feb 24, then dropped sharply to 0.7% on Mar 01. Since then, it has fluctuated between 0.7% and 1.1%. In other words, **for every 100 developers, only 1 sees their work used by normal users**.
+
+## Relationship between Activeness and Contracts of Developers
+
+### Age and Deployed Contracts
+
+```{python}
+# get query result
+df_devByDCon = pd.DataFrame(get_query_result('resource/devby_dcon.sql'))
+```
+
+```{python}
+#| label: fig-7
+#| fig-cap: Age and Deployed Contracts (log)
+
+chart = alt.Chart(df_devByDCon).mark_circle(color='blue').encode(
+    alt.X('age:Q', axis=alt.Axis(title='Age (weeks)', format=',.0f', tickMinStep=1)),
+    alt.Y('contracts:Q', axis=alt.Axis(title='Deployed Contracts', format=',.0f'), scale=alt.Scale(type='log')),
+    alt.Size('devs:Q', title='Developers', scale=alt.Scale(range=[10, 1000])),
+    [
+        alt.Tooltip('contracts:Q', title='Contracts', format=',.0f'),
+        alt.Tooltip('age:Q', title='Age', format=',.0f'),
+        alt.Tooltip('devs:Q', title='Developers', format=',.0f')
+    ]
+).properties(
+    # title='Age and Deployed Contracts (log)',
+    width=500,
+    height=400
+).interactive()
+
+chart
+```
+
+Age
+
+:   days since the first time deploying a contract
+
+Except for a few outliers, the general trend is the older a developer, the more deployed contracts.
+
+**The most common \[Age - Deployed Contracts\] cluster is \[2 weeks old - 1 deployed contracts\] which has 9.7K developers**.
+
+One 3 weeks old developer has deployed more than 6K contracts or around 300 contracts per day. This is either a super coder, or an AI, or a team using the same address to deploy contract!
+
+### Deploy Frequency and Adopted Contracts
+
+```{python}
+# get query result
+df_devByACon = pd.DataFrame(get_query_result('resource/devby_acon.sql'))
+```
+
+```{python}
+#| label: fig-8
+#| fig-cap: Deploy Frequency and Adopted Contracts
+
+chart = alt.Chart(df_devByACon).mark_circle(color='blue').encode(
+    alt.X('deploy_freq:Q', axis=alt.Axis(title='Deploy Frequency (contracts per day)', format=',.1f')),
+    alt.Y('contracts:Q', axis=alt.Axis(title='Adopted Contracts', format=',.0f')),
+    alt.Size('devs:Q', title='Developers', scale=alt.Scale(range=[10, 500])),
+    [
+        alt.Tooltip('contracts:Q', title='Contracts', format=',.0f'),
+        alt.Tooltip('deploy_freq:Q', title='Deploy Frequency', format=',.1f'),
+        alt.Tooltip('devs:Q', title='Developers', format=',.0f')
+    ]
+).properties(
+    # title='Deploy Frequency and Adopted Contracts',
+    width=500,
+    height=400
+).interactive()
+
+chart
+```
+
+Deploy Frequency
+
+:   deployed contracts per day = deployed contracts / age
+
+This section is where interactive mode of a chart shines. *If you zoom in the cluster at the bottom left corner*, you will see that most developers have less than 10 adopted contracts, and they deploy less than 3 contracts per day.
+
+**When the deploy frequency is less than 1 contract per day, it looks like there is a positive correlation between deploy frequency and adopted contracts. However, the correlation fades when deploy frequency surpasses 1 contract per day**.
+
+There are 2 outlier developers which have quite opposite results, one deploys 26 contracts per day and has 400 adopted contracts, the other deploys 53 contracts per day and only has 9 adopted contracts.
+
+## BOB Guild.XYZ
+
+```{python}
+# read guild.xyz request url and assign to a variable
+with open('resource/request_guildXyz.txt') as f:
+    url = f.read()
+
+response = requests.get(url)
+data = pd.json_normalize(response.json())
+names = []
+members = []
+
+for lst in data['roles']:
+    for item in lst:
+        names.append(item['name'])
+        members.append(item['memberCount'])
+
+df_role = pd.DataFrame({'name': names, 'members': members})
+```
+
+```{python}
+#| label: fig-9
+#| fig-cap: BuildOnBase Guild.XYZ Members
+
+chart = alt.Chart(df_role).mark_bar().encode(
+    alt.X('members', axis=alt.Axis(title='Members', format=',.0f')),
+    alt.Y('name', axis=alt.Axis(title='Role Name')),
+    alt.Color('name', title='Name'),
+    [
+        alt.Tooltip('name:N', title='Role Name'),
+        alt.Tooltip('members:Q', title='Members', format=',.0f')
+    ]
+).properties(
+    # title='BuildOnBase Guild.XYZ Members',
+    width=500,
+    height=400
+).interactive()
+
+chart
+```
+
+A quick introduction to Guild.XYZ: Guild is a platform that allows users to create private gated communities. BOB team created the BOB on the same day of the testnet launch to manage and grow their community. To join the guild, each member must acquires a role by completing some actions.
+
+You can read more about each role [here](https://guild.xyz/buildonbase)
+
+What I want to focus on is the Shadowy Super Coder role, who stars BOB github repository (i.e. the developers). Currently, there are 25K of them and we know in the previous section that BOB has around 36K developers who have deployed contracts on BOB, which means only 2/3 of BOB developer base are aware of the BOB Guild on Guild.XYZ.
+
+The goal of having a guild is to build and grow the community of both sides: Demand and Supply. The BOB growth team should dig deeper into this and find a way to onboard more developers to the Guild.
+
+## Final Thoughts
+
+On the surface, BOB supply side seems to be growing very fast with both number of developers who deploy contracts and number of deployed contracts are increasing rapidly. However, taking a closer look, we can see that true usage which represented by number of adopted developers and adopted contracts (i.e used by normal users) is relatively small. Improving the conversion from deployed to adopted is the question for the growth team at BOB to answer and I hope this article has provided some insight into which questions should the team ask.
