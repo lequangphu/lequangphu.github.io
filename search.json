@@ -56,6 +56,13 @@
     "text": "Final Thoughts\nOn the surface, Base supply side seems to be growing very fast with both number of developers who deploy contracts and number of deployed contracts are increasing rapidly. However, taking a closer look, we can see that true usage which represented by number of adopted developers and adopted contracts (i.e used by normal users) is relatively small. Improving the conversion from deployed to adopted is the question for the growth team at Base to answer and I hope this article has provided some insight into which questions should the team ask."
   },
   {
+    "objectID": "blog/posts/base-supply-side-growth/index.html#acknowledgments",
+    "href": "blog/posts/base-supply-side-growth/index.html#acknowledgments",
+    "title": "Base’s Supply Side Growth",
+    "section": "Acknowledgments",
+    "text": "Acknowledgments\n\nThanks to Flipside for being a reliable and powerful source of data. If you want to analyze crypto data, give Flipside a try.\nThanks to doc for helping me comprehending the Base tables in Flipside."
+  },
+  {
     "objectID": "blog/index.html",
     "href": "blog/index.html",
     "title": "blog",
