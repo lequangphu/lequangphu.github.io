@@ -3,6 +3,12 @@ project:
 
 website:
   title: "Lê Quang Phú"
+  site-url: https://lequangphu.github.io/
+  google-analytics: "G-S7Y9SX5DXE"
+  open-graph: true
+  twitter-card: 
+    creator: "@0xphu"
+  repo-url: https://github.com/lequangphu/lequangphu.github.io
   navbar:
     right:
       - text: Home

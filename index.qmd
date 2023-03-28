@@ -1,6 +1,9 @@
 ---
-title: "lequangphu.github.io"
+title: "Happy reading 🤗"
+listing: 
+    type: grid
+    contents: blog/posts
+    fields: [image, date, title, reading-time, categories]
 ---
 
-Đây là trang cá nhân của Lê Quang Phú.
 

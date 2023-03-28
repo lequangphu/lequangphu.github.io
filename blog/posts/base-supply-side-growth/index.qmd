@@ -1,21 +1,22 @@
 ---
-title: "BuildOnBase Supply Side Growth"
+title: "Base's Supply Side Growth"
+description: "Examine the growth of developers and contracts deployed on Base."
 date: "2023-03-27"
 categories: [analysis, crypto]
-image: "image.jpg"
+image: "Base_Blog_header.png"
 ---
 
-## Introduction to BuildOnBase
+## Introduction to Base
 
-BuildOnBase (BOB) is a protocol, a smartcontract platform based on Optimism Stack. We can also view it as a marketplace which has 2 sides: supply and demand.
+[Base](https://base.org/) is a protocol, a smartcontract platform based on Optimism Stack. We can also view it as a marketplace which has 2 sides: supply and demand.
 
 On the demand side are users, who use smartcontracts to achieve their goals in the decentralized world. And on the supply side are developers, who build those smartcontracts.
 
-Growing a marketplace needs both sides to grow. It's always better to grow fast, especially in the early days like an 1-month old BOB.
+Growing a marketplace needs both sides to grow. It's always better to grow fast, especially in the early days like an 1-month old Base.
 
-As you can see at the title, in this document, I will examine the supply side growth of BOB. I started doing this with a question in mind: "What metrics would I want to see analyzed if I was the BOB team?". The demand side is as important as the supply side, however, at the testnet phase, I think examining the supply side is more valuable.
+As you can see at the title, in this document, I will examine the supply side growth of Base. I started doing this with a question in mind: "What metrics would I want to see analyzed if I was the Base team?". The demand side is as important as the supply side, however, at the testnet phase, I think examining the supply side is more valuable.
 
-But first, let's briefly look at BOB testnet processing capacity such as transactions, fail/success rate, and success transaction by transaction type.
+But first, let's briefly look at Base testnet processing capacity such as transactions, fail/success rate, and success transaction by transaction type.
 
 ::: callout-tip
 All charts below are interactive which you can scroll/click/drag/hover to change scale, zoom in/out, or view detail. This is very helpful when reading charts, especially reading charts which have outliers and log scale doesn't add much value, thus hard to see normal data points without interactive mode.
@@ -83,7 +84,7 @@ layer_chart = (chart1 + chart2).resolve_scale(y='independent').properties(
 layer_chart
 ```
 
-Since launched on Feb 23. BOB processed mostly between 100k and 200k transactions per day and fail rate mostly less than 5%, let's consider these numbers as baseline. Total transactions peaked on Mar 6 at 564k, and fail rate also peaked at 17%. Since then, both total transactions and faile rate have decreased to the baseline.
+Since launched on Feb 23. Base processed mostly between 100k and 200k transactions per day and fail rate mostly less than 5%, let's consider these numbers as baseline. Total transactions peaked on Mar 6 at 564k, and fail rate also peaked at 17%. Since then, both total transactions and faile rate have decreased to the baseline.
 
 ```{python}
 # get query result
@@ -112,9 +113,9 @@ chart = alt.Chart(df_tx_type).mark_arc().encode(
 chart
 ```
 
-In total 5.4M success transactions: the shares are 73% normal (by contracts users), 24% system (by BOB), 2% deploying contract (by developers).
+In total 5.4M success transactions: the shares are 73% normal (by contracts users), 24% system (by Base), 2% deploying contract (by developers).
 
-A developer can deploy a contract several times on BOB, each deploy is 1 transactions with unique contract address. Thus using deploying contract transaction numbers to evaluate the supply side growth of BOB (or other EVM protocols) is not quite accurate. A more accurate way is by counting interacted contracts (i.e. contract users interacted with).
+A developer can deploy a contract several times on Base, each deploy is 1 transactions with unique contract address. Thus using deploying contract transaction numbers to evaluate the supply side growth of Base (or other EVM protocols) is not quite accurate. A more accurate way is by counting interacted contracts (i.e. contract users interacted with).
 
 ::: {.callout-note collapse="true"}
 ### Why would developer deploy a contract several times?
@@ -169,7 +170,7 @@ Adopted Contracts
 
 :   count contracts at first time interacted by any user who is not the contract creator
 
-Deployed contracts has been growing much faster than both interacted contracts and adopted contracts. BOB currently has 130K deployed contracts, 12K interacted contracts, and almost 1K adopted contracts. Each smaller level is 10x lesser than the bigger one.
+Deployed contracts has been growing much faster than both interacted contracts and adopted contracts. Base currently has 130K deployed contracts, 12K interacted contracts, and almost 1K adopted contracts. Each smaller level is 10x lesser than the bigger one.
 
 ### Contracts Conversion Over Time
 
@@ -209,7 +210,7 @@ The conversion rate from interacted to adopted mostly plateau, started with 6% a
 
 From 2 conversion rates above, it can be summarized as **for every 10 deployed contracts, only 1 got interacted by any user, and for every 10 interacted contracts, only 1 got adopted by normal users**.
 
-To close the big conversion gap from deployed to interacted to adopted, it needs more effort growing the demand side of the BOB Growth team.
+To close the big conversion gap from deployed to interacted to adopted, it needs more effort growing the demand side of the Base Growth team.
 
 ::: callout-note
 You might wonder why there are 117K deploy contract transaction, but total contracts deployed is 124K. The reason is 1 deploy contract transaction may have more than 1 contract deployed.
@@ -260,7 +261,7 @@ Adopted Devs
 
 :   count developers at the first time any user interacts with any of their deployed contracts
 
-Similar to contracts, developers who deploy contracts grow much faster than those have contracts adopted by users. As of Mar 24, BOB has 37K deployed developers and 282 adopted developers.
+Similar to contracts, developers who deploy contracts grow much faster than those have contracts adopted by users. As of Mar 24, Base has 37K deployed developers and 282 adopted developers.
 
 ### Developers Conversion Over Time
 
@@ -374,7 +375,7 @@ This section is where interactive mode of a chart shines. *If you zoom in the cl
 
 There are 2 outlier developers which have quite opposite results, one deploys 26 contracts per day and has 400 adopted contracts, the other deploys 53 contracts per day and only has 9 adopted contracts.
 
-## BOB Guild.XYZ
+## Base Guild.XYZ
 
 ```{python}
 # read guild.xyz request url and assign to a variable
@@ -396,7 +397,7 @@ df_role = pd.DataFrame({'name': names, 'members': members})
 
 ```{python}
 #| label: fig-9
-#| fig-cap: BuildOnBase Guild.XYZ Members
+#| fig-cap: Base Guild.XYZ Members
 
 chart = alt.Chart(df_role).mark_bar().encode(
     alt.X('members', axis=alt.Axis(title='Members', format=',.0f')),
@@ -407,7 +408,7 @@ chart = alt.Chart(df_role).mark_bar().encode(
         alt.Tooltip('members:Q', title='Members', format=',.0f')
     ]
 ).properties(
-    # title='BuildOnBase Guild.XYZ Members',
+    # title='Base Guild.XYZ Members',
     width=500,
     height=400
 ).interactive()
@@ -415,14 +416,20 @@ chart = alt.Chart(df_role).mark_bar().encode(
 chart
 ```
 
-A quick introduction to Guild.XYZ: Guild is a platform that allows users to create private gated communities. BOB team created the BOB on the same day of the testnet launch to manage and grow their community. To join the guild, each member must acquires a role by completing some actions.
+A quick introduction to Guild.XYZ: Guild is a platform that allows users to create private gated communities. Base team created the Base on the same day of the testnet launch to manage and grow their community. To join the guild, each member must acquires a role by completing some actions.
 
 You can read more about each role [here](https://guild.xyz/buildonbase)
 
-What I want to focus on is the Shadowy Super Coder role, who stars BOB github repository (i.e. the developers). Currently, there are 25K of them and we know in the previous section that BOB has around 36K developers who have deployed contracts on BOB, which means only 2/3 of BOB developer base are aware of the BOB Guild on Guild.XYZ.
+What I want to focus on is the Shadowy Super Coder role, who stars Base github repository (i.e. the developers). Currently, there are 25K of them and we know in the previous section that Base has around 36K developers who have deployed contracts on Base, which means only 2/3 of Base developer base are aware of the Base Guild on Guild.XYZ.
 
-The goal of having a guild is to build and grow the community of both sides: Demand and Supply. The BOB growth team should dig deeper into this and find a way to onboard more developers to the Guild.
+The goal of having a guild is to build and grow the community of both sides: Demand and Supply. The Base growth team should dig deeper into this and find a way to onboard more developers to the Guild.
 
 ## Final Thoughts
 
-On the surface, BOB supply side seems to be growing very fast with both number of developers who deploy contracts and number of deployed contracts are increasing rapidly. However, taking a closer look, we can see that true usage which represented by number of adopted developers and adopted contracts (i.e used by normal users) is relatively small. Improving the conversion from deployed to adopted is the question for the growth team at BOB to answer and I hope this article has provided some insight into which questions should the team ask.
+On the surface, Base supply side seems to be growing very fast with both number of developers who deploy contracts and number of deployed contracts are increasing rapidly. However, taking a closer look, we can see that true usage which represented by number of adopted developers and adopted contracts (i.e used by normal users) is relatively small. Improving the conversion from deployed to adopted is the question for the growth team at Base to answer and I hope this article has provided some insight into which questions should the team ask.
+
+## Acknowledgments {.appendix}
+
+Thanks to [Flipside](https://flipsidecrypto.xyz/) for being a reliable and powerful source of data. If you want to analyze crypto data, give Flipside a try.
+
+Thanks to [doc](https://twitter.com/dr_ethereum) for helping me comprehending the Base tables in Flipside.
