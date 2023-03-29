@@ -26,3 +26,6 @@ format:
   html:
     theme: cosmo
     css: styles.css
+
+execute:
+  freeze: auto

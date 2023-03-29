@@ -9,7 +9,7 @@ with
       base.goerli.fact_transactions
     WHERE
       STATUS = 'SUCCESS'
-      AND BLOCK_TIMESTAMP < CURRENT_DATE
+      AND BLOCK_TIMESTAMP < CASE WHEN CURRENT_DATE < '2023-03-27' THEN CURRENT_DATE ELSE '2023-03-27' END
   ),
   _deployed_txs AS (
     SELECT DISTINCT
@@ -22,7 +22,7 @@ with
     WHERE
       TX_STATUS = 'SUCCESS'
       AND TYPE ilike 'create%'
-      AND BLOCK_TIMESTAMP < CURRENT_DATE
+      AND BLOCK_TIMESTAMP < CASE WHEN CURRENT_DATE < '2023-03-27' THEN CURRENT_DATE ELSE '2023-03-27' END
   ),
   _deployed_devs AS (
     SELECT DISTINCT
