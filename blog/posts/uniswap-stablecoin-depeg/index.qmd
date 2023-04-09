@@ -1,0 +1,442 @@
+---
+title: "Stablecoin Depeg"
+description: 'Examine effect of the depeg event on Mar 10, 2023 to Dexs Volume'
+date: '2023-04-09'
+categories: [analysis, crypto]
+image: 'stablecoins.png'
+---
+
+```{python}
+# import packages
+import pandas as pd
+import plotly.express as px
+import plotly.graph_objs as go
+import plotly.io as pio
+from plotly.subplots import make_subplots
+import requests
+from shroomdk import ShroomDK
+
+# set plotly default theme
+pio.templates.default = 'plotly_white'
+# read api key and assign to a variable
+with open('/Users/phu/FlipsideCrypto/api_key.txt') as f:
+    api_key = f.read()
+sdk = ShroomDK(api_key)
+
+# define a function to read sql and get query result set with shroomdk
+def get_query_result(sql_file_path:str):
+    with open(sql_file_path) as f:
+        sql = f.read()
+    query_result_set = sdk.query(sql)
+
+    return query_result_set.records
+```
+
+# Introduction
+
+Stablecoin is stable because it is peg to a realworld currency (e.g. USD, EUR, ...). In the example of USDC, when it is pegged to USD, most of the time, 1 USDC can be converted to 1 USD. When it is not pegged or depegged, 1 USDC can no longer be converted to 1 USD.
+
+On Mar 11, 2023, a depeg event happened to USDC and some other stablecoins, and Dexs daily volume surpassed $24B, 30% higher than previous all time high on May 19, 2021. ([Defillama](https://defillama.com/dexs))
+
+How did stablecoin depeg affect dexs volume on Ethereum? Let's find out.
+
+# $0.9 Stablecoin
+
+```{python}
+uniswap_color = '#ff007a'
+usdc_color = '#2775ca'
+tether_color = '#009393'
+dai_color = '#fbb228'
+depeg_start = '2023-03-10 19:00:00.000'
+depeg_end = '2023-03-14 19:00:00.000'
+periods = ['Before Depeg', 'During Depeg', 'After Depeg']
+
+def format_number(value):
+    if value >= 1e9:
+        return f"{value / 1e9:.2f}B"
+    elif value >= 1e6:
+        return f"{value / 1e6:.2f}M"
+    else:
+        return f"{value:.2f}"
+
+def add_vline(fig, start=depeg_start, end=depeg_end):
+    for time in [start, end]:
+        fig.add_vline(x=time, line_dash='dash', line_color='black')
+```
+
+```{python}
+df_vp = pd.DataFrame(get_query_result('resource/vol_price.sql'))
+```
+
+```{python}
+#| column: page-right
+df_vp = df_vp.sort_values(by='blocktime')
+
+fig = make_subplots(specs=[[{"secondary_y": True}]])
+
+volume_line = go.Scatter(x=df_vp['blocktime'], y=df_vp['vol'], name='Volume', line=dict(color=uniswap_color))
+usdc_line = go.Scatter(x=df_vp['blocktime'], y=df_vp['price_usdc'], name='USDC Price', line=dict(color=usdc_color))
+tether_line = go.Scatter(x=df_vp['blocktime'], y=df_vp['price_tether'], name='Tether Price', line=dict(color=tether_color))
+dai_line = go.Scatter(x=df_vp['blocktime'], y=df_vp['price_dai'], name='Dai Price', line=dict(color=dai_color))
+
+fig.add_trace(volume_line, secondary_y=False)
+fig.add_trace(usdc_line, secondary_y=True)
+fig.add_trace(tether_line, secondary_y=True)
+fig.add_trace(dai_line, secondary_y=True)
+
+for time in [depeg_start, depeg_end]:
+    fig.add_vline(x=time, line_dash='dash', line_color='black')
+
+fig.update_traces(hovertemplate=None)
+fig.update_layout(
+    title='Dexs Volume and Stablecoin Prices',
+    xaxis_title='Hour',
+    yaxis_title='Volume (USD)',
+    yaxis2=dict(title='Price', overlaying='y', side='right'),
+    hovermode='x unified'
+)
+
+fig.show()
+```
+
+Based on Dexs volume and stablecoin prices volatility, we can safely conclude that the depeg lasted 4 days, started at around 7pm on Mar 10, 2023, and ended at around 7pm on Mar 14, 2023.
+
+During the period, Dexs volume per hour peaked at $1.54B at around 6am Mar 11, 2023. Around that time, USDC and Dai bottomed at around $0.9. Meanwhile, Tether remained peg, and peaked at $1.02.
+
+::: callout-note
+The 4-days depeg event is compared to 4-days right before depeg and 4-days right after depeg.
+
+Before depeg
+: 6pm Mar 6 - 6pm Mar 10, 2023
+
+During depeg
+: 7pm Mar 10 - 7pm Mar 14, 2023
+
+After depeg
+: 8pm Mar 14 - 8pm Mar 18, 2023
+:::
+
+## Volume Breakdown
+
+### By Dex
+
+```{python}
+df_vbd = pd.DataFrame(get_query_result('resource/vol_by_dex.sql'))
+df_vbdp = pd.DataFrame(get_query_result('resource/vol_by_dex_period.sql'))
+```
+
+```{python}
+#| column: page-right
+#| layout-nrow: 2
+df_vbd = df_vbd.sort_values(by='blocktime')
+
+line = px.line(df_vbd, x='blocktime', y='vol', color='dex')
+
+add_vline(line)
+
+line.update_traces(hovertemplate=None)
+line.update_layout(
+    title='Volume by Dexs',
+    xaxis_title='Hour',
+    yaxis_title='Volume (USD)',
+    legend_title='Dexs',
+    hovermode='x unified'
+)
+
+pie = make_subplots(rows=1, cols=3, specs=[[{'type':'pie'}, {'type':'pie'}, {'type':'pie'}]])
+for period, col in zip(periods, [1, 2, 3]):
+    df = df_vbdp[df_vbdp['period'] == period]
+    pie.add_pie(labels=df['dex'], values=df['vol'], row=1, col=col, name=period)
+
+pie.update_layout(
+    title='Volume Share Before, During, and After Depeg',
+    legend_title='Dexs'
+)
+
+line.show()
+pie.show()
+```
+
+Uniswap and Curve account for more than 90% of total Dexs volume.
+
+During the depeg, the 2 Dexs added the most volume compare to before and after the event, especially Curve which saw its share in total Dexs volume increased to 35% from 13%, almost tripled. Meanwhile, Uniswap's share decreased to 61% from 81%.
+
+After depeg, Dexs volume share has been similar to Before depeg.
+
+### By Pool Type
+
+```{python}
+df_vbp = pd.DataFrame(get_query_result('resource/vol_by_pool.sql'))
+df_vbpp = pd.DataFrame(get_query_result('resource/vol_by_pool_period.sql'))
+```
+
+```{python}
+#| column: page-right
+#| layout-nrow: 2
+df_vbp = df_vbp.sort_values(by='blocktime')
+
+line = px.line(df_vbp, x='blocktime', y='vol', color='pool')
+
+add_vline(line)
+
+line.update_traces(hovertemplate=None)
+line.update_layout(
+    title='Volume by Pool Type',
+    xaxis_title='Hour',
+    yaxis_title='Volume (USD)',
+    legend_title='Pool Type',
+    hovermode='x unified'
+)
+
+pie = make_subplots(rows=1, cols=3, specs=[[{'type':'pie'}, {'type':'pie'}, {'type':'pie'}]])
+
+for period, col in zip(periods, [1, 2, 3]):
+    df = df_vbpp[df_vbpp['period'] == period]
+    pie.add_pie(labels=df['pool'], values=df['vol'], row=1, col=col, name=period)
+
+pie.update_layout(
+    title='Volume Share Before, During, and After Depeg',
+    legend_title='Pool Type'
+)
+
+line.show()
+pie.show()
+```
+
+During depeg, Stable <-> Stable Pool added the most volume, peaked at $830M per hour, and account for more than half total volume, increased to 52% from 20% Before depeg. Meanwhile, Stable <-> Non-stable lost its share in total volume to 39% from 58% Before depeg.
+
+### By Swap-to Coins
+
+```{python}
+df_vbt = pd.DataFrame(get_query_result('resource/vol_by_swapTo.sql'))
+df_vbtp = pd.DataFrame(get_query_result('resource/vol_by_swapTo_period.sql'))
+```
+
+```{python}
+#| column: page-right
+#| layout-nrow: 2
+df_vbt = df_vbt.sort_values(by='blocktime')
+
+line = px.line(df_vbt, x='blocktime', y='vol', color='swap_to')
+
+add_vline(line)
+
+line.update_traces(hovertemplate=None)
+line.update_layout(
+    title='Volume by Swap-to Coins',
+    xaxis_title='Hour',
+    yaxis_title='Volume (USD)',
+    legend_title='Swap-to Coins',
+    hovermode='x unified'
+)
+
+pie = make_subplots(rows=1, cols=3, specs=[[{'type':'pie'}, {'type':'pie'}, {'type':'pie'}]])
+
+for period, col in zip(periods, [1, 2, 3]):
+    df = df_vbtp[df_vbtp['period'] == period]
+    pie.add_pie(labels=df['swap_to'], values=df['vol'], row=1, col=col, name=period)
+
+pie.update_layout(
+    title='Volume Share Before, During, and After Depeg',
+    legend_title='Swap-to Coins'
+)
+
+line.show()
+pie.show()
+```
+
+Top 4 Swap-to Coins including USDC, USDT, WETH, and DAI account for as high as 90% of total Dexs volume.
+
+During the depeg, despite the fear of depegging, USDC was the most swap-to coin, especially when price was making lower lows. Compare to Before depeg, 3 stablecoins USDC, USDT, and DAI increased their share in total Dexs volume. WETH lost the most share to 21% from 36%.
+
+Compare to Before depeg, After depeg, USDT has gained share from USDC in total Dexs volume, increased to 16% from 12%. Meanwhile, USDC's share decreased to 29% from 34%.
+
+```{python}
+#| column: page-right
+bar = px.bar(df_vbtp, x='swap_to', y='net_vol', color='period', category_orders={'period': periods})
+bar.update_layout(
+    title='Net Liquidity In-flow',
+    xaxis_title='Swap-to Coins',
+    yaxis_title='Net Volume',
+    legend_title='Period',
+    hovermode='x unified',
+    barmode='group'
+)
+
+bar.show()
+```
+
+During the depeg, USDT and WETH saw the most net liquidity in-flow, added $266M and $226M respectively. USDC and Other Coins saw the most net liquidity out-flow, lost $159M and $408M respectively.
+
+After the depeg, the trend reverse with USDT, WETH, and USDC. Interestingly, Other Coins saw the most net liquidity in-flow, added $78M. With further deep dive, majority of that added liquidity belongs to WBTC.
+
+## Liquidity Flows
+
+```{python}
+df_vf = pd.DataFrame(get_query_result('resource/vol_flow.sql'))
+```
+
+```{python}
+# function to create sankey figure
+def gen_sankey(df):
+    # prep
+    def hex_to_rgba(hex_color, opacity):
+        hex_color = hex_color.lstrip('#')
+        r, g, b = tuple(int(hex_color[i:i+2], 16) for i in (0, 2, 4))
+        return f'rgba({r}, {g}, {b}, {opacity})'
+
+    unique_coins = set(df['swap_from'].unique()).union(df['swap_to'].unique())
+    coin_to_index = {coin: index for index, coin in enumerate(unique_coins)}
+    df['source'] = df['swap_from'].map(coin_to_index)
+    df['target'] = df['swap_to'].map(coin_to_index)
+
+    # draw chart
+    color_sequence = px.colors.qualitative.Plotly
+    color_mapping = {coin: hex_to_rgba(color_sequence[i % len(color_sequence)], 0.4) for i, coin in enumerate(unique_coins)}
+
+    df['color'] = df['swap_from'].map(color_mapping)
+
+    trace = go.Sankey(
+        node=dict(
+            line=dict(color='black', width=0.5),
+            label=list(unique_coins),
+            color=[color_mapping[coin] for coin in unique_coins],
+        ),
+        link=dict(
+            source=df['source'],
+            target=df['target'],
+            value=df['vol'],
+            color=df['color'],
+            customdata=df['vol'].apply(format_number),
+            hovertemplate='Source: %{source.label}<br>Target: %{target.label}<br>Volume: %{customdata}',
+        ),
+        orientation='v'
+    )
+
+    layout = go.Layout(
+        height=800,
+    )
+
+    fig = go.Figure(data=[trace], layout=layout)
+
+    fig.update_layout(
+        margin_pad=5
+    )
+
+    return fig
+
+# function to show multiple figures
+def show_figs(df, periods):
+    cols = len(periods)
+
+    for period, col in zip(periods, range(1, cols + 1)):
+        df_p = df.loc[df['period'] == period].copy()
+        fig = gen_sankey(df_p)
+        fig.update_layout(
+            title=f'{period}',
+        )
+    
+        fig.show()
+```
+
+### Uniswap
+
+```{python}
+#| column: screen
+#| layout-ncol: 3
+df_p = df_vf.loc[df_vf['platform'] == 'Uniswap'].copy()
+
+show_figs(df_p, periods)
+```
+
+During depeg, Uniswap saw the rise of Stable <-> Stable pools, specifically is the USDC <-> USDT flow.
+
+Before depeg, USDC <-> WETH was the biggest flow with $2.7B in both directions, and more than double the second biggest flow, which was WETH <-> Other Coins. Meanwhile, USDC <-> USDT was the third biggest flow with $480M. During depeg, USDC <-> WETH was still the biggest flow with $8.2B (3x vs Before depeg). However the flow which increased the most was USDC <-> USDT with $6.8B (14x vs Before depeg). Other noticable increases were USDT <-> WETH: 10x to $3B from $300M; USDC <-> DAI: 18x to $1.5B from $80M. After depeg, the flows has been similar to Before depeg.
+
+### Curve
+
+```{python}
+#| column: screen
+#| layout-ncol: 3
+df_p = df_vf.loc[df_vf['platform'] == 'Curve'].copy()
+
+show_figs(df_p, periods)
+```
+
+During depeg, unlike Uniswap, on Curve, Stable <-> Stable pools are dominant all the time, mostly attributed to USDC <-> USDT flow. The main difference was flows to and from DAI, which replaced WETH as the third most volume swap-to and swap-from coin.
+
+Before depeg, total liquidity flow in/out DAI was $100M. During depeg, that number increased 29x to $2.9B. After depeg, WETH has regained its third posistion.
+
+### Other Dexs
+
+```{python}
+#| column: screen
+#| layout-ncol: 3
+df_p = df_vf.loc[df_vf['platform'] == 'Other Dexs'].copy()
+
+show_figs(df_p, periods)
+```
+
+During depeg and After depeg, bb-a-USDC and bb-a-DAI (Balancer Boosted Aave stable coins) have de-throned USDC in liquidity flow on Other Dexs.
+
+## Is USDT the new go-to stablecoin in Defi?
+
+To answer the question, let's look at share of daily volume flow in/out of stablecoins since Mar 1, 2023 to date.
+
+```{python}
+df_svbsf = pd.DataFrame(get_query_result('resource/stableCoin_vol_by_swapFrom.sql'))
+df_svbst = pd.DataFrame(get_query_result('resource/stableCoin_vol_by_swapTo.sql'))
+```
+
+```{python}
+#| column: page-right
+df_svbsf = df_svbsf.sort_values(by='blocktime')
+df_svbst = df_svbst.sort_values(by='blocktime')
+
+line1 = px.line(df_svbsf, x='blocktime', y='pct_vol', color='swap_from')
+
+add_vline(line1, '2023-03-10', '2023-03-14')
+
+line1.update_traces(hovertemplate=None)
+line1.update_layout(
+    title='Share of Stablecoin Volume by Swap-from Coins',
+    xaxis_title='Day',
+    yaxis_title='% Share',
+    legend_title='Swap-from Coins',
+    hovermode='x unified',
+    yaxis_tickformat = ',.0%',
+)
+
+line2 = px.line(df_svbst, x='blocktime', y='pct_vol', color='swap_to')
+
+add_vline(line2, '2023-03-10', '2023-03-14')
+
+line2.update_traces(hovertemplate=None)
+line2.update_layout(
+    title='Share of Stablecoin Volume by Swap-to Coins',
+    xaxis_title='Day',
+    yaxis_title='% Share',
+    legend_title='Swap-to Coins',
+    hovermode='x unified',
+    yaxis_tickformat = ',.0%',
+)
+
+line1.show()
+line2.show()
+```
+
+During depeg (Mar 11 - Mar 14), USDT seemed to close the gap with USDC in daily volume share:
+- as low as 6% gap in swap-from volume,
+- as low as 8% gap in swap-to volume.
+
+However, after depeg, USDC has regained its dominance.
+
+# Conclusion
+
+Last several years, Tether has been criticized for being shady in managing their asset, rumored as a soon-to-burst bubble. On the opposite end was Circle which had been called safe and transparent by Crypto community. However, due to the banking crisis, the SVB collasp specifically, in 4 days from Mar 10 to Mar 14, Circle suddenly became Tether, USDC was replaced by USDT as the go-to stablecoin in Defi. Though USDC is regaining its share in Defi volume, the depeg event has definitely affected the consensus among fiat-peg Stablecoins in general and Circle/USDC brand specifically.
+
+# References {.appendix}
+
+Source code: <>
+Source of data: <https://flipsidecrypto.xyz/>
+Queries: <>
