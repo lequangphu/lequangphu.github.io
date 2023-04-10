@@ -309,10 +309,6 @@ After the depeg, liquidity flow to USDT, WETH, and USDC reversed.
 
 ## Liquidity Flows
 
-::: callout-warning
-Some Flow charts below might be at odd places. This is a defect when charting with Plotly, which I haven't been able to fix.
-:::
-
 ::: callout-note
 If not specify, liquidity flow of a coin in this section is total of both directions flow-in/out.
 :::
@@ -492,7 +488,7 @@ However, after depeg, USDC has regained its dominance.
 
 # Conclusion
 
-Last several years, Tether has been criticized for being shady in managing their asset, rumored as a soon-to-burst bubble. On the opposite end was Circle which had been called safe and transparent by Crypto community. However, due to the banking crisis, the SVB collasp specifically, in 4 days from Mar 10 to Mar 14, Circle suddenly became Tether, USDC was replaced by USDT as the go-to stablecoin in Defi. Though USDC is regaining its share in Defi volume, the depeg event has definitely affected the consensus among fiat-peg Stablecoins in general and Circle/USDC brand specifically.
+Last several years, Tether has been criticized for being shady in managing their asset, rumored as a soon-to-burst bubble. On the opposite end was Circle which had been called safe and transparent by Crypto community. However, due to the banking crisis, the SVB collasp specifically, Circle suddenly became Tether, USDC was temporarily replaced by USDT as the go-to stablecoin in Defi. Though USDC is regaining share in Defi volume, the depeg event has definitely affected the consensus among fiat-peg Stablecoins in general and Circle/USDC brand specifically.
 
 # Appendix {.appendix}
 
