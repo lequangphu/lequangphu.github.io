@@ -35,7 +35,7 @@ def get_query_result(sql_file_path:str):
 
 Stablecoin is stable because it is peg to a realworld currency (e.g. USD, EUR, ...). In the example of USDC, when it is pegged to USD, most of the time, 1 USDC can be converted to 1 USD. When it is not pegged or depegged, 1 USDC can no longer be converted to 1 USD.
 
-On Mar 11, 2023, a depeg event happened to USDC and some other stablecoins, and Dexs daily volume surpassed $24B, 30% higher than previous all time high on May 19, 2021. ([Defillama](https://defillama.com/dexs))
+On Mar 10, 2023, a depeg event happened to USDC and some other stablecoins, and Dexs daily volume surpassed $24B, 30% higher than previous all time high on May 19, 2021. ([Defillama](https://defillama.com/dexs))
 
 How did stablecoin depeg affect dexs volume on Ethereum? Let's find out.
 
@@ -64,12 +64,25 @@ def add_vline(fig, start=depeg_start, end=depeg_end):
 ```
 
 ```{python}
-df_vol = pd.DataFrame(get_query_result('resource/vol.sql'))
+df_price = pd.DataFrame(get_query_result('resource/price.sql'))
 ```
 
 ```{python}
-df_price = pd.DataFrame(get_query_result('resource/price.sql'))
+df_vol = pd.DataFrame(get_query_result('resource/vol.sql'))
 ```
+
+::: callout-note
+The 3-days depeg event is compared to 3-days right before depeg and 3-days right after depeg.
+
+Before depeg
+: 3pm Mar 7 - 3pm Mar 10, 2023
+
+During depeg
+: 4pm Mar 10 - 4pm Mar 13, 2023
+
+After depeg
+: 5pm Mar 13 - 5pm Mar 16, 2023
+:::
 
 ```{python}
 #| column: page-right
@@ -81,7 +94,7 @@ df_price = df_price.sort_values(by='hour')
 
 fig = make_subplots(specs=[[{"secondary_y": True}]])
 
-vol_line = go.Scatter(x=df_tv['blocktime'], y=df_tv['vol'], name='Volume', line=dict(color=uniswap_color))
+vol_line = go.Scatter(x=df_tv['blocktime'], y=df_tv['vol'], name='Dexs Volume', line=dict(color=uniswap_color))
 
 color_map = {'USD Coin': usdc_color, 'Tether USD': tether_color, 'Dai Stablecoin': dai_color}
 price_line = px.line(df_price, x='hour', y='price', color='name', color_discrete_map=color_map)
@@ -105,22 +118,9 @@ fig.update_layout(
 fig.show()
 ```
 
-Based on Dexs volume and stablecoin prices volatility, we can safely conclude that the depeg lasted 4 days, started at around 7pm on Mar 10, 2023, and ended at around 7pm on Mar 14, 2023.
+Based on Dexs volume and stablecoin prices volatility, we can safely conclude that the depeg lasted 3 days, started at around 4pm on Mar 10, 2023, and ended at around 4pm on Mar 13, 2023.
 
-During depeg, Dexs volume per hour peaked at $1.54B at around 6am Mar 11, 2023. Around that time, USDC and Dai bottomed at around $0.9. Meanwhile, Tether remained peg, and peaked at $1.02.
-
-::: callout-note
-The 4-days depeg event is compared to 4-days right before depeg and 4-days right after depeg.
-
-Before depeg
-: 6pm Mar 6 - 6pm Mar 10, 2023
-
-During depeg
-: 7pm Mar 10 - 7pm Mar 14, 2023
-
-After depeg
-: 8pm Mar 14 - 8pm Mar 18, 2023
-:::
+During depeg, Dexs volume per hour peaked at $1.54B at around 6am Mar 11, 2023. Around that time, USDC and Dai bottomed at around $0.9. Meanwhile, Tether price was greater than $1, peaked at $1.02.
 
 ## Volume Breakdown
 
@@ -128,15 +128,13 @@ After depeg
 
 ```{python}
 df_vbd = df_vol[['blocktime', 'dex', 'vol']].groupby(['blocktime', 'dex'], as_index=False).sum()
-```
-
-```{python}
 df_vbdp = df_vol[['period', 'dex', 'vol']].groupby(['period', 'dex'], as_index=False).sum()
 ```
 
 ```{python}
 #| column: page-right
 #| layout-nrow: 2
+
 df_vbd = df_vbd.sort_values(by='blocktime')
 
 line = px.line(df_vbd, x='blocktime', y='vol', color='dex')
@@ -169,10 +167,10 @@ pie.show()
 Uniswap and Curve account for more than 90% of total Dexs volume.
 
 * During depeg:
-    + at first, volume on Curve rose faster than on Uniswap (till 1am Mar 11). After that, volume on Uniswap surpassed Curve and peaked when depeged stablecoins made the lowest low. => It seems that [fear/arbitrage opportunities] were realized and extracted earlier on Curve than on Uniswap.
-    + Curve saw its share in total Dexs volume increased to 35% from 13%, almost tripled. Meanwhile, Uniswap's share decreased to 61% from 81%.
+    + At first, volume on Curve rose faster than on Uniswap (till 1am Mar 11). After that, volume on Uniswap surpassed Curve and peaked when depeged stablecoins made the lowest low. **➡️ It seems that [fear/arbitrage opportunities] were realized and extracted earlier on Curve than on Uniswap**.
+    + Curve saw its share in total Dexs volume 4x to 36% from 9%. Meanwhile, Uniswap's share decreased to 60% from 85%.
 
-After depeg, the volume share looks similar to before depeg.
+After depeg, Uniswap regained share from Curve.
 
 ### By Pool Type
 
@@ -188,6 +186,7 @@ df_vbpp = df_vol[['period', 'pool', 'vol']].groupby(['period', 'pool'], as_index
 ```{python}
 #| column: page-right
 #| layout-nrow: 2
+
 df_vbp = df_vbp.sort_values(by='blocktime')
 
 line = px.line(df_vbp, x='blocktime', y='vol', color='pool')
@@ -219,11 +218,11 @@ pie.show()
 ```
 
 * During depeg:
-    + Volume in Stable ↔️ Stable Pools rose faster than in Stable ↔️ Non-stable Pools when depeged stablecoins price were making lower lows. Volume in the latter peaked after but higher than volume in the former ($846M vs $830M per hour)
-    + When depeged stablecoins price were recovering (to $1), volume in Stable ↔️ Non-stable Pools dropped faster than in Stable ↔️ Stable Pools. => It seems that, not only arbitrage opportunities in Stable ↔️ Non-stable pools were realized later but also extracted faster than in Stable ↔️ Stable pools.
-    + Overall, Stable ↔️ Stable accounts for more than half total volume, increased to 52% from 20% before depeg. Meanwhile, Stable ↔️ Non-stable lost its share in total volume to 39% from 58% Before depeg.
+    + Volume in Stable ↔️ Stable pools rose faster than in Stable ↔️ Non-stable pools when depeged stablecoins price were making lower lows. Volume in the latter peaked after but higher than volume in the former ($846M vs $834M per hour).
+    + When depeged stablecoins price were recovering (to $1), volume in Stable ↔️ Non-stable pools dropped faster than in Stable ↔️ Stable pools. **➡️ It seems that, not only arbitrage opportunities in Stable ↔️ Non-stable pools were realized later but also extracted faster than in Stable ↔️ Stable pools**.
+    + Overall, Stable ↔️ Stable accounts for more than half total volume, increased to 54% from 16% before depeg. Meanwhile, Stable ↔️ Non-stable lost its share in total volume to 38% from 60% before depeg.
 
-After depeg, the volume share looks similar to before depeg.
+After depeg, Stable ↔️ Non-stable pools regained share from Stable ↔️ Stable pools.
 
 ### By Swap-to Coins
 
@@ -235,6 +234,7 @@ df_vbtp = df_vol[['period', 'symbol_out', 'vol']].groupby(['period', 'symbol_out
 ```{python}
 #| column: page-right
 #| layout-nrow: 2
+
 df_vbt = df_vbt.sort_values(by='blocktime')
 
 line = px.line(df_vbt, x='blocktime', y='vol', color='symbol_out')
@@ -265,13 +265,15 @@ line.show()
 pie.show()
 ```
 
-Top 4 Swap-to Coins including USDC, USDT, WETH, and DAI account for as high as 90% of total Dexs volume.
+Top 4 Swap-to Coins including USDC, USDT, WETH, and DAI account for as high as 91% (during depeg) in total Dexs volume.
 
 * During depeg:
-    + despite the fear of depegging, USDC was the most swap-to coin, especially when price was making lower lows.
+    + Despite the fear of depegging, USDC was the most swap-to coin, especially when price was making lower lows. It doesn't mean trader were buying USDC then did nothing. I will explain further in the next chart.
     + 3 stablecoins USDC, USDT, and DAI increased their share in total Dexs volume. Meanwhile, WETH lost the most share to 21% from 36%.
 
-After depeg, USDT gained share from USDC in total Dexs volume, increased to 16% from 12%. Meanwhile, USDC's share decreased to 29% from 34%.
+After depeg, USDT gained share from USDC in total Dexs volume, increased to 16% from 12%. Meanwhile, USDC's share decreased to 29% from 34%. However, recently, USDC has been regaining share, see @sec-recent.
+
+Next, let's examine net liquidity in-flow in each period to see which coins did traders flee to.
 
 ```{python}
 df_vbfp = df_vol[['period', 'symbol_in', 'vol']].groupby(['period', 'symbol_in'], as_index=False).sum()
@@ -285,6 +287,7 @@ df_merge['net_vol'] = df_merge['vol_to'] - df_merge['vol_from']
 
 ```{python}
 #| column: page-right
+
 bar = px.bar(df_merge, x='symbol', y='net_vol', color='period', category_orders={'period': periods})
 bar.update_layout(
     title='Net Liquidity In-flow',
@@ -299,10 +302,10 @@ bar.show()
 ```
 
 * During depeg:
-    + USDT and WETH saw the most net liquidity in-flow, added $266M and $226M respectively.
-    + USDC and Other Coins saw the most net liquidity out-flow, lost $159M and $408M respectively.
+    + USDT and WETH saw the most net liquidity in-flow, added $309M and $232M respectively.
+    + USDC and Other Coins saw the most net liquidity out-flow, lost $159M and $423M respectively.
 
-After the depeg, the trend reverse with USDT, WETH, and USDC. Interestingly, Other Coins saw the most net liquidity in-flow, added $78M. With further deep dive, majority of that added liquidity belongs to WBTC.
+After the depeg, liquidity flow to USDT, WETH, and USDC reversed.
 
 ## Liquidity Flows
 
@@ -310,8 +313,12 @@ After the depeg, the trend reverse with USDT, WETH, and USDC. Interestingly, Oth
 Some Flow charts below might be at odd places. This is a defect when charting with Plotly, which I haven't been able to fix.
 :::
 
+::: callout-note
+If not specify, liquidity flow of a coin in this section is total of both directions flow-in/out.
+:::
+
 ```{python}
-df_vf = pd.DataFrame(get_query_result('resource/vol_flow.sql'))
+df_vf = df_vol[['dex', 'period', 'symbol_in_by_dex', 'symbol_out_by_dex', 'vol']].groupby(['dex', 'period', 'symbol_in_by_dex', 'symbol_out_by_dex'], as_index=False).sum()
 ```
 
 ```{python}
@@ -323,16 +330,16 @@ def gen_sankey(df):
         r, g, b = tuple(int(hex_color[i:i+2], 16) for i in (0, 2, 4))
         return f'rgba({r}, {g}, {b}, {opacity})'
 
-    unique_coins = set(df['swap_from'].unique()).union(df['swap_to'].unique())
+    unique_coins = set(df['symbol_in_by_dex'].unique()).union(df['symbol_out_by_dex'].unique())
     coin_to_index = {coin: index for index, coin in enumerate(unique_coins)}
-    df['source'] = df['swap_from'].map(coin_to_index)
-    df['target'] = df['swap_to'].map(coin_to_index)
+    df['source'] = df['symbol_in_by_dex'].map(coin_to_index)
+    df['target'] = df['symbol_out_by_dex'].map(coin_to_index)
 
     # draw chart
     color_sequence = px.colors.qualitative.Plotly
     color_mapping = {coin: hex_to_rgba(color_sequence[i % len(color_sequence)], 0.4) for i, coin in enumerate(unique_coins)}
 
-    df['color'] = df['swap_from'].map(color_mapping)
+    df['color'] = df['symbol_in_by_dex'].map(color_mapping)
 
     trace = go.Sankey(
         node=dict(
@@ -382,48 +389,53 @@ def show_figs(df, periods):
 ```{python}
 #| column: screen
 #| layout-ncol: 3
-df_p = df_vf.loc[df_vf['platform'] == 'Uniswap'].copy()
+
+df_p = df_vf.loc[df_vf['dex'] == 'Uniswap'].copy()
 
 show_figs(df_p, periods)
 ```
 
-Before depeg, USDC ↔️ WETH was the biggest flow with $2.7B in both directions, and more than double the second biggest flow, which was WETH ↔️ Other Coins. Meanwhile, USDC ↔️ USDT was the third biggest flow with $480M.
+Before depeg, USDC ↔️ WETH was the biggest flow with $2.1B, and more than double the second biggest flow, which was WETH ↔️ Other Coins. Meanwhile, USDC ↔️ USDT was the third biggest flow with $476M.
 
 * During depeg:
     + Uniswap saw the rise of Stable ↔️ Stable pools, specifically is the USDC ↔️ USDT flow.
-    + USDC ↔️ WETH was still the biggest flow with $8.2B (3x vs Before depeg). However the flow which increased the most was USDC ↔️ USDT with $6.8B (14x vs Before depeg).
-    + Other noticable increases were USDT ↔️ WETH: 10x to $3B from $300M; USDC ↔️ DAI: 18x to $1.5B from $80M. After depeg, the flows has been similar to Before depeg.
+    + USDC ↔️ WETH was still the biggest flow with $7.2B (~3x vs Before depeg). However the flow which increased the most was USDC ↔️ USDT with $6.3B (~13x vs Before depeg).
+    + Other noticable increases were USDT ↔️ WETH: added $2.8B from $0; USDC ↔️ DAI: 43x to $1.5B from $35M.
+    
+After depeg, the flows looked similar to before depeg.
 
 ### Curve
 
 ```{python}
 #| column: screen
 #| layout-ncol: 3
-df_p = df_vf.loc[df_vf['platform'] == 'Curve'].copy()
+
+df_p = df_vf.loc[df_vf['dex'] == 'Curve'].copy()
 
 show_figs(df_p, periods)
 ```
 
 * During depeg:
     + Unlike Uniswap, on Curve, Stable ↔️ Stable pools are dominant all the time, mostly attributed to USDC ↔️ USDT flow.
-    + The main difference was flows to and from DAI, which replaced WETH as the third most volume swap-to and swap-from coin.
-    + Total liquidity flow in/out DAI 29x to $2.9B from $100M before depeg.
+    + The main difference vs before depeg was flows to and from DAI, which replaced WETH as the third most volume swap-to and swap-from coin.
+    + Total liquidity flow in/out DAI 38x to $3.4B from $90M before depeg.
     
-After depeg, WETH regained its third posistion.
+After depeg, WETH reclaimed the third posistion.
 
 ### Other Dexs
 
 ```{python}
 #| column: screen
 #| layout-ncol: 3
-df_p = df_vf.loc[df_vf['platform'] == 'Other Dexs'].copy()
+
+df_p = df_vf.loc[df_vf['dex'] == 'Other Dexs'].copy()
 
 show_figs(df_p, periods)
 ```
 
-Since depeg began, bb-a-USDC and bb-a-DAI (Balancer Boosted Aave stable coins) have de-throned USDC in liquidity flow on Other Dexs.
+Since depeg began, bb-a-USDC and bb-a-DAI (Balancer Boosted Aave stable coins) have de-throned WETH, and replaced USDC in liquidity flow on Other Dexs.
 
-## Is USDT the new go-to stablecoin in Defi?
+## Is USDT the new go-to stablecoin in Defi? {#sec-recent}
 
 To answer the question, let's look at share of daily volume flow in/out of stablecoins since Mar 1, 2023 to date.
 
@@ -442,7 +454,7 @@ df_svbst = df_svbst.sort_values(by='blocktime')
 
 line1 = px.line(df_svbsf, x='blocktime', y='pct_vol', color='symbol')
 
-add_vline(line1, '2023-03-10', '2023-03-14')
+add_vline(line1, '2023-03-10', '2023-03-13')
 
 line1.update_traces(hovertemplate=None)
 line1.update_layout(
@@ -456,7 +468,7 @@ line1.update_layout(
 
 line2 = px.line(df_svbst, x='blocktime', y='pct_vol', color='symbol')
 
-add_vline(line2, '2023-03-10', '2023-03-14')
+add_vline(line2, '2023-03-10', '2023-03-13')
 
 line2.update_traces(hovertemplate=None)
 line2.update_layout(
