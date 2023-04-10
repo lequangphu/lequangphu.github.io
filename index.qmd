@@ -3,6 +3,7 @@ title: "Happy reading 🤗"
 listing: 
     type: grid
     contents: blog/posts
+    sort: "date desc"
     fields: [image, date, title, reading-time, categories]
 ---
 

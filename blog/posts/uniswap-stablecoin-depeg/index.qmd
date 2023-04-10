@@ -489,5 +489,6 @@ Last several years, Tether has been criticized for being shady in managing their
 
 # Appendix {.appendix}
 
-Source of data: <https://flipsidecrypto.xyz/>
-Queries: <https://github.com/lequangphu/lequangphu.github.io/tree/main/blog/posts/uniswap-stablecoin-depeg/resource>
+[Source of data](https://flipsidecrypto.xyz/)
+
+[Queries](https://github.com/lequangphu/lequangphu.github.io/tree/main/blog/posts/uniswap-stablecoin-depeg/resource)
