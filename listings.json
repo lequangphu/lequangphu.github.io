@@ -2,8 +2,8 @@
   {
     "listing": "/index.html",
     "items": [
-      "/blog/posts/base-supply-side-growth/index.html",
       "/blog/posts/uniswap-stablecoin-depeg/index.html",
+      "/blog/posts/base-supply-side-growth/index.html",
       "/blog/posts/xin-chao/index.html"
     ]
   },
@@ -11,8 +11,8 @@
     "listing": "/blog/index.html",
     "items": [
       "/blog/posts/uniswap-stablecoin-depeg/index.html",
-      "/blog/posts/xin-chao/index.html",
-      "/blog/posts/base-supply-side-growth/index.html"
+      "/blog/posts/base-supply-side-growth/index.html",
+      "/blog/posts/xin-chao/index.html"
     ]
   }
 ]
