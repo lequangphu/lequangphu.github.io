@@ -1,6 +1,6 @@
 ---
 title: "Xin Chào"
-date: "2023-03-27"
+date: "2023-03-26"
 categories: [news]
 ---
 

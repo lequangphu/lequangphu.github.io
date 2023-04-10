@@ -1,5 +1,5 @@
 ---
-title: "Happy reading 🤗"
+title: "🤗"
 listing: 
     type: grid
     contents: blog/posts

@@ -220,13 +220,10 @@ line.show()
 pie.show()
 ```
 
-During depeg:
-
-    - Volume in Stable <-> Stable Pools rose faster than in Stable <-> Non-stable Pools when depeged stablecoins price were making lower lows. Volume in the latter peaked after but higher than volume in the former ($846M vs $830M per hour)
-
-    - When depeged stablecoins price were recovering (to $1), volume in Stable <-> Non-stable Pools dropped faster than in Stable <-> Stable Pools. => It seems that, not only arbitrage opportunities in Stable <-> Non-stable pools were realized later but also extracted faster than in Stable <-> Stable pools.
-    
-    - Overall, Stable <-> Stable accounts for more than half total volume, increased to 52% from 20% before depeg. Meanwhile, Stable <-> Non-stable lost its share in total volume to 39% from 58% Before depeg.
+* During depeg:
+    + Volume in Stable <-> Stable Pools rose faster than in Stable <-> Non-stable Pools when depeged stablecoins price were making lower lows. Volume in the latter peaked after but higher than volume in the former ($846M vs $830M per hour)
+    + When depeged stablecoins price were recovering (to $1), volume in Stable <-> Non-stable Pools dropped faster than in Stable <-> Stable Pools. => It seems that, not only arbitrage opportunities in Stable <-> Non-stable pools were realized later but also extracted faster than in Stable <-> Stable pools.
+    + Overall, Stable <-> Stable accounts for more than half total volume, increased to 52% from 20% before depeg. Meanwhile, Stable <-> Non-stable lost its share in total volume to 39% from 58% Before depeg.
 
 After depeg, the volume share looks similar to before depeg.
 
@@ -272,11 +269,9 @@ pie.show()
 
 Top 4 Swap-to Coins including USDC, USDT, WETH, and DAI account for as high as 90% of total Dexs volume.
 
-During the depeg:
-
-    - despite the fear of depegging, USDC was the most swap-to coin, especially when price was making lower lows.
-    
-    - 3 stablecoins USDC, USDT, and DAI increased their share in total Dexs volume. Meanwhile, WETH lost the most share to 21% from 36%.
+* During the depeg:
+    + despite the fear of depegging, USDC was the most swap-to coin, especially when price was making lower lows.
+    + 3 stablecoins USDC, USDT, and DAI increased their share in total Dexs volume. Meanwhile, WETH lost the most share to 21% from 36%.
 
 After depeg, USDT gained share from USDC in total Dexs volume, increased to 16% from 12%. Meanwhile, USDC's share decreased to 29% from 34%.
 
@@ -388,17 +383,13 @@ df_p = df_vf.loc[df_vf['platform'] == 'Uniswap'].copy()
 show_figs(df_p, periods)
 ```
 
-Before depeg:
-    
-    - USDC <-> WETH was the biggest flow with $2.7B in both directions, and more than double the second biggest flow, which was WETH <-> Other Coins. Meanwhile, USDC <-> USDT was the third biggest flow with $480M.
+* Before depeg:
+    + USDC <-> WETH was the biggest flow with $2.7B in both directions, and more than double the second biggest flow, which was WETH <-> Other Coins. Meanwhile, USDC <-> USDT was the third biggest flow with $480M.
 
-During depeg:
-
-    - Uniswap saw the rise of Stable <-> Stable pools, specifically is the USDC <-> USDT flow.
-
-    - USDC <-> WETH was still the biggest flow with $8.2B (3x vs Before depeg). However the flow which increased the most was USDC <-> USDT with $6.8B (14x vs Before depeg).
-    
-    - Other noticable increases were USDT <-> WETH: 10x to $3B from $300M; USDC <-> DAI: 18x to $1.5B from $80M. After depeg, the flows has been similar to Before depeg.
+* During depeg:
+    + Uniswap saw the rise of Stable <-> Stable pools, specifically is the USDC <-> USDT flow.
+    + USDC <-> WETH was still the biggest flow with $8.2B (3x vs Before depeg). However the flow which increased the most was USDC <-> USDT with $6.8B (14x vs Before depeg).
+    + Other noticable increases were USDT <-> WETH: 10x to $3B from $300M; USDC <-> DAI: 18x to $1.5B from $80M. After depeg, the flows has been similar to Before depeg.
 
 ### Curve
 
@@ -475,11 +466,9 @@ line1.show()
 line2.show()
 ```
 
-During depeg (Mar 11 - Mar 14), USDT seemed to close the gap with USDC in daily volume share:
-
-    - as low as 6% gap in swap-from volume,
-    
-    - as low as 8% gap in swap-to volume.
+* During depeg (Mar 11 - Mar 14), USDT seemed to close the gap with USDC in daily volume share:
+    + as low as 6% gap in swap-from volume,
+    + as low as 8% gap in swap-to volume.
 
 However, after depeg, USDC has regained its dominance.
 
@@ -489,6 +478,6 @@ Last several years, Tether has been criticized for being shady in managing their
 
 # Appendix {.appendix}
 
-[Source of data](https://flipsidecrypto.xyz/)
+* [Source of data](https://flipsidecrypto.xyz/)
 
-[Queries](https://github.com/lequangphu/lequangphu.github.io/tree/main/blog/posts/uniswap-stablecoin-depeg/resource)
+* [Queries](https://github.com/lequangphu/lequangphu.github.io/tree/main/blog/posts/uniswap-stablecoin-depeg/resource)
