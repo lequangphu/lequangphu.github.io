@@ -18,10 +18,10 @@ with
         ELSE 'Other Dexs'
       END dex,
       CASE
-        WHEN block_timestamp >= '2023-03-06 18:00:00.000'
-        AND block_timestamp <= '2023-03-10 18:00:00.000' THEN 'Before Depeg'
-        WHEN block_timestamp >= '2023-03-14 20:00:00.000'
-        AND block_timestamp <= '2023-03-18 20:00:00.000' THEN 'After Depeg'
+        WHEN block_timestamp >= '2023-03-07 15:00:00.000'
+        AND block_timestamp <= '2023-03-10 15:00:00.000' THEN 'Before Depeg'
+        WHEN block_timestamp >= '2023-03-13 17:00:00.000'
+        AND block_timestamp <= '2023-03-16 17:00:00.000' THEN 'After Depeg'
         ELSE 'During Depeg'
       END AS period,
       symbol_in,
@@ -31,7 +31,7 @@ with
       ethereum.core.ez_dex_swaps
     WHERE
       1 = 1
-      AND BLOCK_TIMESTAMP BETWEEN '2023-03-06 18:00:00.000' AND '2023-03-18 20:00:00.000'
+      AND BLOCK_TIMESTAMP BETWEEN '2023-03-07 15:00:00.000' AND '2023-03-16 17:00:00.000'
   ),
   top_target AS (
     SELECT
@@ -56,10 +56,10 @@ with
       s2.symbol IS NOT NULL AS to_stable,
       CASE
         WHEN from_stable
-        and to_stable THEN 'Stable <-> Stable'
+        and to_stable THEN 'Stable ↔️ Stable'
         WHEN from_stable
-        or to_stable THEN 'Stable <-> Non-stable'
-        ELSE 'Non-stable <-> Non-stable'
+        or to_stable THEN 'Stable ↔️ Non-stable'
+        ELSE 'Non-stable ↔️ Non-stable'
       END AS pool,
       t1.symbol IS NOT NULL AS from_top_target,
       t2.symbol IS NOT NULL AS to_top_target,

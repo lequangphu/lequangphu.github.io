@@ -46,8 +46,8 @@ uniswap_color = '#ff007a'
 usdc_color = '#2775ca'
 tether_color = '#009393'
 dai_color = '#fbb228'
-depeg_start = '2023-03-10 19:00:00.000'
-depeg_end = '2023-03-14 19:00:00.000'
+depeg_start = '2023-03-10 16:00:00.000'
+depeg_end = '2023-03-13 16:00:00.000'
 periods = ['Before Depeg', 'During Depeg', 'After Depeg']
 
 def format_number(value):
@@ -168,11 +168,9 @@ pie.show()
 
 Uniswap and Curve account for more than 90% of total Dexs volume.
 
-During depeg:
-
-    - at first, volume on Curve rose faster than on Uniswap (till 1am Mar 11). After that, volume on Uniswap surpassed Curve and peaked when depeged stablecoins made the lowest low. => It seems that [fear/arbitrage opportunities] were realized and extracted earlier on Curve than on Uniswap.
-
-    - Curve saw its share in total Dexs volume increased to 35% from 13%, almost tripled. Meanwhile, Uniswap's share decreased to 61% from 81%.
+* During depeg:
+    + at first, volume on Curve rose faster than on Uniswap (till 1am Mar 11). After that, volume on Uniswap surpassed Curve and peaked when depeged stablecoins made the lowest low. => It seems that [fear/arbitrage opportunities] were realized and extracted earlier on Curve than on Uniswap.
+    + Curve saw its share in total Dexs volume increased to 35% from 13%, almost tripled. Meanwhile, Uniswap's share decreased to 61% from 81%.
 
 After depeg, the volume share looks similar to before depeg.
 
@@ -221,9 +219,9 @@ pie.show()
 ```
 
 * During depeg:
-    + Volume in Stable <-> Stable Pools rose faster than in Stable <-> Non-stable Pools when depeged stablecoins price were making lower lows. Volume in the latter peaked after but higher than volume in the former ($846M vs $830M per hour)
-    + When depeged stablecoins price were recovering (to $1), volume in Stable <-> Non-stable Pools dropped faster than in Stable <-> Stable Pools. => It seems that, not only arbitrage opportunities in Stable <-> Non-stable pools were realized later but also extracted faster than in Stable <-> Stable pools.
-    + Overall, Stable <-> Stable accounts for more than half total volume, increased to 52% from 20% before depeg. Meanwhile, Stable <-> Non-stable lost its share in total volume to 39% from 58% Before depeg.
+    + Volume in Stable ↔️ Stable Pools rose faster than in Stable ↔️ Non-stable Pools when depeged stablecoins price were making lower lows. Volume in the latter peaked after but higher than volume in the former ($846M vs $830M per hour)
+    + When depeged stablecoins price were recovering (to $1), volume in Stable ↔️ Non-stable Pools dropped faster than in Stable ↔️ Stable Pools. => It seems that, not only arbitrage opportunities in Stable ↔️ Non-stable pools were realized later but also extracted faster than in Stable ↔️ Stable pools.
+    + Overall, Stable ↔️ Stable accounts for more than half total volume, increased to 52% from 20% before depeg. Meanwhile, Stable ↔️ Non-stable lost its share in total volume to 39% from 58% Before depeg.
 
 After depeg, the volume share looks similar to before depeg.
 
@@ -269,7 +267,7 @@ pie.show()
 
 Top 4 Swap-to Coins including USDC, USDT, WETH, and DAI account for as high as 90% of total Dexs volume.
 
-* During the depeg:
+* During depeg:
     + despite the fear of depegging, USDC was the most swap-to coin, especially when price was making lower lows.
     + 3 stablecoins USDC, USDT, and DAI increased their share in total Dexs volume. Meanwhile, WETH lost the most share to 21% from 36%.
 
@@ -300,11 +298,17 @@ bar.update_layout(
 bar.show()
 ```
 
-During the depeg, USDT and WETH saw the most net liquidity in-flow, added $266M and $226M respectively. USDC and Other Coins saw the most net liquidity out-flow, lost $159M and $408M respectively.
+* During depeg:
+    + USDT and WETH saw the most net liquidity in-flow, added $266M and $226M respectively.
+    + USDC and Other Coins saw the most net liquidity out-flow, lost $159M and $408M respectively.
 
 After the depeg, the trend reverse with USDT, WETH, and USDC. Interestingly, Other Coins saw the most net liquidity in-flow, added $78M. With further deep dive, majority of that added liquidity belongs to WBTC.
 
 ## Liquidity Flows
+
+::: callout-warning
+Some Flow charts below might be at odd places. This is a defect when charting with Plotly, which I haven't been able to fix.
+:::
 
 ```{python}
 df_vf = pd.DataFrame(get_query_result('resource/vol_flow.sql'))
@@ -383,13 +387,12 @@ df_p = df_vf.loc[df_vf['platform'] == 'Uniswap'].copy()
 show_figs(df_p, periods)
 ```
 
-* Before depeg:
-    + USDC <-> WETH was the biggest flow with $2.7B in both directions, and more than double the second biggest flow, which was WETH <-> Other Coins. Meanwhile, USDC <-> USDT was the third biggest flow with $480M.
+Before depeg, USDC ↔️ WETH was the biggest flow with $2.7B in both directions, and more than double the second biggest flow, which was WETH ↔️ Other Coins. Meanwhile, USDC ↔️ USDT was the third biggest flow with $480M.
 
 * During depeg:
-    + Uniswap saw the rise of Stable <-> Stable pools, specifically is the USDC <-> USDT flow.
-    + USDC <-> WETH was still the biggest flow with $8.2B (3x vs Before depeg). However the flow which increased the most was USDC <-> USDT with $6.8B (14x vs Before depeg).
-    + Other noticable increases were USDT <-> WETH: 10x to $3B from $300M; USDC <-> DAI: 18x to $1.5B from $80M. After depeg, the flows has been similar to Before depeg.
+    + Uniswap saw the rise of Stable ↔️ Stable pools, specifically is the USDC ↔️ USDT flow.
+    + USDC ↔️ WETH was still the biggest flow with $8.2B (3x vs Before depeg). However the flow which increased the most was USDC ↔️ USDT with $6.8B (14x vs Before depeg).
+    + Other noticable increases were USDT ↔️ WETH: 10x to $3B from $300M; USDC ↔️ DAI: 18x to $1.5B from $80M. After depeg, the flows has been similar to Before depeg.
 
 ### Curve
 
@@ -401,9 +404,12 @@ df_p = df_vf.loc[df_vf['platform'] == 'Curve'].copy()
 show_figs(df_p, periods)
 ```
 
-During depeg, unlike Uniswap, on Curve, Stable <-> Stable pools are dominant all the time, mostly attributed to USDC <-> USDT flow. The main difference was flows to and from DAI, which replaced WETH as the third most volume swap-to and swap-from coin.
-
-Before depeg, total liquidity flow in/out DAI was $100M. During depeg, that number increased 29x to $2.9B. After depeg, WETH has regained its third posistion.
+* During depeg:
+    + Unlike Uniswap, on Curve, Stable ↔️ Stable pools are dominant all the time, mostly attributed to USDC ↔️ USDT flow.
+    + The main difference was flows to and from DAI, which replaced WETH as the third most volume swap-to and swap-from coin.
+    + Total liquidity flow in/out DAI 29x to $2.9B from $100M before depeg.
+    
+After depeg, WETH regained its third posistion.
 
 ### Other Dexs
 
@@ -415,7 +421,7 @@ df_p = df_vf.loc[df_vf['platform'] == 'Other Dexs'].copy()
 show_figs(df_p, periods)
 ```
 
-During depeg and After depeg, bb-a-USDC and bb-a-DAI (Balancer Boosted Aave stable coins) have de-throned USDC in liquidity flow on Other Dexs.
+Since depeg began, bb-a-USDC and bb-a-DAI (Balancer Boosted Aave stable coins) have de-throned USDC in liquidity flow on Other Dexs.
 
 ## Is USDT the new go-to stablecoin in Defi?
 
@@ -478,6 +484,6 @@ Last several years, Tether has been criticized for being shady in managing their
 
 # Appendix {.appendix}
 
-* [Source of data](https://flipsidecrypto.xyz/)
+* [Data source](https://flipsidecrypto.xyz/)
 
 * [Queries](https://github.com/lequangphu/lequangphu.github.io/tree/main/blog/posts/uniswap-stablecoin-depeg/resource)
