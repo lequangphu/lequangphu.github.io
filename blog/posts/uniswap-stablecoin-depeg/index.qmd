@@ -125,10 +125,6 @@ Based on Dexs volume and stablecoin prices volatility, we can safely conclude th
 
 During depeg, Dexs volume per hour peaked at \$1.54B at around 6am Mar 11, 2023. Around that time, USDC and Dai bottomed at around \$0.9. Meanwhile, Tether price was greater than \$1, peaked at \$1.02.
 
-::: callout-important
-USDC and DAI price started to get lower than \$0.99 at 3am Mar 11, 2023. 4 hours later, they bottomed at \$0.89 at 7am. 54 hours later, they completely reclaimed \$0.99 at 1pm Mar 13, 2023. Please note these 3 times for the following sections.
-:::
-
 ## Volume Breakdown
 
 ### By Dex
@@ -177,7 +173,7 @@ Uniswap and Curve account for more than 90% of total Dexs volume.
     -   At first, volume on Curve rose faster than on Uniswap (till 1am Mar 11). After that, volume on Uniswap surpassed Curve and peaked when depeged stablecoins made the lowest low.
     -   Curve saw its share in total Dexs volume 4x to 36% from 9%. Meanwhile, Uniswap's share decreased to 60% from 85%.
 
-*➡️ The liquidity move started on Curve first then Uniswap and Other Dexs*.
+➡️ *The liquidity move started on Curve first then Uniswap and Other Dexs*.
 
 After depeg, Uniswap regained share from Curve.
 
@@ -233,7 +229,7 @@ pie.show()
         -   Volume in Non-stable ↔️ Non-stable pools only peaked at \$380M per hour at 9am Mar 13, when USDC and DAI price were about to reclaim \$0.99.
     -   Overall, Stable ↔️ Stable accounts for more than half total volume, increased to 54% from 16% before depeg. Meanwhile, Stable ↔️ Non-stable lost its share in total volume to 38% from 60% before depeg.
 
-*➡️ The liquidity move started in Stable ↔️ Stable pools first then in Stable ↔️ Non-stable, and Non-stable ↔️ Non-stable pools*.
+➡️ *The liquidity move started in Stable ↔️ Stable pools first then in Stable ↔️ Non-stable, and Non-stable ↔️ Non-stable pools*.
 
 After depeg, Stable ↔️ Non-stable pools regained share from Stable ↔️ Stable pools.
 
@@ -285,7 +281,7 @@ Top 4 Swap-to Coins including USDC, USDT, WETH, and DAI account for as high as 9
     -   When the prices broke down \$0.99, volume swap-to USDC and DAI rose higher while volume swap-to USDT dropped.
     -   3 stablecoins USDC, USDT, and DAI increased their share in total Dexs volume. Meanwhile, WETH lost the most share to 21% from 36%.
 
-*➡️ Liquidity moved to USDT first then to USDC and DAI when their prices broke down \$0.99*.
+➡️ *Liquidity moved to USDT first then to USDC and DAI when their prices broke down \$0.99*.
 
 After depeg, USDT gained share from USDC in total Dexs volume, increased to 16% from 12%. Meanwhile, USDC's share decreased to 29% from 34%. However, recently, USDC has been regaining share, see @sec-recent.
 
@@ -323,7 +319,7 @@ bar.show()
 
 After the depeg, liquidity flow to USDT, WETH, and USDC reversed.
 
-*➡️ During depeg, before depeg stablecoins price broke down $0.99, the liquidity move started on Curve first (then on Uniswap and other Dexs), where traders fled to USDT from those stablecoins in Stable ↔️ Stable pools. When stablecoins price broke down $0.99, traders partially swapped back to those stablecoins and partially swapped to non-stablecoins. When depeg stablecoins price bottomed and then started to recover, liquidity was mostly moved between Stable ↔️ Stable, and Stable ↔️ Non-stable pools*. 
+➡️ *During depeg, before depeg stablecoins price broke down $0.99, the liquidity move started on Curve first (then on Uniswap and other Dexs), where traders fled to USDT from those stablecoins in Stable ↔️ Stable pools. When stablecoins price broke down $0.99, traders partially swapped back to those stablecoins and partially swapped to non-stablecoins. When depeg stablecoins price bottomed and then started to recover, liquidity was mostly moved between Stable ↔️ Stable, and Stable ↔️ Non-stable pools*. 
 
 ## Liquidity Flows
 
