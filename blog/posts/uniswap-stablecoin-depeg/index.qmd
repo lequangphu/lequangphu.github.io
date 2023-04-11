@@ -494,7 +494,7 @@ line1.show()
 line2.show()
 ```
 
--   During depeg (Mar 11 - Mar 14), USDT seemed to close the gap with USDC in daily volume share:
+-   During depeg (Mar 11 - Mar 13), USDT was in the trend of closing the gap with USDC in daily volume share:
     -   as low as 6% gap in swap-from volume,
     -   as low as 8% gap in swap-to volume.
 
