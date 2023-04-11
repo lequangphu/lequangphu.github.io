@@ -88,7 +88,7 @@
     "href": "blog/posts/uniswap-stablecoin-depeg/index.html#sec-recent",
     "title": "Stablecoin Depeg",
     "section": "Is USDT the new go-to stablecoin in Defi?",
-    "text": "Is USDT the new go-to stablecoin in Defi?\nTo answer the question, let’s look at share of daily volume flow in/out of stablecoins since Mar 1, 2023 to date.\n\n\n\n\n                                                \n\n\n\n\n\n                                                \n\n\n\n\nDuring depeg (Mar 11 - Mar 14), USDT seemed to close the gap with USDC in daily volume share:\n\nas low as 6% gap in swap-from volume,\nas low as 8% gap in swap-to volume.\n\n\nHowever, after depeg, USDC has regained its dominance."
+    "text": "Is USDT the new go-to stablecoin in Defi?\nTo answer the question, let’s look at share of daily volume flow in/out of stablecoins since Mar 1, 2023 to date.\n\n\n\n\n                                                \n\n\n\n\n\n                                                \n\n\n\n\nDuring depeg (Mar 11 - Mar 13), USDT was in the trend of closing the gap with USDC in daily volume share:\n\nas low as 6% gap in swap-from volume,\nas low as 8% gap in swap-to volume.\n\n\nHowever, after depeg, USDC has regained its dominance."
   },
   {
     "objectID": "blog/index.html",
