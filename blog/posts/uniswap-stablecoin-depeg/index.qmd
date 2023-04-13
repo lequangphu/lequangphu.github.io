@@ -1,6 +1,6 @@
 ---
 title: "Stablecoin Depeg"
-description: 'Examine effect of the depeg event on Mar 10, 2023 to Dexs Volume'
+description: 'Examine effect of the depeg event on Mar 10, 2023 to Dexs Volume on Ethereum.'
 date: '2023-04-10'
 categories: [analysis, crypto]
 image: 'stablecoins.png'
@@ -522,6 +522,6 @@ During the depeg event, Uniswap and Curve are the 2 places where actions (liquid
 
 # Appendix {.appendix}
 
--   [Data source](https://flipsidecrypto.xyz/)
+-   Summary in my [twitter thread](https://twitter.com/0xphu/status/1646108856039383040?s=20).
 
--   [Queries](https://github.com/lequangphu/lequangphu.github.io/tree/main/blog/posts/uniswap-stablecoin-depeg/resource)
+-   [Data source](https://flipsidecrypto.xyz/) and [Queries](https://github.com/lequangphu/lequangphu.github.io/tree/main/blog/posts/uniswap-stablecoin-depeg/resource).
