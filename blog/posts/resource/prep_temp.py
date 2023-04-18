@@ -4,11 +4,11 @@ import plotly.express as px
 import plotly.graph_objs as go
 import plotly.io as pio
 import plotly.subplots as sp
-import requests
 from shroomdk import ShroomDK
 
 # set plotly default theme
 pio.templates.default = 'plotly_white'
+
 # read api key and assign to a variable
 with open('/Users/phu/FlipsideCrypto/api_key.txt') as f:
     api_key = f.read()
