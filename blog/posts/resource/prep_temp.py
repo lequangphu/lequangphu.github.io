@@ -5,6 +5,7 @@ import plotly.graph_objs as go
 import plotly.io as pio
 import plotly.subplots as sp
 from shroomdk import ShroomDK
+import requests
 
 # set plotly default theme
 pio.templates.default = 'plotly_white'
