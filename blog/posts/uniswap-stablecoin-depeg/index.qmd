@@ -18,7 +18,7 @@ from shroomdk import ShroomDK
 # set plotly default theme
 pio.templates.default = 'plotly_white'
 # read api key and assign to a variable
-with open('/Users/phu/FlipsideCrypto/api_key.txt') as f:
+with open('/Users/phu/lequangphu.github.io/.secrets/flipside_crypto_api_key.txt') as f:
     api_key = f.read()
 sdk = ShroomDK(api_key)
 
