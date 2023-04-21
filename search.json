@@ -7,6 +7,41 @@
     "text": "Stablecoin Depeg\n\n\n12 min\n\n\n\nanalysis\n\n\ncrypto\n\n\n\n\nApr 10, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBase’s Supply Side Growth\n\n\n12 min\n\n\n\nanalysis\n\n\ncrypto\n\n\n\n\nMar 27, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nXin Chào\n\n\n0 min\n\n\n\nnews\n\n\n\n\nMar 26, 2023\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
+    "objectID": "blog/posts/xin-chao/index.html",
+    "href": "blog/posts/xin-chao/index.html",
+    "title": "Xin Chào",
+    "section": "",
+    "text": "Chào mừng đến với bài viết đầu tiên của tôi trên blog này. Đây là blog cá nhân và tôi sẽ viết về nhiều chủ đề khác nhau. Tuỳ thuộc vào chủ đề mà ngôn ngữ của bài viết cũng sẽ khác nhau, either English hoặc tiếng Việt 😁."
+  },
+  {
+    "objectID": "blog/posts/uniswap-stablecoin-depeg/index.html",
+    "href": "blog/posts/uniswap-stablecoin-depeg/index.html",
+    "title": "Stablecoin Depeg",
+    "section": "",
+    "text": "During the depeg event on Ethereum:\n\nUSDT price peaked then Dexs volume peaked then depeg stablecoins price bottomed,\nLiquidity flee / Arbitrage peaked on Curve then peaked higher on Uniswap ; from Stable to Non-stable; from USDC to USDT and WETH.\nUSDT is not replacing USDC as the go-to stablecoin onchain."
+  },
+  {
+    "objectID": "blog/posts/uniswap-stablecoin-depeg/index.html#volume-breakdown",
+    "href": "blog/posts/uniswap-stablecoin-depeg/index.html#volume-breakdown",
+    "title": "Stablecoin Depeg",
+    "section": "Volume Breakdown",
+    "text": "Volume Breakdown\n\nBy Dex\n\n\n\n\n                                                \n\n\n\n\n\n                                                \n\n\n\nUniswap and Curve account for more than 90% of total Dexs volume.\nDuring depeg:\n\nAt first, volume on Curve rose faster than on Uniswap (till 1am Mar 11). After that, volume on Uniswap surpassed Curve and peaked when depeged stablecoins made the lowest low.\nCurve saw its share in total Dexs volume 4x to 36% from 9%. Meanwhile, Uniswap’s share decreased to 60% from 85%.\n\n➡️ The liquidity move started on Curve first then Uniswap and Other Dexs.\nAfter depeg, Uniswap regained share from Curve.\n\n\nBy Pool Type\n\n\n\n\n\n\nNote\n\n\n\nStablecoins identified as all coins in the stablecoin list of Defillama here.\n\n\n\n\n\n\n                                                \n\n\n\n\n\n                                                \n\n\n\nDuring depeg:\n\nVolume in Stable ↔︎️ Stable pools rose faster than in Stable ↔︎️ Non-stable pools when depeged stablecoins price were making lower lows. Volume in the latter peaked after but higher than volume in the former ($846M vs $834M per hour).\nWhen depeged stablecoins price started to recover and made higher highs:\n\nVolume in Stable ↔︎️ Non-stable pools dropped rapidly and stayed below $400M per hour. Meanwhile, volume in Stable ↔︎️ Stable pools was more volatile, dropped and rose rapidly, made other 2 highs above $500M.\nVolume in Non-stable ↔︎️ Non-stable pools only peaked at $380M per hour at 9am Mar 13, when USDC and DAI price were about to reclaim $0.99.\n\nOverall, Stable ↔︎️ Stable accounts for more than half total volume, increased to 54% from 16% before depeg. Meanwhile, Stable ↔︎️ Non-stable lost its share in total volume to 38% from 60% before depeg.\n\n➡️ The liquidity move started in Stable ↔︎️ Stable pools first then in Stable ↔︎️ Non-stable, and Non-stable ↔︎️ Non-stable pools.\nAfter depeg, Stable ↔︎️ Non-stable pools regained share from Stable ↔︎️ Stable pools.\n\n\nBy Swap-to Coins\n\n\n\n\n                                                \n\n\n\n\n\n                                                \n\n\n\nTop 4 Swap-to Coins including USDC, USDT, WETH, and DAI account for as high as 91% (during depeg) in total Dexs volume.\nDuring depeg:\n\nBefore 2am Mar 11, when USDC and DAI price were about to breakdown $0.99, volume swap-to USDT was as high if not higher than volume swap-to USDC.\nWhen the prices broke down $0.99, volume swap-to USDC and DAI rose higher while volume swap-to USDT dropped.\n3 stablecoins USDC, USDT, and DAI increased their share in total Dexs volume. Meanwhile, WETH lost the most share to 21% from 36%.\n\n➡️ Liquidity moved to USDT first then to USDC and DAI when their prices broke down $0.99.\nAfter depeg, USDT gained share from USDC in total Dexs volume, increased to 16% from 12%. Meanwhile, USDC’s share decreased to 29% from 34%. However, recently, USDC has been regaining share, see Section 3.3.\nNext, let’s examine net liquidity in-flow in each period to see which coins did traders flee to.\n\n\n\n                                                \n\n\nDuring depeg:\n\nUSDT and WETH saw the most net liquidity in-flow, added $309M and $232M respectively.\nUSDC and Other Coins saw the most net liquidity out-flow, lost $159M and $423M respectively.\n\nAfter the depeg, liquidity flow to USDT, WETH, and USDC reversed.\n➡️ During depeg, before depeg stablecoins price broke down $0.99, the liquidity move started on Curve first (then on Uniswap and other Dexs), where traders fled to USDT from those stablecoins in Stable ↔︎️ Stable pools. When stablecoins price broke down $0.99, traders partially swapped back to those stablecoins and partially swapped to non-stablecoins. When depeg stablecoins price bottomed and then started to recover, liquidity was mostly moved between Stable ↔︎️ Stable, and Stable ↔︎️ Non-stable pools."
+  },
+  {
+    "objectID": "blog/posts/uniswap-stablecoin-depeg/index.html#liquidity-flows",
+    "href": "blog/posts/uniswap-stablecoin-depeg/index.html#liquidity-flows",
+    "title": "Stablecoin Depeg",
+    "section": "Liquidity Flows",
+    "text": "Liquidity Flows\n\n\n\n\n\n\nNote\n\n\n\nIf not specify, liquidity flow of a coin in this section is total of both directions flow-in/out.\n\n\n\nUniswap\n\n\n\n\n                                                \n\n\n\n                                                \n\n\n\n                                                \n\n\n\nBefore depeg, USDC ↔︎️ WETH was the biggest flow with $2.1B, and more than double the second biggest flow, which was WETH ↔︎️ Other Coins. Meanwhile, USDC ↔︎️ USDT was the third biggest flow with $476M.\nDuring depeg:\n\nUniswap saw the rise of Stable ↔︎️ Stable pools, specifically is the USDC ↔︎️ USDT flow.\nUSDC ↔︎️ WETH was still the biggest flow with $7.2B (~3x vs Before depeg). However the flow which increased the most was USDC ↔︎️ USDT with $6.3B (~13x vs Before depeg).\nOther noticable increases were USDT ↔︎️ WETH: added $2.8B from $0; USDC ↔︎️ DAI: 43x to $1.5B from $35M.\n\nAfter depeg, the flows looked similar to before depeg.\n\n\nCurve\n\n\n\n\n                                                \n\n\n\n                                                \n\n\n\n                                                \n\n\n\n\nDuring depeg:\n\nUnlike Uniswap, on Curve, Stable ↔︎️ Stable pools are dominant all the time, mostly attributed to USDC ↔︎️ USDT flow.\nThe main difference vs before depeg was flows to and from DAI, which replaced WETH as the third most volume swap-to and swap-from coin.\nTotal liquidity flow in/out DAI 38x to $3.4B from $90M before depeg.\n\n\nAfter depeg, WETH reclaimed the third posistion.\n\n\nOther Dexs\n\n\n\n\n                                                \n\n\n\n                                                \n\n\n\n                                                \n\n\n\nSince depeg began, bb-a-USDC and bb-a-DAI (Balancer Boosted Aave stable coins) have de-throned WETH, and replaced USDC in liquidity flow on Other Dexs."
+  },
+  {
+    "objectID": "blog/posts/uniswap-stablecoin-depeg/index.html#sec-recent",
+    "href": "blog/posts/uniswap-stablecoin-depeg/index.html#sec-recent",
+    "title": "Stablecoin Depeg",
+    "section": "Is USDT the new go-to stablecoin in Defi?",
+    "text": "Is USDT the new go-to stablecoin in Defi?\nTo answer the question, let’s look at share of daily volume flow in/out of stablecoins since Mar 1, 2023 to date.\n\n\n\n\n                                                \n\n\n\n\n\n                                                \n\n\n\nDuring depeg (Mar 11 - Mar 13), USDT was in the trend of closing the gap with USDC in daily volume share:\n\nas low as 6% gap in swap-from volume,\nas low as 8% gap in swap-to volume.\n\nHowever, after depeg, USDC has regained its dominance."
+  },
+  {
     "objectID": "blog/posts/base-supply-side-growth/index.html",
     "href": "blog/posts/base-supply-side-growth/index.html",
     "title": "Base’s Supply Side Growth",
@@ -56,44 +91,9 @@
     "text": "Acknowledgments\n\nThanks to Flipside for being a reliable and powerful source of data. If you want to analyze crypto data, give Flipside a try.\nThanks to doc for helping me comprehending the Base tables in Flipside."
   },
   {
-    "objectID": "blog/posts/xin-chao/index.html",
-    "href": "blog/posts/xin-chao/index.html",
-    "title": "Xin Chào",
-    "section": "",
-    "text": "Chào mừng đến với bài viết đầu tiên của tôi trên blog này. Đây là blog cá nhân và tôi sẽ viết về nhiều chủ đề khác nhau. Tuỳ thuộc vào chủ đề mà ngôn ngữ của bài viết cũng sẽ khác nhau, either English hoặc tiếng Việt 😁."
-  },
-  {
-    "objectID": "blog/posts/uniswap-stablecoin-depeg/index.html",
-    "href": "blog/posts/uniswap-stablecoin-depeg/index.html",
-    "title": "Stablecoin Depeg",
-    "section": "",
-    "text": "During the depeg event on Ethereum:\n\nUSDT price peaked then Dexs volume peaked then depeg stablecoins price bottomed,\nLiquidity flee / Arbitrage peaked on Curve then peaked higher on Uniswap ; from Stable to Non-stable; from USDC to USDT and WETH.\nUSDT is not replacing USDC as the go-to stablecoin onchain."
-  },
-  {
-    "objectID": "blog/posts/uniswap-stablecoin-depeg/index.html#volume-breakdown",
-    "href": "blog/posts/uniswap-stablecoin-depeg/index.html#volume-breakdown",
-    "title": "Stablecoin Depeg",
-    "section": "Volume Breakdown",
-    "text": "Volume Breakdown\n\nBy Dex\n\n\n\n\n                                                \n\n\n\n\n\n                                                \n\n\n\nUniswap and Curve account for more than 90% of total Dexs volume.\nDuring depeg:\n\nAt first, volume on Curve rose faster than on Uniswap (till 1am Mar 11). After that, volume on Uniswap surpassed Curve and peaked when depeged stablecoins made the lowest low.\nCurve saw its share in total Dexs volume 4x to 36% from 9%. Meanwhile, Uniswap’s share decreased to 60% from 85%.\n\n➡️ The liquidity move started on Curve first then Uniswap and Other Dexs.\nAfter depeg, Uniswap regained share from Curve.\n\n\nBy Pool Type\n\n\n\n\n\n\nNote\n\n\n\nStablecoins identified as all coins in the stablecoin list of Defillama here.\n\n\n\n\n\n\n                                                \n\n\n\n\n\n                                                \n\n\n\nDuring depeg:\n\nVolume in Stable ↔︎️ Stable pools rose faster than in Stable ↔︎️ Non-stable pools when depeged stablecoins price were making lower lows. Volume in the latter peaked after but higher than volume in the former ($846M vs $834M per hour).\nWhen depeged stablecoins price started to recover and made higher highs:\n\nVolume in Stable ↔︎️ Non-stable pools dropped rapidly and stayed below $400M per hour. Meanwhile, volume in Stable ↔︎️ Stable pools was more volatile, dropped and rose rapidly, made other 2 highs above $500M.\nVolume in Non-stable ↔︎️ Non-stable pools only peaked at $380M per hour at 9am Mar 13, when USDC and DAI price were about to reclaim $0.99.\n\nOverall, Stable ↔︎️ Stable accounts for more than half total volume, increased to 54% from 16% before depeg. Meanwhile, Stable ↔︎️ Non-stable lost its share in total volume to 38% from 60% before depeg.\n\n➡️ The liquidity move started in Stable ↔︎️ Stable pools first then in Stable ↔︎️ Non-stable, and Non-stable ↔︎️ Non-stable pools.\nAfter depeg, Stable ↔︎️ Non-stable pools regained share from Stable ↔︎️ Stable pools.\n\n\nBy Swap-to Coins\n\n\n\n\n                                                \n\n\n\n\n\n                                                \n\n\n\nTop 4 Swap-to Coins including USDC, USDT, WETH, and DAI account for as high as 91% (during depeg) in total Dexs volume.\nDuring depeg:\n\nBefore 2am Mar 11, when USDC and DAI price were about to breakdown $0.99, volume swap-to USDT was as high if not higher than volume swap-to USDC.\nWhen the prices broke down $0.99, volume swap-to USDC and DAI rose higher while volume swap-to USDT dropped.\n3 stablecoins USDC, USDT, and DAI increased their share in total Dexs volume. Meanwhile, WETH lost the most share to 21% from 36%.\n\n➡️ Liquidity moved to USDT first then to USDC and DAI when their prices broke down $0.99.\nAfter depeg, USDT gained share from USDC in total Dexs volume, increased to 16% from 12%. Meanwhile, USDC’s share decreased to 29% from 34%. However, recently, USDC has been regaining share, see Section 3.3.\nNext, let’s examine net liquidity in-flow in each period to see which coins did traders flee to.\n\n\n\n                                                \n\n\nDuring depeg:\n\nUSDT and WETH saw the most net liquidity in-flow, added $309M and $232M respectively.\nUSDC and Other Coins saw the most net liquidity out-flow, lost $159M and $423M respectively.\n\nAfter the depeg, liquidity flow to USDT, WETH, and USDC reversed.\n➡️ During depeg, before depeg stablecoins price broke down $0.99, the liquidity move started on Curve first (then on Uniswap and other Dexs), where traders fled to USDT from those stablecoins in Stable ↔︎️ Stable pools. When stablecoins price broke down $0.99, traders partially swapped back to those stablecoins and partially swapped to non-stablecoins. When depeg stablecoins price bottomed and then started to recover, liquidity was mostly moved between Stable ↔︎️ Stable, and Stable ↔︎️ Non-stable pools."
-  },
-  {
-    "objectID": "blog/posts/uniswap-stablecoin-depeg/index.html#liquidity-flows",
-    "href": "blog/posts/uniswap-stablecoin-depeg/index.html#liquidity-flows",
-    "title": "Stablecoin Depeg",
-    "section": "Liquidity Flows",
-    "text": "Liquidity Flows\n\n\n\n\n\n\nNote\n\n\n\nIf not specify, liquidity flow of a coin in this section is total of both directions flow-in/out.\n\n\n\nUniswap\n\n\n\n\n                                                \n\n\n\n                                                \n\n\n\n                                                \n\n\n\nBefore depeg, USDC ↔︎️ WETH was the biggest flow with $2.1B, and more than double the second biggest flow, which was WETH ↔︎️ Other Coins. Meanwhile, USDC ↔︎️ USDT was the third biggest flow with $476M.\nDuring depeg:\n\nUniswap saw the rise of Stable ↔︎️ Stable pools, specifically is the USDC ↔︎️ USDT flow.\nUSDC ↔︎️ WETH was still the biggest flow with $7.2B (~3x vs Before depeg). However the flow which increased the most was USDC ↔︎️ USDT with $6.3B (~13x vs Before depeg).\nOther noticable increases were USDT ↔︎️ WETH: added $2.8B from $0; USDC ↔︎️ DAI: 43x to $1.5B from $35M.\n\nAfter depeg, the flows looked similar to before depeg.\n\n\nCurve\n\n\n\n\n                                                \n\n\n\n                                                \n\n\n\n                                                \n\n\n\n\nDuring depeg:\n\nUnlike Uniswap, on Curve, Stable ↔︎️ Stable pools are dominant all the time, mostly attributed to USDC ↔︎️ USDT flow.\nThe main difference vs before depeg was flows to and from DAI, which replaced WETH as the third most volume swap-to and swap-from coin.\nTotal liquidity flow in/out DAI 38x to $3.4B from $90M before depeg.\n\n\nAfter depeg, WETH reclaimed the third posistion.\n\n\nOther Dexs\n\n\n\n\n                                                \n\n\n\n                                                \n\n\n\n                                                \n\n\n\nSince depeg began, bb-a-USDC and bb-a-DAI (Balancer Boosted Aave stable coins) have de-throned WETH, and replaced USDC in liquidity flow on Other Dexs."
-  },
-  {
-    "objectID": "blog/posts/uniswap-stablecoin-depeg/index.html#sec-recent",
-    "href": "blog/posts/uniswap-stablecoin-depeg/index.html#sec-recent",
-    "title": "Stablecoin Depeg",
-    "section": "Is USDT the new go-to stablecoin in Defi?",
-    "text": "Is USDT the new go-to stablecoin in Defi?\nTo answer the question, let’s look at share of daily volume flow in/out of stablecoins since Mar 1, 2023 to date.\n\n\n\n\n                                                \n\n\n\n\n\n                                                \n\n\n\nDuring depeg (Mar 11 - Mar 13), USDT was in the trend of closing the gap with USDC in daily volume share:\n\nas low as 6% gap in swap-from volume,\nas low as 8% gap in swap-to volume.\n\nHowever, after depeg, USDC has regained its dominance."
-  },
-  {
     "objectID": "blog/index.html",
     "href": "blog/index.html",
-    "title": "blog",
+    "title": "🤗",
     "section": "",
     "text": "Stablecoin Depeg\n\n\n\n\n\n\n\nanalysis\n\n\ncrypto\n\n\n\n\nExamine effect of the depeg event on Mar 10, 2023 to Dexs Volume on Ethereum.\n\n\n\n\n\n\nApr 10, 2023\n\n\nLê Quang Phú\n\n\n\n\n\n\n  \n\n\n\n\nBase’s Supply Side Growth\n\n\n\n\n\n\n\nanalysis\n\n\ncrypto\n\n\n\n\nExamine the growth of developers and contracts deployed on Base.\n\n\n\n\n\n\nMar 27, 2023\n\n\nLê Quang Phú\n\n\n\n\n\n\n  \n\n\n\n\nXin Chào\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nMar 26, 2023\n\n\nLê Quang Phú\n\n\n\n\n\n\nNo matching items"
   },
@@ -109,6 +109,6 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "To my parents, I am a dependable son. To my close friends, I am a lake covers with ice, boring and cold at the first impresson, and when the ice breaks …\n95% of my day starts or ends with a workout. Health is my number 1 priority.\nMy motto is taking a lot of bets. And I am learning to do that.\nMy work experience can be summarized as an analyst, currently self-employed and focusing on crypto. Before that I spent a few years in Ecommerce Growth and Corporate Finance."
+    "text": "To my parents, I am a dependable son. To my close friends, I am a lake covers with ice, boring and cold at the first impresson, and when the ice breaks …\n95% of my day starts or ends with a workout. Health is my number 1 priority.\nMy motto is “bet often, manage risk”.\nMy work experience can be summarized as an analyst, currently self-employed and focusing on crypto. Before that I spent a few years in Ecommerce Growth and Corporate Finance."
   }
 ]
