@@ -3,7 +3,7 @@ title: "Stablecoin Depeg"
 description: 'Examine effect of the depeg event on Mar 10, 2023 to Dexs Volume on Ethereum.'
 date: '2023-04-10'
 categories: [analysis, crypto]
-image: 'stablecoins.png'
+image: 'preview.png'
 ---
 
 ```{python}
