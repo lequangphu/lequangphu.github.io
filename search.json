@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "🤗",
     "section": "",
-    "text": "Stablecoin Depeg\n\n\n12 min\n\n\n\nanalysis\n\n\ncrypto\n\n\n\n\nApr 10, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBase’s Supply Side Growth\n\n\n12 min\n\n\n\nanalysis\n\n\ncrypto\n\n\n\n\nMar 27, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nXin Chào\n\n\n0 min\n\n\n\nnews\n\n\n\n\nMar 26, 2023\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Uniswap V3 License Expiry\n\n\n18 min\n\n\n\nanalysis\n\n\ncrypto\n\n\n\n\nMay 1, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nStablecoin Depeg\n\n\n12 min\n\n\n\nanalysis\n\n\ncrypto\n\n\n\n\nApr 10, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBase’s Supply Side Growth\n\n\n12 min\n\n\n\nanalysis\n\n\ncrypto\n\n\n\n\nMar 27, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nXin Chào\n\n\n0 min\n\n\n\nnews\n\n\n\n\nMar 26, 2023\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "blog/posts/xin-chao/index.html",
@@ -12,6 +12,90 @@
     "title": "Xin Chào",
     "section": "",
     "text": "Chào mừng đến với bài viết đầu tiên của tôi trên blog này. Đây là blog cá nhân và tôi sẽ viết về nhiều chủ đề khác nhau. Tuỳ thuộc vào chủ đề mà ngôn ngữ của bài viết cũng sẽ khác nhau, either English hoặc tiếng Việt 😁."
+  },
+  {
+    "objectID": "blog/posts/uniswap-v3-license/index.html",
+    "href": "blog/posts/uniswap-v3-license/index.html",
+    "title": "Uniswap V3 License Expiry",
+    "section": "",
+    "text": "Since the license expiry, 8 protocols have forked Uniswap V3 to create their own V3. By Apr 30, 2023:\n\nUniswap V3 has $2.9B in total TVL on 6 chains. The forks have $263M in total TVL or 9% of Uniswap V3 total TVL.\nThe biggest fork is Pancakeswap V3 with $260M TVL (99% in the forks total TVL).\nPancakeswap V3 is operating on 2 chains: BNB (87% in total Pancakeswap V3 TVL) and Ethereum (13% in Pancakeswap V3 total TVL).\nOn Ethereum, Pancakeswap V3 has $37M TVL, which is 1.5% of $2.4B Uniswap V3 TVL.\nOn BNB, Uniswap V3 has $20M TVL (launched on Mar 16, 2023), which is 9% of $223M Pancakeswap V3 TVL.\n\n\n\nI will examine onchain data since the Expiry, from Apr 1 to Apr 30.\n\nTo examine the impact of the Expiry, I will examine Uniswap V3 performance on 2 chains: Ethereum, and BNB.\nTo see how the forks are doing relative to Uniswap V3, I will compare Uniswap V3 to Pancakeswap V3 on each of Ethereum and BNB chain. To make the comparison more compatible, I will exclude all Uniswap V3 users before the Expiry (i.e. imagine Uniswap V3 launched after the Expiry, the same as the fork)."
+  },
+  {
+    "objectID": "blog/posts/uniswap-v3-license/index.html#on-ethereum",
+    "href": "blog/posts/uniswap-v3-license/index.html#on-ethereum",
+    "title": "Uniswap V3 License Expiry",
+    "section": "On Ethereum",
+    "text": "On Ethereum\n\n\nValue Locked\n\n\n\n\n                                                \n\n\n\n                                                \n\n\nIn the first 11 days, there were more increase LP than decrease LP. And by Apr 11, avl was - $78M. Apr 5 saw the most outflow with - $95M in net value locked.\nThe trend changed on Apr 12, it saw the most inflow with $107M in net value locked. The avl peaked on Apr 21 with $114M then decreased. By Apr 30, avl was $50M.\nMeanwhile, only 3 of 30 days have more increase LP than decrease LP. And the trend of both increase LP and decrease LP were sligthly down.\n\n\nSwap\n\n\n\n\n                                                \n\n\n\n                                                \n\n\nIn the first 14 days, the trend of volume was up. It peaked on Apr 14 with $1.3B. Then it decreased. By Apr 30, it was $482M.\nFee and # swapper peaked at the same time (Apr 19 and Apr 20).\n\nWhich coins drove the surge in # swapper?\n\n\n\n                                                \n\n\nThe surge in # swapper was driven by meme coins such as PEPE, WOJAK, FADE, and MEMEME in their pools with WETH.\n\n\nDid the meme coins help Uniswap V3 acquire more new swapper than other coins?\n\n\n\n                                                \n\n\nYes, % new swapper (= # new swapper / total # swapper) in pools of the meme coins is 1.2x - 2.4x higher than in pools of other coins."
+  },
+  {
+    "objectID": "blog/posts/uniswap-v3-license/index.html#on-bnb",
+    "href": "blog/posts/uniswap-v3-license/index.html#on-bnb",
+    "title": "Uniswap V3 License Expiry",
+    "section": "On BNB",
+    "text": "On BNB\n\n\nValue Locked\n\n\n\n\n                                                \n\n\n\n                                                \n\n\nIn most days, the net value locked was positive. A big outflow day was immediately followed by a big inflow day. By Apr 30, the aggreagate value locked was $1.75M. This is much lower than what is showned on Uniswap V3 website. The reasons are:\n\nI exclude BTCBR coin as its’ price data is wrong, which inflates value locked a lot.\nThe source data I use doesn’t have price data of UITP. The USDT<>UITP TVL is $76M (as shown on Uniswap V3 website), however its 24h volume is only $50. This raises a question that is this fake TVL. How can its 24h volume be so low relative to its TVL. My solution is also excluding UITP from calculating Uniswap V3 TVL on BNB chain.\n\nUnlike on Ethereum, 28 of 30 days have more increase LP than decrease LP."
+  },
+  {
+    "objectID": "blog/posts/uniswap-v3-license/index.html#swap-1",
+    "href": "blog/posts/uniswap-v3-license/index.html#swap-1",
+    "title": "Uniswap V3 License Expiry",
+    "section": "Swap",
+    "text": "Swap\n\n\n\n\n                                                \n\n\n\n                                                \n\n\nVolume, fee, and # swapper basically moved in a range. Volume and fee are more volatile than # swapper, which is healthier than otherwise, in my opinion.\nVolume and fee might be affected by coins’ price volatility, which is normal in crypto. While with # swapper, we can have a clearer picture of swap usage.\nOn Apr 10 and 11, # swapper surged while volume and fee did not.\n\nWhich coins drove the surge in # swapper?\n\n\n\n                                                \n\n\nUSDC, USDT, and WBNB are 3 coins behind the surge in # swapper on Apr 10, 11."
+  },
+  {
+    "objectID": "blog/posts/uniswap-v3-license/index.html#summary",
+    "href": "blog/posts/uniswap-v3-license/index.html#summary",
+    "title": "Uniswap V3 License Expiry",
+    "section": "Summary",
+    "text": "Summary\n\nOn Ethereum and BNB, impact of the Expiry on Uniswap V3 was small and only observable on value locked in the first few days after the Expiry. From Apr 1 to Apr 30, the general trends in value locked and swap activities were either up or plateau.\nDuring Apr 2023, swap activities on Uniswap V3 saw a few surges. On Ethereum, the surge was driven by meme coins. On BNB, the surge was driven by stablecoins."
+  },
+  {
+    "objectID": "blog/posts/uniswap-v3-license/index.html#on-ethereum-1",
+    "href": "blog/posts/uniswap-v3-license/index.html#on-ethereum-1",
+    "title": "Uniswap V3 License Expiry",
+    "section": "On Ethereum",
+    "text": "On Ethereum\n\nValue Locked\n\n\n\n                                                \n\n\n\n                                                \n\n\nFrom Apr 1 to Apr 30, Pancakeswap V3 on Ethereum has $27M in aggregate value locked. This number can also be treated as TVL because Pancakeswap V3 launched on Apr 1.\n4 days after launch, on Apr 4, Pancakeswap V3 saw the most inflow of value locked per day with $5.5M net value locked. However, value locked inflow lost momentum after that. On Apr 30, Pancakeswap V3 saw the most outflow in value locked per day with - $10M net value locked.\n# liquidity provider surged in first 4 days, peaked on Apr 4 with 77 LPs who increased value locked, and 44 LPs who decreased value locked. Since then, the numbers were in downward slopes. By Apr 30, the numbers were 18 increase LPs and 14 decrease LPs.\nMost of the time in Apr, there were more LPs who increased their value locked than LPs who decreased their value locked.\n\n\nSwap\n\n\n\n                                                \n\n\n\n                                                \n\n\nDuring 2 weeks after launch, volume and fee were rising and peaked on Apr 14 with $9.4M in volume and $7K in fee. After that, the numbers decreased. By Apr 30, they are $4.5M in volume and $2.6K in fee.\nUnlike volume and fee, # swapper kept rising during the period. On Apr 30, it peaked at 720 # swapper per day."
+  },
+  {
+    "objectID": "blog/posts/uniswap-v3-license/index.html#on-bnb-1",
+    "href": "blog/posts/uniswap-v3-license/index.html#on-bnb-1",
+    "title": "Uniswap V3 License Expiry",
+    "section": "On BNB",
+    "text": "On BNB\n\nValue Locked\n\n\n\n                                                \n\n\n\n                                                \n\n\nBy Apr 30, Pancakeswap V3 on BNB has $214M in aggregate value locked. And the trend is similar to Ethereum, where net value locked per day peaked early on Apr 3, then lost momentum.\n# liquidity provider (LP) also peaked early on Apr 4 with 2.3K # LPs who increased value locked, and 1K # LPs who decreased value locked. By Apr 30, the former was down to 987 # LPs and the latter was down to 747 # LPs.\nIncrease LPs was always greater than decrease LPs during the period.\n\n\nSwap\n\n\n\n                                                \n\n\n\n                                                \n\n\nFrom Apr 1 to Apr 21, volume and fee were in upward slopes. Volume surpassed $100M on Apr 10, peaked at $200M on Apr 21. After that, it gradually decreased. On Apr 30, it was $138M.\n# swapper peaked 5 days later than volume on Apr 26 with 31.5K # swapper. Overall, the trend is up."
+  },
+  {
+    "objectID": "blog/posts/uniswap-v3-license/index.html#summary-1",
+    "href": "blog/posts/uniswap-v3-license/index.html#summary-1",
+    "title": "Uniswap V3 License Expiry",
+    "section": "Summary",
+    "text": "Summary\nOn Ethereum and BNB:\n\nValue locked acitivities of Pancakeswap V3 saw a good start in the first 4 days. Both net value locked per day and # LP per day peaked on Apr 4. Then they decreased.\nSwap activities have a healthier trend, were generally up from Apr 1 to Apr 30."
+  },
+  {
+    "objectID": "blog/posts/uniswap-v3-license/index.html#on-ethereum-2",
+    "href": "blog/posts/uniswap-v3-license/index.html#on-ethereum-2",
+    "title": "Uniswap V3 License Expiry",
+    "section": "On Ethereum",
+    "text": "On Ethereum\n\nValue Locked\n\n\n\n\n                                                \n\n\n\n\n\n\n                                                \n\n\nBy Apr 30, Uniswap V3 grew much faster than Pancakeswap V3 in term of aggregate lp and tvl.\n\nalmost 6x in # aggregate lps (2.8K vs. 500).\nalmost 4x in $ tvl ($104M vs. $27M).\n\n\n\nSwap\n\n\n\n\n                                                \n\n\n\n\n\n\n                                                \n\n\nBy Apr 30, Uniswap V3 grew much faster than Pancakeswap V3 in term of aggregate swapper and volume.\n\n20x in # aggregate swapper (82K vs. 3.7K).\n10x in $ volume per day when comparing highest days ($106M vs. $9.5M)."
+  },
+  {
+    "objectID": "blog/posts/uniswap-v3-license/index.html#on-bnb-2",
+    "href": "blog/posts/uniswap-v3-license/index.html#on-bnb-2",
+    "title": "Uniswap V3 License Expiry",
+    "section": "On BNB",
+    "text": "On BNB\n\nValue Locked\n\n\n\n\n                                                \n\n\n\n\n\n\n                                                \n\n\nThe picture is opposite on BNB. By Apr 30, Pancakeswap V3 grew much faster than Uniswap V3 both in term of aggregate lp and tvl.\n\nalmost 20x in # aggregate lp (22K vs. 1.4K).\nalmost 40x in $ tvl ($224M vs. $6M).\n\n\n\nSwap\n\n\n\n\n                                                \n\n\n\n\n\n\n                                                \n\n\nUnlike the situation on Ethereum, by Apr 30, Pancakeswap V3 grew much faster than Uniswap V3 both in term of aggregate swapper and volume.\n\n20x in # aggregate swapper (390K vs. 19K).\n20x in $ volume per day when comparing highest days ($200M vs. $9.5M)."
+  },
+  {
+    "objectID": "blog/posts/uniswap-v3-license/index.html#pancakeswap-v3-users-who-are-also-uniswap-v3-users",
+    "href": "blog/posts/uniswap-v3-license/index.html#pancakeswap-v3-users-who-are-also-uniswap-v3-users",
+    "title": "Uniswap V3 License Expiry",
+    "section": "Pancakeswap V3 Users who are also Uniswap V3 Users",
+    "text": "Pancakeswap V3 Users who are also Uniswap V3 Users\n\n\n\n\n                                                \n\n\nMore than 1/10 of Pancakeswap V3 LP on Ethereum are Uniswap V3 LP. The number is only 3% on BNB.\n\n\n\n\n                                                \n\n\nMore than 1/5 of Pancakeswap V3 Swapper on Ethereum are Uniswap V3 Swapper. The number is only 1% on BNB."
+  },
+  {
+    "objectID": "blog/posts/uniswap-v3-license/index.html#summary-2",
+    "href": "blog/posts/uniswap-v3-license/index.html#summary-2",
+    "title": "Uniswap V3 License Expiry",
+    "section": "Summary",
+    "text": "Summary\nSince the Expiry:\n\nOn Ethereum, Uniswap V3 is growing much faster than Pancakeswap V3 (up to 4x in tvl and 20x in swap volume).\nIt’s the opposite on BNB, where Pancakeswap V3 is growing much faster than Uniswap V3 with bigger gap than Ethereum (up to 40x in tvl and 20 x in swap volume).\nAs Uniswap V3 user base on Ethereum is much larger than on BNB, the overlap between Pancakeswap V3 user base on Ethereum is also much larger than on BNB."
   },
   {
     "objectID": "blog/posts/uniswap-stablecoin-depeg/index.html",
@@ -95,7 +179,7 @@
     "href": "blog/index.html",
     "title": "🤗",
     "section": "",
-    "text": "Stablecoin Depeg\n\n\n\n\n\n\n\nanalysis\n\n\ncrypto\n\n\n\n\nExamine effect of the depeg event on Mar 10, 2023 to Dexs Volume on Ethereum.\n\n\n\n\n\n\nApr 10, 2023\n\n\nLê Quang Phú\n\n\n\n\n\n\n  \n\n\n\n\nBase’s Supply Side Growth\n\n\n\n\n\n\n\nanalysis\n\n\ncrypto\n\n\n\n\nExamine the growth of developers and contracts deployed on Base.\n\n\n\n\n\n\nMar 27, 2023\n\n\nLê Quang Phú\n\n\n\n\n\n\n  \n\n\n\n\nXin Chào\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nMar 26, 2023\n\n\nLê Quang Phú\n\n\n\n\n\n\nNo matching items"
+    "text": "Uniswap V3 License Expiry\n\n\n\n\n\n\n\nanalysis\n\n\ncrypto\n\n\n\n\n\n\n\n\n\n\n\nMay 1, 2023\n\n\nLê Quang Phú\n\n\n\n\n\n\n  \n\n\n\n\nStablecoin Depeg\n\n\n\n\n\n\n\nanalysis\n\n\ncrypto\n\n\n\n\nExamine effect of the depeg event on Mar 10, 2023 to Dexs Volume on Ethereum.\n\n\n\n\n\n\nApr 10, 2023\n\n\nLê Quang Phú\n\n\n\n\n\n\n  \n\n\n\n\nBase’s Supply Side Growth\n\n\n\n\n\n\n\nanalysis\n\n\ncrypto\n\n\n\n\nExamine the growth of developers and contracts deployed on Base.\n\n\n\n\n\n\nMar 27, 2023\n\n\nLê Quang Phú\n\n\n\n\n\n\n  \n\n\n\n\nXin Chào\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nMar 26, 2023\n\n\nLê Quang Phú\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "blog/about.html",
