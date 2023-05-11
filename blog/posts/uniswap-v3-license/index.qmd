@@ -894,3 +894,11 @@ Since the Expiry:
 -   It's the opposite on BNB, where Pancakeswap V3 is growing much faster than Uniswap V3 with bigger gap than Ethereum (up to 40x in tvl and 20 x in swap volume).
 
 -   As Uniswap V3 user base on Ethereum is much larger than on BNB, the overlap between Pancakeswap V3 user base on Ethereum is also much larger than on BNB.
+
+# Conclusion
+
+Though the V3 license expired, the forks are be launched, with 2 years of a head start, Uniswap V3 is fine and still going strong on Ethereum. On BNB, on the other hand, Pancakeswap is still the dominant Dex, in part Uniswap V3 just launched 2 months ago in early Mar 2023.
+
+# Appendix {.appendix}
+
+-   [Data source](https://flipsidecrypto.xyz/) and [Queries](https://github.com/lequangphu/lequangphu.github.io/tree/main/blog/posts/uniswap-v3-license/resource).
