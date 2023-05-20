@@ -1,2 +1,4 @@
-.quarto/
-_site/
+/.quarto/
+/_site/
+/_freeze/
+/site_libs/

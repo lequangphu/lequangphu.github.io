@@ -1,4 +1,6 @@
-.quarto/
-_site/
-.venv/
-.vscode/
+/.quarto/
+/_site/
+/.venv/
+/.vscode/
+/.secrets/
+/_freeze/
