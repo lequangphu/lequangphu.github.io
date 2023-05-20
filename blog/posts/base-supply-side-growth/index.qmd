@@ -70,9 +70,9 @@ fig.add_trace(
     go.Bar(
         x=df_tx_status['blocktime'],
         y=df_tx_status['total_txs'],
-        hovertemplate='<br><b>Date:</b> %{x| %b-%d} <br>'
-                      '<b>Total Transactions:</b> %{y:,.0f} <br>'
-                      '<b>Fail Transactions:</b> %{customdata[2]:,.0f} <br>',
+        hovertemplate='<br>Date: %{x| %b-%d} <br>'
+                      'Total Transactions: %{y:,.0f} <br>'
+                      'Fail Transactions: %{customdata[2]:,.0f} <br>',
         customdata=df_tx_status[['success_txs', 'success_pct', 'fail_txs', 'fail_pct']].values,
         name='Total Transactions'
     ),
@@ -87,8 +87,8 @@ fig.add_trace(
         y=df_tx_status['fail_pct'],
         mode='lines',
         line=dict(color='red'),
-        hovertemplate='<br><b>Date:</b> %{x| %b-%d} <br>'
-                      '<b>Fail Rate:</b> %{y:.0%} <br>',
+        hovertemplate='<br>Date: %{x| %b-%d} <br>'
+                      'Fail Rate: %{y:.0%} <br>',
         name='Fail Rate'
     ),
     row=1,
@@ -98,10 +98,11 @@ fig.add_trace(
 
 # Update layout
 fig.update_layout(
-    xaxis=dict(title='Date', tickformat='%b-%d'),
-    yaxis=dict(title='Total Transactions', tickformat=',.0f'),
-    yaxis2=dict(title='Fail Rate', tickformat='.0%'),
+    xaxis=dict(title='Day', tickformat='%b-%d'),
+    yaxis=dict(title='# Transactions', tickformat=',.0f'),
+    yaxis2=dict(title='Fail Rate', tickformat='.0%', showgrid=False),
     title='Total Transactions & Fail Rate Over Time',
+    legend=dict(x=0.3, y=1.1, orientation='h'),
     hovermode='x unified'
 )
 
@@ -132,7 +133,7 @@ fig = px.pie(
 
 # Update layout
 fig.update_traces(
-    hovertemplate='<b>%{label}</b><br>'
+    hovertemplate='%{label}<br>'
                   'Transaction: %{value:,.0f}<br>'
                   '% in Total: %{customdata:.0%}<br>'
 )
@@ -189,9 +190,10 @@ fig = go.Figure(data=traces)
 
 # Update layout
 fig.update_layout(
-    xaxis=dict(title='Date', tickformat='%b-%d'),
-    yaxis=dict(title='Aggregate Contracts', tickformat=',.0f'),
+    xaxis=dict(title='Day', tickformat='%b-%d'),
+    yaxis=dict(title='# Contracts', tickformat=',.0f'),
     title='Aggregate Contracts Over Time',
+    legend=dict(x=0.2, y=1.1, orientation='h'),
     hovermode='x unified'
 )
 
@@ -239,9 +241,10 @@ fig = px.line(
 
 # Update layout
 fig.update_layout(
-    xaxis=dict(title='Date', tickformat='%b-%d'),
-    yaxis=dict(title='Conversion Rate', tickformat='.1%', range=[0, 1]),
+    xaxis=dict(title='Day', tickformat='%b-%d'),
+    yaxis=dict(title='Conversion Rate', tickformat='.1%'),
     title='Conversion Rate Over Time',
+    legend=dict(x=0.2, y=1.05, orientation='h'),
     hovermode='x unified'
 )
 
@@ -293,13 +296,14 @@ fig = px.area(
 )
 
 # Update hovertemplate to make hover information easier to read
-fig.update_traces(hovertemplate='<b>Date:</b> %{x}<br><b>Aggregate Developers:</b> %{y:,.0f}')
+fig.update_traces(hovertemplate='Date: %{x}<br>Aggregate Developers: %{y:,.0f}')
 
 # Update layout
 fig.update_layout(
     xaxis=dict(title='Date', tickformat='%b-%d'),
     yaxis=dict(title='Aggregate Developers', tickformat=',.0f'),
     title='Aggregate Developers Over Time',
+    legend=dict(x=0.3, y=1.05, orientation='h'),
     hovermode='x unified'
 )
 
@@ -484,6 +488,7 @@ fig.update_layout(
     xaxis=dict(title='Members', tickformat=',.0f'),
     yaxis=dict(title='Role Name'),
     title='Base Guild.XYZ Members',
+    showlegend=False,
     hovermode='closest'
 )
 

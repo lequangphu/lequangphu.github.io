@@ -1,0 +1,33 @@
+---
+title: 'Uniswap Meme Coin Mania'
+description: ''
+date: '2023-06-01'
+categories: [analysis, crypto]
+image: ''
+---
+
+# Context
+
+As of May 20, 2023, there are 706 meme coins listed on coinmarketcap.
+
+> What is a meme coin? A meme coin is a cryptocurrency that doesn't take itself as seriously as leading digital currencies like Bitcoin and Ethereum. Dogecoin (DOGE) - widely regarded as the first meme cryptocurrency. A meme coin doesn't need to have a purpose that is as closely tied to their underlying value, like Bitcoin and Ethereum. A meme coin often seems to have the sole purpose of "going to the moon," a phrase popularized by Dogecoin's skyrocketing price in early 2021.
+
+Started on Apr 14, interest in meme coins surged, leading by PEPE, TURBO, and WOJAK. The meme coin mania has pushed Uniswap' trading volume above Coinbase's trading volume in recent days.
+
+## In this analysis
+
+I answer a few questions below:
+
+-   Did the increase in popularity of Memecoins attract new users to the Uniswap platform?
+
+-   Who are the participants actively engaging with Memecoins on Uniswap? How are the whales behaving, do they have a big impact on the market?
+
+-   Has the introduction of Memecoins led to an increase or decrease in the number of pairs created on Uniswap? Are there any notable trends or preferences in terms of the Memecoin pairs being created?
+
+-   Did the rise of Memecoins have any discernible effect on the activity and liquidity of "normal" pairs on Uniswap? Are there any correlations or shifts in trading behavior?
+
+# Key Highlights
+
+# The Rise of Meme
+
+<iframe src="https://dune.com/embeds/2492014/4099854" height="500" width="500" title="[name-of-your-query]"></iframe>
