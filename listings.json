@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/blog/posts/uniswap-memecoin-mania/index.html",
       "/blog/posts/uniswap-v3-license/index.html",
       "/blog/posts/uniswap-stablecoin-depeg/index.html",
       "/blog/posts/base-supply-side-growth/index.html",
@@ -11,6 +12,7 @@
   {
     "listing": "/blog/index.html",
     "items": [
+      "/blog/posts/uniswap-memecoin-mania/index.html",
       "/blog/posts/uniswap-v3-license/index.html",
       "/blog/posts/uniswap-stablecoin-depeg/index.html",
       "/blog/posts/base-supply-side-growth/index.html",
