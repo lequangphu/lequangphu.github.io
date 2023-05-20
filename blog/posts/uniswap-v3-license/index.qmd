@@ -4,6 +4,8 @@ description: ''
 date: '2023-05-01'
 categories: [analysis, crypto]
 image: 'preview.jpeg'
+execute:
+  freeze: true  # never re-render during project render
 ---
 
 <!-- Preparation -->

@@ -4,6 +4,8 @@ description: 'Examine effect of the depeg event on Mar 10, 2023 to Dexs Volume o
 date: '2023-04-10'
 categories: [analysis, crypto]
 image: 'preview.png'
+execute:
+  freeze: true  # never re-render during project render
 ---
 
 ```{python}
