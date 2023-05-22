@@ -12,10 +12,23 @@ jobs:
       contents: write
     steps:
       - name: Check out repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v2
 
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
+
+      - name: Install Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+      
+      - name: Create, then activate virtual environment
+        run: python3 -m venv .venv
+        run: source .venv/bin/activate
+
+      - name: Install Dependencies
+        run: pip install -r requirements.txt
 
       - name: Render and Publish
         uses: quarto-dev/quarto-actions/publish@v2
