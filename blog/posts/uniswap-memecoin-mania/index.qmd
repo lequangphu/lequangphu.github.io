@@ -92,6 +92,7 @@ When meme swappers returned, more than half of their acitivities were in the mem
 :::{layout-ncol=2}
 
 <iframe src="https://dune.com/embeds/2496472/4107727" width="400" height="400"></iframe>
+
 <iframe src="https://dune.com/embeds/2496472/4107714" width="400" height="400"></iframe>
 
 :::

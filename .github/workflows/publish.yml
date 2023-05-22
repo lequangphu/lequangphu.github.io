@@ -17,16 +17,12 @@ jobs:
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
 
-      - name: Install Python, create, then activate virtual environment
+      - name: Install Python Dependencies
         uses: actions/setup-python@v4
         with:
           python-version: '3.11'
           cache: 'pip'
-      - run: python3 -m venv .venv
-      - run: source .venv/bin/activate
-
-      - name: Install Dependencies
-        run: pip install -r requirements.txt
+      - run: pip install -r requirements.txt
 
       - name: Render and Publish
         uses: quarto-dev/quarto-actions/publish@v2
