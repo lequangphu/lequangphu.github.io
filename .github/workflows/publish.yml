@@ -17,13 +17,11 @@ jobs:
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
 
-      - name: Install Python
+      - name: Install Python, create, then activate virtual environment
         uses: actions/setup-python@v4
         with:
           python-version: '3.11'
           cache: 'pip'
-      
-      - name: Create, then activate virtual environment
       - run: python3 -m venv .venv
       - run: source .venv/bin/activate
 
