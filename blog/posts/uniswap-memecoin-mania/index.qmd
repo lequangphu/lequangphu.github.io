@@ -40,21 +40,21 @@ PEPE, TURBO, and WOJAK represent all of meme coins on Ethereum.
 
 On Ethereum, at its peak, meme pools acounted for 1/3 in total trading volume.
 
-<iframe src="https://dune.com/embeds/2492014/4099854" width="600" height="300"></iframe>
+<iframe src="https://dune.com/embeds/2492014/4099854" width="800" height="400"></iframe>
 
 And their share is a bit higher at 37% in total swapper.
 
-<iframe src="https://dune.com/embeds/2492014/4099858" width="600" height="300"></iframe>
+<iframe src="https://dune.com/embeds/2492014/4099858" width="800" height="400"></iframe>
 
 While only accounted for up to 1/5 in total transaction. Which means those who joined the mania were more aggressive in trading size than those who didn't.
 
-<iframe src="https://dune.com/embeds/2492014/4102957" width="600" height="300"></iframe>
+<iframe src="https://dune.com/embeds/2492014/4102957" width="800" height="400"></iframe>
 
 ## How much of those happened on Uniswap?
 
-The mania happened on 6 Dexs, and only 1% of trading activities didn't happen on Uniswap as seen in the bubble chart below. The pink buble is so much bigger, and so far away from the rest.
+The mania happened on 6 Dexs, and only 2% of trading activities didn't happen on Uniswap as seen in the bubble chart below. The pink buble is so much bigger, and so far away from the rest.
 
-<iframe src="https://dune.com/embeds/2493840/4102979" width="600" height="300"></iframe>
+<iframe src="https://dune.com/embeds/2493840/4102979" width="800" height="400"></iframe>
 
 So the mania on Ethereum was basically the mania on Uniswap. Let's look into its effects on Uniswap.
 
@@ -64,11 +64,11 @@ So the mania on Ethereum was basically the mania on Uniswap. Let's look into its
 
 The rise in total new swapper was highly correlated to the rise of % share of meme pools in total new swapper. At its peak, meme pools accounted for almost half of total new swapper.
 
-<iframe src="https://dune.com/embeds/2493899/4103138" width="600" height="300"></iframe>
+<iframe src="https://dune.com/embeds/2493899/4103138" width="800" height="400"></iframe>
 
 In a few days that trading activities of meme coins surged, % share of new swapper in meme pools rose higher than that in other pools, the difference can be as high as 1.5x (20% vs. 14%).
 
-<iframe src="https://dune.com/embeds/2493956/4103153" width="600" height="300"></iframe>
+<iframe src="https://dune.com/embeds/2493956/4103153" width="800" height="400"></iframe>
 
 Thus, it is safe to say that the mania did attract new swapper to Uniswap.
 
@@ -81,5 +81,17 @@ Retention Rate
 
 Retention rate of meme swappers in the first 3 weeks is 2x of Uniswap average. However, from week 4th, the trend appears to drop faster than Uniswap average.
 
-<iframe src="https://dune.com/embeds/2496227/4107513" width="600" height="300"></iframe>
+<iframe src="https://dune.com/embeds/2496227/4107513" width="800" height="400"></iframe>
 
+So meme swappers are more sticky than the average swapper on Uniswap, at least in their first 3 weeks.
+
+### When they returned, what did they return for?
+
+When meme swappers returned, more than half of their acitivities were in the meme pools. However, those activities only accounted for 40% in their total return volume.
+
+:::{layout-ncol=2}
+
+<iframe src="https://dune.com/embeds/2496472/4107727" width="400" height="400"></iframe>
+<iframe src="https://dune.com/embeds/2496472/4107714" width="400" height="400"></iframe>
+
+:::
