@@ -147,7 +147,7 @@ While whale traders have volume range of $1M - $10M, age range of 2 - 107 weeks 
 
 -   $1M - $3M in volume.
 
--   2 - 6 weeks old, 65 weeks old, & 105 - 107 weeks old.
+-   2 - 6 weeks old, 39 weeks old, 65 weeks old, & 105 - 107 weeks old.
 
 :::{.column-page-right}
 
@@ -155,7 +155,17 @@ While whale traders have volume range of $1M - $10M, age range of 2 - 107 weeks 
 
 :::
 
-**0xf1d307906edc902dc2c392af2880f43a55d3583a** is 2 weeks old, has $115M in total volume, and is the biggest meme trader on Uniswap.
+Most of whale traders swap $100K or less per trade, and 100 times per week.
+
+:::{.column-page-right}
+
+<iframe src="https://dune.com/embeds/2506062/4125909" width="1600" height="400"></iframe>
+
+:::
+
+Blue whale **0xf1d307906edc902dc2c392af2880f43a55d3583a** is 2 weeks old, has $115M in total volume, and is the biggest meme trader on Uniswap.
+
+Blue whale **0x5b7cdd3ead9f61a0b4eede5992a25e4400fb2d03** is 106 weeks old, has $15M in total volume, and is the oldest blue whale.
 
 The most active cluster is 39 weeks old with 4 blue whales. Following by the 65 weeks old cluster with 2 blue whales.
 
@@ -164,5 +174,13 @@ The general trend is the older a blue whale is the less volume traded.
 :::{.column-page-right}
 
 <iframe src="https://dune.com/embeds/2506075/4123915" width="1600" height="400"></iframe>
+
+:::
+
+Most of blue whale traders swap $70K or less per trade, and 200 times or less per week. What differentiate blue whale traders from whale traders is trade frequency, not trade size. However, **0xf1d307906edc902dc2c392af2880f43a55d3583a** becomes the biggest trader by trading more than 1k times per week, the highest frequency, average $50K per trade. A quick check on etherscan shows that this trader is actually a bot which has a lot of MEV transactions.
+
+:::{.column-page-right}
+
+<iframe src="https://dune.com/embeds/2506075/4125924" width="1600" height="400"></iframe>
 
 :::
