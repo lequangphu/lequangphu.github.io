@@ -125,9 +125,9 @@ Meanwhile, there are 288 whale traders, with $1.3B in total volume, this is more
 
 <iframe src="https://dune.com/embeds/2506397/4124458" width="800" height="400"></iframe>
 
-The most active retail traders cluster is 6 weeks old or less, range from small to big. Outside of this cluster, retail traders mostly populate in the lower half of normal group.
+Trader's volume & age of 3 trader groups: retail, degen, & chad are quite similar to one another. The most active traders cluster is 6 weeks old or less, range from small to big.
 
-Along the age range, the 20-60 weeks old retail traders are noticably less active than the others in term of both volume and # traders.
+Additionally, the 20-60 weeks old retail traders are noticably less active than the others in term of both volume and # traders.
 
 :::{.column-page-right}
 
@@ -143,11 +143,23 @@ Along the age range, the 20-60 weeks old retail traders are noticably less activ
 
 <iframe src="https://dune.com/embeds/2506414/4124482" width="800" height="400"></iframe>
 
+While whale traders have volume range of $1M - $10M, age range of 2 - 107 weeks old, top 3 most active clusters have a few characteristics below:
+
+-   $1M - $3M in volume.
+
+-   2 - 6 weeks old, 65 weeks old, & 105 - 107 weeks old.
+
 :::{.column-page-right}
 
 <iframe src="https://dune.com/embeds/2506062/4123884" width="1600" height="400"></iframe>
 
 :::
+
+**0xf1d307906edc902dc2c392af2880f43a55d3583a** is 2 weeks old, has $115M in total volume, and is the biggest meme trader on Uniswap.
+
+The most active cluster is 39 weeks old with 4 blue whales. Following by the 65 weeks old cluster with 2 blue whales.
+
+The general trend is the older a blue whale is the less volume traded.
 
 :::{.column-page-right}
 
