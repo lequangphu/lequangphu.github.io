@@ -143,6 +143,8 @@ Additionally, the 20-60 weeks old retail traders are noticably less active than 
 
 <iframe src="https://dune.com/embeds/2506414/4124482" width="800" height="400"></iframe>
 
+#### Whale
+
 While whale traders have volume range of $1M - $10M, age range of 2 - 107 weeks old, top 3 most active clusters have a few characteristics below:
 
 -   $1M - $3M in volume.
@@ -151,7 +153,7 @@ While whale traders have volume range of $1M - $10M, age range of 2 - 107 weeks 
 
 :::{.column-page-right}
 
-<iframe src="https://dune.com/embeds/2506062/4123884" width="1600" height="400"></iframe>
+<iframe src="https://dune.com/embeds/2506062/4123884" width="800" height="400"></iframe>
 
 :::
 
@@ -159,9 +161,11 @@ Most of whale traders swap $100K or less per trade, and 100 times per week.
 
 :::{.column-page-right}
 
-<iframe src="https://dune.com/embeds/2506062/4125909" width="1600" height="400"></iframe>
+<iframe src="https://dune.com/embeds/2506062/4125909" width="800" height="400"></iframe>
 
 :::
+
+#### Blue Whale
 
 Blue whale **0xf1d307906edc902dc2c392af2880f43a55d3583a** is 2 weeks old, has $115M in total volume, and is the biggest meme trader on Uniswap.
 
@@ -173,14 +177,16 @@ The general trend is the older a blue whale is the less volume traded.
 
 :::{.column-page-right}
 
-<iframe src="https://dune.com/embeds/2506075/4123915" width="1600" height="400"></iframe>
+<iframe src="https://dune.com/embeds/2506075/4123915" width="800" height="400"></iframe>
 
 :::
 
-Most of blue whale traders swap $70K or less per trade, and 200 times or less per week. What differentiate blue whale traders from whale traders is trade frequency, not trade size. However, **0xf1d307906edc902dc2c392af2880f43a55d3583a** becomes the biggest trader by trading more than 1k times per week, the highest frequency, average $50K per trade. A quick check on etherscan shows that this trader is actually a bot which has a lot of MEV transactions.
+Most of blue whale traders swap $70K or less per trade, and 200 times or less per week. What differentiate blue whale traders from whale traders is trade frequency, not trade size.
+
+However, **0xf1d307906edc902dc2c392af2880f43a55d3583a** becomes the biggest trader by trading more than 1k times per week, the highest frequency, average $50K per trade. A quick check on etherscan shows that this trader is actually a bot which has a lot of MEV transactions.
 
 :::{.column-page-right}
 
-<iframe src="https://dune.com/embeds/2506075/4125924" width="1600" height="400"></iframe>
+<iframe src="https://dune.com/embeds/2506075/4125924" width="800" height="400"></iframe>
 
 :::
