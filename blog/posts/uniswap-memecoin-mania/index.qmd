@@ -121,35 +121,19 @@ Meanwhile, there are 288 whale traders, with $1.3B in total volume, this is more
 
 <iframe src="https://dune.com/embeds/2506219/4124436" width="800" height="400"></iframe>
 
-### Retail Trader
-
-The biggest cluster of retail trader is 1-5 weeks old, range from small to big. Outside of this cluster, retail traders mostly populate in the lower half of normal group.
-
-Along the age range, the 20-60 weeks old retail traders are noticably less active than the others in term of both volume and # traders.
+### Retail, Degen, & Chad Trader
 
 <iframe src="https://dune.com/embeds/2506397/4124458" width="800" height="400"></iframe>
+
+The most active retail traders cluster is 6 weeks old or less, range from small to big. Outside of this cluster, retail traders mostly populate in the lower half of normal group.
+
+Along the age range, the 20-60 weeks old retail traders are noticably less active than the others in term of both volume and # traders.
 
 :::{.column-page-right}
 
 <iframe src="https://dune.com/embeds/2503542/4119790" width="1600" height="400"></iframe>
 
-:::
-
-### Degen Trader
-
-<iframe src="https://dune.com/embeds/2506405/4124469" width="800" height="400"></iframe>
-
-:::{.column-page-right}
-
 <iframe src="https://dune.com/embeds/2504108/4120334" width="1600" height="400"></iframe>
-
-:::
-
-### Chad Trader
-
-<iframe src="https://dune.com/embeds/2506411/4124478" width="800" height="400"></iframe>
-
-:::{.column-page-right}
 
 <iframe src="https://dune.com/embeds/2506417/4124489" width="1600" height="400"></iframe>
 
