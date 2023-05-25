@@ -214,7 +214,7 @@
     "href": "blog/posts/uniswap-memecoin-mania/index.html#trader-of-meme",
     "title": "Uniswap Meme Coin Mania",
     "section": "Trader of Meme",
-    "text": "Trader of Meme\n\nWho are they?\n\n\n\n\n\n\n&lt;/div&gt;\n&lt;div class=\"quarto-figure-spacer quarto-layout-cell\" style=\"flex-basis: 10.0%;justify-content: center;\"&gt;\n&lt;p&gt; &lt;/p&gt;\n&lt;/div&gt;\n&lt;div class=\"quarto-layout-cell\" style=\"flex-basis: 45.0%;justify-content: center;\"&gt;\n\n\n\n\n\n\n&lt;/div&gt;\n&lt;div class=\"quarto-figure-spacer quarto-layout-cell\" style=\"flex-basis: 10.0%;justify-content: center;\"&gt;\n&lt;p&gt; &lt;/p&gt;\n&lt;/div&gt;\n&lt;div class=\"quarto-layout-cell\" style=\"flex-basis: 45.0%;justify-content: center;\"&gt;"
+    "text": "Trader of Meme\n\nWho are they?\nLooking at volume and # trader by volume per trader, we can see that most of volume is in the buckets &gt; $100K per trader. Meanwhile, most of trader is in the buckets &lt; $1K per trader.\n\n\nTo get better insights, let’s break them down further. Here I use IQR to group and find outliers. The result is meme traders grouped by trader types, separated by volume range, with summary table below.\n\n\nThere are 114K retail traders, account for 85% of total # trader, with $102M in total volume, this is less than volume of the biggest meme trader.\nMeanwhile, there are 288 whale traders, with $1.3B in total volume, this is more than the other 3 trader types combined.\n\n\n\n\n\n\n\n\nRetail Trader\n\n\n\n\n\n\nDegen Trader\n\n\n\n\n\n\nChad Trader\n\n\n\n\n\n\nWhale Trader"
   },
   {
     "objectID": "blog/about.html",
@@ -228,7 +228,7 @@
     "href": "index.html",
     "title": "🤗",
     "section": "",
-    "text": "Uniswap Meme Coin Mania\n\n\n4 min\n\n\n\nanalysis\n\n\ncrypto\n\n\n\n\nJun 1, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nUniswap V3 License Expiry\n\n\n20 min\n\n\n\nanalysis\n\n\ncrypto\n\n\n\n\nMay 1, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nStablecoin Depeg\n\n\n13 min\n\n\n\nanalysis\n\n\ncrypto\n\n\n\n\nApr 10, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBase’s Supply Side Growth\n\n\n13 min\n\n\n\nanalysis\n\n\ncrypto\n\n\n\n\nMar 27, 2023\n\n\n\n\n\n\n\n\n\n\n\n\nXin Chào\n\n\n1 min\n\n\n\nnews\n\n\n\n\nMar 26, 2023\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Uniswap Meme Coin Mania\n\n\n5 min\n\n\n\nanalysis\n\n\ncrypto\n\n\n\n\nJun 1, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nUniswap V3 License Expiry\n\n\n20 min\n\n\n\nanalysis\n\n\ncrypto\n\n\n\n\nMay 1, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nStablecoin Depeg\n\n\n13 min\n\n\n\nanalysis\n\n\ncrypto\n\n\n\n\nApr 10, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBase’s Supply Side Growth\n\n\n13 min\n\n\n\nanalysis\n\n\ncrypto\n\n\n\n\nMar 27, 2023\n\n\n\n\n\n\n\n\n\n\n\n\nXin Chào\n\n\n1 min\n\n\n\nnews\n\n\n\n\nMar 26, 2023\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
