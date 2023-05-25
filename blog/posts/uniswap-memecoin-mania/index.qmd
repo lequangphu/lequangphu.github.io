@@ -109,7 +109,7 @@ Looking at volume and # trader by volume per trader, we can see that most of vol
 
 To get better insights, let's break them down further. Here I use [IQR](https://en.wikipedia.org/wiki/Interquartile_range#Outliers) to group and find outliers. The result is meme traders grouped by trader types, separated by volume range, with summary table below.
 
-<iframe src="https://dune.com/embeds/2506179/4124159" width="800" height="400"></iframe>
+<iframe src="https://dune.com/embeds/2506179/4124159" width="800" height="300"></iframe>
 
 There are 114K retail traders, account for 85% of total # trader, with $102M in total volume, this is less than volume of the biggest meme trader.
 
@@ -141,7 +141,7 @@ Additionally, the 20-60 weeks old retail traders are noticably less active than 
 
 ### Whale Trader
 
-<iframe src="https://dune.com/embeds/2506414/4124482" width="800" height="400"></iframe>
+<iframe src="https://dune.com/embeds/2506414/4124482" width="800" height="200"></iframe>
 
 #### Whale
 
@@ -151,19 +151,11 @@ While whale traders have volume range of $1M - $10M, age range of 2 - 107 weeks 
 
 -   2 - 6 weeks old, 39 weeks old, 65 weeks old, & 105 - 107 weeks old.
 
-:::{.column-page-right}
-
 <iframe src="https://dune.com/embeds/2506062/4123884" width="800" height="400"></iframe>
-
-:::
 
 Most of whale traders swap $100K or less per trade, and 100 times per week.
 
-:::{.column-page-right}
-
 <iframe src="https://dune.com/embeds/2506062/4125909" width="800" height="400"></iframe>
-
-:::
 
 #### Blue Whale
 
@@ -175,18 +167,10 @@ The most active cluster is 39 weeks old with 4 blue whales. Following by the 65 
 
 The general trend is the older a blue whale is the less volume traded.
 
-:::{.column-page-right}
-
 <iframe src="https://dune.com/embeds/2506075/4123915" width="800" height="400"></iframe>
-
-:::
 
 Most of blue whale traders swap $70K or less per trade, and 200 times or less per week. What differentiate blue whale traders from whale traders is trade frequency, not trade size.
 
 However, **0xf1d307906edc902dc2c392af2880f43a55d3583a** becomes the biggest trader by trading more than 1k times per week, the highest frequency, average $50K per trade. A quick check on etherscan shows that this trader is actually a bot which has a lot of MEV transactions.
 
-:::{.column-page-right}
-
 <iframe src="https://dune.com/embeds/2506075/4125924" width="800" height="400"></iframe>
-
-:::
