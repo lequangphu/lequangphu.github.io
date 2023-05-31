@@ -16,7 +16,9 @@ As of May 20, 2023, there are 706 meme coins listed on [Coinmarketcap](https://c
 >
 > -   A meme coin doesn't need to have a purpose that is as closely tied to their underlying value, like Bitcoin and Ethereum. A meme coin often seems to have the sole purpose of "going to the moon," a phrase popularized by Dogecoin's skyrocketing price in early 2021.
 
-Started on Apr 14, interest in meme coins surged, led by PEPE, TURBO, and WOJAK. The meme coin mania has pushed Uniswap' trading volume above Coinbase's trading volume in recent days.
+Started on Apr 17, interest in meme coins surged, led by PEPE.
+
+<script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/3349_RC01/embed_loader.js"></script> <script type="text/javascript"> trends.embed.renderExploreWidget("TIMESERIES", {"comparisonItem":[{"keyword":"meme coin","geo":"","time":"today 3-m"}],"category":0,"property":""}, {"exploreQuery":"date=today%203-m&q=meme%20coin","guestPath":"https://trends.google.com:443/trends/embed/"}); </script>
 
 ## In this analysis
 
@@ -32,7 +34,7 @@ I'll answer a few questions below:
 
 ## Method
 
--   There are a lot of meme coins created on Ethereum. However, to best answer the questions above, I'll examine top 3 meme coins, account for majority of meme coins total trading volume, which are PEPE, TURBO, and WOJAK.
+-   PEPE was created on Apr 14, 2023. As it led the rise of meme, I identify meme coins as all coins created after PEPE.
 
 -   Traders in this context are users who swap on Uniswap.
 
@@ -147,7 +149,7 @@ Between degen and retail, what set degen apart from retail are both trade size (
 
 However, between chad and degen, trade size has a more important role than trade frequency in what set chad apart from degen.
 
-<iframe src="https://dune.com/embeds/2522991/4154944" width="1600" height="400"></iframe>
+<iframe src="https://dune.com/embeds/2522991/4154944" width="800" height="400"></iframe>
 
 ### Whale Trader
 
@@ -178,3 +180,8 @@ The general trend is the older a blue whale is the less volume traded.
 Blue whales' trade size are not different than that of whales. However, what set blue whales apart from whales is trade frequency. And **0xf1d307906edc902dc2c392af2880f43a55d3583a** becomes the biggest trader by trading more than 1k times per week, the highest frequency, average $50K per trade. A quick check on etherscan shows that this trader is actually a bot which has a lot of MEV transactions.
 
 <iframe src="https://dune.com/embeds/2522234/4153461" width="800" height="400"></iframe>
+
+### Summary
+
+## Trading Pair
+
