@@ -42,10 +42,15 @@ In another angle, as PEPE led the rise of meme, 60% of minor pools volume is fro
 
 <iframe src="https://dune.com/embeds/2593947/4303483" width="800" height="400"></iframe>
 
+When zoom into the group of PEPE or created after PEPE coins, which has 1298 coins, top 10 coins account for 83% of total volume. With a quick check on etherscan.io, all of the coins in top 10 are meme coins. => Without checking all of them, my assumption is all of these 1298 coins are all meme coins.
 
-## In this analysis
+<iframe src="https://dune.com/embeds/2598408/4306995" width="800" height="400"></iframe>
 
-I'll answer a few questions below:
+<iframe src="https://dune.com/embeds/2598408/4310278" width="800" height="400"></iframe>
+
+Now meme coins are identified, let's dive into the effect of the rise of meme on Uniswap V3 trading activities on Ethereum.
+
+In the rest of this post, I'll answer a few questions below:
 
 -   Did the increase in popularity of Memecoins attract new traders to the Uniswap platform?
 
@@ -54,12 +59,6 @@ I'll answer a few questions below:
 -   Has the introduction of Memecoins led to an increase or decrease in the number of pairs created on Uniswap? Are there any notable trends or preferences in terms of the Memecoin pairs being created?
 
 -   Did the rise of Memecoins have any discernible effect on the activity and liquidity of "normal" pairs on Uniswap? Are there any correlations or shifts in trading behavior?
-
-## Method
-
--   PEPE was created on Apr 14, 2023. As it led the rise of meme, I identify meme coins as all coins created after PEPE.
-
--   Traders in this context are users who swap on Uniswap.
 
 # Key Highlights
 
