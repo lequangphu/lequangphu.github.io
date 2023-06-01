@@ -26,9 +26,9 @@ Since Apr 17, Uniswap V3 daily volume peaked on May 6 with $1.2B. And by May 31,
 
 Of $30B, major pools account for 70%, despite only account for 0.6% in total # pool. Major pools are pools consist of 2 in 5 major tokens: 'WETH', 'USDC', 'USDT', 'WBTC', and 'DAI'.
 
-There are more than 2k pools in the minor pools group, which account for 30%. The pools of meme coins are in this group.
-
 <iframe src="https://dune.com/embeds/2558904/4227913" width="800" height="400"></iframe>
+
+There are more than 2k pools in the minor pools group. The pools of meme coins are in this group.
 
 <iframe src="https://dune.com/embeds/2558904/4295895" width="800" height="400"></iframe>
 
@@ -50,27 +50,21 @@ When zoom into the group of PEPE or created after PEPE coins, which has 1298 coi
 
 Now meme coins are identified, let's dive into the effect of the rise of meme on Uniswap V3 trading activities on Ethereum.
 
-In the rest of this post, I'll answer a few questions below:
+A few questions to answer:
 
--   Did the increase in popularity of Memecoins attract new traders to the Uniswap platform?
+-   Has the introduction of Memecoins led to an increase or decrease in the number of pool created on Uniswap? Are there any notable trends or preferences in terms of the Memecoin pairs being created?
+
+-   Did the rise of Memecoins have any discernible effect on the activity and liquidity of "normal" pairs on Uniswap? Are there any correlations or shifts in trading behavior?
 
 -   Who are the participants actively engaging with Memecoins on Uniswap? How are the whales behaving, do they have a big impact on the market?
 
--   Has the introduction of Memecoins led to an increase or decrease in the number of pairs created on Uniswap? Are there any notable trends or preferences in terms of the Memecoin pairs being created?
-
--   Did the rise of Memecoins have any discernible effect on the activity and liquidity of "normal" pairs on Uniswap? Are there any correlations or shifts in trading behavior?
+-   Did the increase in popularity of Memecoins attract new traders to the Uniswap platform?
 
 # Key Highlights
 
 # The Rise of Meme
 
-The trading on Uniswap happened in 14 pools, most of them are PEPE related. By far, the biggest pool in term of volume (81%), # swapper, # transaction is PEPE-WETH.
-
-<iframe src="https://dune.com/embeds/2491963/4099809" width="800" height="400"></iframe>
-
-<iframe src="https://dune.com/embeds/2491963/4118029" width="800" height="400"></iframe>
-
-At its peak, meme pools acounted for almost 1/3 in total trading volume per day, more than half in total trader per day, and total transaction per day.
+At its peak, meme pools acounted for 42% in total trading volume per day, almost 80% in total trader per day, and total transaction per day.
 
 <iframe src="https://dune.com/embeds/2492014/4099854" width="800" height="400"></iframe>
 
@@ -80,7 +74,27 @@ At its peak, meme pools acounted for almost 1/3 in total trading volume per day,
 
 # The Meme Effects
 
-### New Trader
+### On New Trading Pool
+
+Number of pool created per day on Uniswap V3 was in uptrend from Apr 17 to Mar 31. During the period, pools of meme coins accounted for 80% or more most of the time, peaked at 97%.
+
+<iframe src="https://dune.com/embeds/2600589/4310636" width="800" height="400"></iframe>
+
+Of 1634 new pools created, 1400 pools are of meme coins.
+
+<iframe src="https://dune.com/embeds/2600589/4310648" width="800" height="400"></iframe>
+
+### On Normal Pool
+
+Meme pools effects on normal pools is clearest in trading volume per day. While meme pools trading volume increased, normal pools trading volume decreased. On May 5, # trader and # transaction in meme pools were almost 4x of those in normal pools. Both numbers in normal pools were in downtrends.
+
+<iframe src="https://dune.com/embeds/2492014/4310887" width="800" height="400"></iframe>
+
+<iframe src="https://dune.com/embeds/2492014/4310908" width="800" height="400"></iframe>
+
+<iframe src="https://dune.com/embeds/2492014/4310900" width="800" height="400"></iframe>
+
+### On New Trader
 
 The rise in total new trader was highly correlated to the rise of % share of meme pools in total new trader. At its peak, meme pools accounted for 2/3 of total new trader.
 
