@@ -42,9 +42,11 @@ In another angle, as PEPE led the rise of meme, 60% of minor pools volume is fro
 
 <iframe src="https://dune.com/embeds/2593947/4303483" width="800" height="400"></iframe>
 
-When zoom into the group of PEPE or created after PEPE coins, which has 1298 coins, top 10 coins account for 83% of total volume. With a quick check on etherscan.io, all of these coins are meme coins. => Without checking all of them, my assumption is all of these 1298 coins are all meme coins.
+When zoom into the group of PEPE or created after PEPE coins, which has 1298 coins, top 10 coins account for 83% of total volume.
 
 <iframe src="https://dune.com/embeds/2598408/4306995" width="800" height="400"></iframe>
+
+With a quick check on etherscan.io, all of the coins in top 10 are meme coins. => Without checking all of them, my assumption is all of these 1298 coins are all meme coins.
 
 <iframe src="https://dune.com/embeds/2598408/4310278" width="800" height="400"></iframe>
 
@@ -88,10 +90,7 @@ However, it raised another question, which is 👇
 
 ### How sticky are these meme traders?
 
-Retention Rate
-: % of a cohort return (to swap on Uniswap).
-
-Retention rate of meme traders in the first 3 weeks is 2x of Uniswap average. However, from week 4th, the trend appears to drop faster than Uniswap average.
+I use retention rate to measure traders stickiness. Retention rate is % of a trader cohort return (to swap on Uniswap). Retention rate of meme traders in the first 3 weeks is 2x of Uniswap average. However, from week 4th, the trend appears to drop faster than Uniswap average.
 
 <iframe src="https://dune.com/embeds/2496227/4107513" width="800" height="400"></iframe>
 
@@ -161,9 +160,11 @@ Additionally, the 20-60 weeks old retail traders are noticably less active than 
 
 Between degen and retail, what set degen apart from retail are both trade size (i.e. volume per trade) and trade frequency (i.e. # trade per week).
 
+<iframe src="https://dune.com/embeds/2522991/4154944" width="800" height="400"></iframe>
+
 However, between chad and degen, trade size has a more important role than trade frequency in what set chad apart from degen.
 
-<iframe src="https://dune.com/embeds/2522991/4154944" width="800" height="400"></iframe>
+<iframe src="https://dune.com/embeds/2604314/4317068" width="800" height="400"></iframe>
 
 ### Whale Trader
 
@@ -191,7 +192,7 @@ The general trend is the older a blue whale is the less volume traded.
 
 #### Behavior
 
-Blue whales' trade size are not different than that of whales. However, what set blue whales apart from whales is trade frequency. And **0xf1d307906edc902dc2c392af2880f43a55d3583a** becomes the biggest trader by trading more than 1k times per week, the highest frequency, average $50K per trade. A quick check on etherscan shows that this trader is actually a bot which has a lot of MEV transactions.
+On average, blue whales' trade size are bigger than that of whales. However, what set blue whales apart from whales is trade frequency. And **0xf1d307906edc902dc2c392af2880f43a55d3583a** becomes the biggest trader by trading more than 1k times per week, the highest frequency, average $50K per trade. A quick check on etherscan shows that this trader is actually a bot which has a lot of MEV transactions.
 
 <iframe src="https://dune.com/embeds/2522234/4153461" width="800" height="400"></iframe>
 
