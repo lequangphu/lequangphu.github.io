@@ -1,7 +1,7 @@
 ---
-title: 'Uniswap Meme Coin Mania'
+title: 'The Rise of Meme on Uniswap'
 description: ''
-date: '2023-06-01'
+date: '2023-06-04'
 categories: [analysis, crypto]
 image: 'preview.jpg'
 ---
@@ -24,7 +24,9 @@ Since Apr 17, Uniswap V3 daily volume peaked on May 6 with $1.2B. And by May 31,
 
 <iframe src="https://dune.com/embeds/2558147/4226177" width="800" height="400"></iframe>
 
-Of $30B, major pools account for 70%, despite only account for 0.6% in total # pool. Major pools are pools consist of 2 in 5 major tokens: 'WETH', 'USDC', 'USDT', 'WBTC', and 'DAI'.
+On Uniswap V3, top 5 tokens with the most TVL are WETH, USDC, USDT, WBTC, and DAI. Pools which consist of 2 in these tokens are also top pools with the most trading volume. I call these pools major pools.
+
+Of $30B, 25 major pools account for 70%, despite only account for 0.6% in total # pool.
 
 <iframe src="https://dune.com/embeds/2558904/4227913" width="800" height="400"></iframe>
 
@@ -32,7 +34,7 @@ There are more than 2k pools in the minor pools group. The pools of meme coins a
 
 <iframe src="https://dune.com/embeds/2558904/4295895" width="800" height="400"></iframe>
 
-Pools in the minor group are mostly pairs of a minor coin with a major coin. Let's breakdown volume of minor pools in the perspective of swap from or to a minor coin to have a better sense of minor coins share in total minor pools volume.
+Pools in the minor group are mostly pairs of a minor coin with a major coin. Let's breakdown volume of minor pools **from the angle of swap from or to a minor coin** to have a better sense of minor coins share in total minor pools volume.
 
 Volume from and to PEPE is almost 1/4 of total minor pools volume.
 
@@ -48,9 +50,9 @@ When zoom into the group of PEPE or created after PEPE coins, which has 1298 coi
 
 With a quick check on etherscan.io, all of the coins in top 10 are meme coins. => Without checking all of them, my assumption is all of these 1298 coins are all meme coins.
 
-<iframe src="https://dune.com/embeds/2598408/4310278" width="800" height="400"></iframe>
+<iframe src="https://dune.com/embeds/2598408/4310278" width="800" height="600"></iframe>
 
-At its peak, meme pools acounted for 42% in total trading volume per day, almost 80% in total trader per day, and total transaction per day.
+At its peak, meme pools acounted for 42% in total trading volume per day, almost 80% in total # trader per day, and total # trade per day.
 
 <iframe src="https://dune.com/embeds/2492014/4099854" width="800" height="400"></iframe>
 
@@ -90,7 +92,9 @@ However, it raised another question, which is 👇
 
 ### How sticky are these meme traders?
 
-I use retention rate to measure traders stickiness. Retention rate is % of a trader cohort return (to swap on Uniswap). Retention rate of meme traders in the first 3 weeks is 2x of Uniswap average. However, from week 4th, the trend appears to drop faster than Uniswap average.
+I use retention rate to measure traders stickiness. Retention rate is % of a trader cohort return (to swap on Uniswap).
+
+Retention rate of meme traders in the first 3 weeks is 2x of Uniswap average. However, from week 4th, the trend appears to drop faster than Uniswap average.
 
 <iframe src="https://dune.com/embeds/2496227/4107513" width="800" height="400"></iframe>
 
@@ -172,11 +176,7 @@ However, between chad and degen, trade size has a more important role than trade
 
 #### Volume & Age
 
-While whale traders have volume range of $1M - $6M, age range of 2 - 107 weeks old, top 3 most active clusters have a few characteristics below:
-
--   $1M - $3M in volume.
-
--   2 - 6 weeks old, 39 weeks old, 65 weeks old, & 105 - 107 weeks old.
+While whale traders have volume range of $1M - $6M, age range of 2 - 107 weeks old, the most active cluster has $1M - $2M in volume, and is 2 - 6 weeks old.
 
 <iframe src="https://dune.com/embeds/2506062/4123884" width="800" height="400"></iframe>
 
@@ -214,8 +214,6 @@ Of 1634 new pools created, 1400 pools are of meme coins.
 
 Meme pools effects on other pools is clearest in # trader and # transaction per day. On May 5, # trader and # transaction in meme pools were almost 4x of those in other pools. Both numbers in other pools were in downtrends.
 
-<iframe src="https://dune.com/embeds/2492014/4310908" width="800" height="400"></iframe>
-
 <iframe src="https://dune.com/embeds/2492014/4310900" width="800" height="400"></iframe>
 
-
+<iframe src="https://dune.com/embeds/2492014/4310908" width="800" height="400"></iframe>
