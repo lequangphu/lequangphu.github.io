@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "🤗",
     "section": "",
-    "text": "The Rise of Meme on Uniswap\n\n\n8 min\n\n\n\nanalysis\n\n\ncrypto\n\n\n\n\nJun 4, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nUniswap V3 License Expiry\n\n\n20 min\n\n\n\nanalysis\n\n\ncrypto\n\n\n\n\nMay 1, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nStablecoin Depeg\n\n\n13 min\n\n\n\nanalysis\n\n\ncrypto\n\n\n\n\nApr 10, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBase’s Supply Side Growth\n\n\n13 min\n\n\n\nanalysis\n\n\ncrypto\n\n\n\n\nMar 27, 2023\n\n\n\n\n\n\n\n\n\n\n\n\nXin Chào\n\n\n1 min\n\n\n\nnews\n\n\n\n\nMar 26, 2023\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "The Rise of Meme on Uniswap\n\n\n9 min\n\n\n\nanalysis\n\n\ncrypto\n\n\n\n\nJun 4, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nUniswap V3 License Expiry\n\n\n20 min\n\n\n\nanalysis\n\n\ncrypto\n\n\n\n\nMay 1, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nStablecoin Depeg\n\n\n13 min\n\n\n\nanalysis\n\n\ncrypto\n\n\n\n\nApr 10, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBase’s Supply Side Growth\n\n\n13 min\n\n\n\nanalysis\n\n\ncrypto\n\n\n\n\nMar 27, 2023\n\n\n\n\n\n\n\n\n\n\n\n\nXin Chào\n\n\n1 min\n\n\n\nnews\n\n\n\n\nMar 26, 2023\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
@@ -200,7 +200,7 @@
     "href": "blog/posts/uniswap-memecoin-mania/index.html#on-new-trading-pool",
     "title": "The Rise of Meme on Uniswap",
     "section": "On New Trading Pool",
-    "text": "On New Trading Pool\nNumber of pool created per day on Uniswap V3 was in uptrend from Apr 17 to Mar 31. During the period, pools of meme coins accounted for 80% or more most of the time, peaked at 97% on May 7.\n\n\nOf 1634 new pools created, 1400 pools are of meme coins.\n\n\n\nMeme Pool Breakdown\nWETH is the highest base token (token0), and the highest quoted token (token1) in term of # pool."
+    "text": "On New Trading Pool\nNumber of pool created per day on Uniswap V3 was in uptrend from Apr 17 to Mar 31. During the period, pools of meme coins accounted for 80% or more most of the time, peaked at 97% on May 7.\n\n\nOf 1634 new pools created, 1400 pools are of meme coins.\n\n\n\nMeme Pool Breakdown\nWETH is the highest base token (token0), and the highest quoted token (token1) in term of # pool. In both ranks, WETH leads with a large margin vs. the followings tokens.\nSurprisingly, PEPE is no.3 base token, not no.2. BURN is no.2 despite not in top 10 trading volume of meme coins.\n\n\nTop 3 quoted tokens are all major tokens. PEPE is no.5, again trailing to BURN at no.4.\n\n\nAnother observation here about the ratio of # base pool / # quoted pool is that, on one hand, except for WETH’s ratio, which is around 1/3, the other major tokens’ ratios are around 1/2. On the other hand, meme coins (at least with the top ones) have an opposite ratio, which is around 2.\nIn other words, for every 2 pools created where base tokens are meme, another pool created where quoted token is meme. And for every 2-3 pools created where quoted tokens are WETH, USDC, another pool created where base token is one of them."
   },
   {
     "objectID": "blog/posts/uniswap-memecoin-mania/index.html#on-other-pool",
