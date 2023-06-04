@@ -74,9 +74,9 @@ Now meme coins are identified, let's dive into the effect of the rise of meme on
 
 # Key Highlights
 
-# The Meme Effects
+# The Meme Effects on Uniswap V3
 
-## On New Trader
+## New Trader
 
 The rise in total new trader was highly correlated to the rise of % share of meme pools in total new trader. At its peak, meme pools accounted for 2/3 of total new trader.
 
@@ -111,6 +111,12 @@ When meme traders returned, more than half of their acitivities were in the meme
 Of 60% in total return volume which was not in meme pools, almost half was in pools made of 2 in 3 most popular coins: USDC, USDT, and WETH.
 
 <iframe src="https://dune.com/embeds/2499183/4112381" width="800" height="400"></iframe>
+
+### How old are these new meme trader on Ethereum?
+
+These new meme trader on Uniswap V3 have Ethereum ages range from 0 to 372 weeks old. And majority of them are also new to Ethereum (i.e trade meme coins on Uniswap V3 within the first week on Ethereum).
+
+<iframe src="https://dune.com/embeds/2608267/4324315" width="800" height="400"></iframe>
 
 ### Summary
 
@@ -198,7 +204,7 @@ On average, blue whales' trade size are bigger than that of whales. However, wha
 
 ### Summary
 
-## On New Trading Pool
+## New Trading Pool
 
 Number of pool created per day on Uniswap V3 was in uptrend from Apr 17 to Mar 31. During the period, pools of meme coins accounted for 80% or more most of the time, peaked at 97% on May 7.
 
@@ -224,7 +230,7 @@ Another observation here about the ratio of # base pool / # quoted pool is that,
 
 In other words, for every 2 pools created where base tokens are meme, another pool created where quoted token is meme. And for every 2-3 pools created where quoted tokens are WETH or USDC, another pool created where base token is one of them.
 
-## On Other Pool
+## Other Pool (i.e. not meme pool)
 
 Though trading activities in other pools have been down. There is no clear adverse effects of meme pools on other pools. We even saw favorite effects as we learned [above](https://lequangphu.github.io/blog/posts/uniswap-memecoin-mania/#when-they-returned-what-did-they-return-for) that meme coins attracted new traders to Uniswap V3 and when they returned, they also traded in other pools.
 
@@ -261,3 +267,7 @@ Those overlap LPs account for 22% in total LPs of meme pools. Interestingly, the
 <iframe src="https://dune.com/embeds/2607915/4323573" width="800" height="400"></iframe>
 
 <iframe src="https://dune.com/embeds/2607915/4323572" width="800" height="400"></iframe>
+
+# The Meme Effects on Ethereum
+
+We have learned above that new meme traders on Uniswap V3 are also new to Ethereum. But exactly how many users have meme coins onboarded to Ethereum?
