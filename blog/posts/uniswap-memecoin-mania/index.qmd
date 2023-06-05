@@ -24,7 +24,7 @@ Since Apr 17, Uniswap V3 daily volume peaked on May 6 with $1.2B. And by May 31,
 
 <iframe src="https://dune.com/embeds/2558147/4226177" width="800" height="400"></iframe>
 
-Top 5 coins with the most TVL are WETH, USDC, USDT, WBTC, and DAI. Pools which consist of 2 in these coins are also top pools with the most trading volume. I call these pools major pools.
+*Top 5 coins with the most TVL are WETH, USDC, USDT, WBTC, and DAI. Pools which consist of 2 in these coins are also top pools with the most trading volume. I call these pools major pools.*
 
 Of $31b, 12 major pools account for 76%, despite only account for 0.3% in total # pool.
 
@@ -34,7 +34,7 @@ There are more than 4k pools in the minor pools group. The pools of meme coins a
 
 <iframe src="https://dune.com/embeds/2558904/4295895" width="800" height="400"></iframe>
 
-Pools in the minor group are mostly pairs of a minor coin with a major coin. Let's breakdown volume of minor pools **from the angle of swap from or to a minor coin** to have a better sense of minor coins share in total minor pools volume.
+*Pools in the minor group are mostly pairs of a minor coin with a major coin. Let's breakdown volume of minor pools from the angle of swap from or to a minor coin to have a better sense of minor coins share in total minor pools volume.*
 
 Volume from and to PEPE is almost 1/4 of total minor pools volume.
 
@@ -48,7 +48,7 @@ When zoom into the group of PEPE or created after PEPE coins, which has 1420 coi
 
 <iframe src="https://dune.com/embeds/2598408/4306995" width="800" height="400"></iframe>
 
-With a quick check on etherscan.io, all of the coins in top 10 are meme coins. => Without checking all of them, my assumption is all of these 1420 coins are all meme coins.
+With a quick check on etherscan.io, all of the coins in top 10 are meme coins. Without checking all of them, my assumption is all of these 1420 coins are all meme coins.
 
 <iframe src="https://dune.com/embeds/2598408/4310278" width="800" height="500"></iframe>
 
@@ -60,7 +60,7 @@ At its peak, meme pools acounted for 21% in total trading volume per day, 50%+ i
 
 <iframe src="https://dune.com/embeds/2492014/4102957" width="800" height="400"></iframe>
 
-Now meme coins are identified, let's dive into the effect of the rise of meme on Uniswap V3 trading activities on Ethereum.
+Now meme coins are identified, let's dive into the effect of the rise of meme on Uniswap V3 trading activity on Ethereum.
 
 ## A few questions to answer
 
@@ -78,31 +78,29 @@ Now meme coins are identified, let's dive into the effect of the rise of meme on
 
 ## New Trader
 
-The rise in total new trader was highly correlated to the rise of % share of meme pools in total new trader per day. During the period, meme pools have accounted for at least 54% of total new trader per day. At its peak, on May 5, meme pools accounted for 3/4 of total new trader per day on Uniswap V3.
+Total new trader was highly correlated to new meme trader. As the share of new meme trader increased, total new trader increased. The situation was the same on the way down. During the period, meme pools have accounted for at least 54% of total new trader per day. At its peak, on May 5, meme pools accounted for 3/4 of total new trader per day on Uniswap V3.
 
 <iframe src="https://dune.com/embeds/2493899/4103138" width="800" height="400"></iframe>
 
-In a few days that trading activities of meme coins surged, % share of new trader in meme pools rose higher than that in other pools, the difference can be as high as 3x (31% vs. 11% on May 5).
+In a few days that trading activity of meme coins surged, % share of new trader in meme pools rose higher than that in other pools, the largest difference was almost 3x (31% vs. 11% on May 5).
 
 <iframe src="https://dune.com/embeds/2493956/4103153" width="800" height="400"></iframe>
 
-Thus, it is safe to say that the mania did attract new trader to Uniswap.
+Thus, it is safe to say that the rise of meme did attract new trader to Uniswap V3.
 
 However, it raised another question 👇.
 
 ### How sticky are these meme traders?
 
-I use retention rate to measure traders stickiness. Retention rate is % of a trader cohort return (to swap on Uniswap).
+*I use retention rate to measure traders stickiness. Retention rate is % of a trader cohort return (to swap on Uniswap).*
 
-Retention rate of meme traders in the first 3 weeks is at least 1.5x of Uniswap average. However, from week 4th, the trend appears to drop faster than Uniswap average.
+Retention rate of meme traders in the first 3 weeks is at least 1.5x retention rate of average traders. From week 4th, the former appears to drop faster than the latter. However, in the first 6 weeks, meme traders' retention rate are still higher than that of average traders on Uniswap V3.
 
 <iframe src="https://dune.com/embeds/2496227/4107513" width="800" height="400"></iframe>
 
-So meme traders are more sticky than the average trader on Uniswap, at least in their first 3 weeks.
-
 ### When they returned, what did they return for?
 
-When meme traders returned, almost 90% of their acitivities were in the meme pools. And those activities only accounted for 60% in their total return volume.
+When meme traders returned, almost 90% of their acitivities were in the meme pools. And those activity only accounted for 60% in their total return volume.
 
 <iframe src="https://dune.com/embeds/2496472/4107727" width="800" height="400"></iframe>
 
@@ -120,19 +118,21 @@ These new meme trader on Uniswap V3 have Ethereum ages range from 0 to 372 weeks
 
 ### Summary
 
-At its peak, meme coins accounted for 3/4 of new trader per day. The meme traders have returned to Uniswap V3 more than the average trader on a cohort basis. And when they return, they return for not only the meme coins but also for the major coins.
+At its peak, meme coins accounted for 3/4 of new trader per day. New trader share in meme pools was also higher than that in other pools. By cohort, meme traders also return to Uniswap V3 more than average traders. And when meme traders return, they return for not only the meme coins but also for the major coins.
 
-Next, let's examine activities of traders in the meme pools.
+Next, let's examine activity of traders in the meme pools.
 
 ## Trader of Meme
 
 ### Who are they?
 
-Looking at volume and # trader by volume per trader, we can see that most of volume is in the buckets > $100K per trader. Meanwhile, most of trader is in the buckets < $1K per trader.
+Looking at meme trading activity on Uniswap V3 by volume bucket, we can see that most of volume is in the buckets > $100k per trader. Meanwhile, most of trader is in the buckets < $1k per trader.
 
 <iframe src="https://dune.com/embeds/2506268/4124293" width="800" height="400"></iframe>
 
-To get better insights, let's break them down further. Here I use [IQR](https://en.wikipedia.org/wiki/Interquartile_range#Outliers) to group and find outliers. The result is meme traders grouped by trader types, separated by volume range, with summary table below.
+To get better insights, let's break them down further.
+
+*I use [IQR](https://en.wikipedia.org/wiki/Interquartile_range#Outliers) to group and find outliers. The result is meme traders grouped by trader types, separated by volume range, with summary table below.*
 
 <iframe src="https://dune.com/embeds/2506179/4124159" width="800" height="250"></iframe>
 
@@ -142,11 +142,7 @@ Meanwhile, there are 703 whale traders, with $2.8b in total volume, this is more
 
 <iframe src="https://dune.com/embeds/2506219/4124207" width="800" height="400"></iframe>
 
-<iframe src="https://dune.com/embeds/2506219/4124432" width="800" height="400"></iframe>
-
-<iframe src="https://dune.com/embeds/2506219/4124436" width="800" height="400"></iframe>
-
-**=> Whale traders have played an important role in the rise of meme on Uniswap V3.**
+<iframe src="https://dune.com/embeds/2506219/4332266" width="800" height="400"></iframe>
 
 ### Retail, Degen, & Chad Trader
 
@@ -160,11 +156,11 @@ Additionally, the 20-70 weeks old traders are noticably less active than the oth
 
 :::{.column-page-right}
 
-<iframe src="https://dune.com/embeds/2503542/4119790" width="1600" height="400"></iframe>
+<iframe src="https://dune.com/embeds/2503542/4119790" width="1200" height="400"></iframe>
 
-<iframe src="https://dune.com/embeds/2504108/4120334" width="1600" height="400"></iframe>
+<iframe src="https://dune.com/embeds/2504108/4120334" width="1200" height="400"></iframe>
 
-<iframe src="https://dune.com/embeds/2506417/4124489" width="1600" height="400"></iframe>
+<iframe src="https://dune.com/embeds/2506417/4124489" width="1200" height="400"></iframe>
 
 :::
 
@@ -208,19 +204,25 @@ A quick check on etherscan shows that these traders are actually bots which have
 
 ### Summary
 
+Meme traders can be very young (0 weeks old), or very old (108 weeks old). Generally, the older a trader, the less active the trader is. The most active meme traders are 6 weeks old or less.
+
+About the relationship between a trader's total meme volume and trading behaviors, when total volume is less than $100k, trade size and trade frequency have a similar effect on total volume (retail vs. degen). When total volume is between $100k and $1m, trade size has a bigger effect than that of trade frequency on total volume (degen vs. chad). And when total volume is greater than $1m, trade frequency is what set large whale traders apart from normal whale traders (blue whales vs. whales).
+
+And in the rise of meme, whale traders have played an important role in the rise of meme on Uniswap V3. 0.2% of total # meme traders account for 52% total meme volume says it all.
+
 ## New Trading Pool
 
 Number of pool created per day on Uniswap V3 was up from Apr 17 to May 24 then down till Jun 4. During the period, pools of meme coins accounted for at least 70% most of the time, peaked at 97% on May 7.
 
 <iframe src="https://dune.com/embeds/2600589/4310636" width="800" height="400"></iframe>
 
-Of 1634 new pools created, 1400 pools are of meme coins.
+Of 1847 new pools created, 1577 pools are of meme coins.
 
 <iframe src="https://dune.com/embeds/2600589/4310648" width="800" height="400"></iframe>
 
 ### Meme Pool Breakdown
 
-Meme coins are mostly paired with WETH. WETH has 300+ pools where it is the base token (token0 - the first category), and 900+ pools where it is the quoted token (token1 - the second category). In both categories, WETH leads with a large margin vs. the followings coins.
+Meme coins are mostly paired with WETH. WETH has 359 pools where it is the base token (token0 - the first category), and 1k pools where it is the quoted token (token1 - the second category). In both categories, WETH leads with a large margin vs. the followings coins.
 
 Surprisingly, PEPE is no.3 base token, not no.2. BURN is no.2 despite not in top 10 trading volume of meme coins.
 
@@ -236,9 +238,9 @@ In other words, for every 2 pools created where base coins are meme, another poo
 
 ## Other Pool (i.e. not meme pool)
 
-Though trading activities in other pools have been down. There is no clear adverse effects of meme pools on other pools. We even saw favorite effects as we learned [above](https://lequangphu.github.io/blog/posts/uniswap-memecoin-mania/#when-they-returned-what-did-they-return-for) that meme coins attracted new traders to Uniswap V3 and when they returned, they also traded in other pools.
+Though trading activity in other pools have been down. There is no clear adverse effects of meme pools on other pools. We even saw favorite effects as we learned [above](https://lequangphu.github.io/blog/posts/uniswap-memecoin-mania/#when-they-returned-what-did-they-return-for) that meme coins attracted new traders to Uniswap V3 and when they returned, they also traded in other pools.
 
-As trading activities (volume, # trader, # trade) in meme pools surged, trading activities in other pools also surged. And in those surges, other pools' peaks lagged those of meme pools 1 day (as seen on May 5 and May 23). This could be resulted of meme traders exitting their meme position to major coins.
+As trading activity (volume, # trader, # trade) in meme pools surged, trading activity in other pools also surged. And in those surges, other pools' peaks lagged those of meme pools 1 day (as seen on May 5 and May 23). This could be resulted of meme traders exitting their meme position to major coins.
 
 <iframe src="https://dune.com/embeds/2492014/4310887" width="800" height="400"></iframe>
 
@@ -260,7 +262,9 @@ The negative correlation between meme pools and other pools is easier to observe
 
 ### LPs Overlap
 
-8% of LPs in other pools provide liquidity in meme pools. It's a small share, however, in aggregate, they have - $1.81b in net tvl, while the rest have $1.76b in net tvl. In other words, 8% of LPs have reduced more tvl than 92% of LPs increased tvl in the same period. LPs in other pools who also provide liquidity to meme pools played a major role in other pools liquidity.
+8% of LPs in other pools provide liquidity in meme pools. It's a small share, however, in aggregate, they have - $1.81b in net tvl, while the rest have $1.76b in net tvl. In other words, 8% of LPs have reduced more tvl than 92% of LPs increased tvl in the same period.
+
+→ LPs in other pools who also provide liquidity to meme pools played a major role in other pools liquidity.
 
 <iframe src="https://dune.com/embeds/2607844/4323558" width="800" height="400"></iframe>
 
@@ -276,10 +280,10 @@ Those overlap LPs account for 22% in total LPs of meme pools. Interestingly, the
 
 We have learned above that new meme traders on Uniswap V3 are also new to Ethereum. But exactly how many Defi users have meme coins onboarded to Ethereum?
 
-From Apr 17 to Jun 4, meme coins have onboarded at least 2k Defi users per day to Ethereum. In aggregate, meme coins have onboarded 180k+ Defi users to Ethereum.
+From Apr 17 to Jun 4, meme coins have onboarded at least 2k Defi users per day to Ethereum. In aggregate, meme coins have onboarded 180k Defi users to Ethereum.
 
 <iframe src="https://dune.com/embeds/2608394/4324900" width="800" height="400"></iframe>
 
-And most of them were onboarded to Uniswap (90% or more in most days).
+And most of them were onboarded to Uniswap.
 
 <iframe src="https://dune.com/embeds/2608657/4329399" width="800" height="600"></iframe>
