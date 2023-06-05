@@ -278,4 +278,4 @@ From Apr 17 to Jun 4, meme coins have onboarded at least 2k Defi users per day t
 
 And most of them traded on Uniswap (90% or more in most days).
 
-<iframe src="https://dune.com/embeds/2608657/4324975" width="800" height="400"></iframe>
+<iframe src="https://dune.com/embeds/2608657/4329399" width="800" height="500"></iframe>
