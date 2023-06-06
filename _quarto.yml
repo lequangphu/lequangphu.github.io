@@ -24,7 +24,7 @@ website:
 
 format:
   html:
-    theme: cosmo
+    theme: default
     css: styles.css
 
 execute:

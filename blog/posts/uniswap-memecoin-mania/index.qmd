@@ -117,10 +117,6 @@ These new meme trader on Uniswap V3 have Ethereum ages range from 0 to 372 weeks
 
 <iframe src="https://dune.com/embeds/2608267/4334925" width="800" height="400"></iframe>
 
-### Summary
-
-At its peak, meme coins accounted for 3/4 of new trader per day. New trader share in meme pools was also higher than that in other pools. By cohort, meme traders also return to Uniswap V3 more than average traders. When meme traders return, they return for not only the meme coins but also for the major coins. And almost half of new mem traders are also new to Ethereum.
-
 Next, let's examine activity of traders in the meme pools.
 
 ## Trader of Meme
@@ -227,10 +223,6 @@ Only top 10 meme coins in term profit generate more than $100k in total profit e
 
 :::
 
-### Summary
-
-Meme traders can be very young (0 weeks old), or very old (108 weeks old). Generally, the older a trader, the less active the trader is. The most active meme traders are 6 weeks old or less. However, the most profitable traders are 17 weeks old or more. Experience, not activeness, dictates a meme trader's profitability. The more volume they trade, the less return they yield. Whale & blue whale traders only account for 0.2% of total # traders, but account for 52% of total volume. And they achieve such high volume not by having big volume in one trade but by having high frequency in trading.
-
 ## New Trading Pool
 
 Number of pool created per day on Uniswap V3 was up from Apr 17 to May 24 then down till Jun 4. During the period, pools of meme coins accounted for at least 70% most of the time, peaked at 97% on May 7.
@@ -256,10 +248,6 @@ Top 3 quoted coins are all major coins. PEPE is no.5, again trailing to BURN at 
 Another observation here about the ratio of # base pool / # quoted pool is that, on one hand, except for WETH's ratio, which is around 1/3, the other major coins' ratios are around 1/2. On the other hand, meme coins (at least with the top ones) have an opposite ratio, which is around 2.
 
 In other words, for every 2 pools created where base coins are meme, another pool created where quoted token is meme. And for every 2-3 pools created where quoted coins are WETH or USDC, another pool created where base token is one of them.
-
-### Summary
-
-Number of pool created on Uniswap V3 increased during the rise of meme. And meme pools account for at least 70% of new pool created per day. Meme coins are mostly paired with WETH. Meme coins also paired with other meme coins. For every 2 pools where base coins are meme, another pool created where quoted token is meme.
 
 ## Other Pool (i.e. not meme pool)
 
@@ -296,10 +284,6 @@ Those overlap LPs account for 22% in total LPs of meme pools. Interestingly, the
 <iframe src="https://dune.com/embeds/2607915/4323573" width="800" height="400"></iframe>
 
 <iframe src="https://dune.com/embeds/2607915/4323572" width="800" height="400"></iframe>
-
-### Summary
-
-The rise of meme had no clear adverse effects on other pools trading activities. Quite the opposite, trading activities in other pools increased and decreased with meme pools. On the other hand, even though meme pools and other pools have small overlap in LPs, # LPs in other pools and meme pools were highly correlated in a negative way. When one rise, the other fall. That said, liquidity in other pools didn't have that level of correlation with liquidity in meme pools.
 
 # The Meme Effects on Ethereum
 
