@@ -4,6 +4,7 @@ description: ''
 date: '2023-06-04'
 categories: [analysis, crypto]
 image: 'preview.jpg'
+number-sections: true
 ---
 
 # The Rise of Meme on Uniswap V3
@@ -208,7 +209,7 @@ Not all blue whales are profitble trading meme. Their realized profit vary from 
 
 <iframe src="https://dune.com/embeds/2611487/4333863" width="800" height="400"></iframe>
 
-None of top 10 profitable blue whale traders are new (6 weeks old or less). They are at least 17 weeks old. Most of them are not in top traders with most trade size or most trade frequency. A half of them have 2 digits % profit margin, the other half have 1 digit % profit margin (mostly 1% - 2%). It appears that top profitable traders may not have the same trading strategies, however they are all experienced traders.
+None of top 10 profitable blue whale traders are new (6 weeks old or less). They are at least 17 weeks old. Most of them are not in top traders with most trade size or most trade frequency. A half of them have 2 digits % profit margin, the other half have 1 digit % profit margin (mostly 1% - 2%). Top profitable traders may not have the same trading strategies, however they are all experienced traders.
 
 :::{.column-page-right}
 
