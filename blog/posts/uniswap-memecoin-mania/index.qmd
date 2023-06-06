@@ -21,7 +21,7 @@ Started on Apr 17, interest in meme coins surged.
 
 ![The Rise of Meme](memecoin-trend.JPG)
 
-Since Apr 17, Uniswap V3 daily volume peaked on May 6 with $1.2B. And by May 31, the aggregate volume is $31b.
+Since Apr 17, Uniswap V3 daily volume peaked on May 6 with $1.2B. And by Jun 4, the aggregate volume is $31b.
 
 <iframe src="https://dune.com/embeds/2558147/4226177" width="800" height="400"></iframe>
 
@@ -65,7 +65,7 @@ Now meme coins are identified, let's dive into the effect of the rise of meme on
 
 # Key Highlights
 
--   At its peak, meme coins accounted for 3/4 of new trader per day. New trader share in meme pools was also higher than that in other pools. By cohort, meme traders also return to Uniswap V3 more than average traders. And when meme traders return, they return for not only the meme coins but also for the major coins.
+-   At its peak, meme coins accounted for 3/4 of new trader per day. New trader share in meme pools was also higher than that in other pools. By cohort, meme traders also return to Uniswap V3 more than average traders. When meme traders return, they return for not only the meme coins but also for the major coins.  And almost half of new mem traders are also new to Ethereum.
 
 -   Meme traders can be very young (0 weeks old), or very old (108 weeks old). Generally, the older a trader, the less active the trader is. The most active meme traders are 6 weeks old or less. However, the most profitable traders are 17 weeks old or more. Experience, not activeness, dictates a meme trader's profitability. The more volume they trade, the less return they yield. Whale & blue whale traders only account for 0.2% of total # traders, but account for 52% of total volume. And they achieve such high volume not by having big volume in one trade but by having high frequency in trading.
 
@@ -83,7 +83,7 @@ Total new trader was highly correlated to new meme trader. As the share of new m
 
 <iframe src="https://dune.com/embeds/2493899/4103138" width="800" height="400"></iframe>
 
-In a few days that trading activity of meme coins surged, % share of new trader in meme pools rose higher than that in other pools, the largest difference was almost 3x (31% vs. 11% on May 5).
+In a few days that trading activity of meme coins surged, new trader share in meme pools rose higher than that in other pools, the largest difference was almost 3x (31% vs. 11% on May 5).
 
 <iframe src="https://dune.com/embeds/2493956/4103153" width="800" height="400"></iframe>
 
@@ -119,13 +119,11 @@ These new meme trader on Uniswap V3 have Ethereum ages range from 0 to 372 weeks
 
 ### Summary
 
-At its peak, meme coins accounted for 3/4 of new trader per day. New trader share in meme pools was also higher than that in other pools. By cohort, meme traders also return to Uniswap V3 more than average traders. And when meme traders return, they return for not only the meme coins but also for the major coins.
+At its peak, meme coins accounted for 3/4 of new trader per day. New trader share in meme pools was also higher than that in other pools. By cohort, meme traders also return to Uniswap V3 more than average traders. When meme traders return, they return for not only the meme coins but also for the major coins. And almost half of new mem traders are also new to Ethereum.
 
 Next, let's examine activity of traders in the meme pools.
 
 ## Trader of Meme
-
-### Who are they?
 
 Looking at meme trading activity on Uniswap V3 by volume bucket, we can see that most of volume is in the buckets > $100k per trader. Meanwhile, most of trader is in the buckets < $1k per trader.
 
@@ -149,9 +147,9 @@ Meanwhile, there are 708 whale & blue whale traders, with $2.8b in total volume,
 
 #### Volume & Age
 
-Trader's volume & age of 3 trader groups: retail, degen, & chad are quite similar to one another. The most active traders cluster is 6 weeks old or less, range from small to big.
+Trader's volume & age of 3 trader groups: retail, degen, & chad are quite similar to one another. The most active traders cluster is 6 weeks old or less.
 
-Additionally, the 20-70 weeks old traders are noticably less active than the others in term of both volume and # traders. These traders were onboarded from around Jan 2022 to Jan 2023.
+Additionally, the 20-70 weeks old traders are noticably less active than the others in term of both volume and # traders, especially in the high volume cluster of each group. These traders were onboarded from around Jan 2022 to Jan 2023, when crypto market was on the way down.
 
 :::{.column-page-right}
 
@@ -177,11 +175,11 @@ However, between chad and degen, trade size has a more important role than trade
 
 #### Volume & Age
 
-While whale traders have volume range of $876k - $5M, age range of 0 - 108 weeks old, the most active cluster has $1M - $2M in volume, and is 2 - 6 weeks old.
+While whale traders have volume range of $876k - $5m, age range of 0 - 108 weeks old, the most active cluster has $1m - $2m in volume, and is 2 - 6 weeks old.
 
 <iframe src="https://dune.com/embeds/2506062/4123884" width="800" height="400"></iframe>
 
-Blue whale **0xd985c35f566c9de55df16ade36852b0c40f4bf59** is 5 weeks old, has $155M in total volume, and is the biggest meme trader on Uniswap V3.
+Blue whale **0xd985c35f566c9de55df16ade36852b0c40f4bf59** is 5 weeks old, has $156m in total volume, and is the biggest meme trader on Uniswap V3.
 
 The most active cluster is 67 weeks old with 11 blue whales. Following by the 40 weeks old cluster with 8 blue whales. Unlike the trader types above, blue whales are more evenly distributed along the age spectrum.
 
@@ -205,7 +203,7 @@ Next, let's examine blue whale traders profit to understand more about the top t
 
 *I only consider blue whales who had bought and sold meme coins and realized profit.*
 
-Not all blue whales are profitble trading meme. Their realized profit vary from - $1.5m to $2m, and margin vary from -16% to 36%. The most profitable trader is not in top 5. And top 5 traders profits are less than $1m each, with margin of 8% or less.
+Not all blue whales are profitble trading meme. Their realized profit vary from - $1.5m to $2m, and margin vary from -16% to 36%. The most profitable trader is not in top 5 volume. And top 5 volume traders' profits are less than $1m each, with margin of 8% or less.
 
 <iframe src="https://dune.com/embeds/2611487/4333863" width="800" height="400"></iframe>
 
@@ -267,7 +265,7 @@ Number of pool created on Uniswap V3 increased during the rise of meme. And meme
 
 Though trading activity in other pools have been down. There was no clear adverse effects of meme pools on other pools. We even saw favorite effects as we learned [above](https://lequangphu.github.io/blog/posts/uniswap-memecoin-mania/#when-they-returned-what-did-they-return-for) that meme coins attracted new traders to Uniswap V3 and when they returned, they also traded in other pools.
 
-As trading activity (volume, # trader, # trade) in meme pools surged, trading activity in other pools also surged. And in those surges, other pools' peaks lagged those of meme pools 1 day (as seen on May 5 and May 23). This could be resulted of meme traders exitting their meme position to major coins.
+As trading activity (volume, # trader, # trade) in meme pools surged, trading activity in other pools also surged. And in those surges, other pools' peaks lagged those of meme pools 1 day (as seen on May 5 and May 23). This could be resulted from meme traders exitting their meme position to major coins.
 
 <iframe src="https://dune.com/embeds/2492014/4310887" width="800" height="400"></iframe>
 
@@ -301,7 +299,7 @@ Those overlap LPs account for 22% in total LPs of meme pools. Interestingly, the
 
 ### Summary
 
-The rise of meme had no clear adverse effects on other pools trading activities. Quite the opposite, trading activities in other pools increased and decreased with meme pools. On the other hand, # LPs in other pools and meme pools were highly correlated in a negative way. When one rise, the other fall. That said, liquidity in other pools didn't have that level of correlation with liquidity in meme pools.
+The rise of meme had no clear adverse effects on other pools trading activities. Quite the opposite, trading activities in other pools increased and decreased with meme pools. On the other hand, even though meme pools and other pools have small overlap in LPs, # LPs in other pools and meme pools were highly correlated in a negative way. When one rise, the other fall. That said, liquidity in other pools didn't have that level of correlation with liquidity in meme pools.
 
 # The Meme Effects on Ethereum
 
@@ -317,4 +315,4 @@ And most of them were onboarded to Uniswap.
 
 # Conclusion
 
-Even though meme is for fun, the rise of it recently has had a great impact on Uniswap, especially in onboarding new users. New and inexperienced traders are majority in total # meem traders. However, the main driver of total trading volume and yield most of profit in the rise of meme are very large traders, most of them are experienced and use bot to trade meme coins.
+Even though meme is for fun, the rise of it recently has had a great impact on Uniswap, especially in onboarding new users. New and inexperienced traders are majority in total # meme traders. However, the main driver of total trading volume and yield most of profit in the rise of meme are very large traders, most of them are experienced and use bot to trade meme coins.
