@@ -16,7 +16,7 @@ As of Jun 4, 2023, there are 856 meme coins listed on [Coinmarketcap](https://co
 >
 > -   A meme coin doesn't need to have a purpose that is as closely tied to their underlying value, like Bitcoin and Ethereum. A meme coin often seems to have the sole purpose of "going to the moon," a phrase popularized by Dogecoin's skyrocketing price in early 2021.
 
-Started on Apr 17, interest in meme coins surged, led by PEPE.
+Started on Apr 17, interest in meme coins surged.
 
 ![The Rise of Meme](memecoin-trend.JPG)
 
@@ -44,7 +44,7 @@ From another angle, as PEPE led the rise of meme, almost 60% of minor pools volu
 
 <iframe src="https://dune.com/embeds/2593947/4303483" width="800" height="400"></iframe>
 
-When zoom into the group of PEPE or created after PEPE coins, which has 1420 coins, top 10 coins account for 80%+ of total volume.
+When zoom into the group of PEPE or created after PEPE coins, which has 1420 coins, top 10 coins account for more than 80% of total volume.
 
 <iframe src="https://dune.com/embeds/2598408/4306995" width="800" height="400"></iframe>
 
@@ -52,7 +52,7 @@ With a quick check on etherscan.io, all of the coins in top 10 are meme coins. W
 
 <iframe src="https://dune.com/embeds/2598408/4310278" width="800" height="500"></iframe>
 
-At its peak, meme pools acounted for 21% in total trading volume per day, 50%+ in total # trader per day, and total # trade per day.
+At its peak, meme pools acounted for 21% in total trading volume per day, more than half of total # trader per day, and total # trade per day on Uniswap V3.
 
 <iframe src="https://dune.com/embeds/2492014/4099854" width="800" height="400"></iframe>
 
@@ -62,7 +62,7 @@ At its peak, meme pools acounted for 21% in total trading volume per day, 50%+ i
 
 Now meme coins are identified, let's dive into the effect of the rise of meme on Uniswap V3 trading activity on Ethereum.
 
-## A few questions to answer
+# Key Highlights
 
 -   Did the increase in popularity of meme coins attract new traders to the Uniswap platform?
 
@@ -71,8 +71,6 @@ Now meme coins are identified, let's dive into the effect of the rise of meme on
 -   Has the introduction of meme coins led to an increase or decrease in the number of pool created on Uniswap? Are there any notable trends or preferences in terms of the Memecoin pairs being created?
 
 -   Did the rise of meme coins have any discernible effect on the activity and liquidity of "normal" pairs on Uniswap? Are there any correlations or shifts in trading behavior?
-
-# Key Highlights
 
 # The Meme Effects on Uniswap V3
 
@@ -134,7 +132,7 @@ To get better insights, let's break them down further.
 
 *I use [IQR](https://en.wikipedia.org/wiki/Interquartile_range#Outliers) to group and find outliers. The result is meme traders grouped by trader types, separated by volume range, with summary table below.*
 
-<iframe src="https://dune.com/embeds/2506179/4124159" width="800" height="250"></iframe>
+<iframe src="https://dune.com/embeds/2506179/4124159" width="800" height="400"></iframe>
 
 There are 265k retail traders, account for 85% of total # trader, with $220m in total volume, this is only $60m higher than volume of the biggest meme trader, more on that later.
 
@@ -145,8 +143,6 @@ Meanwhile, there are 703 whale traders, with $2.8b in total volume, this is more
 <iframe src="https://dune.com/embeds/2506219/4332266" width="800" height="400"></iframe>
 
 ### Retail, Degen, & Chad Trader
-
-<iframe src="https://dune.com/embeds/2506397/4124458" width="800" height="400"></iframe>
 
 #### Volume & Age
 
@@ -174,9 +170,7 @@ However, between chad and degen, trade size has a more important role than trade
 
 <iframe src="https://dune.com/embeds/2604314/4317068" width="800" height="400"></iframe>
 
-### Whale Trader
-
-<iframe src="https://dune.com/embeds/2506414/4124482" width="800" height="200"></iframe>
+### Whale & Blue Whale Trader
 
 #### Volume & Age
 
@@ -210,15 +204,23 @@ Not all blue whales are profitble trading meme. Their realized profit vary from 
 
 None of top 10 profitable blue whale traders are new (6 weeks old or less). They are at least 17 weeks old. Most of them are not in top traders with most trade size nor trade frequency. A half of them have 2 digits % profit margin, the other half have 1 digit % profit margin (mostly 1% - 2%). It appears that top profitable traders may not have the same trading strategies, however they are all experienced traders.
 
+:::{.column-page-right}
+
 <iframe src="https://dune.com/embeds/2611487/4334049" width="1200" height="400"></iframe>
+
+:::
 
 PEPE generates the most profit to traders with $3m, while blue whale traders yield the most profit per investment from trading PEEPO. Blue whale traders realized $79 profit from $100 investment in PEEPO.
 
 <iframe src="https://dune.com/embeds/2612535/4334264" width="800" height="400"></iframe>
 
-Top meme coins in term profit all rank low in profit margin. This is quite predictable as most of them are top trading volume coins which deminish the profit margin.
+Only top 10 meme coins in term profit generate more than $100k in total profit each, and they all rank low in profit margin. This is quite predictable as most of them are top trading volume coins which deminish the profit margin.
+
+:::{.column-page-right}
 
 <iframe src="https://dune.com/embeds/2612535/4333816" width="1200" height="400"></iframe>
+
+:::
 
 ### Summary
 
