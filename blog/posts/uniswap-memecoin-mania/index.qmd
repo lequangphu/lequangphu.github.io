@@ -1,5 +1,5 @@
 ---
-title: 'The Rise of Meme'
+title: 'Uniswap and The Rise of Meme'
 description: ''
 date: '2023-06-04'
 categories: [analysis, crypto]
@@ -65,15 +65,33 @@ Now meme coins are identified, let's dive into the effect of the rise of meme on
 
 # Key Highlights
 
--   At its peak, meme coins accounted for 3/4 of new trader per day. New trader share in meme pools was also higher than that in other pools. By cohort, meme traders also return to Uniswap V3 more than average traders. When meme traders return, they return for not only the meme coins but also for the major coins.  And almost half of new mem traders are also new to Ethereum.
+Meme have attracted new users to Uniswap.
 
--   Meme traders can be very young (0 weeks old), or very old (108 weeks old). Generally, the older a trader, the less active the trader is. The most active meme traders are 6 weeks old or less. However, the most profitable traders are 17 weeks old or more. Experience, not activeness, dictates a meme trader's profitability. The more volume they trade, the less return they yield. Whale & blue whale traders only account for 0.2% of total # traders, but account for 52% of total volume. And they achieve such high volume not by having big volume in one trade but by having high frequency in trading.
+-   At its peak, meme coins accounted for 3/4 of new trader per day. New trader share in meme pools was also higher than that in other pools.
 
--   Number of pool created on Uniswap V3 increased during the rise of meme. And meme pools account for at least 70% of new pool created per day. Meme coins are mostly paired with WETH. Meme coins also paired with other meme coins. For every 2 pools where base coins are meme, another pool created where quoted token is meme.
+-   By cohort, meme traders also return to Uniswap V3 more than average traders. When meme traders return, they return for not only the meme coins but also for the major coins.
 
--   The rise of meme had no clear adverse effects on other pools trading activities. Quite the opposite, trading activities in other pools increased and decreased with meme pools. On the other hand, # LPs in other pools and meme pools were highly correlated in a negative way. When one rise, the other fall. That said, liquidity in other pools saw mix correlation with liquidity in meme pools. In aggregate, other pools saw net liquidity decrease while meme pools saw net liquidity increase from Apr 17 to Jun 4.
+-   And almost half of new mem traders are also new to Ethereum.
 
--   The rise of meme have onboarded more than 180k Defi users to Ethereum in total. And most of them were onboarded to Uniswap.
+Most active meme traders are young, most profitable traders are older. Whale traders have played important role in the rise of meme.
+
+-   Meme traders can be very young (0 weeks old), or very old (108 weeks old). Generally, the older a trader, the less active the trader is. The most active meme traders are 6 weeks old or less. However, the most profitable traders are 17 weeks old or more. Experience, not activeness, dictates a meme trader's profitability. The more volume they trade, the less return they yield.
+
+-   Whale & blue whale traders only account for 0.2% of total # traders, but account for 52% of total volume. And they achieve such high volume not by having big volume in one trade but by having high frequency in trading.
+
+Pools of meme coins have been a big part of new pool created on Uniswap.
+
+-   Number of pool created on Uniswap V3 increased during the rise of meme. And meme pools account for at least 70% of new pool created per day.
+
+-   Meme coins are mostly paired with WETH. Meme coins also paired with other meme coins. For every 2 pools where base coins are meme, another pool created where quoted token is meme.
+
+Overall, other pools which don't consist of meme coins appears to gain more than loss in the rise of meme.
+
+-   The rise of meme had no clear adverse effects on other pools trading activities. Quite the opposite, trading activities in other pools increased and decreased with meme pools.
+
+-   On the other hand, # LPs in other pools and meme pools were highly correlated in a negative way. When one rise, the other fall. That said, liquidity in other pools saw mix correlation with liquidity in meme pools. In aggregate, other pools saw net liquidity decrease while meme pools saw net liquidity increase from Apr 17 to Jun 4.
+
+The rise of meme have onboarded more than 180k Defi users to Ethereum in total. And most of them were onboarded to Uniswap.
 
 # The Meme Effects on Uniswap V3
 
