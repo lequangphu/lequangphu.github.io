@@ -79,6 +79,8 @@ Most active meme traders are young, most profitable traders are older. Whale tra
 
 -   Whale & blue whale traders only account for 0.2% of total # traders, but account for 52% of total volume. And they achieve such high volume not by having big volume in one trade but by having high frequency in trading.
 
+-   Meme traders generated the most profit from trading PEPE. While they yield the most per investment unit (i.e. profit margin) from trading PEEPO.
+
 Pools of meme coins have been a big part of new pool created on Uniswap.
 
 -   Number of pool created on Uniswap V3 increased during the rise of meme. And meme pools account for at least 70% of new pool created per day.
