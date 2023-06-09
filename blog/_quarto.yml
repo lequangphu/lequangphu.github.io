@@ -6,12 +6,10 @@ website:
   navbar:
     right:
       - about.qmd
-format:
-  html:
-    theme:
-      light: flatly
-      dark: darkly
-    css: styles.css
+
+theme:
+  light: flatly
+  dark: darkly
 
 execute:
   freeze: auto
