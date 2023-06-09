@@ -22,10 +22,5 @@ website:
       - icon: github
         href: https://github.com/lequangphu
 
-format:
-  html:
-    theme: default
-    css: styles.css
-
 execute:
   freeze: auto

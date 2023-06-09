@@ -8,7 +8,9 @@ website:
       - about.qmd
 format:
   html:
-    theme: default
+    theme:
+      light: flatly
+      dark: darkly
     css: styles.css
 
 execute:
