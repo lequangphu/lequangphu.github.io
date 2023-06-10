@@ -7,9 +7,5 @@ website:
     right:
       - about.qmd
 
-theme:
-  light: flatly
-  dark: darkly
-
 execute:
   freeze: auto

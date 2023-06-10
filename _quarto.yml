@@ -24,7 +24,7 @@ website:
 
 theme:
   light: flatly
-  dark: darkly
+  dark: [darkly, theme-dark.scss]
 
 execute:
   freeze: auto
