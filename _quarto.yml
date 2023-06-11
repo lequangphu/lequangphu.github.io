@@ -22,7 +22,7 @@ website:
       - icon: github
         href: https://github.com/lequangphu
 
-theme: cosmo
+theme: simplex
 
 execute:
   freeze: auto
