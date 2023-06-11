@@ -20,13 +20,13 @@ Started on Apr 17, interest in meme coins surged.
 
 ![The Rise of Meme](memecoin-trend.JPG)
 
-Since Apr 17, Uniswap V3 daily volume peaked on May 6 with $1.2B. And by Jun 4, the aggregate volume is $31b.
+Since Apr 17, Uniswap V3 daily volume peaked on May 6 with $1.2B. And by Jun 4, the aggregate volume is $31B.
 
 <iframe src="https://dune.com/embeds/2558147/4226177" width="800" height="400"></iframe>
 
 *Top 5 coins with the most TVL are WETH, USDC, USDT, WBTC, and DAI. Pools which consist of 2 in these coins are also top pools with the most trading volume. I call these pools major pools.*
 
-Of $31b, 12 major pools account for 76%, despite only account for 0.3% in total # pool.
+Of $31B, 12 major pools account for 76%, despite only account for 0.3% in total # pool.
 
 <iframe src="https://dune.com/embeds/2558904/4227913" width="800" height="400"></iframe>
 
@@ -126,7 +126,7 @@ When meme traders returned, almost 90% of their acitivities were in the meme poo
 
 <iframe src="https://dune.com/embeds/2496472/4107714" width="800" height="400"></iframe>
 
-Of 40% in total return volume which was not in meme pools, 3/4 was in pools made of 2 in 3 most popular coins: USDC, USDT, and WETH.
+Of 40% in total return volume which was not in meme pools, 3/4 was in pools consist of 2 in 3 most popular coins: USDC, USDT, and WETH.
 
 <iframe src="https://dune.com/embeds/2499183/4112381" width="800" height="400"></iframe>
 
@@ -140,7 +140,7 @@ Next, let's examine activity of traders in the meme pools.
 
 ## Trader of Meme
 
-Looking at meme trading activity on Uniswap V3 by volume bucket, we can see that most of volume is in the buckets > $100k per trader. Meanwhile, most of trader is in the buckets < $1k per trader.
+Looking at meme trading activity on Uniswap V3 by volume bucket, we can see that most of volume is in the buckets > $100K per trader. Meanwhile, most of trader is in the buckets < $1k per trader.
 
 <iframe src="https://dune.com/embeds/2506268/4124293" width="800" height="400"></iframe>
 
@@ -150,9 +150,9 @@ To get better insights, let's break them down further.
 
 <iframe src="https://dune.com/embeds/2506179/4124159" width="800" height="300"></iframe>
 
-There are 265k retail traders, account for 85% of total # trader, with $220m in total volume, this is only $60m higher than volume of the biggest meme trader, more on that later.
+There are 265k retail traders, account for 85% of total # trader, with $220M in total volume, this is only $60M higher than volume of the biggest meme trader, more on that later.
 
-Meanwhile, there are 708 whale & blue whale traders, with $2.8b in total volume, this is more than the other 3 trader types combined.
+Meanwhile, there are 708 whale & blue whale traders, with $2.8B in total volume, this is more than the other 3 trader types combined.
 
 <iframe src="https://dune.com/embeds/2506219/4124207" width="800" height="400"></iframe>
 
@@ -190,11 +190,11 @@ However, between chad and degen, trade size has a more important role than trade
 
 #### Volume & Age
 
-While whale traders have volume range of $876k - $5m, age range of 0 - 108 weeks old, the most active cluster has $1m - $2m in volume, and is 2 - 6 weeks old.
+While whale traders have volume range of $876K - $5m, age range of 0 - 108 weeks old, the most active cluster has $1m - $2m in volume, and is 2 - 6 weeks old.
 
 <iframe src="https://dune.com/embeds/2506062/4123884" width="800" height="400"></iframe>
 
-Blue whale **0xd985c35f566c9de55df16ade36852b0c40f4bf59** is 5 weeks old, has $156m in total volume, and is the biggest meme trader on Uniswap V3.
+Blue whale **0xd985c35f566c9de55df16ade36852b0c40f4bf59** is 5 weeks old, has $156M in total volume, and is the biggest meme trader on Uniswap V3.
 
 The most active cluster is 67 weeks old with 11 blue whales. Following by the 40 weeks old cluster with 8 blue whales. Unlike the trader types above, blue whales are more evenly distributed along the age spectrum.
 
@@ -218,7 +218,7 @@ Next, let's examine blue whale traders profit to understand more about the top t
 
 *I only consider blue whales who had bought and sold meme coins and realized profit.*
 
-Not all blue whales are profitble trading meme. Their realized profit vary from - $1.5m to $2m, and margin vary from -16% to 36%. The most profitable trader is not in top 5 volume. And top 5 volume traders' profits are less than $1m each, with margin of 8% or less.
+Not all blue whales are profitble trading meme. Their realized profit vary from - $1.5M to $2m, and margin vary from -16% to 36%. The most profitable trader is not in top 5 volume. And top 5 volume traders' profits are less than $1m each, with margin of 8% or less.
 
 <iframe src="https://dune.com/embeds/2611487/4333863" width="800" height="400"></iframe>
 
@@ -234,7 +234,7 @@ PEPE generates the most profit to traders with $3m, while blue whale traders yie
 
 <iframe src="https://dune.com/embeds/2612535/4334264" width="800" height="400"></iframe>
 
-Only top 10 meme coins in term profit generate more than $100k in total profit each, and they all rank low in profit margin. This is quite predictable as most of them are top trading volume coins which deminish the profit margin.
+Only top 10 meme coins in term profit generate more than $100K in total profit each, and they all rank low in profit margin. This is quite predictable as most of them are top trading volume coins which deminish the profit margin.
 
 :::{.column-page-right}
 
@@ -290,7 +290,7 @@ The negative correlation between meme pools and other pools is easier to observe
 
 ### LPs Overlap
 
-8% of LPs in other pools provide liquidity in meme pools. It's a small share, however, in aggregate, they have - $1.81b in net tvl, while the rest have $1.76b in net tvl. In other words, 8% of LPs have reduced more tvl than 92% of LPs increased tvl in the same period.
+8% of LPs in other pools provide liquidity in meme pools. It's a small share, however, in aggregate, they have - $1.81B in net tvl, while the rest have $1.76B in net tvl. In other words, 8% of LPs have reduced more tvl than 92% of LPs increased tvl in the same period.
 
 → LPs in other pools who also provide liquidity to meme pools played a major role in other pools liquidity.
 
@@ -298,7 +298,7 @@ The negative correlation between meme pools and other pools is easier to observe
 
 <iframe src="https://dune.com/embeds/2607844/4323561" width="800" height="400"></iframe>
 
-Those overlap LPs account for 22% in total LPs of meme pools. Interestingly, they have also been net decrease tvl in meme pools, however the amount is much smaller with - $29m.
+Those overlap LPs account for 22% in total LPs of meme pools. Interestingly, they have also been net decrease tvl in meme pools, however the amount is much smaller with - $29M.
 
 <iframe src="https://dune.com/embeds/2607915/4323573" width="800" height="400"></iframe>
 
