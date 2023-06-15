@@ -322,6 +322,6 @@ Even though meme is for fun, the rise of it recently has had a great impact on U
 
 # Updates {.appendix}
 
-This post won the bounty #25 of Unigrants Community Analytics Program (UGPCA).
+This post won the 1st prize of the bounty #25 of Unigrants Community Analytics Program (UGPCA) 🥳.
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">🎉<a href="https://twitter.com/UniswapFND?ref_src=twsrc%5Etfw">@UniswapFND</a> - Community Analytics - Bounty #25 winners 🎉 <br>Our community analysed Memecoins and its impact on Uniswap! <br><br>Kudos to our winners: <br>🥇 <a href="https://twitter.com/0xphu?ref_src=twsrc%5Etfw">@0xphu</a><br>🥈 <a href="https://twitter.com/Mtitus6?ref_src=twsrc%5Etfw">@Mtitus6</a> <br>🥉 Zohan<br><br>Be sure to explore the analyses below as our winners offer valuable observations 👇</p>&mdash; 0xMartijnB (@0xMartijnB) <a href="https://twitter.com/0xMartijnB/status/1668990975593656323?ref_src=twsrc%5Etfw">June 14, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
