@@ -234,7 +234,7 @@ PEPE generates the most profit to traders with $3m, while blue whale traders yie
 
 <iframe src="https://dune.com/embeds/2612535/4334264" width="800" height="400"></iframe>
 
-Only top 10 meme coins in term profit generate more than $100K in total profit each, and they all rank low in profit margin. This is quite predictable as most of them are top trading volume coins which deminish the profit margin.
+Only top 10 meme coins in term of profit generate more than $100K in total profit each, and they all rank low in profit margin. This is quite predictable as most of them are top trading volume coins which deminish the profit margin.
 
 :::{.column-page-right}
 
@@ -318,4 +318,10 @@ And most of them were onboarded to Uniswap.
 
 # Conclusion
 
-Even though meme is for fun, the rise of it recently has had a great impact on Uniswap, especially in onboarding new users. New and inexperienced traders are majority in total # meme traders. However, the main driver of total trading volume and yield most of profit in the rise of meme are very large traders, most of them are experienced and use bot to trade meme coins.
+Even though meme is for fun, the rise of it recently has had a great impact on Uniswap, especially in onboarding new users. New and amature traders are majority in total # meme traders. However, the main driver of total trading volume and yield most of profit in the rise of meme are very large traders, most of them are experienced and use bot to trade meme coins.
+
+# Updates {.appendix}
+
+This post won the bounty #25 of Unigrants Community Analytics Program (UGPCA).
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">🎉<a href="https://twitter.com/UniswapFND?ref_src=twsrc%5Etfw">@UniswapFND</a> - Community Analytics - Bounty #25 winners 🎉 <br>Our community analysed Memecoins and its impact on Uniswap! <br><br>Kudos to our winners: <br>🥇 <a href="https://twitter.com/0xphu?ref_src=twsrc%5Etfw">@0xphu</a><br>🥈 <a href="https://twitter.com/Mtitus6?ref_src=twsrc%5Etfw">@Mtitus6</a> <br>🥉 Zohan<br><br>Be sure to explore the analyses below as our winners offer valuable observations 👇</p>&mdash; 0xMartijnB (@0xMartijnB) <a href="https://twitter.com/0xMartijnB/status/1668990975593656323?ref_src=twsrc%5Etfw">June 14, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
