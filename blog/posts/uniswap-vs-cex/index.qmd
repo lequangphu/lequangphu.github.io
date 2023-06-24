@@ -8,8 +8,10 @@ image: 'preview.png'
 
 # Trades
 
-<iframe src="https://dune.com/embeds/2658402/4419143" width="100%" height="300"></iframe>
+<iframe src="https://dune.com/embeds/2658402/4419143" width="100%" height="400"></iframe>
 
-<iframe width="100%" height="420" frameborder="0" src="https://embed.theblockcrypto.com/data/crypto-markets/spot/cryptocurrency-exchange-volume-monthly/embed" title="Cryptocurrency Monthly Exchange Volume"></iframe>
+<!-- <iframe width="100%" height="420" frameborder="0" src="https://embed.theblockcrypto.com/data/crypto-markets/spot/cryptocurrency-exchange-volume-monthly/embed" title="Cryptocurrency Monthly Exchange Volume"></iframe> -->
+
+<iframe width="100%" height="420" src="https://embed.theblockcrypto.com/data/crypto-markets/spot/cryptocurrency-exchange-volume-monthly/embed"></iframe>
 
 # Liquidity
