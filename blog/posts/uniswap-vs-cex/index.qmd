@@ -1,10 +1,42 @@
 ---
-title: ''
+title: '[WIP]Uniswap vs. CEXs'
 description: ''
 date: '2023-07-09'
 categories: [analysis, crypto]
 image: 'preview.png'
 ---
+
+In this post, I will compare crypto trading activities on Uniswap to those on Centralized Exchanges (CEXs). But first, let's have a quick lookback on some of key events in crypto exchange history.
+
+On Jan 3, 2009, Satoshi Nakamoto mined the first block of Bitcoin.
+
+One year later, on Mar 17, 2010, Bitcoinmarket.com, the first crypto exchange went live. ([ref](https://www.cryptohopper.com/blog/what-was-the-first-crypto-exchange-449))
+
+Four months later, on Jul 18, 2010, mtgox.com, the famous defunct exchange, launched. By Apr 2013, and into early 2014, it became the largest Bitcoin exchange, handling over 70% of total Bitcoin trades. On Feb 28, 2014, after a series of major security breaches, and bitcoin stolens, the exchange filed for bankruptcy. ([ref](https://en.wikipedia.org/wiki/Mt._Gox))
+
+Meanwhile, in Jun 2012, Brian Amstrong founded Coinbase, the current largest CEX in the US. ([ref](https://en.wikipedia.org/wiki/Coinbase))
+
+Five years after the launch of Coinbase, on Jul 14, 2017, Changpeng Zhao founded Binance, the current largest CEX in the world. ([ref](https://en.wikipedia.org/wiki/Binance))
+
+Over a year later, on Nov 2, 2018, Hayden Adams founded Uniswap, the first, and also the current largest DEX in the world. ([ref](https://en.wikipedia.org/wiki/Uniswap))
+
+It's been 14 years since the Bitcoin's genesis block mined, 13 years since the first CEX founded, and almost 4 years since the first DEX founded. With 8 years lesser of operation, how has DEX performed vs. CEX? And with 1 years, and 6 years lesser of operation, how has Uniswap performed vs. Binance, and Coinbase? Let's find out!
+
+# DEX vs. CEX
+
+*To compare DEX to CEX, let's look at DEX to CEX spot trade volume, which is monthly decentralized exchange volume divided by centralized exchange volume (as a percentage).*
+
+In just 4 months, DEX to CEX spot trade volume skyrocketed to 16% in Sep 2020 from 0.56% in May 2020. Sixteen months later, it made a higher high to 17% in Jan 2022. And recently, in May 2023, it made all time high at 22%. That marked DEX spot volume surpassed a fifth of that on CEX.
+
+<iframe width="100%" height="420" frameborder="0" src="https://embed.theblockcrypto.com/data/decentralized-finance/dex-non-custodial/dex-to-cex-spot-trade-volume/embed" title="DEX to CEX Spot Trade Volume (%)"></iframe>
+
+In absolute $, spot trade volume of DEX and CEX's all time high were $213b and $4.25t, both recorded in May 2021, which translates to 9% of DEX to CEX spot trade volume.
+
+Last 12 months, though both spot trade volume on DEX and CEX have generally been down, DEX to CEX spot trade volume has been up.
+
+<iframe width="100%" height="420" frameborder="0" src="https://embed.theblockcrypto.com/data/decentralized-finance/dex-non-custodial/dex-volume-monthly/embed" title="DEX Volume"></iframe>
+
+<iframe width="100%" height="420" frameborder="0" src="https://embed.theblockcrypto.com/data/crypto-markets/spot/cryptocurrency-exchange-volume-monthly/embed" title="Cryptocurrency Monthly Exchange Volume"></iframe>
 
 # Trades
 
