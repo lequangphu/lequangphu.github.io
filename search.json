@@ -1,5 +1,26 @@
 [
   {
+    "objectID": "blog/posts/uniswap-vs-cex/index.html",
+    "href": "blog/posts/uniswap-vs-cex/index.html",
+    "title": "[WIP]Uniswap vs. CEXs",
+    "section": "",
+    "text": "In this post, I will compare crypto trading activities on Uniswap to those on Centralized Exchanges (CEXs). But first, let’s have a quick lookback on some of key events in crypto exchange history.\nOn Jan 3, 2009, Satoshi Nakamoto mined the first block of Bitcoin.\nOne year later, on Mar 17, 2010, Bitcoinmarket.com, the first crypto exchange went live. (ref)\nFour months later, on Jul 18, 2010, mtgox.com, the famous defunct exchange, launched. By Apr 2013, and into early 2014, it became the largest Bitcoin exchange, handling over 70% of total Bitcoin trades. On Feb 28, 2014, after a series of major security breaches, and bitcoin stolens, the exchange filed for bankruptcy. (ref)\nMeanwhile, in Jun 2012, Brian Amstrong founded Coinbase, the current largest CEX in the US. (ref)\nFive years after the launch of Coinbase, on Jul 14, 2017, Changpeng Zhao founded Binance, the current largest CEX in the world. (ref)\nOver a year later, on Nov 2, 2018, Hayden Adams founded Uniswap, the first, and also the current largest DEX in the world. (ref)\nIt’s been 14 years since the Bitcoin’s genesis block mined, 13 years since the first CEX founded, and almost 4 years since the first DEX founded. With 8 years lesser of operation, how has DEX performed vs. CEX? And with 1 years, and 6 years lesser of operation, how has Uniswap performed vs. Binance, and Coinbase? Let’s find out!"
+  },
+  {
+    "objectID": "blog/posts/uniswap-vs-cex/index.html#total-volume",
+    "href": "blog/posts/uniswap-vs-cex/index.html#total-volume",
+    "title": "[WIP]Uniswap vs. CEXs",
+    "section": "Total Volume",
+    "text": "Total Volume\n\nMonthly Volume\n\n\n\n\n\n\nDaily Volume"
+  },
+  {
+    "objectID": "blog/posts/uniswap-vs-cex/index.html#eth-btc-volume",
+    "href": "blog/posts/uniswap-vs-cex/index.html#eth-btc-volume",
+    "title": "[WIP]Uniswap vs. CEXs",
+    "section": "ETH & BTC Volume",
+    "text": "ETH & BTC Volume\n\nMonthly Volume\n\n\n\n\n\n\n\n\n\n\nDaily Volume"
+  },
+  {
     "objectID": "blog/posts/uniswap-v3-license/index.html",
     "href": "blog/posts/uniswap-v3-license/index.html",
     "title": "Uniswap V3 License Expiry",
@@ -116,14 +137,14 @@
     "href": "index.html",
     "title": "🤗",
     "section": "",
-    "text": "Trades\n\n\n1 min\n\n\n\nanalysis\n\n\ncrypto\n\n\n\n\nJul 9, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nUniswap and The Rise of Meme\n\n\n14 min\n\n\n\nanalysis\n\n\ncrypto\n\n\n\n\nJun 4, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nUniswap V3 License Expiry\n\n\n20 min\n\n\n\nanalysis\n\n\ncrypto\n\n\n\n\nMay 1, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nStablecoin Depeg\n\n\n13 min\n\n\n\nanalysis\n\n\ncrypto\n\n\n\n\nApr 10, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBase’s Supply Side Growth\n\n\n13 min\n\n\n\nanalysis\n\n\ncrypto\n\n\n\n\nMar 27, 2023\n\n\n\n\n\n\n\n\n\n\n\n\nXin Chào\n\n\n1 min\n\n\n\nnews\n\n\n\n\nMar 26, 2023\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "[WIP]Uniswap vs. CEXs\n\n\n3 min\n\n\n\nanalysis\n\n\ncrypto\n\n\n\n\nJul 9, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nUniswap and The Rise of Meme\n\n\n14 min\n\n\n\nanalysis\n\n\ncrypto\n\n\n\n\nJun 4, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nUniswap V3 License Expiry\n\n\n20 min\n\n\n\nanalysis\n\n\ncrypto\n\n\n\n\nMay 1, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nStablecoin Depeg\n\n\n13 min\n\n\n\nanalysis\n\n\ncrypto\n\n\n\n\nApr 10, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBase’s Supply Side Growth\n\n\n13 min\n\n\n\nanalysis\n\n\ncrypto\n\n\n\n\nMar 27, 2023\n\n\n\n\n\n\n\n\n\n\n\n\nXin Chào\n\n\n1 min\n\n\n\nnews\n\n\n\n\nMar 26, 2023\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "blog/index.html",
     "href": "blog/index.html",
     "title": "🤗",
     "section": "",
-    "text": "Trades\n\n\n\n\n\n\n\nanalysis\n\n\ncrypto\n\n\n\n\n\n\n\n\n\n\n\nJul 9, 2023\n\n\nLê Quang Phú\n\n\n\n\n\n\n  \n\n\n\n\nUniswap and The Rise of Meme\n\n\n\n\n\n\n\nanalysis\n\n\ncrypto\n\n\n\n\n\n\n\n\n\n\n\nJun 4, 2023\n\n\nLê Quang Phú\n\n\n\n\n\n\n  \n\n\n\n\nUniswap V3 License Expiry\n\n\n\n\n\n\n\nanalysis\n\n\ncrypto\n\n\n\n\n\n\n\n\n\n\n\nMay 1, 2023\n\n\nLê Quang Phú\n\n\n\n\n\n\n  \n\n\n\n\nStablecoin Depeg\n\n\n\n\n\n\n\nanalysis\n\n\ncrypto\n\n\n\n\nExamine effect of the depeg event on Mar 10, 2023 to Dexs Volume on Ethereum.\n\n\n\n\n\n\nApr 10, 2023\n\n\nLê Quang Phú\n\n\n\n\n\n\n  \n\n\n\n\nBase’s Supply Side Growth\n\n\n\n\n\n\n\nanalysis\n\n\ncrypto\n\n\n\n\nExamine the growth of developers and contracts deployed on Base.\n\n\n\n\n\n\nMar 27, 2023\n\n\nLê Quang Phú\n\n\n\n\n\n\n  \n\n\n\n\nXin Chào\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nMar 26, 2023\n\n\nLê Quang Phú\n\n\n\n\n\n\nNo matching items"
+    "text": "[WIP]Uniswap vs. CEXs\n\n\n\n\n\n\n\nanalysis\n\n\ncrypto\n\n\n\n\n\n\n\n\n\n\n\nJul 9, 2023\n\n\nLê Quang Phú\n\n\n\n\n\n\n  \n\n\n\n\nUniswap and The Rise of Meme\n\n\n\n\n\n\n\nanalysis\n\n\ncrypto\n\n\n\n\n\n\n\n\n\n\n\nJun 4, 2023\n\n\nLê Quang Phú\n\n\n\n\n\n\n  \n\n\n\n\nUniswap V3 License Expiry\n\n\n\n\n\n\n\nanalysis\n\n\ncrypto\n\n\n\n\n\n\n\n\n\n\n\nMay 1, 2023\n\n\nLê Quang Phú\n\n\n\n\n\n\n  \n\n\n\n\nStablecoin Depeg\n\n\n\n\n\n\n\nanalysis\n\n\ncrypto\n\n\n\n\nExamine effect of the depeg event on Mar 10, 2023 to Dexs Volume on Ethereum.\n\n\n\n\n\n\nApr 10, 2023\n\n\nLê Quang Phú\n\n\n\n\n\n\n  \n\n\n\n\nBase’s Supply Side Growth\n\n\n\n\n\n\n\nanalysis\n\n\ncrypto\n\n\n\n\nExamine the growth of developers and contracts deployed on Base.\n\n\n\n\n\n\nMar 27, 2023\n\n\nLê Quang Phú\n\n\n\n\n\n\n  \n\n\n\n\nXin Chào\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nMar 26, 2023\n\n\nLê Quang Phú\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "blog/posts/base-supply-side-growth/index.html",

@@ -2,14 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.427">
+<meta name="generator" content="quarto-1.3.433">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Lê Quang Phú">
 <meta name="dcterms.date" content="2023-07-09">
 
-<title>Lê Quang Phú -</title>
+<title>Lê Quang Phú - [WIP]Uniswap vs.&nbsp;CEXs</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -72,12 +72,14 @@ gtag('config', 'G-S7Y9SX5DXE', { 'anonymize_ip': true});
 </script>
 
 
-<meta property="og:title" content="Lê Quang Phú -">
+<meta property="og:title" content="Lê Quang Phú - [WIP]Uniswap vs.&nbsp;CEXs">
+<meta property="og:description" content="">
 <meta property="og:image" content="https://lequangphu.github.io/blog/posts/uniswap-vs-cex/preview.png">
 <meta property="og:site-name" content="Lê Quang Phú">
 <meta property="og:image:height" content="628">
 <meta property="og:image:width" content="1200">
-<meta name="twitter:title" content="Lê Quang Phú -">
+<meta name="twitter:title" content="Lê Quang Phú - [WIP]Uniswap vs.&nbsp;CEXs">
+<meta name="twitter:description" content="">
 <meta name="twitter:image" content="https://lequangphu.github.io/blog/posts/uniswap-vs-cex/preview.png">
 <meta name="twitter:creator" content="@0xphu">
 <meta name="twitter:image-height" content="628">
@@ -124,7 +126,39 @@ gtag('config', 'G-S7Y9SX5DXE', { 'anonymize_ip': true});
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">[WIP]Uniswap vs.&nbsp;CEXs</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">analysis</div>
+                <div class="quarto-category">crypto</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Lê Quang Phú </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">July 9, 2023</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
@@ -132,7 +166,8 @@ gtag('config', 'G-S7Y9SX5DXE', { 'anonymize_ip': true});
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#trades" id="toc-trades" class="nav-link active" data-scroll-target="#trades">Trades</a>
+  <li><a href="#dex-vs.-cex" id="toc-dex-vs.-cex" class="nav-link active" data-scroll-target="#dex-vs.-cex">DEX vs.&nbsp;CEX</a></li>
+  <li><a href="#trades" id="toc-trades" class="nav-link" data-scroll-target="#trades">Trades</a>
   <ul class="collapse">
   <li><a href="#total-volume" id="toc-total-volume" class="nav-link" data-scroll-target="#total-volume">Total Volume</a>
   <ul class="collapse">
@@ -154,6 +189,28 @@ gtag('config', 'G-S7Y9SX5DXE', { 'anonymize_ip': true});
 
 
 
+
+<p>In this post, I will compare crypto trading activities on Uniswap to those on Centralized Exchanges (CEXs). But first, let’s have a quick lookback on some of key events in crypto exchange history.</p>
+<p>On Jan 3, 2009, Satoshi Nakamoto mined the first block of Bitcoin.</p>
+<p>One year later, on Mar 17, 2010, Bitcoinmarket.com, the first crypto exchange went live. (<a href="https://www.cryptohopper.com/blog/what-was-the-first-crypto-exchange-449">ref</a>)</p>
+<p>Four months later, on Jul 18, 2010, mtgox.com, the famous defunct exchange, launched. By Apr 2013, and into early 2014, it became the largest Bitcoin exchange, handling over 70% of total Bitcoin trades. On Feb 28, 2014, after a series of major security breaches, and bitcoin stolens, the exchange filed for bankruptcy. (<a href="https://en.wikipedia.org/wiki/Mt._Gox">ref</a>)</p>
+<p>Meanwhile, in Jun 2012, Brian Amstrong founded Coinbase, the current largest CEX in the US. (<a href="https://en.wikipedia.org/wiki/Coinbase">ref</a>)</p>
+<p>Five years after the launch of Coinbase, on Jul 14, 2017, Changpeng Zhao founded Binance, the current largest CEX in the world. (<a href="https://en.wikipedia.org/wiki/Binance">ref</a>)</p>
+<p>Over a year later, on Nov 2, 2018, Hayden Adams founded Uniswap, the first, and also the current largest DEX in the world. (<a href="https://en.wikipedia.org/wiki/Uniswap">ref</a>)</p>
+<p>It’s been 14 years since the Bitcoin’s genesis block mined, 13 years since the first CEX founded, and almost 4 years since the first DEX founded. With 8 years lesser of operation, how has DEX performed vs.&nbsp;CEX? And with 1 years, and 6 years lesser of operation, how has Uniswap performed vs.&nbsp;Binance, and Coinbase? Let’s find out!</p>
+<section id="dex-vs.-cex" class="level1">
+<h1>DEX vs.&nbsp;CEX</h1>
+<p><em>To compare DEX to CEX, let’s look at DEX to CEX spot trade volume, which is monthly decentralized exchange volume divided by centralized exchange volume (as a percentage).</em></p>
+<p>In just 4 months, DEX to CEX spot trade volume skyrocketed to 16% in Sep 2020 from 0.56% in May 2020. Sixteen months later, it made a higher high to 17% in Jan 2022. And recently, in May 2023, it made all time high at 22%. That marked DEX spot volume surpassed a fifth of that on CEX.</p>
+<iframe width="100%" height="420" frameborder="0" src="https://embed.theblockcrypto.com/data/decentralized-finance/dex-non-custodial/dex-to-cex-spot-trade-volume/embed" title="DEX to CEX Spot Trade Volume (%)">
+</iframe>
+<p>In absolute $, spot trade volume of DEX and CEX’s all time high were $213b and $4.25t, both recorded in May 2021, which translates to 9% of DEX to CEX spot trade volume.</p>
+<p>Last 12 months, though both spot trade volume on DEX and CEX have generally been down, DEX to CEX spot trade volume has been up.</p>
+<iframe width="100%" height="420" frameborder="0" src="https://embed.theblockcrypto.com/data/decentralized-finance/dex-non-custodial/dex-volume-monthly/embed" title="DEX Volume">
+</iframe>
+<iframe width="100%" height="420" frameborder="0" src="https://embed.theblockcrypto.com/data/crypto-markets/spot/cryptocurrency-exchange-volume-monthly/embed" title="Cryptocurrency Monthly Exchange Volume">
+</iframe>
+</section>
 <section id="trades" class="level1">
 <h1>Trades</h1>
 <section id="total-volume" class="level2">
