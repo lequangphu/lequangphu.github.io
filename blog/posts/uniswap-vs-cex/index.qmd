@@ -1,7 +1,7 @@
 ---
 title: '[WIP]Uniswap vs. CEXs'
 description: ''
-date: '2023-07-09'
+date: '2023-07-01'
 categories: [analysis, crypto]
 image: 'preview.png'
 ---
@@ -34,13 +34,19 @@ And recently, in May 2023, it made all time high at 22%. That marked DEX spot vo
 
 <iframe width="100%" height="420" frameborder="0" src="https://embed.theblockcrypto.com/data/decentralized-finance/dex-non-custodial/dex-to-cex-spot-trade-volume/embed" title="DEX to CEX Spot Trade Volume (%)"></iframe>
 
+*source in case of embeded error [link](https://www.theblockcrypto.com/data/decentralized-finance/dex-non-custodial/dex-to-cex-spot-trade-volume)*
+
 In absolute $, spot volume of DEX and CEX's all time high were $213b and $4.25t, both recorded in May 2021, which translates to 9% of DEX to CEX spot volume.
 
 Last 12 months, though both spot volume on DEX and CEX have generally been down, DEX to CEX spot volume (as seen above) has been up, which indicates a slower drop in DEX spot volume.
 
 <iframe width="100%" height="420" frameborder="0" src="https://embed.theblockcrypto.com/data/decentralized-finance/dex-non-custodial/dex-volume-monthly/embed" title="DEX Volume"></iframe>
 
+*source in case of embeded error [link](https://www.theblockcrypto.com/data/decentralized-finance/dex-non-custodial/dex-volume-monthly)*
+
 <iframe width="100%" height="420" frameborder="0" src="https://embed.theblockcrypto.com/data/crypto-markets/spot/cryptocurrency-exchange-volume-monthly/embed" title="Cryptocurrency Monthly Exchange Volume"></iframe>
+
+*source in case of embeded error [link](https://www.theblockcrypto.com/data/crypto-markets/spot/cryptocurrency-exchange-volume-monthly)*
 
 Dominances of Uniswap - the largest DEX, and Binance - the largest CEX, in their own market are quite similar (40%-60% market share).
 
@@ -50,7 +56,11 @@ Last 12 months, market shares of top 2-5 CEXs are more evenly distributed than t
 
 <iframe width="100%" height="420" frameborder="0" src="https://embed.theblockcrypto.com/data/decentralized-finance/dex-non-custodial/share-of-dex-volume-monthly/embed" title="Share of DEX Volume"></iframe>
 
+*source in case of embeded error [link](https://www.theblockcrypto.com/data/decentralized-finance/dex-non-custodial/share-of-dex-volume-monthly)*
+
 <iframe width="100%" height="420" frameborder="0" src="https://embed.theblockcrypto.com/data/crypto-markets/spot/the-block-legitimate-index-market-share/embed" title="Monthly Exchange Volume Market Share"></iframe>
+
+*source in case of embeded error [link](https://www.theblockcrypto.com/data/crypto-markets/spot/the-block-legitimate-index-market-share)*
 
 ## Liquidity
 
@@ -60,7 +70,7 @@ In Defi, in term of value locked by category, DEX is the largest one. And lendin
 
 <iframe width="100%" height="420" frameborder="0" src="https://embed.theblockcrypto.com/data/decentralized-finance/total-value-locked-tvl/total-value-locked-by-category/embed" title="Value Locked by Category"></iframe>
 
-Uniswap is the largest DEX in spot volume. However, it's not the largest DEX in value locked, trailing at no.2 after Curve.
+Uniswap is the largest DEX in spot volume, and also the largest DEX in value locked. *Note that the chart below shows different versions of Uniswap separately, which is why Curve is at the top of the chart.*
 
 <iframe width="100%" height="420" frameborder="0" src="https://embed.theblockcrypto.com/data/decentralized-finance/total-value-locked-tvl/total-value-locked-in-dexs/embed" title="Value Locked in DEXs"></iframe>
 
@@ -86,7 +96,7 @@ r = requests.get('https://app.geckoterminal.com/api/p1/exchanges?')
 
 Coingecko tracks proof of reserves (POR) of 20 CEXs. Binance has the largest POR, more than 6 times higher than OKX, at no.2.
 
-With $65B POR, total asset of Binance is 30 times higher than that of Uniswap.
+With $65B POR, total asset of Binance is roughly 17 times higher than that of Uniswap.
 
 ```{python}
 data = r.json().get('data')
@@ -105,7 +115,13 @@ fig.show()
 ```
 *source: [geckoterminal.com](https://www.geckoterminal.com/proof_of_reserves/exchanges)*
 
-# Trades
+# Uniswap vs. Binance, Coinbase, and OKX
+
+*In this section, depends on data availability, I will compare Uniswap to at least 1 CEX from the 3 largest ones: Binance, Coinbase, and OKX.*
+
+## Trades
+
+*In this section, *
 
 ## Total Volume
 
