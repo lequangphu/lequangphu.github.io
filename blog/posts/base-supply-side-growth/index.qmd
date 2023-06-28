@@ -55,7 +55,7 @@ def get_query_result(sql_file_path:str):
 
 ```{python}
 # get query result
-df_tx_status = pd.DataFrame(get_query_result('resource/tx_status.sql'))
+df_tx_status = pd.DataFrame(get_query_result('queries/tx_status.sql'))
 ```
 
 ```{python}
@@ -116,7 +116,7 @@ Since launched on Feb 23. Base processed mostly between 100k and 200k transactio
 
 ```{python}
 # get query result
-df_tx_type = pd.DataFrame(get_query_result('resource/tx_type.sql'))
+df_tx_type = pd.DataFrame(get_query_result('queries/tx_type.sql'))
 ```
 
 ```{python}
@@ -166,7 +166,7 @@ A developer may deploy a contract several times for various reasons. One reason 
 
 ```{python}
 # get query result
-df_cg = pd.DataFrame(get_query_result('resource/contract_growth.sql'))
+df_cg = pd.DataFrame(get_query_result('queries/contract_growth.sql'))
 ```
 
 ```{python}
@@ -221,7 +221,7 @@ Deployed contracts has been growing much faster than both interacted contracts a
 
 ```{python}
 # get query result
-df_cc = pd.DataFrame(get_query_result('resource/contract_conversion.sql'))
+df_cc = pd.DataFrame(get_query_result('queries/contract_conversion.sql'))
 ```
 
 ```{python}
@@ -274,7 +274,7 @@ With developers, I don't count interacted level because interaction of a develop
 
 ```{python}
 # get query result
-df_dg = pd.DataFrame(get_query_result('resource/dev_growth.sql'))
+df_dg = pd.DataFrame(get_query_result('queries/dev_growth.sql'))
 ```
 
 ```{python}
@@ -327,7 +327,7 @@ Similar to contracts, developers who deploy contracts grow much faster than thos
 
 ```{python}
 # get query result
-df_dc = pd.DataFrame(get_query_result('resource/dev_conversion.sql'))
+df_dc = pd.DataFrame(get_query_result('queries/dev_conversion.sql'))
 ```
 
 ```{python}
@@ -365,7 +365,7 @@ The conversion from deployed to adopted started at 3.7% on Feb 24, then dropped 
 
 ```{python}
 # get query result
-df_devByDCon = pd.DataFrame(get_query_result('resource/devby_dcon.sql'))
+df_devByDCon = pd.DataFrame(get_query_result('queries/devby_dcon.sql'))
 ```
 
 ```{python}
@@ -410,7 +410,7 @@ One 3 weeks old developer has deployed more than 6K contracts or around 300 cont
 
 ```{python}
 # get query result
-df_devByACon = pd.DataFrame(get_query_result('resource/devby_acon.sql'))
+df_devByACon = pd.DataFrame(get_query_result('queries/devby_acon.sql'))
 ```
 
 ```{python}
@@ -453,11 +453,7 @@ There are 2 outlier developers which have quite opposite results, one deploys 26
 ## Base Guild.XYZ
 
 ```{python}
-# read guild.xyz request url and assign to a variable
-with open('resource/request_guildXyz.txt') as f:
-    url = f.read()
-
-response = requests.get(url)
+response = requests.get('https://api.guild.xyz/v1/guild/buildonbase')
 data = pd.json_normalize(response.json())
 names = []
 members = []

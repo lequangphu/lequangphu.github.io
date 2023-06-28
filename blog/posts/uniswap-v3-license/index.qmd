@@ -95,15 +95,15 @@ Decrease LP
 <!-- get tvl and swap data on ethereum and bnb -->
 
 ```{python}
-df_tvl = pd.DataFrame(get_query_result('resource/tvl.sql'))
+df_tvl = pd.DataFrame(get_query_result('queries/tvl.sql'))
 ```
 
 ```{python}
-df_swap = pd.DataFrame(get_query_result('resource/swap.sql'))
+df_swap = pd.DataFrame(get_query_result('queries/swap.sql'))
 ```
 
 ```{python}
-df_swap_pool = pd.DataFrame(get_query_result('resource/swap_pool.sql'))
+df_swap_pool = pd.DataFrame(get_query_result('queries/swap_pool.sql'))
 ```
 
 ## On Ethereum
@@ -250,7 +250,7 @@ The surge in \# swapper was driven by meme coins such as PEPE, WOJAK, FADE, and 
 #### Did the meme coins help Uniswap V3 acquire more new swapper than other coins?
 
 ```{python}
-df_swap_pool_new = pd.DataFrame(get_query_result('resource/swap_pool_new.sql'))
+df_swap_pool_new = pd.DataFrame(get_query_result('queries/swap_pool_new.sql'))
 ```
 
 ```{python}
@@ -433,11 +433,11 @@ USDC, USDT, and WBNB are 3 coins behind the surge in \# swapper on Apr 10, 11.
 # Pancakeswap V3
 
 ```{python}
-df_pc_tvl = pd.DataFrame(get_query_result('resource/pancake_tvl.sql'))
+df_pc_tvl = pd.DataFrame(get_query_result('queries/pancake_tvl.sql'))
 ```
 
 ```{python}
-df_pc_swap = pd.DataFrame(get_query_result('resource/pancake_swap.sql'))
+df_pc_swap = pd.DataFrame(get_query_result('queries/pancake_swap.sql'))
 ```
 
 ## On Ethereum
@@ -667,11 +667,11 @@ In this section, let's imagine a scenario where Uniswap V3 launched after the Ex
 My method is exclude all activities of LPs and Swappers who started using Uniswap V3 before the Expiry.
 
 ```{python}
-df_tvl_after_expiry = pd.DataFrame(get_query_result('resource/tvl_after_expiry.sql'))
+df_tvl_after_expiry = pd.DataFrame(get_query_result('queries/tvl_after_expiry.sql'))
 ```
 
 ```{python}
-df_swap_after_expiry = pd.DataFrame(get_query_result('resource/swap_after_expiry.sql'))
+df_swap_after_expiry = pd.DataFrame(get_query_result('queries/swap_after_expiry.sql'))
 ```
 
 ```{python}
@@ -852,11 +852,11 @@ Unlike the situation on Ethereum, by Apr 30, Pancakeswap V3 grew much faster tha
 ## Pancakeswap V3 Users who are also Uniswap V3 Users
 
 ```{python}
-df_lp_overlap = pd.DataFrame(get_query_result('resource/lp_overlap.sql'))
+df_lp_overlap = pd.DataFrame(get_query_result('queries/lp_overlap.sql'))
 ```
 
 ```{python}
-df_swapper_overlap = pd.DataFrame(get_query_result('resource/swapper_overlap.sql'))
+df_swapper_overlap = pd.DataFrame(get_query_result('queries/swapper_overlap.sql'))
 ```
 
 <!-- plot LP pie -->
@@ -903,4 +903,4 @@ Though the V3 license expired, the forks are be launched, with 2 years of a head
 
 # Appendix {.appendix}
 
--   [Data source](https://flipsidecrypto.xyz/) and [Queries](https://github.com/lequangphu/lequangphu.github.io/tree/main/blog/posts/uniswap-v3-license/resource).
+-   [Data source](https://flipsidecrypto.xyz/) and [Queries](https://github.com/lequangphu/lequangphu.github.io/tree/main/blog/posts/uniswap-v3-license/queries).

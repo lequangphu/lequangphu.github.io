@@ -1,1 +1,0 @@
-https://api.guild.xyz/v1/guild/buildonbase

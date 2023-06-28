@@ -74,11 +74,11 @@ def add_vline(fig, start=depeg_start, end=depeg_end):
 ```
 
 ```{python}
-df_price = pd.DataFrame(get_query_result('resource/price.sql'))
+df_price = pd.DataFrame(get_query_result('queries/price.sql'))
 ```
 
 ```{python}
-df_vol = pd.DataFrame(get_query_result('resource/vol.sql'))
+df_vol = pd.DataFrame(get_query_result('queries/vol.sql'))
 ```
 
 ::: callout-note
@@ -459,7 +459,7 @@ Since depeg began, bb-a-USDC and bb-a-DAI (Balancer Boosted Aave stable coins) h
 To answer the question, let's look at share of daily volume flow in/out of stablecoins since Mar 1, 2023 to date.
 
 ```{python}
-df_sv = pd.DataFrame(get_query_result('resource/stableCoin_vol.sql'))
+df_sv = pd.DataFrame(get_query_result('queries/stableCoin_vol.sql'))
 ```
 
 ```{python}
@@ -520,4 +520,4 @@ During the depeg event, Uniswap and Curve are the 2 places where actions (liquid
 
 -   Summary in my [twitter thread](https://twitter.com/0xphu/status/1646108856039383040?s=20).
 
--   [Data source](https://flipsidecrypto.xyz/) and [Queries](https://github.com/lequangphu/lequangphu.github.io/tree/main/blog/posts/uniswap-stablecoin-depeg/resource).
+-   [Data source](https://flipsidecrypto.xyz/) and [Queries](https://github.com/lequangphu/lequangphu.github.io/tree/main/blog/posts/uniswap-stablecoin-depeg/queries).

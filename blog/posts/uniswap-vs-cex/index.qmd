@@ -24,7 +24,9 @@ It's been 14 years since the Bitcoin's genesis block mined, 13 years since the f
 
 # DEX vs. CEX
 
-*To compare DEX to CEX, let's look at DEX to CEX spot volume, which is monthly decentralized exchange volume divided by centralized exchange volume (as a percentage).*
+## Trades
+
+*In this section, to compare DEX to CEX, let's look at DEX to CEX spot volume, which is monthly decentralized exchange volume divided by centralized exchange volume (as a percentage).*
 
 In just 4 months, DEX to CEX spot volume skyrocketed to 16% in Sep 2020 from 0.56% in May 2020. Sixteen months later, it made a higher high to 17% in Jan 2022. *To see this on the chart below, click zoom all at the bottom right corner.*
 
@@ -40,9 +42,68 @@ Last 12 months, though both spot volume on DEX and CEX have generally been down,
 
 <iframe width="100%" height="420" frameborder="0" src="https://embed.theblockcrypto.com/data/crypto-markets/spot/cryptocurrency-exchange-volume-monthly/embed" title="Cryptocurrency Monthly Exchange Volume"></iframe>
 
+Dominances of Uniswap - the largest DEX, and Binance - the largest CEX, in their own market are quite similar (40%-60% market share).
+
+Overall, market share of Binance has been in a steeper upward slope than that of Uniswap. *To see this on the charts below, click zoom all at the bottom right corner.*
+
+Last 12 months, market shares of top 2-5 CEXs are more evenly distributed than those of top 2-5 DEXs.
+
 <iframe width="100%" height="420" frameborder="0" src="https://embed.theblockcrypto.com/data/decentralized-finance/dex-non-custodial/share-of-dex-volume-monthly/embed" title="Share of DEX Volume"></iframe>
 
 <iframe width="100%" height="420" frameborder="0" src="https://embed.theblockcrypto.com/data/crypto-markets/spot/the-block-legitimate-index-market-share/embed" title="Monthly Exchange Volume Market Share"></iframe>
+
+## Liquidity
+
+*In this section, to compare DEX to CEX, let's look at total asset deposited in DEX (i.e. TVL, value locked), and in CEX (i.e. [proof of reserves](https://www.coingecko.com/learn/what-is-proof-of-reserves-por)).*
+
+In Defi, in term of value locked by category, DEX is the largest one. And lending follows closely behind.
+
+<iframe width="100%" height="420" frameborder="0" src="https://embed.theblockcrypto.com/data/decentralized-finance/total-value-locked-tvl/total-value-locked-by-category/embed" title="Value Locked by Category"></iframe>
+
+Uniswap is the largest DEX in spot volume. However, it's not the largest DEX in value locked, trailing at no.2 after Curve.
+
+<iframe width="100%" height="420" frameborder="0" src="https://embed.theblockcrypto.com/data/decentralized-finance/total-value-locked-tvl/total-value-locked-in-dexs/embed" title="Value Locked in DEXs"></iframe>
+
+<!-- prepare for plotly charts -->
+
+```{python}
+import requests
+import pandas as pd
+import plotly.express as px
+import plotly.graph_objs as go
+import plotly.io as pio
+from datetime import datetime
+
+# set plotly default theme
+pio.templates.default = 'plotly_white'
+```
+
+<!-- get CEX proof of reserves -->
+
+```{python}
+r = requests.get('https://app.geckoterminal.com/api/p1/exchanges?')
+```
+
+Coingecko tracks proof of reserves (POR) of 20 CEXs. Binance has the largest POR, more than 6 times higher than OKX, at no.2.
+
+With $65B POR, total asset of Binance is 30 times higher than that of Uniswap.
+
+```{python}
+data = r.json().get('data')
+exchanges = [item['attributes'] for item in data]
+df = pd.DataFrame(exchanges)
+last_update = df['last_updated_at'].max()
+last_update = datetime.strptime(last_update, '%Y-%m-%dT%H:%M:%S.%fZ')
+last_update = last_update.strftime('%b %d, %Y')
+df['total_assets_in_usd'] = pd.to_numeric(df['total_assets_in_usd'])
+fig = px.bar(
+    df, x='name', y='total_assets_in_usd',
+    title=f'Proof of Reserves by Cryptocurrency Exchanges, last updated on {last_update}'
+)
+fig.update_layout(xaxis_title='CEX', yaxis_title='Total Asset in USD')
+fig.show()
+```
+*source: [geckoterminal.com](https://www.geckoterminal.com/proof_of_reserves/exchanges)*
 
 # Trades
 
