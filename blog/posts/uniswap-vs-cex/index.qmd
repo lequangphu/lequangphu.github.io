@@ -22,23 +22,175 @@ In the same year, OKX was launched. [link](https://en.wikipedia.org/wiki/OKX)
 
 Over a year later, on Nov 2, 2018, Hayden Adams founded Uniswap, the first, and also the current largest DEX in the world. [link](https://en.wikipedia.org/wiki/Uniswap)
 
-It's been 14 years since the Bitcoin's genesis block mined, 13 years since the first CEX founded, and almost 4 years since the first DEX founded. With 8 years lesser of operation, how has DEX performed vs. CEX? And with 1 years to 6 years lesser of operation, how has Uniswap performed vs. Binance, Coinbase, and OKX? Let's find out!
+It's been 14 years since the Bitcoin's genesis block mined, 13 years since the first CEX founded, and almost 4 years since the first DEX founded. With 8 years lesser in operation, how has DEX performed vs. CEX? And with 1 years to 6 years lesser in operation, how has Uniswap performed vs. Binance, Coinbase, and OKX? Let's find out!
+
+::: {.callout-tip}
+## How to read charts
+
+-   Charts from theblockcrypto.com has default zoom of the last 12 months. There are other options at the bottom right corner of the charts. Some comments below are of all time zoom option, so if you want to see related data, click the zoom **all** option.
+
+-   Sometimes, if the charts from theblockcrypto.com don't show up due to embeded error, please click their source links located right below them.
+:::
 
 # DEX vs. CEX
+
+To service a trade, there must be liquidity. First, let's examine liquidity.
+
+## Liquidity
+
+*In this section, let's look at total asset deposited in DEX (i.e. TVL, value locked), and in CEX (i.e. [proof of reserves](https://www.coingecko.com/learn/what-is-proof-of-reserves-por)).*
+
+<!-- prepare for plotly charts -->
+
+```{python}
+import requests
+import pandas as pd
+import plotly.express as px
+import plotly.graph_objs as go
+import plotly.io as pio
+from datetime import datetime
+
+# set plotly default theme
+pio.templates.default = 'plotly_white'
+```
+
+<!-- get CEX proof of reserves -->
+
+```{python}
+r = requests.get('https://api.llama.fi/protocols')
+```
+
+```{python}
+df = pd.DataFrame(r.json())
+df_essential = df[['name','category','slug','tvl','parentProtocol','twitter']]
+df_exchange = df_essential.query('category in ("CEX","Dexes")')
+
+# extract the part after 'parent#' using str.extract() method
+df_exchange['parentName'] = df_exchange['parentProtocol'].str.extract(r'parent#(.*)')
+
+df_exchange['parentName'] = df_exchange['parentName'].str.capitalize()
+
+df_exchange['parentName'] = df_exchange['parentName'].fillna(df_exchange['name'])
+```
+
+Total DEX assets is roughly 15% of total CEX assets.
+
+```{python}
+df_cat = df_exchange[['category','tvl']].groupby(by='category', as_index=False).sum()
+
+fig = px.bar(
+    df_cat, x='category', y='tvl',
+    title='Exchange Total Assets',
+    text_auto='.4s'
+)
+
+fig.update_traces(
+    textposition="outside",
+    textfont_size=12, textangle=0, cliponaxis=False
+)
+
+fig.update_layout(
+    xaxis_title='Exchange Category', 
+    yaxis_title='Total Assets in USD'
+)
+
+fig.show()
+```
+
+There are 839 DEXs tracked on Defillama. Top 20 DEXs account for 60% of total DEX assets. Uniswap is the largest DEX in total assets.
+
+```{python}
+df_dex = df_exchange.query('category == "Dexes"')
+
+df_dex_agg = df_dex[['parentName', 'category', 'tvl']].groupby(by=['parentName', 'category'], as_index=False).sum()
+
+df_dex_agg = df_dex_agg.sort_values('tvl', ascending=False)
+
+df_top20 = df_dex_agg.iloc[:20]
+
+rest_count = df_dex_agg['tvl'].iloc[20:].count()
+
+df_rest = pd.DataFrame({'parentName': [f'Other {rest_count} protocols'], 'tvl': [df_dex_agg['tvl'].iloc[20:].sum()]})
+
+df_top20_rest = pd.concat([df_rest, df_top20.iloc[::-1]])
+
+fig = px.bar(
+    df_top20_rest, x='tvl', y='parentName',
+    title='DEX Total Assets',
+    text_auto='.3s',
+    height=800
+)
+
+fig.update_traces(
+    textposition="outside",
+)
+
+fig.update_layout(
+    xaxis_title='Total Assets in USD', 
+    yaxis_title='DEX'
+)
+
+fig.show()
+```
+
+There are 28 CEXs tracked on Defillama. Top 3 CEXs account for almost 80% of total CEX assets. Binance is the largest CEX in total assets.
+
+```{python}
+df_cex = df_exchange.query('category == "CEX"').sort_values('tvl', ascending=False).iloc[::-1]
+
+fig = px.bar(
+    df_cex, x='tvl', y='name',
+    title='CEX Total Assets',
+    text_auto='.3s',
+    height=800
+)
+
+fig.update_traces(
+    textposition="outside",
+)
+
+fig.update_layout(
+    xaxis_title='Total Assets in USD', 
+    yaxis_title='CEX'
+)
+
+fig.show()
+```
+
+In top 10 exchanges, only 2 of them are DEXs, which are Uniswap, and Curve, at 4th and 5th position respectively.
+
+```{python}
+df_cex1 = df_cex[['parentName', 'category', 'tvl']]
+df_exchange_adj = pd.concat([df_cex1, df_dex_agg])
+n = 10
+df_top_ex = df_exchange_adj.sort_values('tvl', ascending=False).iloc[:n]
+
+#reverse to show in descending order of tvl
+df_top_ex = df_top_ex.iloc[::-1]
+
+fig = px.bar(
+    df_top_ex, x='tvl', y='parentName',
+    title=f'Top {n} Exchange Total Assets',
+    text_auto='.3s'
+)
+
+fig.update_traces(
+    textposition="outside",
+)
+
+fig.update_layout(
+    xaxis_title='Total Assets in USD', 
+    yaxis_title='Exchange'
+)
+
+fig.show()
+```
 
 ## Trades
 
 *In this section, to compare DEX to CEX, let's look at DEX to CEX spot volume, which is monthly decentralized exchange volume divided by centralized exchange volume (as a percentage).*
 
-::: {.callout-tip}
-## How to read charts
-
--   Charts from theblockcrypto.com has default view of the last 12 months. There are other options at the bottom right corner of the charts. Some comments below are of other view options, so if you want to see related data, click the zoom **all** option.
-
--   Sometimes, if the charts from theblockcrypto.com don't show up due to embeded error, please click their source links located right below them.
-:::
-
-In just 4 months, DEX to CEX spot volume skyrocketed to 16% in Sep 2020 from 0.56% in May 2020. Sixteen months later, it made a higher high to 17% in Jan 2022.
+One and a half year after the first data point in Jan 2019, DEX to CEX spot volume first surpassed 1% in Jun 2020. Four months later, DEX to CEX spot volume skyrocketed to 16% in Sep 2020. Sixteen months later, it made a higher high to 17% in Jan 2022.
 
 And recently, in May 2023, it made all time high at 22%. That marked DEX spot volume surpassed a fifth of that on CEX.
 
@@ -58,7 +210,7 @@ Last 12 months, though both spot volume on DEX and CEX have generally been down,
 
 *source: [theblockcrypto.com](https://www.theblockcrypto.com/data/crypto-markets/spot/cryptocurrency-exchange-volume-monthly).*
 
-Dominances of Uniswap - the largest DEX, and Binance - the largest CEX, in their own market are quite similar (40%-60% market share).
+Dominances of Uniswap - the largest DEX, and Binance - the largest CEX, in each category are quite similar (40%-60% market share).
 
 Overall, market share of Binance has been in a steeper upward slope than that of Uniswap.
 
@@ -71,77 +223,6 @@ Last 12 months, market shares of top 2-5 CEXs are more evenly distributed than t
 <iframe width="100%" height="420" frameborder="0" src="https://embed.theblockcrypto.com/data/crypto-markets/spot/the-block-legitimate-index-market-share/embed" title="Monthly Exchange Volume Market Share"></iframe>
 
 *source: [theblockcrypto.com](https://www.theblockcrypto.com/data/crypto-markets/spot/the-block-legitimate-index-market-share).*
-
-## Liquidity
-
-*In this section, to compare DEX to CEX, let's look at total asset deposited in DEX (i.e. TVL, value locked), and in CEX (i.e. [proof of reserves](https://www.coingecko.com/learn/what-is-proof-of-reserves-por)).*
-
-In Defi, in term of value locked by category, DEX is the largest one. And lending follows closely behind.
-
-<iframe width="100%" height="420" frameborder="0" src="https://embed.theblockcrypto.com/data/decentralized-finance/total-value-locked-tvl/total-value-locked-by-category/embed" title="Value Locked by Category"></iframe>
-
-*source: [theblockcrypto.com](https://www.theblockcrypto.com/data/decentralized-finance/total-value-locked-tvl/total-value-locked-by-category).*
-
-Uniswap is the largest DEX in spot volume, and also the largest DEX in value locked. *Note that the chart below shows different versions of Uniswap separately, which is why Curve is at the top of the chart.*
-
-<iframe width="100%" height="420" frameborder="0" src="https://embed.theblockcrypto.com/data/decentralized-finance/total-value-locked-tvl/total-value-locked-in-dexs/embed" title="Value Locked in DEXs"></iframe>
-
-*source: [theblockcrypto.com](https://www.theblockcrypto.com/data/decentralized-finance/total-value-locked-tvl/total-value-locked-in-dexs).*
-
-<!-- prepare for plotly charts -->
-
-```{python}
-import requests
-import pandas as pd
-import plotly.express as px
-import plotly.graph_objs as go
-import plotly.io as pio
-from datetime import datetime
-
-# set plotly default theme
-pio.templates.default = 'plotly_white'
-```
-
-<!-- get CEX proof of reserves -->
-
-```{python}
-r = requests.get('https://app.geckoterminal.com/api/p1/exchanges?')
-```
-
-Coingecko tracks proof of reserves (POR) of 20 CEXs, which have PORs ranging between $4.2M and $64B. Binance has the largest POR, more than 6 times higher than that of OKX, in 2nd place.
-
-With $64B POR, total asset of Binance is roughly 17 times higher than that of Uniswap.
-
-```{python}
-data = r.json().get('data')
-exchanges = [item['attributes'] for item in data]
-df = pd.DataFrame(exchanges)
-
-last_update = df['last_updated_at'].max()
-last_update = datetime.strptime(last_update, '%Y-%m-%dT%H:%M:%S.%fZ')
-last_update = last_update.strftime('%b %d, %Y')
-
-df['total_assets_in_usd'] = pd.to_numeric(df['total_assets_in_usd'])
-
-fig = px.bar(
-    df, x='name', y='total_assets_in_usd',
-    title=f'Proof of Reserves by Cryptocurrency Exchanges, last updated on {last_update}',
-    text_auto='.2s'
-)
-
-fig.update_traces(
-    textposition="outside",
-    textfont_size=12, textangle=0, cliponaxis=False
-)
-
-fig.update_layout(
-    xaxis_title='Exchange Name', 
-    yaxis_title='Total Assets in USD'
-)
-
-fig.show()
-```
-*source: [geckoterminal.com](https://www.geckoterminal.com/proof_of_reserves/exchanges).*
 
 # Uniswap vs. Binance, Coinbase, and OKX
 
