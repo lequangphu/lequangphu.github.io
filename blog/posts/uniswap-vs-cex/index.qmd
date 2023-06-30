@@ -16,13 +16,15 @@ Four months later, on Jul 18, 2010, mtgox.com, the famous defunct exchange, laun
 
 Meanwhile, in Jun 2012, Brian Amstrong founded Coinbase, the current largest CEX in the US. [link](https://en.wikipedia.org/wiki/Coinbase)
 
+Six months later, Bitfinex was founded. [link](https://en.wikipedia.org/wiki/Bitfinex)
+
 Five years after the launch of Coinbase, on Jul 14, 2017, Changpeng Zhao founded Binance, the current largest CEX in the world. [link](https://en.wikipedia.org/wiki/Binance)
 
 In the same year, OKX was launched. [link](https://en.wikipedia.org/wiki/OKX)
 
 Over a year later, on Nov 2, 2018, Hayden Adams founded Uniswap, the first, and also the current largest DEX in the world. [link](https://en.wikipedia.org/wiki/Uniswap)
 
-It's been 14 years since the Bitcoin's genesis block mined, 13 years since the first CEX founded, and almost 4 years since the first DEX founded. With 8 years lesser in operation, how has DEX performed vs. CEX? And with 1 years to 6 years lesser in operation, how has Uniswap performed vs. Binance, Coinbase, and OKX? Let's find out!
+It's been 14 years since the Bitcoin's genesis block mined, 13 years since the first CEX founded, and almost 4 years since the first DEX founded. With 8 years lesser in operation, how has DEX performed vs. CEX? And with 1 years to 6 years lesser in operation, how has Uniswap performed vs. Binance, Coinbase, OKX, and Bitfinex? Let's find out!
 
 ::: {.callout-tip}
 ## How to read charts
@@ -49,6 +51,8 @@ import plotly.express as px
 import plotly.graph_objs as go
 import plotly.io as pio
 from datetime import datetime
+
+pd.options.mode.chained_assignment = None  # default='warn'
 
 # set plotly default theme
 pio.templates.default = 'plotly_white'
@@ -224,9 +228,9 @@ Last 12 months, market shares of top 2-5 CEXs are more evenly distributed than t
 
 *source: [theblockcrypto.com](https://www.theblockcrypto.com/data/crypto-markets/spot/the-block-legitimate-index-market-share).*
 
-# Uniswap vs. Binance, Coinbase, and OKX
+# Uniswap vs. Top CEXs
 
-*In this section, depends on data availability, I will compare Uniswap to at least 1 CEX among Binance, Coinbase, and OKX.*
+*In this section, depends on data availability, I will compare Uniswap to at least 1 CEX among Binance, Coinbase, OKX, and Bitfinex.*
 
 ## Trades
 
