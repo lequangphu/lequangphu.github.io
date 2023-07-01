@@ -66,7 +66,7 @@ r = requests.get('https://api.llama.fi/protocols')
 
 ```{python}
 df = pd.DataFrame(r.json())
-df_essential = df[['name','category','slug','tvl','parentProtocol','twitter']]
+df_essential = df[['name','category','slug','tvl','parentProtocol']]
 df_exchange = df_essential.query('category in ("CEX","Dexes")')
 
 # extract the part after 'parent#' using str.extract() method
@@ -85,12 +85,7 @@ df_cat = df_exchange[['category','tvl']].groupby(by='category', as_index=False).
 fig = px.bar(
     df_cat, x='category', y='tvl',
     title='Exchange Total Assets',
-    text_auto='.4s'
-)
-
-fig.update_traces(
-    textposition="outside",
-    textfont_size=12, textangle=0, cliponaxis=False
+    text_auto='.3s'
 )
 
 fig.update_layout(
@@ -101,32 +96,28 @@ fig.update_layout(
 fig.show()
 ```
 
-There are 839 DEXs tracked on Defillama. Top 20 DEXs account for 60% of total DEX assets. Uniswap is the largest DEX in total assets.
+There are 839 DEXs tracked on Defillama. Top 20 DEXs, which have TVL range between $80M and $4B (to be input later), account for 60% of total DEX assets. Uniswap is the largest DEX in total assets.
 
 ```{python}
 df_dex = df_exchange.query('category == "Dexes"')
 
 df_dex_agg = df_dex[['parentName', 'category', 'tvl']].groupby(by=['parentName', 'category'], as_index=False).sum()
 
-df_dex_agg = df_dex_agg.sort_values('tvl', ascending=False)
+df_dex_agg = df_dex_agg.sort_values('tvl')
 
-df_top20 = df_dex_agg.iloc[:20]
+df_top20 = df_dex_agg.tail(20)
 
-rest_count = df_dex_agg['tvl'].iloc[20:].count()
+rest_count = df_dex_agg['tvl'][:len(df_dex_agg) - 20].count()
 
-df_rest = pd.DataFrame({'parentName': [f'Other {rest_count} protocols'], 'tvl': [df_dex_agg['tvl'].iloc[20:].sum()]})
+df_rest = pd.DataFrame({'parentName': [f'Other {rest_count} protocols'], 'tvl': [df_dex_agg['tvl'].iloc[:len(df_dex_agg) - 20].sum()]})
 
-df_top20_rest = pd.concat([df_rest, df_top20.iloc[::-1]])
+df_top20_rest = pd.concat([df_rest, df_top20])
 
 fig = px.bar(
     df_top20_rest, x='tvl', y='parentName',
     title='DEX Total Assets',
     text_auto='.3s',
     height=800
-)
-
-fig.update_traces(
-    textposition="outside",
 )
 
 fig.update_layout(
@@ -137,20 +128,16 @@ fig.update_layout(
 fig.show()
 ```
 
-There are 28 CEXs tracked on Defillama. Top 3 CEXs account for almost 80% of total CEX assets. Binance is the largest CEX in total assets.
+There are 28 CEXs, which have proof of reserves (POR) range between $100K and $60B. Top 3 CEXs account for almost 80% of total CEX assets. Binance is the largest CEX in total assets.
 
 ```{python}
-df_cex = df_exchange.query('category == "CEX"').sort_values('tvl', ascending=False).iloc[::-1]
+df_cex = df_exchange.query('category == "CEX"').sort_values('tvl')
 
 fig = px.bar(
     df_cex, x='tvl', y='name',
     title='CEX Total Assets',
     text_auto='.3s',
     height=800
-)
-
-fig.update_traces(
-    textposition="outside",
 )
 
 fig.update_layout(
@@ -176,10 +163,6 @@ fig = px.bar(
     df_top_ex, x='tvl', y='parentName',
     title=f'Top {n} Exchange Total Assets',
     text_auto='.3s'
-)
-
-fig.update_traces(
-    textposition="outside",
 )
 
 fig.update_layout(
@@ -231,6 +214,54 @@ Last 12 months, market shares of top 2-5 CEXs are more evenly distributed than t
 # Uniswap vs. Top CEXs
 
 *In this section, depends on data availability, I will compare Uniswap to at least 1 CEX among Binance, Coinbase, OKX, and Bitfinex.*
+
+## Liquidity
+
+```{python}
+df_top3_cex = df_cex.tail(3)
+df_uniswap = df_dex.query('parentName == "Uniswap"')
+df_combine = pd.concat([df_uniswap, df_top3_cex], ignore_index=True)
+df_combine['defillamaApiUrl'] = df_combine['slug'].apply(lambda x: f'https://api.llama.fi/protocol/{x}')
+df_combine['protocolData'] = df_combine['defillamaApiUrl'].apply(lambda x: requests.get(x).json())
+df_combine
+```
+
+```{python}
+for key in ['currentChainTvls', 'chainTvls', 'tvl', 'tokensInUsd', 'tokens']:
+    df_combine[key] = df_combine['protocolData'].apply(lambda x: x[key])
+df_combine
+```
+
+```{python}
+df_currentChainTvls = df_combine[['parentName', 'name', 'currentChainTvls']]
+
+df_uniswap = df_currentChainTvls.query('parentName == "Uniswap"')
+df_concat = pd.concat(df_uniswap['currentChainTvls'].apply(pd.json_normalize).tolist(), ignore_index=True)
+df_uniswap = pd.concat([df_uniswap[['parentName']], df_concat], axis=1)
+df_uniswap = df_uniswap.melt(id_vars=['parentName'], value_vars=['Optimism', 'Binance', 'Ethereum', 'Polygon',
+       'Celo', 'Arbitrum'], var_name='chain', value_name='tvl')
+
+df_cex = df_currentChainTvls.query('parentName != "Uniswap"').reset_index(drop=True)
+df_concat = pd.concat(df_cex['currentChainTvls'].apply(pd.json_normalize).tolist(), ignore_index=True)
+df_cex = pd.concat([df_cex[['parentName']], df_concat], axis=1)
+df_cex = df_cex.melt(id_vars=['parentName'], value_vars=['Optimism', 'Binance', 'Ethereum', 'Polygon',
+       'Arbitrum', 'Cosmos', 'Cardano', 'EthereumClassic', 'Avalanche', 'Tron',
+       'Fantom', 'Litecoin', 'Zilliqa', 'Aptos', 'Near', 'EOS', 'Tezos',
+       'Algorand', 'Solana', 'Elrond', 'Polkadot', 'Bitcoin', 'Ripple'], var_name='chain', value_name='tvl')
+
+df_ex = pd.concat([df_uniswap, df_cex[::-1]])
+```
+
+```{python}
+#| column: page
+fig = px.pie(
+    df_ex, names='chain', values='tvl', title='Total Exchange Assets by Chain',
+    facet_col='parentName',
+    height=800
+)
+
+fig.show()
+```
 
 ## Trades
 
