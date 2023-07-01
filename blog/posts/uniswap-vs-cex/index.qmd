@@ -235,8 +235,8 @@ df_currentChainTvls = df_combine[['parentName', 'name', 'currentChainTvls']]
 
 df_uniswap = df_currentChainTvls.query('parentName == "Uniswap"')
 df_concat = pd.concat(df_uniswap['currentChainTvls'].apply(pd.json_normalize).tolist(), ignore_index=True)
-df_uniswap = pd.concat([df_uniswap[['parentName']], df_concat], axis=1)
-df_uniswap = df_uniswap.melt(id_vars=['parentName'], value_vars=['Optimism', 'Binance', 'Ethereum', 'Polygon',
+df_uniswap = pd.concat([df_uniswap[['name']], df_concat], axis=1)
+df_uniswap = df_uniswap.melt(id_vars=['name'], value_vars=['Optimism', 'Binance', 'Ethereum', 'Polygon',
        'Celo', 'Arbitrum'], var_name='chain', value_name='tvl')
 
 df_cex = df_currentChainTvls.query('parentName != "Uniswap"').reset_index(drop=True)
@@ -269,6 +269,30 @@ fig2 = px.pie(
 fig2.show()
 ```
 
+```{python}
+df_tvl = df_combine[['parentName', 'name', 'tvl']]
+
+# df_uniswap = df_tvl.query('parentName == "Uniswap"')
+# df_uniswap = pd.concat(df_uniswap['tvl'].apply(pd.json_normalize).tolist(), ignore_index=True)
+# df_uniswap['date'] = pd.to_datetime(df_uniswap['date'], unit='s')
+
+dfs = []
+cexs = 'Binance CEX', 'OKX', 'Bitfinex'
+
+for df, cex in zip((pd.DataFrame(), pd.DataFrame(), pd.DataFrame()), cexs):
+    df = df_tvl[df_tvl['name'] == cex]
+    df = pd.concat(df['tvl'].apply(pd.json_normalize).tolist(), ignore_index=True)
+    df['date'] = pd.to_datetime(df['date'], unit='s')
+    dfs.append(df)
+
+df_binance, df_okx, df_bitfinex = dfs
+
+df_binance
+```
+
+```{python}
+
+```
 ## Trades
 
 <iframe width="100%" height="420" frameborder="0" src="https://embed.theblockcrypto.com/data/decentralized-finance/dex-non-custodial/uniswap-vs-coinbase-and-binance-trade-volume-7dma/embed" title="Uniswap vs. Coinbase and Binance Trade Volume (7DMA)"></iframe>
