@@ -246,9 +246,12 @@ df_cex = df_cex.melt(id_vars=['name'], value_vars=['Optimism', 'Binance', 'Ether
        'Arbitrum', 'Cosmos', 'Cardano', 'EthereumClassic', 'Avalanche', 'Tron',
        'Fantom', 'Litecoin', 'Zilliqa', 'Aptos', 'Near', 'EOS', 'Tezos',
        'Algorand', 'Solana', 'Elrond', 'Polkadot', 'Bitcoin', 'Ripple'], var_name='chain', value_name='tvl')
+```
 
+```{python}
 fig1 = px.pie(
     df_uniswap, names='chain', values='tvl', title='Uniswap Assets by Chain',
+    hover_data={'tvl': ':.3s'}
 )
 
 fig1.show()
@@ -260,7 +263,7 @@ fig1.show()
 fig2 = px.pie(
     df_cex[::-1], names='chain', values='tvl', title='CEX Assets by Chain',
     facet_col='name',
-    height=800
+    hover_data={'tvl': ':.3s'}
 )
 
 fig2.show()
