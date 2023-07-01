@@ -223,13 +223,11 @@ df_uniswap = df_dex.query('parentName == "Uniswap"')
 df_combine = pd.concat([df_uniswap, df_top3_cex], ignore_index=True)
 df_combine['defillamaApiUrl'] = df_combine['slug'].apply(lambda x: f'https://api.llama.fi/protocol/{x}')
 df_combine['protocolData'] = df_combine['defillamaApiUrl'].apply(lambda x: requests.get(x).json())
-df_combine
 ```
 
 ```{python}
 for key in ['currentChainTvls', 'chainTvls', 'tvl', 'tokensInUsd', 'tokens']:
     df_combine[key] = df_combine['protocolData'].apply(lambda x: x[key])
-df_combine
 ```
 
 ```{python}
@@ -243,24 +241,29 @@ df_uniswap = df_uniswap.melt(id_vars=['parentName'], value_vars=['Optimism', 'Bi
 
 df_cex = df_currentChainTvls.query('parentName != "Uniswap"').reset_index(drop=True)
 df_concat = pd.concat(df_cex['currentChainTvls'].apply(pd.json_normalize).tolist(), ignore_index=True)
-df_cex = pd.concat([df_cex[['parentName']], df_concat], axis=1)
-df_cex = df_cex.melt(id_vars=['parentName'], value_vars=['Optimism', 'Binance', 'Ethereum', 'Polygon',
+df_cex = pd.concat([df_cex[['name']], df_concat], axis=1)
+df_cex = df_cex.melt(id_vars=['name'], value_vars=['Optimism', 'Binance', 'Ethereum', 'Polygon',
        'Arbitrum', 'Cosmos', 'Cardano', 'EthereumClassic', 'Avalanche', 'Tron',
        'Fantom', 'Litecoin', 'Zilliqa', 'Aptos', 'Near', 'EOS', 'Tezos',
        'Algorand', 'Solana', 'Elrond', 'Polkadot', 'Bitcoin', 'Ripple'], var_name='chain', value_name='tvl')
 
-df_ex = pd.concat([df_uniswap, df_cex[::-1]])
+fig1 = px.pie(
+    df_uniswap, names='chain', values='tvl', title='Uniswap Assets by Chain',
+)
+
+fig1.show()
 ```
 
 ```{python}
-#| column: page
-fig = px.pie(
-    df_ex, names='chain', values='tvl', title='Total Exchange Assets by Chain',
-    facet_col='parentName',
+#| column: screen-inset
+
+fig2 = px.pie(
+    df_cex[::-1], names='chain', values='tvl', title='CEX Assets by Chain',
+    facet_col='name',
     height=800
 )
 
-fig.show()
+fig2.show()
 ```
 
 ## Trades
