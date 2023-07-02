@@ -6,7 +6,9 @@ categories: [analysis, crypto]
 image: 'preview.png'
 ---
 
-In this post, I will compare crypto trading activities on Uniswap to those on Centralized Exchanges (CEXs). But first, let's have a quick lookback on some of key events in crypto exchange history.
+How is Uniswap doing compare to top centralized exchanges (CEX)? Let's answer the question with me through this post.
+
+First, let's have a quick lookback on some of key events in crypto exchange history.
 
 On Jan 3, 2009, Satoshi Nakamoto mined the first block of Bitcoin.
 
@@ -18,13 +20,17 @@ Meanwhile, in Jun 2012, Brian Amstrong founded Coinbase, the current largest CEX
 
 Six months later, Bitfinex was founded. [link](https://en.wikipedia.org/wiki/Bitfinex)
 
-Five years after the launch of Coinbase, on Jul 14, 2017, Changpeng Zhao founded Binance, the current largest CEX in the world. [link](https://en.wikipedia.org/wiki/Binance)
+Five years after the launch of Coinbase, on Jul 14, 2017, Changpeng Zhao founded Binance, the current largest crypto exchange in the world. [link](https://en.wikipedia.org/wiki/Binance)
 
 In the same year, OKX was launched. [link](https://en.wikipedia.org/wiki/OKX)
 
 Over a year later, on Nov 2, 2018, Hayden Adams founded Uniswap, the first, and also the current largest DEX in the world. [link](https://en.wikipedia.org/wiki/Uniswap)
 
-It's been 14 years since the Bitcoin's genesis block mined, 13 years since the first CEX founded, and almost 4 years since the first DEX founded. With 8 years lesser in operation, how has DEX performed vs. CEX? And with 1 years to 6 years lesser in operation, how has Uniswap performed vs. Binance, Coinbase, OKX, and Bitfinex? Let's find out!
+It's been 14 years since the Bitcoin's genesis block mined, 13 years since the first CEX founded, and almost 4 years since the first DEX founded. Before progressing to the end of this post, please keep some data points below in mind:
+
+-   DEX is 8 years younger than CEX.
+
+-   Uniswap is 6 years younger than Coinbase, Bitfinex, and 1 years younger than Binance, OKX.
 
 ::: {.callout-tip}
 ## How to read charts
@@ -54,7 +60,6 @@ from datetime import datetime
 
 pd.options.mode.chained_assignment = None  # default='warn'
 
-# set plotly default theme
 pio.templates.default = 'plotly_white'
 ```
 
@@ -65,8 +70,8 @@ r = requests.get('https://api.llama.fi/protocols')
 ```
 
 ```{python}
-df = pd.DataFrame(r.json())
-df_essential = df[['name','category','slug','tvl','parentProtocol']]
+df_protocols = pd.DataFrame(r.json())
+df_essential = df_protocols[['name','category','slug','tvl','parentProtocol']]
 df_exchange = df_essential.query('category in ("CEX","Dexes")')
 
 # extract the part after 'parent#' using str.extract() method
@@ -105,18 +110,20 @@ df_dex_agg = df_dex[['parentName', 'category', 'tvl']].groupby(by=['parentName',
 
 df_dex_agg = df_dex_agg.sort_values('tvl')
 
-df_top20 = df_dex_agg.tail(20)
+df_100m = df_dex_agg[df_dex_agg['tvl'] >= 1e8]
 
-rest_count = df_dex_agg['tvl'][:len(df_dex_agg) - 20].count()
+df_rest = df_dex_agg[df_dex_agg['tvl'] < 1e8]
 
-df_rest = pd.DataFrame({'parentName': [f'Other {rest_count} protocols'], 'tvl': [df_dex_agg['tvl'].iloc[:len(df_dex_agg) - 20].sum()]})
+rest_count = df_rest['tvl'].count()
 
-df_top20_rest = pd.concat([df_rest, df_top20])
+df_rest = pd.DataFrame({'parentName': [f'Other {rest_count} DEXs'], 'tvl': [df_rest['tvl'].sum()]})
+
+df_100m_rest = pd.concat([df_rest, df_100m])
 
 fig = px.bar(
-    df_top20_rest, x='tvl', y='parentName',
+    df_100m_rest, x='tvl', y='parentName',
     title='DEX Total Assets',
-    text_auto='.3s',
+    text_auto='.2s',
     height=800
 )
 
@@ -133,10 +140,20 @@ There are 28 CEXs, which have proof of reserves (POR) range between $100K and $6
 ```{python}
 df_cex = df_exchange.query('category == "CEX"').sort_values('tvl')
 
+df_100m = df_cex[df_cex['tvl'] >= 1e8]
+
+df_rest = df_cex[df_cex['tvl'] < 1e8]
+
+rest_count = df_rest['tvl'].count()
+
+df_rest = pd.DataFrame({'name': [f'Other {rest_count} CEXs'], 'tvl': [df_rest['tvl'].sum()]})
+
+df_100m_rest = pd.concat([df_rest, df_100m])
+
 fig = px.bar(
-    df_cex, x='tvl', y='name',
+    df_100m_rest, x='tvl', y='name',
     title='CEX Total Assets',
-    text_auto='.3s',
+    text_auto='.2s',
     height=800
 )
 
@@ -151,18 +168,15 @@ fig.show()
 In top 10 exchanges, only 2 of them are DEXs, which are Uniswap, and Curve, at 4th and 5th position respectively.
 
 ```{python}
-df_cex1 = df_cex[['parentName', 'category', 'tvl']]
-df_exchange_adj = pd.concat([df_cex1, df_dex_agg])
+df_exchange_adj = pd.concat([df_cex[['parentName', 'category', 'tvl']], df_dex_agg], ignore_index=True)
 n = 10
-df_top_ex = df_exchange_adj.sort_values('tvl', ascending=False).iloc[:n]
-
-#reverse to show in descending order of tvl
-df_top_ex = df_top_ex.iloc[::-1]
+df_top_ex = df_exchange_adj.sort_values('tvl', ascending=False).head(n)
+df_top_ex = df_top_ex.sort_values('tvl')
 
 fig = px.bar(
     df_top_ex, x='tvl', y='parentName',
     title=f'Top {n} Exchange Total Assets',
-    text_auto='.3s'
+    text_auto='.2s'
 )
 
 fig.update_layout(
@@ -215,37 +229,74 @@ Last 12 months, market shares of top 2-5 CEXs are more evenly distributed than t
 
 *In this section, depends on data availability, I will compare Uniswap to at least 1 CEX among Binance, Coinbase, OKX, and Bitfinex.*
 
+### Total Assets YTD 2023
+
+```{python}
+df_tvl = df_combine[['parentName', 'name', 'tvl']]
+
+dfs = []
+
+for df, ex in zip([pd.DataFrame()]*4, exs):
+    df = df_tvl[df_tvl['parentName'] == ex]
+    df = pd.concat(df['tvl'].apply(pd.json_normalize).tolist(), ignore_index=True)
+    df['date'] = pd.to_datetime(df['date'], unit='s')
+    df = df.groupby(by='date', as_index=False).sum()
+    df.sort_values('date', inplace=True)
+    df['Exchange'] = ex
+    dfs.append(df)
+```
+
+```{python}
+df_concat = pd.concat(dfs, ignore_index=True)
+df_concat = df_concat[
+    (df_concat['date'] >= '2023-01-01') & (df_concat['date'] <= '2023-07-04')
+]
+
+df_concat.rename(columns={'date': 'Date', 'totalLiquidityUSD': 'Total Assets in USD'}, inplace=True)
+
+fig = px.line(
+    df_concat, x='Date', y='Total Assets in USD', title='Total Assets YTD 2023',
+    facet_row='Exchange',
+    height=800
+)
+
+fig.update_yaxes(matches=None)
+
+fig.show()
+```
+
 ## Liquidity
 
 ```{python}
-df_top3_cex = df_cex.tail(3)
+df_top3_cex = df_cex.sort_values('tvl', ascending=False).head(3)
+top3_cexs = df_top3_cex['parentName'].unique().tolist()
 df_uniswap = df_dex.query('parentName == "Uniswap"')
 df_combine = pd.concat([df_uniswap, df_top3_cex], ignore_index=True)
+
 df_combine['defillamaApiUrl'] = df_combine['slug'].apply(lambda x: f'https://api.llama.fi/protocol/{x}')
 df_combine['protocolData'] = df_combine['defillamaApiUrl'].apply(lambda x: requests.get(x).json())
-```
 
-```{python}
-for key in ['currentChainTvls', 'chainTvls', 'tvl', 'tokensInUsd', 'tokens']:
+for key in ['tvl', 'currentChainTvls']:
     df_combine[key] = df_combine['protocolData'].apply(lambda x: x[key])
 ```
+
+### Total Assets by Chain
 
 ```{python}
 df_currentChainTvls = df_combine[['parentName', 'name', 'currentChainTvls']]
 
-df_uniswap = df_currentChainTvls.query('parentName == "Uniswap"')
-df_concat = pd.concat(df_uniswap['currentChainTvls'].apply(pd.json_normalize).tolist(), ignore_index=True)
-df_uniswap = pd.concat([df_uniswap[['name']], df_concat], axis=1)
-df_uniswap = df_uniswap.melt(id_vars=['name'], value_vars=['Optimism', 'Binance', 'Ethereum', 'Polygon',
-       'Celo', 'Arbitrum'], var_name='chain', value_name='tvl')
+dfs = []
+exs = 'Uniswap', *top3_cexs
 
-df_cex = df_currentChainTvls.query('parentName != "Uniswap"').reset_index(drop=True)
-df_concat = pd.concat(df_cex['currentChainTvls'].apply(pd.json_normalize).tolist(), ignore_index=True)
-df_cex = pd.concat([df_cex[['name']], df_concat], axis=1)
-df_cex = df_cex.melt(id_vars=['name'], value_vars=['Optimism', 'Binance', 'Ethereum', 'Polygon',
-       'Arbitrum', 'Cosmos', 'Cardano', 'EthereumClassic', 'Avalanche', 'Tron',
-       'Fantom', 'Litecoin', 'Zilliqa', 'Aptos', 'Near', 'EOS', 'Tezos',
-       'Algorand', 'Solana', 'Elrond', 'Polkadot', 'Bitcoin', 'Ripple'], var_name='chain', value_name='tvl')
+for df, ex in zip([pd.DataFrame()]*4, exs):
+    df = df_currentChainTvls[df_currentChainTvls['parentName'] == ex].reset_index(drop=True)
+    df_concat = pd.concat(df['currentChainTvls'].apply(pd.json_normalize).tolist(), ignore_index=True)
+    df = pd.concat([df[['name']], df_concat], axis=1)
+    df = df.melt(id_vars=['name'], value_vars=list(df_concat.columns), var_name='chain', value_name='tvl')
+    df.dropna(subset='tvl', inplace=True)
+    dfs.append(df)
+
+df_uniswap, *df_cexs = dfs
 ```
 
 ```{python}
@@ -255,13 +306,13 @@ fig1 = px.pie(
 )
 
 fig1.show()
+
 ```
 
 ```{python}
 #| column: screen-inset
-
 fig2 = px.pie(
-    df_cex[::-1], names='chain', values='tvl', title='CEX Assets by Chain',
+    pd.concat(df_cexs, ignore_index=True), names='chain', values='tvl', title='CEX Assets by Chain',
     facet_col='name',
     hover_data={'tvl': ':.3s'}
 )
@@ -269,30 +320,6 @@ fig2 = px.pie(
 fig2.show()
 ```
 
-```{python}
-df_tvl = df_combine[['parentName', 'name', 'tvl']]
-
-# df_uniswap = df_tvl.query('parentName == "Uniswap"')
-# df_uniswap = pd.concat(df_uniswap['tvl'].apply(pd.json_normalize).tolist(), ignore_index=True)
-# df_uniswap['date'] = pd.to_datetime(df_uniswap['date'], unit='s')
-
-dfs = []
-cexs = 'Binance CEX', 'OKX', 'Bitfinex'
-
-for df, cex in zip((pd.DataFrame(), pd.DataFrame(), pd.DataFrame()), cexs):
-    df = df_tvl[df_tvl['name'] == cex]
-    df = pd.concat(df['tvl'].apply(pd.json_normalize).tolist(), ignore_index=True)
-    df['date'] = pd.to_datetime(df['date'], unit='s')
-    dfs.append(df)
-
-df_binance, df_okx, df_bitfinex = dfs
-
-df_binance
-```
-
-```{python}
-
-```
 ## Trades
 
 <iframe width="100%" height="420" frameborder="0" src="https://embed.theblockcrypto.com/data/decentralized-finance/dex-non-custodial/uniswap-vs-coinbase-and-binance-trade-volume-7dma/embed" title="Uniswap vs. Coinbase and Binance Trade Volume (7DMA)"></iframe>
