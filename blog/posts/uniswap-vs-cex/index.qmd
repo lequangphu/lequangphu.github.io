@@ -116,7 +116,7 @@ df_rest = df_dex_agg[df_dex_agg['tvl'] < 1e8]
 
 rest_count = df_rest['tvl'].count()
 
-df_rest = pd.DataFrame({'parentName': [f'Other {rest_count} DEXs'], 'tvl': [df_rest['tvl'].sum()]})
+df_rest = pd.DataFrame({'parentName': [f'{rest_count} Others'], 'tvl': [df_rest['tvl'].sum()]})
 
 df_100m_rest = pd.concat([df_rest, df_100m])
 
@@ -146,7 +146,7 @@ df_rest = df_cex[df_cex['tvl'] < 1e8]
 
 rest_count = df_rest['tvl'].count()
 
-df_rest = pd.DataFrame({'name': [f'Other {rest_count} CEXs'], 'tvl': [df_rest['tvl'].sum()]})
+df_rest = pd.DataFrame({'name': [f'{rest_count} Others'], 'tvl': [df_rest['tvl'].sum()]})
 
 df_100m_rest = pd.concat([df_rest, df_100m])
 
@@ -229,6 +229,21 @@ Last 12 months, market shares of top 2-5 CEXs are more evenly distributed than t
 
 *In this section, depends on data availability, I will compare Uniswap to at least 1 CEX among Binance, Coinbase, OKX, and Bitfinex.*
 
+## Liquidity
+
+```{python}
+df_top3_cex = df_cex.sort_values('tvl', ascending=False).head(3)
+top3_cexs = df_top3_cex['parentName'].unique().tolist()
+df_uniswap = df_dex.query('parentName == "Uniswap"')
+df_combine = pd.concat([df_uniswap, df_top3_cex], ignore_index=True)
+
+df_combine['defillamaApiUrl'] = df_combine['slug'].apply(lambda x: f'https://api.llama.fi/protocol/{x}')
+df_combine['protocolData'] = df_combine['defillamaApiUrl'].apply(lambda x: requests.get(x).json())
+
+for key in ['tvl', 'currentChainTvls']:
+    df_combine[key] = df_combine['protocolData'].apply(lambda x: x[key])
+```
+
 ### Total Assets YTD 2023
 
 ```{python}
@@ -265,21 +280,6 @@ fig.update_yaxes(matches=None)
 fig.show()
 ```
 
-## Liquidity
-
-```{python}
-df_top3_cex = df_cex.sort_values('tvl', ascending=False).head(3)
-top3_cexs = df_top3_cex['parentName'].unique().tolist()
-df_uniswap = df_dex.query('parentName == "Uniswap"')
-df_combine = pd.concat([df_uniswap, df_top3_cex], ignore_index=True)
-
-df_combine['defillamaApiUrl'] = df_combine['slug'].apply(lambda x: f'https://api.llama.fi/protocol/{x}')
-df_combine['protocolData'] = df_combine['defillamaApiUrl'].apply(lambda x: requests.get(x).json())
-
-for key in ['tvl', 'currentChainTvls']:
-    df_combine[key] = df_combine['protocolData'].apply(lambda x: x[key])
-```
-
 ### Total Assets by Chain
 
 ```{python}
@@ -306,7 +306,6 @@ fig1 = px.pie(
 )
 
 fig1.show()
-
 ```
 
 ```{python}
