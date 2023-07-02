@@ -250,6 +250,7 @@ for key in ['tvl', 'currentChainTvls']:
 df_tvl = df_combine[['parentName', 'name', 'tvl']]
 
 dfs = []
+exs = 'Uniswap', *top3_cexs
 
 for df, ex in zip([pd.DataFrame()]*4, exs):
     df = df_tvl[df_tvl['parentName'] == ex]
@@ -286,7 +287,6 @@ fig.show()
 df_currentChainTvls = df_combine[['parentName', 'name', 'currentChainTvls']]
 
 dfs = []
-exs = 'Uniswap', *top3_cexs
 
 for df, ex in zip([pd.DataFrame()]*4, exs):
     df = df_currentChainTvls[df_currentChainTvls['parentName'] == ex].reset_index(drop=True)
