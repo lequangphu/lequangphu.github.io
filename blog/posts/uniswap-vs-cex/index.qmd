@@ -232,19 +232,34 @@ Last 12 months, market shares of top 2-5 CEXs are more evenly distributed than t
 ## Liquidity
 
 ```{python}
-df_top3_cex = df_cex.sort_values('tvl', ascending=False).head(3)
+df_top3_cex = df_exchange.query('category == "CEX"').sort_values('tvl', ascending=False).head(3)
 top3_cexs = df_top3_cex['parentName'].unique().tolist()
 df_uniswap = df_dex.query('parentName == "Uniswap"')
 df_combine = pd.concat([df_uniswap, df_top3_cex], ignore_index=True)
 
 df_combine['defillamaApiUrl'] = df_combine['slug'].apply(lambda x: f'https://api.llama.fi/protocol/{x}')
-df_combine['protocolData'] = df_combine['defillamaApiUrl'].apply(lambda x: requests.get(x).json())
+df_combine['apiResponse'] = df_combine['defillamaApiUrl'].apply(lambda x: requests.get(x))
+df_combine['responseJson'] = df_combine['apiResponse'].apply(lambda x: x.json())
+df_combine['responseLastModified'] = df_combine['apiResponse'].apply(lambda x: x.headers['Last-Modified'])
 
-for key in ['tvl', 'currentChainTvls']:
-    df_combine[key] = df_combine['protocolData'].apply(lambda x: x[key])
+for key in ['tvl', 'currentChainTvls', 'tokensInUsd']:
+    df_combine[key] = df_combine['responseJson'].apply(lambda x: x[key])
 ```
 
-### Total Assets YTD 2023
+```{python}
+# df_combine['currentChainTvls']
+```
+
+```{python}
+# r = requests.get('https://api.llama.fi/protocol/uniswap-v3')
+```
+
+```{python}
+# print(r.status_code)
+# r.json()['tokensInUsd']
+```
+
+### Total Assets H1 2023
 
 ```{python}
 df_tvl = df_combine[['parentName', 'name', 'tvl']]
@@ -265,13 +280,13 @@ for df, ex in zip([pd.DataFrame()]*4, exs):
 ```{python}
 df_concat = pd.concat(dfs, ignore_index=True)
 df_concat = df_concat[
-    (df_concat['date'] >= '2023-01-01') & (df_concat['date'] <= '2023-07-04')
+    (df_concat['date'] >= '2023-01-01') & (df_concat['date'] <= '2023-06-30')
 ]
 
 df_concat.rename(columns={'date': 'Date', 'totalLiquidityUSD': 'Total Assets in USD'}, inplace=True)
 
 fig = px.line(
-    df_concat, x='Date', y='Total Assets in USD', title='Total Assets YTD 2023',
+    df_concat, x='Date', y='Total Assets in USD', title='Total Assets H1 2023',
     facet_row='Exchange',
     height=800
 )
@@ -281,43 +296,102 @@ fig.update_yaxes(matches=None)
 fig.show()
 ```
 
-### Total Assets by Chain
+### Total Assets Breakdown
 
 ```{python}
 df_currentChainTvls = df_combine[['parentName', 'name', 'currentChainTvls']]
 
 dfs = []
+exs = 'Uniswap', *top3_cexs
 
 for df, ex in zip([pd.DataFrame()]*4, exs):
     df = df_currentChainTvls[df_currentChainTvls['parentName'] == ex].reset_index(drop=True)
     df_concat = pd.concat(df['currentChainTvls'].apply(pd.json_normalize).tolist(), ignore_index=True)
-    df = pd.concat([df[['name']], df_concat], axis=1)
-    df = df.melt(id_vars=['name'], value_vars=list(df_concat.columns), var_name='chain', value_name='tvl')
+    df = pd.concat([df[['parentName']], df_concat], axis=1)
+    df = df.melt(id_vars=['parentName'], value_vars=list(df_concat.columns), var_name='chain', value_name='tvl')
     df.dropna(subset='tvl', inplace=True)
+    df = df[['parentName', 'chain', 'tvl']].groupby(by=['parentName', 'chain'], as_index=False).sum()
+    df_above = df[df['tvl'] / df['tvl'].sum() >= 0.01]
+    df_rest = df[df['tvl'] / df['tvl'].sum() < 0.01]
+    rest_count = df_rest['tvl'].count()
+    df_rest = pd.DataFrame({'parentName': [ex], 'chain': [f'{rest_count} Others'], 'tvl': [df_rest['tvl'].sum()]})
+    df = pd.concat([df_above, df_rest], ignore_index=True)
     dfs.append(df)
 
 df_uniswap, *df_cexs = dfs
 ```
 
 ```{python}
-fig1 = px.pie(
+fig = px.pie(
     df_uniswap, names='chain', values='tvl', title='Uniswap Assets by Chain',
     hover_data={'tvl': ':.3s'}
 )
 
-fig1.show()
+fig.show()
 ```
 
 ```{python}
-#| column: screen-inset
-fig2 = px.pie(
+fig = px.pie(
     pd.concat(df_cexs, ignore_index=True), names='chain', values='tvl', title='CEX Assets by Chain',
+    facet_col='parentName',
+    hover_data={'tvl': ':.3s'}
+)
+
+fig.show()
+```
+
+```{python}
+df_tokens = df_combine[['name', 'tokensInUsd']]
+
+dfs = []
+exs = 'Uniswap V3', *top3_cexs
+
+for df, ex in zip([pd.DataFrame()]*4, exs):
+    df = df_tokens[df_tokens['name'] == ex].reset_index(drop=True)
+    df_concat = pd.concat(df['tokensInUsd'].apply(lambda x: pd.json_normalize(x, max_level=0)).tolist(), ignore_index=True)
+    df_concat['date'] = pd.to_datetime(df_concat['date'], unit='s')
+    df = df_concat.tail(1)
+    df = pd.json_normalize(df['tokens'])
+    df = df.melt(value_vars=list(df.columns), var_name='tokens', value_name='tvl')
+    df_above = df[df['tvl'] / df['tvl'].sum() >= 0.01]
+    df_rest = df[df['tvl'] / df['tvl'].sum() < 0.01]
+    rest_count = df_rest['tvl'].count()
+    df_rest = pd.DataFrame({'tokens': [f'{rest_count} Others'], 'tvl': [df_rest['tvl'].sum()]})
+    df = pd.concat([df_above, df_rest], ignore_index=True)
+    df['name'] = ex
+    dfs.append(df)
+
+df_uniswap_v3, *df_cexs = dfs
+```
+
+```{python}
+fig = px.pie(
+    df_uniswap_v3, names='tokens', values='tvl', title='Uniswap V3 Assets by Token',
+    hover_data={'tvl': ':.3s'}
+)
+
+fig.show()
+```
+
+
+<iframe src="https://dune.com/embeds/2685347/4465685" width="100%" height="400"></iframe>
+
+```{python}
+#| column: screen-inset
+fig = px.pie(
+    pd.concat(df_cexs, ignore_index=True), names='tokens', values='tvl', title='CEX Assets by Token',
     facet_col='name',
     hover_data={'tvl': ':.3s'}
 )
 
-fig2.show()
+fig.show()
 ```
+
+Since Uniswap only supports EVM compatible chains (EVM), let's dive deeper into these chains.
+
+### EVM Assets Breakdown
+
+*In this section, let's examine assets by token, and their flow in/out of each exchange.*
 
 ## Trades
 
