@@ -313,11 +313,12 @@ for df, ex in zip([pd.DataFrame()]*4, exs):
     df.dropna(subset='tvl', inplace=True)
     df = df[['parentName', 'chain', 'tvl']].groupby(by=['parentName', 'chain'], as_index=False).sum()
     
-    df_above = df[df['tvl'] / df['tvl'].sum() >= 0.01]
-    df_rest = df[df['tvl'] / df['tvl'].sum() < 0.01]
-    rest_count = df_rest['tvl'].count()
-    df_rest = pd.DataFrame({'parentName': [ex], 'chain': [f'{rest_count} Others'], 'tvl': [df_rest['tvl'].sum()]})
-    df = pd.concat([df_above, df_rest], ignore_index=True)
+    if ex != 'Uniswap':
+        df_above = df[df['tvl'] / df['tvl'].sum() >= 0.01]
+        df_rest = df[df['tvl'] / df['tvl'].sum() < 0.01]
+        rest_count = df_rest['tvl'].count()
+        df_rest = pd.DataFrame({'parentName': [ex], 'chain': [f'{rest_count} Others'], 'tvl': [df_rest['tvl'].sum()]})
+        df = pd.concat([df_above, df_rest], ignore_index=True)
     
     dfs.append(df)
 
@@ -334,7 +335,7 @@ fig.show()
 ```
 
 ```{python}
-#| column: page
+#| column: screen-inset
 fig = px.pie(
     pd.concat(df_cexs, ignore_index=True), names='chain', values='tvl', title='CEX Assets by Chain',
     facet_col='parentName',
@@ -384,7 +385,7 @@ fig.show()
 <iframe src="https://dune.com/embeds/2685347/4465685" width="100%" height="400"></iframe>
 
 ```{python}
-#| column: page
+#| column: screen-inset
 fig = px.pie(
     pd.concat(df_cexs, ignore_index=True), names='tokens', values='tvl', title='CEX Assets by Token',
     facet_col='name',
