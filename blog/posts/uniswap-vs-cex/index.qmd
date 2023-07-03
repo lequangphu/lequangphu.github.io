@@ -320,6 +320,7 @@ for df, ex in zip([pd.DataFrame()]*4, exs):
         df_rest = pd.DataFrame({'parentName': [ex], 'chain': [f'{rest_count} Others'], 'tvl': [df_rest['tvl'].sum()]})
         df = pd.concat([df_above, df_rest], ignore_index=True)
     
+    df.rename(columns={'parentName': 'exchange'}, inplace=True)
     dfs.append(df)
 
 df_uniswap, *df_cexs = dfs
@@ -338,7 +339,7 @@ fig.show()
 #| column: screen-inset
 fig = px.pie(
     pd.concat(df_cexs, ignore_index=True), names='chain', values='tvl', title='CEX Assets by Chain',
-    facet_col='parentName',
+    facet_col='exchange',
     hover_data={'tvl': ':.3s'}
 )
 
@@ -358,37 +359,75 @@ for df, ex in zip([pd.DataFrame()]*4, exs):
 
     df = df_concat.tail(1)
     df = pd.json_normalize(df['tokens'])
-    df = df.melt(value_vars=list(df.columns), var_name='tokens', value_name='tvl')
+    df = df.melt(value_vars=list(df.columns), var_name='token', value_name='tvl')
     
-    df_above = df[df['tvl'] / df['tvl'].sum() >= 0.01]
-    df_rest = df[df['tvl'] / df['tvl'].sum() < 0.01]
-    rest_count = df_rest['tvl'].count()
-    df_rest = pd.DataFrame({'tokens': [f'{rest_count} Others'], 'tvl': [df_rest['tvl'].sum()]})
-    df = pd.concat([df_above, df_rest], ignore_index=True)
+    if ex != 'Uniswap V3':
+        df_above = df[df['tvl'] / df['tvl'].sum() >= 0.01]
+        df_rest = df[df['tvl'] / df['tvl'].sum() < 0.01]
+        rest_count = df_rest['tvl'].count()
+        df_rest = pd.DataFrame({'token': [f'{rest_count} Others'], 'tvl': [df_rest['tvl'].sum()]})
+        df = pd.concat([df_above, df_rest], ignore_index=True)
     
-    df['name'] = ex
+    df['exchange'] = ex
     dfs.append(df)
 
 df_uniswap_v3, *df_cexs = dfs
 ```
 
 ```{python}
+with open('/Users/phu/lequangphu.github.io/.secrets/dune_api_key.txt') as f:
+    api_key = f.read()
+```
+
+```{python}
+r = requests.get(f'https://api.dune.com/api/v1/query/2685347/results?api_key={api_key}')
+```
+
+```{python}
+df_uniswap_v2 = pd.json_normalize(r.json()['result']['rows'])
+df_uniswap_v2.rename(columns={'amount_usd': 'tvl', 'symbol': 'token'}, inplace=True)
+df_uniswap_v2 = df_uniswap_v2[['token', 'tvl']]
+```
+
+```{python}
+r_v1 = requests.get(f'https://api.dune.com/api/v1/query/2686308/results?api_key={api_key}')
+```
+
+```{python}
+df_uniswap_v1 = pd.json_normalize(r_v1.json()['result']['rows'])
+df_uniswap_v1.rename(columns={'amount_usd': 'tvl', 'symbol': 'token'}, inplace=True)
+df_uniswap_v1 = df_uniswap_v1[['token', 'tvl']]
+```
+
+```{python}
+df_uniswap = pd.concat([df_uniswap_v1, df_uniswap_v2, df_uniswap_v3[['token', 'tvl']]], ignore_index=True)
+df = df_uniswap.groupby(by='token', as_index=False).sum()
+
+df_above = df[df['tvl'] / df['tvl'].sum() >= 0.01]
+df_rest = df[df['tvl'] / df['tvl'].sum() < 0.01]
+rest_count = df_rest['tvl'].count()
+df_rest = pd.DataFrame({'token': [f'{rest_count} Others'], 'tvl': [df_rest['tvl'].sum()]})
+df_uniswap = pd.concat([df_above, df_rest], ignore_index=True)
+
+df_uniswap
+```
+
+```{python}
 fig = px.pie(
-    df_uniswap_v3, names='tokens', values='tvl', title='Uniswap V3 Assets by Token',
+    df_uniswap, names='token', values='tvl', title='Uniswap Assets by Token',
     hover_data={'tvl': ':.3s'}
 )
 
 fig.show()
 ```
 
-
 <iframe src="https://dune.com/embeds/2685347/4465685" width="100%" height="400"></iframe>
 
 ```{python}
 #| column: screen-inset
 fig = px.pie(
-    pd.concat(df_cexs, ignore_index=True), names='tokens', values='tvl', title='CEX Assets by Token',
-    facet_col='name',
+    pd.concat(df_cexs, ignore_index=True), names='token', values='tvl', title='CEX Assets by Token',
+    facet_col='exchange',
     hover_data={'tvl': ':.3s'}
 )
 
