@@ -307,15 +307,18 @@ exs = 'Uniswap', *top3_cexs
 for df, ex in zip([pd.DataFrame()]*4, exs):
     df = df_currentChainTvls[df_currentChainTvls['parentName'] == ex].reset_index(drop=True)
     df_concat = pd.concat(df['currentChainTvls'].apply(pd.json_normalize).tolist(), ignore_index=True)
+    
     df = pd.concat([df[['parentName']], df_concat], axis=1)
     df = df.melt(id_vars=['parentName'], value_vars=list(df_concat.columns), var_name='chain', value_name='tvl')
     df.dropna(subset='tvl', inplace=True)
     df = df[['parentName', 'chain', 'tvl']].groupby(by=['parentName', 'chain'], as_index=False).sum()
+    
     df_above = df[df['tvl'] / df['tvl'].sum() >= 0.01]
     df_rest = df[df['tvl'] / df['tvl'].sum() < 0.01]
     rest_count = df_rest['tvl'].count()
     df_rest = pd.DataFrame({'parentName': [ex], 'chain': [f'{rest_count} Others'], 'tvl': [df_rest['tvl'].sum()]})
     df = pd.concat([df_above, df_rest], ignore_index=True)
+    
     dfs.append(df)
 
 df_uniswap, *df_cexs = dfs
@@ -331,6 +334,7 @@ fig.show()
 ```
 
 ```{python}
+#| column: page
 fig = px.pie(
     pd.concat(df_cexs, ignore_index=True), names='chain', values='tvl', title='CEX Assets by Chain',
     facet_col='parentName',
@@ -350,14 +354,17 @@ for df, ex in zip([pd.DataFrame()]*4, exs):
     df = df_tokens[df_tokens['name'] == ex].reset_index(drop=True)
     df_concat = pd.concat(df['tokensInUsd'].apply(lambda x: pd.json_normalize(x, max_level=0)).tolist(), ignore_index=True)
     df_concat['date'] = pd.to_datetime(df_concat['date'], unit='s')
+
     df = df_concat.tail(1)
     df = pd.json_normalize(df['tokens'])
     df = df.melt(value_vars=list(df.columns), var_name='tokens', value_name='tvl')
+    
     df_above = df[df['tvl'] / df['tvl'].sum() >= 0.01]
     df_rest = df[df['tvl'] / df['tvl'].sum() < 0.01]
     rest_count = df_rest['tvl'].count()
     df_rest = pd.DataFrame({'tokens': [f'{rest_count} Others'], 'tvl': [df_rest['tvl'].sum()]})
     df = pd.concat([df_above, df_rest], ignore_index=True)
+    
     df['name'] = ex
     dfs.append(df)
 
@@ -377,7 +384,7 @@ fig.show()
 <iframe src="https://dune.com/embeds/2685347/4465685" width="100%" height="400"></iframe>
 
 ```{python}
-#| column: screen-inset
+#| column: page
 fig = px.pie(
     pd.concat(df_cexs, ignore_index=True), names='tokens', values='tvl', title='CEX Assets by Token',
     facet_col='name',
