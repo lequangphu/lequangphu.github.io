@@ -375,32 +375,22 @@ df_uniswap_v3, *df_cexs = dfs
 ```
 
 ```{python}
-with open('/Users/phu/lequangphu.github.io/.secrets/dune_api_key.txt') as f:
-    api_key = f.read()
+# with open('/Users/phu/lequangphu.github.io/.secrets/dune_api_key.txt') as f:
+#     api_key = f.read()
 ```
 
 ```{python}
-r = requests.get(f'https://api.dune.com/api/v1/query/2685347/results?api_key={api_key}')
+# r = requests.get(f'https://api.dune.com/api/v1/query/2685347/results?api_key={api_key}')
+r = requests.get(f'https://api.dune.com/api/v1/query/2685347/results?api_key=5xBKE5jaoCbLPUrFMydFVYokznFX1GP6')
 ```
 
 ```{python}
-df_uniswap_v2 = pd.json_normalize(r.json()['result']['rows'])
-df_uniswap_v2.rename(columns={'amount_usd': 'tvl', 'symbol': 'token'}, inplace=True)
-df_uniswap_v2 = df_uniswap_v2[['token', 'tvl']]
+df_uniswap_v1n2 = pd.json_normalize(r.json()['result']['rows'])
+df_uniswap_v1n2 = df_uniswap_v1n2[['token', 'tvl']]
 ```
 
 ```{python}
-r_v1 = requests.get(f'https://api.dune.com/api/v1/query/2686308/results?api_key={api_key}')
-```
-
-```{python}
-df_uniswap_v1 = pd.json_normalize(r_v1.json()['result']['rows'])
-df_uniswap_v1.rename(columns={'amount_usd': 'tvl', 'symbol': 'token'}, inplace=True)
-df_uniswap_v1 = df_uniswap_v1[['token', 'tvl']]
-```
-
-```{python}
-df_uniswap = pd.concat([df_uniswap_v1, df_uniswap_v2, df_uniswap_v3[['token', 'tvl']]], ignore_index=True)
+df_uniswap = pd.concat([df_uniswap_v1n2, df_uniswap_v3[['token', 'tvl']]], ignore_index=True)
 df = df_uniswap.groupby(by='token', as_index=False).sum()
 
 df_above = df[df['tvl'] / df['tvl'].sum() >= 0.01]
@@ -408,8 +398,6 @@ df_rest = df[df['tvl'] / df['tvl'].sum() < 0.01]
 rest_count = df_rest['tvl'].count()
 df_rest = pd.DataFrame({'token': [f'{rest_count} Others'], 'tvl': [df_rest['tvl'].sum()]})
 df_uniswap = pd.concat([df_above, df_rest], ignore_index=True)
-
-df_uniswap
 ```
 
 ```{python}
@@ -420,8 +408,6 @@ fig = px.pie(
 
 fig.show()
 ```
-
-<iframe src="https://dune.com/embeds/2685347/4465685" width="100%" height="400"></iframe>
 
 ```{python}
 #| column: screen-inset
