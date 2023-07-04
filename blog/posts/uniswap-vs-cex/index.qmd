@@ -235,7 +235,7 @@ Last 12 months, market shares of top 2-5 CEXs are more evenly distributed than t
 
 # Uniswap vs. Top CEXs
 
-*In this section, depends on data availability, I will compare Uniswap to at least 1 CEX among Binance, Coinbase, OKX, and Bitfinex.*
+*In this section, depends on data availability, I will compare Uniswap to at least 1 CEX among Binance, OKX, Bitfinex, and Coinbase.*
 
 ## Liquidity
 
@@ -268,45 +268,6 @@ for key in ['tvl', 'currentChainTvls', 'tokensInUsd']:
 # print(r.status_code)
 # r.json()['chainTvls']['Ethereum']['tvl']
 ```
-
-#### H1 2023
-
-```{python}
-df_tvl = df_combine[['parentName', 'name', 'tvl']]
-
-dfs = []
-exs = 'Uniswap', *top3_cexs
-
-for df, ex in zip([pd.DataFrame()]*4, exs):
-    df = df_tvl[df_tvl['parentName'] == ex]
-    df = pd.concat(df['tvl'].apply(pd.json_normalize).tolist(), ignore_index=True)
-    df['date'] = pd.to_datetime(df['date'], unit='s')
-    df = df.groupby(by='date', as_index=False).sum()
-    df.sort_values('date', inplace=True)
-    df['Exchange'] = ex
-    dfs.append(df)
-```
-
-```{python}
-df_concat = pd.concat(dfs, ignore_index=True)
-df_concat = df_concat[
-    (df_concat['date'] >= '2023-01-01') & (df_concat['date'] <= '2023-06-30')
-]
-
-df_concat.rename(columns={'date': 'Date', 'totalLiquidityUSD': 'Total Assets in USD'}, inplace=True)
-
-fig = px.line(
-    df_concat, x='Date', y='Total Assets in USD', title='Total Assets H1 2023',
-    facet_row='Exchange',
-    height=800
-)
-
-fig.update_yaxes(matches=None)
-
-fig.show()
-```
-
-*source: [defillama.com](https://defillama.com/docs/api).*
 
 #### Current Assets Breakdown
 
@@ -446,6 +407,45 @@ fig.show()
 
 Since Uniswap only supports EVM compatible chains (EVM), let's dive deeper into these chains.
 
+#### H1 2023
+
+```{python}
+df_tvl = df_combine[['parentName', 'name', 'tvl']]
+
+dfs = []
+exs = 'Uniswap', *top3_cexs
+
+for df, ex in zip([pd.DataFrame()]*4, exs):
+    df = df_tvl[df_tvl['parentName'] == ex]
+    df = pd.concat(df['tvl'].apply(pd.json_normalize).tolist(), ignore_index=True)
+    df['date'] = pd.to_datetime(df['date'], unit='s')
+    df = df.groupby(by='date', as_index=False).sum()
+    df.sort_values('date', inplace=True)
+    df['Exchange'] = ex
+    dfs.append(df)
+```
+
+```{python}
+df_concat = pd.concat(dfs, ignore_index=True)
+df_concat = df_concat[
+    (df_concat['date'] >= '2023-01-01') & (df_concat['date'] <= '2023-06-30')
+]
+
+df_concat.rename(columns={'date': 'Date', 'totalLiquidityUSD': 'Total Assets in USD'}, inplace=True)
+
+fig = px.line(
+    df_concat, x='Date', y='Total Assets in USD', title='Total Assets H1 2023',
+    facet_row='Exchange',
+    height=800
+)
+
+fig.update_yaxes(matches=None)
+
+fig.show()
+```
+
+*source: [defillama.com](https://defillama.com/docs/api).*
+
 ### EVM Assets
 
 *In this section, let's examine assets by token, and their flow in/out of each exchange.*
@@ -477,6 +477,8 @@ Since Uniswap only supports EVM compatible chains (EVM), let's dive deeper into 
 <iframe src="https://dune.com/embeds/2689017/4472367" width="100%" height="400"></iframe>
 
 <iframe src="https://dune.com/embeds/2689017/4471976" width="100%" height="400"></iframe>
+
+<iframe src="https://dune.com/embeds/2689375/4472558" width="100%" height="400"></iframe>
 
 ## Trades
 
