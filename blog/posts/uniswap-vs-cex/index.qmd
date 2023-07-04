@@ -231,6 +231,8 @@ Last 12 months, market shares of top 2-5 CEXs are more evenly distributed than t
 
 ## Liquidity
 
+### Total Assets
+
 ```{python}
 df_top3_cex = df_exchange.query('category == "CEX"').sort_values('tvl', ascending=False).head(3)
 top3_cexs = df_top3_cex['parentName'].unique().tolist()
@@ -259,7 +261,7 @@ for key in ['tvl', 'currentChainTvls', 'tokensInUsd']:
 # r.json()['chainTvls']['Ethereum']['tvl']
 ```
 
-### Total Assets H1 2023
+#### H1 2023
 
 ```{python}
 df_tvl = df_combine[['parentName', 'name', 'tvl']]
@@ -296,7 +298,7 @@ fig.update_yaxes(matches=None)
 fig.show()
 ```
 
-### Total Assets Breakdown
+#### Current Breakdown
 
 ```{python}
 df_currentChainTvls = df_combine[['parentName', 'name', 'currentChainTvls']]
@@ -438,9 +440,9 @@ Since Uniswap only supports EVM compatible chains (EVM), let's dive deeper into 
 
 #### Net Inflow
 
-<iframe src="https://dune.com/embeds/2688646/4471399" width="100%" height="400"></iframe>
-
 <iframe src="https://dune.com/embeds/2688626/4471226" width="100%" height="400"></iframe>
+
+<iframe src="https://dune.com/embeds/2688646/4471399" width="100%" height="400"></iframe>
 
 <iframe src="https://dune.com/embeds/2688727/4471408" width="100%" height="400"></iframe>
 
