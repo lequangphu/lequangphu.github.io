@@ -101,6 +101,8 @@ fig.update_layout(
 fig.show()
 ```
 
+*source: [defillama.com](https://defillama.com/docs/api).*
+
 There are 839 DEXs tracked on Defillama. Top 20 DEXs, which have TVL range between $80M and $4B (to be input later), account for 60% of total DEX assets. Uniswap is the largest DEX in total assets.
 
 ```{python}
@@ -135,6 +137,8 @@ fig.update_layout(
 fig.show()
 ```
 
+*source: [defillama.com](https://defillama.com/docs/api).*
+
 There are 28 CEXs, which have proof of reserves (POR) range between $100K and $60B. Top 3 CEXs account for almost 80% of total CEX assets. Binance is the largest CEX in total assets.
 
 ```{python}
@@ -165,6 +169,8 @@ fig.update_layout(
 fig.show()
 ```
 
+*source: [defillama.com](https://defillama.com/docs/api).*
+
 In top 10 exchanges, only 2 of them are DEX, which are Uniswap, and Curve, at 4th and 5th position respectively.
 
 ```{python}
@@ -186,6 +192,8 @@ fig.update_layout(
 
 fig.show()
 ```
+
+*source: [defillama.com](https://defillama.com/docs/api).*
 
 ## Trades
 
@@ -298,7 +306,11 @@ fig.update_yaxes(matches=None)
 fig.show()
 ```
 
-#### Current Breakdown
+*source: [defillama.com](https://defillama.com/docs/api).*
+
+#### Current Assets Breakdown
+
+##### Chain Breakdown
 
 ```{python}
 df_currentChainTvls = df_combine[['parentName', 'name', 'currentChainTvls']]
@@ -337,6 +349,8 @@ fig = px.pie(
 fig.show()
 ```
 
+*source: [defillama.com](https://defillama.com/docs/api).*
+
 ```{python}
 #| column: screen-inset
 fig = px.pie(
@@ -347,6 +361,10 @@ fig = px.pie(
 
 fig.show()
 ```
+
+*source: [defillama.com](https://defillama.com/docs/api).*
+
+##### Token Breakdown
 
 ```{python}
 df_tokens = df_combine[['name', 'tokensInUsd']]
@@ -411,6 +429,8 @@ fig = px.pie(
 fig.show()
 ```
 
+*source: [defillama.com](https://defillama.com/docs/api).*
+
 ```{python}
 #| column: screen-inset
 fig = px.pie(
@@ -422,13 +442,17 @@ fig = px.pie(
 fig.show()
 ```
 
+*source: [defillama.com](https://defillama.com/docs/api).*
+
 Since Uniswap only supports EVM compatible chains (EVM), let's dive deeper into these chains.
 
 ### EVM Assets
 
 *In this section, let's examine assets by token, and their flow in/out of each exchange.*
 
-#### In/Out Flow
+#### Assets Flow
+
+##### In/Out
 
 <iframe src="https://dune.com/embeds/2688626/4471225" width="100%" height="400"></iframe>
 
@@ -438,7 +462,7 @@ Since Uniswap only supports EVM compatible chains (EVM), let's dive deeper into 
 
 <iframe src="https://dune.com/embeds/2688747/4471448" width="100%" height="400"></iframe>
 
-#### Net Inflow
+##### Net Inflow
 
 <iframe src="https://dune.com/embeds/2688626/4471226" width="100%" height="400"></iframe>
 
@@ -448,8 +472,12 @@ Since Uniswap only supports EVM compatible chains (EVM), let's dive deeper into 
 
 <iframe src="https://dune.com/embeds/2688747/4471447" width="100%" height="400"></iframe>
 
+#### Assets Provider
+
+<iframe src="https://dune.com/embeds/2689017/4472367" width="100%" height="400"></iframe>
+
+<iframe src="https://dune.com/embeds/2689017/4471976" width="100%" height="400"></iframe>
+
 ## Trades
 
 <iframe width="100%" height="420" frameborder="0" src="https://embed.theblockcrypto.com/data/decentralized-finance/dex-non-custodial/uniswap-vs-coinbase-and-binance-trade-volume-7dma/embed" title="Uniswap vs. Coinbase and Binance Trade Volume (7DMA)"></iframe>
-
-<iframe src="https://dune.com/embeds/2658402/4419143" width="100%" height="400"></iframe>
