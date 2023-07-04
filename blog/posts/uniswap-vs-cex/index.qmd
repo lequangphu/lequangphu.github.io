@@ -165,7 +165,7 @@ fig.update_layout(
 fig.show()
 ```
 
-In top 10 exchanges, only 2 of them are DEXs, which are Uniswap, and Curve, at 4th and 5th position respectively.
+In top 10 exchanges, only 2 of them are DEX, which are Uniswap, and Curve, at 4th and 5th position respectively.
 
 ```{python}
 df_exchange_adj = pd.concat([df_cex[['parentName', 'category', 'tvl']], df_dex_agg], ignore_index=True)
@@ -422,9 +422,25 @@ fig.show()
 
 Since Uniswap only supports EVM compatible chains (EVM), let's dive deeper into these chains.
 
-### EVM Assets Breakdown
+### EVM Assets
 
 *In this section, let's examine assets by token, and their flow in/out of each exchange.*
+
+<iframe src="https://dune.com/embeds/2688626/4471225" width="100%" height="400"></iframe>
+
+<iframe src="https://dune.com/embeds/2688626/4471226" width="100%" height="400"></iframe>
+
+<iframe src="https://dune.com/embeds/2688646/4471396" width="100%" height="400"></iframe>
+
+<iframe src="https://dune.com/embeds/2688646/4471399" width="100%" height="400"></iframe>
+
+<iframe src="https://dune.com/embeds/2688727/4471409" width="100%" height="400"></iframe>
+
+<iframe src="https://dune.com/embeds/2688727/4471408" width="100%" height="400"></iframe>
+
+<iframe src="https://dune.com/embeds/2688747/4471448" width="100%" height="400"></iframe>
+
+<iframe src="https://dune.com/embeds/2688747/4471447" width="100%" height="400"></iframe>
 
 ## Trades
 
