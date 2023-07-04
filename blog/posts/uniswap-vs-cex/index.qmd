@@ -251,12 +251,12 @@ for key in ['tvl', 'currentChainTvls', 'tokensInUsd']:
 ```
 
 ```{python}
-# r = requests.get('https://api.llama.fi/protocol/uniswap-v3')
+r = requests.get('https://api.llama.fi/protocol/uniswap-v3')
 ```
 
 ```{python}
 # print(r.status_code)
-# r.json()['tokensInUsd']
+# r.json()['chainTvls']['Ethereum']['tvl']
 ```
 
 ### Total Assets H1 2023
@@ -426,15 +426,19 @@ Since Uniswap only supports EVM compatible chains (EVM), let's dive deeper into 
 
 *In this section, let's examine assets by token, and their flow in/out of each exchange.*
 
-<iframe src="https://dune.com/embeds/2688626/4471225" width="100%" height="400"></iframe>
+#### In/Out Flow
 
-<iframe src="https://dune.com/embeds/2688626/4471226" width="100%" height="400"></iframe>
+<iframe src="https://dune.com/embeds/2688626/4471225" width="100%" height="400"></iframe>
 
 <iframe src="https://dune.com/embeds/2688646/4471396" width="100%" height="400"></iframe>
 
 <iframe src="https://dune.com/embeds/2688646/4471399" width="100%" height="400"></iframe>
 
 <iframe src="https://dune.com/embeds/2688727/4471409" width="100%" height="400"></iframe>
+
+#### Net Inflow
+
+<iframe src="https://dune.com/embeds/2688626/4471226" width="100%" height="400"></iframe>
 
 <iframe src="https://dune.com/embeds/2688727/4471408" width="100%" height="400"></iframe>
 
