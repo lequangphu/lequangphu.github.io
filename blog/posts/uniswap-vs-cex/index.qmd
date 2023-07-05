@@ -44,7 +44,9 @@ It's been 14 years since the Bitcoin's genesis block mined, 13 years since the f
 
 # DEX vs. CEX
 
-## Liquidity
+First, let's examine exchange liquidity or total assets deposited (total assets) by assets providers.
+
+## Total Assets
 
 *In this section, let's look at total asset deposited in DEX (i.e. TVL, value locked), and in CEX (i.e. [proof of reserves](https://www.coingecko.com/learn/what-is-proof-of-reserves-por)).*
 
@@ -103,7 +105,7 @@ fig.show()
 
 *source: [defillama.com](https://defillama.com/docs/api).*
 
-There are 839 DEXs tracked on Defillama. Top 20 DEXs, which have TVL range between \$80M and \$4B (to be input later), account for 60% of total DEX assets. Uniswap is the largest DEX in total assets.
+Defillama tracks 842 DEXs. Top 14 DEXs account for 81% of total assets on DEX, each have at least $100M in total assets, the largest one is Uniswap with $4B.
 
 ```{python}
 df_dex = df_exchange.query('category == "Dexes"')
@@ -139,7 +141,7 @@ fig.show()
 
 *source: [defillama.com](https://defillama.com/docs/api).*
 
-There are 28 CEXs, which have proof of reserves (POR) range between \$100K and \$60B. Top 3 CEXs account for almost 80% of total CEX assets. Binance is the largest CEX in total assets.
+Defillama tracks 28 CEXs. Top 21 CEXs which have proof of reserves (POR) range between \$100M and \$60B. Top 3 CEXs account for almost 80% of total CEX assets. Binance is the largest CEX in total assets.
 
 ```{python}
 df_cex = df_exchange.query('category == "CEX"').sort_values('tvl')
@@ -249,9 +251,7 @@ In H1 2023, market shares of top 2-5 CEXs are more evenly distributed than those
 
 *In this section, depends on data availability, I will compare Uniswap to at least 1 CEX among Binance, OKX, Bitfinex, and Coinbase.*
 
-## Liquidity
-
-### Total Assets
+## Total Assets
 
 ```{python}
 df_top3_cex = df_exchange.query('category == "CEX"').sort_values('tvl', ascending=False).head(3)
@@ -268,24 +268,11 @@ for key in ['tvl', 'currentChainTvls', 'tokensInUsd']:
     df_combine[key] = df_combine['responseJson'].apply(lambda x: x[key])
 ```
 
-```{python}
-# df_combine['currentChainTvls']
-```
-
-```{python}
-# r = requests.get('https://api.llama.fi/protocol/uniswap-v3')
-```
-
-```{python}
-# print(r.status_code)
-# r.json()['chainTvls']['Ethereum']['tvl']
-```
-
-#### Current Assets Breakdown
+### Current Assets Breakdown
 
 First, let's break down assets by chain, then by token to understand more about these exchanges total assets.
 
-##### Chain Breakdown
+#### Chain Breakdown
 
 ```{python}
 df_currentChainTvls = df_combine[['parentName', 'name', 'currentChainTvls']]
@@ -349,7 +336,7 @@ fig.show()
 
 Next, let's breakdown the exchanges assets by token.
 
-##### Token Breakdown
+#### Token Breakdown
 
 ```{python}
 df_tokens = df_combine[['name', 'tokensInUsd']]
@@ -445,7 +432,7 @@ In percentage of total assets, WETH and stablecoins have the opposite position. 
 
 Next, let's examine the trend of total assets in H1 2023.
 
-#### H1 2023
+### Assets in H1 2023
 
 ```{python}
 df_tvl = df_combine[['parentName', 'name', 'tvl']]
@@ -498,13 +485,13 @@ fig.show()
 
 Next, since (1) Uniswap only supports EVMs, and (2) EVMs onchain data is more widely supported by analytics platforms such as Dune, let's dive into EVMs onchain data to understand more about assets flow and assets provider behavior in H1 2023.
 
-### EVM Assets
+## EVM Assets
 
 First, let's compare assets flow in/out of the exchanges to see if we can extract any insights.
 
-#### Assets Flow
+### Assets Flow
 
-##### In/Out
+#### In/Out
 
 *Note: Total assets moved = total assets added + total assets removed*
 
@@ -576,19 +563,17 @@ Have you noticed that the range of total assets moved per day on Uniswap was muc
 
 -   Meanwhile, on CEXs, assets provider usually move assets, on the way in, to either sell and cash out to fiat, or deposit as margin to leverage trade, and on the way out, to either store in self custody wallets, or participate in Defi.
 
+-   A caveat of storing assets on CEXs, which Uniswap and other DEXs don't have, is assets remove/withdraw suspension. It happens due to various reasons, and different times. And the most common time is around FUD events, which raises questions among crypto community.
+
 -   And finally, CEXs limit the amount of assets per withdraw, while Uniswap does not. This can be observed in the charts of assets moved per below.
 
-In H1 2023, on Uniswap, total assets moved per move per day ranged between \$36K and \$2.1M, which is much higher than those on Binance and OKX, which were mostly \$50K or less. The number on Bitfinex is the exception here, which matched or even surpassed that on Uniswap in some days.
+In H1 2023, on Uniswap, total remove assets per transaction
 
-<iframe src="https://dune.com/embeds/2689375/4472558" width="100%" height="400">
-
-</iframe>
-
-<iframe src="https://dune.com/embeds/2689375/4477716" width="100%" height="400">
+<iframe src="https://dune.com/embeds/2689375/4480492" width="100%" height="400">
 
 </iframe>
 
-##### Net Inflow
+#### Net Inflow
 
 The net assets inflow per day of Uniswap was much smaller than that of Binance, which ranged between -\$1.1B and \$1.4B, and was in a similar range (between -\$200M and \$200M) with those of OKX and Bitfinex, despite a much higher range of total assets moved.
 
@@ -608,7 +593,7 @@ The net assets inflow per day of Uniswap was much smaller than that of Binance, 
 
 </iframe>
 
-#### Assets Provider
+### Assets Provider
 
 In H1 2023:
 
@@ -656,7 +641,7 @@ Meanwhile, on CEXs:
 
 In June 2023, based on TVL on June 30, 2023, for every $1 of assets, Uniswap generated $8.7 in trade volume, which is more than 2 times higher than those on Binance and OKX. This implies, as an exchange, Uniswap is more effective with its assets than Binance and OKX.
 
-<iframe src="https://dune.com/embeds/2693086/4479361" width="100%" height="400">
+<iframe src="https://dune.com/embeds/2693086/4479361" width="100%" height="240">
 
 </iframe>
 
