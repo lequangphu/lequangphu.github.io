@@ -271,6 +271,8 @@ for key in ['tvl', 'currentChainTvls', 'tokensInUsd']:
 
 #### Current Assets Breakdown
 
+First, let's break down assets by chain, then by token to understand more about these exchanges total assets.
+
 ##### Chain Breakdown
 
 ```{python}
@@ -314,7 +316,11 @@ fig.show()
 
 *source: [defillama.com](https://defillama.com/docs/api).*
 
-Meanwhile, Binance assets are more evenly distributed among 4 chains: Bitcoin, Ethereum, Tron, and BNB, which account for roughly 90% of total assets. The other 10% is allocated among 10 other chains. On OKX and Bitfinex, assets on Bitcoin and Ethereum dominate heavily, account between 95% and 98% in total assets.
+Meanwhile, on CEXs:
+
+-   Binance assets are more evenly distributed among 4 chains: Bitcoin, Ethereum, Tron, and BNB, which account for roughly 90% of total assets. The other 10% is allocated among 10 other chains.
+
+-   On OKX and Bitfinex, assets on Bitcoin and Ethereum dominate heavily, account between 95% and 98% in total assets.
 
 ```{python}
 #| column: screen-inset
@@ -328,6 +334,8 @@ fig.show()
 ```
 
 *source: [defillama.com](https://defillama.com/docs/api).*
+
+Next, let's breakdown the exchanges assets by token.
 
 ##### Token Breakdown
 
@@ -398,7 +406,13 @@ fig.show()
 
 *source: [defillama.com](https://defillama.com/docs/api).*
 
-Mean while, CEX assets are less diversified in number of tokens (less than 100). On Binance, of $100 worth of assets, about $60 roughly equally shared between BTC and USDT, $14 in BNB, $11 in WETH. On OKX, of $100 worth of assets, $96 in top 3 tokens: USDT, BTC, and WETH. Similarly, on Bitfinex, of $100 worth of assets, $97 in top 3 tokens: BTC, WETH, and LEO. If you haven't heard of LEO, you are not alone 🤣. 
+Mean while, CEX assets are less diversified in number of tokens (less than 100).
+
+-   On Binance, of $100 worth of assets, about $60 roughly equally shared between BTC and USDT, $14 in BNB, $11 in WETH.
+
+-   On OKX, of $100 worth of assets, $96 in top 3 tokens: USDT, BTC, and WETH.
+
+-   Similarly, on Bitfinex, of $100 worth of assets, $97 in top 3 tokens: BTC, WETH, and LEO. If you haven't heard of LEO, you are not alone 🤣. 
 
 ```{python}
 #| column: screen-inset
@@ -416,6 +430,8 @@ fig.show()
 In absolute $, assets in WETH on Uniswap is at the level of OKX and Bitfinex ($1B-$2B), and a fourth of that on Binance.
 
 In percentage of total assets, WETH and stablecoins have the opposite position. On one hand, assets in WETH on Uniswap is higher than all of those on the 3 CEXs. On the other hand, Binance and OKX allocate more share to stablecoins, 25% to 2 times higher than that on Uniswap. Surprisingly, on Bitfinex, stablecoins have less than 1% of total assets.
+
+Next, let's examine the trend of total assets in the first half of 2023.
 
 #### H1 2023
 
@@ -466,15 +482,37 @@ fig.show()
 
 *source: [defillama.com](https://defillama.com/docs/api).*
 
-Since Uniswap only supports EVMs, let's dive deeper into these chains.
+Next, since (1) Uniswap only supports EVMs, and (2) EVMs onchain data is more widely supported by analytics platforms such as Dune, let's dive into EVMs onchain data to understand more about assets flow and assets provider behavior in the first half of 2023.
 
 ### EVM Assets
+
+First, let's compare assets flow in/out of the exchanges to see if we can extract any insights.
 
 #### Assets Flow
 
 ##### In/Out
 
+*Note: Total assets moved = total assets added + total assets removed*
+
+In the first half of 2023, on Uniswap:
+
+-   Assets providers moved between $250M (on May 4) and $15.7B (on January 12) worth of assets in total per day. Total assets moved per day is mostly below $6B.
+
+-   And the providers are noticably more active in Q1 than Q2. One possible reason is APY of Uniswap pools were higher in Q1 than that in Q2, as seen in the Median APY charts of Uniswap V2 and V3 below.
+
 <iframe src="https://dune.com/embeds/2688626/4471225" width="100%" height="400"></iframe>
+
+<iframe width="640px" height="360px" src="https://defillama.com/chart/protocol/uniswap-v2?medianApy=true&tvl=false" title="DefiLlama" frameborder="0"></iframe>
+
+<iframe width="640px" height="360px" src="https://defillama.com/chart/protocol/uniswap-v3?tvl=false&events=false&medianApy=true" title="DefiLlama" frameborder="0"></iframe>
+
+Meanwhile, on CEXs:
+
+-   Binance assets providers moved $6B (on February 13) or less worth of assets per day. Total assets moved per day is mostly below $2B. The providers are noticably more active between the second half of February and the first half of March.
+
+-   OKX assets providers moved $1.7B (on March 11) or less worth of assets per day. Total assets moved per day is mostly below $300M. The providers are noticably more active between the second and fourth week of March.
+
+-   Bitfinex assets providers moved $622M (on March 24) or less worth of assets per day. Total assets moved per day is mostly below $200M. The providers are noticably more active in March and June.
 
 <iframe src="https://dune.com/embeds/2688646/4471396" width="100%" height="400"></iframe>
 
@@ -482,7 +520,15 @@ Since Uniswap only supports EVMs, let's dive deeper into these chains.
 
 <iframe src="https://dune.com/embeds/2688747/4471448" width="100%" height="400"></iframe>
 
+Have you noticed that the range of total assets moved per day on Uniswap was much bigger than those on the CEXs, especially relative to total assets? With this data point, one may conclude that total assets on Uniswap fluctuates more wildly than those on the CEXs. However, it's not true as seen [above](https://lequangphu.github.io/blog/posts/uniswap-vs-cex/#h1-2023), and also is demonstrated in the next section. The possible reasons, in my opinion, are:
+
+-   Uniswap assets providers usually move assets between pools on Uniswap, i.e. internal movement. This could be driven by pools APY.
+
+-   Meanwhile, on CEXs, assets provider usually move assets, on the way in, to either sell and cash out to fiat, or deposit as margin to leverage trade, and on the way out, to either store in self custody wallets, or participate in Defi.
+
 ##### Net Inflow
+
+As discussed above, the net assets inflow per day of Uniswap was much smaller than that of Binance, and was in a similar range with those of OKX and Bitfinex, despite a much higher range of total assets moved.
 
 <iframe src="https://dune.com/embeds/2688626/4471226" width="100%" height="400"></iframe>
 
