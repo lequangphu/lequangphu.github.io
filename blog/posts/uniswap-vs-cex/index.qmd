@@ -26,7 +26,7 @@ In the same year, OKX was launched. [link](https://en.wikipedia.org/wiki/OKX)
 
 Over a year later, on Nov 2, 2018, Hayden Adams founded Uniswap, the first, and also the current largest DEX in the world. [link](https://en.wikipedia.org/wiki/Uniswap)
 
-It's been 14 years since the Bitcoin's genesis block mined, 13 years since the first CEX founded, and almost 4 years since the first DEX founded. Before progressing to the end of this post, please keep some data points below in mind:
+It's been 14 years since the Bitcoin's genesis block mined, 13 years since the first CEX founded, and almost 4 years since the first DEX founded. Before progressing to the end of this post, some data points to take note:
 
 -   DEX is 8 years younger than CEX.
 
@@ -171,7 +171,7 @@ fig.show()
 
 *source: [defillama.com](https://defillama.com/docs/api).*
 
-In top 10 exchanges, only 2 of them are DEX, which are Uniswap, and Curve, at 4th and 5th position respectively.
+In top 10 exchanges, only 2 of them are DEX, which are Uniswap, and Curve, at 4th and 5th position respectively. Their assets are 7.5% or less of that on Binance.
 
 ```{python}
 df_exchange_adj = pd.concat([df_cex[['parentName', 'category', 'tvl']], df_dex_agg], ignore_index=True)
@@ -301,6 +301,8 @@ for df, ex in zip([pd.DataFrame()]*4, exs):
 df_uniswap, *df_cexs = dfs
 ```
 
+All Uniswap assets are on EVM compatible chains (EVM). Of $100 worth of assets, almost $90 on Ethereum, $7 on Arbitrum, $2 on Polygon, $1 or less on each of Optimism, BNB, and Celo.
+
 ```{python}
 fig = px.pie(
     df_uniswap, names='chain', values='tvl', title='Uniswap Assets by Chain',
@@ -311,6 +313,8 @@ fig.show()
 ```
 
 *source: [defillama.com](https://defillama.com/docs/api).*
+
+Meanwhile, Binance assets are more evenly distributed among 4 chains: Bitcoin, Ethereum, Tron, and BNB, which account for roughly 90% of total assets. The other 10% is allocated among 10 other chains. On OKX and Bitfinex, assets on Bitcoin and Ethereum dominate heavily, account between 95% and 98% in total assets.
 
 ```{python}
 #| column: screen-inset
@@ -381,6 +385,8 @@ df_rest = pd.DataFrame({'token': [f'{rest_count} Others'], 'tvl': [df_rest['tvl'
 df_uniswap = pd.concat([df_above, df_rest], ignore_index=True)
 ```
 
+Uniswap assets allocate in more than 2k tokens. Of $100 worth of assets, $80 in top 9 tokens, of which almost $40 in WETH, $25 in stablecoins (USDC, USDT, DAI, and FRAX), almost $4 in WBTC.
+
 ```{python}
 fig = px.pie(
     df_uniswap, names='token', values='tvl', title='Uniswap Assets by Token',
@@ -391,6 +397,8 @@ fig.show()
 ```
 
 *source: [defillama.com](https://defillama.com/docs/api).*
+
+Mean while, CEX assets are less diversified in number of tokens (less than 100). On Binance, of $100 worth of assets, about $60 roughly equally shared between BTC and USDT, $14 in BNB, $11 in WETH. On OKX, of $100 worth of assets, $96 in top 3 tokens: USDT, BTC, and WETH. Similarly, on Bitfinex, of $100 worth of assets, $97 in top 3 tokens: BTC, WETH, and LEO. If you haven't heard of LEO, you are not alone 🤣. 
 
 ```{python}
 #| column: screen-inset
@@ -404,8 +412,6 @@ fig.show()
 ```
 
 *source: [defillama.com](https://defillama.com/docs/api).*
-
-Since Uniswap only supports EVM compatible chains (EVM), let's dive deeper into these chains.
 
 #### H1 2023
 
@@ -424,6 +430,16 @@ for df, ex in zip([pd.DataFrame()]*4, exs):
     df['Exchange'] = ex
     dfs.append(df)
 ```
+
+In the first half of 2023, Uniswap total assets started with $3.2B, and ended with $4B, or 25% increase. It ranged between $2.8B and $4.4B, or max 12% down, and 38% up (peak, trough vs. start).
+
+Meanwhile, on CEXs:
+
+-   Binance total assets started with $54B, and ended with $58B, or 7% increase. It ranged between $54B and $71B, i.e the start is the trough, and max 31% up.
+
+-   OKX total assets started with $6.4B, and ended with $10.3B, or 60% increase. The start is also the trough, and the end is also roughly the peak. These imply a strong uptrend.
+
+-   Bitfinex total assets started with $6.3B, and ended with $9.9B, or 57% increase. The trend is similar to that of OKX.
 
 ```{python}
 df_concat = pd.concat(dfs, ignore_index=True)
@@ -446,9 +462,9 @@ fig.show()
 
 *source: [defillama.com](https://defillama.com/docs/api).*
 
-### EVM Assets
+Since Uniswap only supports EVMs, let's dive deeper into these chains.
 
-*In this section, let's examine assets by token, and their flow in/out of each exchange.*
+### EVM Assets
 
 #### Assets Flow
 
