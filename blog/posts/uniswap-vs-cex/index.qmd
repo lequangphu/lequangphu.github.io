@@ -639,6 +639,8 @@ Meanwhile, on CEXs:
 
 *source: [theblockcrypto.com](https://www.theblockcrypto.com/data/decentralized-finance/dex-non-custodial/uniswap-vs-coinbase-and-binance-trade-volume-7dma).*
 
+## Volume / Total Assets
+
 In June 2023, based on TVL on June 30, 2023, for every $1 of assets, Uniswap generated $8.7 in trade volume, which is more than 2 times higher than those on Binance and OKX. This implies, as an exchange, Uniswap is more effective with its assets than Binance and OKX.
 
 <iframe src="https://dune.com/embeds/2693086/4479361" width="100%" height="240">
