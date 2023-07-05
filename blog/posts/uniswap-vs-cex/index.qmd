@@ -565,9 +565,9 @@ Have you noticed that the range of total assets moved per day on Uniswap was muc
 
 -   A caveat of storing assets on CEXs, which Uniswap and other DEXs don't have, is assets remove/withdraw suspension. It happens due to various reasons, and different times. And the most common time is around FUD events, which raises questions among crypto community.
 
--   And finally, CEXs limit the amount of assets per withdraw, while Uniswap does not. This can be observed in the charts of assets moved per below.
+-   And finally, CEXs limit the amount of assets per withdraw, while Uniswap does not. This can be observed in the chart of assets moved per below.
 
-In H1 2023, on Uniswap, total remove assets per transaction
+In H1 2023, on average, Uniswap total assets removed per transaction is $113K, which is 9 times higher than those of Binance, OKX. Bitfinex total assets removed per transaction, on the other hand, is even higher than that of Uniswap.
 
 <iframe src="https://dune.com/embeds/2689375/4480492" width="100%" height="400">
 
