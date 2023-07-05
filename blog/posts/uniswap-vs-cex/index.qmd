@@ -413,6 +413,10 @@ fig.show()
 
 *source: [defillama.com](https://defillama.com/docs/api).*
 
+In absolute $, assets in WETH on Uniswap is at the level of OKX and Bitfinex ($1B-$2B), and a fourth of that on Binance.
+
+In percentage of total assets, WETH and stablecoins have the opposite position. On one hand, assets in WETH on Uniswap is higher than all of those on the 3 CEXs. On the other hand, Binance and OKX allocate more share to stablecoins, 25% to 2 times higher than that on Uniswap. Surprisingly, on Bitfinex, stablecoins have less than 1% of total assets.
+
 #### H1 2023
 
 ```{python}
