@@ -565,6 +565,16 @@ In H1 2023, on average, Uniswap total assets removed per transaction is $113K, w
 
 </iframe>
 
+CEX withdrawal limits:
+
+![Binance]('blog/posts/uniswap-vs-cex/Binance Withdrawal Limits.JPG')
+
+*source: [binance.com](https://www.binance.com/en/fee/vip).*
+
+![OKX]('blog/posts/uniswap-vs-cex/OKX Withdrawal Limits.JPG')
+
+*source: [okx.com](https://www.okx.com/fees).*
+
 #### Net Inflow
 
 The net assets inflow per day of Uniswap was much smaller than that of Binance, which ranged between -\$1.1B and \$1.4B, and was in a similar range (between -\$200M and \$200M) with those of OKX and Bitfinex, despite a much higher range of total assets moved.
