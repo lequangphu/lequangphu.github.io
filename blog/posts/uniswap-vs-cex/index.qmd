@@ -361,10 +361,8 @@ df_uniswap_v3, *df_cexs = dfs
 ```{python}
 # with open('/Users/phu/lequangphu.github.io/.secrets/dune_api_key.txt') as f:
 #     api_key = f.read()
-```
-
-```{python}
 # r = requests.get(f'https://api.dune.com/api/v1/query/2685347/results?api_key={api_key}')
+
 r = requests.get(f'https://api.dune.com/api/v1/query/2685347/results?api_key=5xBKE5jaoCbLPUrFMydFVYokznFX1GP6')
 ```
 
@@ -567,11 +565,11 @@ In H1 2023, on average, Uniswap total assets removed per transaction is $113K, w
 
 CEX withdrawal limits:
 
-![Binance]('binance-withdraw-limit.png')
+![Binance](binance-withdraw-limit.png)
 
 *source: [binance.com](https://www.binance.com/en/fee/vip).*
 
-![OKX]('okx-withdraw-limit.png')
+![OKX](okx-withdraw-limit.png)
 
 *source: [okx.com](https://www.okx.com/fees).*
 
