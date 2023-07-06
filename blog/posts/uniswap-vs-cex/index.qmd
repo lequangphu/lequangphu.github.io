@@ -623,7 +623,9 @@ In H1 2023:
 
 </iframe>
 
-#### Weekly Assets Movement
+#### Assets Provider Activeness
+
+*To measure how active an asset provider is, let's examine number of assets movement (add + remove) the asset provider did per week (i.e frequency) in H1 2023.*
 
 In H1 2023:
 
