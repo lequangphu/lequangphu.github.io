@@ -6,7 +6,7 @@ categories: [analysis, crypto]
 image: 'preview.png'
 ---
 
-At high level, the battle of crypto exchanges consists of 2 parts: Liquidity and Trade. To service a trade, there must be liquidity. Competing for liquidity is the first half of the battle.
+At high level, the battle of crypto exchanges consists of 2 parts: Liquidity and Trade. A trade cannot happen without liquidity. Competing for liquidity is the first half of the battle.
 
 To better understand the battle of crypto exchanges, in this post, I will examine that first half, with focus on Uniswap and top centralized exchanges (CEX).
 
@@ -44,7 +44,15 @@ It's been 14 years since the Bitcoin's genesis block mined, 13 years since the f
 
 # DEX vs. CEX
 
-First, let's examine exchange liquidity or total assets deposited (total assets) by assets providers.
+Liquidity of an exchange, is assets available to buy and sell at a given price. (Q) But how does the exchange have the assets in the first place? (A) Assets providers must deposit the assets to the exchange. And it depends on the exchange mechanism, assets provider might directly involve in a trade, as the counterparty on the other side of the trade.
+
+The main exchange mechanism of DEX is actually very different from that of CEX. While CEXs mainly support [Order Book](https://www.coinbase.com/learn/advanced-trading/what-is-an-order-book), DEXs mainly support [AMM](https://chain.link/education-hub/what-is-an-automated-market-maker-amm#:~:text=Automated%20market%20makers%20(AMMs)%20are%20a%20type%20of%20decentralized%20exchange,trade%20directly%20through%20the%20AMM.).
+
+Last 12 months, for every 100 trades on DEXs, at least 96 trade processed by Constant Product (i.e. AMM), and Hybrid mechanisms.
+
+<iframe width="100%" height="420" frameborder="0" src="https://embed.theblockcrypto.com/data/decentralized-finance/dex-non-custodial/dex-mechanism-volume-share/embed" title="DEX Mechanism Volume Share"></iframe>
+
+*source: [theblockcrypto.com](https://www.theblockcrypto.com/data/decentralized-finance/dex-non-custodial/dex-mechanism-volume-share).*
 
 ## Total Assets
 
@@ -173,6 +181,8 @@ fig.show()
 
 *source: [defillama.com](https://defillama.com/docs/api).*
 
+Although Defillama data on DEX and CEX might miss a few exchanges in each category, the fact that crypto market has 842 DEXs and 28 CEXs, or 30:1 DEX to CEX, and DEX is 8 years younger than CEX, is quite astounding. This implies that the entry bar to DEX is much lower than the entry bar to CEX.
+
 In top 10 exchanges, only 2 of them are DEX, which are Uniswap, and Curve, at 4th and 5th position respectively. Their assets are 7.5% or less of that on Binance.
 
 ```{python}
@@ -215,7 +225,7 @@ Combine with DEX to CEX spot volume of roughly 15% above, we can see that, from 
 
 In absolute \$, spot volume of DEX and CEX's all time high were \$213b and \$4.25t, both recorded in May 2021, which translates to 9% of DEX to CEX spot volume.
 
-In H1 2023, though both spot volume on DEX and CEX have generally been down, DEX to CEX spot volume (as seen above) has been up, which implies a slower drop in DEX spot volume.
+Last 12 months, though both spot volume on DEX and CEX have generally been down, DEX to CEX spot volume (as seen above) has been up, which implies a slower drop in DEX spot volume.
 
 <iframe width="100%" height="420" frameborder="0" src="https://embed.theblockcrypto.com/data/decentralized-finance/dex-non-custodial/dex-volume-monthly/embed" title="DEX Volume">
 
@@ -228,24 +238,6 @@ In H1 2023, though both spot volume on DEX and CEX have generally been down, DEX
 </iframe>
 
 *source: [theblockcrypto.com](https://www.theblockcrypto.com/data/crypto-markets/spot/cryptocurrency-exchange-volume-monthly).*
-
-Dominances of Uniswap - the largest DEX, and Binance - the largest CEX, in each category are quite similar (40%-60% market share).
-
-Overall, market share of Binance has been in a steeper upward slope than that of Uniswap.
-
-In H1 2023, market shares of top 2-5 CEXs are more evenly distributed than those of top 2-5 DEXs.
-
-<iframe width="100%" height="420" frameborder="0" src="https://embed.theblockcrypto.com/data/decentralized-finance/dex-non-custodial/share-of-dex-volume-monthly/embed" title="Share of DEX Volume">
-
-</iframe>
-
-*source: [theblockcrypto.com](https://www.theblockcrypto.com/data/decentralized-finance/dex-non-custodial/share-of-dex-volume-monthly).*
-
-<iframe width="100%" height="420" frameborder="0" src="https://embed.theblockcrypto.com/data/crypto-markets/spot/the-block-legitimate-index-market-share/embed" title="Monthly Exchange Volume Market Share">
-
-</iframe>
-
-*source: [theblockcrypto.com](https://www.theblockcrypto.com/data/crypto-markets/spot/the-block-legitimate-index-market-share).*
 
 # Uniswap vs. Top CEXs
 
@@ -499,7 +491,7 @@ In H1 2023, on Uniswap:
 
 -   Assets providers moved between \$250M (on May 4) and \$15.7B (on January 12) worth of assets in total per day. Total assets moved per day is mostly below \$6B.
 
--   And the providers are noticably more active in Q1 than Q2. One possible reason is APY of Uniswap pools were higher in Q1 than that in Q2, as seen in the Median APY chart of Uniswap V2 and V3 in H1 2023 below.
+-   And the providers are noticably more active in Q1 than Q2. One possible reason is APY of Uniswap pools were higher in Q1 than that in Q2.
 
 <iframe src="https://dune.com/embeds/2688626/4471225" width="100%" height="400">
 
@@ -619,6 +611,8 @@ In H1 2023:
 
 *In this section, I will compare Uniswap trading volume to those of Binance and Coinbase.*
 
+### Volume in H1 2023
+
 In H1 2023:
 
 -   There is a big gap between total trade volume per day (7-day moving average) of Uniswap (and Coinbase) and that of Binance.
@@ -638,6 +632,28 @@ Meanwhile, on CEXs:
 </iframe>
 
 *source: [theblockcrypto.com](https://www.theblockcrypto.com/data/decentralized-finance/dex-non-custodial/uniswap-vs-coinbase-and-binance-trade-volume-7dma).*
+
+### Market Share
+
+Last 12 months:
+
+-   Market share of Uniswap in DEX and of Binance in CEX basically haven't changed.
+
+-   Uniswap market share, as the largest DEX, started with 56.21% in July 2022, and ended slightly higher with 58.51% in June 2023, or 1% increase.
+
+<iframe width="100%" height="420" frameborder="0" src="https://embed.theblockcrypto.com/data/decentralized-finance/dex-non-custodial/share-of-dex-volume-monthly/embed" title="Share of DEX Volume">
+
+</iframe>
+
+*source: [theblockcrypto.com](https://www.theblockcrypto.com/data/decentralized-finance/dex-non-custodial/share-of-dex-volume-monthly).*
+
+-   Binance market share, as the largest CEX, started with 47% in July 2022, and ended slightly higher with 48.98% in June 2023, or 1% increase.
+
+<iframe width="100%" height="420" frameborder="0" src="https://embed.theblockcrypto.com/data/crypto-markets/spot/the-block-legitimate-index-market-share/embed" title="Monthly Exchange Volume Market Share">
+
+</iframe>
+
+*source: [theblockcrypto.com](https://www.theblockcrypto.com/data/crypto-markets/spot/the-block-legitimate-index-market-share).*
 
 ## Volume / Total Assets
 
