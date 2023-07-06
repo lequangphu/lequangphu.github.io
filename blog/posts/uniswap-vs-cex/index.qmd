@@ -149,7 +149,7 @@ fig.show()
 
 *source: [defillama.com](https://defillama.com/docs/api).*
 
-Defillama tracks 28 CEXs. Top 21 CEXs which have proof of reserves (POR) range between \$100M and \$60B. Top 3 CEXs account for almost 80% of total CEX assets. Binance is the largest CEX in total assets.
+Defillama tracks 28 CEXs. Top 21 CEXs which have proof of reserves (POR) range between \$100M and \$60B. Top 3 CEXs account for almost 80% of total CEX assets. Binance is the largest CEX in total assets, 6 times higher than OKX, the second largest CEX.
 
 ```{python}
 df_cex = df_exchange.query('category == "CEX"').sort_values('tvl')
@@ -181,9 +181,9 @@ fig.show()
 
 *source: [defillama.com](https://defillama.com/docs/api).*
 
-Although Defillama data on DEX and CEX might miss a few exchanges in each category, the fact that crypto market has 842 DEXs and 28 CEXs, or 30:1 DEX to CEX, and DEX is 8 years younger than CEX, is quite astounding. This implies that the entry bar to DEX is much lower than the entry bar to CEX.
+Although Defillama data about DEX and CEX might miss a few exchanges in each category, the fact that crypto market has 842 DEXs and 28 CEXs, or 30:1 DEX to CEX, and DEX is 8 years younger than CEX, is quite astounding. This implies that the entry bar to the DEX market is much lower than the entry bar to the CEX market.
 
-In top 10 exchanges, only 2 of them are DEX, which are Uniswap, and Curve, at 4th and 5th position respectively. Their assets are 7.5% or less of that on Binance.
+In top 10 exchanges, only 2 of them are DEX, which are Uniswap, and Curve, at 4th and 5th position respectively. Their combined assets is just 13% of Binance assets.
 
 ```{python}
 df_exchange_adj = pd.concat([df_cex[['parentName', 'category', 'tvl']], df_dex_agg], ignore_index=True)
@@ -213,7 +213,7 @@ fig.show()
 
 One and a half year after the first data point in Jan 2019, DEX to CEX spot volume first surpassed 1% in Jun 2020. Four months later, DEX to CEX spot volume skyrocketed to 16% in Sep 2020. Sixteen months later, it made a higher high to 17% in Jan 2022. And recently, in May 2023, it made all time high at 22%. That marked DEX spot volume surpassed a fifth of that on CEX.
 
-In the first half (H1) of 2023, the DEX to CEX spot volume trend was generally up, started with 9.6%, and ended higher with 16.8%. This could be driven by the colaspe of FTX, and recent legal crack downs on CEXs around the world.
+In the first half (H1) of 2023, the DEX to CEX spot volume trend was generally up, started with 9.6%, and ended higher with 16.8%. This could be driven by the colapse of FTX, and recent legal crack downs on CEXs around the world.
 
 Combine with DEX to CEX spot volume of roughly 15% above, we can see that, from \$1 of assets, DEX is on the trend of generating a higher \$volume than CEX.
 
@@ -294,7 +294,7 @@ for df, ex in zip([pd.DataFrame()]*4, exs):
 df_uniswap, *df_cexs = dfs
 ```
 
-All Uniswap assets are on EVM compatible chains (EVM). Of \$100 worth of assets, almost \$90 on Ethereum, \$7 on Arbitrum, \$2 on Polygon, \$1 or less on each of Optimism, BNB, and Celo.
+All Uniswap assets are on EVM compatible chains (EVMs). Of \$100 assets, almost \$90 on Ethereum, \$7 on Arbitrum, \$2 on Polygon, \$1 or less on each of Optimism, BNB, and Celo.
 
 ```{python}
 fig = px.pie(
@@ -382,7 +382,7 @@ df_rest = pd.DataFrame({'token': [f'{rest_count} Others'], 'tvl': [df_rest['tvl'
 df_uniswap = pd.concat([df_above, df_rest], ignore_index=True)
 ```
 
-Uniswap assets allocate in more than 2k tokens. Of \$100 worth of assets, \$80 in top 9 tokens, of which almost \$40 in WETH, \$25 in stablecoins (USDC, USDT, DAI, and FRAX), almost \$4 in WBTC.
+Uniswap assets allocate in more than 2k tokens. Of \$100 assets, \$80 in top 9 tokens, of which almost \$40 in WETH, \$25 in stablecoins (USDC, USDT, DAI, and FRAX), almost \$4 in WBTC.
 
 ```{python}
 fig = px.pie(
@@ -397,11 +397,11 @@ fig.show()
 
 Mean while, CEX assets are less diversified in number of tokens (less than 100).
 
--   On Binance, of \$100 worth of assets, about \$60 roughly equally shared between BTC and USDT, \$14 in BNB, \$11 in WETH.
+-   On Binance, of \$100 assets, about \$60 roughly equally shared between BTC and USDT, \$14 in BNB, \$11 in WETH.
 
--   On OKX, of \$100 worth of assets, \$96 in top 3 tokens: USDT, BTC, and WETH.
+-   On OKX, of \$100 assets, \$96 in top 3 tokens: USDT, BTC, and WETH.
 
--   Similarly, on Bitfinex, of \$100 worth of assets, \$97 in top 3 tokens: BTC, WETH, and LEO. If you haven't heard of LEO, you are not alone 🤣.
+-   Similarly, on Bitfinex, of \$100 assets, \$97 in top 3 tokens: BTC, WETH, and [LEO](https://coinmarketcap.com/vi/currencies/unus-sed-leo/) (exchange token of Bitfinex). If you haven't heard of LEO, you are not alone 🤣.
 
 ```{python}
 #| column: screen-inset
@@ -473,6 +473,8 @@ fig.show()
 
 *source: [defillama.com](https://defillama.com/docs/api).*
 
+In H1 2023, Uniswap assets growth is more than 3 times faster than that of Binance, however, it is less than half of OKX and Bitfinex assets growth.
+
 Next, since (1) Uniswap only supports EVMs, and (2) EVMs onchain data is more widely supported by analytics platforms such as Dune, let's dive into EVMs onchain data to understand more about assets flow and assets provider behavior in H1 2023.
 
 ## EVM Assets
@@ -487,7 +489,7 @@ First, let's compare assets flow in/out of the exchanges to see if we can extrac
 
 In H1 2023, on Uniswap:
 
--   Assets providers moved between \$250M (on May 4) and \$15.7B (on January 12) worth of assets in total per day. Total assets moved per day is mostly below \$6B.
+-   Assets providers moved between \$250M (on May 4) and \$15.7B (on January 12) assets in total per day. Total assets moved per day is mostly below \$6B.
 
 -   And the providers are noticably more active in Q1 than Q2. One possible reason is APY of Uniswap pools were higher in Q1 than that in Q2, as seen in the Uniswap Median APY chart below.
 
@@ -529,19 +531,19 @@ fig.show()
 
 Meanwhile, on CEXs:
 
--   Binance assets providers moved \$6B (on February 13) or less worth of assets per day. Total assets moved per day is mostly below \$2B. The providers are noticably more active between the second half of February and the first half of March.
-
--   OKX assets providers moved \$1.7B (on March 11) or less worth of assets per day. Total assets moved per day is mostly below \$300M. The providers are noticably more active between the second and fourth week of March.
-
--   Bitfinex assets providers moved \$622M (on March 24) or less worth of assets per day. Total assets moved per day is mostly below \$200M. The providers are noticably more active in March and June.
+-   Binance assets providers moved \$6B (on February 13) or less assets per day. Total assets moved per day is mostly below \$2B. The providers are noticably more active between the second half of February and the first half of March.
 
 <iframe src="https://dune.com/embeds/2688646/4471396" width="100%" height="400">
 
 </iframe>
 
+-   OKX assets providers moved \$1.7B (on March 11) or less assets per day. Total assets moved per day is mostly below \$300M. The providers are noticably more active between the second and fourth week of March.
+
 <iframe src="https://dune.com/embeds/2688727/4471409" width="100%" height="400">
 
 </iframe>
+
+-   Bitfinex assets providers moved \$622M (on March 24) or less assets per day. Total assets moved per day is mostly below \$200M. The providers are noticably more active in March and June.
 
 <iframe src="https://dune.com/embeds/2688747/4471448" width="100%" height="400">
 
@@ -553,9 +555,9 @@ Have you noticed that the range of total assets moved per day on Uniswap was muc
 
 -   Meanwhile, on CEXs, assets provider usually move assets, on the way in, to either sell and cash out to fiat, or deposit as margin to leverage trade, and on the way out, to either store in self custody wallets, or participate in Defi.
 
--   A caveat of storing assets on CEXs, which Uniswap and other DEXs don't have, is assets remove/withdraw suspension. It happens due to various reasons, and different times. And the most common time is around FUD events, which raises questions among crypto community.
+-   A caveat of storing assets on CEXs, which Uniswap and other DEXs don't have, is assets remove/withdraw suspension. It happens due to various reasons, and at different times. And the most common time is around FUD events, which raises questions among crypto community about user assets transparency of CEXs.
 
--   And finally, CEXs limit the amount of assets per withdraw depends on a user tier, while Uniswap does not. This can be observed in the chart of assets removed per transaction below.
+-   And finally, CEXs limit the amount of assets per withdraw depends on a user tier (i.e. VIP level), while Uniswap does not. This can be observed in the chart of assets removed per transaction below.
 
 In H1 2023, on average, Uniswap total assets removed per transaction is $113K, which is 9 times higher than those of Binance, OKX. Bitfinex total assets removed per transaction, on the other hand, is even higher than that of Uniswap. This makes sense as Bitfinex users are usually high networth users (i.e. whales).
 
@@ -565,9 +567,13 @@ In H1 2023, on average, Uniswap total assets removed per transaction is $113K, w
 
 CEX withdrawal limits:
 
+-   Binance withdrawal limits range between $9M and $96M per user per 24 hours.
+
 ![Binance](binance-withdraw-limit.png)
 
 *source: [binance.com](https://www.binance.com/en/fee/vip).*
+
+-   OKX withdrawal limits range between $10M and $40M per user per 24 hours.
 
 ![OKX](okx-withdraw-limit.png)
 
@@ -665,7 +671,7 @@ Last 12 months:
 
 ## Volume / Total Assets
 
-In June 2023, based on TVL on June 30, 2023, for every $1 of assets, Uniswap generated $8.7 in trade volume, which is more than 2 times higher than those on Binance and OKX. This implies, as an exchange, Uniswap is more effective with its assets than Binance and OKX.
+In June 2023, based on TVL on June 30, 2023, for every $1 of assets, Uniswap generated $8.7 in trade volume, which is more than 2 times higher than those on Binance and OKX. This implies, as an exchange, Uniswap is more effective with its assets than Binance and OKX in generating trade volume.
 
 <iframe src="https://dune.com/embeds/2693086/4479361" width="100%" height="240">
 
@@ -681,6 +687,6 @@ Zooming in to compare exchanges, Uniswap, as the largest DEX, is still very smal
 
 -   The goods are (1) its volume has surpassed those of other top CEXs such as Coinbase, OKX, (2) it is more effective in generating volume from 1 unit of assets compared to Binance, OKX.
 
--   The challenges are (1) its assets is growing much slower compared to top CEXs such as OKX, Bitfinex, (2) its active assets providers is decreasing.
+-   The challenges are (1) its assets is growing much slower compared to top CEXs such as OKX, Bitfinex, (2) its daily active assets provider is decreasing.
 
--   The opportunities are (1) growth on L2s from recent expansions to L2 EVM chains, coupled with the chains recent rapid growth, (2) growth on Ethereum with future upgrades from both Ethereum and Uniswap such as the upcoming Uniswap V4.
+-   The opportunities are (1) growth on L2s from recent expansions to L2 EVM chains, coupled with the chains ongoing rapid growth, (2) growth on Ethereum with future upgrades from both Ethereum and Uniswap such as the upcoming Uniswap V4.
