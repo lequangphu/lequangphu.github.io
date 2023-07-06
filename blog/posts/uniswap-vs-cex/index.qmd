@@ -557,17 +557,17 @@ Have you noticed that the range of total assets moved per day on Uniswap was muc
 
 -   A caveat of storing assets on CEXs, which Uniswap and other DEXs don't have, is assets remove/withdraw suspension. It happens due to various reasons, and at different times. And the most common time is around FUD events, which raises questions among crypto community about user assets transparency of CEXs.
 
--   And finally, CEXs limit the amount of assets per withdraw depends on a user tier (i.e. VIP level), while Uniswap does not. This can be observed in the chart of assets removed per transaction below.
+-   And finally, CEXs limit the amount of assets per withdraw depends on a user tier (i.e. VIP level), while Uniswap does not. This can be observed in the chart of assets removed per assets provider per day below.
 
-In H1 2023, on average, Uniswap total assets removed per transaction is $113K, which is 9 times higher than those of Binance, OKX. Bitfinex total assets removed per transaction, on the other hand, is even higher than that of Uniswap. This makes sense as Bitfinex users are usually high networth users (i.e. whales).
+In H1 2023, on average, an assets provider of Uniswap removed $623K assets per day, which is 40 times higher than those removed from Binance and OKX, and more than 2 times higher than those removed from Bitfinex. The situation is quite similar in average assets added per assets provider per day.
 
-<iframe src="https://dune.com/embeds/2689375/4480492" width="100%" height="400">
+<iframe src="https://dune.com/embeds/2697448/4487492" width="100%" height="400">
 
 </iframe>
 
 CEX withdrawal limits:
 
--   Binance withdrawal limits range between $9M and $96M per user per 24 hours.
+-   Binance withdrawal limits range between $8M and $96M per user per 24 hours.
 
 ![Binance](binance-withdraw-limit.png)
 
@@ -601,6 +601,8 @@ The net assets inflow per day of Uniswap was much smaller than that of Binance, 
 
 ### Assets Provider
 
+#### Daily Active Assets Provider
+
 In H1 2023:
 
 -   There is a big gap between active providers per day of Uniswap (and the other 2 CEXs) and that of Binance.
@@ -618,6 +620,18 @@ In H1 2023:
 -   Bitfinex active providers per day was very small relative to the other exchanges, which implies that, on average, total assets of each Bitfinex assets provider are much higher than those of the other exchanges.
 
 <iframe src="https://dune.com/embeds/2689017/4471976" width="100%" height="400">
+
+</iframe>
+
+#### Weekly Assets Movement
+
+In H1 2023:
+
+-   Uniswap assets providers are much more active in managing their assets than those on the 3 CEXs, which can be observed by number of assets movement (add + remove) per week.
+
+-   Assets providers of Uniswap, on average, moved their assets 8.7 times per week, which is more than 8 times higher than those on Binance and OKX, and more than 3 times higher than that on Bitfinex.
+
+<iframe src="https://dune.com/embeds/2689375/4480492" width="100%" height="400">
 
 </iframe>
 
