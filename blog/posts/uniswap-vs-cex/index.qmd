@@ -567,11 +567,11 @@ In H1 2023, on average, Uniswap total assets removed per transaction is $113K, w
 
 CEX withdrawal limits:
 
-![Binance]('blog/posts/uniswap-vs-cex/Binance Withdrawal Limits.JPG')
+![Binance]('../uniswap-vs-cex/binance-withdraw-limit.JPG')
 
 *source: [binance.com](https://www.binance.com/en/fee/vip).*
 
-![OKX]('blog/posts/uniswap-vs-cex/OKX Withdrawal Limits.JPG')
+![OKX]('../uniswap-vs-cex/okx-withdraw-limit.JPG')
 
 *source: [okx.com](https://www.okx.com/fees).*
 
