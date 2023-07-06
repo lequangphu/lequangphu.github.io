@@ -1,6 +1,6 @@
 ---
 title: 'Uniswap vs. CEXs: Liquidity'
-description: ''
+description: 'Liquidity, the first half of crypto exchange battle.'
 date: '2023-07-01'
 categories: [analysis, crypto]
 image: 'preview.png'
