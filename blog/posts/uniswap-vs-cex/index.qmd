@@ -625,9 +625,9 @@ In H1 2023:
 
 </iframe>
 
-Daily active assets provider can only tell you about the quantity side. Next, let's learn about the quality side of each exchange assets provider.
+Daily active assets provider can only tell you about the quantity side. Next, let's examine assets providers behavior to learn about the quality side.
 
-#### Assets Provider Activeness
+#### Assets Provider Behavior
 
 *To measure how active an asset provider is, I will examine total assets move (add + remove) in USD, and number of times the asset provider add or remove (assets movement) per week (i.e frequency) in H1 2023.*
 
