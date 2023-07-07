@@ -609,7 +609,7 @@ In H1 2023:
 
 -   There is a big gap between active providers per day of Uniswap (and the other 2 CEXs) and that of Binance.
 
--   Binance active providers per day started with 54.7K, and ended higher with 123.6K. The number mostly ranged between 60K and 180K, along with a few huge surge to as high as 712.5K (on May 19).
+-   Binance active providers per day started with 54.7K, and ended higher with 123.6K. The number mostly ranged between 60K and 180K, along with a few huge surges to as high as 712.5K (on May 19).
 
 <iframe src="https://dune.com/embeds/2689017/4472367" width="100%" height="400">
 
