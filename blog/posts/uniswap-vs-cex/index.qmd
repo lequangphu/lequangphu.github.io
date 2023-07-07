@@ -181,7 +181,7 @@ fig.show()
 
 *source: [defillama.com](https://defillama.com/docs/api).*
 
-Although Defillama data about DEX and CEX might miss a few exchanges in each category, the fact that crypto market has almost 900 DEXs and almost 30 CEXs, or 30:1 DEX to CEX, and DEX is 8 years younger than CEX, is quite astounding. This implies that the entry bar to the DEX market is much lower than the entry bar to the CEX market. And with the huge gap between Binance and the following CEXs, both in total assets we saw above, and trade volume in the next section, it seems that the crypto exchange battle in CEX category is settled, while that battle in DEX category is more interesting to observe.
+Although Defillama data about DEX and CEX might miss a few exchanges in each category, the fact that crypto market has almost 900 DEXs and almost 30 CEXs, or 30:1 DEX to CEX, and DEX is 8 years younger than CEX, is quite astounding. This implies that the entry bar to the DEX market is much lower than the entry bar to the CEX market.
 
 In top 10 exchanges, only 2 of them are DEX, which are Uniswap, and Curve, at 4th and 5th position respectively. Their combined assets is just 13% of Binance assets.
 
@@ -204,6 +204,8 @@ fig.update_layout(
 
 fig.show()
 ```
+
+Binance is leading the crypto exchange with a huge gap vs. the following exchanges, both in total assets we saw above, and trade volume in the next section. And with that gap, it seems that the crypto exchange battle in CEX category is settled, while that battle in DEX category is more interesting to observe.
 
 *source: [defillama.com](https://defillama.com/docs/api).*
 
