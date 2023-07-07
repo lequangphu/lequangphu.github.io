@@ -205,7 +205,7 @@ fig.update_layout(
 fig.show()
 ```
 
-Binance is leading the crypto exchange with a huge gap vs. the following exchanges, both in total assets we saw above, and trade volume in the next section. And with that gap, it seems that the crypto exchange battle in CEX category is settled, while that battle in DEX category is more interesting to observe.
+Binance is leading the crypto exchange market with a huge gap vs. the followings, both in total assets we saw above, and trade volume in the next section. And with that gap, it seems that the crypto exchange battle in CEX category is settled, while that battle in DEX category is more interesting to observe.
 
 *source: [defillama.com](https://defillama.com/docs/api).*
 
