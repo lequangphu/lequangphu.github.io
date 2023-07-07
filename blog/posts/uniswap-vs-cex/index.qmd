@@ -559,7 +559,7 @@ Have you noticed that the range of total assets moved per day on Uniswap was muc
 
 -   And finally, CEXs limit the amount of assets per withdraw depends on a user tier (i.e. VIP level), while Uniswap does not. This can be observed in the chart of assets removed per assets provider per day below.
 
-In H1 2023, on average, an assets provider of Uniswap removed $623K assets per day, which is 40 times higher than those removed from Binance and OKX, and more than 2 times higher than those removed from Bitfinex. The situation is quite similar in average assets added per assets provider per day.
+In H1 2023, on average, an assets provider of Uniswap removed $623K assets per day, which is 40 times higher than those removed from Binance and OKX, and more than 2 times higher than those removed from Bitfinex.
 
 <iframe src="https://dune.com/embeds/2697448/4487492" width="100%" height="400">
 
@@ -623,19 +623,27 @@ In H1 2023:
 
 </iframe>
 
+Daily active assets provider can only tell you about the quantity side. Next, let's learn about the quality side of each exchange assets provider.
+
 #### Assets Provider Activeness
 
-*To measure how active an asset provider is, let's examine number of assets movement (add + remove) the asset provider did per week (i.e frequency) in H1 2023.*
+*To measure how active an asset provider is, I will examine total assets move (add + remove) in USD, and number of times the asset provider add or remove (assets movement) per week (i.e frequency) in H1 2023.*
 
-In H1 2023:
+In H1 2023, on average:
 
--   Uniswap assets providers are much more active in managing their assets than those on the 3 CEXs, which can be observed by number of assets movement (add + remove) per week.
+-   Uniswap assets providers moved $700K per week, almost 40 times higher than those on Binance and OKX, and more than 3 times higher than those on Bitfinex.
 
--   Assets providers of Uniswap, on average, moved their assets 8.7 times per week, which is more than 8 times higher than those on Binance and OKX, and more than 3 times higher than that on Bitfinex.
+<iframe src="https://dune.com/embeds/2697448/4488724" width="100%" height="400">
+
+</iframe>
+
+-   Assets providers of Uniswap moved their assets 8.7 times per week, or more than once a day, which is more than 8 times higher than those on Binance and OKX, and more than 3 times higher than that on Bitfinex.
 
 <iframe src="https://dune.com/embeds/2689375/4480492" width="100%" height="400">
 
 </iframe>
+
+So we learned that Uniswap assets providers are much more active in managing their assets than those on the 3 CEXs both in value of assets per movement, and frequency of assets movement.
 
 ## Trades
 
