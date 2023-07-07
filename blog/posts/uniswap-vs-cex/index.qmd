@@ -12,21 +12,21 @@ To better understand the battle of crypto exchanges, in this post, I will examin
 
 First, let's have a quick lookback on some of key events in crypto exchange history.
 
-> On Jan 3, 2009, Satoshi Nakamoto mined the first block of Bitcoin.
->
-> One year later, on Mar 17, 2010, Bitcoinmarket.com, the first crypto exchange went live. [link](https://www.cryptohopper.com/blog/what-was-the-first-crypto-exchange-449)
->
-> Four months later, on Jul 18, 2010, mtgox.com, the famous defunct exchange, launched. By Apr 2013, and into early 2014, it became the largest Bitcoin exchange, handling over 70% of total Bitcoin trades. On Feb 28, 2014, after a series of major security breaches, and bitcoin stolens, the exchange filed for bankruptcy. [link](https://en.wikipedia.org/wiki/Mt._Gox)
->
-> Meanwhile, in Jun 2012, Brian Amstrong founded Coinbase, the current largest CEX in the US. [link](https://en.wikipedia.org/wiki/Coinbase)
->
-> Six months later, Bitfinex was founded. [link](https://en.wikipedia.org/wiki/Bitfinex)
->
-> Five years after the launch of Coinbase, on Jul 14, 2017, Changpeng Zhao founded Binance, the current largest crypto exchange in the world. [link](https://en.wikipedia.org/wiki/Binance)
->
-> In the same year, OKX was launched. [link](https://en.wikipedia.org/wiki/OKX)
->
-> Over a year later, on Nov 2, 2018, Hayden Adams founded Uniswap, the first, and also the current largest DEX in the world. [link](https://en.wikipedia.org/wiki/Uniswap)
+-   On Jan 3, 2009, Satoshi Nakamoto mined the first block of Bitcoin.
+
+-   One year later, on Mar 17, 2010, Bitcoinmarket.com, the first crypto exchange went live. [link](https://www.cryptohopper.com/blog/what-was-the-first-crypto-exchange-449)
+
+-   Four months later, on Jul 18, 2010, mtgox.com, the famous defunct exchange, launched. By Apr 2013, and into early 2014, it became the largest Bitcoin exchange, handling over 70% of total Bitcoin trades. On Feb 28, 2014, after a series of major security breaches, and bitcoin stolens, the exchange filed for bankruptcy. [link](https://en.wikipedia.org/wiki/Mt._Gox)
+
+-   Meanwhile, in Jun 2012, Brian Amstrong founded Coinbase, the current largest CEX in the US. [link](https://en.wikipedia.org/wiki/Coinbase)
+
+-   Six months later, Bitfinex was founded. [link](https://en.wikipedia.org/wiki/Bitfinex)
+
+-   Five years after the launch of Coinbase, on Jul 14, 2017, Changpeng Zhao founded Binance, the current largest crypto exchange in the world. [link](https://en.wikipedia.org/wiki/Binance)
+
+-   In the same year, OKX was launched. [link](https://en.wikipedia.org/wiki/OKX)
+
+-   Over a year later, on Nov 2, 2018, Hayden Adams founded Uniswap, the first, and also the current largest DEX in the world. [link](https://en.wikipedia.org/wiki/Uniswap)
 
 It's been 14 years since the Bitcoin's genesis block mined, 13 years since the first CEX founded, and almost 4 years since the first DEX founded. Before progressing to the end of this post, some data points to take note:
 
@@ -50,7 +50,9 @@ The main exchange mechanism of DEX is actually very different from that of CEX. 
 
 Last 12 months, for every 100 trades on DEXs, at least 96 trade processed by Constant Product (i.e. AMM), and Hybrid mechanisms.
 
-<iframe width="100%" height="420" frameborder="0" src="https://embed.theblockcrypto.com/data/decentralized-finance/dex-non-custodial/dex-mechanism-volume-share/embed" title="DEX Mechanism Volume Share"></iframe>
+<iframe width="100%" height="420" frameborder="0" src="https://embed.theblockcrypto.com/data/decentralized-finance/dex-non-custodial/dex-mechanism-volume-share/embed" title="DEX Mechanism Volume Share">
+
+</iframe>
 
 *source: [theblockcrypto.com](https://www.theblockcrypto.com/data/decentralized-finance/dex-non-custodial/dex-mechanism-volume-share).*
 
@@ -64,7 +66,6 @@ Last 12 months, for every 100 trades on DEXs, at least 96 trade processed by Con
 import requests
 import pandas as pd
 import plotly.express as px
-import plotly.graph_objs as go
 import plotly.io as pio
 from datetime import datetime
 
@@ -113,7 +114,7 @@ fig.show()
 
 *source: [defillama.com](https://defillama.com/docs/api).*
 
-Defillama tracks 842 DEXs. Top 14 DEXs account for 81% of total assets on DEX, each have at least $100M in total assets, the largest one is Uniswap with $4B.
+Defillama tracks 842 DEXs. Top 14 DEXs account for 81% of total assets on DEX, each have at least \$100M in total assets, the largest one is Uniswap with \$4B.
 
 ```{python}
 df_dex = df_exchange.query('category == "Dexes"')
@@ -561,7 +562,7 @@ Have you noticed that the range of total assets moved per day on Uniswap was muc
 
 -   And finally, CEXs limit the amount of assets per withdraw depends on a user tier (i.e. VIP level), while Uniswap does not. This can be observed in the chart of assets removed per assets provider per day below.
 
-In H1 2023, on average, an assets provider of Uniswap removed $623K assets per day, which is 40 times higher than those removed from Binance and OKX, and more than 2 times higher than those removed from Bitfinex.
+In H1 2023, on average, an assets provider of Uniswap removed \$623K assets per day, which is 40 times higher than those removed from Binance and OKX, and more than 2 times higher than those removed from Bitfinex.
 
 <iframe src="https://dune.com/embeds/2697448/4487492" width="100%" height="400">
 
@@ -569,13 +570,13 @@ In H1 2023, on average, an assets provider of Uniswap removed $623K assets per d
 
 CEX withdrawal limits:
 
--   Binance withdrawal limits range between $8M and $96M per user per 24 hours.
+-   Binance withdrawal limits range between \$8M and \$96M per user per 24 hours.
 
 ![Binance](binance-withdraw-limit.png)
 
 *source: [binance.com](https://www.binance.com/en/fee/vip).*
 
--   OKX withdrawal limits range between $10M and $40M per user per 24 hours.
+-   OKX withdrawal limits range between \$10M and \$40M per user per 24 hours.
 
 ![OKX](okx-withdraw-limit.png)
 
@@ -633,7 +634,7 @@ Daily active assets provider can only tell you about the quantity side. Next, le
 
 In H1 2023, on average:
 
--   Uniswap assets providers moved $700K per week, almost 40 times higher than those on Binance and OKX, and more than 3 times higher than those on Bitfinex.
+-   Uniswap assets providers moved \$700K per week, almost 40 times higher than those on Binance and OKX, and more than 3 times higher than those on Bitfinex.
 
 <iframe src="https://dune.com/embeds/2697448/4488724" width="100%" height="400">
 
@@ -697,7 +698,7 @@ Last 12 months:
 
 ## Volume / Total Assets
 
-In June 2023, based on TVL on June 30, 2023, for every $1 of assets, Uniswap generated $8.7 in trade volume, which is more than 2 times higher than those on Binance and OKX. This implies, as an exchange, Uniswap is more effective with its assets than Binance and OKX in generating trade volume.
+In June 2023, based on TVL on June 30, 2023, for every \$1 of assets, Uniswap generated \$8.7 in trade volume, which is more than 2 times higher than those on Binance and OKX. This implies, as an exchange, Uniswap is more effective with its assets than Binance and OKX in generating trade volume.
 
 <iframe src="https://dune.com/embeds/2693086/4479361" width="100%" height="240">
 
