@@ -552,7 +552,7 @@ Meanwhile, on CEXs:
 
 </iframe>
 
-Have you noticed that the range of total assets moved per day on Uniswap was much larger than those on the CEXs, especially relative to total assets? With this data point, one may conclude that total assets on Uniswap fluctuates more wildly than those on the CEXs. However, it's not true as seen [above](https://lequangphu.github.io/blog/posts/uniswap-vs-cex/#assets-in-h1-2023), and also is demonstrated by net assets inflow in the next section. The possible reasons, in my opinion, are:
+Have you noticed that, in H1 2023, the range of total assets moved per day on Uniswap was much larger than those on the CEXs, especially relative to total assets? With this data point, one may conclude that total assets on Uniswap fluctuates more wildly than those on the CEXs. However, it's not true as seen [above](https://lequangphu.github.io/blog/posts/uniswap-vs-cex/#assets-in-h1-2023), and also is demonstrated by net assets inflow in the next section. The possible reasons, in my opinion, are:
 
 -   Uniswap assets providers usually move assets between pools on Uniswap, i.e. internal movement. This could be driven by pools [APY](https://coinmarketcap.com/alexandria/glossary/annual-percentage-yield-apy).
 
