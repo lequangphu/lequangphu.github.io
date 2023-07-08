@@ -618,7 +618,7 @@ In H1 2023:
 
 -   Uniswap active providers per day grew 18% from 4.9K to 5.8K. However, the trend in Q2 was actually down as it grew and peaked in late March. This strongly correlates with Uniswap pools Median APY [above](https://lequangphu.github.io/blog/posts/uniswap-vs-cex/#inout).
 
--   OKX active providers per day, on one hand, in Q1, was quite similar to that of Uniswap, on the other hand, in Q2, grew rapidly, ended Q2 with 30.5K, or roughly 6 times higher than that of Uniswap.
+-   OKX active providers per day, on one hand, in Q1, was quite similar to that of Uniswap, on the other hand, in Q2, grew rapidly to 30.5K, roughly 6 times higher than that of Uniswap.
 
 -   Bitfinex active providers per day was very small relative to the other exchanges, which implies that, on average, total assets of each Bitfinex assets provider are much higher than those of the other exchanges.
 
