@@ -54,7 +54,7 @@ Last 12 months, for every 100 trades on DEXs, at least 96 trade processed by Con
 
 *source: [theblockcrypto.com](https://www.theblockcrypto.com/data/decentralized-finance/dex-non-custodial/dex-mechanism-volume-share)*
 
-## Total Assets
+## Liquidity
 
 *In this section, let's look at total asset deposited in DEX (i.e. TVL, value locked), and in CEX (i.e. [proof of reserves](https://www.coingecko.com/learn/what-is-proof-of-reserves-por)).*
 
@@ -208,7 +208,7 @@ fig.show()
 
 Binance is leading the crypto exchange market with a huge gap vs. the followings, both in total assets as seen above, and trade volume in the next section. And with that gap, it seems that the crypto exchange battle in CEX category is settled, while that battle in DEX category is more interesting to observe.
 
-## Trades
+## Trade
 
 *In this section, to compare DEX to CEX, let's look at DEX to CEX spot volume, which is monthly decentralized exchange volume divided by centralized exchange volume (as a percentage).*
 
@@ -244,7 +244,7 @@ Last 12 months, though both spot volume on DEX and CEX have generally been down,
 
 *In this section, depends on data availability, I will compare Uniswap to at least 1 CEX among Binance, OKX, Bitfinex, and Coinbase.*
 
-## Total Assets
+## Liquidity
 
 ```{python}
 df_top3_cex = df_exchange.query('category == "CEX"').sort_values('tvl', ascending=False).head(3)
@@ -478,7 +478,7 @@ In H1 2023, Uniswap assets growth is more than triple faster than that of Binanc
 
 Next, since (1) Uniswap only supports EVMs, and (2) EVMs onchain data is more widely supported by analytics platforms such as Dune, let's dive into EVMs onchain data to understand more about assets flow and assets provider behavior in H1 2023.
 
-## EVM Assets
+## EVM Liquidity
 
 First, let's compare assets flow in/out of the exchanges to see if we can extract any insights.
 
@@ -648,7 +648,7 @@ In H1 2023, on average:
 
 So we learned that Uniswap assets providers are much more active in managing their assets than those on the 3 CEXs both in value of assets per movement, and frequency of assets movement.
 
-## Trades
+## Trade
 
 *In this section, I will compare Uniswap trading volume to those of Binance and Coinbase.*
 
