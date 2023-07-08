@@ -8,7 +8,7 @@ image: 'preview.png'
 
 The crypto exchange battle involves two parts: Liquidity and Trade. Liquidity is necessary for trading, making it the first half of the competition. This post will focus on that first half, specifically, I'll examine Uniswap and top centralized exchanges (CEX) to better understand the competition.
 
-First, let's have a quick lookback on some of key events in crypto exchange history.
+First, let's take a quick look back at some important events in the history of crypto exchanges.
 
 -   On Jan 3, 2009, Satoshi Nakamoto mined the first block of Bitcoin.
 
