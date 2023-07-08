@@ -660,7 +660,7 @@ In H1 2023:
 
 -   Uniswap total trade volume per day started with \$446M, and ended higher with \$885M, or 98% increase. It ranged between \$446M and \$4.4B (on March 16, during the recent stablecoins depeg event, which I covered in this [post](https://lequangphu.github.io/blog/posts/uniswap-stablecoin-depeg/)), or max almost 10 times up.
 
--   February 9 marks the first time Uniswap surpassed Coinbase in total trade volume per day.
+-   February 9 marks the second time Uniswap surpassed Coinbase in total trade volume per day, the first time was on September 6 2020.
 
 Meanwhile, on CEXs:
 
