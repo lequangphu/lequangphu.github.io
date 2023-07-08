@@ -35,7 +35,7 @@ It's been 14 years since the Bitcoin's genesis block mined, 13 years since the f
 ::: callout-tip
 ## How to read charts
 
--   Charts from theblockcrypto.com has default zoom of the last 12 months. There are other options at the bottom right corner of the charts. Some comments below are of all time zoom option, so if you want to see related data, click the zoom **all** option.
+-   Charts from theblockcrypto.com has default zoom of the last 12 months. There are other options at the bottom right corner of the charts. Some comments below are of all time (ALL) or year to date (YTD) zoom option, so if you want to see related data, click the corresponding zoom option.
 
 -   Sometimes, if a chart from theblockcrypto.com don't show up due to embeded error, you can see the chart by clicking their source links located right below them.
 :::
