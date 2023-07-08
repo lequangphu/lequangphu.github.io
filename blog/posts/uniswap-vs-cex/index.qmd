@@ -445,7 +445,7 @@ for df, ex in zip([pd.DataFrame()]*4, exs):
 
 In H1 2023, on Uniswap:
 
--   total assets grew 25% from \$3.2B to \$4B. It ranged between \$2.8B and \$4.4B, or max 12% down, and 38% up.
+-   Total assets grew 25% from \$3.2B to \$4B. It ranged between \$2.8B and \$4.4B, or max 12% down, and 38% up.
 
 Meanwhile, on CEXs:
 
@@ -616,9 +616,9 @@ In H1 2023:
 
 </iframe>
 
--   Uniswap active providers per day grew 18% from 4.9K to 5.8K. However, the trend in Q2 was actually down as it increased and peaked in late March. This strongly correlates with Uniswap pools Median APY [above](https://lequangphu.github.io/blog/posts/uniswap-vs-cex/#inout).
+-   Uniswap active providers per day grew 18% from 4.9K to 5.8K. However, the trend in Q2 was actually down as it grew and peaked in late March. This strongly correlates with Uniswap pools Median APY [above](https://lequangphu.github.io/blog/posts/uniswap-vs-cex/#inout).
 
--   OKX active providers per day, on one hand, in Q1, was quite similar to that of Uniswap, on the other hand, in Q2, increased rapidly, ended Q2 with 30.5K, or roughly 6 times higher than that of Uniswap.
+-   OKX active providers per day, on one hand, in Q1, was quite similar to that of Uniswap, on the other hand, in Q2, grew rapidly, ended Q2 with 30.5K, or roughly 6 times higher than that of Uniswap.
 
 -   Bitfinex active providers per day was very small relative to the other exchanges, which implies that, on average, total assets of each Bitfinex assets provider are much higher than those of the other exchanges.
 
@@ -714,6 +714,6 @@ Zooming in to compare exchanges, Uniswap, as the largest DEX, is still very smal
 
 -   The goods are (1) its volume has surpassed those of other top CEXs such as Coinbase, OKX, (2) it is more effective in generating volume from 1 unit of assets compared to Binance, OKX, (3) its assets providers are much more active in managing assets than those of top CEXs.
 
--   The challenges are (1) its assets is growing much slower compared to top CEXs such as OKX, Bitfinex, (2) its daily active assets provider is decreasing.
+-   The challenges are (1) its assets is growing much slower compared to top CEXs such as OKX, Bitfinex, (2) its daily active assets provider is declining.
 
 -   The opportunities are (1) growth on L2s from recent expansions to L2 EVM chains, coupled with the chains ongoing rapid growth, (2) growth on Ethereum with future upgrades from both Ethereum and Uniswap such as the upcoming Uniswap V4.
