@@ -206,7 +206,7 @@ fig.update_layout(
 fig.show()
 ```
 
-Binance is leading the crypto exchange market with a huge gap vs. the followings, both in total assets we saw above, and trade volume in the next section. And with that gap, it seems that the crypto exchange battle in CEX category is settled, while that battle in DEX category is more interesting to observe.
+Binance is leading the crypto exchange market with a huge gap vs. the followings, both in total assets as seen above, and trade volume in the next section. And with that gap, it seems that the crypto exchange battle in CEX category is settled, while that battle in DEX category is more interesting to observe.
 
 *source: [defillama.com](https://defillama.com/docs/api).*
 
@@ -218,7 +218,7 @@ One and a half year after the first data point in Jan 2019, DEX to CEX spot volu
 
 In the first half (H1) of 2023, the DEX to CEX spot volume grew from 9.6% to 16.8%. This could be driven by the colapse of FTX, and recent legal crack downs on CEXs around the world.
 
-Combine with DEX to CEX spot volume of roughly 15% above, we can see that, from \$1 of assets, DEX is on the trend of generating a higher \$volume than CEX.
+Combine with DEX to CEX spot volume of roughly 15%, we can see that, from \$1 of assets, DEX is on the trend of generating a higher \$volume than CEX.
 
 <iframe width="100%" height="420" frameborder="0" src="https://embed.theblockcrypto.com/data/decentralized-finance/dex-non-custodial/dex-to-cex-spot-trade-volume/embed" title="DEX to CEX Spot Trade Volume (%)">
 
@@ -616,7 +616,7 @@ In H1 2023:
 
 </iframe>
 
--   Uniswap active providers per day grew 18% from 4.9K to 5.8K. However, the trend in Q2 was actually down as it grew and peaked in late March. This strongly correlates with Uniswap pools Median APY [above](https://lequangphu.github.io/blog/posts/uniswap-vs-cex/#inout).
+-   Uniswap active providers per day grew 18% from 4.9K to 5.8K. However, the trend in Q2 was actually down as it grew and peaked in late March. This strongly correlates with Uniswap pools Median APY as seen [above](https://lequangphu.github.io/blog/posts/uniswap-vs-cex/#inout).
 
 -   OKX active providers per day, on one hand, in Q1, was quite similar to that of Uniswap, on the other hand, in Q2, grew rapidly to 30.5K, roughly 6 times higher than that of Uniswap.
 
