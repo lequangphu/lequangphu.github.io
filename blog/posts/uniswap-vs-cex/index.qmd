@@ -421,7 +421,7 @@ fig.show()
 
 In absolute \$, assets in WETH on Uniswap is at the level of OKX and Bitfinex (\$1B-\$2B), and a fourth of that on Binance.
 
-In percentage of total assets, WETH and stablecoins have the opposite position. On one hand, assets in WETH on Uniswap is higher than all of those on the 3 CEXs. On the other hand, Binance and OKX allocate more share to stablecoins, 25% to 2 times higher than that on Uniswap. Surprisingly, on Bitfinex, stablecoins have less than 1% of total assets.
+In percentage of total assets, WETH and stablecoins have the opposite position. On one hand, assets in WETH on Uniswap is higher than all of those on the 3 CEXs. On the other hand, Binance and OKX allocate more share to stablecoins, 25% to double that of Uniswap. Surprisingly, on Bitfinex, stablecoins have less than 1% of total assets.
 
 Next, let's examine the trend of total assets in H1 2023.
 
@@ -476,7 +476,7 @@ fig.show()
 
 *source: [defillama.com](https://defillama.com/docs/api).*
 
-In H1 2023, Uniswap assets growth is more than 3 times faster than that of Binance, however, it is less than half of OKX and Bitfinex assets growth.
+In H1 2023, Uniswap assets growth is more than triple faster than that of Binance, however, it is less than half of OKX and Bitfinex assets growths.
 
 Next, since (1) Uniswap only supports EVMs, and (2) EVMs onchain data is more widely supported by analytics platforms such as Dune, let's dive into EVMs onchain data to understand more about assets flow and assets provider behavior in H1 2023.
 
@@ -558,11 +558,11 @@ Have you noticed that, in H1 2023, the range of total assets moved per day on Un
 
 -   Meanwhile, on CEXs, assets provider usually move assets, on the way in, to either sell and cash out to fiat, or deposit as margin to leverage trade, and on the way out, to either store in self custody wallets, or participate in Defi.
 
--   A caveat of storing assets on CEXs, which Uniswap and other DEXs don't have, is assets remove/withdraw suspension. It happens due to various reasons, and at different times. And the most common time is around FUD events, which raises questions among crypto community about user assets transparency of CEXs.
+-   A caveat of storing assets on CEXs, which Uniswap and other DEXs don't have, is assets remove/withdraw suspension. It happens due to various reasons, and at different times. And one of the most common times is around FUD events, which raises questions among crypto community about user assets transparency of CEXs.
 
 -   And finally, CEXs limit the amount of assets per withdraw depends on a user tier (i.e. VIP level), while Uniswap does not. This can be observed in the chart of assets removed per assets provider per day below.
 
-In H1 2023, on average, an assets provider of Uniswap removed \$623K assets per day, which is 40 times higher than those removed from Binance and OKX, and more than 2 times higher than those removed from Bitfinex.
+In H1 2023, on average, an assets provider of Uniswap removed \$623K assets per day, which is 40 times higher than those removed from Binance and OKX, and more than double those removed from Bitfinex.
 
 <iframe src="https://dune.com/embeds/2697448/4487492" width="100%" height="400">
 
@@ -610,7 +610,7 @@ In H1 2023:
 
 -   There is a big gap between active providers per day of Uniswap (and the other 2 CEXs) and that of Binance.
 
--   Binance active providers per day grew more than 2 times from 54.7K to 123.6K. It mostly ranged between 60K and 180K, along with a few huge surges to as high as 712.5K (on May 19).
+-   Binance active providers per day more than doubled from 54.7K to 123.6K. It mostly ranged between 60K and 180K, along with a few huge surges to as high as 712.5K (on May 19).
 
 <iframe src="https://dune.com/embeds/2689017/4472367" width="100%" height="400">
 
@@ -634,13 +634,13 @@ Daily active assets provider can only tell you about the quantity side. Next, le
 
 In H1 2023, on average:
 
--   Uniswap assets providers moved \$700K per week, almost 40 times higher than those on Binance and OKX, and more than 3 times higher than those on Bitfinex.
+-   Uniswap assets providers moved \$700K per week, almost 40 times higher than those on Binance and OKX, and more than triple those on Bitfinex.
 
 <iframe src="https://dune.com/embeds/2697448/4488724" width="100%" height="400">
 
 </iframe>
 
--   Assets providers of Uniswap moved their assets 8.7 times per week, or more than once a day, which is more than 8 times higher than those on Binance and OKX, and more than 3 times higher than that on Bitfinex.
+-   Assets providers of Uniswap moved their assets 8.7 times per week, or more than once a day, which is more than 8 times higher than those on Binance and OKX, and more than triple that on Bitfinex.
 
 <iframe src="https://dune.com/embeds/2689375/4480492" width="100%" height="400">
 
@@ -664,9 +664,9 @@ In H1 2023:
 
 Meanwhile, on CEXs:
 
--   Binance total trade volume per day grew 27% from \$6.7B to \$8.5B. It ranged between \$5.6B (on May 22) and \$28.4B (on March 19, stablecoins depeg event), or max down 17% and max up more than 4 times.
+-   Binance total trade volume per day grew 27% from \$6.7B to \$8.5B. It ranged between \$5.6B (on May 22) and \$28.4B (on March 19, stablecoins depeg event), or max down 17% and max up more than fourfold.
 
--   Coinbase total trade volume per day has a similar range to that on Uniswap in most part of the period. However, it grew 26% from \$873M, about 2 times higher than that of Uniswap, to \$1.1B. It ranged between \$670M (on May 23, similar to Binance) and \$2.5B (on January 18). One interesting data point is, unlike Uniswap and Binance, Coinbase total trade volume per day did not make the highest high during the stablecoins depeg event. This might due to the fact that Coinbase tokens are mostly quoted in USD (instead of USDT on other CEXs).
+-   Coinbase total trade volume per day has a similar range to that on Uniswap in most part of the period. However, it grew 26% from \$873M, roughly double that of Uniswap, to \$1.1B. It ranged between \$670M (on May 23, similar to Binance) and \$2.5B (on January 18). One interesting data point is, unlike Uniswap and Binance, Coinbase total trade volume per day did not make the highest high during the stablecoins depeg event. This might due to the fact that Coinbase tokens are mostly quoted in USD (instead of USDT on other CEXs).
 
 <iframe width="100%" height="420" frameborder="0" src="https://embed.theblockcrypto.com/data/decentralized-finance/dex-non-custodial/uniswap-vs-coinbase-and-binance-trade-volume-7dma/embed" title="Uniswap vs. Coinbase and Binance Trade Volume (7DMA)">
 
@@ -698,7 +698,7 @@ Last 12 months:
 
 ## Volume / Total Assets
 
-In June 2023, based on TVL on June 30, 2023, for every \$1 of assets, Uniswap generated \$8.7 in trade volume, which is more than 2 times higher than those on Binance and OKX. This implies, as an exchange, Uniswap is more effective with its assets than Binance and OKX in generating trade volume.
+In June 2023, based on TVL on June 30, 2023, for every \$1 of assets, Uniswap generated \$8.7 in trade volume, which is more than double those on Binance and OKX. This implies, as an exchange, Uniswap is more effective with its assets than Binance and OKX in generating trade volume.
 
 <iframe src="https://dune.com/embeds/2693086/4479361" width="100%" height="240">
 
