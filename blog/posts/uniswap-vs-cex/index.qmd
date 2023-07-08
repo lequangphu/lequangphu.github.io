@@ -212,7 +212,7 @@ Binance is leading the crypto exchange market with a huge gap vs. the followings
 
 *In this section, to compare DEX to CEX, let's look at DEX to CEX spot volume, which is monthly decentralized exchange volume divided by centralized exchange volume (as a percentage).*
 
-One and a half year after the first data point in Jan 2019, DEX to CEX spot volume first surpassed 1% in Jun 2020. Four months later, DEX to CEX spot volume skyrocketed to 16% in Sep 2020. Sixteen months later, it made a higher high to 17% in Jan 2022. And recently, in May 2023, it made all time high at 22%. That marked DEX spot volume surpassed a fifth of that on CEX.
+One and a half year after the first data point in Jan 2019, DEX to CEX spot volume first surpassed 1% in Jun 2020. Four months later, DEX to CEX spot volume skyrocketed to 16% in Sep 2020. Sixteen months later, it made a higher high to 17% in Jan 2022. And recently, in May 2023, it made all-time high at 22%. That marked DEX spot volume surpassed a fifth of that on CEX.
 
 In the first half (H1) of 2023, the DEX to CEX spot volume grew from 9.6% to 16.8%. This could be driven by the colapse of FTX, and recent legal crack downs on CEXs around the world.
 
@@ -224,7 +224,7 @@ Combine with DEX to CEX spot volume of roughly 15%, we can see that, from \$1 of
 
 *source: [theblockcrypto.com](https://www.theblockcrypto.com/data/decentralized-finance/dex-non-custodial/dex-to-cex-spot-trade-volume)*
 
-In absolute \$, spot volume of DEX and CEX's all time high were \$213b and \$4.25t, both recorded in May 2021, which translates to 9% of DEX to CEX spot volume.
+In absolute \$, spot volume of DEX and CEX's all-time high are \$213b and \$4.25t, both recorded in May 2021, which translates to 9% of DEX to CEX spot volume.
 
 Last 12 months, though both spot volume on DEX and CEX have generally been down, DEX to CEX spot volume (as seen above) has been up, which implies a slower drop in DEX spot volume.
 
