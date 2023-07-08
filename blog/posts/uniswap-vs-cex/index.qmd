@@ -216,7 +216,7 @@ Binance is leading the crypto exchange market with a huge gap vs. the followings
 
 One and a half year after the first data point in Jan 2019, DEX to CEX spot volume first surpassed 1% in Jun 2020. Four months later, DEX to CEX spot volume skyrocketed to 16% in Sep 2020. Sixteen months later, it made a higher high to 17% in Jan 2022. And recently, in May 2023, it made all time high at 22%. That marked DEX spot volume surpassed a fifth of that on CEX.
 
-In the first half (H1) of 2023, the DEX to CEX spot volume trend was generally up, started with 9.6%, and ended higher with 16.8%. This could be driven by the colapse of FTX, and recent legal crack downs on CEXs around the world.
+In the first half (H1) of 2023, the DEX to CEX spot volume grew from 9.6% to 16.8%. This could be driven by the colapse of FTX, and recent legal crack downs on CEXs around the world.
 
 Combine with DEX to CEX spot volume of roughly 15% above, we can see that, from \$1 of assets, DEX is on the trend of generating a higher \$volume than CEX.
 
@@ -445,15 +445,15 @@ for df, ex in zip([pd.DataFrame()]*4, exs):
 
 In H1 2023, on Uniswap:
 
--   total assets started with \$3.2B, and ended with \$4B, or 25% increase. It ranged between \$2.8B and \$4.4B, or max 12% down, and 38% up (peak, trough vs. start).
+-   total assets grew 25% from \$3.2B to \$4B. It ranged between \$2.8B and \$4.4B, or max 12% down, and 38% up.
 
 Meanwhile, on CEXs:
 
--   Binance total assets started with \$54B, and ended with \$58B, or 7% increase. It ranged between \$54B and \$71B, i.e the start is the trough, and max 31% up.
+-   Binance total assets grew 7% from \$54B to \$58B. It ranged between \$54B and \$71B (i.e. max 31% up).
 
--   OKX total assets started with \$6.4B, and ended with \$10.3B, or 60% increase. The start is also the trough, and the end is also roughly the peak. These imply a strong uptrend.
+-   OKX total assets grew 60% from \$6.4B to \$10.3B. The start is also the trough, and the end is also roughly the peak, imply a strong uptrend.
 
--   Bitfinex total assets started with \$6.3B, and ended with \$9.9B, or 57% increase. The trend is similar to that of OKX.
+-   Bitfinex total assets grew 57% from \$6.3B to \$9.9B.
 
 ```{python}
 df_concat = pd.concat(dfs, ignore_index=True)
@@ -610,13 +610,13 @@ In H1 2023:
 
 -   There is a big gap between active providers per day of Uniswap (and the other 2 CEXs) and that of Binance.
 
--   Binance active providers per day started with 54.7K, and ended higher with 123.6K. The number mostly ranged between 60K and 180K, along with a few huge surges to as high as 712.5K (on May 19).
+-   Binance active providers per day grew more than 2 times from 54.7K to 123.6K. It mostly ranged between 60K and 180K, along with a few huge surges to as high as 712.5K (on May 19).
 
 <iframe src="https://dune.com/embeds/2689017/4472367" width="100%" height="400">
 
 </iframe>
 
--   Uniswap active providers per day started with 4.9K, and ended higher with 5.8K. However, the trend in Q2 was actually down as it increased and peaked in late March. This strongly correlates with Uniswap pools Median APY [above](https://lequangphu.github.io/blog/posts/uniswap-vs-cex/#inout).
+-   Uniswap active providers per day grew 18% from 4.9K to 5.8K. However, the trend in Q2 was actually down as it increased and peaked in late March. This strongly correlates with Uniswap pools Median APY [above](https://lequangphu.github.io/blog/posts/uniswap-vs-cex/#inout).
 
 -   OKX active providers per day, on one hand, in Q1, was quite similar to that of Uniswap, on the other hand, in Q2, increased rapidly, ended Q2 with 30.5K, or roughly 6 times higher than that of Uniswap.
 
@@ -658,15 +658,15 @@ In H1 2023:
 
 -   There is a big gap between total trade volume per day (7-day moving average) of Uniswap (and Coinbase) and that of Binance.
 
--   Uniswap total trade volume per day started with \$446M, and ended higher with \$885M, or 98% increase. It ranged between \$446M and \$4.4B (on March 16, during the recent stablecoins depeg event, which I covered in this [post](https://lequangphu.github.io/blog/posts/uniswap-stablecoin-depeg/)), or max almost 10 times up.
+-   Uniswap total trade volume per day grew 98% from \$446M to \$885M. It ranged between \$446M and \$4.4B (on March 16, during the recent stablecoins depeg event, which I covered in this [post](https://lequangphu.github.io/blog/posts/uniswap-stablecoin-depeg/)), i.e. max almost 10 times up.
 
 -   February 9 marks the second time Uniswap surpassed Coinbase in total trade volume per day, the first time was on September 6 2020.
 
 Meanwhile, on CEXs:
 
--   Binance total trade volume per day started with \$6.7B, and ended higher with \$8.5B, or 27% increase. It ranged between \$5.6B (on May 22) and \$28.4B (on March 19, stablecoins depeg event), or max down 17% and max up more than 4 times (compare to the start).
+-   Binance total trade volume per day grew 27% from \$6.7B to \$8.5B. It ranged between \$5.6B (on May 22) and \$28.4B (on March 19, stablecoins depeg event), or max down 17% and max up more than 4 times.
 
--   Coinbase total trade volume per day has a similar range to that on Uniswap in most part of the period. However, it started with \$873M, or about 2 times higher than that on Uniswap, and ended higher with \$1.1B, or 26% increase. It ranged between \$670M (on May 23, similar to Binance) and \$2.5B (on January 18). One interesting data point is, unlike Uniswap and Binance, Coinbase total trade volume per day did not make the highest high during the stablecoins depeg event. This might due to the fact that Coinbase tokens are mostly quoted in USD (instead of USDT on other CEXs).
+-   Coinbase total trade volume per day has a similar range to that on Uniswap in most part of the period. However, it grew 26% from \$873M, about 2 times higher than that of Uniswap, to \$1.1B. It ranged between \$670M (on May 23, similar to Binance) and \$2.5B (on January 18). One interesting data point is, unlike Uniswap and Binance, Coinbase total trade volume per day did not make the highest high during the stablecoins depeg event. This might due to the fact that Coinbase tokens are mostly quoted in USD (instead of USDT on other CEXs).
 
 <iframe width="100%" height="420" frameborder="0" src="https://embed.theblockcrypto.com/data/decentralized-finance/dex-non-custodial/uniswap-vs-coinbase-and-binance-trade-volume-7dma/embed" title="Uniswap vs. Coinbase and Binance Trade Volume (7DMA)">
 
@@ -680,7 +680,7 @@ Last 12 months:
 
 -   Market share of Uniswap in DEX and of Binance in CEX basically haven't changed.
 
--   Uniswap market share, as the largest DEX, started with 56.21% in July 2022, and ended slightly higher with 58.51% in June 2023, or 1% increase.
+-   Uniswap market share, as the largest DEX, grew 1% from 56.21% in July 2022 to 58.51% in June 2023.
 
 <iframe width="100%" height="420" frameborder="0" src="https://embed.theblockcrypto.com/data/decentralized-finance/dex-non-custodial/share-of-dex-volume-monthly/embed" title="Share of DEX Volume">
 
@@ -688,7 +688,7 @@ Last 12 months:
 
 *source: [theblockcrypto.com](https://www.theblockcrypto.com/data/decentralized-finance/dex-non-custodial/share-of-dex-volume-monthly).*
 
--   Binance market share, as the largest CEX, started with 47% in July 2022, and ended slightly higher with 48.98% in June 2023, or 1% increase.
+-   Binance market share, as the largest CEX, grew 1% from 47% in July 2022 to 48.98% in June 2023.
 
 <iframe width="100%" height="420" frameborder="0" src="https://embed.theblockcrypto.com/data/crypto-markets/spot/the-block-legitimate-index-market-share/embed" title="Monthly Exchange Volume Market Share">
 
