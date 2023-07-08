@@ -494,7 +494,7 @@ In H1 2023, on Uniswap:
 
 -   Assets providers moved between \$250M (on May 4) and \$15.7B (on January 12) assets in total per day. Total assets moved per day is mostly below \$6B.
 
--   And the providers are noticably more active in Q1 than Q2. One possible reason is APY of Uniswap pools were higher in Q1 than that in Q2, as seen in the Uniswap Median APY chart below.
+-   And the providers are noticably more active in the first quarter (Q1) than in the second quarter (Q2). One possible reason is APY of Uniswap pools were higher in Q1 than that in Q2, as seen in the Uniswap Median APY chart below.
 
 <iframe src="https://dune.com/embeds/2688626/4471225" width="100%" height="400">
 
