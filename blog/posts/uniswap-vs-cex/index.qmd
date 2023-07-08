@@ -46,7 +46,7 @@ Liquidity of an exchange, is assets available to buy and sell at a given price. 
 
 The main exchange mechanism of DEX is actually very different from that of CEX. While CEXs mainly support [Order Book](https://www.coinbase.com/learn/advanced-trading/what-is-an-order-book), DEXs mainly support [AMM](https://chain.link/education-hub/what-is-an-automated-market-maker-amm#:~:text=Automated%20market%20makers%20(AMMs)%20are%20a%20type%20of%20decentralized%20exchange,trade%20directly%20through%20the%20AMM.).
 
-Last 12 months, for every 100 trades on DEXs, at least 96 trade processed by Constant Product (i.e. AMM), and Hybrid mechanisms.
+Last 12 months, out of every 100 trades on DEXs, at least 96 trade were processed using Constant Product (i.e. AMM), and Hybrid mechanisms.
 
 <iframe width="100%" height="420" frameborder="0" src="https://embed.theblockcrypto.com/data/decentralized-finance/dex-non-custodial/dex-mechanism-volume-share/embed" title="DEX Mechanism Volume Share">
 
@@ -112,7 +112,7 @@ fig.show()
 
 *source: [defillama.com](https://defillama.com/docs/api)*
 
-Defillama tracks 842 DEXs. Top 14 DEXs account for 81% of total assets on DEX, each have at least \$100M in total assets, the largest one is Uniswap with \$4B.
+Defillama tracks 842 DEXs. Top 14 DEXs account for 81% of total assets on DEX, each has at least \$100M in total assets, the largest one is Uniswap with \$4B.
 
 ```{python}
 df_dex = df_exchange.query('category == "Dexes"')
