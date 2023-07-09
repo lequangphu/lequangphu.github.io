@@ -644,7 +644,7 @@ In H1 2023, on average:
 
 </iframe>
 
--   Assets providers of Uniswap moved their assets 8.7 times per week, or more than once a day, which is more than 8 times higher than those on Binance and OKX, and more than triple that on Bitfinex.
+-   Assets providers of Uniswap moved their assets 8.7 times per week (i.e. more than once a day), which is more than 8 times higher than once a week of those on Binance and OKX, and more than triple that on Bitfinex.
 
 <iframe src="https://dune.com/embeds/2689375/4480492" width="100%" height="400">
 
