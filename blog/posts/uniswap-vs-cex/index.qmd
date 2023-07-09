@@ -10,21 +10,21 @@ The crypto exchange battle involves two parts: Liquidity and Trade. Liquidity is
 
 First, let's take a quick look back at some important events in the history of crypto exchanges.
 
--   On Jan 3, 2009, Satoshi Nakamoto mined the first block of Bitcoin.
+-   On January 3, 2009, Satoshi Nakamoto mined the first block of Bitcoin.
 
--   One year later, on Mar 17, 2010, Bitcoinmarket.com, the first crypto exchange went live. [link](https://www.cryptohopper.com/blog/what-was-the-first-crypto-exchange-449)
+-   One year later, on March 17, 2010, Bitcoinmarket.com, the first crypto exchange went live. [link](https://www.cryptohopper.com/blog/what-was-the-first-crypto-exchange-449)
 
--   Four months later, on Jul 18, 2010, mtgox.com, the famous defunct exchange, launched. By Apr 2013, and into early 2014, it became the largest Bitcoin exchange, handling over 70% of total Bitcoin trades. On Feb 28, 2014, after a series of major security breaches, and bitcoin stolens, the exchange filed for bankruptcy. [link](https://en.wikipedia.org/wiki/Mt._Gox)
+-   Four months later, on July 18, 2010, mtgox.com, the famous defunct exchange, launched. By April 2013, and into early 2014, it became the largest Bitcoin exchange, handling over 70% of total Bitcoin trades. On February 28, 2014, after a series of major security breaches, and bitcoin stolens, the exchange filed for bankruptcy. [link](https://en.wikipedia.org/wiki/Mt._Gox)
 
--   Meanwhile, in Jun 2012, Brian Amstrong founded Coinbase, the current largest CEX in the US. [link](https://en.wikipedia.org/wiki/Coinbase)
+-   Meanwhile, in June 2012, Brian Amstrong founded Coinbase, the current largest CEX in the US. [link](https://en.wikipedia.org/wiki/Coinbase)
 
 -   Six months later, Bitfinex was founded. [link](https://en.wikipedia.org/wiki/Bitfinex)
 
--   Five years after the launch of Coinbase, on Jul 14, 2017, Changpeng Zhao founded Binance, the current largest crypto exchange in the world. [link](https://en.wikipedia.org/wiki/Binance)
+-   Five years after the launch of Coinbase, on July 14, 2017, Changpeng Zhao founded Binance, the current largest crypto exchange in the world. [link](https://en.wikipedia.org/wiki/Binance)
 
 -   In the same year, OKX was launched. [link](https://en.wikipedia.org/wiki/OKX)
 
--   Over a year later, on Nov 2, 2018, Hayden Adams founded Uniswap, the first, and also the current largest decentralized exchange (DEX) in the world. [link](https://en.wikipedia.org/wiki/Uniswap)
+-   Over a year later, on November 2, 2018, Hayden Adams founded Uniswap, the first, and also the current largest decentralized exchange (DEX) in the world. [link](https://en.wikipedia.org/wiki/Uniswap)
 
 It's been 14 years since the Bitcoin's genesis block mined, 13 years since the first CEX founded, and almost 5 years since the first DEX founded. Before progressing to the end of this post, some data points to take note:
 
@@ -212,7 +212,7 @@ Binance is leading the crypto exchange market with a huge gap vs. the followings
 
 *In this section, to compare DEX to CEX, let's look at DEX to CEX spot volume, which is monthly decentralized exchange volume divided by centralized exchange volume (as a percentage).*
 
-One and a half year after the first data point in Jan 2019, DEX to CEX spot volume first surpassed 1% in Jun 2020. Four months later, DEX to CEX spot volume skyrocketed to 16% in Sep 2020. Sixteen months later, it made a higher high to 17% in Jan 2022. And recently, in May 2023, it made all-time high at 22%. That marked DEX spot volume surpassed a fifth of that on CEX.
+One and a half year after the first data point in January 2019, DEX to CEX spot volume first surpassed 1% in June 2020. Four months later, DEX to CEX spot volume skyrocketed to 16% in September 2020. Sixteen months later, it made a higher high to 17% in January 2022. And recently, in May 2023, it made all-time high at 22%. That marked DEX spot volume surpassed a fifth of that on CEX.
 
 In the first half (H1) of 2023, the DEX to CEX spot volume grew from 9.6% to 16.8%. This could be driven by the colapse of FTX, and recent legal crack downs on CEXs around the world.
 
