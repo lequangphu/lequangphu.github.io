@@ -602,6 +602,8 @@ The net assets inflow per day of Uniswap was much smaller than that of Binance, 
 
 </iframe>
 
+Next, let's examine assets provider to understand more about the source of assets of the exchanges.
+
 ### Assets Provider
 
 #### Daily Active Assets Provider
@@ -626,7 +628,7 @@ In H1 2023:
 
 </iframe>
 
-Daily active assets provider can only tell you about the quantity side. Next, let's examine assets providers behavior to learn about the quality side.
+Examining daily active assets provider answered the "How many?" question. Next, let's examine assets providers behavior to answer the "How good?" question.
 
 #### Assets Provider Behavior
 
