@@ -720,6 +720,6 @@ Zooming in to compare exchanges, Uniswap, as the largest DEX, is still very smal
 
 -   The goods are (1) its volume has surpassed those of other top CEXs such as Coinbase, OKX, (2) it is more effective in generating volume from 1 unit of assets compared to Binance, OKX, (3) its assets providers are much more active in managing assets than those of top CEXs.
 
--   The challenges are (1) its assets is growing much slower compared to top CEXs such as OKX, Bitfinex, (2) its daily active assets provider is declining.
+-   The challenges are (1) its liquidity is growing much slower compared to top CEXs such as OKX, Bitfinex, (2) its daily active assets provider is declining.
 
 -   The opportunities are (1) growth on L2s from recent expansions to L2 EVM chains, coupled with the chains ongoing rapid growth, (2) growth on Ethereum with future upgrades from both Ethereum and Uniswap such as the upcoming Uniswap V4.
