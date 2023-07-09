@@ -37,7 +37,7 @@ It's been 14 years since the Bitcoin's genesis block mined, 13 years since the f
 
 -   Charts from theblockcrypto.com has default zoom of the last 12 months. There are other options at the bottom right corner of the charts. Some comments below are of all time (ALL) or year to date (YTD) zoom option, so if you want to see related data, click the corresponding zoom option.
 
--   Sometimes, if a chart from theblockcrypto.com doesn't show up due to embed error, you can see the chart by clicking their source links located right below them.
+-   Sometimes, if a chart from theblockcrypto.com doesn't show up due to embed error, you can try refresh the page. If that doesn't work then you can see the chart by clicking their source links located right below them.
 :::
 
 # DEX vs. CEX
