@@ -480,7 +480,7 @@ Next, since (1) Uniswap only supports EVMs, and (2) EVMs onchain data is more wi
 
 ## EVM Liquidity
 
-*In this section, the CEXs assets are from a list of EVM wallets extracted from [Defillama Github Repo](https://github.com/DefiLlama/DefiLlama-Adapters/tree/main/projects).*
+*In this section, the CEXs assets are from a list of EVM wallets extracted from [DefiLlama github repository](https://github.com/DefiLlama/DefiLlama-Adapters/tree/main/projects).*
 
 First, let's compare assets flow in/out of the exchanges.
 
