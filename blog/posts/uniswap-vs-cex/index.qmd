@@ -224,7 +224,7 @@ Combine with DEX to CEX spot volume of roughly 15%, we can see that, from \$1 of
 
 *source: [theblockcrypto.com](https://www.theblockcrypto.com/data/decentralized-finance/dex-non-custodial/dex-to-cex-spot-trade-volume)*
 
-In absolute \$, spot volume of DEX and CEX's all-time high are \$213b and \$4.25t, both recorded in May 2021, which translates to 9% of DEX to CEX spot volume.
+In absolute \$, all-time high spot volume of DEX and CEX are \$213b and \$4.25t, both recorded in May 2021, i.e. 9% of DEX to CEX spot volume.
 
 Last 12 months, though both spot volume on DEX and CEX have generally been down, DEX to CEX spot volume (as seen above) has been up, which implies a slower drop in DEX spot volume.
 
