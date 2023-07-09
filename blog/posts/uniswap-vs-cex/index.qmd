@@ -570,7 +570,7 @@ In H1 2023, on average, an assets provider of Uniswap removed \$623K assets per 
 
 </iframe>
 
-CEX withdrawal limits:
+CEX withdrawal limits for all chains (not just EVMs):
 
 -   Binance withdrawal limits range between \$8M and \$96M per user per 24 hours.
 
