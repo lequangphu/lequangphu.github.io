@@ -702,7 +702,7 @@ Last 12 months:
 
 *source: [theblockcrypto.com](https://www.theblockcrypto.com/data/crypto-markets/spot/the-block-legitimate-index-market-share)*
 
-## Volume / Total Assets
+## Trade Volume / Liquidity
 
 In June 2023, based on TVL on June 30, 2023, for every \$1 of assets, Uniswap generated \$8.7 in trade volume, which is more than double those on Binance and OKX. This implies, as an exchange, Uniswap is more effective with its assets than Binance and OKX in generating trade volume.
 
