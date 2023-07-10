@@ -280,11 +280,11 @@
     "text": "Trade\nIn this section, I will compare Uniswap trading volume to those of Binance and Coinbase.\n\nVolume in H1 2023\nIn H1 2023:\n\nThere is a big gap between total trade volume per day (7-day moving average) of Uniswap (and Coinbase) and that of Binance.\nUniswap total trade volume per day grew 98% from $446M to $885M. It ranged between $446M and $4.4B (on March 16, during the recent stablecoins depeg event, which I covered in this post), i.e. max almost 10 times up.\nFebruary 9 marks the second time Uniswap surpassed Coinbase in total trade volume per day, the first time was on September 6 2020.\n\nMeanwhile, on CEXs:\n\nBinance total trade volume per day grew 27% from $6.7B to $8.5B. It ranged between $5.6B (on May 22) and $28.4B (on March 19, stablecoins depeg event), or max down 17% and max up more than fourfold.\nCoinbase total trade volume per day has a similar range to that on Uniswap in most part of the period. However, it grew 26% from $873M, roughly double that of Uniswap, to $1.1B. It ranged between $670M (on May 23, similar to Binance) and $2.5B (on January 18). One interesting data point is, unlike Uniswap and Binance, Coinbase total trade volume per day did not make the highest high during the stablecoins depeg event. This might due to the fact that Coinbase tokens are mostly quoted in USD (instead of USDT on other CEXs).\n\n\n\nsource: theblockcrypto.com\n\n\nMarket Share\nLast 12 months:\n\nMarket share of Uniswap in DEX and of Binance in CEX basically haven’t changed.\nUniswap market share, as the largest DEX, grew 1% from 56.21% in July 2022 to 58.51% in June 2023.\n\n\n\nsource: theblockcrypto.com\n\nBinance market share, as the largest CEX, grew 1% from 47% in July 2022 to 48.98% in June 2023.\n\n\n\nsource: theblockcrypto.com"
   },
   {
-    "objectID": "blog/posts/uniswap-vs-cex/index.html#volume-total-assets",
-    "href": "blog/posts/uniswap-vs-cex/index.html#volume-total-assets",
+    "objectID": "blog/posts/uniswap-vs-cex/index.html#trade-volume-liquidity",
+    "href": "blog/posts/uniswap-vs-cex/index.html#trade-volume-liquidity",
     "title": "Uniswap vs. CEXs: Liquidity",
-    "section": "Volume / Total Assets",
-    "text": "Volume / Total Assets\nIn June 2023, based on TVL on June 30, 2023, for every $1 of assets, Uniswap generated $8.7 in trade volume, which is more than double those on Binance and OKX. This implies, as an exchange, Uniswap is more effective with its assets than Binance and OKX in generating trade volume.\n\n\nsource: theblockcrypto.com, theblockcrypto.com, defillama.com"
+    "section": "Trade Volume / Liquidity",
+    "text": "Trade Volume / Liquidity\nIn June 2023, based on TVL on June 30, 2023, for every $1 of assets, Uniswap generated $8.7 in trade volume, which is more than double those on Binance and OKX. This implies, as an exchange, Uniswap is more effective with its assets than Binance and OKX in generating trade volume.\n\n\nsource: theblockcrypto.com, theblockcrypto.com, defillama.com"
   },
   {
     "objectID": "blog/about.html",
