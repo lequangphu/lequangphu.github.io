@@ -476,7 +476,7 @@ fig.show()
 
 *source: [defillama.com](https://defillama.com/docs/api)*
 
-In H1 2023, Uniswap assets growth is more than triple faster than that of Binance, however, it is less than half of OKX and Bitfinex assets growths.
+In H1 2023, Uniswap assets growth is more than triple that of Binance, however, it is less than half of OKX and Bitfinex assets growths.
 
 Next, since (1) Uniswap only supports EVMs, and (2) EVMs onchain data is more widely supported by analytics platforms such as Dune, let's dive into EVMs onchain data to understand more about assets flow and assets provider behavior in H1 2023.
 
