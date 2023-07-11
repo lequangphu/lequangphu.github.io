@@ -114,7 +114,7 @@ fig.show()
 
 *source: [defillama.com](https://defillama.com/docs/api)*
 
-Defillama tracks 843 DEXs. Top 13 DEXs account for 81% of total assets on DEX, each has at least \$100M in total assets, the largest one is Uniswap with \$4B.
+Defillama tracks 843 DEXs. Top 13 DEXs, which have total assets range between $120M and $4+B, account for 81% of total assets on DEX. Uniswap, the largest DEX, has \$4+B in total assets.
 
 ```{python}
 df_dex = df_exchange.query('category == "Dexes"')
@@ -150,7 +150,7 @@ fig.show()
 
 *source: [defillama.com](https://defillama.com/docs/api)*
 
-Defillama tracks 28 CEXs. Top 21 CEXs which have proof of reserves (POR) range between \$100M and \$60B. Top 3 CEXs account for almost 80% of total CEX assets. Binance is the largest CEX in total assets, 6 times higher than OKX, the second largest CEX.
+Defillama tracks 28 CEXs. Top 21 CEXs, which have proof of reserves (POR) range between \$100M and \$60B. Top 3 CEXs account for almost 80% of total CEX assets. Binance, the largest CEX, has $60+B in total assets, 6 times higher than OKX and Bitfinex, the second and third largest CEXs.
 
 ```{python}
 df_cex = df_exchange.query('category == "CEX"').sort_values('tvl')

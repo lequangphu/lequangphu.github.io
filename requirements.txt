@@ -6,6 +6,6 @@ pandas==2.0.0
 pip==23.1
 plotly==5.14.1
 setuptools==65.5.0
-shroomdk==1.0.2
+# shroomdk==1.0.2
 uri-template==1.2.0
 webcolors==1.13
