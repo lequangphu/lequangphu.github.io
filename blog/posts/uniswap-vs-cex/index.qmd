@@ -445,11 +445,11 @@ for df, ex in zip([pd.DataFrame()]*4, exs):
 
 In H1 2023, on Uniswap:
 
--   Total assets grew 25% from \$3.2B to \$4B. It ranged between \$2.8B and \$4.4B, or max 12% down, and 38% up.
+-   Total assets grew 25% from \$3.2B to \$4B. It ranged between \$2.8B and \$4.4B, max 12% down and 38% up.
 
 Meanwhile, on CEXs:
 
--   Binance total assets grew 7% from \$54B to \$58B. It ranged between \$54B and \$71B (i.e. max 31% up).
+-   Binance total assets grew 7% from \$54B to \$58B. It ranged between \$54B and \$71B, max 31% up.
 
 -   OKX total assets grew 60% from \$6.4B to \$10.3B. The start was also the trough, and the end was also roughly the peak, imply a strong uptrend.
 
@@ -664,13 +664,13 @@ In H1 2023:
 
 -   There was a big gap between total trade volume per day (7-day moving average) of Uniswap (and Coinbase) and that of Binance.
 
--   Uniswap total trade volume per day grew 98% from \$446M to \$885M. It ranged between \$446M and \$4.4B (on March 16, during the recent stablecoins depeg event, which I covered in this [post](https://lequangphu.github.io/blog/posts/uniswap-stablecoin-depeg/)), i.e. max almost 10 times up.
+-   Uniswap total trade volume per day grew 98% from \$446M to \$885M. It ranged between \$446M and \$4.4B (on March 16, during the recent stablecoins depeg event, which I covered in this [post](https://lequangphu.github.io/blog/posts/uniswap-stablecoin-depeg/)), max up almost tenfold.
 
 -   February 9 marks the second time Uniswap surpassed Coinbase in total trade volume per day, the first time was on September 6 2020.
 
 Meanwhile, on CEXs:
 
--   Binance total trade volume per day grew 27% from \$6.7B to \$8.5B. It ranged between \$5.6B (on May 22) and \$28.4B (on March 19, stablecoins depeg event), or max down 17% and max up more than fourfold.
+-   Binance total trade volume per day grew 27% from \$6.7B to \$8.5B. It ranged between \$5.6B (on May 22) and \$28.4B (on March 19, stablecoins depeg event), max down 17% and max up more than fourfold.
 
 -   Coinbase total trade volume per day has a similar range to that on Uniswap in most part of the period. However, it grew 26% from \$873M, roughly double that of Uniswap, to \$1.1B. It ranged between \$670M (on May 23, similar to Binance) and \$2.5B (on January 18). One interesting data point is, unlike Uniswap and Binance, Coinbase total trade volume per day did not make the highest high during the stablecoins depeg event. This might due to the fact that Coinbase tokens are mostly quoted in USD (instead of USDT on other CEXs).
 
