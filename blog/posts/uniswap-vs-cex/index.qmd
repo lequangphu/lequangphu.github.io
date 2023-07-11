@@ -114,7 +114,7 @@ fig.show()
 
 *source: [defillama.com](https://defillama.com/docs/api)*
 
-Defillama tracks 842 DEXs. Top 14 DEXs account for 81% of total assets on DEX, each has at least \$100M in total assets, the largest one is Uniswap with \$4B.
+Defillama tracks 843 DEXs. Top 13 DEXs account for 81% of total assets on DEX, each has at least \$100M in total assets, the largest one is Uniswap with \$4B.
 
 ```{python}
 df_dex = df_exchange.query('category == "Dexes"')
@@ -184,7 +184,7 @@ fig.show()
 
 Although Defillama data about DEX and CEX might miss a few exchanges in each category, the fact that crypto market has almost 900 DEXs and almost 30 CEXs, or 30:1 DEX to CEX, and DEX is 8 years younger than CEX, is quite astounding. This implies that the entry bar to the DEX market is much lower than the entry bar to the CEX market.
 
-In top 10 exchanges, only 2 of them are DEX, which are Uniswap, and Curve, at 4th and 5th position respectively. Their combined assets is just 13% of Binance assets.
+In top 10 exchanges, only 2 of them are DEX, Uniswap and Curve, at 4th and 5th position respectively. Their combined assets is just 13% of Binance assets.
 
 ```{python}
 df_exchange_adj = pd.concat([df_cex[['parentName', 'category', 'tvl']], df_dex_agg], ignore_index=True)
