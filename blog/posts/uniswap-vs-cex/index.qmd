@@ -4,6 +4,8 @@ description: 'Liquidity, the first half of crypto exchange battle.'
 date: '2023-07-01'
 categories: [analysis, crypto]
 image: 'preview.png'
+execute:
+  freeze: true
 ---
 
 The crypto exchange battle involves two parts: Liquidity and Trade. Liquidity is necessary for trading, making it the first half of the competition. This post will focus on that first half, specifically, I'll examine Uniswap and top centralized exchanges (CEX) to better understand the competition.
