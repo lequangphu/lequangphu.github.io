@@ -71,6 +71,7 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'G-S7Y9SX5DXE', { 'anonymize_ip': true});
 </script>
+<meta name="mermaid-theme" content="default">
 <script src="../../../site_libs/quarto-diagram/mermaid.min.js"></script>
 <script src="../../../site_libs/quarto-diagram/mermaid-init.js"></script>
 <link href="../../../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
@@ -240,7 +241,7 @@ gtag('config', 'G-S7Y9SX5DXE', { 'anonymize_ip': true});
 <section id="introduction" class="level1">
 <h1>Introduction</h1>
 <p>A Defi user (trader) trades in Uniswap pools by either (1) swapping through graphic user interface, i.e.&nbsp;on a DEX website, or (2) directly calling the swap function of a smart contract through API. The former is for normal, every day users, and the latter is for advance users who know smart contract programming language such as Solidity. In either ways, a smart contract is called.</p>
-<p>Since launched in early November 2018, Uniswap saw 442K+ contracts called by 11.3M traders to trade $1.6T volume in 275M+ number of trades in 240K+ pools.</p>
+<p>Since launched in early November 2018, Uniswap saw 450K+ contracts called by 11.3M traders to trade $1.6T volume in 276M+ number of trades in 241K+ pools.</p>
 <iframe src="https://dune.com/embeds/2739060/4637643" width="100%" height="200">
 </iframe>
 <p>The contracts can be grouped into a few routes by referring to contracts’ label supported by popular crypto application such as a block explorer, or a crypto analytic platform. In this post, I use label provided by <a href="https://dune.com/">Dune</a> (the main source), and <a href="https://etherscan.io/">Etherscan</a> to group the contracts into routes. The routes include (1) Uniswap Frontend, (2) Aggregators, (3) MEV, (4) Oku, and (5) Unknowns. What are these routes, exactly?</p>
@@ -253,7 +254,7 @@ gtag('config', 'G-S7Y9SX5DXE', { 'anonymize_ip': true});
 <p><em>Caveat: Uniswap Frontend has a few main contracts called router. Most of 1.8K contracts you see in the chart below are Uniswap v1 pools (exchanges in v1 technical term). In Uniswap v1, pools contract are called directly, which makes it hard to differentiate between (1) trade made on Uniswap application and (2) trade made through API. My assumption here is the v1 pools contracts were mainly called by the type (1) trade. Thus I include all of the contracts in Uniswap Frontend.</em></p>
 <iframe src="https://dune.com/embeds/2785328/4637878" width="100%" height="400">
 </iframe>
-<p>For every 100 contracts called, 78 in Aggregators, 20 in Unknowns, MEV and Uniswap Frontend roughly equally split the rest.</p>
+<p>For every 100 contracts called, 79 in Aggregators, 20 in Unknowns, MEV and Uniswap Frontend roughly equally split the rest.</p>
 <iframe src="https://dune.com/embeds/2785328/4637963" width="100%" height="400">
 </iframe>
 <p>We have learned the definition about the trading routes, which a trader can take to trade in Uniswap pools. The rest of this post, let’s explore the routes’ role in onboarding trader and growing Uniswap trades.</p>
