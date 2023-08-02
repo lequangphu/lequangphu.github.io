@@ -12,9 +12,11 @@ format:
 
 # Introduction
 
+*If not specified, data in this post is of all time Uniswap history until July 30, 2023.*
+
 *If you see error of loading charts, please refresh to reload this page (a few times if necessary).*
 
-*For general tracking and updated data, please visit this [dashboard](https://dune.com/phu/uniswap-user-origination).*
+*For general tracking, or if you want to see latest data, please visit this [dashboard](https://dune.com/phu/uniswap-user-origination).*
 
 A Defi user (trader) trades in Uniswap pools by either (1) swapping through graphic user interface, i.e. on a DEX website, or (2) directly calling the swap function of a smart contract through API. The former is for normal, every day users, and the latter is for advance users who know smart contract programming language such as Solidity. In either ways, a smart contract is called.
 
@@ -52,8 +54,6 @@ For every 100 contracts called, 79 in Aggregators, 20 in Unknowns, MEV and Unisw
 
 We have learned the definition about the trading routes, which a trader can take to trade in Uniswap pools. The rest of this post, let's explore the routes' role in onboarding trader and growing Uniswap trades.
 
-*If not specified, data is of all time Uniswap history until July 30, 2023.*
-
 # Key Takeaways
 
 1.  Uniswap Frontend onboarded the most trader to Uniswap, MEV contributes the most to total Uniswap volume.
@@ -70,7 +70,7 @@ We have learned the definition about the trading routes, which a trader can take
 
 # 3 big questions
 
-## Which route onboard the most number of trader to Uniswap? What are the routes' contribution to total Uniswap volume?
+## What are the routes' contribution in onboarding new traders to Uniswap?
 
 *A trader is counted to a route if the route onboard the trader to Uniswap, i.e. the trader executed the first Uniswap trade on the route.*
 
@@ -86,6 +86,8 @@ For every 100 traders, 55 started with Uniswap Frontend, 35 started with Aggrega
 
 </iframe>
 
+## What are the routes' contribution to total Uniswap volume?
+
 Volume of the routes range between \$97K+ (Oku) and \$678B+ (MEV).
 
 <iframe src="https://dune.com/embeds/2759820/4594595" width="100%" height="400">
@@ -98,47 +100,49 @@ For every \$100 in total volume, \$42 from MEV, \$29 from Uniswap Frontend, \$15
 
 </iframe>
 
-## Do traders trade in multiple routes?
+## Do the routes have traders in common?
 
-All the routes have traders, who trade in multiple routes.
+Yes, the routes have traders in common, i.e. multi-route traders.
 
-For every 100 traders started with Uniswap Frontend, 26 traders trade in multiple routes.
+For every 100 traders started with Uniswap Frontend, 26 are multi-route traders.
 
-For every 100 traders started with Aggregators, 23 traders trade in multiple routes.
+For every 100 traders started with Aggregators, 23 are multi-route traders.
 
-For every 100 traders started with MEV, 38 traders trade in multiple routes.
+For every 100 traders started with MEV, 38 are multi-route traders.
 
-For every 100 traders started with Unknowns, 26 traders trade in multiple routes.
+For every 100 traders started with Unknowns, 26 are multi-route traders.
 
-All traders, who started with Oku, trade in multiple routes.
+All Oku traders are multi-route.
 
 <iframe src="https://dune.com/embeds/2760010/4594377" width="100%" height="400">
 
 </iframe>
 
-## Number of week after the first trade that a trader trade in the second route
+### Ages of single route traders and multi-route traders
 
-Of the routes other than Oku, traders who trade in multiple routes, which average ages range between 21 weeks (Unknowns) and 40 weeks (Uniswap Frontend), are much older than the traders who don't, which average ages range between 3 weeks (MEV) and 8 weeks (Uniswap Frontend).
+Of the routes other than Oku, multi-route traders, which average age ranges between 21 weeks (Unknowns) and 40 weeks (Uniswap Frontend), are much older than single route traders, which average age ranges between 3 weeks (MEV) and 8 weeks (Uniswap Frontend).
 
 <iframe src="https://dune.com/embeds/2760010/4594389" width="100%" height="400">
 
 </iframe>
 
-For every 100 traders who start trading in their second route, 32 traders start in the first week (week 0), 31 traders start between the second week (week 1) and the ninth week (week 8), 37 traders start after week 8.
+### How many weeks after the first trade, a single route trader become a multi-route trader?
+
+For every 100 multi-route traders, 32 traders became multi-route in the first week (week 0), 31 traders became multi-route between week 1 and week 8, 37 traders became multi-route after week 8.
 
 <iframe src="https://dune.com/embeds/2800171/4662792" width="100%" height="400">
 
 </iframe>
 
-For every 100 traders who started with Uniswap Frontend, then start trading in their second route, 29 traders start in week 0, 28 traders start between week 1 and week 8, 43 traders start after week 8.
+For every 100 traders who started with Uniswap Frontend, then became multi-route, 29 traders became multi-route in week 0, 28 traders became multi-route between week 1 and week 8, 43 traders became multi-route after week 8.
 
-For every 100 traders who started with Aggregators, then start trading in their second route, 34 traders start in week 0, 36 traders start between week 1 and week 8, 30 traders start after week 8.
+For every 100 traders who started with Aggregators, then became multi-route, 34 traders became multi-route in week 0, 36 traders became multi-route between week 1 and week 8, 30 traders became multi-route after week 8.
 
-For every 100 traders who started with MEV, then start trading in their second route, 29 traders start in week 0, 31 traders start between week 1 and week 8, 40 traders start after week 8.
+For every 100 traders who started with MEV, then became multi-route, 29 traders became multi-route in week 0, 31 traders became multi-route between week 1 and week 8, 40 traders became multi-route after week 8.
 
-For every 100 traders who started with Unknowns, then start trading in their second route, 42 traders start in week 0, 33 traders start between week 1 and week 8, 25 traders start after week 8.
+For every 100 traders who started with Unknowns, then became multi-route, 42 traders became multi-route in week 0, 33 traders became multi-route between week 1 and week 8, 25 traders became multi-route after week 8.
 
-Of 2 traders who started with Oku, then start trading in their second route, 1 traders start in week 0, 1 traders start between week 1 and week 8.
+Of 2 traders who started with Oku, then became multi-route, 1 traders became multi-route in week 0, 1 traders became multi-route between week 1 and week 8.
 
 <iframe src="https://dune.com/embeds/2800171/4662795" width="100%" height="400">
 
@@ -152,7 +156,7 @@ Of 2 traders who started with Oku, then start trading in their second route, 1 t
 
 3.  About a third of total traders, onboarded by each route, are multi-route traders.
 
-4.  Of multi-route traders, two third became multi-route in the first nine weeks, a third became multi-route after week ninth.
+4.  Of multi-route traders, two third became multi-route in the first nine weeks (week 0-8), a third became multi-route after week ninth.
 
 5.  Traders who started Uniswap Frontend or MEV tend to become multi-route traders later than those started with the other routes. In other words, traders who started Uniswap Frontend or MEV tend to stick longer to their first route than those started with the other routes.
 
@@ -160,7 +164,11 @@ Of 2 traders who started with Oku, then start trading in their second route, 1 t
 
 *I measure growth of a route with weekly growth rate, in volume and in number of trader onboarded by the route. My calculation is based on [exponential growth formula](https://en.wikipedia.org/wiki/Exponential_growth).*
 
-*The formula is* $C = I(1 + G)^{T}$, where $C$, the current value, is total value of \[volume, trader\] the route, $I$, the initial value, is value of the first stable week of the route, i.e. the first week that the route saw trading activity happened on all 7 days, $T$ is number of weeks between $I$ and $C$.
+Growth rate is derived from this formula:
+
+$C = I(1 + G)^{T}$
+
+Where $C$, the current value, is total value of \[volume, trader\] the route, $I$, the initial value, is value of the first stable week of the route, i.e. the first week that the route saw trading activity happened on all 7 days, $G$ is growth rate, and $T$ is number of week between $I$ and $C$.
 
 Weekly volume growth rate of the routes range between 6.6% (Aggregators and MEV) and 7.4% (Uniswap Frontend).
 
@@ -460,7 +468,7 @@ For every 100 new trader, 41 in Uniswap_v2: Router02, 27 in Uniswap_v3: SwapRout
 
 ### Do traders prefer to trade on Uniswap Frontend? If yes, what percentage?
 
-*A trader, who prefers to trade on Uniswap Frontend, trades more either in volume or in number of trade on Uniswap Frontend than on the other routes in the period starting from the first trade on Uniswap Frontend (of traders who did not start with Uniswap Fronted) or the first trade on the orther routes (of traders who started with Uniswap Frontend).*
+*A trader, who prefers to trade on Uniswap Frontend, trades more either in volume or in number of trade on Uniswap Frontend than on the other routes in the period starting from the first trade on Uniswap Frontend (of traders who did not became multi-route with Uniswap Fronted) or the first trade on the orther routes (of traders who started with Uniswap Frontend).*
 
 For every 100 traders who started with Uniswap Frontend, 26 traders also trade on other routes. These 26 traders account for \$71 in \$100 volume of the 100 traders.
 
