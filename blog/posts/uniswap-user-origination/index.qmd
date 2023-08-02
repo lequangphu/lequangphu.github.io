@@ -94,8 +94,6 @@ For every \$100 in total volume, \$42 from MEV, \$29 from Uniswap Frontend, \$15
 
 All the routes have traders, who trade in multiple routes.
 
-### Percentage of multi-route traders
-
 For every 100 traders started with Uniswap Frontend, 26 traders trade in multiple routes.
 
 For every 100 traders started with Aggregators, 23 traders trade in multiple routes.
@@ -204,7 +202,7 @@ In number of new trader onboarded to Uniswap, Unknowns has the fastest weekly gr
 
 Return traders mainly drive the routes' growth, and it is more important to MEV's growth than the other routes.
 
-# Behaviors of traders of the routes
+# Trader behavior of the routes
 
 *A trader behaviors include (1) volume per week (volume), and (2) number of trade per week (trade frequency). Comparing median values shows the difference between normal traders of the routes. And comparing average values shows more of the difference between large traders of the routes.*
 
