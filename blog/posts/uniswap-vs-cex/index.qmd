@@ -368,35 +368,37 @@ df_uniswap_v3, *df_cexs = dfs
 #     api_key = f.read()
 # r = requests.get(f'https://api.dune.com/api/v1/query/2685347/results?api_key={api_key}')
 
-r = requests.get(f'https://api.dune.com/api/v1/query/2685347/results?api_key=5xBKE5jaoCbLPUrFMydFVYokznFX1GP6')
+# r = requests.get(f'https://api.dune.com/api/v1/query/2685347/results?api_key=5xBKE5jaoCbLPUrFMydFVYokznFX1GP6')
 ```
 
 ```{python}
-df_uniswap_v1n2 = pd.json_normalize(r.json()['result']['rows'])
-df_uniswap_v1n2 = df_uniswap_v1n2[['token', 'tvl']]
+# df_uniswap_v1n2 = pd.json_normalize(r.json()['result']['rows'])
+# df_uniswap_v1n2 = df_uniswap_v1n2[['token', 'tvl']]
 ```
 
 ```{python}
-df_uniswap = pd.concat([df_uniswap_v1n2, df_uniswap_v3[['token', 'tvl']]], ignore_index=True)
-df = df_uniswap.groupby(by='token', as_index=False).sum()
+# df_uniswap = pd.concat([df_uniswap_v1n2, df_uniswap_v3[['token', 'tvl']]], ignore_index=True)
+# df = df_uniswap.groupby(by='token', as_index=False).sum()
 
-df_above = df[df['tvl'] / df['tvl'].sum() >= 0.01]
-df_rest = df[df['tvl'] / df['tvl'].sum() < 0.01]
-rest_count = df_rest['tvl'].count()
-df_rest = pd.DataFrame({'token': [f'{rest_count} Others'], 'tvl': [df_rest['tvl'].sum()]})
-df_uniswap = pd.concat([df_above, df_rest], ignore_index=True)
+# df_above = df[df['tvl'] / df['tvl'].sum() >= 0.01]
+# df_rest = df[df['tvl'] / df['tvl'].sum() < 0.01]
+# rest_count = df_rest['tvl'].count()
+# df_rest = pd.DataFrame({'token': [f'{rest_count} Others'], 'tvl': [df_rest['tvl'].sum()]})
+# df_uniswap = pd.concat([df_above, df_rest], ignore_index=True)
 ```
 
 Uniswap assets allocate in 2k+ tokens. Of \$100 assets, \$80 in top 9 tokens, of which almost \$40 in WETH, \$25 in stablecoins (USDC, USDT, DAI, and FRAX), almost \$4 in WBTC.
 
 ```{python}
-fig = px.pie(
-    df_uniswap, names='token', values='tvl', title='Uniswap Assets by Token',
-    hover_data={'tvl': ':.3s'}
-)
+# fig = px.pie(
+#     df_uniswap, names='token', values='tvl', title='Uniswap Assets by Token',
+#     hover_data={'tvl': ':.3s'}
+# )
 
-fig.show()
+# fig.show()
 ```
+
+![Uniswap Assets by Token](uniswap-assets-by-token.png)
 
 *source: [defillama.com](https://defillama.com/docs/api)*
 
