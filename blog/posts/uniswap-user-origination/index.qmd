@@ -700,7 +700,7 @@ For every 100 trades, 64 in Not market maker, 25 in Others, and 11 in Market mak
 
     -   On average, traders pay less gas fee on Oku than on the other routes. Oku gas fee is only an eighth of those of Aggregators and Uniswap Frontend.
 
-5.  In Unknowns, the contract groups of `Market makers and alikes` contributes the most to both new trader and volume.
+5.  In Unknowns, the contract groups of `Market makers and alikes` accounts for more than two third of total volume, but very small in number of trader and number of trade.
 
 # The routes in recent weeks
 
@@ -828,9 +828,7 @@ In recent 8 weeks ending on July 30, 2023:
 
 20. In MEV, the largest volume per trader is \$16B+, the largest number of trade per trader is 103K+, the largest average volume per trade of a trader is \$2M.
 
-21. In Unknowns, the contract groups of `Market makers and alikes` contributes the most to both new trader and volume.
-
-22. In Oku:
+21. In Oku:
 
     -   Arbitrum is the largest chain, while Ethereum is the smallest chain in term of volume.
 
@@ -839,6 +837,8 @@ In recent 8 weeks ending on July 30, 2023:
     -   A third of total Oku traders, trade more on Oku than on the other routes.
 
     -   On average, traders pay less gas fee on Oku than on the other routes. Oku gas fee is only an eighth of those of Aggregators and Uniswap Frontend.
+
+22. In Unknowns, the contract groups of `Market makers and alikes` accounts for more than two third of total volume, but very small in number of trader and number of trade.
 
 23. In recent 8 weeks ending on July 30, 2023:
 
