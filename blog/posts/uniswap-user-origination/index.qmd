@@ -12,6 +12,10 @@ format:
 
 # Introduction
 
+*If you see error of loading charts, please refresh to reload this page (a few times if necessary).*
+
+*For general tracking and updated data, please visit this [dashboard](https://dune.com/phu/uniswap-user-origination).*
+
 A Defi user (trader) trades in Uniswap pools by either (1) swapping through graphic user interface, i.e. on a DEX website, or (2) directly calling the swap function of a smart contract through API. The former is for normal, every day users, and the latter is for advance users who know smart contract programming language such as Solidity. In either ways, a smart contract is called.
 
 Since launched in early November 2018, Uniswap saw 450K+ contracts called by 11.3M traders to trade \$1.6T volume in 276M+ number of trades in 241K+ pools.
@@ -142,15 +146,15 @@ Of 2 traders who started with Oku, then start trading in their second route, 1 t
 
 ## We learned that
 
-Uniswap Frontend onboarded the most trader to Uniswap, account for 55 traders in every 100 new traders of Uniswap.
+1.  Uniswap Frontend onboarded the most trader to Uniswap, account for 55 traders in every 100 new traders of Uniswap.
 
-MEV contributes the most to total Uniswap volume, account for \$42 in every \$100 of total Uniswap volume.
+2.  MEV contributes the most to total Uniswap volume, account for \$42 in every \$100 of total Uniswap volume.
 
-About a third of total traders, onboarded by each route, are multi-route traders.
+3.  About a third of total traders, onboarded by each route, are multi-route traders.
 
-Of multi-route traders, two third became multi-route in the first nine weeks, a third became after week ninth.
+4.  Of multi-route traders, two third became multi-route in the first nine weeks, a third became after week ninth.
 
-Traders who started Uniswap Frontend or MEV tend to become multi-route traders later than those started with the other routes. In other words, traders who started Uniswap Frontend or MEV tend to stick longer to their first route than those started with the other routes.
+5.  Traders who started Uniswap Frontend or MEV tend to become multi-route traders later than those started with the other routes. In other words, traders who started Uniswap Frontend or MEV tend to stick longer to their first route than those started with the other routes.
 
 # Growth of the routes
 
@@ -200,11 +204,11 @@ In the first 106 weeks (i.e. the first 2 years), with the first week is week 0:
 
 ## We learned that
 
-In volume, Uniswap Frontend has the fastest weekly growth rate, while Aggregators and MEV have the slowest weekly growth rate.
+1.  In volume, Uniswap Frontend has the fastest weekly growth rate, while Aggregators and MEV have the slowest weekly growth rate.
 
-In number of new trader onboarded to Uniswap, Unknowns has the fastest weekly growth rate, while MEV has the slowest weekly growth rate.
+2.  In number of new trader onboarded to Uniswap, Unknowns has the fastest weekly growth rate, while MEV has the slowest weekly growth rate.
 
-Return traders mainly drive the routes' growth, and it is more important to MEV's growth than the other routes.
+3.  Return traders mainly drive the routes' growth, and it is more important to MEV's growth than the other routes.
 
 # Trader behavior of the routes
 
@@ -238,13 +242,13 @@ Compare to volume, the difference of the weight of large values (high frequency 
 
 ## We learned that
 
-Volume per week of normal traders of Uniswap Frontend and MEV are quite similar to each other, and much higher than those of the other 3 routes.
+1.  Volume per week of normal traders of Uniswap Frontend and MEV are quite similar to each other, and much higher than those of the other 3 routes.
 
-Volume per week of large traders of Uniswap Frontend and MEV is at least 20 folds higher than those of the other 4 routes.
+2.  Volume per week of large traders of Uniswap Frontend and MEV is at least 20 folds higher than those of the other 4 routes.
 
-Number of trade per week of normal traders of Uniswap Frontend is at least a half higher than those of the other 4 routes.
+3.  Number of trade per week of normal traders of Uniswap Frontend is at least a half higher than those of the other 4 routes.
 
-Number of trade per week of large traders of MEV is at least double those of the other 4 routes.
+4.  Number of trade per week of large traders of MEV is at least double those of the other 4 routes.
 
 # The routes in other angles
 
@@ -368,21 +372,21 @@ Traders, who trade through Unknowns, tend to trade, more in PEPE / ETH and USDC 
 
 ## We learned that
 
-In term of volume, MEV dominates on Ethereum, while Unknowns dominates on the other chains.
+1.  In term of volume, MEV dominates on Ethereum, while Unknowns dominates on the other chains.
 
-Traders of Aggregators and MEV tend to trade in major pools more than those of other routes.
+2.  Traders of Aggregators and MEV tend to trade in major pools more than those of other routes.
 
-Traders of Aggregators tend to trade in stable pools more than those of other routes.
+3.  Traders of Aggregators tend to trade in stable pools more than those of other routes.
 
-In top 4 TVL pools, traders of MEV and Aggregators tend to trade more than those of the other routes. Traders of Uniswap Frontend are least likely to trade in the pools other than DAI / USDC, which traders of MEV are least likely to trade.
+4.  In top 4 TVL pools, traders of MEV and Aggregators tend to trade more than those of the other routes. Traders of Uniswap Frontend are least likely to trade in the pools other than DAI / USDC, which traders of MEV are least likely to trade.
 
-When compare to contribution of the routes in all pools:
+5.  When compare to contribution of the routes in all pools:
 
--   In major pools, Aggregators and MEV dominate more, while the Uniswap Frontend and Unknowns dominate less.
+    -   In major pools, Aggregators and MEV dominate more, while the Uniswap Frontend and Unknowns dominate less.
 
--   In stable pools, Aggregators dominates more, while other routes dominate less.
+    -   In stable pools, Aggregators dominates more, while other routes dominate less.
 
--   In the largest pool, USDC / ETH, MEV traders tend to trade more in this pool than those of the other routes. In the largest stable pools, USDC / USDT, Aggregatos traders tend to trade more in this pool than those of the other routes. In the largest meme pool, PEPE / ETH, Unknowns and Uniswap Frontend traders tend to trade more in this pool than those of the other routes.
+    -   In the largest pool, USDC / ETH, MEV traders tend to trade more in this pool than those of the other routes. In the largest stable pools, USDC / USDT, Aggregatos traders tend to trade more in this pool than those of the other routes. In the largest meme pool, PEPE / ETH, Unknowns and Uniswap Frontend traders tend to trade more in this pool than those of the other routes.
 
 # Dive deeper into each route
 
@@ -658,29 +662,29 @@ Yes, traders pay less gas fee on Oku than on the other routes.
 
 ## We learned that
 
-In Uniswap Frontend:
+1.  In Uniswap Frontend:
 
--   By version, Uniswap version 2 contributes the most to new trader, while version 3 contributes the most to volume.
+    -   By version, Uniswap version 2 contributes the most to new trader, while version 3 contributes the most to volume.
 
--   By contract groups, Uniswap_v2: Router02 contributes the most to both new trader and volume.
+    -   By contract groups, Uniswap_v2: Router02 contributes the most to both new trader and volume.
 
--   More than half of multi-route traders, who trade on Uniswap Frontend, trade more through Uniswap Frontend than on the other routes.
+    -   More than half of multi-route traders, who trade on Uniswap Frontend, trade more through Uniswap Frontend than on the other routes.
 
-In Aggregators, Oneinch contributes the most to both new trader and volume.
+2.  In Aggregators, Oneinch contributes the most to both new trader and volume.
 
-In MEV, the largest volume per trader is \$16B+, the largest number of trade per trader is 103K+, the largest average volume per trade of a trader is \$2M.
+3.  In MEV, the largest volume per trader is \$16B+, the largest number of trade per trader is 103K+, the largest average volume per trade of a trader is \$2M.
 
-In Unknowns, the contract groups of `Market makers and alikes` contributes the most to both new trader and volume.
+4.  In Unknowns, the contract groups of `Market makers and alikes` contributes the most to both new trader and volume.
 
-In Oku:
+5.  In Oku:
 
--   Arbitrum is the largest chain, while Ethereum is the smallest chain in term of volume.
+    -   Arbitrum is the largest chain, while Ethereum is the smallest chain in term of volume.
 
--   Of every \$100 in New Order volume, \$14 is canceled, \$4+ is filled, \$3+ is claimed.
+    -   Of every \$100 in New Order volume, \$14 is canceled, \$4+ is filled, \$3+ is claimed.
 
--   A third of total Oku traders, trade more on Oku than on the other routes.
+    -   A third of total Oku traders, trade more on Oku than on the other routes.
 
--   On average, traders pay less gas fee on Oku than on the other routes. Oku gas fee is only an eighth of those of Aggregators and Uniswap Frontend.
+    -   On average, traders pay less gas fee on Oku than on the other routes. Oku gas fee is only an eighth of those of Aggregators and Uniswap Frontend.
 
 # The routes in recent weeks
 
