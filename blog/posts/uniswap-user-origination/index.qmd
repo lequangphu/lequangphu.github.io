@@ -26,17 +26,17 @@ Since launched in early November 2018, Uniswap saw 450K+ contracts called by 11.
 
 </iframe>
 
-The contracts can be grouped into a few routes by referring to contracts' label supported by popular crypto application such as a block explorer, or a crypto analytic platform. In this post, I use label provided by [Dune](https://dune.com/) (the main source), and [Etherscan](https://etherscan.io/) to group the contracts into routes. The routes include (1) Uniswap Frontend, (2) Aggregators, (3) MEV, (4) Oku, and (5) Unknowns. What are these routes, exactly?
+The contracts can be grouped into a few trading routes by referring to contracts' label supported by popular crypto application such as a block explorer, or a crypto analytic platform. In this post, I use label provided by [Dune](https://dune.com/) (the main source), and [Etherscan](https://etherscan.io/) to group the contracts into routes. The routes include (1) Uniswap Frontend, (2) Aggregators, (3) MEV, (4) Oku, and (5) Unknowns. What are these routes, exactly?
 
-Uniswap Frontend is [Uniswap official application](https://app.uniswap.org/), where normal traders use to execute their trades.
+-   Uniswap Frontend is [Uniswap official application](https://app.uniswap.org/), where normal traders use to execute their trades.
 
-Aggregators is other DEXs' applications, where normal traders use to execute their trades.
+-   Aggregators is other DEXs' applications, where normal traders use to execute their trades.
 
-MEV is smart contracts, usually called bots, where advance traders use to execute their trades to exploit [MEV](https://ethereum.org/en/developers/docs/mev/).
+-   MEV is smart contracts, usually called bots, where advance traders use to execute their trades to exploit [MEV](https://ethereum.org/en/developers/docs/mev/).
 
-Oku is an advanced [application](https://oku.trade/), backed by Uniswap Foundation, launched in early June 2023, where normal traders can execute market order or limit order. *Caveat: a market order from Oku is indistinguishable from a swap on Uniswap Frontend, thus is included in Uniswap Frontend route.*
+-   Oku is an advanced [application](https://oku.trade/), backed by Uniswap Foundation, launched in early June 2023, where normal traders can execute market order or limit order. *Caveat: a market order from Oku is indistinguishable from a swap on Uniswap Frontend, thus is included in Uniswap Frontend route.*
 
-Unknowns is a group of smart contracts, which are not yet labeled.
+-   Unknowns is a group of smart contracts, which are not yet labeled.
 
 Number of contract of the routes range between 1 (Oku) and 349K (Aggregators).
 
@@ -550,64 +550,6 @@ Volume of the largest trader is at least 60% larger than the following ones. The
 
 The 8th largest volume trader has number of trade only 1/22 of that of the largest trader, but has volume a half of that of the largest trader by having volume per trade 10 folds of that of the largest trader.
 
-## Unknowns
-
-In Unknowns route, I identify 2 contracts of 2 market makers, which are `0x9507c04b10486547584c37bcbd931b2a4fee9a41` of [Jump Trading](https://www.jumptrading.com/) and `0x00000000ae347930bd1e7b0f35588b92280f9e75` of [Wintermute](http://wintermute.com).
-
-The 2 contracts account for \$11 in every \$100 of total Unknowns volume, 8 trades in every 1000 trades of total Unknowns trades.
-
-<iframe src="https://dune.com/embeds/2785813/4638587" width="100%" height="400">
-
-</iframe>
-
-<iframe src="https://dune.com/embeds/2785813/4638588" width="100%" height="400">
-
-</iframe>
-
-Volume per trade of the 2 market makers range between \$0.6 and \$3.2M, and the mid 50%, i.e. [IQR](https://en.wikipedia.org/wiki/Interquartile_range), range between \$1.7K (TP25) and \$47K+ (TP75).
-
-<iframe src="https://dune.com/embeds/2785832/4638653" width="100%" height="400">
-
-</iframe>
-
-*I use the mid 50% range above as thresholds in an attemp to categorize the Unknowns route. If a contract's TP75 is smaller than \$1.7K then it is `Not a market maker`. If its TP25 \> \$1.7K, it is likely to be a market maker. Otherwise it is not identified, i.e. `Others`. Then I combine the 2 market makers with the likely to be a market maker into one as `Market makers and alikes`.*
-
-Volume of the contract groups range between \$18B+ (Not market maker) and \$161B+ (Market makers and alikes).
-
-<iframe src="https://dune.com/embeds/2784667/4636765" width="100%" height="400">
-
-</iframe>
-
-For every \$100 of total Unknowns volume, \$69 in Market makers and alikes, \$23 in Others, and \$8 in Not market maker.
-
-<iframe src="https://dune.com/embeds/2784667/4636767" width="100%" height="400">
-
-</iframe>
-
-Trader who started with the contract groups range between 8K+ (Market maker and alikes) and 945K+ (Not market maker).
-
-<iframe src="https://dune.com/embeds/2787812/4641188" width="100%" height="400">
-
-</iframe>
-
-For every 100 traders started with the Unknowns route, 95 in Not market maker, 4 in Others, and 1 in Market makers and alikes.
-
-<iframe src="https://dune.com/embeds/2787812/4641187" width="100%" height="400">
-
-</iframe>
-
-Number of trade of the contract groups range between 7M+ (Marketmaker and alikes) and 40M+ (Not market maker).
-
-<iframe src="https://dune.com/embeds/2784667/4636769" width="100%" height="400">
-
-</iframe>
-
-For every 100 trades, 64 in Not market maker, 25 in Others, and 11 in Market makers and alikes.
-
-<iframe src="https://dune.com/embeds/2784667/4636768" width="100%" height="400">
-
-</iframe>
-
 ## Oku
 
 With limit order, there are 3 actions a trader can do on Oku advance trading interface: place New order, Cancel a not-yet-filled order, and Claim a filled order.
@@ -676,6 +618,64 @@ Other than MEV, gas fee of Uniswap Frontend is higher than the other routes. Oku
 
 Yes, traders pay less gas fee on Oku than on the other routes.
 
+## Unknowns
+
+In Unknowns route, I identify 2 contracts of 2 market makers, which are `0x9507c04b10486547584c37bcbd931b2a4fee9a41` of [Jump Trading](https://www.jumptrading.com/) and `0x00000000ae347930bd1e7b0f35588b92280f9e75` of [Wintermute](http://wintermute.com).
+
+The 2 contracts account for \$11 in every \$100 of total Unknowns volume, 8 trades in every 1000 trades of total Unknowns trades.
+
+<iframe src="https://dune.com/embeds/2785813/4638587" width="100%" height="400">
+
+</iframe>
+
+<iframe src="https://dune.com/embeds/2785813/4638588" width="100%" height="400">
+
+</iframe>
+
+Volume per trade of the 2 market makers range between \$0.6 and \$3.2M, and the mid 50%, i.e. [IQR](https://en.wikipedia.org/wiki/Interquartile_range), range between \$1.7K (TP25) and \$47K+ (TP75).
+
+<iframe src="https://dune.com/embeds/2785832/4638653" width="100%" height="400">
+
+</iframe>
+
+*I use the mid 50% range above as thresholds in an attemp to categorize the Unknowns route. If a contract's TP75 is smaller than \$1.7K then it is `Not a market maker`. If its TP25 \> \$1.7K, it is likely to be a market maker. Otherwise it is not identified, i.e. `Others`. Then I combine the 2 market makers with the likely to be a market maker into one as `Market makers and alikes`.*
+
+Volume of the contract groups range between \$18B+ (Not market maker) and \$161B+ (Market makers and alikes).
+
+<iframe src="https://dune.com/embeds/2784667/4636765" width="100%" height="400">
+
+</iframe>
+
+For every \$100 of total Unknowns volume, \$69 in Market makers and alikes, \$23 in Others, and \$8 in Not market maker.
+
+<iframe src="https://dune.com/embeds/2784667/4636767" width="100%" height="400">
+
+</iframe>
+
+Trader who started with the contract groups range between 8K+ (Market maker and alikes) and 945K+ (Not market maker).
+
+<iframe src="https://dune.com/embeds/2787812/4641188" width="100%" height="400">
+
+</iframe>
+
+For every 100 traders started with the Unknowns route, 95 in Not market maker, 4 in Others, and 1 in Market makers and alikes.
+
+<iframe src="https://dune.com/embeds/2787812/4641187" width="100%" height="400">
+
+</iframe>
+
+Number of trade of the contract groups range between 7M+ (Marketmaker and alikes) and 40M+ (Not market maker).
+
+<iframe src="https://dune.com/embeds/2784667/4636769" width="100%" height="400">
+
+</iframe>
+
+For every 100 trades, 64 in Not market maker, 25 in Others, and 11 in Market makers and alikes.
+
+<iframe src="https://dune.com/embeds/2784667/4636768" width="100%" height="400">
+
+</iframe>
+
 ## We learned that
 
 1.  In Uniswap Frontend:
@@ -690,9 +690,7 @@ Yes, traders pay less gas fee on Oku than on the other routes.
 
 3.  In MEV, the largest volume per trader is \$16B+, the largest number of trade per trader is 103K+, the largest average volume per trade of a trader is \$2M.
 
-4.  In Unknowns, the contract groups of `Market makers and alikes` contributes the most to both new trader and volume.
-
-5.  In Oku:
+4.  In Oku:
 
     -   Arbitrum is the largest chain, while Ethereum is the smallest chain in term of volume.
 
@@ -701,6 +699,8 @@ Yes, traders pay less gas fee on Oku than on the other routes.
     -   A third of total Oku traders, trade more on Oku than on the other routes.
 
     -   On average, traders pay less gas fee on Oku than on the other routes. Oku gas fee is only an eighth of those of Aggregators and Uniswap Frontend.
+
+5.  In Unknowns, the contract groups of `Market makers and alikes` contributes the most to both new trader and volume.
 
 # The routes in recent weeks
 
