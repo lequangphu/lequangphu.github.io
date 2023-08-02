@@ -44,7 +44,7 @@ For every 100 contracts called, 78 in Aggregators, 20 in Unknowns, MEV and Unisw
 
 We have learned the definition about the trading routes, which a trader can take to trade in Uniswap pools. The rest of this post, let's explore the routes' role in onboarding trader and growing Uniswap trades.
 
-*If not specified, data is of all time Uniswap history.*
+*If not specified, data is of all time Uniswap history until July 30, 2023.*
 
 # Key Takeaways
 
