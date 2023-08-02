@@ -606,7 +606,7 @@ Of 32 traders of Oku, 10 traders trade more on Oku, in average volume per trade,
 
 ### Do traders pay less gas fee on Oku than on the other routes?
 
-*To be compatible to gas fee of the other routes, gas fee of Oku is total of gas fee of placing order (NewOrder) and claiming filled order (ClaimOrder).*
+*To be compatible to gas fee of the other routes, gas fee of Oku is total of gas fee of (1) placing order (NewOrder), (2) filling order (OrderFilled), and (3) claiming filled order (ClaimOrder).*
 
 Average Gas Fee per Trade of the routes range between \$2.5 (Oku) and \$45.7 (MEV).
 
