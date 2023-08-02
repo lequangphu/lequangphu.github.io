@@ -4,13 +4,17 @@ description: "Explore the routes which traders use to trade in Uniswap pools."
 date: "2023-08-01"
 categories: [analysis, crypto]
 image: "preview.png"
+format:
+  html:
+    mermaid:
+      theme: default
 ---
 
 # Introduction
 
 A Defi user (trader) trades in Uniswap pools by either (1) swapping through graphic user interface, i.e. on a DEX website, or (2) directly calling the swap function of a smart contract through API. The former is for normal, every day users, and the latter is for advance users who know smart contract programming language such as Solidity. In either ways, a smart contract is called.
 
-Since launched in early November 2018, Uniswap saw 442K+ contracts called by 11.3M traders to trade \$1.6T volume in 275M+ number of trades in 240K+ pools.
+Since launched in early November 2018, Uniswap saw 450K+ contracts called by 11.3M traders to trade \$1.6T volume in 276M+ number of trades in 241K+ pools.
 
 <iframe src="https://dune.com/embeds/2739060/4637643" width="100%" height="200">
 
@@ -36,7 +40,7 @@ Number of contract of the routes range between 1 (Oku) and 349K (Aggregators).
 
 </iframe>
 
-For every 100 contracts called, 78 in Aggregators, 20 in Unknowns, MEV and Uniswap Frontend roughly equally split the rest.
+For every 100 contracts called, 79 in Aggregators, 20 in Unknowns, MEV and Uniswap Frontend roughly equally split the rest.
 
 <iframe src="https://dune.com/embeds/2785328/4637963" width="100%" height="400">
 
