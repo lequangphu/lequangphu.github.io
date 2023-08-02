@@ -109,7 +109,7 @@
     "href": "blog/posts/uniswap-user-origination/index.html#do-traders-trade-in-multiple-routes",
     "title": "Uniswap User Origination",
     "section": "Do traders trade in multiple routes?",
-    "text": "Do traders trade in multiple routes?\nAll the routes have traders, who trade in multiple routes.\n\nPercentage of multi-route traders\nFor every 100 traders started with Uniswap Frontend, 26 traders trade in multiple routes.\nFor every 100 traders started with Aggregators, 23 traders trade in multiple routes.\nFor every 100 traders started with MEV, 38 traders trade in multiple routes.\nFor every 100 traders started with Unknowns, 26 traders trade in multiple routes.\nAll traders, who started with Oku, trade in multiple routes."
+    "text": "Do traders trade in multiple routes?\nAll the routes have traders, who trade in multiple routes.\nFor every 100 traders started with Uniswap Frontend, 26 traders trade in multiple routes.\nFor every 100 traders started with Aggregators, 23 traders trade in multiple routes.\nFor every 100 traders started with MEV, 38 traders trade in multiple routes.\nFor every 100 traders started with Unknowns, 26 traders trade in multiple routes.\nAll traders, who started with Oku, trade in multiple routes."
   },
   {
     "objectID": "blog/posts/uniswap-user-origination/index.html#number-of-week-after-the-first-trade-that-a-trader-trade-in-the-second-route",
