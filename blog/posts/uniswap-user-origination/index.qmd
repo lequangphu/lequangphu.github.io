@@ -58,7 +58,7 @@ We have learned the definition about the trading routes, which a trader can take
 
 1.  Uniswap Frontend onboarded the most trader to Uniswap, MEV contributes the most to total Uniswap volume.
 
-2.  About a third of total traders, onboarded by each route, are multi-route traders. Of multi-route traders, two third became multi-route in the first nine weeks, a third became after week ninth. More than half of multi-route traders, who trade on Uniswap Frontend, trade more through Uniswap Frontend than on the other routes.
+2.  About a third of total traders, onboarded by each route, are multi-route traders. Of multi-route traders, two third became multi-route in the first nine weeks, a third became multi-route after week ninth. More than half of multi-route traders, who trade on Uniswap Frontend, trade more through Uniswap Frontend than on the other routes.
 
 3.  Traders who started Uniswap Frontend or MEV tend to stick longer to their first route than those started with the other routes.
 
@@ -152,7 +152,7 @@ Of 2 traders who started with Oku, then start trading in their second route, 1 t
 
 3.  About a third of total traders, onboarded by each route, are multi-route traders.
 
-4.  Of multi-route traders, two third became multi-route in the first nine weeks, a third became after week ninth.
+4.  Of multi-route traders, two third became multi-route in the first nine weeks, a third became multi-route after week ninth.
 
 5.  Traders who started Uniswap Frontend or MEV tend to become multi-route traders later than those started with the other routes. In other words, traders who started Uniswap Frontend or MEV tend to stick longer to their first route than those started with the other routes.
 
@@ -774,7 +774,7 @@ In recent 8 weeks ending on July 30, 2023:
 
 3.  About a third of total traders, onboarded by each route, are multi-route traders.
 
-4.  Of multi-route traders, two third became multi-route in the first nine weeks, a third became after week ninth.
+4.  Of multi-route traders, two third became multi-route in the first nine weeks, a third became multi-route after week ninth.
 
 5.  Traders who started Uniswap Frontend or MEV tend to become multi-route traders later than those started with the other routes. In other words, traders who started Uniswap Frontend or MEV tend to stick longer to their first route than those started with the other routes.
 
