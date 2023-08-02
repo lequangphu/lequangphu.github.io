@@ -614,7 +614,13 @@ gtag('config', 'G-S7Y9SX5DXE', { 'anonymize_ip': true});
 </section>
 <section id="oku" class="level2">
 <h2 class="anchored" data-anchor-id="oku">Oku</h2>
-<p>With limit order, there are 3 actions a trader can do on Oku advance trading interface, which are create New order, Cancel a not-yet-filled order, and Claim a filled order. A trader starts by placing a limit order, which calls the function <code>newOrder</code> of the <a href="https://etherscan.io/address/0x54df9e11c7933a9ca3bd1e540b63da15edae40bf#code">LimitOrderRegistry</a> contract deployed by Oku, which returns the <code>NewOrder</code> event. After that, if the order is not filled, the trader can cancel the order, which calls the <code>newOrder</code> function, which returns the <code>CancelOrder</code> event. If the order is filled, which returns the <code>OrderFilled</code> event, then the trader can claim the order, which calls the <code>cancelOrder</code> function, which returns the <code>ClaimOrder</code> event. If you are familiar with developing smart contract on Ethereum, you can read more about the contract code <a href="https://etherscan.deth.net/address/0x54df9e11c7933a9ca3bd1e540b63da15edae40bf">here</a>. The diagram below roughly demonstrates the whole process.</p>
+<p>With limit order, there are 3 actions a trader can do on Oku advance trading interface: place New order, Cancel a not-yet-filled order, and Claim a filled order.</p>
+<ul>
+<li><p>A trader starts by placing a limit order, which calls the function <code>newOrder</code> of the <a href="https://etherscan.io/address/0x54df9e11c7933a9ca3bd1e540b63da15edae40bf#code">LimitOrderRegistry</a> contract deployed by Oku, which returns the <code>NewOrder</code> event.</p></li>
+<li><p>If the order is not filled, the trader can cancel the order, which calls the <code>newOrder</code> function, which returns the <code>CancelOrder</code> event.</p></li>
+<li><p>If the order is filled, which returns the <code>OrderFilled</code> event, then the trader can claim the order, which calls the <code>claimOrder</code> function, which returns the <code>ClaimOrder</code> event.</p></li>
+</ul>
+<p>If you are familiar with developing smart contract on Ethereum, you can read more about the contract code <a href="https://etherscan.deth.net/address/0x54df9e11c7933a9ca3bd1e540b63da15edae40bf">here</a>. The diagram below roughly demonstrates the whole process.</p>
 <div class="cell" data-fig-width="100%">
 <div class="cell-output-display">
 <div>
