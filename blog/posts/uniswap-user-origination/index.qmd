@@ -602,7 +602,15 @@ For every 100 trades, 64 in Not market maker, 25 in Others, and 11 in Market mak
 
 ## Oku
 
-With limit order, there are 3 actions a trader can do on Oku advance trading interface, which are create New order, Cancel a not-yet-filled order, and Claim a filled order. A trader starts by placing a limit order, which calls the function `newOrder` of the [LimitOrderRegistry](https://etherscan.io/address/0x54df9e11c7933a9ca3bd1e540b63da15edae40bf#code) contract deployed by Oku, which returns the `NewOrder` event. After that, if the order is not filled, the trader can cancel the order, which calls the `newOrder` function, which returns the `CancelOrder` event. If the order is filled, which returns the `OrderFilled` event, then the trader can claim the order, which calls the `cancelOrder` function, which returns the `ClaimOrder` event. If you are familiar with developing smart contract on Ethereum, you can read more about the contract code [here](https://etherscan.deth.net/address/0x54df9e11c7933a9ca3bd1e540b63da15edae40bf). The diagram below roughly demonstrates the whole process.
+With limit order, there are 3 actions a trader can do on Oku advance trading interface: place New order, Cancel a not-yet-filled order, and Claim a filled order.
+
+-   A trader starts by placing a limit order, which calls the function `newOrder` of the [LimitOrderRegistry](https://etherscan.io/address/0x54df9e11c7933a9ca3bd1e540b63da15edae40bf#code) contract deployed by Oku, which returns the `NewOrder` event.
+
+-   If the order is not filled, the trader can cancel the order, which calls the `newOrder` function, which returns the `CancelOrder` event.
+
+-   If the order is filled, which returns the `OrderFilled` event, then the trader can claim the order, which calls the `claimOrder` function, which returns the `ClaimOrder` event.
+
+If you are familiar with developing smart contract on Ethereum, you can read more about the contract code [here](https://etherscan.deth.net/address/0x54df9e11c7933a9ca3bd1e540b63da15edae40bf). The diagram below roughly demonstrates the whole process.
 
 ```{mermaid}
 %%| fig-width: 100%
