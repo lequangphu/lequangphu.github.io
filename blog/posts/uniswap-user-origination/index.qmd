@@ -222,7 +222,7 @@ In the first 106 weeks (i.e. the first 2 years), with the first week is week 0:
 
 # Trader behavior of the routes
 
-*Behaviors of a trader include (1) volume per week, and (2) number of trade per week. Comparing median values shows the difference between normal traders of the routes. And comparing average values shows more of the difference between large traders of the routes.*
+*Behaviors of a trader include (1) volume per week, and (2) number of trade per week. Comparing median values shows the difference between normal traders of the routes. And as average is affected by the weight of large values, comparing average values shows more of the difference between large traders of the routes.*
 
 Median volume per week per trader of the routes range between \$45 (Oku) and \$10K+ (MEV).
 
