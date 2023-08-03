@@ -64,7 +64,7 @@ We have learned the definition about the trading routes, which a trader can take
 
 4.  Return traders mainly drive the routes' growth, especially in MEV. In volume, Uniswap Frontend has the fastest weekly growth rate. In number of new trader onboarded to Uniswap, Unknowns has the fastest weekly growth rate. Weekly retention rate of Uniswap Frontend is usually double of those of Aggregators and Unknowns, while only a third of that of MEV.
 
-5.  Traders of Uniswap Frontend and MEV have both trade size and trade frequency larger than those of traders the other routes.
+5.  Other than MEV, both volume and number of trade per week of normal traders of Uniswap Frontend are much higher than those of the other routes.
 
 6.  A third of total Oku traders, trade more on Oku than on the other routes. On average, traders pay less gas fee on Oku than on the other routes.
 
@@ -222,19 +222,19 @@ In the first 106 weeks (i.e. the first 2 years), with the first week is week 0:
 
 # Trader behavior of the routes
 
-*A trader behaviors include (1) volume per week (volume), and (2) number of trade per week (trade frequency). Comparing median values shows the difference between normal traders of the routes. And comparing average values shows more of the difference between large traders of the routes.*
+*Behaviors of a trader include (1) volume per week, and (2) number of trade per week. Comparing median values shows the difference between normal traders of the routes. And comparing average values shows more of the difference between large traders of the routes.*
 
-Median volume per trader of the routes range between \$38 (Oku) and \$407 (MEV).
+Median volume per week per trader of the routes range between \$45 (Oku) and \$10K+ (MEV).
 
-Average volume per trader of the routes range between \$3K (Oku) and \$210K (MEV).
+Average volume per week per trader of the routes range between \$2K+ (Oku) and \$2M+ (MEV).
 
 <iframe src="https://dune.com/embeds/2762271/4597784" width="100%" height="400">
 
 </iframe>
 
-Median trade frequency (number of trade per week) per trader of the routes range between 1 (Oku) and 1.6 (Uniswap Frontend).
+Median number of trade per weekper trader of the routes range between 1 (Oku) and 3 (MEV).
 
-Average trade frequency per trader of the routes range between 1.9 (Oku) and 8.2 (Uniswap Frontend).
+Average number of trade per week per trader of the routes range between 2 (Oku) and 77 (MEV).
 
 <iframe src="https://dune.com/embeds/2762271/4597790" width="100%" height="400">
 
@@ -242,9 +242,9 @@ Average trade frequency per trader of the routes range between 1.9 (Oku) and 8.2
 
 *As large values cause the difference between average and median, when we divide average by median, we can compare the weight of large values (large volume or high frequency traders) between the routes.*
 
-Average/Median volume of the routes range between 21 (Uniswap Frontend) and 516 (MEV).
+Average/Median volume per week per trader of the routes range between 26 (Uniswap Frontend) and 724 (Unknowns).
 
-Compare to volume, the difference of the weight of large values (high frequency traders) between the routes are much less in trade frequency. Average/median trade frequency of the routes range between 2 (Uniswap Frontend, Aggregators, and Oku) and 8 (MEV).
+Compare to volume, average/median number of trade per week per trader of the routes are much lower, which range between 2 (Oku) and 26 (MEV).
 
 <iframe src="https://dune.com/embeds/2762271/4623152" width="100%" height="400">
 
@@ -252,13 +252,13 @@ Compare to volume, the difference of the weight of large values (high frequency 
 
 ## We learned that
 
-1.  Volume per week of normal traders of Uniswap Frontend and MEV are quite similar to each other, and much higher than those of the other 3 routes.
+1.  Volume per week of normal traders of Uniswap Frontend is a fifteenth of that of MEV, and more than triple those of the other 3 routes.
 
-2.  Volume per week of large traders of Uniswap Frontend and MEV is at least 20 folds higher than those of the other 4 routes.
+2.  Volume per week of large traders of Uniswap Frontend is less than one hundredth of that of MEV, similar to that of Aggregators, 7 folds of that of Oku, and a third of that of Unknowns.
 
-3.  Number of trade per week of normal traders of Uniswap Frontend is at least a half higher than those of the other 4 routes.
+3.  Number of trade per week of normal traders of Uniswap Frontend is two third of that of MEV and double those of the other routes.
 
-4.  Number of trade per week of large traders of MEV is at least double those of the other 4 routes.
+4.  Number of trade per week of large traders of Uniswap Frontend is a fifteenth of that of MEV, a third of that of Unknowns, quite similar to that of Aggreagtors, and more than double that of Oku.
 
 # The routes in other angles
 
@@ -796,13 +796,13 @@ In recent 8 weeks ending on July 30, 2023:
 
 9.  Weekly retention rate of Uniswap Frontend is usually double of those of Aggregators and Unknowns, while only a third of that of MEV.
 
-10. Volume per week of normal traders of Uniswap Frontend and MEV are quite similar to each other, and much higher than those of the other 3 routes.
+10. Volume per week of normal traders of Uniswap Frontend is a fifteenth of that of MEV, and more than triple those of the other 3 routes.
 
-11. Volume per week of large traders of Uniswap Frontend and MEV is at least 20 folds higher than those of the other 4 routes.
+11. Volume per week of large traders of Uniswap Frontend is less than one hundredth of that of MEV, similar to that of Aggregators, 7 folds of that of Oku, and a third of that of Unknowns.
 
-12. Number of trade per week of normal traders of Uniswap Frontend is at least a half higher than those of the other 4 routes.
+12. Number of trade per week of normal traders of Uniswap Frontend is two third of that of MEV and twice of those of the other routes.
 
-13. Number of trade per week of large traders of MEV is at least double those of the other 4 routes.
+13. Number of trade per week of large traders of Uniswap Frontend is a fifteenth of that of MEV, a third of that of Unknowns, quite similar to that of Aggreagtors, and more than double that of Oku.
 
 14. In term of volume, MEV dominates on Ethereum, while Unknowns dominates on the other chains.
 
