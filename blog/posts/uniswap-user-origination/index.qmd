@@ -240,16 +240,6 @@ Average number of trade per week per trader of the routes range between 2 (Oku) 
 
 </iframe>
 
-*As large values cause the difference between average and median, when we divide average by median, we can compare the weight of large values (large volume or high frequency traders) between the routes.*
-
-Average/Median volume per week per trader of the routes range between 26 (Uniswap Frontend) and 724 (Unknowns).
-
-Compare to volume, average/median number of trade per week per trader of the routes are much lower, which range between 2 (Oku) and 26 (MEV).
-
-<iframe src="https://dune.com/embeds/2762271/4623152" width="100%" height="400">
-
-</iframe>
-
 ## We learned that
 
 1.  Volume per week of normal traders of Uniswap Frontend is a fifteenth of that of MEV, and more than triple those of the other 3 routes.
