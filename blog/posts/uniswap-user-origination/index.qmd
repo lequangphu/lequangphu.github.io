@@ -460,7 +460,7 @@ For every 100 new trader, 41 in Uniswap_v2: Router02, 27 in Uniswap_v3: SwapRout
 
 </iframe>
 
-### Do traders prefer to trade on Uniswap Frontend? If yes, what percentage?
+### Percentage of traders who trade on Uniswap Frontend among other routes in each route
 
 *A trader, who prefers to trade on Uniswap Frontend, trades more either in volume or in number of trade on Uniswap Frontend than on the other routes in the period starting from the first trade on Uniswap Frontend (of traders who did not became multi-route with Uniswap Fronted) or the first trade on the orther routes (of traders who started with Uniswap Frontend).*
 
@@ -477,6 +477,8 @@ All traders, who trade on Oku, also trade on Uniswap Frontend.
 <iframe src="https://dune.com/embeds/2781103/4630433" width="100%" height="400">
 
 </iframe>
+
+#### Percentage of traders who prefer Uniswap Frontend to other routes in each route
 
 Other than Oku, more than half of traders who trade on Uniswap Frontend of the routes prefer Uniswap Frontend.
 
