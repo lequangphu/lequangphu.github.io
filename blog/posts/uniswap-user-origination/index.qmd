@@ -20,7 +20,7 @@ format:
 
 A Defi user (trader) trades in Uniswap pools by either (1) swapping through graphic user interface, i.e. on a DEX website, or (2) directly calling the swap function of a smart contract through API. The former is for normal, every day users, and the latter is for advance users who know smart contract programming language such as Solidity. In either ways, a smart contract is called.
 
-Since launched in early November 2018, Uniswap saw 450K+ contracts called by 11.3M traders to trade \$1.6T volume in 276M+ number of trades in 241K+ pools.
+Since launched in early November 2018, Uniswap saw 450K+ contracts called by 11.3M traders to trade \$1.6T volume in 276M+ trades in 241K+ pools.
 
 <iframe src="https://dune.com/embeds/2739060/4637643" width="100%" height="200">
 
