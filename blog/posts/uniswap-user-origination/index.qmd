@@ -800,7 +800,7 @@ In recent 8 weeks ending on July 30, 2023:
 
 11. Volume per week of large traders of Uniswap Frontend is less than one hundredth of that of MEV, similar to that of Aggregators, 7 folds of that of Oku, and a third of that of Unknowns.
 
-12. Number of trade per week of normal traders of Uniswap Frontend is two third of that of MEV and twice of those of the other routes.
+12. Number of trade per week of normal traders of Uniswap Frontend is two third of that of MEV, and double those of the other routes.
 
 13. Number of trade per week of large traders of Uniswap Frontend is a fifteenth of that of MEV, a third of that of Unknowns, quite similar to that of Aggreagtors, and more than double that of Oku.
 
