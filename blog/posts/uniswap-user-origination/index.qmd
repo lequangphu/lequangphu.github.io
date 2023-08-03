@@ -62,7 +62,7 @@ We have learned the definition about the trading routes, which a trader can take
 
 3.  Traders who started Uniswap Frontend or MEV tend to stick longer to their first route than those started with the other routes.
 
-4.  Return traders mainly drive the routes' growth, especially to MEV. In volume, Uniswap Frontend has the fastest weekly growth rate. In number of new trader onboarded to Uniswap, Unknowns has the fastest weekly growth rate. Weekly retention rate of Uniswap Frontend is usually double of those of Aggregators and Unknowns, while only a third of that of MEV.
+4.  Return traders mainly drive the routes' growth, especially in MEV. In volume, Uniswap Frontend has the fastest weekly growth rate. In number of new trader onboarded to Uniswap, Unknowns has the fastest weekly growth rate. Weekly retention rate of Uniswap Frontend is usually double of those of Aggregators and Unknowns, while only a third of that of MEV.
 
 5.  Traders of Uniswap Frontend and MEV have both trade size and trade frequency larger than those of traders the other routes.
 
@@ -216,7 +216,7 @@ In the first 106 weeks (i.e. the first 2 years), with the first week is week 0:
 
 2.  In number of new trader onboarded to Uniswap, Unknowns has the fastest weekly growth rate, while MEV has the slowest weekly growth rate.
 
-3.  Return traders mainly drive the routes' growth, especially to MEV.
+3.  Return traders mainly drive the routes' growth, especially in MEV.
 
 4.  Weekly retention rate of Uniswap Frontend is usually double of those of Aggregators and Unknowns, while only a third of that of MEV.
 
@@ -792,7 +792,7 @@ In recent 8 weeks ending on July 30, 2023:
 
 7.  In number of new trader onboarded to Uniswap, Unknowns has the fastest weekly growth rate, while MEV has the slowest weekly growth rate.
 
-8.  Return traders mainly drive the routes' growth, especially to MEV.
+8.  Return traders mainly drive the routes' growth, especially in MEV.
 
 9.  Weekly retention rate of Uniswap Frontend is usually double of those of Aggregators and Unknowns, while only a third of that of MEV.
 
