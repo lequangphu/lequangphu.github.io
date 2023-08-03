@@ -26,7 +26,9 @@ Since launched in early November 2018, Uniswap saw 450K+ contracts called by 11.
 
 </iframe>
 
-The contracts can be grouped into a few trading routes by referring to contracts' label supported by popular crypto application such as a block explorer, or a crypto analytic platform. In this post, I use label provided by [Dune](https://dune.com/) (the main source), and [Etherscan](https://etherscan.io/) to group the contracts into routes. The routes include (1) Uniswap Frontend, (2) Aggregators, (3) MEV, (4) Oku, and (5) Unknowns. What are these routes, exactly?
+The contracts can be grouped into a few trading routes by referring to contracts' label supported by popular crypto application such as a block explorer, or a crypto analytic platform. In this post, I use label provided by [Dune](https://dune.com/) (the main source), and [Etherscan](https://etherscan.io/) to group the contracts into routes. The routes include (1) Uniswap Frontend, (2) Aggregators, (3) MEV, (4) Oku, and (5) Unknowns.
+
+## What are the routes, exactly?
 
 -   Uniswap Frontend is [Uniswap official application](https://app.uniswap.org/), where normal traders use to execute their trades.
 
