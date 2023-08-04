@@ -610,15 +610,13 @@ Of 32 traders of Oku, 10 traders trade more on Oku, in average volume per trade,
 
 *To be compatible to gas fee of the other routes, gas fee of Oku is total of gas fee of (1) placing order (NewOrder), (2) filling order (OrderFilled), and (3) claiming filled order (ClaimOrder).*
 
-Average Gas Fee per Trade of the routes range between \$2.5 (Oku) and \$45.7 (MEV).
+Yes, traders pay less gas fee on Oku than on the other routes. Average Gas Fee per Trade of the routes range between \$2.5 (Oku) and \$45.7 (MEV).
 
 Other than MEV, gas fee of Uniswap Frontend is higher than the other routes. Oku gas fee is only an eighth of that of Uniswap Frontend.
 
 <iframe src="https://dune.com/embeds/2770258/4613889" width="100%" height="400">
 
 </iframe>
-
-Yes, traders pay less gas fee on Oku than on the other routes.
 
 ## Unknowns
 
