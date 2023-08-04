@@ -60,7 +60,7 @@ We have learned the definition about the trading routes, which a trader can take
 
 1.  Uniswap Frontend onboarded the most trader to Uniswap, MEV contributes the most to total Uniswap volume.
 
-2.  About a third of total traders, onboarded by each route, are multi-route traders. Of multi-route traders, two third became multi-route in the first nine weeks, a third became multi-route after week ninth. More than half of multi-route traders, who trade on Uniswap Frontend, trade more through Uniswap Frontend than on the other routes. In Uniswap and Aggregators, these multi-route traders, though only account for 1 in every 4-5 traders, account for two third of total volume of each route. However, in MEV and Unknowns, they only account for a fifth to a sixth in both total traders and total volume of each route.
+2.  About a third of total traders, onboarded by each route, are multi-route traders. Of multi-route traders, two third became multi-route in the first nine weeks. More than half of multi-route traders, who trade on Uniswap Frontend, trade more on Uniswap Frontend than on the other routes. Multi-route traders of Uniswap Frontend and Aggregators, though only account for 1 in every 4-5 traders of each route, account for two third of total volume of each route. However, multi-route traders of MEV and Unknowns only account for 1 in every 5-6 traders and $1 in every $6-$7 volume of each route.
 
 3.  Traders who started Uniswap Frontend or MEV tend to stick longer to their first route than those started with the other routes.
 
@@ -158,7 +158,7 @@ Of 2 traders who started with Oku, then became multi-route, 1 traders became mul
 
 3.  About a third of total traders, onboarded by each route, are multi-route traders.
 
-4.  Of multi-route traders, two third became multi-route in the first nine weeks (week 0-8), a third became multi-route after week ninth.
+4.  Of multi-route traders, two third became multi-route in the first nine weeks (week 0-8).
 
 5.  Traders who started Uniswap Frontend or MEV tend to become multi-route traders later than those started with the other routes. In other words, traders who started Uniswap Frontend or MEV tend to stick longer to their first route than those started with the other routes.
 
@@ -686,7 +686,7 @@ For every 100 trades, 64 in Not market maker, 25 in Others, and 11 in Market mak
 
     -   By contract groups, Uniswap_v2: Router02 contributes the most to both new trader and volume.
 
-    -   More than half of multi-route traders, who trade on Uniswap Frontend, trade more through Uniswap Frontend than on the other routes. In Uniswap and Aggregators, these multi-route traders, though only account for 1 in every 4-5 traders, account for two third of total volume of each route. However, in MEV and Unknowns, they only account for a fifth to a sixth in both total traders and total volume of each route.
+    -   More than half of multi-route traders, who trade on Uniswap Frontend, trade more through Uniswap Frontend than on the other routes. Multi-route traders of Uniswap Frontend and Aggregators, though only account for 1 in every 4-5 traders of each route, account for two third of total volume of each route. However, multi-route traders of MEV and Unknowns only account for 1 in every 5-6 traders and $1 in every $6-$7 volume of each route.
 
 2.  In Aggregators, Oneinch contributes the most to both new trader and volume.
 
@@ -784,7 +784,7 @@ In recent 8 weeks ending on July 30, 2023:
 
 3.  About a third of total traders, onboarded by each route, are multi-route traders.
 
-4.  Of multi-route traders, two third became multi-route in the first nine weeks, a third became multi-route after week ninth.
+4.  Of multi-route traders, two third became multi-route in the first nine weeks.
 
 5.  Traders who started Uniswap Frontend or MEV tend to become multi-route traders later than those started with the other routes. In other words, traders who started Uniswap Frontend or MEV tend to stick longer to their first route than those started with the other routes.
 
@@ -826,7 +826,7 @@ In recent 8 weeks ending on July 30, 2023:
 
     -   By contract groups, Uniswap_v2: Router02 contributes the most to both new trader and volume.
 
-    -   More than half of multi-route traders, who trade on Uniswap Frontend, trade more through Uniswap Frontend than on the other routes. In Uniswap and Aggregators, these multi-route traders, though only account for 1 in every 4-5 traders, account for two third of total volume of each route. However, in MEV and Unknowns, they only account for a fifth to a sixth in both total traders and total volume of each route.
+    -   More than half of multi-route traders, who trade on Uniswap Frontend, trade more through Uniswap Frontend than on the other routes. Multi-route traders of Uniswap Frontend and Aggregators, though only account for 1 in every 4-5 traders of each route, account for two third of total volume of each route. However, multi-route traders of MEV and Unknowns only account for 1 in every 5-6 traders and $1 in every $6-$7 volume of each route.
 
 20. In Aggregators, Oneinch contributes the most to both new trader and volume.
 
