@@ -838,7 +838,7 @@ In recent 8 weeks ending on July 30, 2023:
 
     -   A third of total Oku traders, trade more on Oku than on the other routes.
 
-    -   On average, traders pay less gas fee on Oku than on the other routes. Oku gas fee is only an eighth of those of Aggregators and Uniswap Frontend.
+    -   On average, traders pay less gas fee on Oku than on the other routes. Oku gas fee is less than a third of that of Uniswap Frontend.
 
 23. In Unknowns, the contract groups of `Market makers and alikes` accounts for more than two third of total volume, but very small in number of trader and number of trade.
 
