@@ -849,3 +849,9 @@ In recent 8 weeks ending on July 30, 2023:
     -   Compare to all time contribution to Uniswap volume, weekly contribution to Uniswap volume of Unknowns tripled, while those of the other 3 routes were lower.
 
     -   Compare to all time contribution to Uniswap new trader, weekly contribution to Uniswap new trader of Aggregators and Unknowns were higher, while those of the other 2 routes were lower.
+
+# Updates {.appendix}
+
+This post won the 1st prize of the bounty #27 of Unigrants Community Analytics Program 🥳.
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">🎉 <a href="https://twitter.com/UniswapFND?ref_src=twsrc%5Etfw">@UniswapFND</a> - Community Analytics - Bounty #27 winners 🎉 <br><br>Our community analysed User Origination on Uniswap!<br><br>Kudos to our winners: <br><br>🥇 <a href="https://twitter.com/0xphu?ref_src=twsrc%5Etfw">@0xphu</a><br>🥈 Zohan<br>🥉 <a href="https://twitter.com/ConsideredFin?ref_src=twsrc%5Etfw">@ConsideredFin</a><br><br>Great analysis on how users access Uniswap so check it out 👇</p>&mdash; 0xMartijnB (@0xMartijnB) <a href="https://twitter.com/0xMartijnB/status/1689240426434240512?ref_src=twsrc%5Etfw">August 9, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
