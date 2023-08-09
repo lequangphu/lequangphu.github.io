@@ -60,7 +60,7 @@ We have learned the definition about the trading routes, which a trader can take
 
 1.  Uniswap Frontend onboarded the most trader to Uniswap, MEV contributes the most to total Uniswap volume.
 
-2.  About a third of total traders, onboarded by each route, are multi-route traders. Of multi-route traders, two third became multi-route in the first nine weeks. More than half of multi-route traders, who trade on Uniswap Frontend, trade more on Uniswap Frontend than on the other routes. Multi-route traders of Uniswap Frontend and Aggregators, though only account for 1 in every 4-5 traders of each route, account for two third of total volume of each route. However, multi-route traders of MEV and Unknowns only account for 1 in every 5-6 traders and $1 in every $6-$7 volume of each route.
+2.  About a third of total traders, onboarded by each route, are multi-route traders. Of multi-route traders, two third became multi-route in the first nine weeks. More than half of multi-route traders, who trade on Uniswap Frontend, trade more on Uniswap Frontend than on the other routes. Multi-route traders of Uniswap Frontend and Aggregators, though only account for 1 in every 4-5 traders of each route, account for two third of total volume of each route. However, multi-route traders of MEV and Unknowns only account for 1 in every 5-6 traders and \$1 in every \$6-\$7 volume of each route.
 
 3.  Traders who started Uniswap Frontend or MEV tend to stick longer to their first route than those started with the other routes.
 
@@ -684,7 +684,7 @@ For every 100 trades, 64 in Not market maker, 25 in Others, and 11 in Market mak
 
     -   By contract groups, Uniswap_v2: Router02 contributes the most to both new trader and volume.
 
-    -   More than half of multi-route traders, who trade on Uniswap Frontend, trade more through Uniswap Frontend than on the other routes. Multi-route traders of Uniswap Frontend and Aggregators, though only account for 1 in every 4-5 traders of each route, account for two third of total volume of each route. However, multi-route traders of MEV and Unknowns only account for 1 in every 5-6 traders and $1 in every $6-$7 volume of each route.
+    -   More than half of multi-route traders, who trade on Uniswap Frontend, trade more through Uniswap Frontend than on the other routes. Multi-route traders of Uniswap Frontend and Aggregators, though only account for 1 in every 4-5 traders of each route, account for two third of total volume of each route. However, multi-route traders of MEV and Unknowns only account for 1 in every 5-6 traders and \$1 in every \$6-\$7 volume of each route.
 
 2.  In Aggregators, Oneinch contributes the most to both new trader and volume.
 
@@ -766,9 +766,9 @@ When compare share of number of new trader each route onboarded to Uniswap of th
 
 ## We learned that
 
-In recent 8 weeks ending on July 30, 2023:
+In recent 8 weeks ending on July 30, 2023, other than Oku:
 
--   Other than Oku, all the routes' weekly volume were generally down.
+-   All the routes' weekly volume were generally down.
 
 -   Compare to all time contribution to Uniswap volume, weekly contribution to Uniswap volume of Unknowns tripled, while those of the other 3 routes were lower.
 
@@ -824,7 +824,7 @@ In recent 8 weeks ending on July 30, 2023:
 
     -   By contract groups, Uniswap_v2: Router02 contributes the most to both new trader and volume.
 
-    -   More than half of multi-route traders, who trade on Uniswap Frontend, trade more through Uniswap Frontend than on the other routes. Multi-route traders of Uniswap Frontend and Aggregators, though only account for 1 in every 4-5 traders of each route, account for two third of total volume of each route. However, multi-route traders of MEV and Unknowns only account for 1 in every 5-6 traders and $1 in every $6-$7 volume of each route.
+    -   More than half of multi-route traders, who trade on Uniswap Frontend, trade more through Uniswap Frontend than on the other routes. Multi-route traders of Uniswap Frontend and Aggregators, though only account for 1 in every 4-5 traders of each route, account for two third of total volume of each route. However, multi-route traders of MEV and Unknowns only account for 1 in every 5-6 traders and \$1 in every \$6-\$7 volume of each route.
 
 20. In Aggregators, Oneinch contributes the most to both new trader and volume.
 
@@ -842,9 +842,9 @@ In recent 8 weeks ending on July 30, 2023:
 
 23. In Unknowns, the contract groups of `Market makers and alikes` accounts for more than two third of total volume, but very small in number of trader and number of trade.
 
-24. In recent 8 weeks ending on July 30, 2023:
+24. In recent 8 weeks ending on July 30, 2023, other than Oku:
 
-    -   Other than Oku, all the routes' weekly volume were generally down.
+    -   All the routes' weekly volume were generally down.
 
     -   Compare to all time contribution to Uniswap volume, weekly contribution to Uniswap volume of Unknowns tripled, while those of the other 3 routes were lower.
 
@@ -854,4 +854,18 @@ In recent 8 weeks ending on July 30, 2023:
 
 This post won the 1st prize of the bounty #27 of Unigrants Community Analytics Program 🥳.
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">🎉 <a href="https://twitter.com/UniswapFND?ref_src=twsrc%5Etfw">@UniswapFND</a> - Community Analytics - Bounty #27 winners 🎉 <br><br>Our community analysed User Origination on Uniswap!<br><br>Kudos to our winners: <br><br>🥇 <a href="https://twitter.com/0xphu?ref_src=twsrc%5Etfw">@0xphu</a><br>🥈 Zohan<br>🥉 <a href="https://twitter.com/ConsideredFin?ref_src=twsrc%5Etfw">@ConsideredFin</a><br><br>Great analysis on how users access Uniswap so check it out 👇</p>&mdash; 0xMartijnB (@0xMartijnB) <a href="https://twitter.com/0xMartijnB/status/1689240426434240512?ref_src=twsrc%5Etfw">August 9, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet">
+
+<p lang="en" dir="ltr">
+
+🎉 <a href="https://twitter.com/UniswapFND?ref_src=twsrc%5Etfw">@UniswapFND</a> - Community Analytics - Bounty #27 winners 🎉 <br><br>Our community analysed User Origination on Uniswap!<br><br>Kudos to our winners: <br><br>🥇 <a href="https://twitter.com/0xphu?ref_src=twsrc%5Etfw">@0xphu</a><br>🥈 Zohan<br>🥉 <a href="https://twitter.com/ConsideredFin?ref_src=twsrc%5Etfw">@ConsideredFin</a><br><br>Great analysis on how users access Uniswap so check it out 👇
+
+</p>
+
+--- 0xMartijnB (@0xMartijnB) <a href="https://twitter.com/0xMartijnB/status/1689240426434240512?ref_src=twsrc%5Etfw">August 9, 2023</a>
+
+</blockquote>
+
+```{=html}
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+```
