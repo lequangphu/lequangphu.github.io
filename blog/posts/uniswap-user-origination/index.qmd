@@ -744,7 +744,7 @@ When compare each route volume share in total Uniswap volume of the recent 8 wee
 
 -   Meanwhile, Unknowns weekly volume shares were mostly triple of all time volume share.
 
-::: {layout-ncol=2 .column-screen-inset}
+::: {layout-nrow=2 .column-screen-inset}
 
 ::: {}
 
@@ -757,10 +757,6 @@ When compare each route volume share in total Uniswap volume of the recent 8 wee
 <iframe src="https://dune.com/embeds/2792215/4651783" width="100%" height="400"></iframe>
 
 :::
-
-:::
-
-::: {layout-ncol=2 .column-screen-inset}
 
 ::: {}
 
@@ -780,7 +776,7 @@ When compare share of number of new trader each route onboarded to Uniswap of th
 
 -   Weekly new trader shares of Uniswap Frontend and MEV were lower than all time shares, while weekly new trader shares of Aggregators and Unknowns were higher than all time shares.
 
-::: {layout-ncol=2 .column-screen-inset}
+::: {layout-nrow=2 .column-screen-inset}
 
 ::: {}
 
@@ -793,10 +789,6 @@ When compare share of number of new trader each route onboarded to Uniswap of th
 <iframe src="https://dune.com/embeds/2795043/4654717" width="100%" height="400"></iframe>
 
 :::
-
-:::
-
-::: {layout-ncol=2 .column-screen-inset}
 
 ::: {}
 
