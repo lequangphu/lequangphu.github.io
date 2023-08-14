@@ -70,7 +70,7 @@ We have learned the definition about the trading routes, which a trader can take
 
 6.  A third of total Oku traders, trade more on Oku than on the other routes. On average, traders pay less gas fee on Oku than on the other routes.
 
-# 3 big questions
+# Contribution of the routes
 
 ## What are the routes' contribution in onboarding new traders to Uniswap?
 
