@@ -40,19 +40,25 @@ The contracts can be grouped into a few trading routes by referring to contracts
 
 -   Unknowns is a group of smart contracts, which are not yet labeled.
 
-Number of contract of the routes range between 1 (Oku) and 349K (Aggregators).
-
 *Caveat: Uniswap Frontend has a few main contracts called router. Most of 1.8K contracts you see in the chart below are Uniswap v1 pools (exchanges in v1 technical term). In Uniswap v1, pools contract are called directly, which makes it hard to differentiate between (1) trade made on Uniswap application and (2) trade made through API. My assumption here is the v1 pools contracts were mainly called by the type (1) trade. Thus I include all of the contracts in Uniswap Frontend.*
 
-<iframe src="https://dune.com/embeds/2785328/4637878" width="100%" height="400">
+Number of contract of the routes range between 1 (Oku) and 349K (Aggregators). For every 100 contracts called, 79 in Aggregators, 20 in Unknowns, MEV and Uniswap Frontend roughly equally split the rest.
 
-</iframe>
+::: {layout-ncol=2 .column-page}
 
-For every 100 contracts called, 79 in Aggregators, 20 in Unknowns, MEV and Uniswap Frontend roughly equally split the rest.
+::: {}
 
-<iframe src="https://dune.com/embeds/2785328/4637963" width="100%" height="400">
+<iframe src="https://dune.com/embeds/2785328/4637878" width="100%" height="400"></iframe>
 
-</iframe>
+:::
+
+::: {}
+
+<iframe src="https://dune.com/embeds/2785328/4637963" width="100%" height="400"></iframe>
+
+:::
+
+:::
 
 We have learned the definition about the trading routes, which a trader can take to trade in Uniswap pools. The rest of this post, let's explore the routes' role in onboarding trader and growing Uniswap trades.
 
@@ -76,31 +82,43 @@ We have learned the definition about the trading routes, which a trader can take
 
 *A trader is counted to a route if the route onboard the trader to Uniswap, i.e. the trader executed the first Uniswap trade on the route.*
 
-Number of trader onboarded by the routes range between 2 (Oku) and 6.3M (Uniswap Frontend).
+Number of trader onboarded by the routes range between 2 (Oku) and 6.3M (Uniswap Frontend). For every 100 traders, 55 started with Uniswap Frontend, 35 started with Aggregators, 9 started with Unknowns, and 1 started with MEV.
 
-<iframe src="https://dune.com/embeds/2760010/4594372" width="100%" height="400">
+::: {layout-ncol=2 .column-page}
 
-</iframe>
+::: {}
 
-For every 100 traders, 55 started with Uniswap Frontend, 35 started with Aggregators, 9 started with Unknowns, and 1 started with MEV.
+<iframe src="https://dune.com/embeds/2760010/4594372" width="100%" height="400"></iframe>
 
-<iframe src="https://dune.com/embeds/2760010/4616670" width="100%" height="400">
+:::
 
-</iframe>
+::: {}
+
+<iframe src="https://dune.com/embeds/2760010/4616670" width="100%" height="400"></iframe>
+
+:::
+
+:::
 
 ## What are the routes' contribution to total Uniswap volume?
 
-Volume of the routes range between \$97K+ (Oku) and \$678B+ (MEV).
+Volume of the routes range between \$97K+ (Oku) and \$678B+ (MEV). For every \$100 in total volume, \$42 from MEV, \$29 from Uniswap Frontend, \$15 from Aggregators, and \$14 from Unknowns.
 
-<iframe src="https://dune.com/embeds/2759820/4594595" width="100%" height="400">
+::: {layout-ncol=2 .column-page}
 
-</iframe>
+::: {}
 
-For every \$100 in total volume, \$42 from MEV, \$29 from Uniswap Frontend, \$15 from Aggregators, and \$14 from Unknowns.
+<iframe src="https://dune.com/embeds/2759820/4594595" width="100%" height="400"></iframe>
 
-<iframe src="https://dune.com/embeds/2759820/4616666" width="100%" height="400">
+:::
 
-</iframe>
+::: {}
+
+<iframe src="https://dune.com/embeds/2759820/4616666" width="100%" height="400"></iframe>
+
+:::
+
+:::
 
 ## Do the routes have traders in common?
 
@@ -116,25 +134,19 @@ For every 100 traders started with Unknowns, 26 are multi-route traders.
 
 All Oku traders are multi-route.
 
-<iframe src="https://dune.com/embeds/2760010/4594377" width="100%" height="400">
-
-</iframe>
+<iframe src="https://dune.com/embeds/2760010/4594377" width="100%" height="400"></iframe>
 
 ### Ages of single route traders and multi-route traders
 
 Of the routes other than Oku, multi-route traders, which average age ranges between 21 weeks (Unknowns) and 40 weeks (Uniswap Frontend), are much older than single route traders, which average age ranges between 3 weeks (MEV) and 8 weeks (Uniswap Frontend).
 
-<iframe src="https://dune.com/embeds/2760010/4594389" width="100%" height="400">
-
-</iframe>
+<iframe src="https://dune.com/embeds/2760010/4594389" width="100%" height="400"></iframe>
 
 ### How many weeks after the first trade, a single route trader become a multi-route trader?
 
 For every 100 multi-route traders, 32 traders became multi-route in the first week (week 0), 31 traders became multi-route between week 1 and week 8, 37 traders became multi-route after week 8.
 
-<iframe src="https://dune.com/embeds/2800171/4662792" width="100%" height="400">
-
-</iframe>
+<iframe src="https://dune.com/embeds/2800171/4662792" width="100%" height="400"></iframe>
 
 For every 100 traders who started with Uniswap Frontend, then became multi-route, 29 traders became multi-route in week 0, 28 traders became multi-route between week 1 and week 8, 43 traders became multi-route after week 8.
 
@@ -146,9 +158,7 @@ For every 100 traders who started with Unknowns, then became multi-route, 42 tra
 
 Of 2 traders who started with Oku, then became multi-route, 1 traders became multi-route in week 0, 1 traders became multi-route between week 1 and week 8.
 
-<iframe src="https://dune.com/embeds/2800171/4662795" width="100%" height="400">
-
-</iframe>
+<iframe src="https://dune.com/embeds/2800171/4662795" width="100%" height="400"></iframe>
 
 ## We learned that
 
@@ -174,15 +184,11 @@ Where $C$, the current value, is total value of \[volume, trader\] the route, $I
 
 Weekly volume growth rate of the routes range between 6.6% (Aggregators and MEV) and 7.4% (Uniswap Frontend).
 
-<iframe src="https://dune.com/embeds/2776861/4623187" width="100%" height="400">
-
-</iframe>
+<iframe src="https://dune.com/embeds/2776861/4623187" width="100%" height="400"></iframe>
 
 Weekly trader growth rate of the routes range between 5% (MEV) and 5.8% (Unknowns).
 
-<iframe src="https://dune.com/embeds/2776987/4623373" width="100%" height="400">
-
-</iframe>
+<iframe src="https://dune.com/embeds/2776987/4623373" width="100%" height="400"></iframe>
 
 Volume of the routes have grown faster than number of new traders, which the routes onboarded to Uniswap.
 
@@ -194,9 +200,7 @@ On average, every week, for every 100 traders, the new traders of the routes ran
 
 An other point is despite similar growth rate in volume and number of trader, share of new trader of MEV is only a third of those of other routes.
 
-<iframe src="https://dune.com/embeds/2792142/4650117" width="100%" height="400">
-
-</iframe>
+<iframe src="https://dune.com/embeds/2792142/4650117" width="100%" height="400"></iframe>
 
 *In case you are not familiar with retention rate, you can read more about it [here](https://amplitude.com/blog/retention-rate-meaning-use-cases-and-more).*
 
@@ -208,9 +212,7 @@ In the first 106 weeks (i.e. the first 2 years), with the first week is week 0:
 
 -   After week 100, Aggregators retention rate drop to as low as 2%, and Unknowns rentention rate drop to sub 1%.
 
-<iframe src="https://dune.com/embeds/2791871/4649675" width="100%" height="400">
-
-</iframe>
+<iframe src="https://dune.com/embeds/2791871/4649675" width="100%" height="400"></iframe>
 
 ## We learned that
 
@@ -230,17 +232,13 @@ Median volume per week per trader of the routes range between \$45 (Oku) and \$1
 
 Average volume per week per trader of the routes range between \$2K+ (Oku) and \$2M+ (MEV).
 
-<iframe src="https://dune.com/embeds/2762271/4597784" width="100%" height="400">
-
-</iframe>
+<iframe src="https://dune.com/embeds/2762271/4597784" width="100%" height="400"></iframe>
 
 Median number of trade per weekper trader of the routes range between 1 (Oku) and 3 (MEV).
 
 Average number of trade per week per trader of the routes range between 2 (Oku) and 77 (MEV).
 
-<iframe src="https://dune.com/embeds/2762271/4597790" width="100%" height="400">
-
-</iframe>
+<iframe src="https://dune.com/embeds/2762271/4597790" width="100%" height="400"></iframe>
 
 ## We learned that
 
@@ -264,9 +262,7 @@ MEV volume share is 46%, dominates Ethereum. On Optimism, its volume share is ve
 
 Unknowns route dominates on all chains other than Ethereum. Later, you will learn that majority of this route is market makers and alikes.
 
-<iframe src="https://dune.com/embeds/2762068/4597029" width="100%" height="400">
-
-</iframe>
+<iframe src="https://dune.com/embeds/2762068/4597029" width="100%" height="400"></iframe>
 
 ## Pool breakdown
 
@@ -280,15 +276,11 @@ In each route total volume:
 
 -   MEV traders tend to trade in major pools more than those of other routes.
 
-<iframe src="https://dune.com/embeds/2764482/4609042" width="100%" height="400">
-
-</iframe>
+<iframe src="https://dune.com/embeds/2764482/4609042" width="100%" height="400"></iframe>
 
 When compare share of each route in major pools total volume to that in all pools total volume, MEV dominates more, while the other routes dominate less.
 
-<iframe src="https://dune.com/embeds/2769353/4612600" width="100%" height="400">
-
-</iframe>
+<iframe src="https://dune.com/embeds/2769353/4612600" width="100%" height="400"></iframe>
 
 ### Stable pools
 
@@ -302,15 +294,11 @@ In each route total volume:
 
 -   Aggregators traders tend to trade in stable pools more than those of other routes.
 
-<iframe src="https://dune.com/embeds/2761953/4611353" width="100%" height="400">
-
-</iframe>
+<iframe src="https://dune.com/embeds/2761953/4611353" width="100%" height="400"></iframe>
 
 When compare share of each route in satble pools total volume to that in all pools total volume, Aggregators dominates more, while the other routes dominate less.
 
-<iframe src="https://dune.com/embeds/2769947/4612614" width="100%" height="400">
-
-</iframe>
+<iframe src="https://dune.com/embeds/2769947/4612614" width="100%" height="400"></iframe>
 
 ### Top pools
 
@@ -320,43 +308,31 @@ When compare share of each route in satble pools total volume to that in all poo
 
 For every \$100 volume, \$63 in MEV, \$14 in Uniswap Frontend, \$12 in Aggregators, and \$11 in Unknowns.
 
-<iframe src="https://dune.com/embeds/2787909/4643719" width="100%" height="400">
-
-</iframe>
+<iframe src="https://dune.com/embeds/2787909/4643719" width="100%" height="400"></iframe>
 
 MEV traders tend to trade more in this pool than those of the other routes. Other than Oku, Uniswap Frontend traders are least likely to trade in this pool relative to those of the other routes.
 
-<iframe src="https://dune.com/embeds/2787909/4641346" width="100%" height="400">
-
-</iframe>
+<iframe src="https://dune.com/embeds/2787909/4641346" width="100%" height="400"></iframe>
 
 #### USDC / USDT, the largest stable pools
 
 For every \$100 volume, \$31 in MEV, \$31 in Aggregators, \$22 in Uniswap Frontend, and \$15 in Unknowns.
 
-<iframe src="https://dune.com/embeds/2789632/4644872" width="100%" height="400">
-
-</iframe>
+<iframe src="https://dune.com/embeds/2789632/4644872" width="100%" height="400"></iframe>
 
 Aggregators traders tend to trade more in this pool than those of the other routes. Other than Oku, Uniswap Frontend traders are least likely to trade in this pool relative to those of the other routes.
 
-<iframe src="https://dune.com/embeds/2789632/4644873" width="100%" height="400">
-
-</iframe>
+<iframe src="https://dune.com/embeds/2789632/4644873" width="100%" height="400"></iframe>
 
 #### PEPE / ETH, the largest meme pool
 
 For every \$100 volume, \$40 in Uniswap Frontend, \$24 in MEV, \$23 in Unknowns, \$13 in Aggregators.
 
-<iframe src="https://dune.com/embeds/2789906/4645448" width="100%" height="400">
-
-</iframe>
+<iframe src="https://dune.com/embeds/2789906/4645448" width="100%" height="400"></iframe>
 
 Unknowns and Uniswap Frontend traders tend to trade more in this pool than those of the other routes. Other than Oku, MEV traders are least likely to trade in this pool relative to those of the other routes.
 
-<iframe src="https://dune.com/embeds/2789906/4645449" width="100%" height="400">
-
-</iframe>
+<iframe src="https://dune.com/embeds/2789906/4645449" width="100%" height="400"></iframe>
 
 #### Top pools vs. All pools
 
@@ -368,9 +344,7 @@ Traders, who trade through MEV, tend to trade, more in USDC / ETH, and less in t
 
 Traders, who trade through Unknowns, tend to trade, more in PEPE / ETH and USDC / USDT, and less in USDC / ETH, than other in all pools.
 
-<iframe src="https://dune.com/embeds/2787942/4641410" width="100%" height="400">
-
-</iframe>
+<iframe src="https://dune.com/embeds/2787942/4641410" width="100%" height="400"></iframe>
 
 ## We learned that
 
@@ -398,35 +372,45 @@ Traders, who trade through Unknowns, tend to trade, more in PEPE / ETH and USDC 
 
 ### Version Breakdown
 
-Volume of the versions range between \$847M+ (v1) and \$234B+ (v3).
+Volume of the versions range between \$847M+ (v1) and \$234B+ (v3). For every \$10K in total Uniswap Frontend volume, \$5K in v3, \$4.99K in v2, and \$1 in v1.
 
-<iframe src="https://dune.com/embeds/2781640/4632011" width="100%" height="400">
+::: {layout-ncol=2 .column-page}
 
-</iframe>
+::: {}
 
-For every \$10K in total Uniswap Frontend volume, \$5K in v3, \$4.99K in v2, and \$1 in v1.
+<iframe src="https://dune.com/embeds/2781640/4632011" width="100%" height="400"></iframe>
 
-<iframe src="https://dune.com/embeds/2781640/4632009" width="100%" height="400">
+:::
 
-</iframe>
+::: {}
 
-Traders onboarded by the versions range between 73K+ (v1) and 4M (v2).
+<iframe src="https://dune.com/embeds/2781640/4632009" width="100%" height="400"></iframe>
 
-<iframe src="https://dune.com/embeds/2781808/4632286" width="100%" height="400">
+:::
 
-</iframe>
+:::
 
-For every 100 traders onboarded to Uniswap Frontend, 55 in v2, 44 in v3, 1 in v1.
+Traders onboarded by the versions range between 73K+ (v1) and 4M (v2). For every 100 traders onboarded to Uniswap Frontend, 55 in v2, 44 in v3, 1 in v1.
 
-<iframe src="https://dune.com/embeds/2781808/4632285" width="100%" height="400">
+::: {layout-ncol=2 .column-page}
 
-</iframe>
+::: {}
+
+<iframe src="https://dune.com/embeds/2781808/4632286" width="100%" height="400"></iframe>
+
+:::
+
+::: {}
+
+<iframe src="https://dune.com/embeds/2781808/4632285" width="100%" height="400"></iframe>
+
+:::
+
+:::
 
 In the first year, i.e. first 53 weeks, volume of v3 grew faster than that of v2. However, in the second year, volume of v2 grew faster than that of v3. After the first 2 years, volume of v3 surpassed that of v2 again. At week 117 (i.e. 118 weeks since v3 launched, as of July 30, 2023), v3 volume is 9% higher than that of v2.
 
-<iframe src="https://dune.com/embeds/2806191/4675491" width="100%" height="400">
-
-</iframe>
+<iframe src="https://dune.com/embeds/2806191/4675491" width="100%" height="400"></iframe>
 
 ### Contract Breakdown
 
@@ -436,29 +420,41 @@ Uniswap Frontend has 6 groups of contract, number of contract of the contract gr
 
 </iframe>
 
-Volume of the contract groups range between \$531M+ (Uniswap_v1: Exchange) and \$206B+ (Uniswap_v2: Router02).
+Volume of the contract groups range between \$531M+ (Uniswap_v1: Exchange) and \$206B+ (Uniswap_v2: Router02). For every \$100 in total Uniswap Frontend volume, \$44 in Uniswap_v2: Router02, \$23 in Uniswap_v3: SwapRouter02, \$22 in Uniswap_v3: Router, \$11 in Uniswap_v3: UniversalRouter, the other 2 contract groups volume shares are tiny.
 
-<iframe src="https://dune.com/embeds/2781696/4632094" width="100%" height="400">
+::: {layout-ncol=2 .column-page}
 
-</iframe>
+::: {}
 
-For every \$100 in total Uniswap Frontend volume, \$44 in Uniswap_v2: Router02, \$23 in Uniswap_v3: SwapRouter02, \$22 in Uniswap_v3: Router, \$11 in Uniswap_v3: UniversalRouter, the other 2 contract groups volume shares are tiny.
+<iframe src="https://dune.com/embeds/2781696/4632094" width="100%" height="400"></iframe>
 
-<iframe src="https://dune.com/embeds/2781696/4632091" width="100%" height="400">
+:::
 
-</iframe>
+::: {}
 
-Number of trader onboarded by the contract groups range between 4.6K (Uniswap_v2: Router01) and 3M (Uniswap_v2: Router02).
+<iframe src="https://dune.com/embeds/2781696/4632091" width="100%" height="400"></iframe>
 
-<iframe src="https://dune.com/embeds/2781841/4632351" width="100%" height="400">
+:::
 
-</iframe>
+:::
 
-For every 100 new trader, 41 in Uniswap_v2: Router02, 27 in Uniswap_v3: SwapRouter02, 20 in Uniswap_v3: UniversalRouter, 11 in Uniswap_v3: Router, 1 in the other 2 contract groups.
+Number of trader onboarded by the contract groups range between 4.6K (Uniswap_v2: Router01) and 3M (Uniswap_v2: Router02). For every 100 new trader, 41 in Uniswap_v2: Router02, 27 in Uniswap_v3: SwapRouter02, 20 in Uniswap_v3: UniversalRouter, 11 in Uniswap_v3: Router, 1 in the other 2 contract groups.
 
-<iframe src="https://dune.com/embeds/2781841/4632350" width="100%" height="400">
+::: {layout-ncol=2 .column-page}
 
-</iframe>
+::: {}
+
+<iframe src="https://dune.com/embeds/2781841/4632351" width="100%" height="400"></iframe>
+
+:::
+
+::: {}
+
+<iframe src="https://dune.com/embeds/2781841/4632350" width="100%" height="400"></iframe>
+
+:::
+
+:::
 
 ### Traders who trade on Uniswap Frontend among other routes in each route
 
@@ -472,9 +468,7 @@ For every 100 traders who started with Unknowns, 14 traders also trade on Uniswa
 
 All traders, who trade on Oku, also trade on Uniswap Frontend.
 
-<iframe src="https://dune.com/embeds/2781103/4630433" width="100%" height="400">
-
-</iframe>
+<iframe src="https://dune.com/embeds/2781103/4630433" width="100%" height="400"></iframe>
 
 ### Traders who prefer Uniswap Frontend to other routes in each route
 
@@ -486,61 +480,73 @@ Other than Uniswap Frontend, each route has more traders, who prefer Uniswap Fro
 
 Oku does not appear on the chart because none of The Traders returned to trade on Oku after trading on Uniswap Frontend.
 
-<iframe src="https://dune.com/embeds/2779209/4626870" width="100%" height="400">
-
-</iframe>
+<iframe src="https://dune.com/embeds/2779209/4626870" width="100%" height="400"></iframe>
 
 ## Aggregators
 
-Volume of top 10 dapps range between \$1.2B (Fei) and \$109B+ (Oneinch). Volume of top 2 dapps are at least double those of the other dapps.
+Volume of top 10 dapps range between \$1.2B (Fei) and \$109B+ (Oneinch). Volume of top 2 dapps are at least double those of the other dapps. For every \$100 in total volume, \$47 in Oneinch, \$18 in Zeroex, \$9 in Gnosis, \$14 in not top 10 dapps, and \$2 in top 4-10 dapps.
 
-<iframe src="https://dune.com/embeds/2781885/4632432" width="100%" height="400">
+::: {layout-ncol=2 .column-page}
 
-</iframe>
+::: {}
 
-For every \$100 in total volume, \$47 in Oneinch, \$18 in Zeroex, \$9 in Gnosis, \$14 in not top 10 dapps, and \$2 in top 4-10 dapps
+<iframe src="https://dune.com/embeds/2781885/4632432" width="100%" height="400"></iframe>
 
-<iframe src="https://dune.com/embeds/2781885/4632429" width="100%" height="400">
+:::
 
-</iframe>
+::: {}
 
-Number of new trader of top 10 dapps range between 2K+ (Fei) and 1.2M (Oneinch). Number of new trader of top 2 dapps are at least 5 folds of the other dapps.
+<iframe src="https://dune.com/embeds/2781885/4632429" width="100%" height="400"></iframe>
 
-<iframe src="https://dune.com/embeds/2782037/4632672" width="100%" height="400">
+:::
 
-</iframe>
+:::
 
-For every 100 new traders, 21 in Oneinch, 18 in Zeroex, 54 in not top 10 dapps, and 7 in top 3-10 dapps.
+Number of new trader of top 10 dapps range between 2K+ (Fei) and 1.2M (Oneinch). Number of new trader of top 2 dapps are at least 5 folds of the other dapps. For every 100 new traders, 21 in Oneinch, 18 in Zeroex, 54 in not top 10 dapps, and 7 in top 3-10 dapps.
 
-<iframe src="https://dune.com/embeds/2782037/4632671" width="100%" height="400">
+::: {layout-ncol=2 .column-page}
 
-</iframe>
+::: {}
+
+<iframe src="https://dune.com/embeds/2782037/4632672" width="100%" height="400"></iframe>
+
+:::
+
+::: {}
+
+<iframe src="https://dune.com/embeds/2782037/4632671" width="100%" height="400"></iframe>
+
+:::
+
+:::
 
 ## MEV
 
-Volume of top 10 volume traders range between \$7B+ and \$16B+.
+Volume of top 10 volume traders range between \$7B+ and \$16B+. Top 10 traders account for \$14 in every \$100 of total MEV volume.
 
-<iframe src="https://dune.com/embeds/2806012/4675120" width="100%" height="400">
+::: {layout-ncol=2 .column-page}
 
-</iframe>
+::: {}
 
-Top 10 traders account for \$14 in every \$100 of total MEV volume.
+<iframe src="https://dune.com/embeds/2806012/4675120" width="100%" height="400"></iframe>
 
-<iframe src="https://dune.com/embeds/2806012/4675122" width="100%" height="400">
+:::
 
-</iframe>
+::: {}
+
+<iframe src="https://dune.com/embeds/2806012/4675122" width="100%" height="400"></iframe>
+
+:::
+
+:::
 
 Number of trade of top 10 volume traders range between 4K+ (8th trader) and 103K+ (4th trader).
 
-<iframe src="https://dune.com/embeds/2806012/4675287" width="100%" height="400">
-
-</iframe>
+<iframe src="https://dune.com/embeds/2806012/4675287" width="100%" height="400"></iframe>
 
 Volume per trade of top 10 volume traders range between \$76K+ (10th trader) and \$2M (8th trader).
 
-<iframe src="https://dune.com/embeds/2806012/4675365" width="100%" height="400">
-
-</iframe>
+<iframe src="https://dune.com/embeds/2806012/4675365" width="100%" height="400"></iframe>
 
 Volume of the largest trader is at least 60% larger than the following ones. The trader accumulates the volume by trade more than most, not all, of the traders in both of number of trade, and volume per trade.
 
@@ -568,25 +574,19 @@ flowchart LR
 
 Volume of the chains range between \$718 (Optimism) and \$94K (Arbitrum).
 
-<iframe src="https://dune.com/embeds/2762135/4597054" width="100%" height="400">
-
-</iframe>
+<iframe src="https://dune.com/embeds/2762135/4597054" width="100%" height="400"></iframe>
 
 Trader onboarded to Oku by the chains range between 2 (Ethereum) and 19 (Arbitrum).
 
-<iframe src="https://dune.com/embeds/2814178/4691347" width="100%" height="400">
-
-</iframe>
+<iframe src="https://dune.com/embeds/2814178/4691347" width="100%" height="400"></iframe>
 
 For every \$100 in Oku volume, \$97 in Arbitrum, \$2 in Ethereum, and \$1 in Optimism.
 
-<iframe src="https://dune.com/embeds/2762135/4616715" width="100%" height="400">
-
-</iframe>
+<iframe src="https://dune.com/embeds/2762135/4616715" width="100%" height="400"></iframe>
 
 32 traders placed \$97K+ volume (NewOrder), 18 of 32 traders canceled \$14K+, 14 of 32 traders claimed \$3.6K out of \$4.4K of total volume of filled orders, which means only 4.5% of total volume has been filled.
 
-::: {layout-ncol=2 .column-screen-inset}
+::: {layout-ncol=2 .column-page}
 
 ::: {}
 
@@ -632,7 +632,7 @@ In Unknowns route, I identify 2 contracts of 2 market makers, which are `0x9507c
 
 The 2 contracts account for \$11 in every \$100 of total Unknowns volume, 8 trades in every 1000 trades of total Unknowns trades.
 
-::: {layout-ncol=2 .column-screen-inset}
+::: {layout-ncol=2 .column-page}
 
 ::: {}
 
@@ -744,7 +744,7 @@ When compare each route volume share in total Uniswap volume of the recent 8 wee
 
 -   Meanwhile, Unknowns weekly volume shares were mostly triple of all time volume share.
 
-::: {layout-nrow=2 .column-screen-inset}
+::: {layout-nrow=2 .column-page}
 
 ::: {}
 
@@ -776,7 +776,7 @@ When compare share of number of new trader each route onboarded to Uniswap of th
 
 -   Weekly new trader shares of Uniswap Frontend and MEV were lower than all time shares, while weekly new trader shares of Aggregators and Unknowns were higher than all time shares.
 
-::: {layout-nrow=2 .column-screen-inset}
+::: {layout-nrow=2 .column-page}
 
 ::: {}
 
