@@ -247,7 +247,7 @@ gtag('config', 'G-S7Y9SX5DXE', { 'anonymize_ip': true});
 
 
 
-<section id="introduction" class="level1">
+<section id="introduction" class="level1 page-columns page-full">
 <h1>Introduction</h1>
 <p><em>If not specified, data in this post is of all time Uniswap history until July 30, 2023.</em></p>
 <p><em>If you see error of loading charts, please refresh to reload this page (a few times if necessary).</em></p>
@@ -257,7 +257,7 @@ gtag('config', 'G-S7Y9SX5DXE', { 'anonymize_ip': true});
 <iframe src="https://dune.com/embeds/2739060/4637643" width="100%" height="200">
 </iframe>
 <p>The contracts can be grouped into a few trading routes by referring to contracts’ label supported by popular crypto application such as a block explorer, or a crypto analytic platform. In this post, I use label provided by <a href="https://dune.com/">Dune</a> (the main source), and <a href="https://etherscan.io/">Etherscan</a> to group the contracts into routes. The routes include (1) Uniswap Frontend, (2) Aggregators, (3) MEV, (4) Oku, and (5) Unknowns.</p>
-<section id="what-are-the-routes-exactly" class="level2">
+<section id="what-are-the-routes-exactly" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="what-are-the-routes-exactly">What are the routes, exactly?</h2>
 <ul>
 <li><p>Uniswap Frontend is <a href="https://app.uniswap.org/">Uniswap official application</a>, where normal traders use to execute their trades.</p></li>
@@ -266,13 +266,20 @@ gtag('config', 'G-S7Y9SX5DXE', { 'anonymize_ip': true});
 <li><p>Oku is an advanced <a href="https://oku.trade/">application</a>, backed by Uniswap Foundation, launched in early June 2023, where normal traders can execute market order or limit order. <em>Caveat: a market order from Oku is indistinguishable from a swap on Uniswap Frontend, thus is included in Uniswap Frontend route.</em></p></li>
 <li><p>Unknowns is a group of smart contracts, which are not yet labeled.</p></li>
 </ul>
-<p>Number of contract of the routes range between 1 (Oku) and 349K (Aggregators).</p>
 <p><em>Caveat: Uniswap Frontend has a few main contracts called router. Most of 1.8K contracts you see in the chart below are Uniswap v1 pools (exchanges in v1 technical term). In Uniswap v1, pools contract are called directly, which makes it hard to differentiate between (1) trade made on Uniswap application and (2) trade made through API. My assumption here is the v1 pools contracts were mainly called by the type (1) trade. Thus I include all of the contracts in Uniswap Frontend.</em></p>
+<p>Number of contract of the routes range between 1 (Oku) and 349K (Aggregators). For every 100 contracts called, 79 in Aggregators, 20 in Unknowns, MEV and Uniswap Frontend roughly equally split the rest.</p>
+<div class="column-page quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <iframe src="https://dune.com/embeds/2785328/4637878" width="100%" height="400">
 </iframe>
-<p>For every 100 contracts called, 79 in Aggregators, 20 in Unknowns, MEV and Uniswap Frontend roughly equally split the rest.</p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <iframe src="https://dune.com/embeds/2785328/4637963" width="100%" height="400">
 </iframe>
+</div>
+</div>
+</div>
 <p>We have learned the definition about the trading routes, which a trader can take to trade in Uniswap pools. The rest of this post, let’s explore the routes’ role in onboarding trader and growing Uniswap trades.</p>
 </section>
 </section>
@@ -287,26 +294,40 @@ gtag('config', 'G-S7Y9SX5DXE', { 'anonymize_ip': true});
 <li><p>A third of total Oku traders, trade more on Oku than on the other routes. On average, traders pay less gas fee on Oku than on the other routes.</p></li>
 </ol>
 </section>
-<section id="contribution-of-the-routes" class="level1">
+<section id="contribution-of-the-routes" class="level1 page-columns page-full">
 <h1>Contribution of the routes</h1>
-<section id="what-are-the-routes-contribution-in-onboarding-new-traders-to-uniswap" class="level2">
+<section id="what-are-the-routes-contribution-in-onboarding-new-traders-to-uniswap" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="what-are-the-routes-contribution-in-onboarding-new-traders-to-uniswap">What are the routes’ contribution in onboarding new traders to Uniswap?</h2>
 <p><em>A trader is counted to a route if the route onboard the trader to Uniswap, i.e.&nbsp;the trader executed the first Uniswap trade on the route.</em></p>
-<p>Number of trader onboarded by the routes range between 2 (Oku) and 6.3M (Uniswap Frontend).</p>
+<p>Number of trader onboarded by the routes range between 2 (Oku) and 6.3M (Uniswap Frontend). For every 100 traders, 55 started with Uniswap Frontend, 35 started with Aggregators, 9 started with Unknowns, and 1 started with MEV.</p>
+<div class="column-page quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <iframe src="https://dune.com/embeds/2760010/4594372" width="100%" height="400">
 </iframe>
-<p>For every 100 traders, 55 started with Uniswap Frontend, 35 started with Aggregators, 9 started with Unknowns, and 1 started with MEV.</p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <iframe src="https://dune.com/embeds/2760010/4616670" width="100%" height="400">
 </iframe>
+</div>
+</div>
+</div>
 </section>
-<section id="what-are-the-routes-contribution-to-total-uniswap-volume" class="level2">
+<section id="what-are-the-routes-contribution-to-total-uniswap-volume" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="what-are-the-routes-contribution-to-total-uniswap-volume">What are the routes’ contribution to total Uniswap volume?</h2>
-<p>Volume of the routes range between $97K+ (Oku) and $678B+ (MEV).</p>
+<p>Volume of the routes range between $97K+ (Oku) and $678B+ (MEV). For every $100 in total volume, $42 from MEV, $29 from Uniswap Frontend, $15 from Aggregators, and $14 from Unknowns.</p>
+<div class="column-page quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <iframe src="https://dune.com/embeds/2759820/4594595" width="100%" height="400">
 </iframe>
-<p>For every $100 in total volume, $42 from MEV, $29 from Uniswap Frontend, $15 from Aggregators, and $14 from Unknowns.</p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <iframe src="https://dune.com/embeds/2759820/4616666" width="100%" height="400">
 </iframe>
+</div>
+</div>
+</div>
 </section>
 <section id="do-the-routes-have-traders-in-common" class="level2">
 <h2 class="anchored" data-anchor-id="do-the-routes-have-traders-in-common">Do the routes have traders in common?</h2>
@@ -512,43 +533,71 @@ gtag('config', 'G-S7Y9SX5DXE', { 'anonymize_ip': true});
 <section id="dive-deeper-into-each-route" class="level1 page-columns page-full">
 <h1>Dive deeper into each route</h1>
 <p><em>Traders, who are new to each route, are not necessarily new to Uniswap.</em></p>
-<section id="uniswap-frontend" class="level2">
+<section id="uniswap-frontend" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="uniswap-frontend">Uniswap Frontend</h2>
-<section id="version-breakdown" class="level3">
+<section id="version-breakdown" class="level3 page-columns page-full">
 <h3 class="anchored" data-anchor-id="version-breakdown">Version Breakdown</h3>
-<p>Volume of the versions range between $847M+ (v1) and $234B+ (v3).</p>
+<p>Volume of the versions range between $847M+ (v1) and $234B+ (v3). For every $10K in total Uniswap Frontend volume, $5K in v3, $4.99K in v2, and $1 in v1.</p>
+<div class="column-page quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <iframe src="https://dune.com/embeds/2781640/4632011" width="100%" height="400">
 </iframe>
-<p>For every $10K in total Uniswap Frontend volume, $5K in v3, $4.99K in v2, and $1 in v1.</p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <iframe src="https://dune.com/embeds/2781640/4632009" width="100%" height="400">
 </iframe>
-<p>Traders onboarded by the versions range between 73K+ (v1) and 4M (v2).</p>
+</div>
+</div>
+</div>
+<p>Traders onboarded by the versions range between 73K+ (v1) and 4M (v2). For every 100 traders onboarded to Uniswap Frontend, 55 in v2, 44 in v3, 1 in v1.</p>
+<div class="column-page quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <iframe src="https://dune.com/embeds/2781808/4632286" width="100%" height="400">
 </iframe>
-<p>For every 100 traders onboarded to Uniswap Frontend, 55 in v2, 44 in v3, 1 in v1.</p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <iframe src="https://dune.com/embeds/2781808/4632285" width="100%" height="400">
 </iframe>
+</div>
+</div>
+</div>
 <p>In the first year, i.e.&nbsp;first 53 weeks, volume of v3 grew faster than that of v2. However, in the second year, volume of v2 grew faster than that of v3. After the first 2 years, volume of v3 surpassed that of v2 again. At week 117 (i.e.&nbsp;118 weeks since v3 launched, as of July 30, 2023), v3 volume is 9% higher than that of v2.</p>
 <iframe src="https://dune.com/embeds/2806191/4675491" width="100%" height="400">
 </iframe>
 </section>
-<section id="contract-breakdown" class="level3">
+<section id="contract-breakdown" class="level3 page-columns page-full">
 <h3 class="anchored" data-anchor-id="contract-breakdown">Contract Breakdown</h3>
 <p>Uniswap Frontend has 6 groups of contract, number of contract of the contract groups range between 1 (Uniswap_v2: Router01, Uniswap_v2: Router02, and Uniswap_v3: Router) and 1.8K (Uniswap_v1: Exchange).</p>
 <iframe src="https://dune.com/embeds/2804770/4672632" width="100%" height="400">
 </iframe>
-<p>Volume of the contract groups range between $531M+ (Uniswap_v1: Exchange) and $206B+ (Uniswap_v2: Router02).</p>
+<p>Volume of the contract groups range between $531M+ (Uniswap_v1: Exchange) and $206B+ (Uniswap_v2: Router02). For every $100 in total Uniswap Frontend volume, $44 in Uniswap_v2: Router02, $23 in Uniswap_v3: SwapRouter02, $22 in Uniswap_v3: Router, $11 in Uniswap_v3: UniversalRouter, the other 2 contract groups volume shares are tiny.</p>
+<div class="column-page quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <iframe src="https://dune.com/embeds/2781696/4632094" width="100%" height="400">
 </iframe>
-<p>For every $100 in total Uniswap Frontend volume, $44 in Uniswap_v2: Router02, $23 in Uniswap_v3: SwapRouter02, $22 in Uniswap_v3: Router, $11 in Uniswap_v3: UniversalRouter, the other 2 contract groups volume shares are tiny.</p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <iframe src="https://dune.com/embeds/2781696/4632091" width="100%" height="400">
 </iframe>
-<p>Number of trader onboarded by the contract groups range between 4.6K (Uniswap_v2: Router01) and 3M (Uniswap_v2: Router02).</p>
+</div>
+</div>
+</div>
+<p>Number of trader onboarded by the contract groups range between 4.6K (Uniswap_v2: Router01) and 3M (Uniswap_v2: Router02). For every 100 new trader, 41 in Uniswap_v2: Router02, 27 in Uniswap_v3: SwapRouter02, 20 in Uniswap_v3: UniversalRouter, 11 in Uniswap_v3: Router, 1 in the other 2 contract groups.</p>
+<div class="column-page quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <iframe src="https://dune.com/embeds/2781841/4632351" width="100%" height="400">
 </iframe>
-<p>For every 100 new trader, 41 in Uniswap_v2: Router02, 27 in Uniswap_v3: SwapRouter02, 20 in Uniswap_v3: UniversalRouter, 11 in Uniswap_v3: Router, 1 in the other 2 contract groups.</p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <iframe src="https://dune.com/embeds/2781841/4632350" width="100%" height="400">
 </iframe>
+</div>
+</div>
+</div>
 </section>
 <section id="traders-who-trade-on-uniswap-frontend-among-other-routes-in-each-route" class="level3">
 <h3 class="anchored" data-anchor-id="traders-who-trade-on-uniswap-frontend-among-other-routes-in-each-route">Traders who trade on Uniswap Frontend among other routes in each route</h3>
@@ -570,29 +619,50 @@ gtag('config', 'G-S7Y9SX5DXE', { 'anonymize_ip': true});
 </iframe>
 </section>
 </section>
-<section id="aggregators" class="level2">
+<section id="aggregators" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="aggregators">Aggregators</h2>
-<p>Volume of top 10 dapps range between $1.2B (Fei) and $109B+ (Oneinch). Volume of top 2 dapps are at least double those of the other dapps.</p>
+<p>Volume of top 10 dapps range between $1.2B (Fei) and $109B+ (Oneinch). Volume of top 2 dapps are at least double those of the other dapps. For every $100 in total volume, $47 in Oneinch, $18 in Zeroex, $9 in Gnosis, $14 in not top 10 dapps, and $2 in top 4-10 dapps.</p>
+<div class="column-page quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <iframe src="https://dune.com/embeds/2781885/4632432" width="100%" height="400">
 </iframe>
-<p>For every $100 in total volume, $47 in Oneinch, $18 in Zeroex, $9 in Gnosis, $14 in not top 10 dapps, and $2 in top 4-10 dapps</p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <iframe src="https://dune.com/embeds/2781885/4632429" width="100%" height="400">
 </iframe>
-<p>Number of new trader of top 10 dapps range between 2K+ (Fei) and 1.2M (Oneinch). Number of new trader of top 2 dapps are at least 5 folds of the other dapps.</p>
+</div>
+</div>
+</div>
+<p>Number of new trader of top 10 dapps range between 2K+ (Fei) and 1.2M (Oneinch). Number of new trader of top 2 dapps are at least 5 folds of the other dapps. For every 100 new traders, 21 in Oneinch, 18 in Zeroex, 54 in not top 10 dapps, and 7 in top 3-10 dapps.</p>
+<div class="column-page quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <iframe src="https://dune.com/embeds/2782037/4632672" width="100%" height="400">
 </iframe>
-<p>For every 100 new traders, 21 in Oneinch, 18 in Zeroex, 54 in not top 10 dapps, and 7 in top 3-10 dapps.</p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <iframe src="https://dune.com/embeds/2782037/4632671" width="100%" height="400">
 </iframe>
+</div>
+</div>
+</div>
 </section>
-<section id="mev" class="level2">
+<section id="mev" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="mev">MEV</h2>
-<p>Volume of top 10 volume traders range between $7B+ and $16B+.</p>
+<p>Volume of top 10 volume traders range between $7B+ and $16B+. Top 10 traders account for $14 in every $100 of total MEV volume.</p>
+<div class="column-page quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <iframe src="https://dune.com/embeds/2806012/4675120" width="100%" height="400">
 </iframe>
-<p>Top 10 traders account for $14 in every $100 of total MEV volume.</p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <iframe src="https://dune.com/embeds/2806012/4675122" width="100%" height="400">
 </iframe>
+</div>
+</div>
+</div>
 <p>Number of trade of top 10 volume traders range between 4K+ (8th trader) and 103K+ (4th trader).</p>
 <iframe src="https://dune.com/embeds/2806012/4675287" width="100%" height="400">
 </iframe>
@@ -634,7 +704,7 @@ gtag('config', 'G-S7Y9SX5DXE', { 'anonymize_ip': true});
 <iframe src="https://dune.com/embeds/2762135/4616715" width="100%" height="400">
 </iframe>
 <p>32 traders placed $97K+ volume (NewOrder), 18 of 32 traders canceled $14K+, 14 of 32 traders claimed $3.6K out of $4.4K of total volume of filled orders, which means only 4.5% of total volume has been filled.</p>
-<div class="column-screen-inset quarto-layout-panel">
+<div class="column-page quarto-layout-panel">
 <div class="quarto-layout-row quarto-layout-valign-top">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <iframe src="https://dune.com/embeds/2746018/4654270" width="100%" height="400">
@@ -665,7 +735,7 @@ gtag('config', 'G-S7Y9SX5DXE', { 'anonymize_ip': true});
 <h2 class="anchored" data-anchor-id="unknowns">Unknowns</h2>
 <p>In Unknowns route, I identify 2 contracts of 2 market makers, which are <code>0x9507c04b10486547584c37bcbd931b2a4fee9a41</code> of <a href="https://www.jumptrading.com/">Jump Trading</a> and <code>0x00000000ae347930bd1e7b0f35588b92280f9e75</code> of <a href="http://wintermute.com">Wintermute</a>.</p>
 <p>The 2 contracts account for $11 in every $100 of total Unknowns volume, 8 trades in every 1000 trades of total Unknowns trades.</p>
-<div class="column-screen-inset quarto-layout-panel">
+<div class="column-page quarto-layout-panel">
 <div class="quarto-layout-row quarto-layout-valign-top">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <iframe src="https://dune.com/embeds/2785813/4638587" width="100%" height="400">
@@ -738,7 +808,7 @@ gtag('config', 'G-S7Y9SX5DXE', { 'anonymize_ip': true});
 <li><p>Weekly shares of Uniswap Frontend and Aggregators were mostly lower than all time shares, however the gaps were small compare to the gaps of MEV, which weekly shares were about half of all time volume share.</p></li>
 <li><p>Meanwhile, Unknowns weekly volume shares were mostly triple of all time volume share.</p></li>
 </ul>
-<div class="column-screen-inset quarto-layout-panel">
+<div class="column-page quarto-layout-panel">
 <div class="quarto-layout-row quarto-layout-valign-top">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <iframe src="https://dune.com/embeds/2792215/4651766" width="100%" height="400">
@@ -764,7 +834,7 @@ gtag('config', 'G-S7Y9SX5DXE', { 'anonymize_ip': true});
 <ul>
 <li>Weekly new trader shares of Uniswap Frontend and MEV were lower than all time shares, while weekly new trader shares of Aggregators and Unknowns were higher than all time shares.</li>
 </ul>
-<div class="column-screen-inset quarto-layout-panel">
+<div class="column-page quarto-layout-panel">
 <div class="quarto-layout-row quarto-layout-valign-top">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <iframe src="https://dune.com/embeds/2795043/4654716" width="100%" height="400">
