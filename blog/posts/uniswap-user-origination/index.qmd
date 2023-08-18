@@ -44,7 +44,7 @@ The contracts can be grouped into a few trading routes by referring to contracts
 
 Number of contract of the routes range between 1 (Oku) and 349K (Aggregators). For every 100 contracts called, 79 in Aggregators, 20 in Unknowns, MEV and Uniswap Frontend roughly equally split the rest.
 
-::: {layout-ncol=2 .column-page}
+::: {layout-ncol=2 .column-screen-inset}
 
 ::: {}
 
@@ -84,7 +84,7 @@ We have learned the definition about the trading routes, which a trader can take
 
 Number of trader onboarded by the routes range between 2 (Oku) and 6.3M (Uniswap Frontend). For every 100 traders, 55 started with Uniswap Frontend, 35 started with Aggregators, 9 started with Unknowns, and 1 started with MEV.
 
-::: {layout-ncol=2 .column-page}
+::: {layout-ncol=2 .column-screen-inset}
 
 ::: {}
 
@@ -104,7 +104,7 @@ Number of trader onboarded by the routes range between 2 (Oku) and 6.3M (Uniswap
 
 Volume of the routes range between \$97K+ (Oku) and \$678B+ (MEV). For every \$100 in total volume, \$42 from MEV, \$29 from Uniswap Frontend, \$15 from Aggregators, and \$14 from Unknowns.
 
-::: {layout-ncol=2 .column-page}
+::: {layout-ncol=2 .column-screen-inset}
 
 ::: {}
 
@@ -374,7 +374,7 @@ Traders, who trade through Unknowns, tend to trade, more in PEPE / ETH and USDC 
 
 Volume of the versions range between \$847M+ (v1) and \$234B+ (v3). For every \$10K in total Uniswap Frontend volume, \$5K in v3, \$4.99K in v2, and \$1 in v1.
 
-::: {layout-ncol=2 .column-page}
+::: {layout-ncol=2 .column-screen-inset}
 
 ::: {}
 
@@ -392,7 +392,7 @@ Volume of the versions range between \$847M+ (v1) and \$234B+ (v3). For every \$
 
 Traders onboarded by the versions range between 73K+ (v1) and 4M (v2). For every 100 traders onboarded to Uniswap Frontend, 55 in v2, 44 in v3, 1 in v1.
 
-::: {layout-ncol=2 .column-page}
+::: {layout-ncol=2 .column-screen-inset}
 
 ::: {}
 
@@ -422,7 +422,7 @@ Uniswap Frontend has 6 groups of contract, number of contract of the contract gr
 
 Volume of the contract groups range between \$531M+ (Uniswap_v1: Exchange) and \$206B+ (Uniswap_v2: Router02). For every \$100 in total Uniswap Frontend volume, \$44 in Uniswap_v2: Router02, \$23 in Uniswap_v3: SwapRouter02, \$22 in Uniswap_v3: Router, \$11 in Uniswap_v3: UniversalRouter, the other 2 contract groups volume shares are tiny.
 
-::: {layout-ncol=2 .column-page}
+::: {layout-ncol=2 .column-screen-inset}
 
 ::: {}
 
@@ -440,7 +440,7 @@ Volume of the contract groups range between \$531M+ (Uniswap_v1: Exchange) and \
 
 Number of trader onboarded by the contract groups range between 4.6K (Uniswap_v2: Router01) and 3M (Uniswap_v2: Router02). For every 100 new trader, 41 in Uniswap_v2: Router02, 27 in Uniswap_v3: SwapRouter02, 20 in Uniswap_v3: UniversalRouter, 11 in Uniswap_v3: Router, 1 in the other 2 contract groups.
 
-::: {layout-ncol=2 .column-page}
+::: {layout-ncol=2 .column-screen-inset}
 
 ::: {}
 
@@ -486,7 +486,7 @@ Oku does not appear on the chart because none of The Traders returned to trade o
 
 Volume of top 10 dapps range between \$1.2B (Fei) and \$109B+ (Oneinch). Volume of top 2 dapps are at least double those of the other dapps. For every \$100 in total volume, \$47 in Oneinch, \$18 in Zeroex, \$9 in Gnosis, \$14 in not top 10 dapps, and \$2 in top 4-10 dapps.
 
-::: {layout-ncol=2 .column-page}
+::: {layout-ncol=2 .column-screen-inset}
 
 ::: {}
 
@@ -504,7 +504,7 @@ Volume of top 10 dapps range between \$1.2B (Fei) and \$109B+ (Oneinch). Volume 
 
 Number of new trader of top 10 dapps range between 2K+ (Fei) and 1.2M (Oneinch). Number of new trader of top 2 dapps are at least 5 folds of the other dapps. For every 100 new traders, 21 in Oneinch, 18 in Zeroex, 54 in not top 10 dapps, and 7 in top 3-10 dapps.
 
-::: {layout-ncol=2 .column-page}
+::: {layout-ncol=2 .column-screen-inset}
 
 ::: {}
 
@@ -524,7 +524,7 @@ Number of new trader of top 10 dapps range between 2K+ (Fei) and 1.2M (Oneinch).
 
 Volume of top 10 volume traders range between \$7B+ and \$16B+. Top 10 traders account for \$14 in every \$100 of total MEV volume.
 
-::: {layout-ncol=2 .column-page}
+::: {layout-ncol=2 .column-screen-inset}
 
 ::: {}
 
@@ -586,7 +586,7 @@ For every \$100 in Oku volume, \$97 in Arbitrum, \$2 in Ethereum, and \$1 in Opt
 
 32 traders placed \$97K+ volume (NewOrder), 18 of 32 traders canceled \$14K+, 14 of 32 traders claimed \$3.6K out of \$4.4K of total volume of filled orders, which means only 4.5% of total volume has been filled.
 
-::: {layout-ncol=2 .column-page}
+::: {layout-ncol=2 .column-screen-inset}
 
 ::: {}
 
@@ -632,7 +632,7 @@ In Unknowns route, I identify 2 contracts of 2 market makers, which are `0x9507c
 
 The 2 contracts account for \$11 in every \$100 of total Unknowns volume, 8 trades in every 1000 trades of total Unknowns trades.
 
-::: {layout-ncol=2 .column-page}
+::: {layout-ncol=2 .column-screen-inset}
 
 ::: {}
 
@@ -744,7 +744,7 @@ When compare each route volume share in total Uniswap volume of the recent 8 wee
 
 -   Meanwhile, Unknowns weekly volume shares were mostly triple of all time volume share.
 
-::: {layout-nrow=2 .column-page}
+::: {layout-nrow=2 .column-screen-inset}
 
 ::: {}
 
@@ -776,7 +776,7 @@ When compare share of number of new trader each route onboarded to Uniswap of th
 
 -   Weekly new trader shares of Uniswap Frontend and MEV were lower than all time shares, while weekly new trader shares of Aggregators and Unknowns were higher than all time shares.
 
-::: {layout-nrow=2 .column-page}
+::: {layout-nrow=2 .column-screen-inset}
 
 ::: {}
 
