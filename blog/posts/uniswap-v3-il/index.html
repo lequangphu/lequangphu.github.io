@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Lê Quang Phú">
+<meta name="dcterms.date" content="2023-08-30">
+<meta name="description" content="Analyze the risk of providing liquidity into pools of Uniswap V3.">
 
-<title>Lê Quang Phú - 🤗</title>
+<title>Lê Quang Phú - Uniswap V3 Impermanent Loss</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,24 +26,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<script src="../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -61,35 +62,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-image','listing-date','listing-title','listing-reading-time','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-S7Y9SX5DXE"></script>
 
 <script type="text/javascript">
@@ -100,15 +72,15 @@ gtag('js', new Date());
 gtag('config', 'G-S7Y9SX5DXE', { 'anonymize_ip': true});
 </script>
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<meta property="og:title" content="Lê Quang Phú - 🤗">
+<meta property="og:title" content="Lê Quang Phú - Uniswap V3 Impermanent Loss">
+<meta property="og:description" content="Analyze the risk of providing liquidity into pools of Uniswap V3.">
 <meta property="og:image" content="https://lequangphu.github.io/blog/posts/uniswap-v3-il/preview.png">
 <meta property="og:site-name" content="Lê Quang Phú">
 <meta property="og:image:height" content="628">
 <meta property="og:image:width" content="1200">
-<meta name="twitter:title" content="Lê Quang Phú - 🤗">
+<meta name="twitter:title" content="Lê Quang Phú - Uniswap V3 Impermanent Loss">
+<meta name="twitter:description" content="Analyze the risk of providing liquidity into pools of Uniswap V3.">
 <meta name="twitter:image" content="https://lequangphu.github.io/blog/posts/uniswap-v3-il/preview.png">
 <meta name="twitter:creator" content="@0xphu">
 <meta name="twitter:image-height" content="628">
@@ -116,14 +88,14 @@ gtag('config', 'G-S7Y9SX5DXE', { 'anonymize_ip': true});
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../../index.html">
     <span class="navbar-title">Lê Quang Phú</span>
     </a>
   </div>
@@ -134,15 +106,15 @@ gtag('config', 'G-S7Y9SX5DXE', { 'anonymize_ip': true});
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" rel="" target="" aria-current="page">
+    <a class="nav-link" href="../../../index.html" rel="" target="">
  <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./blog" rel="" target="">
+    <a class="nav-link" href="../../../blog" rel="" target="">
  <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html" rel="" target="">
+    <a class="nav-link" href="../../../about.html" rel="" target="">
  <span class="menu-text">About</span></a>
   </li>  
 </ul>
@@ -155,276 +127,117 @@ gtag('config', 'G-S7Y9SX5DXE', { 'anonymize_ip': true});
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Uniswap V3 Impermanent Loss</h1>
+                  <div>
+        <div class="description">
+          Analyze the risk of providing liquidity into pools of Uniswap V3.
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">analysis</div>
+                <div class="quarto-category">crypto</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Lê Quang Phú </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">August 30, 2023</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#impermanent-loss" id="toc-impermanent-loss" class="nav-link" data-scroll-target="#impermanent-loss">Impermanent Loss</a>
+  <ul class="collapse">
+  <li><a href="#uniswap-v3" id="toc-uniswap-v3" class="nav-link" data-scroll-target="#uniswap-v3">Uniswap V3</a></li>
+  <li><a href="#top-pools" id="toc-top-pools" class="nav-link" data-scroll-target="#top-pools">Top Pools</a></li>
+  <li><a href="#top-lp" id="toc-top-lp" class="nav-link" data-scroll-target="#top-lp">Top LP</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">🤗</h1>
-</div>
-
-
-
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
-
-</header>
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
+<section id="introduction" class="level1">
+<h1>Introduction</h1>
+<p>Liquidity Providers (LPs) deposit assets into Uniswap’s pools to earn trading fee paid by traders. It’s an investing strategy. Let’s call the strategy LPing.</p>
+<p>In the period of 60 days from July 1 to August 29, 2023, Uniswap V3 TVL on Ethereum ranged between $2.3B and $2.9B. TVL was trending down from $2.8B to $2.4B.</p>
+<iframe src="https://dune.com/embeds/2974812/4942750" width="100%" height="400">
+</iframe>
+<p>What can they do with the assets instead? The simplest stategy is to hold them, let’s call the stragtegy Hodling.</p>
+<p>Compare to Hodling, the upside of LPing is earning fee. What is the downside? It’s the loss of assets value, i.e.&nbsp;impermanent loss (IL).</p>
+<p>Uniswap document has a section to understand more about IL, which you can read <a href="https://docs.uniswap.org/contracts/v2/concepts/advanced-topics/understanding-returns">here</a>.</p>
+<p>In this post, let’s explore IL of LPing in Uniswap V3.</p>
+</section>
+<section id="impermanent-loss" class="level1">
+<h1>Impermanent Loss</h1>
+<section id="uniswap-v3" class="level2">
+<h2 class="anchored" data-anchor-id="uniswap-v3">Uniswap V3</h2>
+<p>During the 60 days period, on average, IL of Uniswap V3 ranged between $59K and $1.1M per day. IL percentage ranged between 0.002% and 0.042% per day.</p>
+<iframe src="https://dune.com/embeds/2974812/4942263" width="100%" height="400">
+</iframe>
+</section>
+<section id="top-pools" class="level2">
+<h2 class="anchored" data-anchor-id="top-pools">Top Pools</h2>
+<p>Average daily IL of top 8 TVL pools ranged between $1 (USDC-USDT : 1%, top stablecoins pool) and $16K (USDC-WETH : 0.05%, the largest TVL pool). % IL of most of the pools is either 0.001% or 0.004%.</p>
+<iframe src="https://dune.com/embeds/2982082/4945495" width="100%" height="400">
+</iframe>
+<iframe src="https://dune.com/embeds/2982082/4945962" width="100%" height="400">
+</iframe>
+<p>The top TVL pools are also the top volume pools.</p>
+<iframe src="https://dune.com/embeds/2982261/4945875" width="100%" height="400">
+</iframe>
+<iframe src="https://dune.com/embeds/2982261/4945909" width="100%" height="400">
+</iframe>
+<p>Average daily IL of top IL pools ranged between $21K (TOWN-WETH : 1%) and $277K (ITP-WETH : 0.3%). Meanwhile, % IL ranged between 1.6% (FUN-WETH : 1%) and 71.4% (USDC-UST : 1%). Of 8 top pools, % IL of 3 pools are 20% or more, % IL of other 5 pools are 5% or less.</p>
+<iframe src="https://dune.com/embeds/2982309/4945977" width="100%" height="400">
+</iframe>
+<iframe src="https://dune.com/embeds/2982309/4945976" width="100%" height="400">
+</iframe>
+</section>
+<section id="top-lp" class="level2">
+<h2 class="anchored" data-anchor-id="top-lp">Top LP</h2>
+<p>Interestingly, 7 out of 8 in top 8 positions (largest TVL) didn’t have IL. IL of the largest position was only $1.1K, i.e.&nbsp;0.003% in percentage of TVL.</p>
+<iframe src="https://dune.com/embeds/2982776/4946830" width="100%" height="400">
+</iframe>
+<iframe src="https://dune.com/embeds/2982776/4946832" width="100%" height="400">
+</iframe>
 
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="analysis,crypto" data-listing-date-sort="1693353600000" data-listing-file-modified-sort="1693421959473" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
-<a href="./blog/posts/uniswap-v3-il/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="./blog/posts/uniswap-v3-il/preview.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Uniswap V3 Impermanent Loss
-</h5>
-<div class="listing-reading-time card-text text-muted">
-2 min
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('analysis'); return false;">
-analysis
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('crypto'); return false;">
-crypto
-</div>
-</div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Aug 30, 2023
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="1" data-categories="analysis,crypto" data-listing-date-sort="1690848000000" data-listing-file-modified-sort="1693421959473" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="31">
-<a href="./blog/posts/uniswap-user-origination/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="./blog/posts/uniswap-user-origination/preview.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Uniswap User Origination
-</h5>
-<div class="listing-reading-time card-text text-muted">
-31 min
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('analysis'); return false;">
-analysis
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('crypto'); return false;">
-crypto
-</div>
-</div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Aug 1, 2023
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="2" data-categories="analysis,crypto" data-listing-date-sort="1688169600000" data-listing-file-modified-sort="1693421959489" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="21">
-<a href="./blog/posts/uniswap-vs-cex/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="./blog/posts/uniswap-vs-cex/preview.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Uniswap vs.&nbsp;CEXs: Liquidity
-</h5>
-<div class="listing-reading-time card-text text-muted">
-21 min
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('analysis'); return false;">
-analysis
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('crypto'); return false;">
-crypto
-</div>
-</div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Jul 1, 2023
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="3" data-categories="analysis,crypto" data-listing-date-sort="1685836800000" data-listing-file-modified-sort="1693421959469" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="14">
-<a href="./blog/posts/uniswap-memecoin-mania/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="./blog/posts/uniswap-memecoin-mania/preview.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Uniswap and The Rise of Meme
-</h5>
-<div class="listing-reading-time card-text text-muted">
-14 min
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('analysis'); return false;">
-analysis
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('crypto'); return false;">
-crypto
-</div>
-</div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Jun 4, 2023
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="4" data-categories="analysis,crypto" data-listing-date-sort="1682899200000" data-listing-file-modified-sort="1693421959477" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="20">
-<a href="./blog/posts/uniswap-v3-license/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="./blog/posts/uniswap-v3-license/preview.jpeg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Uniswap V3 License Expiry
-</h5>
-<div class="listing-reading-time card-text text-muted">
-20 min
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('analysis'); return false;">
-analysis
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('crypto'); return false;">
-crypto
-</div>
-</div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-May 1, 2023
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="5" data-categories="analysis,crypto" data-listing-date-sort="1681084800000" data-listing-file-modified-sort="1693421959469" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="13">
-<a href="./blog/posts/uniswap-stablecoin-depeg/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="./blog/posts/uniswap-stablecoin-depeg/preview.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Stablecoin Depeg
-</h5>
-<div class="listing-reading-time card-text text-muted">
-13 min
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('analysis'); return false;">
-analysis
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('crypto'); return false;">
-crypto
-</div>
-</div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Apr 10, 2023
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="6" data-categories="analysis,crypto" data-listing-date-sort="1679875200000" data-listing-file-modified-sort="1693421959457" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="13">
-<a href="./blog/posts/base-supply-side-growth/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="./blog/posts/base-supply-side-growth/preview.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Base’s Supply Side Growth
-</h5>
-<div class="listing-reading-time card-text text-muted">
-13 min
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('analysis'); return false;">
-analysis
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('crypto'); return false;">
-crypto
-</div>
-</div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Mar 27, 2023
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="7" data-categories="news" data-listing-date-sort="1679788800000" data-listing-file-modified-sort="1693421959497" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<a href="./blog/posts/xin-chao/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="blog/posts/xin-chao/thumbnail.jpg" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Xin Chào
-</h5>
-<div class="listing-reading-time card-text text-muted">
-1 min
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('news'); return false;">
-news
-</div>
-</div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Mar 26, 2023
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+
+</section>
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

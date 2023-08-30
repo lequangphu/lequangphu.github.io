@@ -1,7 +1,8 @@
 [
   {
-    "listing": "/index.html",
+    "listing": "/blog/index.html",
     "items": [
+      "/blog/posts/uniswap-v3-il/index.html",
       "/blog/posts/uniswap-user-origination/index.html",
       "/blog/posts/uniswap-vs-cex/index.html",
       "/blog/posts/uniswap-memecoin-mania/index.html",
@@ -12,8 +13,9 @@
     ]
   },
   {
-    "listing": "/blog/index.html",
+    "listing": "/index.html",
     "items": [
+      "/blog/posts/uniswap-v3-il/index.html",
       "/blog/posts/uniswap-user-origination/index.html",
       "/blog/posts/uniswap-vs-cex/index.html",
       "/blog/posts/uniswap-memecoin-mania/index.html",
