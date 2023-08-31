@@ -8,9 +8,9 @@
 
 <meta name="author" content="Lê Quang Phú">
 <meta name="dcterms.date" content="2023-08-30">
-<meta name="description" content="Analyze the risk of providing liquidity into pools of Uniswap V3.">
+<meta name="description" content="Analyze the risk of providing liquidity into pools of Uniswap V3 on Ethereum.">
 
-<title>Lê Quang Phú - Uniswap V3 Impermanent Loss</title>
+<title>Lê Quang Phú - Uniswap V3 Impermanent Loss on Ethereum</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -73,14 +73,14 @@ gtag('config', 'G-S7Y9SX5DXE', { 'anonymize_ip': true});
 </script>
 
 
-<meta property="og:title" content="Lê Quang Phú - Uniswap V3 Impermanent Loss">
-<meta property="og:description" content="Analyze the risk of providing liquidity into pools of Uniswap V3.">
+<meta property="og:title" content="Lê Quang Phú - Uniswap V3 Impermanent Loss on Ethereum">
+<meta property="og:description" content="Analyze the risk of providing liquidity into pools of Uniswap V3 on Ethereum.">
 <meta property="og:image" content="https://lequangphu.github.io/blog/posts/uniswap-v3-il/preview.png">
 <meta property="og:site-name" content="Lê Quang Phú">
 <meta property="og:image:height" content="628">
 <meta property="og:image:width" content="1200">
-<meta name="twitter:title" content="Lê Quang Phú - Uniswap V3 Impermanent Loss">
-<meta name="twitter:description" content="Analyze the risk of providing liquidity into pools of Uniswap V3.">
+<meta name="twitter:title" content="Lê Quang Phú - Uniswap V3 Impermanent Loss on Ethereum">
+<meta name="twitter:description" content="Analyze the risk of providing liquidity into pools of Uniswap V3 on Ethereum.">
 <meta name="twitter:image" content="https://lequangphu.github.io/blog/posts/uniswap-v3-il/preview.png">
 <meta name="twitter:creator" content="@0xphu">
 <meta name="twitter:image-height" content="628">
@@ -130,10 +130,10 @@ gtag('config', 'G-S7Y9SX5DXE', { 'anonymize_ip': true});
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Uniswap V3 Impermanent Loss</h1>
+      <h1 class="title">Uniswap V3 Impermanent Loss on Ethereum</h1>
                   <div>
         <div class="description">
-          Analyze the risk of providing liquidity into pools of Uniswap V3.
+          Analyze the risk of providing liquidity into pools of Uniswap V3 on Ethereum.
         </div>
       </div>
                           <div class="quarto-categories">
@@ -247,7 +247,7 @@ gtag('config', 'G-S7Y9SX5DXE', { 'anonymize_ip': true});
 </section>
 <section id="position-breakdown" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="position-breakdown">Position breakdown</h2>
-<p>In 46K+ positions openned during the period, out of every 100 positions, 39 positions had no burn (hadn’t removed any provided liquidity), 17 positions were closed after multi-weeks, 13 positions were closed after 2-7 days, 3 positions had burn but not yet closed, and 28 positions were closed intraday.</p>
+<p>In 46K+ positions openned during the period, out of every 100 positions, 39 positions had no burn (hadn’t removed any provided liquidity), 17 positions were closed after multi-weeks [since the first mint], 13 positions were closed after 2-7 days, 3 positions had partially removed but not yet closed, and 28 positions were closed intraday.</p>
 <iframe src="https://dune.com/embeds/2985586/4953283" width="100%" height="400">
 </iframe>
 <p>In 12K+ intraday positions, out of every 100 positions, 42 positions were closed after over an hour, 16 positions were closed after 1 hour or less, and 42 positions were JIT, i.e.&nbsp;closed intrablock.</p>
