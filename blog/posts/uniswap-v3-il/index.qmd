@@ -26,7 +26,7 @@ Uniswap document has a section to understand more about IL, which you can read [
 
 In this post, let's explore IL of LPing in Uniswap V3.
 
-# Impermanent Loss
+# Impermanent loss
 
 ## Uniswap V3
 
@@ -34,9 +34,9 @@ During the 60 days period, on average, IL of Uniswap V3 ranged between $59K and 
 
 <iframe src="https://dune.com/embeds/2974812/4942263" width="100%" height="400"></iframe>
 
-## Top Pools
+## Pool breakdown
 
-### Top TVL Pools
+### Top TVL and volume pools
 
 Average daily IL of top 8 TVL pools ranged between $1 (USDC-USDT : 1%, top stablecoins pool) and $16K (USDC-WETH : 0.05%, the largest TVL pool).
 
@@ -58,6 +58,8 @@ The top TVL pools are also the top volume pools.
 
 :::
 
+### Top IL pools
+
 Average daily IL of top IL pools ranged between $21K (TOWN-WETH : 1%) and $277K (ITP-WETH : 0.3%). None of these pools are the top TVL pools or top volume pools.
 
 <iframe src="https://dune.com/embeds/2982309/4945977" width="100%" height="400"></iframe>
@@ -70,18 +72,28 @@ Meanwhile, % IL ranged between 1.6% (FUN-WETH : 1%) and 71.4% (USDC-UST : 1%). O
 
 :::
 
-## Top LP
+## Position breakdown
 
-Interestingly, 7 out of 8 in top 8 positions (largest TVL) didn't have IL. IL of the largest position was only $1.1K, i.e. 0.003% in percentage of TVL.
+In 46K+ positions openned during the period, out of every 100 positions, 39 positions had no burn, 17 positions were closed after multi-weeks, 13 positions were closed after 2-7 days, 3 positions had burn but not yet closed, and 28 positions were closed intraday.
+
+<iframe src="https://dune.com/embeds/2985586/4953283" width="100%" height="400"></iframe>
+
+In 12K+ intraday positions, out of every 100 positions, 42 positions were closed after 2 hours or more, 16 positions were closed after 1 hour or less, and 42 positions were JIT, i.e. closed intrablock.
+
+<iframe src="https://dune.com/embeds/2986046/4953344" width="100%" height="400"></iframe>
+
+Next, let's examine `No burn` positions, the largest subset.
+
+### No burn positions
+
+IL of top 8 positions ranged between $2 and $20K. IL of other 13K positions were $200K+. 4K+ positions didn't have price data.
 
 <iframe src="https://dune.com/embeds/2982776/4946830" width="100%" height="400"></iframe>
+
+% IL of top 8 positions were 1.7% or less. % IL of other 13K positions were 0.038%.
 
 ::: {.column-page-right}
 
 <iframe src="https://dune.com/embeds/2982776/4946832" width="100%" height="450"></iframe>
 
 :::
-
-<!---
- My hypothesis is those 7 top positions with no IL above are all JIT LPing, i.e. mint and burn liquidity in the same block to earn trading fee while avoid IL. JIT is known to work only if the size of position must be large to compensate gas fee with trading fee. Thus not every LPs can afford it. 
---->
