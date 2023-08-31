@@ -173,14 +173,18 @@ gtag('config', 'G-S7Y9SX5DXE', { 'anonymize_ip': true});
    
   <ul>
   <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
-  <li><a href="#impermanent-loss" id="toc-impermanent-loss" class="nav-link" data-scroll-target="#impermanent-loss">Impermanent Loss</a>
+  <li><a href="#impermanent-loss" id="toc-impermanent-loss" class="nav-link" data-scroll-target="#impermanent-loss">Impermanent loss</a>
   <ul class="collapse">
   <li><a href="#uniswap-v3" id="toc-uniswap-v3" class="nav-link" data-scroll-target="#uniswap-v3">Uniswap V3</a></li>
-  <li><a href="#top-pools" id="toc-top-pools" class="nav-link" data-scroll-target="#top-pools">Top Pools</a>
+  <li><a href="#pool-breakdown" id="toc-pool-breakdown" class="nav-link" data-scroll-target="#pool-breakdown">Pool breakdown</a>
   <ul class="collapse">
-  <li><a href="#top-tvl-pools" id="toc-top-tvl-pools" class="nav-link" data-scroll-target="#top-tvl-pools">Top TVL Pools</a></li>
+  <li><a href="#top-tvl-and-volume-pools" id="toc-top-tvl-and-volume-pools" class="nav-link" data-scroll-target="#top-tvl-and-volume-pools">Top TVL and volume pools</a></li>
+  <li><a href="#top-il-pools" id="toc-top-il-pools" class="nav-link" data-scroll-target="#top-il-pools">Top IL pools</a></li>
   </ul></li>
-  <li><a href="#top-lp" id="toc-top-lp" class="nav-link" data-scroll-target="#top-lp">Top LP</a></li>
+  <li><a href="#position-breakdown" id="toc-position-breakdown" class="nav-link" data-scroll-target="#position-breakdown">Position breakdown</a>
+  <ul class="collapse">
+  <li><a href="#no-burn-positions" id="toc-no-burn-positions" class="nav-link" data-scroll-target="#no-burn-positions">No burn positions</a></li>
+  </ul></li>
   </ul></li>
   </ul>
 </nav>
@@ -203,17 +207,17 @@ gtag('config', 'G-S7Y9SX5DXE', { 'anonymize_ip': true});
 <p>In this post, let’s explore IL of LPing in Uniswap V3.</p>
 </section>
 <section id="impermanent-loss" class="level1 page-columns page-full">
-<h1>Impermanent Loss</h1>
+<h1>Impermanent loss</h1>
 <section id="uniswap-v3" class="level2">
 <h2 class="anchored" data-anchor-id="uniswap-v3">Uniswap V3</h2>
 <p>During the 60 days period, on average, IL of Uniswap V3 ranged between $59K and $1.1M per day. IL percentage ranged between 0.002% and 0.042% per day.</p>
 <iframe src="https://dune.com/embeds/2974812/4942263" width="100%" height="400">
 </iframe>
 </section>
-<section id="top-pools" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="top-pools">Top Pools</h2>
-<section id="top-tvl-pools" class="level3 page-columns page-full">
-<h3 class="anchored" data-anchor-id="top-tvl-pools">Top TVL Pools</h3>
+<section id="pool-breakdown" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="pool-breakdown">Pool breakdown</h2>
+<section id="top-tvl-and-volume-pools" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="top-tvl-and-volume-pools">Top TVL and volume pools</h3>
 <p>Average daily IL of top 8 TVL pools ranged between $1 (USDC-USDT : 1%, top stablecoins pool) and $16K (USDC-WETH : 0.05%, the largest TVL pool).</p>
 <iframe src="https://dune.com/embeds/2982082/4945495" width="100%" height="400">
 </iframe>
@@ -227,6 +231,9 @@ gtag('config', 'G-S7Y9SX5DXE', { 'anonymize_ip': true});
 <iframe src="https://dune.com/embeds/2982261/4945909" width="100%" height="450">
 </iframe>
 </div>
+</section>
+<section id="top-il-pools" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="top-il-pools">Top IL pools</h3>
 <p>Average daily IL of top IL pools ranged between $21K (TOWN-WETH : 1%) and $277K (ITP-WETH : 0.3%). None of these pools are the top TVL pools or top volume pools.</p>
 <iframe src="https://dune.com/embeds/2982309/4945977" width="100%" height="400">
 </iframe>
@@ -237,20 +244,28 @@ gtag('config', 'G-S7Y9SX5DXE', { 'anonymize_ip': true});
 </div>
 </section>
 </section>
-<section id="top-lp" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="top-lp">Top LP</h2>
-<p>Interestingly, 7 out of 8 in top 8 positions (largest TVL) didn’t have IL. IL of the largest position was only $1.1K, i.e.&nbsp;0.003% in percentage of TVL.</p>
+<section id="position-breakdown" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="position-breakdown">Position breakdown</h2>
+<p>In 46K+ positions openned during the period, out of every 100 positions, 39 positions had no burn, 17 positions were closed after multi-weeks, 13 positions were closed after 2-7 days, 3 positions had burn but not yet closed, and 28 positions were closed intraday.</p>
+<iframe src="https://dune.com/embeds/2985586/4953283" width="100%" height="400">
+</iframe>
+<p>In 12K+ intraday positions, out of every 100 positions, 42 positions were closed after 2 hours or more, 16 positions were closed after 1 hour or less, and 42 positions were JIT, i.e.&nbsp;closed intrablock.</p>
+<iframe src="https://dune.com/embeds/2986046/4953344" width="100%" height="400">
+</iframe>
+<p>Next, let’s examine <code>No burn</code> positions, the largest subset.</p>
+<section id="no-burn-positions" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="no-burn-positions">No burn positions</h3>
+<p>IL of top 8 positions ranged between $2 and $20K. IL of other 13K positions were $200K+. 4K+ positions didn’t have price data.</p>
 <iframe src="https://dune.com/embeds/2982776/4946830" width="100%" height="400">
 </iframe>
+<p>% IL of top 8 positions were 1.7% or less. % IL of other 13K positions were 0.038%.</p>
 <div class="column-page-right">
 <iframe src="https://dune.com/embeds/2982776/4946832" width="100%" height="450">
 </iframe>
 </div>
-<!---
- My hypothesis is those 7 top positions with no IL above are all JIT LPing, i.e. mint and burn liquidity in the same block to earn trading fee while avoid IL. JIT is known to work only if the size of position must be large to compensate gas fee with trading fee. Thus not every LPs can afford it. 
---->
 
 
+</section>
 </section>
 </section>
 

@@ -315,18 +315,18 @@
     "text": "Uniswap V3\nDuring the 60 days period, on average, IL of Uniswap V3 ranged between $59K and $1.1M per day. IL percentage ranged between 0.002% and 0.042% per day."
   },
   {
-    "objectID": "blog/posts/uniswap-v3-il/index.html#top-pools",
-    "href": "blog/posts/uniswap-v3-il/index.html#top-pools",
+    "objectID": "blog/posts/uniswap-v3-il/index.html#pool-breakdown",
+    "href": "blog/posts/uniswap-v3-il/index.html#pool-breakdown",
     "title": "Uniswap V3 Impermanent Loss",
-    "section": "Top Pools",
-    "text": "Top Pools\n\nTop TVL Pools\nAverage daily IL of top 8 TVL pools ranged between $1 (USDC-USDT : 1%, top stablecoins pool) and $16K (USDC-WETH : 0.05%, the largest TVL pool).\n\n\n% IL of most of the pools is either 0.001% or 0.004%. Top pools, with 0.004% IL, all consist of WETH and stablecoins. Top pools, with 0.001% IL, all consist of WETH and WBTC.\n\n\n\n\nThe top TVL pools are also the top volume pools.\n\n\n\n\nAverage daily IL of top IL pools ranged between $21K (TOWN-WETH : 1%) and $277K (ITP-WETH : 0.3%). None of these pools are the top TVL pools or top volume pools.\n\n\nMeanwhile, % IL ranged between 1.6% (FUN-WETH : 1%) and 71.4% (USDC-UST : 1%). Of 8 top pools, % IL of 3 pools are 20% or more, % IL of other 5 pools are 5% or less."
+    "section": "Pool breakdown",
+    "text": "Pool breakdown\n\nTop TVL and volume pools\nAverage daily IL of top 8 TVL pools ranged between $1 (USDC-USDT : 1%, top stablecoins pool) and $16K (USDC-WETH : 0.05%, the largest TVL pool).\n\n\n% IL of most of the pools is either 0.001% or 0.004%. Top pools, with 0.004% IL, all consist of WETH and stablecoins. Top pools, with 0.001% IL, all consist of WETH and WBTC.\n\n\n\n\nThe top TVL pools are also the top volume pools.\n\n\n\n\n\n\nTop IL pools\nAverage daily IL of top IL pools ranged between $21K (TOWN-WETH : 1%) and $277K (ITP-WETH : 0.3%). None of these pools are the top TVL pools or top volume pools.\n\n\nMeanwhile, % IL ranged between 1.6% (FUN-WETH : 1%) and 71.4% (USDC-UST : 1%). Of 8 top pools, % IL of 3 pools are 20% or more, % IL of other 5 pools are 5% or less."
   },
   {
-    "objectID": "blog/posts/uniswap-v3-il/index.html#top-lp",
-    "href": "blog/posts/uniswap-v3-il/index.html#top-lp",
+    "objectID": "blog/posts/uniswap-v3-il/index.html#position-breakdown",
+    "href": "blog/posts/uniswap-v3-il/index.html#position-breakdown",
     "title": "Uniswap V3 Impermanent Loss",
-    "section": "Top LP",
-    "text": "Top LP\nInterestingly, 7 out of 8 in top 8 positions (largest TVL) didn’t have IL. IL of the largest position was only $1.1K, i.e. 0.003% in percentage of TVL."
+    "section": "Position breakdown",
+    "text": "Position breakdown\nIn 46K+ positions openned during the period, out of every 100 positions, 39 positions had no burn, 17 positions were closed after multi-weeks, 13 positions were closed after 2-7 days, 3 positions had burn but not yet closed, and 28 positions were closed intraday.\n\n\nIn 12K+ intraday positions, out of every 100 positions, 42 positions were closed after 2 hours or more, 16 positions were closed after 1 hour or less, and 42 positions were JIT, i.e. closed intrablock.\n\n\nNext, let’s examine No burn positions, the largest subset.\n\nNo burn positions\nIL of top 8 positions ranged between $2 and $20K. IL of other 13K positions were $200K+. 4K+ positions didn’t have price data.\n\n\n% IL of top 8 positions were 1.7% or less. % IL of other 13K positions were 0.038%."
   },
   {
     "objectID": "blog/posts/uniswap-stablecoin-depeg/index.html",
