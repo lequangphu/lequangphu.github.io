@@ -298,7 +298,7 @@
     "href": "index.html",
     "title": "🤗",
     "section": "",
-    "text": "Uniswap V3 Impermanent Loss\n\n\n2 min\n\n\n\nanalysis\n\n\ncrypto\n\n\n\n\nAug 30, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nUniswap User Origination\n\n\n31 min\n\n\n\nanalysis\n\n\ncrypto\n\n\n\n\nAug 1, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nUniswap vs. CEXs: Liquidity\n\n\n21 min\n\n\n\nanalysis\n\n\ncrypto\n\n\n\n\nJul 1, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nUniswap and The Rise of Meme\n\n\n14 min\n\n\n\nanalysis\n\n\ncrypto\n\n\n\n\nJun 4, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nUniswap V3 License Expiry\n\n\n20 min\n\n\n\nanalysis\n\n\ncrypto\n\n\n\n\nMay 1, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nStablecoin Depeg\n\n\n13 min\n\n\n\nanalysis\n\n\ncrypto\n\n\n\n\nApr 10, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBase’s Supply Side Growth\n\n\n13 min\n\n\n\nanalysis\n\n\ncrypto\n\n\n\n\nMar 27, 2023\n\n\n\n\n\n\n\n\n\n\n\n\nXin Chào\n\n\n1 min\n\n\n\nnews\n\n\n\n\nMar 26, 2023\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Uniswap V3 Impermanent Loss\n\n\n3 min\n\n\n\nanalysis\n\n\ncrypto\n\n\n\n\nAug 30, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nUniswap User Origination\n\n\n31 min\n\n\n\nanalysis\n\n\ncrypto\n\n\n\n\nAug 1, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nUniswap vs. CEXs: Liquidity\n\n\n21 min\n\n\n\nanalysis\n\n\ncrypto\n\n\n\n\nJul 1, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nUniswap and The Rise of Meme\n\n\n14 min\n\n\n\nanalysis\n\n\ncrypto\n\n\n\n\nJun 4, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nUniswap V3 License Expiry\n\n\n20 min\n\n\n\nanalysis\n\n\ncrypto\n\n\n\n\nMay 1, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nStablecoin Depeg\n\n\n13 min\n\n\n\nanalysis\n\n\ncrypto\n\n\n\n\nApr 10, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBase’s Supply Side Growth\n\n\n13 min\n\n\n\nanalysis\n\n\ncrypto\n\n\n\n\nMar 27, 2023\n\n\n\n\n\n\n\n\n\n\n\n\nXin Chào\n\n\n1 min\n\n\n\nnews\n\n\n\n\nMar 26, 2023\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "blog/posts/uniswap-v3-il/index.html",
@@ -319,7 +319,7 @@
     "href": "blog/posts/uniswap-v3-il/index.html#top-pools",
     "title": "Uniswap V3 Impermanent Loss",
     "section": "Top Pools",
-    "text": "Top Pools\nAverage daily IL of top 8 TVL pools ranged between $1 (USDC-USDT : 1%, top stablecoins pool) and $16K (USDC-WETH : 0.05%, the largest TVL pool). % IL of most of the pools is either 0.001% or 0.004%.\n\n\n\n\nThe top TVL pools are also the top volume pools.\n\n\n\n\nAverage daily IL of top IL pools ranged between $21K (TOWN-WETH : 1%) and $277K (ITP-WETH : 0.3%). Meanwhile, % IL ranged between 1.6% (FUN-WETH : 1%) and 71.4% (USDC-UST : 1%). Of 8 top pools, % IL of 3 pools are 20% or more, % IL of other 5 pools are 5% or less."
+    "text": "Top Pools\n\nTop TVL Pools\nAverage daily IL of top 8 TVL pools ranged between $1 (USDC-USDT : 1%, top stablecoins pool) and $16K (USDC-WETH : 0.05%, the largest TVL pool).\n\n\n% IL of most of the pools is either 0.001% or 0.004%. Top pools, with 0.004% IL, all consist of WETH and stablecoins. Top pools, with 0.001% IL, all consist of WETH and WBTC.\n\n\n\n\nThe top TVL pools are also the top volume pools.\n\n\n\n\nAverage daily IL of top IL pools ranged between $21K (TOWN-WETH : 1%) and $277K (ITP-WETH : 0.3%). None of these pools are the top TVL pools or top volume pools.\n\n\nMeanwhile, % IL ranged between 1.6% (FUN-WETH : 1%) and 71.4% (USDC-UST : 1%). Of 8 top pools, % IL of 3 pools are 20% or more, % IL of other 5 pools are 5% or less."
   },
   {
     "objectID": "blog/posts/uniswap-v3-il/index.html#top-lp",
