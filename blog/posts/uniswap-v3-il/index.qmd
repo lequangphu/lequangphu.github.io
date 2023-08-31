@@ -74,6 +74,8 @@ Meanwhile, % IL ranged between 1.6% (`FUN-WETH : 1%`) and 71.4% (`USDC-UST : 1%`
 
 :::
 
+If considering % IL of Uniswap V3 as the % IL among all pools, take the highest % IL per day we learned above at 0.042%, % IL of the top 8 IL pools were 40x-1700x higher than average. LPs should think carefully before LPing into these pools.
+
 ## Position breakdown
 
 In 46K+ positions openned during the period, out of every 100 positions, 39 positions had no burn (hadn't removed any provided liquidity), 17 positions were closed after multi-weeks [since the first mint], 13 positions were closed after 2-7 days, 3 positions had partially removed but not yet closed, and 28 positions were closed intraday.
