@@ -38,7 +38,7 @@ During the 60 days period, on average, IL of Uniswap V3 ranged between $59K and 
 
 ### Top TVL and volume pools
 
-Average daily IL of top 8 TVL pools ranged between $1 (USDC-USDT : 1%, top stablecoins pool) and $16K (USDC-WETH : 0.05%, the largest TVL pool).
+Average daily IL of top 8 TVL pools ranged between $1 (`USDC-USDT : 1%`, top stablecoins pool) and $16K (`USDC-WETH : 0.05%`, the largest TVL pool).
 
 <iframe src="https://dune.com/embeds/2982082/4945495" width="100%" height="400"></iframe>
 
@@ -60,11 +60,11 @@ The top TVL pools are also the top volume pools.
 
 ### Top IL pools
 
-Average daily IL of top IL pools ranged between $21K (TOWN-WETH : 1%) and $277K (ITP-WETH : 0.3%). None of these pools are the top TVL pools or top volume pools.
+Average daily IL of top IL pools ranged between $21K (`TOWN-WETH : 1%`) and $277K (`ITP-WETH : 0.3%`). None of these pools are the top TVL pools or top volume pools.
 
 <iframe src="https://dune.com/embeds/2982309/4945977" width="100%" height="400"></iframe>
 
-Meanwhile, % IL ranged between 1.6% (FUN-WETH : 1%) and 71.4% (USDC-UST : 1%). Of 8 top pools, % IL of 3 pools are 20% or more, % IL of other 5 pools are 5% or less.
+Meanwhile, % IL ranged between 1.6% (`FUN-WETH : 1%`) and 71.4% (`USDC-UST : 1%`). Of 8 top pools, % IL of 3 pools are 20% or more, % IL of other 5 pools are 5% or less.
 
 ::: {.column-page-right}
 
@@ -78,7 +78,7 @@ In 46K+ positions openned during the period, out of every 100 positions, 39 posi
 
 <iframe src="https://dune.com/embeds/2985586/4953283" width="100%" height="400"></iframe>
 
-In 12K+ intraday positions, out of every 100 positions, 42 positions were closed after 2 hours or more, 16 positions were closed after 1 hour or less, and 42 positions were JIT, i.e. closed intrablock.
+In 12K+ intraday positions, out of every 100 positions, 42 positions were closed after over an hour, 16 positions were closed after 1 hour or less, and 42 positions were JIT, i.e. closed intrablock.
 
 <iframe src="https://dune.com/embeds/2986046/4953344" width="100%" height="400"></iframe>
 
