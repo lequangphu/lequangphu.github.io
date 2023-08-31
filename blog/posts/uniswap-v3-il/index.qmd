@@ -1,6 +1,6 @@
 ---
-title: "Uniswap V3 Impermanent Loss"
-description: "Analyze the risk of providing liquidity into pools of Uniswap V3."
+title: "Uniswap V3 Impermanent Loss on Ethereum"
+description: "Analyze the risk of providing liquidity into pools of Uniswap V3 on Ethereum."
 date: "2023-08-30"
 categories: [analysis, crypto]
 image: "preview.png"
@@ -76,7 +76,7 @@ Meanwhile, % IL ranged between 1.6% (`FUN-WETH : 1%`) and 71.4% (`USDC-UST : 1%`
 
 ## Position breakdown
 
-In 46K+ positions openned during the period, out of every 100 positions, 39 positions had no burn (hadn't removed any provided liquidity), 17 positions were closed after multi-weeks, 13 positions were closed after 2-7 days, 3 positions had burn but not yet closed, and 28 positions were closed intraday.
+In 46K+ positions openned during the period, out of every 100 positions, 39 positions had no burn (hadn't removed any provided liquidity), 17 positions were closed after multi-weeks [since the first mint], 13 positions were closed after 2-7 days, 3 positions had partially removed but not yet closed, and 28 positions were closed intraday.
 
 <iframe src="https://dune.com/embeds/2985586/4953283" width="100%" height="400"></iframe>
 
