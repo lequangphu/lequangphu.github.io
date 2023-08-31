@@ -86,11 +86,11 @@ Next, let's examine `No burn` positions, the largest subset.
 
 ### No burn positions
 
-IL of top 8 positions ranged between $2 and $20K. IL of other 13K positions were $200K+. 4K+ positions didn't have price data.
+IL of top 8 positions ranged between $0 and $20K. IL of other 13K positions were $200K+. 4K+ positions didn't have price data.
 
 <iframe src="https://dune.com/embeds/2982776/4946830" width="100%" height="400"></iframe>
 
-% IL of top 8 positions were 1.7% or less. % IL of other 13K positions were 0.038%.
+% IL of top 8 positions were 0.169% or less. % IL of other 13K positions were 0.038%.
 
 ::: {.column-page-right}
 
