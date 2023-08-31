@@ -36,23 +36,39 @@ During the 60 days period, on average, IL of Uniswap V3 ranged between $59K and 
 
 ## Top Pools
 
-Average daily IL of top 8 TVL pools ranged between $1 (USDC-USDT : 1%, top stablecoins pool) and $16K (USDC-WETH : 0.05%, the largest TVL pool). % IL of most of the pools is either 0.001% or 0.004%.
+### Top TVL Pools
+
+Average daily IL of top 8 TVL pools ranged between $1 (USDC-USDT : 1%, top stablecoins pool) and $16K (USDC-WETH : 0.05%, the largest TVL pool).
 
 <iframe src="https://dune.com/embeds/2982082/4945495" width="100%" height="400"></iframe>
 
-<iframe src="https://dune.com/embeds/2982082/4945962" width="100%" height="400"></iframe>
+ % IL of most of the pools is either 0.001% or 0.004%. Top pools, with 0.004% IL, all consist of WETH and stablecoins. Top pools, with 0.001% IL, all consist of WETH and WBTC.
+
+::: {.column-page-right}
+
+<iframe src="https://dune.com/embeds/2982082/4945962" width="100%" height="450"></iframe>
+
+:::
 
 The top TVL pools are also the top volume pools.
 
-<iframe src="https://dune.com/embeds/2982261/4945875" width="100%" height="400"></iframe>
+::: {.column-screen-inset-right}
 
-<iframe src="https://dune.com/embeds/2982261/4945909" width="100%" height="400"></iframe>
+<iframe src="https://dune.com/embeds/2982261/4945909" width="100%" height="450"></iframe>
 
-Average daily IL of top IL pools ranged between $21K (TOWN-WETH : 1%) and $277K (ITP-WETH : 0.3%). Meanwhile, % IL ranged between 1.6% (FUN-WETH : 1%) and 71.4% (USDC-UST : 1%). Of 8 top pools, % IL of 3 pools are 20% or more, % IL of other 5 pools are 5% or less.
+:::
+
+Average daily IL of top IL pools ranged between $21K (TOWN-WETH : 1%) and $277K (ITP-WETH : 0.3%). None of these pools are the top TVL pools or top volume pools.
 
 <iframe src="https://dune.com/embeds/2982309/4945977" width="100%" height="400"></iframe>
 
-<iframe src="https://dune.com/embeds/2982309/4945976" width="100%" height="400"></iframe>
+Meanwhile, % IL ranged between 1.6% (FUN-WETH : 1%) and 71.4% (USDC-UST : 1%). Of 8 top pools, % IL of 3 pools are 20% or more, % IL of other 5 pools are 5% or less.
+
+::: {.column-page-right}
+
+<iframe src="https://dune.com/embeds/2982309/4945976" width="100%" height="450"></iframe>
+
+:::
 
 ## Top LP
 
@@ -60,5 +76,12 @@ Interestingly, 7 out of 8 in top 8 positions (largest TVL) didn't have IL. IL of
 
 <iframe src="https://dune.com/embeds/2982776/4946830" width="100%" height="400"></iframe>
 
-<iframe src="https://dune.com/embeds/2982776/4946832" width="100%" height="400"></iframe>
+::: {.column-page-right}
 
+<iframe src="https://dune.com/embeds/2982776/4946832" width="100%" height="450"></iframe>
+
+:::
+
+<!---
+ My hypothesis is those 7 top positions with no IL above are all JIT LPing, i.e. mint and burn liquidity in the same block to earn trading fee while avoid IL. JIT is known to work only if the size of position must be large to compensate gas fee with trading fee. Thus not every LPs can afford it. 
+--->
