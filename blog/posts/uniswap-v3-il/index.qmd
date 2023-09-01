@@ -76,6 +76,24 @@ Meanwhile, % IL ranged between 1.6% (`FUN-WETH : 1%`) and 71.4% (`USDC-UST : 1%`
 
 If considering % IL of Uniswap V3 as the % IL among all pools, take the highest % IL per day we learned above at 0.042%, % IL of the top 8 IL pools were 40x-1700x higher than average. LPs should think carefully before LPing into these pools.
 
+### Top Profit [IL + fee] pools
+
+*Let's add trading fee into the equation to see which pool generate the most profit from $1 of liquidity.*
+
+Average daily profit of top profit pools ranged between $0 (`VERSE-WETH : 1%`) and $116.5 (`USDC-RARE : 0.3%`). All of these pools had very small TVL, i.e. long-tail pools.
+
+<iframe src="https://dune.com/embeds/2987693/4956737" width="100%" height="400"></iframe>
+
+Meanwhile, % IL ranged between 99.3% (`XFUND-WETH : 0.3%`) and 134.9% (`WBTC-VERSE : 1%`).
+
+::: {.column-page-right}
+
+<iframe src="https://dune.com/embeds/2987693/4956736" width="100%" height="450"></iframe>
+
+:::
+
+Most of the top IL + fee pools were pool of VERSE and other major tokens.
+
 ## Position breakdown
 
 *In Uniswap V3, a position is a combination of a LP, a pool, and a range of price to provide liquidity, which has 2 boundaries, `Price Lower` and `Price Upper`.*
