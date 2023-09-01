@@ -38,6 +38,10 @@ During the 60 days period, on average, IL of Uniswap V3 ranged between $59K and 
 
 *Pool name consists of [`Base symbol`-`Quote symbol` : `% Fee`].*
 
+As of August 29, 2023, Uniswap V3 had 15K+ pools. Out of every 100 pools, 85 pools had positive reserve, 5 pools had zero reserve, and 10 pools had questionable (?) reserve (negative reserve, might due to wrong data).
+
+<iframe src="https://dune.com/embeds/2988958/4959095" width="100%" height="400"></iframe>
+
 ### Top TVL and volume pools
 
 Average daily IL of top 8 TVL pools ranged between $1 (`USDC-USDT : 1%`, top stablecoins pool) and $16K (`USDC-WETH : 0.05%`, the largest TVL pool).
