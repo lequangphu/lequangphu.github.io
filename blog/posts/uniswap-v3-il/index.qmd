@@ -70,11 +70,11 @@ The top TVL pools are also the top volume pools.
 
 ### Top IL pools
 
-Average daily IL of top IL pools ranged between $21K (`TOWN-WETH : 1%`) and $277K (`ITP-WETH : 0.3%`). None of these pools are the top TVL pools or top volume pools.
+Average daily IL of top IL pools ranged between $10.1K (`USDC-UST : 1%`) and $63.2K (`KUMA-WETH : 1%`). 3 of these pools are the top TVL pools.
 
 <iframe src="https://dune.com/embeds/2982309/4945977" width="100%" height="400"></iframe>
 
-Meanwhile, % IL ranged between 1.6% (`FUN-WETH : 1%`) and 71.4% (`USDC-UST : 1%`). Of 8 top pools, % IL of 3 pools are 20% or more, % IL of other 5 pools are 5% or less.
+Meanwhile, % IL ranged between 0.004% (`USDC-WETH : 0.3%`) and 40.911% (`KUMA-WETH : 1%`). % IL of 7 pools were around 5% or less.
 
 ::: {.column-page-right}
 
@@ -88,7 +88,7 @@ If considering % IL of Uniswap V3 as the % IL among all pools, take the highest 
 
 *Let's add trading fee into the equation to see which pool generate the most profit from $1 of liquidity, i.e. % IL + % Fee.*
 
-The top profitability pools have % IL + % Fee ranged between 99.3% (`XFUND-WETH : 0.3%`) and 134.9% (`WBTC-VERSE : 1%`).
+The top profitability pools have % IL + % Fee ranged between 21.2% (`WBTC-VERSE : 0.3%`) and 81.5% (`PEPE-WETH : 0.05%`).
 
 ::: {.column-page-right}
 
@@ -96,11 +96,9 @@ The top profitability pools have % IL + % Fee ranged between 99.3% (`XFUND-WETH 
 
 :::
 
-Average daily profit of top profit pools ranged between $0 (`VERSE-WETH : 1%`) and $116.5 (`USDC-RARE : 0.3%`). All of these pools had very small TVL, i.e. long-tail pools.
+Average daily profit of top profit pools ranged between $0.1 (`WETH-HAKA : 0.05%`) and $7.3K (`PEPE-WETH : 0.05%`). All of these pools had very small TVL, i.e. long-tail pools.
 
 <iframe src="https://dune.com/embeds/2987693/4956737" width="100%" height="400"></iframe>
-
-Most of the top IL + fee pools were pool of VERSE and other major tokens.
 
 ## Position breakdown
 
