@@ -180,7 +180,7 @@ gtag('config', 'G-S7Y9SX5DXE', { 'anonymize_ip': true});
   <ul class="collapse">
   <li><a href="#top-tvl-and-volume-pools" id="toc-top-tvl-and-volume-pools" class="nav-link" data-scroll-target="#top-tvl-and-volume-pools">Top TVL and volume pools</a></li>
   <li><a href="#top-il-pools" id="toc-top-il-pools" class="nav-link" data-scroll-target="#top-il-pools">Top IL pools</a></li>
-  <li><a href="#top-profit-il-fee-pools" id="toc-top-profit-il-fee-pools" class="nav-link" data-scroll-target="#top-profit-il-fee-pools">Top Profit [IL + fee] pools</a></li>
+  <li><a href="#top-profitability-il-fee-pools" id="toc-top-profitability-il-fee-pools" class="nav-link" data-scroll-target="#top-profitability-il-fee-pools">Top Profitability [% IL + % fee] pools</a></li>
   </ul></li>
   <li><a href="#position-breakdown" id="toc-position-breakdown" class="nav-link" data-scroll-target="#position-breakdown">Position breakdown</a>
   <ul class="collapse">
@@ -246,17 +246,17 @@ gtag('config', 'G-S7Y9SX5DXE', { 'anonymize_ip': true});
 </div>
 <p>If considering % IL of Uniswap V3 as the % IL among all pools, take the highest % IL per day we learned above at 0.042%, % IL of the top 8 IL pools were 40x-1700x higher than average. LPs should think carefully before LPing into these pools.</p>
 </section>
-<section id="top-profit-il-fee-pools" class="level3 page-columns page-full">
-<h3 class="anchored" data-anchor-id="top-profit-il-fee-pools">Top Profit [IL + fee] pools</h3>
-<p><em>Let’s add trading fee into the equation to see which pool generate the most profit from $1 of liquidity.</em></p>
-<p>Average daily profit of top profit pools ranged between $0 (<code>VERSE-WETH : 1%</code>) and $116.5 (<code>USDC-RARE : 0.3%</code>). All of these pools had very small TVL, i.e.&nbsp;long-tail pools.</p>
-<iframe src="https://dune.com/embeds/2987693/4956737" width="100%" height="400">
-</iframe>
-<p>Meanwhile, % IL ranged between 99.3% (<code>XFUND-WETH : 0.3%</code>) and 134.9% (<code>WBTC-VERSE : 1%</code>).</p>
+<section id="top-profitability-il-fee-pools" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="top-profitability-il-fee-pools">Top Profitability [% IL + % fee] pools</h3>
+<p><em>Let’s add trading fee into the equation to see which pool generate the most profit from $1 of liquidity, i.e.&nbsp;% IL + % Fee.</em></p>
+<p>The top profitability pools have % IL + % Fee ranged between 99.3% (<code>XFUND-WETH : 0.3%</code>) and 134.9% (<code>WBTC-VERSE : 1%</code>).</p>
 <div class="column-page-right">
 <iframe src="https://dune.com/embeds/2987693/4956736" width="100%" height="450">
 </iframe>
 </div>
+<p>Average daily profit of top profit pools ranged between $0 (<code>VERSE-WETH : 1%</code>) and $116.5 (<code>USDC-RARE : 0.3%</code>). All of these pools had very small TVL, i.e.&nbsp;long-tail pools.</p>
+<iframe src="https://dune.com/embeds/2987693/4956737" width="100%" height="400">
+</iframe>
 <p>Most of the top IL + fee pools were pool of VERSE and other major tokens.</p>
 </section>
 </section>
