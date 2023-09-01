@@ -38,7 +38,7 @@ During the 60 days period, on average, IL of Uniswap V3 ranged between $59K and 
 
 *Pool name consists of [`Base symbol`-`Quote symbol` : `% Fee`].*
 
-During the 60 days period, Uniswap V3 had 15K+ pools. Out of every 100 pools, 92 pools had positive reserve [in all 60 days], 6 pools had zero reserve, and 2 pools had questionable (?) reserve (negative reserve, might due to wrong data).
+During the 60 days period, Uniswap V3 had 15K+ pools. Out of every 100 pools, 92 pools had [positive] reserve [in all 60 days], 6 pools didn't have [zero] reserve, and 2 pools had questionable [?] reserve (negative reserve, might due to wrong data).
 
 <iframe src="https://dune.com/embeds/2988958/4959095" width="100%" height="400"></iframe>
 
