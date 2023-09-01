@@ -248,10 +248,11 @@ gtag('config', 'G-S7Y9SX5DXE', { 'anonymize_ip': true});
 </section>
 <section id="position-breakdown" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="position-breakdown">Position breakdown</h2>
+<p><em>In Uniswap V3, a position is a combination of a LP, a pool, and a range of price to provide liquidity, which has 2 boundaries, <code>Price Lower</code> and <code>Price Upper</code>.</em></p>
 <p>In 46K+ positions openned during the period, out of every 100 positions, 39 positions had no burn (hadn’t removed any provided liquidity), 17 positions were closed after multi-weeks [since the first mint], 13 positions were closed after 2-7 days, 3 positions had partially removed but not yet closed, and 28 positions were closed intraday.</p>
 <iframe src="https://dune.com/embeds/2985586/4953283" width="100%" height="400">
 </iframe>
-<p>In 12K+ intraday positions, out of every 100 positions, 42 positions were closed after over an hour, 16 positions were closed after 1 hour or less, and 42 positions were JIT, i.e.&nbsp;closed intrablock.</p>
+<p>In 12K+ intraday positions, out of every 100 positions, 42 positions were closed in different hour [from first mint], 16 positions were closed in the same hour, and 42 positions were JIT, i.e.&nbsp;closed intrablock.</p>
 <iframe src="https://dune.com/embeds/2986046/4953344" width="100%" height="400">
 </iframe>
 <p>Next, let’s examine <code>No burn</code> positions, the largest subset.</p>
