@@ -14,7 +14,7 @@ format:
 
 Liquidity Providers (LPs) deposit assets into Uniswap's pools to earn trading fee paid by traders. It's an investing strategy. Let's call the strategy LPing.
 
-In the period of 60 days from July 1 to August 29, 2023, Uniswap V3 TVL on Ethereum ranged between $2.3B and $2.9B. TVL was trending down from $2.8B to $2.4B.
+During 60 days from July 1 to August 29, 2023 (the 60 days period), Uniswap V3 TVL on Ethereum ranged between $2.3B and $2.9B. TVL was trending down from $2.8B to $2.4B.
 
 <iframe src="https://dune.com/embeds/2974812/4942750" width="100%" height="400"></iframe>
 
@@ -30,7 +30,7 @@ In this post, let's explore IL of LPing in Uniswap V3.
 
 ## Uniswap V3
 
-During the 60 days period, on average, IL of Uniswap V3 ranged between $59K and $1.1M per day. IL percentage ranged between 0.002% and 0.042% per day.
+During the 60 days period, on average, IL of Uniswap V3 ranged between $59K and $1.1M per day. % IL of Uniswap V3 ranged between 0.002% and 0.042% per day.
 
 <iframe src="https://dune.com/embeds/2974812/4942263" width="100%" height="400"></iframe>
 
@@ -41,6 +41,10 @@ During the 60 days period, on average, IL of Uniswap V3 ranged between $59K and 
 During the 60 days period, Uniswap V3 had 15K+ pools. Out of every 100 pools, 92 pools had [positive] reserve [in all 60 days], 6 pools didn't have [zero] reserve, and 2 pools had questionable [?] reserve (negative reserve, might due to wrong data).
 
 <iframe src="https://dune.com/embeds/2988958/4959095" width="100%" height="400"></iframe>
+
+We learned above that on average, daily average % IL of Uniswap V3 ranged between 0.002% and 0.042%. In 2.9K pools, which had reserve, and price data, out of every 100 pools, 60 pools had % IL ranged between 0.002% and 0.04%, 31 pools had % IL greater than 0.04%, 9 pools had % IL less than 0.002%.
+
+<iframe src="https://dune.com/embeds/2989235/4959533" width="100%" height="400"></iframe>
 
 ### Top TVL and volume pools
 
