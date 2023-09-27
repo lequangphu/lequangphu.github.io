@@ -1,6 +1,6 @@
 [
   {
-    "listing": "/index.html",
+    "listing": "/blog/index.html",
     "items": [
       "/blog/posts/uniswap-winter-usage/index.html",
       "/blog/posts/uniswap-v3-il/index.html",
@@ -14,7 +14,7 @@
     ]
   },
   {
-    "listing": "/blog/index.html",
+    "listing": "/index.html",
     "items": [
       "/blog/posts/uniswap-winter-usage/index.html",
       "/blog/posts/uniswap-v3-il/index.html",
