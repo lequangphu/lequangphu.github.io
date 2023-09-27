@@ -24,7 +24,7 @@ In this post, you will learn about Uniswap's usage on a monthly basis from May 2
 -   About trading:
     -   New traders contributed more than return traders in the recovery of number of traders after June 2022.
     -   Uniswap v2 was the main driver behind the fall and rise of number of new trader.
-    -   `M-1` return traders, who returned after being active in the previous month, was the main driver behind the fall and rise of number of return trader.
+    -   `M-1` return traders, who returned after being active in the previous month, was the main driver behind the decrease, before June 2022, and the recovery of number of return trader, after June 2022. Interestingly, number of `M-7 or longer` return traders, who returned after being dormant 7 months or longer, was also increasing, contributed to the recovery of return traders.
 -   About providing liquidity:
     -   Before June 2022, total monthly active LPs were down, number of return LPs was larger than that of new LPs. After June 2022, total monthly active LPs started to recover, number of return LPs was smaller than that of new LPs. During the whole period, number of return LPs dropped faster on the way down, and recovered slower on the way up than that of new LPs.
     -   Uniswap v2 was the main driver behind the fall and rise of number of new LPs.
