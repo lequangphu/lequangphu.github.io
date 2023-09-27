@@ -6,7 +6,7 @@ about:
   links:
     - icon: twitter
       text: Twitter
-      href: https://twitter.com/0xphu
+      href: https://twitter.com/iamlequangphu
     - icon: github
       text: Github
       href: https://github.com/lequangphu

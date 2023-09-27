@@ -3,7 +3,7 @@ title: 'Uniswap and The Rise of Meme'
 description: ''
 date: '2023-06-04'
 categories: [analysis, crypto]
-image: 'preview.jpg'
+image: 'thumbnail.jpg'
 execute:
   freeze: true  # never re-render during project render
 ---

@@ -3,7 +3,7 @@ title: "Uniswap V3 Impermanent Loss on Ethereum"
 description: "Analyze the risk of providing liquidity into pools of Uniswap V3 on Ethereum."
 date: "2023-08-30"
 categories: [analysis, crypto]
-image: "preview.png"
+image: "thumbnail.png"
 ---
 
 # Introduction
