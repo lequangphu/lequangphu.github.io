@@ -233,7 +233,7 @@ The traders, who had their last trade on Uniswap on Ethereum between September 2
 
 -   on other chains:
     -   78% of them had their last active on pancakeswap, sushiswap, quickswap, camelot, trader_joe,
-    -   the rest had their last active on 36 other DEXs.
+    -   the rest had their last active on 37 other DEXs.
 
 <iframe src="https://dune.com/embeds/3043705/5061708" width="100%" height="330"></iframe>
 
@@ -272,7 +272,7 @@ Traders, who had their last trade on Uniswap before September 2022, and traded o
 
 -   on other chains:
     -   81% had their last trade on pancakeswap, quickswap, sushiswap, camelot, trader_joe,
-    -   the rest had their last active on 37 other DEXs.
+    -   the rest had their last active on 36 other DEXs.
 
 <iframe src="https://dune.com/embeds/3043650/5061571" width="100%" height="330"></iframe>
 
