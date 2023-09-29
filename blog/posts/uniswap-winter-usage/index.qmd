@@ -76,8 +76,8 @@ In this post, you will learn about Uniswap's usage, of both trading and providin
 
 #### LPs
 
--   The trends of Uniswap's total monthly active LPs (the number) and Ethereum-based Uniswap's share in the number were quite opposite to each other. In November 2022, Ethereum-based Uniswap's share in the number reached its all-time low, reaching 29.4%. Five months later, in April 2023, the number reached its all-time high, reaching 119.5k.
--   In August 2023, the number was 74k, reflecting a 38% drop from the all-time high. Meanwhile, Ethereum-based Uniswap's share in the number was 56.1%, a 26.7% increase from the all-time low.
+-   The trends of Uniswap's total monthly active LPs (the number) and Ethereum-based Uniswap's share in the number were quite opposite to each other. In April 2023, the number reached its all-time high, reaching 119.5k. And Ethereum-based Uniswap's share in the number reached its all-time low, reaching 37.1%.
+-   In August 2023, the number was 74k, reflecting a 38% drop from the all-time high. Meanwhile, Ethereum-based Uniswap's share in the number was 56.1%, a 19% increase from the all-time low.
 
 <iframe src="https://dune.com/embeds/3027516/5031128" width="100%" height="400"></iframe>
 
@@ -87,8 +87,8 @@ If Uniswap had not expanded to other chains, in 2023:
 
 -   total monthly volume would have been 16%-37% lower,
 -   total monthly TVL would have been 6%-10% lower,
--   total monthly active traders would have been 52%-74% lower,
--   total monthly active LPs would have been 46%-68% lower,
+-   total monthly active traders would have been 43%-68% lower,
+-   total monthly active LPs would have been 42%-63% lower,
 
 In short, the impact of Uniswap not expanding to other chains would have been non-trivial, especially on total monthly active traders and LPs.
 
