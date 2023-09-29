@@ -352,7 +352,7 @@ At the end of August 2023, on all 3 versions of Ethereum-based Uniswap, out of e
 
 <iframe src="https://dune.com/embeds/3046924/5067953" width="100%" height="400"></iframe>
 
--   When diving deeper into these LPs, 2 parterns emerge:
+-   When diving deeper into these LPs, 2 patterns emerge:
     -   The percentage of LPs who had gained from providing liquidity of a subset decreases as the longer LPs of the subset being dormant. In other words, the longer LPs being dormant, the less likely that they had gained from providing liquidity.
     -   In subsets which LPs were dormant more than 12 months, the percentage of LPs who had lost from providing liquidity of a subset increases as the longer LPs of the subset being dormant. In other words, if LPs were dormant more than 12 months, the longer being dormant, the more likely that they had lost from providing liquidity.
 
