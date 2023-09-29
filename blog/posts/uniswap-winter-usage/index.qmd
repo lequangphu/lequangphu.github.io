@@ -184,8 +184,8 @@ From May 2021 to August 2023, Ethereum-based Uniswap monthly performance:
 
 From November 2018, when Uniswap launched, to August 2023:
 
--   Most of traders of Uniswap have their last activity after August 2020.
--   To at least 45% of LPs, who have their last activity in a given month, that month of last activity is also their first month. *August 2023 is excluded in this number as it is the last observed month.*
+-   Most of Uniswap's traders have their last trade after August 2020.
+-   To at least 45% of LPs, who have their last trade in a given month, that last month is also their first month. *August 2023 is excluded in this number as it is the last observed month.*
 
 <iframe src="https://dune.com/embeds/3046452/5067189" width="100%" height="400"></iframe>
 
@@ -296,7 +296,7 @@ At the end of August 2023, Ethereum-based Uniswap's traders:
 From November 2018, when Uniswap launched, to August 2023:
 
 -   Most of LPs of Uniswap have their last activity after August 2020.
--   To at least 1/3 of LPs, who have their last activity in a given month, that month of last activity is also their first month.
+-   To at least 1/3 of LPs, who have their last activity in a given month, that last month is also their first month.
 -   40.9%-72.9% of LPs, who have their last activity in a given month, still have at least 1 open liquidity position at the end of August 2023.
 
 <iframe src="https://dune.com/embeds/3044364/5067118" width="100%" height="400"></iframe>
