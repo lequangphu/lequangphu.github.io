@@ -34,7 +34,7 @@ In this post, you will learn about Uniswap's usage, of both trading and providin
 
 -   About trading:
     -   There were more dormant traders than active traders.
-    -   If traders were were active in August 2023, 23% of them were still active on other DEXs (including DEXs on Ethreum and other chains). That number increases to 30% if they were dormant in August 2023, drops to 12% if they were dormant for 13-24 months, drops to 6% if they were dormant for more than 24 months.
+    -   If traders were active in August 2023, 23% of them were still active on other DEXs (including DEXs on Ethreum and other chains). That number increases to 30% if they were dormant in August 2023, drops to 12% if they were dormant for 13-24 months, drops to 6% if they were dormant for more than 24 months.
     -   5 most favorite Ethereum-based DEXs of traders after their last trade on Ethereum-based Uniswap were Sushiswap, 0x API, airswap, curve, shibaswap.
     -   5 most favorite other-chains-based DEXs of traders after their last trade on Ethereum-based Uniswap were pancakeswap, sushiswap, quickswap, camelot, trader_joe.
 -   About providing liquidity:
@@ -96,7 +96,7 @@ In short, the impact of Uniswap not expanding to other chains would have been no
 
 ### Summary
 
-From May 2021 to August 2023, both monthly volume and TVL dropped significantly from the all-time highs, 71% and 56% respectively. Meanwhile, monthly active traders and monthly active LPs grew significantly, thanks to  the expansions to other chains. Without the expansions, they would have been declining, not growing.
+From May 2021 to August 2023, both monthly volume and TVL dropped significantly from the all-time highs, 71% and 56% respectively. Meanwhile, monthly active traders and monthly active LPs grew significantly, thanks to the expansions to other chains. Without the expansions, they would have been declining, not growing.
 
 In the next sections, let's dive deeper into Uniswap usage on Ethereum.
 
@@ -374,7 +374,7 @@ At the end of August 2023, Ethereum-based Uniswap's LPs:
 
 ## Summary
 
-From May 2021 to August 2023, both monthly volume and TVL dropped significantly from the all-time highs, 71% and 56% respectively. Meanwhile, monthly active traders and monthly active LPs grew significantly, thanks to  the expansions to other chains. Without the expansions, they would have been declining, not growing.
+From May 2021 to August 2023, both monthly volume and TVL dropped significantly from the all-time highs, 71% and 56% respectively. Meanwhile, monthly active traders and monthly active LPs grew significantly, thanks to the expansions to other chains. Without the expansions, they would have been declining, not growing.
 
 From May 2021 to August 2023, Ethereum-based Uniswap monthly performance:
 
