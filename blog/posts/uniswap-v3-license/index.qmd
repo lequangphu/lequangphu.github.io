@@ -2,7 +2,7 @@
 title: 'Uniswap V3 License Expiry'
 description: ''
 date: '2023-05-01'
-categories: [analysis, crypto]
+categories: [uniswap, crypto]
 image: 'thumbnail.jpeg'
 execute:
   freeze: true  # never re-render during project render

@@ -2,7 +2,7 @@
 title: "Uniswap User Origination"
 description: "Explore the routes which traders use to trade in Uniswap pools."
 date: "2023-08-01"
-categories: [analysis, crypto]
+categories: [uniswap, crypto]
 image: "thumbnail.png"
 format:
   html:

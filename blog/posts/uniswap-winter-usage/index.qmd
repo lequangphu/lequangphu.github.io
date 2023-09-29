@@ -2,7 +2,7 @@
 title: "Crypto Winter Usage of Uniswap"
 description: "How has Uniswap's Usage been this Crypto Winter?"
 date: "2023-09-27"
-categories: [analysis, crypto]
+categories: [uniswap, crypto]
 image: "thumbnail.png"
 number-sections: true
 ---

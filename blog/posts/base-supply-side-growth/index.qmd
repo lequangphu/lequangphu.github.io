@@ -2,7 +2,7 @@
 title: "Base's Supply Side Growth"
 description: "Examine the growth of developers and contracts deployed on Base."
 date: "2023-03-27"
-categories: [analysis, crypto]
+categories: [base, crypto]
 image: "thumbnail.png"
 execute:
   freeze: true  # never re-render during project render
