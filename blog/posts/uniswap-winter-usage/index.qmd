@@ -17,7 +17,7 @@ In this post, you will learn about Uniswap's usage, of both trading and providin
 
 ## Key takeaways
 
-1.  On a monthly basis, from May 2021, when Uniswap monthly volume reached its all-time high, to August 2023, both Uniswap's monthly volume and end-of-month TVL dropped more than 50% from all-time highs. Meanwhile, monthly active traders and monthly active LPs increased significantly, thanks to the expansions to other chains, started in July 2021.
+1.  On a monthly basis, from May 2021, when Uniswap monthly volume reached its all-time high, to August 2023, both Uniswap's monthly volume and end-of-month TVL dropped more than 50% from all-time highs. Meanwhile, monthly active traders and monthly active LPs increased significantly, 80% or more versus the numbers in May 2021, thanks to the expansions to other chains, started in July 2021.
 
 2.  On a monthly basis, from May 2021 to August 2023, on Ethereum-based Uniswap:
 
@@ -58,7 +58,7 @@ In this post, you will learn about Uniswap's usage, of both trading and providin
 
 #### Traders
 
--   Uniswap's total number of traders (the number) reached its all-time high in May 2023, reaching 1.8m. Meanwhile, Ethereum-based Uniswap's share in the number decreased rapidly, reached its all-time low in June 2023, reaching 32.2%.
+-   Uniswap's total number of traders (the number) reached its all-time high in May 2023, reaching 1.8m, a 80% increase from May 2021. Meanwhile, Ethereum-based Uniswap's share in the number decreased rapidly, reached its all-time low in June 2023, reaching 32.2%.
 -   In August 2023, the number was 1.4m, reflecting a 22% drop from the all-time high. Meanwhile, Ethereum-based Uniswap's share in the number was 38.8%, a 6.6% increase from the all-time low.
 
 <iframe src="https://dune.com/embeds/3022040/5020332" width="100%" height="400"></iframe>
@@ -76,7 +76,7 @@ In this post, you will learn about Uniswap's usage, of both trading and providin
 
 #### LPs
 
--   The trends of Uniswap's total monthly active LPs (the number) and Ethereum-based Uniswap's share in the number were quite opposite to each other. In April 2023, the number reached its all-time high, reaching 119.5k. And Ethereum-based Uniswap's share in the number reached its all-time low, reaching 37.1%.
+-   The trends of Uniswap's total monthly active LPs (the number) and Ethereum-based Uniswap's share in the number were quite opposite to each other. In April 2023, the number reached its all-time high, reaching 119.5k, a 85% increase from May 2021. And Ethereum-based Uniswap's share in the number reached its all-time low, reaching 37.1%.
 -   In August 2023, the number was 74k, reflecting a 38% drop from the all-time high. Meanwhile, Ethereum-based Uniswap's share in the number was 56.1%, a 19% increase from the all-time low.
 
 <iframe src="https://dune.com/embeds/3027516/5031128" width="100%" height="400"></iframe>
