@@ -2,54 +2,50 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://lequangphu.github.io/about.html</loc>
-    <lastmod>2023-09-29T04:03:11.030Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lequangphu.github.io/blog/about.html</loc>
-    <lastmod>2023-09-29T04:03:04.902Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lequangphu.github.io/blog/posts/base-supply-side-growth/index.html</loc>
-    <lastmod>2023-09-29T04:03:02.886Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lequangphu.github.io/blog/posts/uniswap-v3-license/index.html</loc>
-    <lastmod>2023-09-29T04:03:00.414Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lequangphu.github.io/blog/posts/uniswap-user-origination/index.html</loc>
-    <lastmod>2023-09-29T04:02:45.030Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lequangphu.github.io/blog/posts/uniswap-winter-usage/index.html</loc>
-    <lastmod>2023-09-29T04:02:42.678Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lequangphu.github.io/blog/index.html</loc>
-    <lastmod>2023-09-29T04:02:39.790Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lequangphu.github.io/blog/posts/uniswap-v3-il/index.html</loc>
-    <lastmod>2023-09-29T04:02:40.810Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lequangphu.github.io/blog/posts/xin-chao/index.html</loc>
-    <lastmod>2023-09-29T04:02:43.042Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lequangphu.github.io/blog/posts/uniswap-vs-cex/index.html</loc>
-    <lastmod>2023-09-29T04:02:58.454Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lequangphu.github.io/blog/posts/uniswap-memecoin-mania/index.html</loc>
-    <lastmod>2023-09-29T04:03:01.486Z</lastmod>
+    <lastmod>2023-10-08T16:33:07.848Z</lastmod>
   </url>
   <url>
     <loc>https://lequangphu.github.io/blog/posts/uniswap-stablecoin-depeg/index.html</loc>
-    <lastmod>2023-09-29T04:03:04.526Z</lastmod>
+    <lastmod>2023-10-08T16:33:02.828Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lequangphu.github.io/blog/posts/uniswap-memecoin-mania/index.html</loc>
+    <lastmod>2023-10-08T16:33:00.296Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lequangphu.github.io/blog/posts/uniswap-vs-cex/index.html</loc>
+    <lastmod>2023-10-08T16:32:57.888Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lequangphu.github.io/blog/posts/xin-chao/index.html</loc>
+    <lastmod>2023-10-08T16:32:24.068Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lequangphu.github.io/blog/posts/uniswap-v3-il/index.html</loc>
+    <lastmod>2023-10-08T16:32:22.192Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lequangphu.github.io/blog/index.html</loc>
+    <lastmod>2023-10-08T16:32:21.348Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lequangphu.github.io/blog/posts/uniswap-winter-usage/index.html</loc>
+    <lastmod>2023-10-08T16:32:23.760Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lequangphu.github.io/blog/posts/uniswap-user-origination/index.html</loc>
+    <lastmod>2023-10-08T16:32:25.696Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lequangphu.github.io/blog/posts/uniswap-v3-license/index.html</loc>
+    <lastmod>2023-10-08T16:32:59.460Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lequangphu.github.io/blog/posts/base-supply-side-growth/index.html</loc>
+    <lastmod>2023-10-08T16:33:01.492Z</lastmod>
   </url>
   <url>
     <loc>https://lequangphu.github.io/index.html</loc>
-    <lastmod>2023-09-29T04:03:10.622Z</lastmod>
+    <lastmod>2023-10-08T16:33:07.516Z</lastmod>
   </url>
 </urlset>
