@@ -7,7 +7,7 @@ website:
   google-analytics: "G-S7Y9SX5DXE"
   open-graph: true
   twitter-card: 
-    creator: "@0xphu"
+    creator: "@iamlequangphu"
   repo-url: https://github.com/lequangphu/lequangphu.github.io
   navbar:
     right:
@@ -18,7 +18,7 @@ website:
       - about.qmd
     tools:
       - icon: twitter
-        href: https://twitter.com/0xphu
+        href: https://twitter.com/iamlequangphu
       - icon: github
         href: https://github.com/lequangphu
 
