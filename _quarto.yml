@@ -10,12 +10,9 @@ website:
     creator: "@iamlequangphu"
   repo-url: https://github.com/lequangphu/lequangphu.github.io
   navbar:
-    right:
-      - text: Home
-        href: index.qmd
+    left:
       - text: Blog
         href: blog
-      - about.qmd
     tools:
       - icon: twitter
         href: https://twitter.com/iamlequangphu
