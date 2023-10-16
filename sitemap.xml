@@ -1,51 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://lequangphu.github.io/about.html</loc>
-    <lastmod>2023-10-15T10:27:41.521Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lequangphu.github.io/blog/posts/uniswap-stablecoin-depeg/index.html</loc>
-    <lastmod>2023-10-15T10:27:36.457Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lequangphu.github.io/blog/posts/uniswap-memecoin-mania/index.html</loc>
-    <lastmod>2023-10-15T10:27:33.917Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lequangphu.github.io/blog/posts/uniswap-vs-cex/index.html</loc>
-    <lastmod>2023-10-15T10:27:31.425Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lequangphu.github.io/blog/posts/xin-chao/index.html</loc>
-    <lastmod>2023-10-15T10:27:00.268Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lequangphu.github.io/blog/posts/uniswap-v3-il/index.html</loc>
-    <lastmod>2023-10-15T10:26:58.328Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lequangphu.github.io/blog/index.html</loc>
-    <lastmod>2023-10-15T10:26:57.484Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lequangphu.github.io/blog/posts/uniswap-winter-usage/index.html</loc>
-    <lastmod>2023-10-15T10:26:59.912Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lequangphu.github.io/blog/posts/uniswap-user-origination/index.html</loc>
-    <lastmod>2023-10-15T10:27:01.980Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lequangphu.github.io/blog/posts/uniswap-v3-license/index.html</loc>
-    <lastmod>2023-10-15T10:27:33.057Z</lastmod>
+    <loc>https://lequangphu.github.io/index.html</loc>
+    <lastmod>2023-10-16T02:33:28.351Z</lastmod>
   </url>
   <url>
     <loc>https://lequangphu.github.io/blog/posts/base-supply-side-growth/index.html</loc>
-    <lastmod>2023-10-15T10:27:35.097Z</lastmod>
+    <lastmod>2023-10-16T02:33:26.347Z</lastmod>
   </url>
   <url>
-    <loc>https://lequangphu.github.io/index.html</loc>
-    <lastmod>2023-10-15T10:27:41.173Z</lastmod>
+    <loc>https://lequangphu.github.io/blog/posts/uniswap-v3-license/index.html</loc>
+    <lastmod>2023-10-16T02:33:23.919Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lequangphu.github.io/blog/posts/uniswap-user-origination/index.html</loc>
+    <lastmod>2023-10-16T02:33:03.441Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lequangphu.github.io/blog/posts/uniswap-v3-il/index.html</loc>
+    <lastmod>2023-10-16T02:32:59.413Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lequangphu.github.io/blog/index.html</loc>
+    <lastmod>2023-10-16T02:32:58.385Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lequangphu.github.io/blog/posts/uniswap-winter-usage/index.html</loc>
+    <lastmod>2023-10-16T02:33:01.329Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lequangphu.github.io/blog/posts/uniswap-vs-cex/index.html</loc>
+    <lastmod>2023-10-16T02:33:21.986Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lequangphu.github.io/blog/posts/uniswap-memecoin-mania/index.html</loc>
+    <lastmod>2023-10-16T02:33:24.947Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lequangphu.github.io/blog/posts/uniswap-stablecoin-depeg/index.html</loc>
+    <lastmod>2023-10-16T02:33:27.951Z</lastmod>
   </url>
 </urlset>
