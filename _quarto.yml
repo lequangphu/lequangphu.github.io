@@ -21,6 +21,3 @@ website:
     pinned: true
 
 theme: simplex
-
-execute:
-  freeze: auto

@@ -4,9 +4,6 @@
 # (see https://quarto.org/docs/projects/code-execution.html#freeze)
 freeze: auto
 
-# Enable banner style title blocks
-title-block-banner: true
-
 # add my name to author
 author: "Lê Quang Phú"
 
