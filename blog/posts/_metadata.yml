@@ -11,3 +11,4 @@ author: "Lê Quang Phú"
 toc: true
 execute: 
   echo: false
+number-sections: true
