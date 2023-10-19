@@ -9,7 +9,7 @@ draft: true
 
 Since launched on November 2, 2018, Uniswap has consistently been the largest decentralized exchange, by both trading volume and total value locked (TVL). Maintaining that position requires a lot of work in growing number of both trader and liquidity provider (LP). The table below shows a few of the most important metrics on the providing liquidity side, which Uniswap had accomplished at the end of September 2023.
 
-<iframe src="https://dune.com/embeds/3107096/5189163" width="100%" height="200"></iframe>
+<iframe src="https://dune.com/embeds/3107096/5189163" width="100%" height="400"></iframe>
 
 In this post, let's dive deeper to answer the question: How had Uniswap grown its providing liquidity side? I breakdown the question into the following smaller questions:
 
@@ -24,4 +24,8 @@ Note:
 
 Uniswap v1 is very small relative to the other versions.
 
-<iframe src="https://dune.com/embeds/3111933/5193845" width="100%" height="200"></iframe>
+<iframe src="https://dune.com/embeds/3111933/5193845" width="100%" height="400"></iframe>
+
+Of 8 blockchains of Uniswap v3, Ethereum is the largest by TVL, Arbitrum is the largest by number of LP.
+
+<iframe src="https://dune.com/embeds/3121149/5208213" width="100%" height="400"></iframe>
