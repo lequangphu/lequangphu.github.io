@@ -70,6 +70,8 @@ gtag('js', new Date());
 gtag('config', 'G-S7Y9SX5DXE', { 'anonymize_ip': true});
 </script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <meta property="og:title" content="Lê Quang Phú - Uniswap LP">
 <meta property="og:description" content="">
@@ -125,7 +127,7 @@ gtag('config', 'G-S7Y9SX5DXE', { 'anonymize_ip': true});
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#breakdown-comparison" id="toc-breakdown-comparison" class="nav-link active" data-scroll-target="#breakdown-comparison"><span class="header-section-number">1</span> Breakdown &amp; comparison</a>
+  <li><a href="#snapshot-september-30-2023" id="toc-snapshot-september-30-2023" class="nav-link active" data-scroll-target="#snapshot-september-30-2023"><span class="header-section-number">1</span> Snapshot, September 30, 2023</a>
   <ul class="collapse">
   <li><a href="#by-version" id="toc-by-version" class="nav-link" data-scroll-target="#by-version"><span class="header-section-number">1.1</span> By version</a></li>
   <li><a href="#by-blockchain" id="toc-by-blockchain" class="nav-link" data-scroll-target="#by-blockchain"><span class="header-section-number">1.2</span> By blockchain</a></li>
@@ -169,31 +171,41 @@ gtag('config', 'G-S7Y9SX5DXE', { 'anonymize_ip': true});
 
 </header>
 
-<p>Since launched on November 2, 2018, Uniswap has consistently been the largest decentralized exchange, by both trading volume and total value locked (TVL). Maintaining that position requires a lot of work in growing number of both trader and liquidity provider (LP). The table below shows a few of the most important metrics on the providing liquidity side, which Uniswap had accomplished at the end of September 2023.</p>
-<iframe src="https://dune.com/embeds/3128490/5219375" width="100%" height="400">
-</iframe>
-<p>In this post, let’s dive deeper to answer the question: How had Uniswap grown its providing liquidity side? I breakdown the question into the following smaller questions:</p>
+<p>Since launched on November 2, 2018, Uniswap has consistently been the largest decentralized exchange by trading volume. Maintaining that position requires a lot of liquidity, provided by liquidity provider (LP). Indeed, Uniswap has consistently had the most total value locked (TVL) among decentralized exchanges. TVL is the amount of liquidity available to trading at any given time. Which factors affect liquidity availability? It’s the amount of liquidity added and how long it’s locked before being removed.</p>
+<p><span class="math display">\[
+Liquidity\ Availability = Liquidity\times Locked\ Time
+\]</span></p>
+<p>There are several aspects we need to look at to assess LPs:</p>
 <ul>
-<li>Uniswap has 3 versions, what are their contributions? How are they relative to one another?</li>
-<li>Uniswap operates on 8 blockchains, what are their contributions? How are they relative to one another?</li>
-<li>Who are the LPs?</li>
+<li></li>
 </ul>
 <p>Note:</p>
 <ul>
 <li>At the end of September 2023, Uniswap was operating on 10 blockchains. However, as of October 17, 2023, Dune Analytics, which is the main data source of this post, does not support <code>Moonbeam</code>, and <code>zkSync Era</code>. Thus I don’t explore them, and their numbers are very small, according to <a href="https://defillama.com/protocol/uniswap">Defillama</a>.</li>
 </ul>
-<section id="breakdown-comparison" class="level2" data-number="1">
-<h2 data-number="1" class="anchored" data-anchor-id="breakdown-comparison"><span class="header-section-number">1</span> Breakdown &amp; comparison</h2>
+<section id="snapshot-september-30-2023" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="snapshot-september-30-2023"><span class="header-section-number">1</span> Snapshot, September 30, 2023</h2>
+<p>First, let’s take a quick look at the state of Uniswap, including net TVL, total number of LP, and total number of position, aggregated since inception till the end of September 2023.</p>
+<p>Ethereum has more TVL and number of LP, while layer-2 networks (L2s) have more number of position.</p>
+<iframe src="https://dune.com/embeds/3128490/5219375" width="100%" height="400">
+</iframe>
+<p>Uniswap has 3 versions, operates on 8 blockchains. <strong>What are their contributions? How are they relative to one another?</strong></p>
 <section id="by-version" class="level3" data-number="1.1">
 <h3 data-number="1.1" class="anchored" data-anchor-id="by-version"><span class="header-section-number">1.1</span> By version</h3>
 <p>Uniswap v3 is the largest by TVL and number of position. However, v2 is the largest by number of LP. And v1 is very small relative to the other versions.</p>
 <iframe src="https://dune.com/embeds/3111933/5193845" width="100%" height="400">
 </iframe>
+<p>Uniswap v3 is the largest by TVL per LP providing liquidity, 1.6x that of v2. Meanwhile, v2 is the largest by TVL per open position, 1.5x that of v3.</p>
+<iframe src="https://dune.com/embeds/3129858/5221504" width="100%" height="400">
+</iframe>
 </section>
 <section id="by-blockchain" class="level3" data-number="1.2">
 <h3 data-number="1.2" class="anchored" data-anchor-id="by-blockchain"><span class="header-section-number">1.2</span> By blockchain</h3>
-<p>Of 8 blockchains of Uniswap v3, Ethereum is the largest by TVL, 10x+ larger than others. However, Arbitrum is the largest by number of LP. And Polygon is the largest by number of position. These 3 blockchains are top 3 across the 3 metrics.</p>
+<p>Of 8 blockchains of Uniswap v3, Ethereum is the largest by TVL, 10x+ larger than others. However, Arbitrum is the largest by number of LP. And Polygon is the largest by number of position, following by Optimism. These 4 blockchains are top 4 across the 3 metrics.</p>
 <iframe src="https://dune.com/embeds/3121149/5208213" width="100%" height="400">
+</iframe>
+<p>Ethereum is the largest by TVL per LP providing liquidity and TVL per position providing liquidity, 2.5x-4x those of others. Interestingly, the recent launch networks such as Celo, Avalanche_c, and Base are in top 4 with Ethereum, replacing Arbitrum, Polygon, and Optimism.</p>
+<iframe src="https://dune.com/embeds/3131405/5223340" width="100%" height="400">
 </iframe>
 
 
