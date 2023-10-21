@@ -9,23 +9,28 @@ draft: true
 
 Since launched on November 2, 2018, Uniswap has consistently been the largest decentralized exchange, by both trading volume and total value locked (TVL). Maintaining that position requires a lot of work in growing number of both trader and liquidity provider (LP). The table below shows a few of the most important metrics on the providing liquidity side, which Uniswap had accomplished at the end of September 2023.
 
-<iframe src="https://dune.com/embeds/3107096/5189163" width="100%" height="400"></iframe>
+<iframe src="https://dune.com/embeds/3128490/5219375" width="100%" height="400"></iframe>
 
 In this post, let's dive deeper to answer the question: How had Uniswap grown its providing liquidity side? I breakdown the question into the following smaller questions:
 
-1.  Uniswap has 3 versions, what are their contributions? How did the launch of a new version affect the existing one(s)?
-2.  Who are the LPs?
+-   Uniswap has 3 versions, what are their contributions? How are they relative to one another?
+-   Uniswap operates on 8 blockchains, what are their contributions? How are they relative to one another?
+-   Who are the LPs?
 
 Note:
 
--   At the end of September 2023, Uniswap was operating on 10 blockchains. However, as of October 17, 2023, Dune Analytics, which is the main data source of this post, does not support Moonbeam, and zkSync Era. Thus I don't explore them, and their numbers are very small, according to [Defillama](https://defillama.com/protocol/uniswap).
+-   At the end of September 2023, Uniswap was operating on 10 blockchains. However, as of October 17, 2023, Dune Analytics, which is the main data source of this post, does not support `Moonbeam`, and `zkSync Era`. Thus I don't explore them, and their numbers are very small, according to [Defillama](https://defillama.com/protocol/uniswap).
 
-## Version breakdown
+## Breakdown & comparison
 
-Uniswap v1 is very small relative to the other versions.
+### By version
+
+Uniswap v3 is the largest by TVL and number of position. However, v2 is the largest by number of LP. And v1 is very small relative to the other versions.
 
 <iframe src="https://dune.com/embeds/3111933/5193845" width="100%" height="400"></iframe>
 
-Of 8 blockchains of Uniswap v3, Ethereum is the largest by TVL, Arbitrum is the largest by number of LP.
+### By blockchain
+
+Of 8 blockchains of Uniswap v3, Ethereum is the largest by TVL, 10x+ larger than others. However, Arbitrum is the largest by number of LP. And Polygon is the largest by number of position. These 3 blockchains are top 3 across the 3 metrics.
 
 <iframe src="https://dune.com/embeds/3121149/5208213" width="100%" height="400"></iframe>
