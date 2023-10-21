@@ -125,7 +125,11 @@ gtag('config', 'G-S7Y9SX5DXE', { 'anonymize_ip': true});
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#version-breakdown" id="toc-version-breakdown" class="nav-link active" data-scroll-target="#version-breakdown"><span class="header-section-number">1</span> Version breakdown</a></li>
+  <li><a href="#breakdown-comparison" id="toc-breakdown-comparison" class="nav-link active" data-scroll-target="#breakdown-comparison"><span class="header-section-number">1</span> Breakdown &amp; comparison</a>
+  <ul class="collapse">
+  <li><a href="#by-version" id="toc-by-version" class="nav-link" data-scroll-target="#by-version"><span class="header-section-number">1.1</span> By version</a></li>
+  <li><a href="#by-blockchain" id="toc-by-blockchain" class="nav-link" data-scroll-target="#by-blockchain"><span class="header-section-number">1.2</span> By blockchain</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -166,27 +170,34 @@ gtag('config', 'G-S7Y9SX5DXE', { 'anonymize_ip': true});
 </header>
 
 <p>Since launched on November 2, 2018, Uniswap has consistently been the largest decentralized exchange, by both trading volume and total value locked (TVL). Maintaining that position requires a lot of work in growing number of both trader and liquidity provider (LP). The table below shows a few of the most important metrics on the providing liquidity side, which Uniswap had accomplished at the end of September 2023.</p>
-<iframe src="https://dune.com/embeds/3107096/5189163" width="100%" height="400">
+<iframe src="https://dune.com/embeds/3128490/5219375" width="100%" height="400">
 </iframe>
 <p>In this post, let’s dive deeper to answer the question: How had Uniswap grown its providing liquidity side? I breakdown the question into the following smaller questions:</p>
-<ol type="1">
-<li>Uniswap has 3 versions, what are their contributions? How did the launch of a new version affect the existing one(s)?</li>
+<ul>
+<li>Uniswap has 3 versions, what are their contributions? How are they relative to one another?</li>
+<li>Uniswap operates on 8 blockchains, what are their contributions? How are they relative to one another?</li>
 <li>Who are the LPs?</li>
-</ol>
+</ul>
 <p>Note:</p>
 <ul>
-<li>At the end of September 2023, Uniswap was operating on 10 blockchains. However, as of October 17, 2023, Dune Analytics, which is the main data source of this post, does not support Moonbeam, and zkSync Era. Thus I don’t explore them, and their numbers are very small, according to <a href="https://defillama.com/protocol/uniswap">Defillama</a>.</li>
+<li>At the end of September 2023, Uniswap was operating on 10 blockchains. However, as of October 17, 2023, Dune Analytics, which is the main data source of this post, does not support <code>Moonbeam</code>, and <code>zkSync Era</code>. Thus I don’t explore them, and their numbers are very small, according to <a href="https://defillama.com/protocol/uniswap">Defillama</a>.</li>
 </ul>
-<section id="version-breakdown" class="level2" data-number="1">
-<h2 data-number="1" class="anchored" data-anchor-id="version-breakdown"><span class="header-section-number">1</span> Version breakdown</h2>
-<p>Uniswap v1 is very small relative to the other versions.</p>
+<section id="breakdown-comparison" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="breakdown-comparison"><span class="header-section-number">1</span> Breakdown &amp; comparison</h2>
+<section id="by-version" class="level3" data-number="1.1">
+<h3 data-number="1.1" class="anchored" data-anchor-id="by-version"><span class="header-section-number">1.1</span> By version</h3>
+<p>Uniswap v3 is the largest by TVL and number of position. However, v2 is the largest by number of LP. And v1 is very small relative to the other versions.</p>
 <iframe src="https://dune.com/embeds/3111933/5193845" width="100%" height="400">
 </iframe>
-<p>Of 8 blockchains of Uniswap v3, Ethereum is the largest by TVL, Arbitrum is the largest by number of LP.</p>
+</section>
+<section id="by-blockchain" class="level3" data-number="1.2">
+<h3 data-number="1.2" class="anchored" data-anchor-id="by-blockchain"><span class="header-section-number">1.2</span> By blockchain</h3>
+<p>Of 8 blockchains of Uniswap v3, Ethereum is the largest by TVL, 10x+ larger than others. However, Arbitrum is the largest by number of LP. And Polygon is the largest by number of position. These 3 blockchains are top 3 across the 3 metrics.</p>
 <iframe src="https://dune.com/embeds/3121149/5208213" width="100%" height="400">
 </iframe>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
