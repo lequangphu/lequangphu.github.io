@@ -12,11 +12,9 @@ Because liquidity facilitates trading, it is vital to a decentralized exchange (
 In this post, you will learn about the LPs of Uniswap, the largest DEX.
 
 ::: callout-note
-At the end of September 2023, Uniswap was operating on 10 blockchains. However, as of October 17, 2023, Dune Analytics, which is the main data source of this post, does not support `Moonbeam`, and `zkSync Era`. Thus I don't explore them, and their numbers are very small, according to [Defillama](https://defillama.com/protocol/uniswap).
-
-LP is the account that receive and own liquidity token minted whenever the `mint` function of a pool's contract is called in a transaction to add liquidity into the pool, not necessarily the account that initiated the transaction. It's a common practice, and easier, to assign the latter as LP when doing onchain analysis. However, in many transactions, adding liquidity is just a middle step, or a side effect in achieving the original goal, and the transaction-initiating account may not know the liquidity `mint` event, and may have no control over the account receiving the liquidity token minted.
-
-When possible, data spans from the inception of Uniswap to September 30, 2023.
+-   LP is the account that receive and own liquidity token minted whenever the `mint` function of a pool's contract is called in a transaction to add liquidity into the pool, not necessarily the account that initiated the transaction. It's a common practice, and easier, to assign the latter as LP when doing onchain analysis. However, in many transactions, adding liquidity is just a middle step, or a side effect in achieving the original goal, and the transaction-initiating account may not know the liquidity `mint` event, and may have no control over the account receiving the liquidity token minted.
+-   When possible, data spans from the inception of Uniswap to September 30, 2023.
+-   At the end of September 2023, Uniswap was operating on 10 blockchains. However, as of October 17, 2023, Dune Analytics, which is the main data source of this post, does not support `Moonbeam`, and `zkSync Era`. Thus I don't explore them, and their numbers are very small, according to [Defillama](https://defillama.com/protocol/uniswap).
 :::
 
 ## Key takeaways
@@ -69,8 +67,6 @@ Ethereum is the largest by TVL per LP providing liquidity and TVL per position p
 
 </iframe>
 
-There is a popular phenomenon called 80:20, where 80% of outputs usually come from 20% of inputs. Next, let's dive deeper to see how many LPs account for 80% of Uniswap's total liquidity volume.
-
 ## Stats as context
 
 *In this section, I want to provide some statistics about Uniswap's LPs as context for the following sections.*
@@ -85,10 +81,10 @@ There is a group of LPs who provide liquidity to Uniswap on both Ethereum and L2
 
 ### LPs' account type
 
-Ethereum (and L2s) has two account types:
-
--   Externally-owned account (EOA) -- controlled by anyone with the private keys
--   Contract account -- a smart contract deployed to the network, controlled by code.
+> Ethereum (and L2s) has two account types:
+>
+> -   Externally-owned account (EOA) -- controlled by anyone with the private keys
+> -   Contract account -- a smart contract deployed to the network, controlled by code.
 
 Percentage share in total Uniswap's LPs of contract accounts is 2.8%. That number on Ethereum and on L2s are 2.1% and 3.8% respectively.
 
@@ -123,6 +119,8 @@ LPs, who are mint-no-burn, account for 99.5% of total LPs on L2s, is the reason 
 ## 80% of total liquidity volume
 
 *Liquidity volume is volume of liquidity added to Uniswap in USD, i.e. USD amount of all `mint` event.*
+
+There is a popular phenomenon called 80:20, where 80% of outputs usually come from 20% of inputs. Next, let's dive deeper to see how many LPs account for 80% of Uniswap's total liquidity volume.
 
 ### Uniswap
 
