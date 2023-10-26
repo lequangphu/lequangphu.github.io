@@ -167,6 +167,7 @@ gtag('config', 'G-S7Y9SX5DXE', { 'anonymize_ip': true});
   <li><a href="#monthly-on-ethereum-3" id="toc-monthly-on-ethereum-3" class="nav-link" data-scroll-target="#monthly-on-ethereum-3"><span class="header-section-number">9.1</span> Monthly on Ethereum</a></li>
   <li><a href="#monthly-on-l2s-3" id="toc-monthly-on-l2s-3" class="nav-link" data-scroll-target="#monthly-on-l2s-3"><span class="header-section-number">9.2</span> Monthly on L2s</a></li>
   </ul></li>
+  <li><a href="#eoa" id="toc-eoa" class="nav-link" data-scroll-target="#eoa"><span class="header-section-number">10</span> EOA</a></li>
   </ul>
 </nav>
     </div>
@@ -219,7 +220,7 @@ Note
 </div>
 <div class="callout-body-container callout-body">
 <ul>
-<li>LP is the account that receive and own liquidity token minted whenever the <code>mint</code> function of a pool’s contract is called in a transaction to add liquidity into the pool, not necessarily the account that initiated the transaction. It’s a common practice, and easier, to assign the latter as LP when doing onchain analysis. However, in many transactions, adding liquidity is just a middle step, or a side effect in achieving the original goal, and the transaction-initiating account may not know the liquidity <code>mint</code> event, and may have no control over the account receiving the liquidity token minted.</li>
+<li>Adding liquidity to a pool of Uniswap requires calling <code>mint</code> function of the pool’s contract. In the transaction that calls the <code>mint</code> function, there is (1) an account that initiate the transaction, and there is (2) an account that receive the liquidity token representing the share of liquidity added to the pool. The 2 accounts may have the same address. It’s a common practice, and easier, to assign the (1) account as the LP when doing onchain analysis. However, in many transactions, adding liquidity is just a middle step, or a side effect in achieving the original goal, and the transaction-initiating account may not know the liquidity <code>mint</code> event, and may have no control over the account receiving the liquidity token minted. Plus, only the owner of the (2) account can burn liquidity token stored in it. Thus, it’s a better practice to assign the (2) account, who owns the pool’s liquidity token as the LP.</li>
 <li>When possible, data spans from the inception of Uniswap to September 30, 2023.</li>
 <li>At the end of September 2023, Uniswap was operating on 10 blockchains. However, as of October 17, 2023, Dune Analytics, which is the main data source of this post, does not support <code>Moonbeam</code>, and <code>zkSync Era</code>. Thus I don’t explore them, and their numbers are very small, according to <a href="https://defillama.com/protocol/uniswap">Defillama</a>.</li>
 </ul>
@@ -433,9 +434,16 @@ Days = DayOfLastEvent- DayOfFirstEvent
 <p>On average, on L2s, number of day per mint of EOAs was rising (less active) before making 2 highest months in Q3 and Q4 2022. In 2023, it dropped in Q1, then has been fluctuated in a range in Q2 and Q3. Meanwhile, except for a surge in Q4 2021, number of day per mint of contract accounts basically plateaued.</p>
 <iframe src="https://dune.com/embeds/3145464/5246083" width="100%" height="400">
 </iframe>
-
-
 </section>
+</section>
+<section id="eoa" class="level2" data-number="10">
+<h2 data-number="10" class="anchored" data-anchor-id="eoa"><span class="header-section-number">10</span> EOA</h2>
+<p>We learned that EOAs account for 97% of total number of LP of Uniswap. This is the group of LP that Uniswap builders should pay attention at in order to grow the liquidity side of operation.</p>
+<p>EOAs, who mint 10 times or less, account for 91% of total number of EOAs. Up to 9 mints, as number of mint increases, % share of number of LP of each mint bucket in total number of LP decreases, however, % share of liquidity volume of each mint bucket in total liquidity volume basically flats, which means liquidity volume per LP increases. Indeed, relative to liquidity per LP of single mint LPs, that of 2-mints LPs is 5x larger, of 3-mints LPs is 9x larger, and so on. If Uniswap builders can find a way to nudge a single-mint LP to have another liquidity mint, it will potentially 5x the LP’s total liquidity volume.</p>
+<iframe src="https://dune.com/embeds/3147289/5249472" width="100%" height="400">
+</iframe>
+
+
 </section>
 
 </main> <!-- /main -->
