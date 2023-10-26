@@ -118,7 +118,7 @@ On L2s, the % share of monthly liquidity volume provided by top 1% of monthly ac
 
 <iframe src="https://dune.com/embeds/3135645/5230137" width="100%" height="400"></iframe>
 
-In short, Uniswap's monthly liquidity volume is highly concentrated. It is more concentrated on Ethereum than on L2s. The concentration had increased rapidly since Uniswap inception till mid 2022. Since mid 2022, at least $9 out of $10 of monthly liquidity volume were provided by the top 1% of monthly active LP.
+To summarize, Uniswap's monthly liquidity volume is highly concentrated. It is more concentrated on Ethereum than on L2s. The concentration had increased rapidly since Uniswap inception till mid 2022. Since mid 2022, at least $9 out of $10 of monthly liquidity volume were provided by the top 1% of monthly active LP.
 
 ## Stats as context
 
@@ -197,20 +197,6 @@ On average, monthly number of mint per provider of EOAs on L2s is quite stable, 
 
 <iframe src="https://dune.com/embeds/3145577/5246276" width="100%" height="400"></iframe>
 
-## Burn per provider
-
-On average, number of burn of contract accounts is 92x that of EOAs. The gap widens to 157x on L2s, and shrink to 33x on Ethereum. Interestingly, contract accounts on L2s tend to burn more than those on Ethereum, however, EOAs of both Ethereum and L2s have the same number of burn.
-
-<iframe src="https://dune.com/embeds/3145532/5246195" width="100%" height="400"></iframe>
-
-### Monthly on Ethereum
-
-<iframe src="https://dune.com/embeds/3145571/5246262" width="100%" height="400"></iframe>
-
-### Monthly on L2s
-
-<iframe src="https://dune.com/embeds/3145579/5246280" width="100%" height="400"></iframe>
-
 ## Liquidity per mint
 
 On average, liquidity per mint of contract accounts is 47x that of EOAs. The gap widens to 96x on Ethereum, and shrink to 42x on L2s. We can also see that liquidity per mint of both contract accounts and EOAs on Ethereum are much larger than those on L2s.
@@ -228,20 +214,6 @@ The trend of average liquidity per mint of both contract accounts and EOAs on Et
 Except for 2 spikes, of average liquidity per mint of EOAs in Q3 2021, and that of contract accounts in Q2 2022. The trend of average liquidity per mint of both contract accounts and EOAs are similar to each other.
 
 <iframe src="https://dune.com/embeds/3145177/5245557" width="100%" height="400"></iframe>
-
-## Liquidity per burn
-
-On average, liquidity per burn of EOAs is larger than that of contract accounts
-
-<iframe src="https://dune.com/embeds/3140576/5237582" width="100%" height="400"></iframe>
-
-### Monthly on Ethereum
-
-<iframe src="https://dune.com/embeds/3145410/5245967" width="100%" height="400"></iframe>
-
-### Monthly on L2s
-
-<iframe src="https://dune.com/embeds/3145412/5245972" width="100%" height="400"></iframe>
 
 ## Mint frequency
 
@@ -261,22 +233,12 @@ On average, number of day per mint of EOAs is almost 3x that of contract account
 
 ### Monthly on Ethereum
 
+On average, on Ethereum, number of day per mint of EOAs was rising (less active) before April 2021. Since then, it has been falling (more active). Meanwhile, number of day per mint of contract accounts didn't show a clear trend before 2023. In 2023, it had a 2x surge in April, then dropped to the baseline. Recently, number of day per mint of both EOAs and contract accounts were similar to each other.
+
 <iframe src="https://dune.com/embeds/3145446/5246071" width="100%" height="400"></iframe>
 
 ### Monthly on L2s
 
+On average, on L2s, number of day per mint of EOAs was rising (less active) before making 2 highest months in Q3 and Q4 2022. In 2023, it dropped in Q1, then has been fluctuated in a range in Q2 and Q3. Meanwhile, except for a surge in Q4 2021, number of day per mint of contract accounts basically plateaued.
+
 <iframe src="https://dune.com/embeds/3145464/5246083" width="100%" height="400"></iframe>
-
-## Burn frequency
-
-On average, number of day per burn of EOAs is 3x that of contract accounts. The gap shrinks on both Ethereum and L2s. We can also see that number of day per burn of both contract accounts and EOAs on Ethereum are much higher than those on L2s.
-
-<iframe src="https://dune.com/embeds/3143914/5243326" width="100%" height="400"></iframe>
-
-### Monthly on Ethereum
-
-<iframe src="https://dune.com/embeds/3145472/5246104" width="100%" height="400"></iframe>
-
-### Monthly on L2s
-
-<iframe src="https://dune.com/embeds/3145473/5246106" width="100%" height="400"></iframe>
