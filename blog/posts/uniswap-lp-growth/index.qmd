@@ -27,7 +27,7 @@ When possible, data spans from the inception of Uniswap to September 30, 2023.
 
 3.  55% of all LPs have added liquidity (mint) only once, 32% of all LPs have removed liquidity (burn) only once. 52% of all LPs have never removed liquidity (mint and no burn). 1.8% of all LPs removed liquidity without adding liquidity (burn and no mint), they burned liquidity token after receiving from other LPs.
 
-4.  On average, LPs, who are contract account, have bigger total number of mint (11x), larger liquidity volume per mint (47x), and are more active (3x) than LPs, who are externally-owned account (EOA).
+4.  On average, LPs, who are contract account, tend to stay in pools shorter (10x), have bigger total number of mint (11x), larger liquidity volume per mint (47x), and are more active (3x) than LPs, who are externally-owned account (EOA).
 
 ## Snapshot
 
@@ -126,7 +126,7 @@ LPs, who are mint-no-burn, account for 99.5% of total LPs on L2s, is the reason 
 
 ### Uniswap
 
-79% of total liquidity added to Uniswap are provided by 7 largest LPs, 0.0007% of 984k total number of LP.
+79% of total liquidity added to Uniswap are provided by 7 largest LPs, 0.0007% of 984k total number of LP. All of them are contract account.
 
 <iframe src="https://dune.com/embeds/3133290/5227250" width="100%" height="400">
 
