@@ -156,30 +156,15 @@ gtag('config', 'G-S7Y9SX5DXE', { 'anonymize_ip': true});
   <li><a href="#monthly-on-ethereum-1" id="toc-monthly-on-ethereum-1" class="nav-link" data-scroll-target="#monthly-on-ethereum-1"><span class="header-section-number">6.1</span> Monthly on Ethereum</a></li>
   <li><a href="#monthly-on-l2s-1" id="toc-monthly-on-l2s-1" class="nav-link" data-scroll-target="#monthly-on-l2s-1"><span class="header-section-number">6.2</span> Monthly on L2s</a></li>
   </ul></li>
-  <li><a href="#burn-per-provider" id="toc-burn-per-provider" class="nav-link" data-scroll-target="#burn-per-provider"><span class="header-section-number">7</span> Burn per provider</a>
+  <li><a href="#liquidity-per-mint" id="toc-liquidity-per-mint" class="nav-link" data-scroll-target="#liquidity-per-mint"><span class="header-section-number">7</span> Liquidity per mint</a>
   <ul class="collapse">
   <li><a href="#monthly-on-ethereum-2" id="toc-monthly-on-ethereum-2" class="nav-link" data-scroll-target="#monthly-on-ethereum-2"><span class="header-section-number">7.1</span> Monthly on Ethereum</a></li>
   <li><a href="#monthly-on-l2s-2" id="toc-monthly-on-l2s-2" class="nav-link" data-scroll-target="#monthly-on-l2s-2"><span class="header-section-number">7.2</span> Monthly on L2s</a></li>
   </ul></li>
-  <li><a href="#liquidity-per-mint" id="toc-liquidity-per-mint" class="nav-link" data-scroll-target="#liquidity-per-mint"><span class="header-section-number">8</span> Liquidity per mint</a>
+  <li><a href="#mint-frequency" id="toc-mint-frequency" class="nav-link" data-scroll-target="#mint-frequency"><span class="header-section-number">8</span> Mint frequency</a>
   <ul class="collapse">
   <li><a href="#monthly-on-ethereum-3" id="toc-monthly-on-ethereum-3" class="nav-link" data-scroll-target="#monthly-on-ethereum-3"><span class="header-section-number">8.1</span> Monthly on Ethereum</a></li>
   <li><a href="#monthly-on-l2s-3" id="toc-monthly-on-l2s-3" class="nav-link" data-scroll-target="#monthly-on-l2s-3"><span class="header-section-number">8.2</span> Monthly on L2s</a></li>
-  </ul></li>
-  <li><a href="#liquidity-per-burn" id="toc-liquidity-per-burn" class="nav-link" data-scroll-target="#liquidity-per-burn"><span class="header-section-number">9</span> Liquidity per burn</a>
-  <ul class="collapse">
-  <li><a href="#monthly-on-ethereum-4" id="toc-monthly-on-ethereum-4" class="nav-link" data-scroll-target="#monthly-on-ethereum-4"><span class="header-section-number">9.1</span> Monthly on Ethereum</a></li>
-  <li><a href="#monthly-on-l2s-4" id="toc-monthly-on-l2s-4" class="nav-link" data-scroll-target="#monthly-on-l2s-4"><span class="header-section-number">9.2</span> Monthly on L2s</a></li>
-  </ul></li>
-  <li><a href="#mint-frequency" id="toc-mint-frequency" class="nav-link" data-scroll-target="#mint-frequency"><span class="header-section-number">10</span> Mint frequency</a>
-  <ul class="collapse">
-  <li><a href="#monthly-on-ethereum-5" id="toc-monthly-on-ethereum-5" class="nav-link" data-scroll-target="#monthly-on-ethereum-5"><span class="header-section-number">10.1</span> Monthly on Ethereum</a></li>
-  <li><a href="#monthly-on-l2s-5" id="toc-monthly-on-l2s-5" class="nav-link" data-scroll-target="#monthly-on-l2s-5"><span class="header-section-number">10.2</span> Monthly on L2s</a></li>
-  </ul></li>
-  <li><a href="#burn-frequency" id="toc-burn-frequency" class="nav-link" data-scroll-target="#burn-frequency"><span class="header-section-number">11</span> Burn frequency</a>
-  <ul class="collapse">
-  <li><a href="#monthly-on-ethereum-6" id="toc-monthly-on-ethereum-6" class="nav-link" data-scroll-target="#monthly-on-ethereum-6"><span class="header-section-number">11.1</span> Monthly on Ethereum</a></li>
-  <li><a href="#monthly-on-l2s-6" id="toc-monthly-on-l2s-6" class="nav-link" data-scroll-target="#monthly-on-l2s-6"><span class="header-section-number">11.2</span> Monthly on L2s</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -316,7 +301,7 @@ Note
 <p>On L2s, the % share of monthly liquidity volume provided by top 1% of monthly active LP of Uniswap fluctuated widly between 60% and 99% in early 2022. Since then, the number formed a horizontal channel between 87% and 99%.</p>
 <iframe src="https://dune.com/embeds/3135645/5230137" width="100%" height="400">
 </iframe>
-<p>In short, Uniswap’s monthly liquidity volume is highly concentrated. It is more concentrated on Ethereum than on L2s. The concentration had increased rapidly since Uniswap inception till mid 2022. Since mid 2022, at least $9 out of $10 of monthly liquidity volume were provided by the top 1% of monthly active LP.</p>
+<p>To summarize, Uniswap’s monthly liquidity volume is highly concentrated. It is more concentrated on Ethereum than on L2s. The concentration had increased rapidly since Uniswap inception till mid 2022. Since mid 2022, at least $9 out of $10 of monthly liquidity volume were provided by the top 1% of monthly active LP.</p>
 </section>
 <section id="stats-as-context" class="level2 page-columns page-full" data-number="4">
 <h2 data-number="4" class="anchored" data-anchor-id="stats-as-context"><span class="header-section-number">4</span> Stats as context</h2>
@@ -392,58 +377,26 @@ Note
 </iframe>
 </section>
 </section>
-<section id="burn-per-provider" class="level2" data-number="7">
-<h2 data-number="7" class="anchored" data-anchor-id="burn-per-provider"><span class="header-section-number">7</span> Burn per provider</h2>
-<p>On average, number of burn of contract accounts is 92x that of EOAs. The gap widens to 157x on L2s, and shrink to 33x on Ethereum. Interestingly, contract accounts on L2s tend to burn more than those on Ethereum, however, EOAs of both Ethereum and L2s have the same number of burn.</p>
-<iframe src="https://dune.com/embeds/3145532/5246195" width="100%" height="400">
-</iframe>
-<section id="monthly-on-ethereum-2" class="level3" data-number="7.1">
-<h3 data-number="7.1" class="anchored" data-anchor-id="monthly-on-ethereum-2"><span class="header-section-number">7.1</span> Monthly on Ethereum</h3>
-<iframe src="https://dune.com/embeds/3145571/5246262" width="100%" height="400">
-</iframe>
-</section>
-<section id="monthly-on-l2s-2" class="level3" data-number="7.2">
-<h3 data-number="7.2" class="anchored" data-anchor-id="monthly-on-l2s-2"><span class="header-section-number">7.2</span> Monthly on L2s</h3>
-<iframe src="https://dune.com/embeds/3145579/5246280" width="100%" height="400">
-</iframe>
-</section>
-</section>
-<section id="liquidity-per-mint" class="level2" data-number="8">
-<h2 data-number="8" class="anchored" data-anchor-id="liquidity-per-mint"><span class="header-section-number">8</span> Liquidity per mint</h2>
+<section id="liquidity-per-mint" class="level2" data-number="7">
+<h2 data-number="7" class="anchored" data-anchor-id="liquidity-per-mint"><span class="header-section-number">7</span> Liquidity per mint</h2>
 <p>On average, liquidity per mint of contract accounts is 47x that of EOAs. The gap widens to 96x on Ethereum, and shrink to 42x on L2s. We can also see that liquidity per mint of both contract accounts and EOAs on Ethereum are much larger than those on L2s.</p>
 <iframe src="https://dune.com/embeds/3139421/5235800" width="100%" height="400">
 </iframe>
-<section id="monthly-on-ethereum-3" class="level3" data-number="8.1">
-<h3 data-number="8.1" class="anchored" data-anchor-id="monthly-on-ethereum-3"><span class="header-section-number">8.1</span> Monthly on Ethereum</h3>
+<section id="monthly-on-ethereum-2" class="level3" data-number="7.1">
+<h3 data-number="7.1" class="anchored" data-anchor-id="monthly-on-ethereum-2"><span class="header-section-number">7.1</span> Monthly on Ethereum</h3>
 <p>The trend of average liquidity per mint of both contract accounts and EOAs on Ethereum quite correlated to each other. The only period showing divergence is between June 2022 and February 2023.</p>
 <iframe src="https://dune.com/embeds/3145086/5245443" width="100%" height="400">
 </iframe>
 </section>
-<section id="monthly-on-l2s-3" class="level3" data-number="8.2">
-<h3 data-number="8.2" class="anchored" data-anchor-id="monthly-on-l2s-3"><span class="header-section-number">8.2</span> Monthly on L2s</h3>
+<section id="monthly-on-l2s-2" class="level3" data-number="7.2">
+<h3 data-number="7.2" class="anchored" data-anchor-id="monthly-on-l2s-2"><span class="header-section-number">7.2</span> Monthly on L2s</h3>
 <p>Except for 2 spikes, of average liquidity per mint of EOAs in Q3 2021, and that of contract accounts in Q2 2022. The trend of average liquidity per mint of both contract accounts and EOAs are similar to each other.</p>
 <iframe src="https://dune.com/embeds/3145177/5245557" width="100%" height="400">
 </iframe>
 </section>
 </section>
-<section id="liquidity-per-burn" class="level2" data-number="9">
-<h2 data-number="9" class="anchored" data-anchor-id="liquidity-per-burn"><span class="header-section-number">9</span> Liquidity per burn</h2>
-<p>On average, liquidity per burn of EOAs is larger than that of contract accounts</p>
-<iframe src="https://dune.com/embeds/3140576/5237582" width="100%" height="400">
-</iframe>
-<section id="monthly-on-ethereum-4" class="level3" data-number="9.1">
-<h3 data-number="9.1" class="anchored" data-anchor-id="monthly-on-ethereum-4"><span class="header-section-number">9.1</span> Monthly on Ethereum</h3>
-<iframe src="https://dune.com/embeds/3145410/5245967" width="100%" height="400">
-</iframe>
-</section>
-<section id="monthly-on-l2s-4" class="level3" data-number="9.2">
-<h3 data-number="9.2" class="anchored" data-anchor-id="monthly-on-l2s-4"><span class="header-section-number">9.2</span> Monthly on L2s</h3>
-<iframe src="https://dune.com/embeds/3145412/5245972" width="100%" height="400">
-</iframe>
-</section>
-</section>
-<section id="mint-frequency" class="level2 page-columns page-full" data-number="10">
-<h2 data-number="10" class="anchored" data-anchor-id="mint-frequency"><span class="header-section-number">10</span> Mint frequency</h2>
+<section id="mint-frequency" class="level2 page-columns page-full" data-number="8">
+<h2 data-number="8" class="anchored" data-anchor-id="mint-frequency"><span class="header-section-number">8</span> Mint frequency</h2>
 <div class="page-columns page-full"><p><em>Frequency of an event is number of day per event. This definition is actually the inversion of the normal definition of frequency. I use it to better show data on visualization. Formula below:</em> </p><div class="no-row-height column-margin column-container"><span class="">The larger the frequency, the less active LPs are.</span></div></div>
 <p><span class="math display">\[
 Frequency = Days\div Events
@@ -454,30 +407,16 @@ Days = DayOfLastEvent- DayOfFirstEvent
 <p>On average, number of day per mint of EOAs is almost 3x that of contract accounts. The gap widens to 4x on L2s, and shrink to just above 2x on Ethereum. We can also see that number of day per mint of contract accounts on Ethereum is almost 2x that on L2s, while number of day per mint of EOAs on both Ethereum and L2s are similar.</p>
 <iframe src="https://dune.com/embeds/3142131/5240581" width="100%" height="400">
 </iframe>
-<section id="monthly-on-ethereum-5" class="level3" data-number="10.1">
-<h3 data-number="10.1" class="anchored" data-anchor-id="monthly-on-ethereum-5"><span class="header-section-number">10.1</span> Monthly on Ethereum</h3>
+<section id="monthly-on-ethereum-3" class="level3" data-number="8.1">
+<h3 data-number="8.1" class="anchored" data-anchor-id="monthly-on-ethereum-3"><span class="header-section-number">8.1</span> Monthly on Ethereum</h3>
+<p>On average, on Ethereum, number of day per mint of EOAs was rising (less active) before April 2021. Since then, it has been falling (more active). Meanwhile, number of day per mint of contract accounts didn’t show a clear trend before 2023. In 2023, it had a 2x surge in April, then dropped to the baseline. Recently, number of day per mint of both EOAs and contract accounts were similar to each other.</p>
 <iframe src="https://dune.com/embeds/3145446/5246071" width="100%" height="400">
 </iframe>
 </section>
-<section id="monthly-on-l2s-5" class="level3" data-number="10.2">
-<h3 data-number="10.2" class="anchored" data-anchor-id="monthly-on-l2s-5"><span class="header-section-number">10.2</span> Monthly on L2s</h3>
+<section id="monthly-on-l2s-3" class="level3" data-number="8.2">
+<h3 data-number="8.2" class="anchored" data-anchor-id="monthly-on-l2s-3"><span class="header-section-number">8.2</span> Monthly on L2s</h3>
+<p>On average, on L2s, number of day per mint of EOAs was rising (less active) before making 2 highest months in Q3 and Q4 2022. In 2023, it dropped in Q1, then has been fluctuated in a range in Q2 and Q3. Meanwhile, except for a surge in Q4 2021, number of day per mint of contract accounts basically plateaued.</p>
 <iframe src="https://dune.com/embeds/3145464/5246083" width="100%" height="400">
-</iframe>
-</section>
-</section>
-<section id="burn-frequency" class="level2" data-number="11">
-<h2 data-number="11" class="anchored" data-anchor-id="burn-frequency"><span class="header-section-number">11</span> Burn frequency</h2>
-<p>On average, number of day per burn of EOAs is 3x that of contract accounts. The gap shrinks on both Ethereum and L2s. We can also see that number of day per burn of both contract accounts and EOAs on Ethereum are much higher than those on L2s.</p>
-<iframe src="https://dune.com/embeds/3143914/5243326" width="100%" height="400">
-</iframe>
-<section id="monthly-on-ethereum-6" class="level3" data-number="11.1">
-<h3 data-number="11.1" class="anchored" data-anchor-id="monthly-on-ethereum-6"><span class="header-section-number">11.1</span> Monthly on Ethereum</h3>
-<iframe src="https://dune.com/embeds/3145472/5246104" width="100%" height="400">
-</iframe>
-</section>
-<section id="monthly-on-l2s-6" class="level3" data-number="11.2">
-<h3 data-number="11.2" class="anchored" data-anchor-id="monthly-on-l2s-6"><span class="header-section-number">11.2</span> Monthly on L2s</h3>
-<iframe src="https://dune.com/embeds/3145473/5246106" width="100%" height="400">
 </iframe>
 
 
