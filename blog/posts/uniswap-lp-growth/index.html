@@ -218,9 +218,11 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>At the end of September 2023, Uniswap was operating on 10 blockchains. However, as of October 17, 2023, Dune Analytics, which is the main data source of this post, does not support <code>Moonbeam</code>, and <code>zkSync Era</code>. Thus I don’t explore them, and their numbers are very small, according to <a href="https://defillama.com/protocol/uniswap">Defillama</a>.</p>
-<p>LP is the account that receive and own liquidity token minted whenever the <code>mint</code> function of a pool’s contract is called in a transaction to add liquidity into the pool, not necessarily the account that initiated the transaction. It’s a common practice, and easier, to assign the latter as LP when doing onchain analysis. However, in many transactions, adding liquidity is just a middle step, or a side effect in achieving the original goal, and the transaction-initiating account may not know the liquidity <code>mint</code> event, and may have no control over the account receiving the liquidity token minted.</p>
-<p>When possible, data spans from the inception of Uniswap to September 30, 2023.</p>
+<ul>
+<li>LP is the account that receive and own liquidity token minted whenever the <code>mint</code> function of a pool’s contract is called in a transaction to add liquidity into the pool, not necessarily the account that initiated the transaction. It’s a common practice, and easier, to assign the latter as LP when doing onchain analysis. However, in many transactions, adding liquidity is just a middle step, or a side effect in achieving the original goal, and the transaction-initiating account may not know the liquidity <code>mint</code> event, and may have no control over the account receiving the liquidity token minted.</li>
+<li>When possible, data spans from the inception of Uniswap to September 30, 2023.</li>
+<li>At the end of September 2023, Uniswap was operating on 10 blockchains. However, as of October 17, 2023, Dune Analytics, which is the main data source of this post, does not support <code>Moonbeam</code>, and <code>zkSync Era</code>. Thus I don’t explore them, and their numbers are very small, according to <a href="https://defillama.com/protocol/uniswap">Defillama</a>.</li>
+</ul>
 </div>
 </div>
 <section id="key-takeaways" class="level2" data-number="1">
@@ -256,7 +258,6 @@ Note
 <p>Ethereum is the largest by TVL per LP providing liquidity and TVL per position providing liquidity, 2.5x-4x those of others. Interestingly, the recent launch networks such as Celo, Avalanche_c, and Base are in top 4 with Ethereum, replacing Arbitrum, Polygon, and Optimism.</p>
 <iframe src="https://dune.com/embeds/3131405/5223340" width="100%" height="400">
 </iframe>
-<p>There is a popular phenomenon called 80:20, where 80% of outputs usually come from 20% of inputs. Next, let’s dive deeper to see how many LPs account for 80% of Uniswap’s total liquidity volume.</p>
 </section>
 </section>
 <section id="stats-as-context" class="level2 page-columns page-full" data-number="3">
@@ -270,11 +271,13 @@ Note
 </section>
 <section id="lps-account-type" class="level3" data-number="3.2">
 <h3 data-number="3.2" class="anchored" data-anchor-id="lps-account-type"><span class="header-section-number">3.2</span> LPs’ account type</h3>
+<blockquote class="blockquote">
 <p>Ethereum (and L2s) has two account types:</p>
 <ul>
 <li>Externally-owned account (EOA) – controlled by anyone with the private keys</li>
 <li>Contract account – a smart contract deployed to the network, controlled by code.</li>
 </ul>
+</blockquote>
 <p>Percentage share in total Uniswap’s LPs of contract accounts is 2.8%. That number on Ethereum and on L2s are 2.1% and 3.8% respectively.</p>
 <iframe src="https://dune.com/embeds/3134654/5228995" width="100%" height="400">
 </iframe>
@@ -299,6 +302,7 @@ Note
 <section id="of-total-liquidity-volume" class="level2" data-number="4">
 <h2 data-number="4" class="anchored" data-anchor-id="of-total-liquidity-volume"><span class="header-section-number">4</span> 80% of total liquidity volume</h2>
 <p><em>Liquidity volume is volume of liquidity added to Uniswap in USD, i.e.&nbsp;USD amount of all <code>mint</code> event.</em></p>
+<p>There is a popular phenomenon called 80:20, where 80% of outputs usually come from 20% of inputs. Next, let’s dive deeper to see how many LPs account for 80% of Uniswap’s total liquidity volume.</p>
 <section id="uniswap" class="level3" data-number="4.1">
 <h3 data-number="4.1" class="anchored" data-anchor-id="uniswap"><span class="header-section-number">4.1</span> Uniswap</h3>
 <p>79% of total liquidity added to Uniswap are provided by 7 largest LPs, 0.0007% of 984k total number of LP. All of them are contract account.</p>
