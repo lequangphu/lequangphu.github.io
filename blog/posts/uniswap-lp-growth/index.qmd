@@ -210,7 +210,7 @@ On average, EOAs' liquidity position is locked 10x longer than that of contract 
 
 ### Monthly on Ethereum
 
-*This section and the next aim to see if liquidity locked time varies on a monthly basis. Thus the data only include positions that are openned and closed within a month.*
+*This section and the next aim to see if liquidity locked time varies on a monthly basis. Thus the data only include positions that are opened and closed within a month.*
 
 On average, we can see that liquidity locked time of EOAs on Ethereum has 2 distinct periods: before, and after the first launch on L2s, around September 2021. Before September 2021, liquidity locked time of EOAs on Ethereum fluctuated mostly between 3 and 6 days range. Since September 2021, it has been in a down trend. Meanwhile, liquidity locked time of contract accounts on Ethereum seems to correlate with the crypto market, longer locked time in the bear market (2019--2020), shorter locked time in the bull market (2021--mid 2022), after that, it had recovered, even surpassed that of EOAs, peaked at 5 days in April 2023. Since then, it has dropped significantly to 0.2 days in September 2023, lower than that of EOAs.
 
@@ -220,7 +220,7 @@ On average, we can see that liquidity locked time of EOAs on Ethereum has 2 dist
 
 ### Monthly on L2s
 
-On average, we can see that liquidity locked time of EOAs on L2s was increasing and peaked at 17 days in March 2023. Then it dropped to 7 days in April 2023. Since then, Uniswap on L2s don't have new positions which were openned and closed by EOAs within a month. Meanwhile, liquidity locked time of contract accounts on L2s basically plateaued since September 2021 till September 2023.
+On average, we can see that liquidity locked time of EOAs on L2s was increasing and peaked at 17 days in March 2023. Then it dropped to 7 days in April 2023. Since then, Uniswap on L2s don't have new positions which were opened and closed by EOAs within a month. Meanwhile, liquidity locked time of contract accounts on L2s basically plateaued since September 2021 till September 2023.
 
 <iframe src="https://dune.com/embeds/3144766/5244531" width="100%" height="400">
 
