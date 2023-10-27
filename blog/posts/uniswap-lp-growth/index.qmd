@@ -320,7 +320,7 @@ EOAs, who mint 10 times or less, account for 91% of total number of EOAs. Up to 
 
 </iframe>
 
-Of all EOAs, who minted at least twice, 77% of them have the second mint within 336 hours \[= 2 weeks\] since the first mint.
+Of all EOAs, who minted at least twice, 77% of them have the second mint within first 2 weeks = 336 hours since the first mint.
 
 <iframe src="https://dune.com/embeds/3149962/5254482" width="100%" height="400">
 
