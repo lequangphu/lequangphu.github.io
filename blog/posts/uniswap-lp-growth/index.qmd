@@ -132,7 +132,7 @@ There is a popular phenomenon called 80:20, where 80% of outputs usually come fr
 
 </iframe>
 
-79% of total liquidity added to Uniswap in 4 pools, on 2 blockchains.
+79% of total liquidity added to Uniswap in 4 pools, on 2 blockchains, 0.0014% in total number of pool.
 
 <iframe src="https://dune.com/embeds/3144411/5243926" width="100%" height="300">
 
@@ -160,7 +160,7 @@ Liquidity of Uniswap on Ethereum is more concentrated than that of total Uniswap
 
 </iframe>
 
-84% of total liquidity volume on Ethereum is added in 2 pools.
+84% of total liquidity volume on Ethereum is added in 2 pools, 0.0007% in total number of pool.
 
 <iframe src="https://dune.com/embeds/3144574/5244134" width="100%" height="250">
 
@@ -174,7 +174,7 @@ Liquidity of Uniswap on L2s is more concentrated than that of total Uniswap,but 
 
 </iframe>
 
-78% of total liquidity volume on L2s is added in 4 pools, on Polygon.
+78% of total liquidity volume on L2s is added in 4 pools, on Polygon, 0.017% in total number of L2s' pool.
 
 <iframe src="https://dune.com/embeds/3144579/5244141" width="100%" height="300">
 
