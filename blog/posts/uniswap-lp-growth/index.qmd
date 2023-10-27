@@ -312,6 +312,24 @@ On average, on L2s, number of day per mint of EOAs was rising (less active) befo
 
 We learned that EOAs account for 97% of total number of LP of Uniswap. This is the group of LP that Uniswap builders should pay attention at in order to grow the liquidity side of operation.
 
-EOAs, who mint 10 times or less, account for 91% of total number of EOAs. Up to 9 mints, as number of mint increases, % share of number of LP of each mint bucket in total number of LP decreases, however, % share of liquidity volume of each mint bucket in total liquidity volume basically flats, which means liquidity volume per LP increases. Indeed, relative to liquidity per LP of single mint LPs, that of 2-mints LPs is 5x larger, of 3-mints LPs is 9x larger, and so on. If Uniswap builders can find a way to nudge a single-mint LP to have another liquidity mint, it will potentially 5x the LP's total liquidity volume.
+EOAs, who mint 10 times or less, account for 91% of total number of EOAs. Up to 9 mints, as number of mint increases, % share of number of LP of each mint bucket in total number of LP decreases, however, % share of liquidity volume of each mint bucket in total liquidity volume basically flats, which means liquidity volume per LP increases. Indeed, looking at `Liquidity size vs. single mint` metric in the chart below, we can see that relative to liquidity per LP of single mint LPs, liquidity per LP of 2-mints LPs is 5x larger, of 3-mints LPs is 9x larger, and so on. If Uniswap builders can find a way to nudge a single-mint LP to have another liquidity mint, it will potentially 5x the LP's total liquidity volume.
 
 <iframe src="https://dune.com/embeds/3147289/5249472" width="100%" height="400"></iframe>
+
+Of all EOAs, who minted at least twice, 77% of them have the second mint within 336 hours [= 2 weeks] since the first mint.
+
+<iframe src="https://dune.com/embeds/3149962/5254482" width="100%" height="400"></iframe>
+
+When compare % LP completed the first 2 mints within 2 weeks (`% LP, aggregate`), and number of hours between the first 2 mints which 80% of LPs  between each total number of mint bucket, we can see that:
+
+-   33% of 2-mints LPs minted their second mint within 2 weeks after first mint. On average, they minted their second mint within 1.1k hours after first mint.
+-   48% of 3-mints LPs minted their second mint within 2 weeks after first mint. On average, they minted their second mint within 757 hours after first mint.
+-   ...
+
+As total number of mint in creases, % of total number of LP completed their first 2 mints within 2 weeks increases, and average number of hour between the first 2 mints decreases.
+
+In short, the sooner an EOA mint the second mint, especially in the first 2 weeks, the more likely that the LP completing the following mints.
+
+<iframe src="https://dune.com/embeds/3150011/5254530" width="100%" height="400"></iframe>
+
+What we learned here suggests that Uniswap builders should try encouraging EOA LPs to have at least 2 mints within the first 2 weeks. Perhaps by messaging them through a wallet application such as Uniswap wallet, which requires EOA LPs to switch to Uniswap wallet in the first place.
