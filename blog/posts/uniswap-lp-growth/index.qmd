@@ -27,6 +27,8 @@ In this post, you will learn about the LPs of Uniswap, the largest DEX.
 
 4.  On average, LPs, who are contract account, tend to stay in pools shorter (10x), have bigger total number of mint (11x), larger liquidity volume per mint (47x), and are more active (3x) than LPs, who are externally-owned account (EOA).
 
+5.  97% of LPs are EOA, however, their contribution in total liquidity is very small. My suggestion is try encouraging EOA LPs to have at least 2 mints within the first 2 weeks.
+
 ## Snapshot
 
 [The snapshot captures aggregate data of Uniswap on September 30, 2023.]{.aside}
@@ -332,4 +334,4 @@ In short, the sooner an EOA mint the second mint, especially in the first 2 week
 
 <iframe src="https://dune.com/embeds/3150011/5254530" width="100%" height="400"></iframe>
 
-What we learned here suggests that Uniswap builders should try encouraging EOA LPs to have at least 2 mints within the first 2 weeks. Perhaps by messaging them through a wallet application such as Uniswap wallet, which requires EOA LPs to switch to Uniswap wallet in the first place.
+What we learned here suggests that Uniswap builders should try encouraging EOA LPs to have at least 2 mints within the first 2 weeks. Perhaps by messaging them through a wallet application. The best option is through Uniswap wallet, where Uniswap builders have more control. This requires EOA LPs to switch to Uniswap wallet in the first place.
