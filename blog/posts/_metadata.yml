@@ -1,14 +1,9 @@
-# options specified here will apply to all posts in this folder
-
-# freeze computational output
-# (see https://quarto.org/docs/projects/code-execution.html#freeze)
 freeze: auto
 
-# add my name to author
 author: "Lê Quang Phú"
 
-# page settings
 toc: true
+toc-location: left
 execute: 
   echo: false
 number-sections: true
