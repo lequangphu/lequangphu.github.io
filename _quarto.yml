@@ -2,7 +2,7 @@ project:
   type: website
 
 website:
-  title: "Lê Quang Phú"
+  title: "le quang phu"
   site-url: https://lequangphu.github.io/
   google-analytics: "G-S7Y9SX5DXE"
   open-graph: true
@@ -19,6 +19,7 @@ website:
       - icon: github
         href: https://github.com/lequangphu
     pinned: true
+    logo: pfp.png
   favicon: pfp.png
 
 theme: simplex
