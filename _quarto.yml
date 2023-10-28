@@ -19,5 +19,6 @@ website:
       - icon: github
         href: https://github.com/lequangphu
     pinned: true
+  favicon: pfp.png
 
 theme: simplex
