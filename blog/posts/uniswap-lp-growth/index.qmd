@@ -4,7 +4,6 @@ description: ""
 date: "2023-10-25"
 categories: [uniswap, crypto]
 image: "thumbnail.png"
-draft: true
 ---
 
 Because liquidity facilitates trading, it is vital to a decentralized exchange (DEX) like Uniswap. Build and grow a strong, diverse liquidity provider (LP) base, who, you can tell by the name, provide liquidity, is and should be top priority of any DEX builder.
