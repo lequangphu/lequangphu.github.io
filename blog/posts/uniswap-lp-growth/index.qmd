@@ -1,6 +1,6 @@
 ---
-title: "How balance is Uniswap's LP base? Who are the LPs? How to grow the LP base?"
-description: ""
+title: "Who are Uniswap's LPs?"
+description: "Study liquidity concentration, in total, by blockchain, over time; LP's behavior by account type."
 date: "2023-10-25"
 categories: [uniswap, crypto]
 image: "thumbnail.png"
