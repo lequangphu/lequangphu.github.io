@@ -1,0 +1,36 @@
+---
+title: ""
+description: ""
+date: "2023-11-22"
+categories: [uniswap, crypto]
+image: "thumbnail.png"
+draft: true
+---
+
+Uniswap expanded to Arbitrum, the first layer 2 network (L2) on June 1, 2021. Since then till October 31, 2023, Uniswap have had 6 additional L2s including (in ascending order by launch date): Optimism, Polygon, Celo, BNB, Avalanche, and Base. Low throughput, high transaction gas, long confirmation time are the pains of Ethereum's users, including Uniswap's traders. L2s exists to asperationally solve the pains. In this post, you will learn:
+
+-   How long has Uniswap operated on each L2?
+-   Share of each L2 in total trade, the role of average trade size in each L2's share.
+-   Trade size distribution, described by quartiles, and share of each trader bucket, grouped by trade size, in total volume of each L2.
+
+## Days of operation
+
+<iframe src="https://dune.com/embeds/3188395/5326278" width="100%" height="450"></iframe>
+
+## Share in total trade
+
+<iframe src="https://dune.com/embeds/3188352/5326210" width="100%" height="450"></iframe>
+
+<iframe src="https://dune.com/embeds/3188352/5326658" width="100%" height="450"></iframe>
+
+## Usage spikes
+
+<iframe src="https://dune.com/embeds/3188640/5326776" width="100%" height="450"></iframe>
+
+<iframe src="https://dune.com/embeds/3188640/5326814" width="100%" height="450"></iframe>
+
+## Top tokens
+
+<iframe src="https://dune.com/embeds/3188685/5326864" width="100%" height="450"></iframe>
+
+<iframe src="https://dune.com/embeds/3188731/5326901" width="100%" height="450"></iframe>
