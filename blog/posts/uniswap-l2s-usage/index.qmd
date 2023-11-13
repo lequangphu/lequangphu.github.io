@@ -66,3 +66,7 @@ Uniswap expanded to Arbitrum, the first layer 2 network (L2) on June 1, 2021. Si
 <iframe src="https://dune.com/embeds/3188685/5326864" width="100%" height="400"></iframe>
 
 <iframe src="https://dune.com/embeds/3188731/5326901" width="100%" height="400"></iframe>
+
+## Gas fee
+
+<iframe src="https://dune.com/embeds/3191893/5340017" width="100%" height="400"></iframe>
