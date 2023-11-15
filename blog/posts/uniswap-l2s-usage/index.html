@@ -128,16 +128,28 @@ gtag('config', 'G-S7Y9SX5DXE', { 'anonymize_ip': true});
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#days-of-operation" id="toc-days-of-operation" class="nav-link active" data-scroll-target="#days-of-operation"><span class="header-section-number">1</span> Days of operation</a></li>
-  <li><a href="#monthly-trade" id="toc-monthly-trade" class="nav-link" data-scroll-target="#monthly-trade"><span class="header-section-number">2</span> Monthly trade</a></li>
-  <li><a href="#share-in-total-trade" id="toc-share-in-total-trade" class="nav-link" data-scroll-target="#share-in-total-trade"><span class="header-section-number">3</span> Share in total trade</a></li>
-  <li><a href="#trade-size" id="toc-trade-size" class="nav-link" data-scroll-target="#trade-size"><span class="header-section-number">4</span> Trade size</a></li>
-  <li><a href="#trade-frequency" id="toc-trade-frequency" class="nav-link" data-scroll-target="#trade-frequency"><span class="header-section-number">5</span> Trade frequency</a></li>
-  <li><a href="#trader-type" id="toc-trader-type" class="nav-link" data-scroll-target="#trader-type"><span class="header-section-number">6</span> Trader type</a></li>
-  <li><a href="#top-tokens" id="toc-top-tokens" class="nav-link" data-scroll-target="#top-tokens"><span class="header-section-number">7</span> Top tokens</a></li>
-  <li><a href="#gas-fee" id="toc-gas-fee" class="nav-link" data-scroll-target="#gas-fee"><span class="header-section-number">8</span> Gas fee</a></li>
-  <li><a href="#retention" id="toc-retention" class="nav-link" data-scroll-target="#retention"><span class="header-section-number">9</span> Retention</a></li>
-  <li><a href="#listing-frequency" id="toc-listing-frequency" class="nav-link" data-scroll-target="#listing-frequency"><span class="header-section-number">10</span> Listing frequency</a></li>
+  <li><a href="#days-since-launch" id="toc-days-since-launch" class="nav-link active" data-scroll-target="#days-since-launch"><span class="header-section-number">1</span> Days since launch</a></li>
+  <li><a href="#volume-over-time" id="toc-volume-over-time" class="nav-link" data-scroll-target="#volume-over-time"><span class="header-section-number">2</span> Volume over time</a>
+  <ul class="collapse">
+  <li><a href="#mom-delta-breakdown" id="toc-mom-delta-breakdown" class="nav-link" data-scroll-target="#mom-delta-breakdown"><span class="header-section-number">2.1</span> MoM delta breakdown</a></li>
+  </ul></li>
+  <li><a href="#share-in-total-l2s-trade" id="toc-share-in-total-l2s-trade" class="nav-link" data-scroll-target="#share-in-total-l2s-trade"><span class="header-section-number">3</span> Share in total L2s’ trade</a></li>
+  <li><a href="#volume-per-trade" id="toc-volume-per-trade" class="nav-link" data-scroll-target="#volume-per-trade"><span class="header-section-number">4</span> Volume per trade</a></li>
+  <li><a href="#trader-deep-dive" id="toc-trader-deep-dive" class="nav-link" data-scroll-target="#trader-deep-dive"><span class="header-section-number">5</span> Trader deep dive</a>
+  <ul class="collapse">
+  <li><a href="#volume-and-number-of-trade-per-trader" id="toc-volume-and-number-of-trade-per-trader" class="nav-link" data-scroll-target="#volume-and-number-of-trade-per-trader"><span class="header-section-number">5.1</span> Volume and number of trade per trader</a></li>
+  <li><a href="#frequency-per-trader" id="toc-frequency-per-trader" class="nav-link" data-scroll-target="#frequency-per-trader"><span class="header-section-number">5.2</span> Frequency per trader</a></li>
+  <li><a href="#regularirregular-retails-vs.-whales" id="toc-regularirregular-retails-vs.-whales" class="nav-link" data-scroll-target="#regularirregular-retails-vs.-whales"><span class="header-section-number">5.3</span> [Regular/irregular] retails vs.&nbsp;whales</a></li>
+  </ul></li>
+  <li><a href="#top-tokens" id="toc-top-tokens" class="nav-link" data-scroll-target="#top-tokens"><span class="header-section-number">6</span> Top tokens</a>
+  <ul class="collapse">
+  <li><a href="#top-tokens-accumulated-share" id="toc-top-tokens-accumulated-share" class="nav-link" data-scroll-target="#top-tokens-accumulated-share"><span class="header-section-number">6.1</span> Top tokens accumulated share</a></li>
+  <li><a href="#top-5-tokens" id="toc-top-5-tokens" class="nav-link" data-scroll-target="#top-5-tokens"><span class="header-section-number">6.2</span> Top 5 tokens</a></li>
+  <li><a href="#single-l2-traded-largest-token" id="toc-single-l2-traded-largest-token" class="nav-link" data-scroll-target="#single-l2-traded-largest-token"><span class="header-section-number">6.3</span> Single L2 traded largest token</a></li>
+  </ul></li>
+  <li><a href="#gas-fee" id="toc-gas-fee" class="nav-link" data-scroll-target="#gas-fee"><span class="header-section-number">7</span> Gas fee</a></li>
+  <li><a href="#retention" id="toc-retention" class="nav-link" data-scroll-target="#retention"><span class="header-section-number">8</span> Retention</a></li>
+  <li><a href="#listing-frequency" id="toc-listing-frequency" class="nav-link" data-scroll-target="#listing-frequency"><span class="header-section-number">9</span> Listing frequency</a></li>
   </ul>
 </nav>
 </nav>
@@ -151,26 +163,46 @@ gtag('config', 'G-S7Y9SX5DXE', { 'anonymize_ip': true});
 
 
 <p>Uniswap expanded to Arbitrum, the first layer 2 network (L2) on June 1, 2021. Since then till October 31, 2023, Uniswap have had 6 additional L2s including (in ascending order by launch date): Optimism, Polygon, Celo, BNB, Avalanche, and Base. Low throughput, high transaction gas, long confirmation time are the pains of Ethereum’s users, including Uniswap’s traders. L2s exists to asperationally solve the pains. In this post, you will learn:</p>
-<section id="days-of-operation" class="level2" data-number="1">
-<h2 data-number="1" class="anchored" data-anchor-id="days-of-operation"><span class="header-section-number">1</span> Days of operation</h2>
-<p>As of October 31, 2023, among all Uniswap’s L2s, Arbitrum, the oldest L2, is 9 times older than Base, the youngest L2, by number of days in operation.</p>
+<section id="days-since-launch" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="days-since-launch"><span class="header-section-number">1</span> Days since launch</h2>
+<p>By number of days in operation since launch till October 31, 2023, among all Uniswap’s L2s, Arbitrum, the oldest L2, is 9 times older than Base, the youngest L2.</p>
 <iframe src="https://dune.com/embeds/3188395/5326278" width="100%" height="400">
 </iframe>
 </section>
-<section id="monthly-trade" class="level2" data-number="2">
-<h2 data-number="2" class="anchored" data-anchor-id="monthly-trade"><span class="header-section-number">2</span> Monthly trade</h2>
+<section id="volume-over-time" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="volume-over-time"><span class="header-section-number">2</span> Volume over time</h2>
+<p>L2 Uniswaps monthly volume saw a few spikes and drops, noticably in November, and December 2022; March, May, and October 2023. Arbitrum and Polygon are the 2 sources which drove those changes.</p>
 <iframe src="https://dune.com/embeds/3188640/5326776" width="100%" height="400">
 </iframe>
+<p>By trader type, return trader played the main role in those changes. Additionally, the spike in March 2023 saw an increase in the role of new trader.</p>
 <iframe src="https://dune.com/embeds/3201199/5350343" width="100%" height="400">
 </iframe>
+<section id="mom-delta-breakdown" class="level3" data-number="2.1">
+<h3 data-number="2.1" class="anchored" data-anchor-id="mom-delta-breakdown"><span class="header-section-number">2.1</span> MoM delta breakdown</h3>
+<p>Look at the chart above, a few large month over month changes (MoM delta) stand out including: November 📈, December 📉 2022; March 📈, May 📉, and October 📈 2023. What token pairs were behind these MoM delta?</p>
+<p>The MoM deltas were mainly driven by volume traded between stable coins (USDC.e, USDC, USDT), WETH, WMATIC, happened mostly on Arbitrum, Polygon, and Optimism. There were a few other tokens involved in each change.</p>
+<p>Beside the aforementioned tokens, OP also contributed to top 80% volume delta between October and November 2022.</p>
+<iframe src="https://dune.com/embeds/3201335/5350636" width="100%" height="400">
+</iframe>
+<p>Beside the aforementioned tokens, WBTC also contributed to top 80% volume delta between November and December 2022; February and March 2023.</p>
+<iframe src="https://dune.com/embeds/3201362/5350641" width="100%" height="400">
+</iframe>
+<iframe src="https://dune.com/embeds/3201368/5350650" width="100%" height="400">
+</iframe>
+<iframe src="https://dune.com/embeds/3201386/5350680" width="100%" height="400">
+</iframe>
+<p>Beside the aforementioned tokens, WBTC, ARB, and WBNB also contributed to top 80% volume delta between September and October 2023.</p>
+<iframe src="https://dune.com/embeds/3201436/5350781" width="100%" height="400">
+</iframe>
 </section>
-<section id="share-in-total-trade" class="level2" data-number="3">
-<h2 data-number="3" class="anchored" data-anchor-id="share-in-total-trade"><span class="header-section-number">3</span> Share in total trade</h2>
+</section>
+<section id="share-in-total-l2s-trade" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="share-in-total-l2s-trade"><span class="header-section-number">3</span> Share in total L2s’ trade</h2>
 <iframe src="https://dune.com/embeds/3188352/5326210" width="100%" height="400">
 </iframe>
 </section>
-<section id="trade-size" class="level2" data-number="4">
-<h2 data-number="4" class="anchored" data-anchor-id="trade-size"><span class="header-section-number">4</span> Trade size</h2>
+<section id="volume-per-trade" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="volume-per-trade"><span class="header-section-number">4</span> Volume per trade</h2>
 <iframe src="https://dune.com/embeds/3189398/5328326" width="100%" height="400">
 </iframe>
 <iframe src="https://dune.com/embeds/3188937/5327482" width="100%" height="400">
@@ -178,50 +210,69 @@ gtag('config', 'G-S7Y9SX5DXE', { 'anonymize_ip': true});
 <iframe src="https://dune.com/embeds/3188937/5327664" width="100%" height="400">
 </iframe>
 </section>
-<section id="trade-frequency" class="level2" data-number="5">
-<h2 data-number="5" class="anchored" data-anchor-id="trade-frequency"><span class="header-section-number">5</span> Trade frequency</h2>
+<section id="trader-deep-dive" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="trader-deep-dive"><span class="header-section-number">5</span> Trader deep dive</h2>
+<section id="volume-and-number-of-trade-per-trader" class="level3" data-number="5.1">
+<h3 data-number="5.1" class="anchored" data-anchor-id="volume-and-number-of-trade-per-trader"><span class="header-section-number">5.1</span> Volume and number of trade per trader</h3>
+<iframe src="https://dune.com/embeds/3191521/5333089" width="100%" height="400">
+</iframe>
+<iframe src="https://dune.com/embeds/3198940/5346108" width="100%" height="400">
+</iframe>
+</section>
+<section id="frequency-per-trader" class="level3" data-number="5.2">
+<h3 data-number="5.2" class="anchored" data-anchor-id="frequency-per-trader"><span class="header-section-number">5.2</span> Frequency per trader</h3>
 <iframe src="https://dune.com/embeds/3189102/5328583" width="100%" height="400">
 </iframe>
 <iframe src="https://dune.com/embeds/3189102/5328588" width="100%" height="400">
 </iframe>
 </section>
-<section id="trader-type" class="level2" data-number="6">
-<h2 data-number="6" class="anchored" data-anchor-id="trader-type"><span class="header-section-number">6</span> Trader type</h2>
-<iframe src="https://dune.com/embeds/3191521/5333089" width="100%" height="400">
-</iframe>
-<iframe src="https://dune.com/embeds/3198940/5346108" width="100%" height="400">
-</iframe>
+<section id="regularirregular-retails-vs.-whales" class="level3" data-number="5.3">
+<h3 data-number="5.3" class="anchored" data-anchor-id="regularirregular-retails-vs.-whales"><span class="header-section-number">5.3</span> [Regular/irregular] retails vs.&nbsp;whales</h3>
 <iframe src="https://dune.com/embeds/3191648/5333155" width="100%" height="400">
 </iframe>
 <iframe src="https://dune.com/embeds/3191648/5333159" width="100%" height="400">
 </iframe>
 </section>
-<section id="top-tokens" class="level2" data-number="7">
-<h2 data-number="7" class="anchored" data-anchor-id="top-tokens"><span class="header-section-number">7</span> Top tokens</h2>
+</section>
+<section id="top-tokens" class="level2" data-number="6">
+<h2 data-number="6" class="anchored" data-anchor-id="top-tokens"><span class="header-section-number">6</span> Top tokens</h2>
+<section id="top-tokens-accumulated-share" class="level3" data-number="6.1">
+<h3 data-number="6.1" class="anchored" data-anchor-id="top-tokens-accumulated-share"><span class="header-section-number">6.1</span> Top tokens accumulated share</h3>
 <iframe src="https://dune.com/embeds/3191783/5333381" width="100%" height="400">
 </iframe>
 <iframe src="https://dune.com/embeds/3188685/5326864" width="100%" height="400">
 </iframe>
 <iframe src="https://dune.com/embeds/3188731/5326901" width="100%" height="400">
 </iframe>
+</section>
+<section id="top-5-tokens" class="level3" data-number="6.2">
+<h3 data-number="6.2" class="anchored" data-anchor-id="top-5-tokens"><span class="header-section-number">6.2</span> Top 5 tokens</h3>
 <iframe src="https://dune.com/embeds/3191785/5333389" width="100%" height="400">
 </iframe>
 <iframe src="https://dune.com/embeds/3191796/5333410" width="100%" height="400">
 </iframe>
+</section>
+<section id="single-l2-traded-largest-token" class="level3" data-number="6.3">
+<h3 data-number="6.3" class="anchored" data-anchor-id="single-l2-traded-largest-token"><span class="header-section-number">6.3</span> Single L2 traded largest token</h3>
 <iframe src="https://dune.com/embeds/3191811/5333452" width="100%" height="400">
 </iframe>
 <iframe src="https://dune.com/embeds/3191821/5333473" width="100%" height="400">
 </iframe>
 </section>
-<section id="gas-fee" class="level2" data-number="8">
-<h2 data-number="8" class="anchored" data-anchor-id="gas-fee"><span class="header-section-number">8</span> Gas fee</h2>
+</section>
+<section id="gas-fee" class="level2" data-number="7">
+<h2 data-number="7" class="anchored" data-anchor-id="gas-fee"><span class="header-section-number">7</span> Gas fee</h2>
 <iframe src="https://dune.com/embeds/3200967/5349795" width="100%" height="400">
 </iframe>
 <iframe src="https://dune.com/embeds/3191893/5340017" width="100%" height="400">
 </iframe>
+<iframe src="https://dune.com/embeds/3201582/5351098" width="100%" height="400">
+</iframe>
+<iframe src="https://dune.com/embeds/3201582/5351052" width="100%" height="400">
+</iframe>
 </section>
-<section id="retention" class="level2" data-number="9">
-<h2 data-number="9" class="anchored" data-anchor-id="retention"><span class="header-section-number">9</span> Retention</h2>
+<section id="retention" class="level2" data-number="8">
+<h2 data-number="8" class="anchored" data-anchor-id="retention"><span class="header-section-number">8</span> Retention</h2>
 <iframe src="https://dune.com/embeds/3195967/5341364" width="100%" height="400">
 </iframe>
 <iframe src="https://dune.com/embeds/3196735/5342102" width="100%" height="400">
@@ -231,19 +282,19 @@ gtag('config', 'G-S7Y9SX5DXE', { 'anonymize_ip': true});
 <iframe src="https://dune.com/embeds/3196805/5342272" width="100%" height="400">
 </iframe>
 </section>
-<section id="listing-frequency" class="level2" data-number="10">
-<h2 data-number="10" class="anchored" data-anchor-id="listing-frequency"><span class="header-section-number">10</span> Listing frequency</h2>
+<section id="listing-frequency" class="level2" data-number="9">
+<h2 data-number="9" class="anchored" data-anchor-id="listing-frequency"><span class="header-section-number">9</span> Listing frequency</h2>
 <iframe src="https://dune.com/embeds/3198069/5344738" width="100%" height="400">
 </iframe>
 <iframe src="https://dune.com/embeds/3198134/5344745" width="100%" height="400">
+</iframe>
+<iframe src="https://dune.com/embeds/3198264/5345011" width="100%" height="400">
 </iframe>
 <iframe src="https://dune.com/embeds/3198180/5344829" width="100%" height="400">
 </iframe>
 <iframe src="https://dune.com/embeds/3198262/5345007" width="100%" height="400">
 </iframe>
 <iframe src="https://dune.com/embeds/3198198/5345004" width="100%" height="400">
-</iframe>
-<iframe src="https://dune.com/embeds/3198264/5345011" width="100%" height="400">
 </iframe>
 
 
