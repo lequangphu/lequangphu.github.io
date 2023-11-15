@@ -9,23 +9,49 @@ draft: true
 
 Uniswap expanded to Arbitrum, the first layer 2 network (L2) on June 1, 2021. Since then till October 31, 2023, Uniswap have had 6 additional L2s including (in ascending order by launch date): Optimism, Polygon, Celo, BNB, Avalanche, and Base. Low throughput, high transaction gas, long confirmation time are the pains of Ethereum's users, including Uniswap's traders. L2s exists to asperationally solve the pains. In this post, you will learn:
 
-## Days of operation
+## Days since launch
 
-As of October 31, 2023, among all Uniswap's L2s, Arbitrum, the oldest L2, is 9 times older than Base, the youngest L2, by number of days in operation.
+By number of days in operation since launch till October 31, 2023, among all Uniswap's L2s, Arbitrum, the oldest L2, is 9 times older than Base, the youngest L2.
 
 <iframe src="https://dune.com/embeds/3188395/5326278" width="100%" height="400"></iframe>
 
-## Monthly trade
+## Volume over time
+
+L2 Uniswaps monthly volume saw a few spikes and drops, noticably in November, and December 2022; March, May, and October 2023. Arbitrum and Polygon are the 2 sources which drove those changes.
 
 <iframe src="https://dune.com/embeds/3188640/5326776" width="100%" height="400"></iframe>
 
+By trader type, return trader played the main role in those changes. Additionally, the spike in March 2023 saw an increase in the role of new trader.
+
 <iframe src="https://dune.com/embeds/3201199/5350343" width="100%" height="400"></iframe>
 
-## Share in total trade
+### MoM delta breakdown
+
+Look at the chart above, a few large month over month changes (MoM delta) stand out including: November 📈, December 📉 2022; March 📈, May 📉, and October 📈 2023. What token pairs were behind these MoM delta?
+
+The MoM deltas were mainly driven by volume traded between stable coins (USDC.e, USDC, USDT), WETH, WMATIC, happened mostly on Arbitrum, Polygon, and Optimism. There were a few other tokens involved in each change.
+
+Beside the aforementioned tokens, OP also contributed to top 80% volume delta between October and November 2022.
+
+<iframe src="https://dune.com/embeds/3201335/5350636" width="100%" height="400"></iframe>
+
+Beside the aforementioned tokens, WBTC also contributed to top 80% volume delta between November and December 2022; February and March 2023.
+
+<iframe src="https://dune.com/embeds/3201362/5350641" width="100%" height="400"></iframe>
+
+<iframe src="https://dune.com/embeds/3201368/5350650" width="100%" height="400"></iframe>
+
+<iframe src="https://dune.com/embeds/3201386/5350680" width="100%" height="400"></iframe>
+
+Beside the aforementioned tokens, WBTC, ARB, and WBNB also contributed to top 80% volume delta between September and October 2023.
+
+<iframe src="https://dune.com/embeds/3201436/5350781" width="100%" height="400"></iframe>
+
+## Share in total L2s' trade
 
 <iframe src="https://dune.com/embeds/3188352/5326210" width="100%" height="400"></iframe>
 
-## Trade size
+## Volume per trade
 
 <iframe src="https://dune.com/embeds/3189398/5328326" width="100%" height="400"></iframe>
 
@@ -33,17 +59,21 @@ As of October 31, 2023, among all Uniswap's L2s, Arbitrum, the oldest L2, is 9 t
 
 <iframe src="https://dune.com/embeds/3188937/5327664" width="100%" height="400"></iframe>
 
-## Trade frequency
+## Trader deep dive
+
+### Volume and number of trade per trader
+
+<iframe src="https://dune.com/embeds/3191521/5333089" width="100%" height="400"></iframe>
+
+<iframe src="https://dune.com/embeds/3198940/5346108" width="100%" height="400"></iframe>
+
+### Frequency per trader
 
 <iframe src="https://dune.com/embeds/3189102/5328583" width="100%" height="400"></iframe>
 
 <iframe src="https://dune.com/embeds/3189102/5328588" width="100%" height="400"></iframe>
 
-## Trader type
-
-<iframe src="https://dune.com/embeds/3191521/5333089" width="100%" height="400"></iframe>
-
-<iframe src="https://dune.com/embeds/3198940/5346108" width="100%" height="400"></iframe>
+### [Regular/irregular] retails vs. whales
 
 <iframe src="https://dune.com/embeds/3191648/5333155" width="100%" height="400"></iframe>
 
@@ -51,15 +81,21 @@ As of October 31, 2023, among all Uniswap's L2s, Arbitrum, the oldest L2, is 9 t
 
 ## Top tokens
 
+### Top tokens accumulated share
+
 <iframe src="https://dune.com/embeds/3191783/5333381" width="100%" height="400"></iframe>
 
 <iframe src="https://dune.com/embeds/3188685/5326864" width="100%" height="400"></iframe>
 
 <iframe src="https://dune.com/embeds/3188731/5326901" width="100%" height="400"></iframe>
 
+### Top 5 tokens
+
 <iframe src="https://dune.com/embeds/3191785/5333389" width="100%" height="400"></iframe>
 
 <iframe src="https://dune.com/embeds/3191796/5333410" width="100%" height="400"></iframe>
+
+### Single L2 traded largest token
 
 <iframe src="https://dune.com/embeds/3191811/5333452" width="100%" height="400"></iframe>
 
@@ -70,6 +106,10 @@ As of October 31, 2023, among all Uniswap's L2s, Arbitrum, the oldest L2, is 9 t
 <iframe src="https://dune.com/embeds/3200967/5349795" width="100%" height="400"></iframe>
 
 <iframe src="https://dune.com/embeds/3191893/5340017" width="100%" height="400"></iframe>
+
+<iframe src="https://dune.com/embeds/3201582/5351098" width="100%" height="400"></iframe>
+
+<iframe src="https://dune.com/embeds/3201582/5351052" width="100%" height="400"></iframe>
 
 ## Retention
 
@@ -87,10 +127,10 @@ As of October 31, 2023, among all Uniswap's L2s, Arbitrum, the oldest L2, is 9 t
 
 <iframe src="https://dune.com/embeds/3198134/5344745" width="100%" height="400"></iframe>
 
+<iframe src="https://dune.com/embeds/3198264/5345011" width="100%" height="400"></iframe>
+
 <iframe src="https://dune.com/embeds/3198180/5344829" width="100%" height="400"></iframe>
 
 <iframe src="https://dune.com/embeds/3198262/5345007" width="100%" height="400"></iframe>
 
 <iframe src="https://dune.com/embeds/3198198/5345004" width="100%" height="400"></iframe>
-
-<iframe src="https://dune.com/embeds/3198264/5345011" width="100%" height="400"></iframe>
