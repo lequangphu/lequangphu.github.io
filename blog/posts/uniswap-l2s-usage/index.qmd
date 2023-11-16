@@ -203,3 +203,13 @@ Most of tokens listed have price less than $100 at listing. Prices concentrated 
 Tokens with price `<= 0.01` dominates is thanked to the launch of Uniswap on Base.
 
 <iframe src="https://dune.com/embeds/3198198/5345004" width="100%" height="400"></iframe>
+
+## Uniswap frontend volume
+
+Accross L2s, Uniswap frontend is minority source of volume. Compare to traders on other L2s, traders on Optimism tend to trade through Uniswap frontend the most, still Uniswap frontend only accounts for 24.4% of all volume on Optimism. Another group of L2s including Arbitrum, Celo, and Polygon, where Uniswap frontend accounts for 18%--20% of all volume. L2s where Uniswap frontend saw the lowest adoption among traders are Avalanche, Base, and BNB, only 2%--5% of all volume are from Uniswap frontend.
+
+<iframe src="https://dune.com/embeds/3204822/5356916" width="100%" height="400"></iframe>
+
+Surprisingly, the share of Uniswap frontend in monthly volume accross L2s have been decreasing, except for Avalanche. Compare to early 2022, when Uniswap frontend used to account for more than half of all volume on Arbitrum and Optimism, that is a >100% drop to 18%--20% recently.
+
+<iframe src="https://dune.com/embeds/3204875/5357090" width="100%" height="400"></iframe>
