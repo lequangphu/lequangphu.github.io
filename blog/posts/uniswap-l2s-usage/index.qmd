@@ -17,7 +17,7 @@ By number of days in operation since launch till October 31, 2023, among all Uni
 
 ## Volume over time
 
-L2 Uniswaps monthly volume saw a few spikes and drops, noticably in November, and December 2022; March, May, and October 2023. Arbitrum and Polygon are the 2 sources which drove those changes.
+L2 Uniswaps monthly volume saw a few spikes (and subsequent drops) including: (1) in November 2022, when FTX collapsed; (2) March 2023, the SVB crisis causing USDC price to drop sharply in several days; and (3) October 2023, the most recent "Uptober". Majority of trading volume happened on Uniswap's Arbitrum and Polygon.
 
 <iframe src="https://dune.com/embeds/3188640/5326776" width="100%" height="400"></iframe>
 
@@ -25,43 +25,63 @@ By trader type, return trader played the main role in those changes. Additionall
 
 <iframe src="https://dune.com/embeds/3201199/5350343" width="100%" height="400"></iframe>
 
-### MoM delta breakdown
+### Spikes breakdown
 
-Look at the chart above, a few large month over month changes (MoM delta) stand out including: November 📈, December 📉 2022; March 📈, May 📉, and October 📈 2023. What token pairs were behind these MoM delta?
+#### Top 80% of all L2s' volume
+
+What token pairs had the most month over month volume change (MoM delta) during the spikes in November 2022 and March 2023?
 
 The MoM deltas were mainly driven by volume traded between stable coins (USDC.e, USDC, USDT), WETH, WMATIC, happened mostly on Arbitrum, Polygon, and Optimism. There were a few other tokens involved in each change.
 
-Beside the aforementioned tokens, OP also contributed to top 80% volume delta between October and November 2022.
+Beside the aforementioned tokens, OP also contributed to top 80% MoM volume delta in November 2022.
 
 <iframe src="https://dune.com/embeds/3201335/5350636" width="100%" height="400"></iframe>
 
-Beside the aforementioned tokens, WBTC also contributed to top 80% volume delta between November and December 2022; February and March 2023.
-
-<iframe src="https://dune.com/embeds/3201362/5350641" width="100%" height="400"></iframe>
+Beside the aforementioned tokens, WBTC also contributed to top 80% MoM volume delta in March 2023.
 
 <iframe src="https://dune.com/embeds/3201368/5350650" width="100%" height="400"></iframe>
 
-<iframe src="https://dune.com/embeds/3201386/5350680" width="100%" height="400"></iframe>
-
-Beside the aforementioned tokens, WBTC, ARB, and WBNB also contributed to top 80% volume delta between September and October 2023.
+Beside the aforementioned tokens, WBTC, ARB, and WBNB also contributed to top 80% MoM volume delta in October 2023.
 
 <iframe src="https://dune.com/embeds/3201436/5350781" width="100%" height="400"></iframe>
 
+#### No.1 token pair of each L2
+
+On each L2 of Uniswap, the token pair with the largest MoM volume delta in each spike is the pair between the dominant stablecoin and wrapped native token of each L2.
+
+The dominance of no.1 token pair on Arbitrum decreases over time in 3 spikes, from 79% in total MoM delta in November 2022 to 38% in October 2023. Other L2s saw a similar trend, which indicates a more balanced distribution in volume delta on all of Uniswap's L2s.
+
+<iframe src="https://dune.com/embeds/3201362/5350641" width="100%" height="400"></iframe>
+
+<iframe src="https://dune.com/embeds/3201386/5350680" width="100%" height="400"></iframe>
+
+<iframe src="https://dune.com/embeds/3203895/5355322" width="100%" height="400"></iframe>
+
+We've learned about volume of Uniswap on L2s over time, in the rest of this post, let's dive deeper into the period between August and October 2023, when all of the L2s have been launched, to compare them.
+
 ## Share in total L2s' trade
+
+Arbitrum only accounted for 28% of total number of trade, but 65% of all volume traded on Arbitrum. Looking at the chart below, we can see that volume per trade on Arbitrum is bigger than on those of other L2s.
 
 <iframe src="https://dune.com/embeds/3188352/5326210" width="100%" height="400"></iframe>
 
 ## Volume per trade
 
+In deed, looking at percentiles of volume per trade of each L2 in the chart below, we can see that the middle 80% (percentile 10 and percentile 90) of Arbitrum is much bigger than those of other L2s. Each percentile tells you about the state at each percent of the population. For example, Arbitrum has $1.5 at percentile 10 of volume per trade, which means the bottom 10% of all trades on Arbitrum have volume per trade of $1.5 or less. Note that the chart is in log scale. On the opposite end, Celo has the smallest volume per trade among all L2s. Another interesting point is that Avalanche may have bigger median--percentile 75 trade size, it trails other L2s at percentile 90 (top 10%).
+
 <iframe src="https://dune.com/embeds/3189398/5328326" width="100%" height="400"></iframe>
+
+Most of L2s have percentile 90 of volume per trade around $1k or less, in other words, trades with trade size less than $1k basically account for at least 90% of total number of trade. However the `< $1k` volume per trade bucket only accounts for max 20% of all volume of all L2s other than Celo and Avalanche, where more than half of all volume comprise of trades with trade size less than $1k.
 
 <iframe src="https://dune.com/embeds/3188937/5327482" width="100%" height="400"></iframe>
 
-<iframe src="https://dune.com/embeds/3188937/5327664" width="100%" height="400"></iframe>
-
 ## Trader deep dive
 
+In this section, let's dive deeper into each L2's trader, compare their volume, number of trade, and frequency.
+
 ### Volume and number of trade per trader
+
+On each L2, in 3 months, 90% of traders traded <= $1.6k volume, 8 trades; 99% of traders traded <= $40k volume, 64 trades. The middle 50% (percentile 25--percentile 75) of all L2s, range between $1--$200 volume, 1--3 trades.
 
 <iframe src="https://dune.com/embeds/3191521/5333089" width="100%" height="400"></iframe>
 
@@ -69,21 +89,33 @@ Beside the aforementioned tokens, WBTC, ARB, and WBNB also contributed to top 80
 
 ### Frequency per trader
 
+On average, traders who made one trade every 2 hours account for at least half of each L2 total volume, while account for max 0.3% of all traders.
+
 <iframe src="https://dune.com/embeds/3189102/5328583" width="100%" height="400"></iframe>
 
 <iframe src="https://dune.com/embeds/3189102/5328588" width="100%" height="400"></iframe>
 
-### [Regular/irregular] retails vs. whales
+### Trader bucket
+
+During the 92 days period between August 1 and October 31, 2023. Let say traders who traded at least $10k are whale, less than $1k are retail, thus we have 3 groups of traders:
+
+-   Whales - traded at least $920k.
+-   Professionals - traded at least $92k and less than $920k.
+-   Retails - traded less than $92k.
 
 <iframe src="https://dune.com/embeds/3191648/5333155" width="100%" height="400"></iframe>
 
-<iframe src="https://dune.com/embeds/3191648/5333159" width="100%" height="400"></iframe>
-
 ## Top tokens
+
+In this section, let's examine the top tokens bought/sold by volume.
 
 ### Top tokens accumulated share
 
+Top 5 bought/sold tokens account for 81% of all volume, that number increases to 93% of all volume with top 10 tokens.
+
 <iframe src="https://dune.com/embeds/3191783/5333381" width="100%" height="400"></iframe>
+
+Looking at top tokens of each L2, we can see that volume of Uniswap on Base and on Avalanche are more concentrated those on other L2s, as top bought/sold tokens at the same number (2 on Base and 4-5 on Avalanche) account for more percentage in total volume of each L2.
 
 <iframe src="https://dune.com/embeds/3188685/5326864" width="100%" height="400"></iframe>
 
@@ -91,21 +123,38 @@ Beside the aforementioned tokens, WBTC, ARB, and WBNB also contributed to top 80
 
 ### Top 5 tokens
 
+Top 5 tokens by volume accross all L2s are WETH, variances of USDC, USDT, and ARB. Each token has different positions at the top tokens by volume on each L2. For example: WETH ranks 1st on Arbitrum, Optimism, and Base; 2nd on Polygon; 3rd on Celo; 9th on Avalanche; and 10th on BNB. Top bought tokens are the same as top sold tokens. An interesting data point is USDT is bought but not sold on Base and Celo.
+
 <iframe src="https://dune.com/embeds/3191785/5333389" width="100%" height="400"></iframe>
 
 <iframe src="https://dune.com/embeds/3191796/5333410" width="100%" height="400"></iframe>
 
 ### Single L2 traded largest token
 
+Each L2 has tokens which are exclusively bought/sold on each L2. The no.1 exclusively bought/sold tokens by volume of each L2 have volume range $5m--$900m. 3/7 are stable coins, 2/7 are the native token of L2.
+
 <iframe src="https://dune.com/embeds/3191811/5333452" width="100%" height="400"></iframe>
 
 <iframe src="https://dune.com/embeds/3191821/5333473" width="100%" height="400"></iframe>
 
-## Gas fee
+## Transaction gas
+
+In this section, let's compare transaction gas accross all L2s. Note that one transaction may consist of more than one trade.
+
+Overall, Celo has the lowest transaction gas. Optimism and Base, which is an OP stack network, have transaction gas fluctuated more wildly. And Arbitrum has the highest transaction gas.
 
 <iframe src="https://dune.com/embeds/3200967/5349795" width="100%" height="400"></iframe>
 
+Trader spent gas for volume, when comparing `volume to gas ratio` accross all L2s, 4 groups of L2 emerge:
+
+-   Optimism, Base, and BNB: $1 gas for every $2k volume.
+-   Arbitrum and Avalanche: $1 gas for every $3k volume.
+-   Celo: $1 gas for every $4k volume.
+-   Polygon: $1 gas for every $9k volume.
+
 <iframe src="https://dune.com/embeds/3191893/5340017" width="100%" height="400"></iframe>
+
+Let say transactions with more than one trade are complex transactions, otherwise simple transactions. Surprisingly, Celo not only has the lowest transaction gas but also has the highest share of complex transaction in total transaction and total volume. Traders on Optimism and Polygon also tend to trade in complex transactions more than those on other L2s.
 
 <iframe src="https://dune.com/embeds/3201582/5351098" width="100%" height="400"></iframe>
 
@@ -113,24 +162,44 @@ Beside the aforementioned tokens, WBTC, ARB, and WBNB also contributed to top 80
 
 ## Retention
 
+When comparing average weekly retention rate accross all L2s, we can see that Uniswap's retention rate on Base stands out, at least 5% higher than those on other L2s. Keep in mind that Base is the youngest L2 of Uniswap, and the first few cohorts might skew the average.
+
 <iframe src="https://dune.com/embeds/3195967/5341364" width="100%" height="400"></iframe>
+
+In deed, when dive deeper into Uniswap on Base, we can see that the first cohort has a much higher retention rate. These are the most loyal users, and likely are the Base's builders/contributors.
 
 <iframe src="https://dune.com/embeds/3196735/5342102" width="100%" height="400"></iframe>
 
+Additionally, number of trader in the first cohort is 21, very small compared to that of other cohorts.
+
 <iframe src="https://dune.com/embeds/3196769/5342183" width="100%" height="400"></iframe>
+
+Excluding the first cohort of Uniswap on Base, we have the similar retention rates among all L2s.
 
 <iframe src="https://dune.com/embeds/3196805/5342272" width="100%" height="400"></iframe>
 
 ## Listing frequency
 
+On average, Polygon and Base have the highest number of pool created per day, > 10 per day; following by BNB and Arbitrum, 8--10 per day; Optimism and Avalanche, 1--3 per day; and Celo, 1 every 2 days.
+
 <iframe src="https://dune.com/embeds/3198069/5344738" width="100%" height="400"></iframe>
+
+The frequency of listing token for the first time, regardless of which token paired with, is roughly 40% lower than frequency of creating pool. In other words, for every 10 pools created, 6 pools have tokens listed for the first time.
 
 <iframe src="https://dune.com/embeds/3198134/5344745" width="100%" height="400"></iframe>
 
+Arbitrum and Polygon used to dominate in listing new token. Recently, the dominance is more balance as Uniswap expanded to more L2s.
+
 <iframe src="https://dune.com/embeds/3198264/5345011" width="100%" height="400"></iframe>
+
+Most of tokens listed have price less than $100 at listing. Prices concentrated the most on Arbitrum, and the least on Avalanche.
 
 <iframe src="https://dune.com/embeds/3198180/5344829" width="100%" height="400"></iframe>
 
+60% of all tokens listed have prices <= $0.01, most of them are likely meme.
+
 <iframe src="https://dune.com/embeds/3198262/5345007" width="100%" height="400"></iframe>
+
+Tokens with price `<= 0.01` dominates is thanked to the launch of Uniswap on Base.
 
 <iframe src="https://dune.com/embeds/3198198/5345004" width="100%" height="400"></iframe>
