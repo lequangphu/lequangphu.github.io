@@ -29,9 +29,9 @@ By trader type, return trader played the main role in those changes. Additionall
 
 #### Top 80% of all L2s' volume
 
-What token pairs had the most month over month volume change (MoM delta) during the spikes in November 2022 and March 2023?
+What token pairs had the most month over month volume change (MoM delta) during the spikes in November 2022, March 2023, and October 2023?
 
-The MoM deltas were mainly driven by volume traded between stable coins (USDC.e, USDC, USDT), WETH, WMATIC, happened mostly on Arbitrum, Polygon, and Optimism. There were a few other tokens involved in each change.
+The MoM deltas were mainly driven by volume traded between stable coins (USDC.e, USDC, USDT), and L2s' wrapped native tokens (WETH, WMATIC), happened mostly on Arbitrum, Polygon, and Optimism. There were a few other tokens involved in each change.
 
 Beside the aforementioned tokens, OP also contributed to top 80% MoM volume delta in November 2022.
 
@@ -61,47 +61,57 @@ We've learned about volume of Uniswap on L2s over time, in the rest of this post
 
 ## Share in total L2s' trade
 
-Arbitrum only accounted for 28% of total number of trade, but 65% of all volume traded on Arbitrum. Looking at the chart below, we can see that volume per trade on Arbitrum is bigger than on those of other L2s.
+Top 3 L2s by volume including Arbitrum, Polygon, and Optimism, account for 94% of all volume, and 85% of total number of trade. Notably, when compare 2 columns in the chart below, we can see that Arbitrum's share in total volume is much bigger than its share in total number of trade, implying that volume per trade on Arbitrum is much higher than those on other L2s.
 
 <iframe src="https://dune.com/embeds/3188352/5326210" width="100%" height="400"></iframe>
 
 ## Volume per trade
 
-In deed, looking at percentiles of volume per trade of each L2 in the chart below, we can see that the middle 80% (percentile 10 and percentile 90) of Arbitrum is much bigger than those of other L2s. Each percentile tells you about the state at each percent of the population. For example, Arbitrum has $1.5 at percentile 10 of volume per trade, which means the bottom 10% of all trades on Arbitrum have volume per trade of $1.5 or less. Note that the chart is in log scale. On the opposite end, Celo has the smallest volume per trade among all L2s. Another interesting point is that Avalanche may have bigger median--percentile 75 trade size, it trails other L2s at percentile 90 (top 10%).
+Indeed, when comparing volume per trade percentiles accross all L2s, we can see that the middle 80% (percentile 10 and percentile 90) of Arbitrum is much larger than those of other L2s. Note that the chart below is in log scale. On the opposite end, Celo has the smallest volume per trade among all L2s. Another interesting point is that top trade by volume of Avalanche (> percentile 75) seems to be less varried than those of other L2s.
 
 <iframe src="https://dune.com/embeds/3189398/5328326" width="100%" height="400"></iframe>
 
-Most of L2s have percentile 90 of volume per trade around $1k or less, in other words, trades with trade size less than $1k basically account for at least 90% of total number of trade. However the `< $1k` volume per trade bucket only accounts for max 20% of all volume of all L2s other than Celo and Avalanche, where more than half of all volume comprise of trades with trade size less than $1k.
+Most of L2s have percentile 90 of volume per trade around $1k or less, in other words, trades with trade size less than $1k basically account for at least 90% of total number of trade. However the `< $1k` volume per trade bucket only accounts for max 20% of all volume of all L2s except for Celo and Avalanche, on which more than half of all volume comprise of trades with trade size less than $1k.
 
 <iframe src="https://dune.com/embeds/3188937/5327482" width="100%" height="400"></iframe>
 
 ## Trader deep dive
 
-In this section, let's dive deeper into each L2's trader, compare their volume, number of trade, and frequency.
+In this section, compare volume, and frequency of trades accross all L2s.
 
-### Volume and number of trade per trader
+### Volume
 
-On each L2, in 3 months, 90% of traders traded <= $1.6k volume, 8 trades; 99% of traders traded <= $40k volume, 64 trades. The middle 50% (percentile 25--percentile 75) of all L2s, range between $1--$200 volume, 1--3 trades.
+From August to October 2023, 90% of traders, accross all L2s, traded $1.6k or less in total volume. As expected, Arbitrum's traders have the highest volume, whereas Celo's traders have the lowest volume.
 
 <iframe src="https://dune.com/embeds/3191521/5333089" width="100%" height="400"></iframe>
 
+Comparing the size of the middle 80% of all volume per trader distribution accross all L2s can also tell you about the difference between the top and bottom traders, let's copy an economic term and call it **trader inequality**. In absolute dollar, Arbitrum has the highest trader inequality, whereas Celo has the lowest trader inequality. In multiples of the bottom traders, Optimism has the highest trader inequality, whereas BNB has the lowest trader inequality.
+
+<iframe src="https://dune.com/embeds/3191521/5361749" width="100%" height="400"></iframe>
+
+### Frequency
+
+In 92 days, 90% of all traders, accross all L2s, made 8 trades or less in total, or 12 days per trade. Notably, the bottom half traders (<= median) of all L2s are quite similar, made 2 trades or less in total, or 46 days per trade. Surprisingly, top traders (percentile 90) on Celo and Polygon made more number of trade than those on Arbitrum.
+
 <iframe src="https://dune.com/embeds/3198940/5346108" width="100%" height="400"></iframe>
-
-### Frequency per trader
-
-On average, traders who made one trade every 2 hours account for at least half of each L2 total volume, while account for max 0.3% of all traders.
-
-<iframe src="https://dune.com/embeds/3189102/5328583" width="100%" height="400"></iframe>
-
-<iframe src="https://dune.com/embeds/3189102/5328588" width="100%" height="400"></iframe>
 
 ### Trader bucket
 
-During the 92 days period between August 1 and October 31, 2023. Let say traders who traded at least $10k are whale, less than $1k are retail, thus we have 3 groups of traders:
+First, let's compare volume concentration of top traders accross all L2s. In the chart below, on the x axis is top percentage of traders, on the y axis is accumulated volume share. An example to read the chart below is top 1% trader (x axis) of Arbitrum account for 96% of all volume on Arbitrum (y axis). Thus we can see that Arbitrum is the most volume concentrated L2 whereas Base is the least volume concentrated L2. By 10% of top traders, Celo joins Arbitrum as the most volume concentrated L2s. By 50% of top traders, volume concentration of all L2s are basically the same.
 
--   Whales - traded at least $920k.
--   Professionals - traded at least $92k and less than $920k.
--   Retails - traded less than $92k.
+<iframe src="https://dune.com/embeds/3189102/5328583" width="100%" height="400"></iframe>
+
+How much volume did the top 1% traders trade each? It range from $3.8k (Celo's Minimum) to $949m (Arbitrum's Maximum).
+
+<iframe src="https://dune.com/embeds/3207786/5362349" width="100%" height="400"></iframe>
+
+It is a fact that during the 92 days period between August 1 and October 31, 2023, there were traders who traded more than $9.2m, or $100k a day on average. Let's call traders who traded at least $9.2m are whale, less than $92k are retail, in between are professional, thus we have 3 groups of traders:
+
+-   Whales - traded >= $100k a day on average.
+-   Retails - traded < $1k a day on average.
+-   Professionals - traded $1k--$100k a day on average, upper bound exclusive.
+
+In the chart below, we can see that (1) whales bucket is the largest source of volume on Arbitrum, Optimism, and Polygon; (2) whereas whales did not trade on Avalanche and Celo, and professionals dominate with 75% of all volume on each of both L2s; (3) On Base, and BNB, retails' share are quite similar to whales' share in total volume.
 
 <iframe src="https://dune.com/embeds/3191648/5333155" width="100%" height="400"></iframe>
 
@@ -154,7 +164,7 @@ Trader spent gas for volume, when comparing `volume to gas ratio` accross all L2
 
 <iframe src="https://dune.com/embeds/3191893/5340017" width="100%" height="400"></iframe>
 
-Let say transactions with more than one trade are complex transactions, otherwise simple transactions. Surprisingly, Celo not only has the lowest transaction gas but also has the highest share of complex transaction in total transaction and total volume. Traders on Optimism and Polygon also tend to trade in complex transactions more than those on other L2s.
+Let's call transactions with more than one trade are complex transactions, otherwise simple transactions. Surprisingly, Celo not only has the lowest transaction gas but also has the highest share of complex transaction in total transaction and total volume. Traders on Optimism and Polygon also tend to trade in complex transactions more than those on other L2s.
 
 <iframe src="https://dune.com/embeds/3201582/5351098" width="100%" height="400"></iframe>
 
@@ -162,21 +172,29 @@ Let say transactions with more than one trade are complex transactions, otherwis
 
 ## Retention
 
-When comparing average weekly retention rate accross all L2s, we can see that Uniswap's retention rate on Base stands out, at least 5% higher than those on other L2s. Keep in mind that Base is the youngest L2 of Uniswap, and the first few cohorts might skew the average.
+When comparing average week 1 retention rate accross all L2s, we can see that top 2 of Uniswap's retention rate are on Avalanche and Base, at least 2% higher than those of other L2s. However, when comparing median week 1 retention rate accross all L2s, Uniswap on Avalanche and Base are the bottom 2 L2s, much lower than those of other L2s. The difference between average and median is likely caused by a few outlier weekly cohorts.
 
-<iframe src="https://dune.com/embeds/3195967/5341364" width="100%" height="400"></iframe>
+<iframe src="https://dune.com/embeds/3195967/5361026" width="100%" height="400"></iframe>
 
-In deed, when dive deeper into Uniswap on Base, we can see that the first cohort has a much higher retention rate. These are the most loyal users, and likely are the Base's builders/contributors.
-
-<iframe src="https://dune.com/embeds/3196735/5342102" width="100%" height="400"></iframe>
-
-Additionally, number of trader in the first cohort is 21, very small compared to that of other cohorts.
+Indeed, when bringing all cohorts onto the charts below, we can see that the first 4 weekly cohorts of Avalanche and the first cohort of Base have much higher week 1 retention rates relative to other cohorts in the same L2, and relative to the first cohorts of other L2s. After the first few outlier cohorts, week 1 retention rate on Avalanche and Base are quite uniform.
 
 <iframe src="https://dune.com/embeds/3196769/5342183" width="100%" height="400"></iframe>
 
-Excluding the first cohort of Uniswap on Base, we have the similar retention rates among all L2s.
+<iframe src="https://dune.com/embeds/3196735/5360874" width="100%" height="400"></iframe>
 
-<iframe src="https://dune.com/embeds/3196805/5342272" width="100%" height="400"></iframe>
+Contrary to Avalanche and Base, week 1 retention rate on Optimism, Arbitrum, Celo, and Polygon varried wildly.
+
+<iframe src="https://dune.com/embeds/3196805/5360938" width="100%" height="400"></iframe>
+
+<iframe src="https://dune.com/embeds/3205592/5360925" width="100%" height="400"></iframe>
+
+<iframe src="https://dune.com/embeds/3206987/5360966" width="100%" height="400"></iframe>
+
+<iframe src="https://dune.com/embeds/3206982/5360953" width="100%" height="400"></iframe>
+
+Whereas week 1 retention rate on BNB is similar to those on Avalanche and Base.
+
+<iframe src="https://dune.com/embeds/3206989/5360970" width="100%" height="400"></iframe>
 
 ## Listing frequency
 
