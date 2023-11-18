@@ -8,8 +8,9 @@
 
 <meta name="author" content="Lê Quang Phú">
 <meta name="dcterms.date" content="2023-11-22">
+<meta name="description" content="Compare usage of Uniswap on layer 2 EVM networks.">
 
-<title>Lê Quang Phú -</title>
+<title>Lê Quang Phú - Uniswap’s Layer 2 Networks Comparison</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -72,14 +73,14 @@ gtag('config', 'G-S7Y9SX5DXE', { 'anonymize_ip': true});
 </script>
 
 
-<meta property="og:title" content="Lê Quang Phú -">
-<meta property="og:description" content="">
+<meta property="og:title" content="Lê Quang Phú - Uniswap’s Layer 2 Networks Comparison">
+<meta property="og:description" content="Compare usage of Uniswap on layer 2 EVM networks.">
 <meta property="og:image" content="https://lequangphu.github.io/blog/posts/uniswap-l2s-usage/thumbnail.png">
 <meta property="og:site-name" content="Lê Quang Phú">
 <meta property="og:image:height" content="628">
 <meta property="og:image:width" content="1200">
-<meta name="twitter:title" content="Lê Quang Phú -">
-<meta name="twitter:description" content="">
+<meta name="twitter:title" content="Lê Quang Phú - Uniswap’s Layer 2 Networks Comparison">
+<meta name="twitter:description" content="Compare usage of Uniswap on layer 2 EVM networks.">
 <meta name="twitter:image" content="https://lequangphu.github.io/blog/posts/uniswap-l2s-usage/thumbnail.png">
 <meta name="twitter:creator" content="@iamlequangphu">
 <meta name="twitter:image-height" content="628">
@@ -161,7 +162,43 @@ gtag('config', 'G-S7Y9SX5DXE', { 'anonymize_ip': true});
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Uniswap’s Layer 2 Networks Comparison</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">uniswap</div>
+    <div class="quarto-category">crypto</div>
+  </div>
+  </div>
 
+<div>
+  <div class="description">
+    Compare usage of Uniswap on layer 2 EVM networks.
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Lê Quang Phú </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">November 22, 2023</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+</header>
 
 <p>Uniswap expanded to Arbitrum, the first layer 2 network (L2) on June 1, 2021. Since then till October 31, 2023, Uniswap have had 6 additional L2s including (in ascending order by launch date): Optimism, Polygon, Celo, BNB, Avalanche, and Base. Low throughput, high transaction gas, long confirmation time are the pains of Ethereum’s users, including Uniswap’s traders. L2s exists to asperationally solve the pains. In this post, you will learn about differences and similarities among all Uniswap’s L2s in:</p>
 <ul>
@@ -170,29 +207,31 @@ gtag('config', 'G-S7Y9SX5DXE', { 'anonymize_ip': true});
 </ul>
 <section id="key-takeaways" class="level2" data-number="1">
 <h2 data-number="1" class="anchored" data-anchor-id="key-takeaways"><span class="header-section-number">1</span> Key takeaways</h2>
-<p>There are 2 big spikes in monthly volume of Uniswap on L2s, the first was in November 2022, the second was in March 2023. The main sources of these spikes by source’s type are (1) L2: Arbitrum and Polygon; (2) token pair: stable coins paired with wrapped native token of each L2; (3) trader type: return trader.</p>
-<p>In characteristics of trade size: (1) Arbitrum has the highest and widest distribution whereas Celo has the lowest and narrowest distribution; (2) excluding Arbitrum, 90% of all L2s trade size are in less than $1k bucket; (3) however the bucket is not the majority source of volume on all but 2 L2s: Avalanche and Celo.</p>
-<p>In characteristics of trader:</p>
+<ol type="1">
+<li><p>There are 2 big spikes in monthly volume of Uniswap on L2s, the first was in November 2022, the second was in March 2023. The main sources of these spikes by source’s type are (1) L2: Arbitrum and Polygon; (2) token pair: stable coins paired with wrapped native token of each L2; (3) trader type: return trader.</p></li>
+<li><p>In characteristics of trade size: (1) Arbitrum has the highest and widest distribution whereas Celo has the lowest and narrowest distribution; (2) excluding Arbitrum, 90% of all L2s trade size are in less than $1k bucket; (3) however the bucket is not the majority source of volume on all but 2 L2s: Avalanche and Celo.</p></li>
+<li><p>In characteristics of trader:</p>
 <ul>
 <li>Volume per trader is similar to trade size above.</li>
 <li>90% of traders made a trade every 12 days or longer, frequency of small traders (the bottom half of distribution) are similar among all L2s.</li>
 <li>As trade size and volume per trader on Arbitrum are higher than those on other L2s, its volume is more concentrated at the top trader pecentile. However, by the top percentile 50, volume concentration of all L2s are the same.</li>
-</ul>
-<p>In characteristics of top tokens:</p>
+</ul></li>
+<li><p>In characteristics of top tokens:</p>
 <ul>
 <li>Overall, 80% of total bought or sold volume are from top 5 bought or sold tokens, the number varies on each L2.</li>
 <li>Top 5 tokens by volume accross all L2s are WETH, variances of USDC, USDT, and ARB. And each token has different positions at the top tokens by volume on each L2. Top 5 bought tokens are the same as top 5 sold tokens. An interesting data point is USDT is bought but not sold on Base and Celo.</li>
 <li>The no.1 exclusively bought or sold tokens by volume of each L2 have volume range $5m–$900m, 3/7 tokens are stable coins, 2/7 tokens are the native token of L2.</li>
-</ul>
-<p>In charateristics of transaction gas:</p>
+</ul></li>
+<li><p>In charateristics of transaction gas:</p>
 <ul>
 <li>Excluding Arbitrum, 90% of all transaction gas are $0.3 or less.</li>
 <li>Traders spend $1 of gas for $9k of volume on Polygon, $4k of volume on Celo, $3k of volume on Arbitrum and Avalnche, $2k of volume on Optimism, Base, and BNB.</li>
 <li>When comparing median transaction gas by hour, (1) transaction gas of Arbitrum, Optimism, and Base tend to rise in the second half of a day; (2) transaction gas of Polygon and BNB tend to rise in the middle 1/3 of a day; (3) transaction gas of Celo tend to rise in the first 4 hours and the last 4 hours of a day; and (4) transaction gas of Avalanche doesn’t seem to have peak hours.</li>
-</ul>
-<p>In characteristics of retention: (1) 4 L2s have &gt; 10% median week 1 retention (week 0 is the first week) including Arbitrum, Optimism, Polygon and Celo; (2) Accross all cohorts, week 1 retention rate, on Avalanche, Base, and BNB, are quite uniform, whereas, on Optimism, Arbitrum, Celo, and Polygon vary wildly.</p>
-<p>In characteristics of frequency of listing: (1) for every 10 pools created, 6 pools have tokens listed for the first time; (2) 60% of all tokens listed have prices of $0.01 or less, most of them are likely meme, and the dominance of <code>&lt;= $0.01</code> tokens fueled by the launch of Uniswap on Base.</p>
-<p>In characteristics of volume through Uniswap’s frontend: (1) traders on Optimism tend to trade through Uniswap frontend more than those on other L2s; (2) surprisingly, the share of Uniswap frontend in monthly volume accross L2s have been decreasing, except for Avalanche.</p>
+</ul></li>
+<li><p>In characteristics of retention: (1) 4 L2s have &gt; 10% median week 1 retention (week 0 is the first week) including Arbitrum, Optimism, Polygon and Celo; (2) Accross all cohorts, week 1 retention rate, on Avalanche, Base, and BNB, are quite uniform, whereas, on Optimism, Arbitrum, Celo, and Polygon vary wildly.</p></li>
+<li><p>In characteristics of frequency of listing: (1) for every 10 pools created, 6 pools have tokens listed for the first time; (2) 60% of all tokens listed have prices of $0.01 or less, most of them are likely meme, and the dominance of <code>&lt;= $0.01</code> tokens fueled by the launch of Uniswap on Base.</p></li>
+<li><p>In characteristics of volume through Uniswap’s frontend: (1) traders on Optimism tend to trade through Uniswap frontend more than those on other L2s; (2) surprisingly, the share of Uniswap frontend in monthly volume accross L2s have been decreasing, except for Avalanche.</p></li>
+</ol>
 </section>
 <section id="volume-over-time" class="level2" data-number="2">
 <h2 data-number="2" class="anchored" data-anchor-id="volume-over-time"><span class="header-section-number">2</span> Volume over time</h2>
@@ -218,21 +257,21 @@ gtag('config', 'G-S7Y9SX5DXE', { 'anonymize_ip': true});
 <iframe src="https://dune.com/embeds/3201335/5350636" width="100%" height="400">
 </iframe>
 <p>Beside the aforementioned tokens, WBTC also contributed to top 80% MoM volume delta in March 2023.</p>
-<iframe src="https://dune.com/embeds/3201368/5350650" width="100%" height="400">
+<iframe src="https://dune.com/embeds/3201368/5350650" width="100%" height="300">
 </iframe>
 <p>Beside the aforementioned tokens, WBTC, ARB, and WBNB also contributed to top 80% MoM volume delta in October 2023.</p>
-<iframe src="https://dune.com/embeds/3201436/5350781" width="100%" height="400">
+<iframe src="https://dune.com/embeds/3201436/5350781" width="100%" height="500">
 </iframe>
 </section>
 <section id="no.1-token-pair-of-each-l2" class="level4" data-number="2.1.2">
 <h4 data-number="2.1.2" class="anchored" data-anchor-id="no.1-token-pair-of-each-l2"><span class="header-section-number">2.1.2</span> No.1 token pair of each L2</h4>
 <p>On each L2 of Uniswap, the token pair with the largest MoM volume delta in each spike is the pair between the dominant stablecoin and wrapped native token of each L2.</p>
 <p>The dominance of no.1 token pair on Arbitrum decreases over time in 3 spikes, from 79% in total MoM delta in November 2022 to 38% in October 2023. Other L2s saw a similar trend, which indicates a more balanced distribution in volume delta on all of Uniswap’s L2s.</p>
-<iframe src="https://dune.com/embeds/3201362/5350641" width="100%" height="400">
+<iframe src="https://dune.com/embeds/3201362/5350641" width="100%" height="300">
 </iframe>
-<iframe src="https://dune.com/embeds/3201386/5350680" width="100%" height="400">
+<iframe src="https://dune.com/embeds/3201386/5350680" width="100%" height="300">
 </iframe>
-<iframe src="https://dune.com/embeds/3203895/5355322" width="100%" height="400">
+<iframe src="https://dune.com/embeds/3203895/5355322" width="100%" height="300">
 </iframe>
 <p>We’ve learned about volume of Uniswap on L2s over time, in the rest of this post, let’s dive deeper into the 92 days period between August and October 2023, when all of the L2s have been launched, to compare them.</p>
 </section>
@@ -307,9 +346,9 @@ gtag('config', 'G-S7Y9SX5DXE', { 'anonymize_ip': true});
 <section id="top-5-tokens" class="level3" data-number="6.2">
 <h3 data-number="6.2" class="anchored" data-anchor-id="top-5-tokens"><span class="header-section-number">6.2</span> Top 5 tokens</h3>
 <p>Top 5 tokens by volume accross all L2s are WETH, variances of USDC, USDT, and ARB. Each token has different positions at the top tokens by volume on each L2. For example: WETH ranks 1st on Arbitrum, Optimism, and Base; 2nd on Polygon; 3rd on Celo; 9th on Avalanche; and 10th on BNB. Top bought tokens are the same as top sold tokens. An interesting data point is USDT is bought but not sold on Base and Celo, as the 2 L2s’ name and rank don’t appear in the third column.</p>
-<iframe src="https://dune.com/embeds/3191785/5333389" width="100%" height="400">
+<iframe src="https://dune.com/embeds/3191785/5333389" width="100%" height="300">
 </iframe>
-<iframe src="https://dune.com/embeds/3191796/5333410" width="100%" height="400">
+<iframe src="https://dune.com/embeds/3191796/5333410" width="100%" height="300">
 </iframe>
 </section>
 <section id="no.1-exclusive-token" class="level3" data-number="6.3">
