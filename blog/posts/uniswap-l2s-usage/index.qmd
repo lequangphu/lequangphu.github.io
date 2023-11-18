@@ -121,7 +121,7 @@ The dominance of no.1 token pair on Arbitrum decreases over time in 3 spikes, fr
 
 </iframe>
 
-<iframe src="https://dune.com/embeds/3203895/5355322" width="100%" height="300">
+<iframe src="https://dune.com/embeds/3203895/5355322" width="100%" height="400">
 
 </iframe>
 
