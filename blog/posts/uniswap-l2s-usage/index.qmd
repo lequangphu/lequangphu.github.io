@@ -83,7 +83,7 @@ By trader type, return trader played the main role in aforementioned volume spik
 
 ### Spikes breakdown
 
-#### Top 80% of all L2s' volume
+#### Top 80% volume by token pair
 
 What token pairs had the most month over month volume change (MoM delta) during the spikes in November 2022, March 2023, and October 2023?
 
@@ -107,7 +107,7 @@ Beside the aforementioned tokens, WBTC, ARB, and WBNB also contributed to top 80
 
 </iframe>
 
-#### No.1 token pair of each L2
+#### No.1 token pair
 
 On each L2 of Uniswap, the token pair with the largest MoM volume delta in each spike is the pair between the dominant stablecoin and wrapped native token of each L2.
 
