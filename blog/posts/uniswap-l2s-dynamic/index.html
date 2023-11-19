@@ -72,6 +72,8 @@ gtag('js', new Date());
 gtag('config', 'G-S7Y9SX5DXE', { 'anonymize_ip': true});
 </script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <meta property="og:title" content="Lê Quang Phú - Uniswap’s Layer 2 Networks Comparison">
 <meta property="og:description" content="Compare usage of Uniswap on layer 2 EVM networks.">
@@ -134,24 +136,31 @@ gtag('config', 'G-S7Y9SX5DXE', { 'anonymize_ip': true});
   <ul class="collapse">
   <li><a href="#spikes-breakdown" id="toc-spikes-breakdown" class="nav-link" data-scroll-target="#spikes-breakdown"><span class="header-section-number">2.1</span> Spikes breakdown</a></li>
   </ul></li>
-  <li><a href="#volume-share" id="toc-volume-share" class="nav-link" data-scroll-target="#volume-share"><span class="header-section-number">3</span> Volume share</a></li>
-  <li><a href="#trade-size" id="toc-trade-size" class="nav-link" data-scroll-target="#trade-size"><span class="header-section-number">4</span> Trade size</a></li>
-  <li><a href="#trader-comparison" id="toc-trader-comparison" class="nav-link" data-scroll-target="#trader-comparison"><span class="header-section-number">5</span> Trader comparison</a>
+  <li><a href="#trade-size" id="toc-trade-size" class="nav-link" data-scroll-target="#trade-size"><span class="header-section-number">3</span> Trade size</a>
   <ul class="collapse">
-  <li><a href="#volume" id="toc-volume" class="nav-link" data-scroll-target="#volume"><span class="header-section-number">5.1</span> Volume</a></li>
-  <li><a href="#frequency" id="toc-frequency" class="nav-link" data-scroll-target="#frequency"><span class="header-section-number">5.2</span> Frequency</a></li>
-  <li><a href="#trader-bucket" id="toc-trader-bucket" class="nav-link" data-scroll-target="#trader-bucket"><span class="header-section-number">5.3</span> Trader bucket</a></li>
+  <li><a href="#volume-per-trade" id="toc-volume-per-trade" class="nav-link" data-scroll-target="#volume-per-trade"><span class="header-section-number">3.1</span> Volume per trade</a></li>
+  <li><a href="#volume-per-trader" id="toc-volume-per-trader" class="nav-link" data-scroll-target="#volume-per-trader"><span class="header-section-number">3.2</span> Volume per trader</a></li>
+  <li><a href="#volume-concentration" id="toc-volume-concentration" class="nav-link" data-scroll-target="#volume-concentration"><span class="header-section-number">3.3</span> Volume concentration</a></li>
+  <li><a href="#retail-whale-and-professional" id="toc-retail-whale-and-professional" class="nav-link" data-scroll-target="#retail-whale-and-professional"><span class="header-section-number">3.4</span> Retail, whale, and professional</a></li>
   </ul></li>
-  <li><a href="#top-tokens" id="toc-top-tokens" class="nav-link" data-scroll-target="#top-tokens"><span class="header-section-number">6</span> Top tokens</a>
+  <li><a href="#transaction-gas-and-trade-frequency" id="toc-transaction-gas-and-trade-frequency" class="nav-link" data-scroll-target="#transaction-gas-and-trade-frequency"><span class="header-section-number">4</span> Transaction gas and Trade frequency</a>
   <ul class="collapse">
-  <li><a href="#top-tokens-accumulated-share" id="toc-top-tokens-accumulated-share" class="nav-link" data-scroll-target="#top-tokens-accumulated-share"><span class="header-section-number">6.1</span> Top tokens accumulated share</a></li>
-  <li><a href="#top-5-tokens" id="toc-top-5-tokens" class="nav-link" data-scroll-target="#top-5-tokens"><span class="header-section-number">6.2</span> Top 5 tokens</a></li>
-  <li><a href="#no.1-exclusive-token" id="toc-no.1-exclusive-token" class="nav-link" data-scroll-target="#no.1-exclusive-token"><span class="header-section-number">6.3</span> No.1 exclusive token</a></li>
+  <li><a href="#volume-to-gas-ratio" id="toc-volume-to-gas-ratio" class="nav-link" data-scroll-target="#volume-to-gas-ratio"><span class="header-section-number">4.1</span> Volume to gas ratio</a></li>
+  <li><a href="#complex-trasaction" id="toc-complex-trasaction" class="nav-link" data-scroll-target="#complex-trasaction"><span class="header-section-number">4.2</span> Complex trasaction</a></li>
+  <li><a href="#transaction-gas-by-hour" id="toc-transaction-gas-by-hour" class="nav-link" data-scroll-target="#transaction-gas-by-hour"><span class="header-section-number">4.3</span> Transaction gas by hour</a></li>
   </ul></li>
-  <li><a href="#transaction-gas" id="toc-transaction-gas" class="nav-link" data-scroll-target="#transaction-gas"><span class="header-section-number">7</span> Transaction gas</a></li>
-  <li><a href="#retention" id="toc-retention" class="nav-link" data-scroll-target="#retention"><span class="header-section-number">8</span> Retention</a></li>
-  <li><a href="#listing-frequency" id="toc-listing-frequency" class="nav-link" data-scroll-target="#listing-frequency"><span class="header-section-number">9</span> Listing frequency</a></li>
-  <li><a href="#uniswap-frontend-volume" id="toc-uniswap-frontend-volume" class="nav-link" data-scroll-target="#uniswap-frontend-volume"><span class="header-section-number">10</span> Uniswap frontend volume</a></li>
+  <li><a href="#retention" id="toc-retention" class="nav-link" data-scroll-target="#retention"><span class="header-section-number">5</span> Retention</a></li>
+  <li><a href="#volume-concentration-in-top-tokens" id="toc-volume-concentration-in-top-tokens" class="nav-link" data-scroll-target="#volume-concentration-in-top-tokens"><span class="header-section-number">6</span> Volume concentration in top tokens</a>
+  <ul class="collapse">
+  <li><a href="#top-5-tokens" id="toc-top-5-tokens" class="nav-link" data-scroll-target="#top-5-tokens"><span class="header-section-number">6.1</span> Top 5 tokens</a></li>
+  <li><a href="#no.1-exclusive-token" id="toc-no.1-exclusive-token" class="nav-link" data-scroll-target="#no.1-exclusive-token"><span class="header-section-number">6.2</span> No.1 exclusive token</a></li>
+  </ul></li>
+  <li><a href="#listing-frequency" id="toc-listing-frequency" class="nav-link" data-scroll-target="#listing-frequency"><span class="header-section-number">7</span> Listing frequency</a>
+  <ul class="collapse">
+  <li><a href="#token-listing-frequency-over-time" id="toc-token-listing-frequency-over-time" class="nav-link" data-scroll-target="#token-listing-frequency-over-time"><span class="header-section-number">7.1</span> Token listing frequency over time</a></li>
+  <li><a href="#token-listed-by-price" id="toc-token-listed-by-price" class="nav-link" data-scroll-target="#token-listed-by-price"><span class="header-section-number">7.2</span> Token listed by price</a></li>
+  </ul></li>
+  <li><a href="#uniswap-front-end-volume" id="toc-uniswap-front-end-volume" class="nav-link" data-scroll-target="#uniswap-front-end-volume"><span class="header-section-number">8</span> Uniswap front-end volume</a></li>
   </ul>
 </nav>
 </nav>
@@ -203,50 +212,48 @@ gtag('config', 'G-S7Y9SX5DXE', { 'anonymize_ip': true});
 <p>Uniswap expanded to Arbitrum, the first layer 2 network (L2) on June 1, 2021. Since then till October 31, 2023, Uniswap have had 6 additional L2s including (in ascending order by launch date): Optimism, Polygon, Celo, BNB, Avalanche, and Base. Low throughput, high transaction gas, long confirmation time are the pains of Ethereum’s users, including Uniswap’s traders. L2s exists to asperationally solve the pains. In this post, you will learn about differences and similarities among all Uniswap’s L2s in:</p>
 <ul>
 <li>The changes in monthly volume, and the reason behind volume spikes.</li>
-<li>Characteristics of factors including: trade size; volume, frequency, and type of trader; top tokens; transaction gas; retention; frequency of creating pool and listing new token; contribution of Uniswap’s frontend.</li>
+<li>Characteristics of factors including: volume distribution; trade size; transaction gas and trade frequency; top tokens; retention; frequency of creating pool and listing new token; contribution of Uniswap front-end.</li>
 </ul>
 <section id="key-takeaways" class="level2" data-number="1">
 <h2 data-number="1" class="anchored" data-anchor-id="key-takeaways"><span class="header-section-number">1</span> Key takeaways</h2>
 <ol type="1">
-<li><p>There are 2 big spikes in monthly volume of Uniswap on L2s, the first was in November 2022, the second was in March 2023. The main sources of these spikes by source’s type are (1) L2: Arbitrum and Polygon; (2) token pair: stable coins paired with wrapped native token of each L2; (3) trader type: return trader.</p></li>
-<li><p>In characteristics of trade size:</p>
+<li><p>There were two notable spikes in monthly volume of Uniswap on L2s, the first was in November 2022, the second was in March 2023. The main sources of these spikes:</p>
 <ul>
-<li>Arbitrum has the highest and widest distribution whereas Celo has the lowest and narrowest distribution.</li>
-<li>Excluding Arbitrum, 90% of all L2s trade size are in less than $1k bucket.</li>
-<li>However the bucket is not the majority source of volume on all but 2 L2s: Avalanche and Celo.</li>
+<li>by L2: Arbitrum and Polygon,</li>
+<li>by token pair: stable coins paired with wrapped native token of each L2,</li>
+<li>by trader type: return trader.</li>
 </ul></li>
-<li><p>In characteristics of trader:</p>
+<li><p>About trade size:</p>
 <ul>
-<li>Volume per trader is similar to trade size above.</li>
-<li>90% of traders made a trade every 12 days or longer, frequency of small traders (the bottom half of distribution) are similar among all L2s.</li>
-<li>As trade size and volume per trader on Arbitrum are higher than those on other L2s, its volume is more concentrated at the top trader pecentile. However, by the top percentile 50, volume concentration of all L2s are the same.</li>
+<li>Arbitrum has the highest volume per trade and volume per trader. Whereas Celo has the lowest volume per trade and volume per trader.</li>
+<li>There is a risk of having too much volume from a few large traders. Arbitrum exposes the most, whereas Base exposes the least to the risk.</li>
 </ul></li>
-<li><p>In characteristics of top tokens:</p>
+<li><p>About transaction gas and trade frequency:</p>
 <ul>
-<li>Overall, 80% of total bought or sold volume are from top 5 bought or sold tokens, the number varies on each L2.</li>
-<li>Top 5 tokens by volume accross all L2s are WETH, variances of USDC, USDT, and ARB. And each token has different positions at the top tokens by volume on each L2. Top 5 bought tokens are the same as top 5 sold tokens. An interesting data point is USDT is bought but not sold on Base and Celo.</li>
+<li>Higher gas means worse experience. And traders on Arbitrum have had the worst, whereas traders on Celo and Polygon have had the best experience.</li>
+<li>Transaction gas and trade frequency are negatively correlated. The higher the frequency of a trader, the more sensitive the trader is to transaction gas. And top traders on Celo and Polygon have made more number of trade than those on other L2s.</li>
+<li>L2s have different peak transaction gas period in a day, in UTC time zone: (1) transaction gas of Arbitrum, Optimism, and Base tend to rise in the second half of a day; (2) transaction gas of Polygon and BNB tend to rise in the middle 1/3 of a day; (3) transaction gas of Celo tend to rise in the first 4 hours and the last 4 hours of a day; and (4) transaction gas of Avalanche doesn’t seem to have peak hours.</li>
+</ul></li>
+<li><p>About retention:</p>
+<ul>
+<li>Traders on Polygon, Arbitrum, Optimism and Celo are more loyal than those on BNB, Base, and Avalanche.</li>
+<li>Across all cohorts, week 1 retention rate on Avalanche, Base, and BNB are quite uniform. Whereas, week 1 retention rates on Optimism, Arbitrum, Celo, and Polygon vary wildly.</li>
+</ul></li>
+<li><p>About top tokens:</p>
+<ul>
+<li>There is also a risk in having to much volume concentrated in a few tokens. And Base and Avalanche expose the most, whereas Polygon exposes the least to that risk.</li>
+<li>Top 5 tokens by volume across all L2s are WETH, variances of USDC, USDT, and ARB. And each token has different positions at the top tokens by volume on each L2.</li>
 <li>The no.1 exclusively bought or sold tokens by volume of each L2 have volume range $5m–$900m, 3/7 tokens are stable coins, 2/7 tokens are the native token of L2.</li>
 </ul></li>
-<li><p>In charateristics of transaction gas:</p>
+<li><p>About frequency of listing:</p>
 <ul>
-<li>Excluding Arbitrum, 90% of all transaction gas are $0.3 or less.</li>
-<li>Traders spend $1 of gas for $9k of volume on Polygon, $4k of volume on Celo, $3k of volume on Arbitrum and Avalnche, $2k of volume on Optimism, Base, and BNB.</li>
-<li>When comparing median transaction gas by hour, (1) transaction gas of Arbitrum, Optimism, and Base tend to rise in the second half of a day; (2) transaction gas of Polygon and BNB tend to rise in the middle 1/3 of a day; (3) transaction gas of Celo tend to rise in the first 4 hours and the last 4 hours of a day; and (4) transaction gas of Avalanche doesn’t seem to have peak hours.</li>
-</ul></li>
-<li><p>In characteristics of retention:</p>
-<ul>
-<li>4 L2s have &gt; 10% median week 1 retention (week 0 is the first week) including Arbitrum, Optimism, Polygon and Celo.</li>
-<li>Accross all cohorts, week 1 retention rate, on Avalanche, Base, and BNB, are quite uniform. Whereas, on Optimism, Arbitrum, Celo, and Polygon vary wildly.</li>
-</ul></li>
-<li><p>In characteristics of frequency of listing:</p>
-<ul>
-<li>For every 10 pools created, 6 pools have tokens listed for the first time.</li>
+<li>Creating more pools and listing more new tokens increasing more option for traders to trade, mitigating volume concentration risk. And Polygon and Base have done the most, whereas Celo and Avalanche have done the least of that.</li>
 <li>60% of all tokens listed have prices of $0.01 or less, most of them are likely meme, and the dominance of <code>&lt;= $0.01</code> tokens fueled by the launch of Uniswap on Base.</li>
 </ul></li>
-<li><p>In characteristics of volume through Uniswap’s frontend:</p>
+<li><p>About volume through Uniswap front-end:</p>
 <ul>
-<li>Traders on Optimism tend to trade through Uniswap frontend more than those on other L2s.</li>
-<li>Surprisingly, the share of Uniswap frontend in monthly volume accross L2s have been decreasing, except for Avalanche.</li>
+<li>Traders might or might not know that Uniswap is facilitating their trade. The group of traders who certainly do know are the one who trade through Uniswap front-end. Overall, a quarter or less of traders trade through Uniswap front-end. And traders on Optimism tend to trade through Uniswap front-end than those on other L2s.</li>
+<li>Surprisingly, the share of Uniswap front-end in monthly volume across L2s have been decreasing, except for Avalanche.</li>
 </ul></li>
 </ol>
 </section>
@@ -255,7 +262,8 @@ gtag('config', 'G-S7Y9SX5DXE', { 'anonymize_ip': true});
 <p>Since launch of each Uniswap’s L2 till October 31, 2023, Arbitrum, the oldest L2, has 800 days of volume generation, whereas Base, the youngest L2, has 91 days of volume generation. Note that number of day between July 31 and October 31 is 93, however, there were 2 days which Base didn’t generate any volume.</p>
 <iframe src="https://dune.com/embeds/3188395/5326278" width="100%" height="400">
 </iframe>
-<p>How much volume did each of all L2s generate in the first 91 days? In the chart below, we can see that Polygon generated the most volume whereas Celo generated the least volume. The gap between the most and the least is gigantic, $6.4b vs.&nbsp;$10m. It is also worth noted that Polygon’s volume is twice as much as Arbitrum’s volume. In the first 91 days, there are 2 L2s surpassed $1b volume, 3 L2s surpassed $500m, 1 L2 surpassed $100m. And there is Celo.</p>
+<p>How much volume did each of all L2s generate in the first 91 days?</p>
+<p>In the chart below, we can see that, in the first 91 days, Polygon generated the most volume whereas Celo generated the least volume. The gap between the most and the least is gigantic, $6.4b vs.&nbsp;$10m. It is also worth noted that Polygon’s volume is twice as much as Arbitrum’s volume. There are 2 L2s surpassed $1b volume, 3 L2s surpassed $500m, 1 L2 surpassed $100m. And there is Celo.</p>
 <iframe src="https://dune.com/embeds/3208596/5365794" width="100%" height="400">
 </iframe>
 <p>L2s’ monthly volume gradually increased through October 2022, before having the first spike in November 2022, when FTX collapsed, following with a huge drop in December 2022. After that, L2s’ monthly volume surged rapidly and reached all-time high in March 2023, that is the second spike. Then it took 6 months for L2s’ monthly volume to come back down to the same level prior to the second spike in September 2023. In October 2023, L2s’ monthly volume started to increase again. During that whole period, majority of trading volume happened on Uniswap’s Arbitrum and Polygon. Especially in the second spike, Arbitrum’s share in total monthly volume increased significantly, we can even say that Arbitrum is the sole driver of the second spike.</p>
@@ -294,48 +302,54 @@ gtag('config', 'G-S7Y9SX5DXE', { 'anonymize_ip': true});
 </section>
 </section>
 </section>
-<section id="volume-share" class="level2" data-number="3">
-<h2 data-number="3" class="anchored" data-anchor-id="volume-share"><span class="header-section-number">3</span> Volume share</h2>
+<section id="trade-size" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="trade-size"><span class="header-section-number">3</span> Trade size</h2>
 <p>Top 3 L2s by volume including Arbitrum, Polygon, and Optimism, account for 94% of all volume, and 85% of total number of trade. Notably, when compare 2 columns in the chart below, we can see that Arbitrum’s share in total volume is much bigger than its share in total number of trade, implying that volume per trade on Arbitrum is much higher than those on other L2s.</p>
 <iframe src="https://dune.com/embeds/3188352/5326210" width="100%" height="400">
 </iframe>
-</section>
-<section id="trade-size" class="level2" data-number="4">
-<h2 data-number="4" class="anchored" data-anchor-id="trade-size"><span class="header-section-number">4</span> Trade size</h2>
-<p>Indeed, when comparing volume per trade percentiles accross all L2s, we can see that the middle 80% (percentile 10 and percentile 90) of Arbitrum is much larger than those of other L2s. Note that the chart below is in log scale. On the opposite end, Celo has the smallest volume per trade among all L2s. Another interesting point is that top trade by volume of Avalanche (&gt; percentile 75) seems to be less varried than those of other L2s.</p>
+<section id="volume-per-trade" class="level3" data-number="3.1">
+<h3 data-number="3.1" class="anchored" data-anchor-id="volume-per-trade"><span class="header-section-number">3.1</span> Volume per trade</h3>
+<p>One way to compare metrics between L2s is charting the main percentiles value and compare them. For example, in the chart below about volume per trade, Arbitrum has percentile 10 of $1.6, indicating that the bottom 10% of all trades on Arbitrum has size of $1.6. You will see me using this type of chart to compare several metrics between L2s throughout this post.</p>
+<p>A few observations:</p>
+<ul>
+<li>Arbitrum has the highest volume per trade whereas Celo has the lowest volume per trade at all 5 main percentiles.</li>
+<li>Excluding Celo, Avalanche has the narrowest middle 80% distribution of volume per trade, i.e.&nbsp;the gap of percentile 90 and percentile 10.</li>
+<li>Base, an OP stack L2, has wider middle 80% distribution of volume per trade than that of Optimism.</li>
+<li>BNB has narrower distribution of volume per trade than that of Polygon, both are EVM compatible networks.</li>
+</ul>
+<p>How to interpret these observations?</p>
+<p>The wider the distribution, the more diverse of volume per trade.</p>
 <iframe src="https://dune.com/embeds/3189398/5328326" width="100%" height="400">
 </iframe>
 <p>Most of L2s have percentile 90 of volume per trade around $1k or less, in other words, trades with trade size less than $1k account for at least 90% of total number of trade. However the <code>&lt; $1k</code> volume per trade bucket only accounts for 20% or less of each L2 except for Celo and Avalanche, on which more than half of all volume comprise of trades with trade size less than $1k.</p>
 <iframe src="https://dune.com/embeds/3188937/5327482" width="100%" height="400">
 </iframe>
 </section>
-<section id="trader-comparison" class="level2" data-number="5">
-<h2 data-number="5" class="anchored" data-anchor-id="trader-comparison"><span class="header-section-number">5</span> Trader comparison</h2>
-<p>In this section, let’s compare volume, and frequency of traders accross all L2s.</p>
-<section id="volume" class="level3" data-number="5.1">
-<h3 data-number="5.1" class="anchored" data-anchor-id="volume"><span class="header-section-number">5.1</span> Volume</h3>
-<p>From August to October 2023, 90% of traders, accross all L2s, traded $1.6k or less in total volume. As expected, Arbitrum’s traders have the highest volume, whereas Celo’s traders have the lowest volume.</p>
+<section id="volume-per-trader" class="level3" data-number="3.2">
+<h3 data-number="3.2" class="anchored" data-anchor-id="volume-per-trader"><span class="header-section-number">3.2</span> Volume per trader</h3>
+<p>Arbitrum has the highest volume per trader, but only at the top half, above median. Below median, volume per trader of Arbitrum is only higer than those of Optimism and Celo. Whereas Celo has the lowest volumer per trader at all 5 percentiles.</p>
+<p>Excluding Celo, BNB has the narrowest middle 80% distribution of volume per trader.</p>
 <iframe src="https://dune.com/embeds/3191521/5333089" width="100%" height="400">
 </iframe>
-<p>Comparing the size of the middle 80% of all volume per trader distribution accross all L2s can also tell you about the difference between the top and bottom traders, let’s copy an economic term and call it <strong>trader inequality</strong>. In absolute dollar, Arbitrum has the highest trader inequality, whereas Celo has the lowest trader inequality. In multiples of the bottom traders, Optimism has the highest trader inequality, whereas BNB has the lowest trader inequality.</p>
-<iframe src="https://dune.com/embeds/3191521/5361749" width="100%" height="400">
+<p>The size of the middle 80% can also tell us about the difference between volume of the top and bottom traders, let’s call it <strong>trader inequality</strong>. In absolute dollar, <span class="math inline">\(Percentile\ 90 - Percentile\ 10\)</span>, Arbitrum has the highest trader inequality, whereas Celo has the lowest trader inequality. In multiples of the bottom traders, <span class="math inline">\(Percentile\ 90 \div Percentile\ 10\)</span>, Optimism has the highest trader inequality, whereas BNB has the lowest trader inequality.</p>
+<iframe src="https://dune.com/embeds/3210575/5367294" width="100%" height="400">
 </iframe>
 </section>
-<section id="frequency" class="level3" data-number="5.2">
-<h3 data-number="5.2" class="anchored" data-anchor-id="frequency"><span class="header-section-number">5.2</span> Frequency</h3>
-<p>In 92 days, 90% of all traders, accross all L2s, made 8 trades or less in total, or 12 days per trade. Notably, the bottom half traders (&lt;= median) of all L2s are quite similar, made 2 trades or less in total, or 46 days per trade. Surprisingly, top traders (percentile 90) on Celo and Polygon made more number of trade than those on Arbitrum.</p>
-<iframe src="https://dune.com/embeds/3198940/5346108" width="100%" height="400">
-</iframe>
-</section>
-<section id="trader-bucket" class="level3" data-number="5.3">
-<h3 data-number="5.3" class="anchored" data-anchor-id="trader-bucket"><span class="header-section-number">5.3</span> Trader bucket</h3>
-<p>First, let’s compare volume concentration of top traders accross all L2s. In the chart below, on the x axis is top percentage of traders, on the y axis is accumulated volume share. An example to read the chart below is top 1% trader (x axis) of Arbitrum account for 96% of all volume on Arbitrum (y axis). Thus we can see that Arbitrum is the most volume concentrated L2 whereas Base is the least volume concentrated L2. By 10% of top traders, Celo joins Arbitrum as the most volume concentrated L2s. By 50% of top traders, volume concentration of all L2s are basically the same.</p>
+<section id="volume-concentration" class="level3" data-number="3.3">
+<h3 data-number="3.3" class="anchored" data-anchor-id="volume-concentration"><span class="header-section-number">3.3</span> Volume concentration</h3>
+<p>There is a risk of having too much volume concentrated in a group of large traders. Measuring volume concentration can tell you that.</p>
+<p>Arbitrum is the most volume concentrated L2. Whereas Base is the least volume concentrated L2.</p>
+<p>Share of volume from top 1% traders range from 83% (Base) to 96% (Arbitrum). By top 10% traders, Celo joins Arbitrum as the most volume concentrated L2s. By top 50% traders, volume concentration of all L2s are basically the same.</p>
 <iframe src="https://dune.com/embeds/3189102/5328583" width="100%" height="400">
 </iframe>
-<p>How much volume did the top 1% traders trade each? It range from $3.8k (Celo’s Minimum) to $949m (Arbitrum’s Maximum).</p>
+<p>What is the volume range of top 1% traders?</p>
+<p>The lower bound (minimum) ranges from $4k on Celo to $40k on Arbitrum. And the upper bound (maximum) ranges from $5m on Celo to $949m on Arbitrum.</p>
 <iframe src="https://dune.com/embeds/3207786/5362349" width="100%" height="400">
 </iframe>
-<p>It is a fact that during the 92 days period between August 1 and October 31, 2023, there were traders who traded more than $9.2m, or $100k a day on average. Let’s use $1k and $100k volume per day on average to divide traders into 3 buckets:</p>
+</section>
+<section id="retail-whale-and-professional" class="level3" data-number="3.4">
+<h3 data-number="3.4" class="anchored" data-anchor-id="retail-whale-and-professional"><span class="header-section-number">3.4</span> Retail, whale, and professional</h3>
+<p>We learned above that during the 92 days period between August 1 and October 31, 2023, the largest traders across all L2s traded $4.8m–$949.3m in total, or $52k–$10.3m per day on average. Let’s use $1k and $100k volume per day on average to divide traders into 3 buckets:</p>
 <ul>
 <li>Retails - traded less than $1k a day on average, total $92k in 92 days.</li>
 <li>Whales - traded at least $100k a day on average, total $9.2m in 92 days.</li>
@@ -346,44 +360,20 @@ gtag('config', 'G-S7Y9SX5DXE', { 'anonymize_ip': true});
 </iframe>
 </section>
 </section>
-<section id="top-tokens" class="level2" data-number="6">
-<h2 data-number="6" class="anchored" data-anchor-id="top-tokens"><span class="header-section-number">6</span> Top tokens</h2>
-<p>In this section, let’s examine the top tokens bought/sold by volume.</p>
-<section id="top-tokens-accumulated-share" class="level3" data-number="6.1">
-<h3 data-number="6.1" class="anchored" data-anchor-id="top-tokens-accumulated-share"><span class="header-section-number">6.1</span> Top tokens accumulated share</h3>
-<p>Top 5 bought/sold tokens account for 81% of all volume, that number increases to 93% of all volume with top 10 tokens.</p>
-<iframe src="https://dune.com/embeds/3191783/5333381" width="100%" height="400">
-</iframe>
-<p>Looking at top tokens of each L2, we can see that volume of Uniswap on Base and on Avalanche are more concentrated than those on other L2s, as top bought/sold tokens curves of Avalanche and Base are higher than those of other L2s at the same percentage on the x axis.</p>
-<iframe src="https://dune.com/embeds/3188685/5326864" width="100%" height="400">
-</iframe>
-<iframe src="https://dune.com/embeds/3188731/5326901" width="100%" height="400">
-</iframe>
-</section>
-<section id="top-5-tokens" class="level3" data-number="6.2">
-<h3 data-number="6.2" class="anchored" data-anchor-id="top-5-tokens"><span class="header-section-number">6.2</span> Top 5 tokens</h3>
-<p>Top 5 tokens by volume accross all L2s are WETH, variances of USDC, USDT, and ARB. Each token has different positions at the top tokens by volume on each L2. For example: WETH ranks 1st on Arbitrum, Optimism, and Base; 2nd on Polygon; 3rd on Celo; 9th on Avalanche; and 10th on BNB. Top bought tokens are the same as top sold tokens. An interesting data point is USDT is bought but not sold on Base and Celo, as the 2 L2s’ name and rank don’t appear in the third column.</p>
-<iframe src="https://dune.com/embeds/3191785/5333389" width="100%" height="300">
-</iframe>
-<iframe src="https://dune.com/embeds/3191796/5333410" width="100%" height="300">
-</iframe>
-</section>
-<section id="no.1-exclusive-token" class="level3" data-number="6.3">
-<h3 data-number="6.3" class="anchored" data-anchor-id="no.1-exclusive-token"><span class="header-section-number">6.3</span> No.1 exclusive token</h3>
-<p>Each L2 has tokens which are exclusively bought/sold on each L2. The no.1 exclusively bought/sold tokens by volume of each L2 have volume range $5m–$900m. 3/7 are stable coins, 2/7 are the native token of L2.</p>
-<iframe src="https://dune.com/embeds/3191811/5333452" width="100%" height="400">
-</iframe>
-<iframe src="https://dune.com/embeds/3191821/5333473" width="100%" height="400">
-</iframe>
-</section>
-</section>
-<section id="transaction-gas" class="level2" data-number="7">
-<h2 data-number="7" class="anchored" data-anchor-id="transaction-gas"><span class="header-section-number">7</span> Transaction gas</h2>
-<p>In this section, let’s compare transaction gas accross all L2s. Note that one transaction may consist of more than one trade.</p>
-<p>Excluding Arbitrum, 90% of all transaction gas are $0.3 or less. In general, Arbitrum has the highest transaction gas whereas Celo has the lowest transaction gas. In dollar, Arbitrum has widest distribution. In log scale, Optimism and Base (an Opstack L2) have the widest distribution.</p>
+<section id="transaction-gas-and-trade-frequency" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="transaction-gas-and-trade-frequency"><span class="header-section-number">4</span> Transaction gas and Trade frequency</h2>
+<p>Overall, Arbitrum has the highest transaction gas. Whereas Celo has the lowest transaction gas, trailing after Polygon as the second lowest.</p>
+<p>At bottom 25%, Base has the lowest transaction gas.</p>
+<p>Excluding Arbitrum, Optimism and Base has the widest 80% middle distribution.</p>
 <iframe src="https://dune.com/embeds/3200967/5349795" width="100%" height="400">
 </iframe>
-<p>Traders spent gas for volume, when comparing <code>volume to gas ratio</code> accross all L2s, 4 groups of L2 emerge:</p>
+<p>Trade frequency seems to be negative correlated with transaction gas, at least at percentile 90, representing top 10% traders by trade frequency. We learned above that Celo and Polygon has the lowest transaction gas, and looking at the chart below, we can see that top traders of Celo and Polygon made more number of trade than those of other L2s.</p>
+<iframe src="https://dune.com/embeds/3198940/5346108" width="100%" height="400">
+</iframe>
+<section id="volume-to-gas-ratio" class="level3" data-number="4.1">
+<h3 data-number="4.1" class="anchored" data-anchor-id="volume-to-gas-ratio"><span class="header-section-number">4.1</span> Volume to gas ratio</h3>
+<p>Transaction gas is an unavoidable cost in onchain trading, the lower the cost relative to volume, or the higher the volume to gas ratio, the more profitability traders might get when trading on an L2.</p>
+<p>And when comparing volume to gas ratio across all L2s, 4 groups of L2 emerge:</p>
 <ul>
 <li>Optimism, Base, and BNB: $1 gas for every $2k volume.</li>
 <li>Arbitrum and Avalanche: $1 gas for every $3k volume.</li>
@@ -392,19 +382,34 @@ gtag('config', 'G-S7Y9SX5DXE', { 'anonymize_ip': true});
 </ul>
 <iframe src="https://dune.com/embeds/3191893/5340017" width="100%" height="400">
 </iframe>
-<p>Let’s call transactions with more than one trade are complex transactions, otherwise simple transactions. First, majority of trades were made in single transaction. Second, surprisingly, Celo not only has the lowest transaction gas but also has the highest share of complex transaction in total number of transaction and total volume. And third, traders on Optimism and Polygon also tend to trade in complex transactions more than those on other L2s.</p>
+</section>
+<section id="complex-trasaction" class="level3" data-number="4.2">
+<h3 data-number="4.2" class="anchored" data-anchor-id="complex-trasaction"><span class="header-section-number">4.2</span> Complex trasaction</h3>
+<p>A transaction can have more than one trade. Let’s call a transaction with more than one trade a <code>complex</code> transaction, otherwise a <code>simple</code> transaction. Comparing share of complex transaction in total number of transaction can tell you how sophisticated traders of a L2 relative to those of other L2s.</p>
+<p>First, majority of trades were made in single transaction. Second, surprisingly, Celo not only has the lowest transaction gas but also has the highest share of complex transaction in total number of transaction and total volume. And third, traders on Optimism and Polygon also tend to trade in complex transactions more than those on other L2s.</p>
 <iframe src="https://dune.com/embeds/3201582/5351098" width="100%" height="400">
 </iframe>
 <iframe src="https://dune.com/embeds/3201582/5351052" width="100%" height="400">
 </iframe>
-<p>When comparing median transaction gas by hour, (1) transaction gas of Arbitrum, Optimism, and Base tend to rise in the second half of a day; (2) transaction gas of Polygon and BNB tend to rise in the middle 1/3 of a day; (3) transaction gas of Celo tend to rise in the first 4 hours and the last 4 hours of a day; and (4) transaction gas of Avalanche doesn’t seem to have peak hours.</p>
+</section>
+<section id="transaction-gas-by-hour" class="level3" data-number="4.3">
+<h3 data-number="4.3" class="anchored" data-anchor-id="transaction-gas-by-hour"><span class="header-section-number">4.3</span> Transaction gas by hour</h3>
+<p>Measuring transaction gas of trading by hour can tell us about different usage in a day across all L2s. The higher the transaction gas in a given hour, the more trading happened in the hour.</p>
+<p>A few observations:</p>
+<ul>
+<li>Transaction gas of Arbitrum, Optimism, and Base tend to rise in the second half of a day.</li>
+<li>Transaction gas of Polygon and BNB tend to rise in the middle 1/3 of a day.</li>
+<li>Transaction gas of Celo tend to rise in the first 4 hours and the last 4 hours of a day.</li>
+<li>Transaction gas of Avalanche doesn’t seem to have peak hours.</li>
+</ul>
 <iframe src="https://dune.com/embeds/3209762/5365964" width="100%" height="400">
 </iframe>
 </section>
-<section id="retention" class="level2" data-number="8">
-<h2 data-number="8" class="anchored" data-anchor-id="retention"><span class="header-section-number">8</span> Retention</h2>
-<p>Retention is measured on a weekly basis. Retention rate in a given week is the percentage of a trader cohort return in that week after making at least one trade in <strong>week 0</strong>, the first week.</p>
-<p>When comparing average week 1 (the week after the first week) retention rate accross all L2s, we can see that top 2 of Uniswap’s retention rate are on Avalanche and Base, at least 2% higher than those of other L2s. However, when comparing median week 1 retention rate accross all L2s, Uniswap on Avalanche and Base are the bottom 2 L2s, much lower than those of other L2s. The difference between average and median is likely caused by a few outlier weekly cohorts.</p>
+</section>
+<section id="retention" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="retention"><span class="header-section-number">5</span> Retention</h2>
+<p>Measuring retetion can tell us about how loyal traders are. Retention is measured on a weekly basis. Week 1 retention rate is the percentage of a trader cohort return one week after making at least one trade in week 0, the first week.</p>
+<p>When comparing median week 1 retention rate, Polygon and Arbitrum are the top 2 L2s. However, when comparing average week 1 retention rate, we can see that Avalanche and Base are the top 2 L2s. Whereas Avalanche and Base are the bottom 2 L2s. The difference between average and median is likely caused by a few outlier weekly cohorts.</p>
 <iframe src="https://dune.com/embeds/3195967/5361026" width="100%" height="400">
 </iframe>
 <p>Indeed, when bringing all cohorts onto the charts below, we can see that the first 4 weekly cohorts of Avalanche and the first cohort of Base have much higher week 1 retention rates relative to other cohorts in the same L2, and relative to the first cohorts of other L2s. After the first few outlier cohorts, week 1 retention rate on Avalanche and Base are quite uniform.</p>
@@ -412,7 +417,7 @@ gtag('config', 'G-S7Y9SX5DXE', { 'anonymize_ip': true});
 </iframe>
 <iframe src="https://dune.com/embeds/3196735/5360874" width="100%" height="400">
 </iframe>
-<p>Contrary to Avalanche and Base, week 1 retention rate on Optimism, Arbitrum, Celo, and Polygon varried wildly.</p>
+<p>Contrary to low variance in week 1 retention rates on Avalanche and Base, week 1 retention rates on Optimism, Arbitrum, Celo, and Polygon varried wildly.</p>
 <iframe src="https://dune.com/embeds/3196805/5360938" width="100%" height="400">
 </iframe>
 <iframe src="https://dune.com/embeds/3205592/5360925" width="100%" height="400">
@@ -421,37 +426,79 @@ gtag('config', 'G-S7Y9SX5DXE', { 'anonymize_ip': true});
 </iframe>
 <iframe src="https://dune.com/embeds/3206982/5360953" width="100%" height="400">
 </iframe>
-<p>Whereas week 1 retention rate on BNB is similar to those on Avalanche and Base.</p>
+<p>Week 1 retention rates on BNB is similar to those on Avalanche and Base.</p>
 <iframe src="https://dune.com/embeds/3206989/5360970" width="100%" height="400">
 </iframe>
 </section>
-<section id="listing-frequency" class="level2" data-number="9">
-<h2 data-number="9" class="anchored" data-anchor-id="listing-frequency"><span class="header-section-number">9</span> Listing frequency</h2>
-<p>On average, Polygon and Base have the highest number of pool created per day, &gt; 10 per day; following by BNB and Arbitrum, 8–10 per day; Optimism and Avalanche, 1–3 per day; and Celo, 1 every 2 days.</p>
+<section id="volume-concentration-in-top-tokens" class="level2" data-number="6">
+<h2 data-number="6" class="anchored" data-anchor-id="volume-concentration-in-top-tokens"><span class="header-section-number">6</span> Volume concentration in top tokens</h2>
+<p>We have learned about volume concentration in top traders, in this section, let’s examine volume concentration in top tokens. There is also a risk in having too much volume in a few tokens. And measuring volume concentration in top tokens can tell us that.</p>
+<p>Top 5 bought/sold tokens account for 81% of all volume, that number increases to 93% of all volume with top 10 tokens.</p>
+<iframe src="https://dune.com/embeds/3191783/5333381" width="100%" height="400">
+</iframe>
+<p>Looking at top tokens of each L2, we can see that volume of Uniswap on Base and on Avalanche are more concentrated than those on other L2s, as top bought/sold tokens curves of Avalanche and Base are higher than those of other L2s at the same number of top tokens.</p>
+<iframe src="https://dune.com/embeds/3188685/5326864" width="100%" height="400">
+</iframe>
+<iframe src="https://dune.com/embeds/3188731/5326901" width="100%" height="400">
+</iframe>
+<section id="top-5-tokens" class="level3" data-number="6.1">
+<h3 data-number="6.1" class="anchored" data-anchor-id="top-5-tokens"><span class="header-section-number">6.1</span> Top 5 tokens</h3>
+<p>Top 5 tokens by volume across all L2s are WETH, variances of USDC, USDT, and ARB. Each token has different positions at the top tokens by volume on each L2. For example: WETH ranks 1st on Arbitrum, Optimism, and Base; 2nd on Polygon; 3rd on Celo; 9th on Avalanche; and 10th on BNB. Top bought tokens are the same as top sold tokens. An interesting data point is USDT is bought but not sold on Base and Celo, as the 2 L2s’ name and rank don’t appear in the third column.</p>
+<iframe src="https://dune.com/embeds/3191785/5333389" width="100%" height="300">
+</iframe>
+<iframe src="https://dune.com/embeds/3191796/5333410" width="100%" height="300">
+</iframe>
+</section>
+<section id="no.1-exclusive-token" class="level3" data-number="6.2">
+<h3 data-number="6.2" class="anchored" data-anchor-id="no.1-exclusive-token"><span class="header-section-number">6.2</span> No.1 exclusive token</h3>
+<p>Each L2 has tokens which are exclusively bought/sold on each L2. The no.1 exclusively bought/sold tokens by volume of each L2 have volume range $5m–$900m. 3/7 are stable coins, 2/7 are the native token of L2.</p>
+<iframe src="https://dune.com/embeds/3191811/5333452" width="100%" height="400">
+</iframe>
+<iframe src="https://dune.com/embeds/3191821/5333473" width="100%" height="400">
+</iframe>
+</section>
+</section>
+<section id="listing-frequency" class="level2" data-number="7">
+<h2 data-number="7" class="anchored" data-anchor-id="listing-frequency"><span class="header-section-number">7</span> Listing frequency</h2>
+<p>The more pools created, and the more new tokens listed, the more market for traders to trade, the more type of traders can be attracted to, and the less risk of depending to a few tokens which we just learned above.</p>
+<p>On average, Polygon and Base have the highest number of pool created per day. Whereas Celo and Avalanche have the lowest number of pool created per day.</p>
 <iframe src="https://dune.com/embeds/3198069/5344738" width="100%" height="400">
 </iframe>
-<p>The frequency of listing token for the first time, regardless of which token paired with, is roughly 40% lower than frequency of creating pool. In other words, for every 10 pools created, 6 pools have tokens listed for the first time.</p>
+<p>While Polygon has higher frequency in creating pools than Base, Base has higher frequency in listing new token. Celo and Avalanche have the lowest number of new token listed per day.</p>
 <iframe src="https://dune.com/embeds/3198134/5344745" width="100%" height="400">
 </iframe>
-<p>Arbitrum and Polygon used to dominate in listing new token. Recently, the dominance is more balance as Uniswap expanded to more L2s.</p>
+<section id="token-listing-frequency-over-time" class="level3" data-number="7.1">
+<h3 data-number="7.1" class="anchored" data-anchor-id="token-listing-frequency-over-time"><span class="header-section-number">7.1</span> Token listing frequency over time</h3>
+<p>On a monthly basis, before the launch of Uniswap on Base, Arbitrum and Polygon used to dominate in listing new token.</p>
 <iframe src="https://dune.com/embeds/3198264/5345011" width="100%" height="400">
 </iframe>
-<p>Most of tokens listed have price less than $100 at listing. Prices concentrated the most on Arbitrum, and the least on Avalanche.</p>
+</section>
+<section id="token-listed-by-price" class="level3" data-number="7.2">
+<h3 data-number="7.2" class="anchored" data-anchor-id="token-listed-by-price"><span class="header-section-number">7.2</span> Token listed by price</h3>
+<p>Most of tokens listed have price less than $100 at listing. Arbitrum has the narrowest middle 80% distribution and Avalanche has the widest middle 80% distribution of tokens’ price at listing.</p>
 <iframe src="https://dune.com/embeds/3198180/5344829" width="100%" height="400">
 </iframe>
-<p>60% of all tokens listed have prices &lt;= $0.01, most of them are likely meme.</p>
+<p>60% of all tokens listed have prices of $0.01 or less, most of them are likely meme.</p>
 <iframe src="https://dune.com/embeds/3198262/5345007" width="100%" height="400">
 </iframe>
 <p>The dominance of <code>&lt;= $0.01</code> tokens fueled by the launch of Uniswap on Base.</p>
 <iframe src="https://dune.com/embeds/3198198/5345004" width="100%" height="400">
 </iframe>
 </section>
-<section id="uniswap-frontend-volume" class="level2" data-number="10">
-<h2 data-number="10" class="anchored" data-anchor-id="uniswap-frontend-volume"><span class="header-section-number">10</span> Uniswap frontend volume</h2>
-<p>Accross L2s, Uniswap frontend is minority source of volume. Compare to traders on other L2s, traders on Optimism tend to trade through Uniswap frontend the most, still Uniswap frontend only accounts for 24.4% of all volume on Optimism. Another group of L2s including Arbitrum, Celo, and Polygon, where Uniswap frontend accounts for 18%–20% of all volume. L2s where Uniswap frontend saw the lowest adoption among traders are Avalanche, Base, and BNB, only 2%–5% of all volume are from Uniswap frontend.</p>
+</section>
+<section id="uniswap-front-end-volume" class="level2" data-number="8">
+<h2 data-number="8" class="anchored" data-anchor-id="uniswap-front-end-volume"><span class="header-section-number">8</span> Uniswap front-end volume</h2>
+<p>Uniswap’s volume have multiple sources, one of them is Uniswap front-end, i.e.&nbsp;Uniswap website. Normal traders, usually are retails, trade manually through DEXs front-end. When a retail trader making a trade through a DEX front-end and the trade is routed to a Uniswap’s pool, the trader may not know anything about Uniswap. Thus measuring volume from Uniswap front-end can tell us about how much exposure Uniswap brand is to traders.</p>
+<p>A few observations:</p>
+<ul>
+<li>Across L2s, Uniswap front-end is minority source of volume.</li>
+<li>Traders on Optimism tend to trade through Uniswap front-end the most, still Uniswap front-end only accounts for 24.4% of all volume on Optimism.</li>
+<li>Another group of L2s with high teens percentage share of Uniswap front-end in total volume including Arbitrum, Celo, and Polygon.</li>
+<li>L2s where Uniswap front-end saw the lowest adoption among traders are Avalanche, Base, and BNB, only 2%–5% of all volume are from Uniswap front-end.</li>
+</ul>
 <iframe src="https://dune.com/embeds/3204822/5356916" width="100%" height="400">
 </iframe>
-<p>Surprisingly, the share of Uniswap frontend in monthly volume accross L2s have been decreasing, except for Avalanche. Compare to early 2022, when Uniswap frontend used to account for more than half of all volume on Arbitrum and Optimism, that is a &gt;100% drop to 18%–20% recently.</p>
+<p>Surprisingly, the share of Uniswap front-end in monthly volume across L2s have been decreasing, except for Avalanche. Compare to early 2022, when Uniswap front-end used to account for more than half of all volume on Arbitrum and Optimism, that is a &gt;100% drop to 18%–20% recently.</p>
 <iframe src="https://dune.com/embeds/3204875/5357090" width="100%" height="400">
 </iframe>
 
