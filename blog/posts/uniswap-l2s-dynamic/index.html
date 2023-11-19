@@ -146,7 +146,7 @@ gtag('config', 'G-S7Y9SX5DXE', { 'anonymize_ip': true});
   <li><a href="#transaction-gas-and-trade-frequency" id="toc-transaction-gas-and-trade-frequency" class="nav-link" data-scroll-target="#transaction-gas-and-trade-frequency"><span class="header-section-number">4</span> Transaction gas and Trade frequency</a>
   <ul class="collapse">
   <li><a href="#volume-to-gas-ratio" id="toc-volume-to-gas-ratio" class="nav-link" data-scroll-target="#volume-to-gas-ratio"><span class="header-section-number">4.1</span> Volume to gas ratio</a></li>
-  <li><a href="#complex-trasaction" id="toc-complex-trasaction" class="nav-link" data-scroll-target="#complex-trasaction"><span class="header-section-number">4.2</span> Complex trasaction</a></li>
+  <li><a href="#complex-transaction" id="toc-complex-transaction" class="nav-link" data-scroll-target="#complex-transaction"><span class="header-section-number">4.2</span> Complex transaction</a></li>
   <li><a href="#transaction-gas-by-hour" id="toc-transaction-gas-by-hour" class="nav-link" data-scroll-target="#transaction-gas-by-hour"><span class="header-section-number">4.3</span> Transaction gas by hour</a></li>
   </ul></li>
   <li><a href="#retention" id="toc-retention" class="nav-link" data-scroll-target="#retention"><span class="header-section-number">5</span> Retention</a></li>
@@ -161,6 +161,7 @@ gtag('config', 'G-S7Y9SX5DXE', { 'anonymize_ip': true});
   <li><a href="#token-listed-by-price" id="toc-token-listed-by-price" class="nav-link" data-scroll-target="#token-listed-by-price"><span class="header-section-number">7.2</span> Token listed by price</a></li>
   </ul></li>
   <li><a href="#uniswap-front-end-volume" id="toc-uniswap-front-end-volume" class="nav-link" data-scroll-target="#uniswap-front-end-volume"><span class="header-section-number">8</span> Uniswap front-end volume</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><span class="header-section-number">9</span> Conclusion</a></li>
   </ul>
 </nav>
 </nav>
@@ -226,7 +227,7 @@ gtag('config', 'G-S7Y9SX5DXE', { 'anonymize_ip': true});
 <li><p>About trade size:</p>
 <ul>
 <li>Arbitrum has the highest volume per trade and volume per trader. Whereas Celo has the lowest volume per trade and volume per trader.</li>
-<li>There is a risk of having too much volume from a few large traders. Arbitrum exposes the most, whereas Base exposes the least to the risk.</li>
+<li>There is a risk of having too much volume from a few large traders. Uniswap exposes the most to the risk on Arbitrum, whereas exposes the least to the risk on Base.</li>
 </ul></li>
 <li><p>About transaction gas and trade frequency:</p>
 <ul>
@@ -247,7 +248,7 @@ gtag('config', 'G-S7Y9SX5DXE', { 'anonymize_ip': true});
 </ul></li>
 <li><p>About frequency of listing:</p>
 <ul>
-<li>Creating more pools and listing more new tokens increasing more option for traders to trade, mitigating volume concentration risk. And Polygon and Base have done the most, whereas Celo and Avalanche have done the least of that.</li>
+<li>Creating more pools and listing more new tokens increasing more option for traders to trade, mitigating volume concentration risk. And Polygon and Base have the highest listing frequency, whereas Celo and Avalanche have the lowest listing frequency.</li>
 <li>60% of all tokens listed have prices of $0.01 or less, most of them are likely meme, and the dominance of <code>&lt;= $0.01</code> tokens fueled by the launch of Uniswap on Base.</li>
 </ul></li>
 <li><p>About volume through Uniswap front-end:</p>
@@ -383,8 +384,8 @@ gtag('config', 'G-S7Y9SX5DXE', { 'anonymize_ip': true});
 <iframe src="https://dune.com/embeds/3191893/5340017" width="100%" height="400">
 </iframe>
 </section>
-<section id="complex-trasaction" class="level3" data-number="4.2">
-<h3 data-number="4.2" class="anchored" data-anchor-id="complex-trasaction"><span class="header-section-number">4.2</span> Complex trasaction</h3>
+<section id="complex-transaction" class="level3" data-number="4.2">
+<h3 data-number="4.2" class="anchored" data-anchor-id="complex-transaction"><span class="header-section-number">4.2</span> Complex transaction</h3>
 <p>A transaction can have more than one trade. Let’s call a transaction with more than one trade a <code>complex</code> transaction, otherwise a <code>simple</code> transaction. Comparing share of complex transaction in total number of transaction can tell you how sophisticated traders of a L2 relative to those of other L2s.</p>
 <p>First, majority of trades were made in single transaction. Second, surprisingly, Celo not only has the lowest transaction gas but also has the highest share of complex transaction in total number of transaction and total volume. And third, traders on Optimism and Polygon also tend to trade in complex transactions more than those on other L2s.</p>
 <iframe src="https://dune.com/embeds/3201582/5351098" width="100%" height="400">
@@ -501,6 +502,10 @@ gtag('config', 'G-S7Y9SX5DXE', { 'anonymize_ip': true});
 <p>Surprisingly, the share of Uniswap front-end in monthly volume across L2s have been decreasing, except for Avalanche. Compare to early 2022, when Uniswap front-end used to account for more than half of all volume on Arbitrum and Optimism, that is a &gt;100% drop to 18%–20% recently.</p>
 <iframe src="https://dune.com/embeds/3204875/5357090" width="100%" height="400">
 </iframe>
+</section>
+<section id="conclusion" class="level2" data-number="9">
+<h2 data-number="9" class="anchored" data-anchor-id="conclusion"><span class="header-section-number">9</span> Conclusion</h2>
+<p>Not all L2s of Uniswap are equal. Uniswap on Arbitrum may contribute the most volume, but it also has the highest volume concentration in top traders, not to mention having the highest gas. If diversifying sources volume is a concern, and it should be, which L2 should Uniswap put more resources into? The best option, in my opinion, is Polygon, the current no.2 L2, but far behind Arbitrum in recent monthly volume. A few reasons including: (1) low gas, which Uniswap doesn’t have control over; (2) having the most loyal traders with the highest week 1 retention rate; (3) having the highest new token listing frequency.</p>
 
 
 </section>
