@@ -23,7 +23,7 @@ Uniswap expanded to Arbitrum, the first layer 2 network (L2) on June 1, 2021. Si
 2.  About trade size:
 
     -   Arbitrum has the highest volume per trade and volume per trader. Whereas Celo has the lowest volume per trade and volume per trader.
-    -   There is a risk of having too much volume from a few large traders. Arbitrum exposes the most, whereas Base exposes the least to the risk.
+    -   There is a risk of having too much volume from a few large traders. Uniswap exposes the most to the risk on Arbitrum, whereas exposes the least to the risk on Base.
 
 3.  About transaction gas and trade frequency:
 
@@ -44,7 +44,7 @@ Uniswap expanded to Arbitrum, the first layer 2 network (L2) on June 1, 2021. Si
 
 6.  About frequency of listing:
 
-    -   Creating more pools and listing more new tokens increasing more option for traders to trade, mitigating volume concentration risk. And Polygon and Base have done the most, whereas Celo and Avalanche have done the least of that.
+    -   Creating more pools and listing more new tokens increasing more option for traders to trade, mitigating volume concentration risk. And Polygon and Base have the highest listing frequency, whereas Celo and Avalanche have the lowest listing frequency.
     -   60% of all tokens listed have prices of \$0.01 or less, most of them are likely meme, and the dominance of `<= $0.01` tokens fueled by the launch of Uniswap on Base.
 
 7.  About volume through Uniswap front-end:
@@ -242,7 +242,7 @@ And when comparing volume to gas ratio across all L2s, 4 groups of L2 emerge:
 
 </iframe>
 
-### Complex trasaction
+### Complex transaction
 
 A transaction can have more than one trade. Let's call a transaction with more than one trade a `complex` transaction, otherwise a `simple` transaction. Comparing share of complex transaction in total number of transaction can tell you how sophisticated traders of a L2 relative to those of other L2s.
 
@@ -423,3 +423,7 @@ Surprisingly, the share of Uniswap front-end in monthly volume across L2s have b
 <iframe src="https://dune.com/embeds/3204875/5357090" width="100%" height="400">
 
 </iframe>
+
+## Conclusion
+
+Not all L2s of Uniswap are equal. Uniswap on Arbitrum may contribute the most volume, but it also has the highest volume concentration in top traders, not to mention having the highest gas. If diversifying sources volume is a concern, and it should be, which L2 should Uniswap put more resources into? The best option, in my opinion, is Polygon, the current no.2 L2, but far behind Arbitrum in recent monthly volume. A few reasons including: (1) low gas, which Uniswap doesn't have control over; (2) having the most loyal traders with the highest week 1 retention rate; (3) having the highest new token listing frequency.
