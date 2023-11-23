@@ -4,7 +4,6 @@ description: "Compare usage of Uniswap on layer 2 EVM networks."
 date: "2023-11-22"
 categories: [uniswap, crypto]
 image: "thumbnail.png"
-draft: true
 ---
 
 Uniswap expanded to Arbitrum, the first layer 2 network (L2) on June 1, 2021. Since then till October 31, 2023, Uniswap have had 6 additional L2s including (in ascending order by launch date): Optimism, Polygon, Celo, BNB, Avalanche, and Base. Low throughput, high transaction gas, long confirmation time are the pains of Ethereum's users, including Uniswap's traders. L2s exists to asperationally solve the pains. In this post, you will learn about differences and similarities among all Uniswap's L2s in:
