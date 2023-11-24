@@ -13,7 +13,7 @@ Uniswap expanded to Arbitrum, the first layer 2 network (L2) on June 1, 2021. Si
 
 ## Key takeaways
 
-1.  There were two notable spikes in monthly volume of Uniswap on L2s, the first was in November 2022, the second was in March 2023. The main sources of these spikes:
+1.  Monthly volume of Uniswap on L2s reached all-time high in March 2023. There were two notable spikes, the first was in November 2022, and the second was in March 2023. The main sources of these spikes:
 
     -   by L2: Arbitrum and Polygon,
     -   by token pair: stable coins paired with wrapped native token of each L2,
