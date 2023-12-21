@@ -3,8 +3,8 @@ title: "Market Sentiment"
 author: "Lê Quang Phú"
 format:
   dashboard:
+    css: style.css
     scrolling: true
-    # css: style.css
 draft: true
 ---
 
