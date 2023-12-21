@@ -1,0 +1,56 @@
+---
+title: "Market Sentiment"
+author: "Lê Quang Phú"
+format:
+    dashboard:
+        scrolling: true
+        css: style.css
+draft: true
+---
+
+# Market
+
+## one
+
+::: {.card width=85%}
+Attention begets activities, activities moves prices, price's movement begets attention.
+
+Which are the best metrics representing attention of the whole market? ➡️ Fear & Greed Index, Tweets and Google Search.
+
+Which is the best metrics representing market's activities? ➡️ Trading Volume on Centralized Exchanges (CEXs) and Decentralized Exchanges (DEXs).
+:::
+
+::: {.flow}
+
+<img height="300" src="https://alternative.me/crypto/fear-and-greed-index.png" alt="Latest Crypto Fear & Greed Index" />
+
+:::
+
+## two
+
+<iframe width="100%" height="420" frameborder="0" src="https://www.theblock.co/data/alternative-crypto-metrics/social/tweet-volume-weekly/embed" title="Tweet Volume"></iframe>
+<iframe width="100%" height="420" frameborder="0" src="https://www.theblock.co/data/crypto-markets/prices/btc-price/embed" title="BTC Price"></iframe>
+<iframe width="100%" height="420" frameborder="0" src="https://www.theblock.co/data/alternative-crypto-metrics/web-traffic/google-search-volume-bitcoin/embed" title="Google Search Volume - Bitcoin"></iframe>
+<iframe width="100%" height="420" frameborder="0" src="https://www.theblock.co/data/crypto-markets/prices/crypto-total-marketcap/embed" title="Crypto Total Marketcap"></iframe>
+
+## three
+
+<iframe width="100%" height="420" frameborder="0" src="https://www.theblock.co/data/crypto-markets/spot/cryptocurrency-exchange-volume-monthly/embed" title="Cryptocurrency Monthly Exchange Volume"></iframe>
+<iframe width="100%" height="420" frameborder="0" src="https://www.theblock.co/data/crypto-markets/spot/the-block-legitimate-index-market-share/embed" title="Monthly Exchange Volume Market Share"></iframe>
+<iframe width="100%" height="420" frameborder="0" src="https://www.theblock.co/data/decentralized-finance/dex-non-custodial/dex-volume-monthly/embed" title="DEX Volume"></iframe>
+<iframe width="100%" height="420" frameborder="0" src="https://www.theblock.co/data/decentralized-finance/dex-non-custodial/share-of-dex-volume-monthly/embed" title="Share of DEX Volume"></iframe>
+
+# Uniswap
+
+## one
+
+<iframe width="640px" height="360px" src="https://defillama.com/chart/protocol/uniswap?twitter=true&groupBy=monthly&tvl=false&events=false&theme=dark" title="Tweet Volume" frameborder="0"></iframe>
+<iframe width="640px" height="360px" src="https://defillama.com/chart/protocol/uniswap?tokenPrice=true&groupBy=daily&theme=dark" title="UNI Price" frameborder="0"></iframe>
+<iframe width="100%" height="420" frameborder="0" src="https://www.theblock.co/data/alternative-crypto-metrics/web-traffic/google-search-volume-uniswap/embed" title="Google Search Volume - Uniswap"></iframe>
+<iframe width="640px" height="360px" src="https://defillama.com/chart/protocol/uniswap?groupBy=daily&mcap=true&theme=dark" title="Uniswap Marketcap" frameborder="0"></iframe>
+
+## two
+
+<iframe width="640px" height="360px" src="https://defillama.com/chart/protocol/uniswap?volume=true&tvl=false&groupBy=monthly&theme=dark" title="Monthly Volume" frameborder="0"></iframe>
+<iframe src="https://dune.com/embeds/3298427/5527221"></iframe>
+<iframe src="https://dune.com/embeds/3298476/5527220"></iframe>
