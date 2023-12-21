@@ -2,7 +2,7 @@ project:
   type: website
 
 website:
-  title: "Lê Quang Phú"
+  # title: "Lê Quang Phú"
   site-url: https://lequangphu.github.io/
   google-analytics: "G-S7Y9SX5DXE"
   open-graph: true
@@ -11,8 +11,8 @@ website:
   repo-url: https://github.com/lequangphu/lequangphu.github.io
   navbar:
     left:
-      - text: Blog
-        href: blog
+      - text: Posts
+        href: posts
     tools:
       - icon: twitter
         href: https://twitter.com/iamlequangphu

@@ -1,7 +1,7 @@
 ---
 title: "🤗"
 listing:
-  contents: posts
+  contents: .
   sort: "date desc"
   type: default
   categories: true
