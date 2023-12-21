@@ -1,17 +1,17 @@
 [
   {
-    "listing": "/blog/index.html",
+    "listing": "/posts/index.html",
     "items": [
-      "/blog/posts/uniswap-l2s-dynamic/index.html",
-      "/blog/posts/uniswap-lp-growth/index.html",
-      "/blog/posts/uniswap-winter-usage/index.html",
-      "/blog/posts/uniswap-v3-il/index.html",
-      "/blog/posts/uniswap-user-origination/index.html",
-      "/blog/posts/uniswap-vs-cex/index.html",
-      "/blog/posts/uniswap-memecoin-mania/index.html",
-      "/blog/posts/uniswap-v3-license/index.html",
-      "/blog/posts/uniswap-stablecoin-depeg/index.html",
-      "/blog/posts/base-supply-side-growth/index.html"
+      "/posts/uniswap-l2s-dynamic/index.html",
+      "/posts/uniswap-lp-growth/index.html",
+      "/posts/uniswap-winter-usage/index.html",
+      "/posts/uniswap-v3-il/index.html",
+      "/posts/uniswap-user-origination/index.html",
+      "/posts/uniswap-vs-cex/index.html",
+      "/posts/uniswap-memecoin-mania/index.html",
+      "/posts/uniswap-v3-license/index.html",
+      "/posts/uniswap-stablecoin-depeg/index.html",
+      "/posts/base-supply-side-growth/index.html"
     ]
   }
 ]
