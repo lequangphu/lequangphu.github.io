@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.450">
+<meta name="generator" content="quarto-1.4.533">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -48,7 +48,13 @@ ul.task-list li input[type="checkbox"] {
   "collapse-after": 3,
   "panel-placement": "end",
   "type": "overlay",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -57,6 +63,7 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
@@ -104,6 +111,33 @@ gtag('config', 'G-S7Y9SX5DXE', { 'anonymize_ip': true});
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
 <meta property="og:title" content="🤗">
 <meta property="og:image" content="https://lequangphu.github.io/posts/uniswap-l2s-dynamic/thumbnail.png">
 <meta property="og:image:height" content="628">
@@ -120,9 +154,9 @@ gtag('config', 'G-S7Y9SX5DXE', { 'anonymize_ip': true});
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
+      <div class="navbar-brand-container mx-auto">
     <a href="../index.html" class="navbar-brand navbar-brand-logo">
     <img src="../pfp.png" alt="" class="navbar-logo">
     </a>
@@ -134,15 +168,15 @@ gtag('config', 'G-S7Y9SX5DXE', { 'anonymize_ip': true});
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../posts" rel="" target="">
- <span class="menu-text">Posts</span></a>
+    <a class="nav-link" href="../posts"> 
+<span class="menu-text">Posts</span></a>
   </li>  
 </ul>
-            <div class="quarto-navbar-tools ms-auto">
-    <a href="https://twitter.com/iamlequangphu" rel="" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-twitter"></i></a>
-    <a href="https://github.com/lequangphu" rel="" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
-</div>
           </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+    <a href="https://twitter.com/iamlequangphu" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-twitter"></i></a>
+    <a href="https://github.com/lequangphu" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
+</div>
       </div> <!-- /container-fluid -->
     </nav>
 </header>
@@ -150,7 +184,7 @@ gtag('config', 'G-S7Y9SX5DXE', { 'anonymize_ip': true});
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
   
-<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
     <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(10)</span></div><div class="category" data-category="base">base <span class="quarto-category-count">(1)</span></div><div class="category" data-category="crypto">crypto <span class="quarto-category-count">(10)</span></div><div class="category" data-category="uniswap">uniswap <span class="quarto-category-count">(9)</span></div></div></div>
@@ -164,7 +198,7 @@ gtag('config', 'G-S7Y9SX5DXE', { 'anonymize_ip': true});
 
 
 
-<div class="quarto-title-meta">
+<div class="quarto-title-meta column-page-left">
 
     <div>
     <div class="quarto-title-meta-heading">Author</div>
@@ -178,7 +212,9 @@ gtag('config', 'G-S7Y9SX5DXE', { 'anonymize_ip': true});
   </div>
   
 
+
 </header>
+
 
 
 
@@ -186,19 +222,19 @@ gtag('config', 'G-S7Y9SX5DXE', { 'anonymize_ip': true});
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="uniswap,crypto" data-listing-date-sort="1700611200000" data-listing-file-modified-sort="1703143165318" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="18">
+<div class="quarto-post image-right" data-index="0" data-categories="uniswap,crypto" data-listing-date-sort="1700611200000" data-listing-file-modified-sort="1703162522965" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="18" data-listing-word-count-sort="3552">
 <div class="thumbnail">
-<p><a href="../posts/uniswap-l2s-dynamic/index.html"> <img src="../posts/uniswap-l2s-dynamic/thumbnail.png" class="thumbnail-image"> </a></p>
+<p><a href="../posts/uniswap-l2s-dynamic/index.html" class="no-external"></a></p><a href="../posts/uniswap-l2s-dynamic/index.html" class="no-external">
+<p><img src="../posts/uniswap-l2s-dynamic/thumbnail.png" class="thumbnail-image"></p>
+</a><p><a href="../posts/uniswap-l2s-dynamic/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../posts/uniswap-l2s-dynamic/index.html">
 <h3 class="no-anchor listing-title">
-Uniswap’s Layer 2 Networks Comparison
+<a href="../posts/uniswap-l2s-dynamic/index.html" class="no-external">Uniswap’s Layer 2 Networks Comparison</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../posts/uniswap-l2s-dynamic/index.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('uniswap'); return false;">
 uniswap
@@ -207,14 +243,12 @@ uniswap
 crypto
 </div>
 </div>
-<a href="../posts/uniswap-l2s-dynamic/index.html">
 <div class="listing-description">
-<p>Compare usage of Uniswap on layer 2 EVM networks.</p>
+<a href="../posts/uniswap-l2s-dynamic/index.html" class="no-external">Compare usage of Uniswap on layer 2 EVM networks.</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../posts/uniswap-l2s-dynamic/index.html">
+<a href="../posts/uniswap-l2s-dynamic/index.html" class="no-external">
 <div class="listing-date">
 Nov 22, 2023
 </div>
@@ -224,19 +258,19 @@ Lê Quang Phú
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="uniswap,crypto" data-listing-date-sort="1698192000000" data-listing-file-modified-sort="1703143165330" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="15">
+<div class="quarto-post image-right" data-index="1" data-categories="uniswap,crypto" data-listing-date-sort="1698192000000" data-listing-file-modified-sort="1703162522973" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="15" data-listing-word-count-sort="2953">
 <div class="thumbnail">
-<p><a href="../posts/uniswap-lp-growth/index.html"> <img src="../posts/uniswap-lp-growth/thumbnail.png" class="thumbnail-image"> </a></p>
+<p><a href="../posts/uniswap-lp-growth/index.html" class="no-external"></a></p><a href="../posts/uniswap-lp-growth/index.html" class="no-external">
+<p><img src="../posts/uniswap-lp-growth/thumbnail.png" class="thumbnail-image"></p>
+</a><p><a href="../posts/uniswap-lp-growth/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../posts/uniswap-lp-growth/index.html">
 <h3 class="no-anchor listing-title">
-Who are Uniswap’s LPs?
+<a href="../posts/uniswap-lp-growth/index.html" class="no-external">Who are Uniswap’s LPs?</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../posts/uniswap-lp-growth/index.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('uniswap'); return false;">
 uniswap
@@ -245,14 +279,12 @@ uniswap
 crypto
 </div>
 </div>
-<a href="../posts/uniswap-lp-growth/index.html">
 <div class="listing-description">
-<p>Study liquidity concentration, in total, by blockchain, over time; LP’s behavior by account type.</p>
+<a href="../posts/uniswap-lp-growth/index.html" class="no-external">Study liquidity concentration, in total, by blockchain, over time; LP’s behavior by account type.</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../posts/uniswap-lp-growth/index.html">
+<a href="../posts/uniswap-lp-growth/index.html" class="no-external">
 <div class="listing-date">
 Oct 25, 2023
 </div>
@@ -262,19 +294,19 @@ Lê Quang Phú
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-categories="uniswap,crypto" data-listing-date-sort="1695772800000" data-listing-file-modified-sort="1703143165370" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="24">
+<div class="quarto-post image-right" data-index="2" data-categories="uniswap,crypto" data-listing-date-sort="1695772800000" data-listing-file-modified-sort="1703162523013" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="24" data-listing-word-count-sort="4668">
 <div class="thumbnail">
-<p><a href="../posts/uniswap-winter-usage/index.html"> <img src="../posts/uniswap-winter-usage/thumbnail.png" class="thumbnail-image"> </a></p>
+<p><a href="../posts/uniswap-winter-usage/index.html" class="no-external"></a></p><a href="../posts/uniswap-winter-usage/index.html" class="no-external">
+<p><img src="../posts/uniswap-winter-usage/thumbnail.png" class="thumbnail-image"></p>
+</a><p><a href="../posts/uniswap-winter-usage/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../posts/uniswap-winter-usage/index.html">
 <h3 class="no-anchor listing-title">
-Crypto Winter Usage of Uniswap
+<a href="../posts/uniswap-winter-usage/index.html" class="no-external">Crypto Winter Usage of Uniswap</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../posts/uniswap-winter-usage/index.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('uniswap'); return false;">
 uniswap
@@ -283,14 +315,12 @@ uniswap
 crypto
 </div>
 </div>
-<a href="../posts/uniswap-winter-usage/index.html">
 <div class="listing-description">
-<p>How has Uniswap’s Usage been this Crypto Winter?</p>
+<a href="../posts/uniswap-winter-usage/index.html" class="no-external">How has Uniswap’s Usage been this Crypto Winter?</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../posts/uniswap-winter-usage/index.html">
+<a href="../posts/uniswap-winter-usage/index.html" class="no-external">
 <div class="listing-date">
 Sep 27, 2023
 </div>
@@ -300,19 +330,19 @@ Lê Quang Phú
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="3" data-categories="uniswap,crypto" data-listing-date-sort="1693353600000" data-listing-file-modified-sort="1703143165342" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5">
+<div class="quarto-post image-right" data-index="3" data-categories="uniswap,crypto" data-listing-date-sort="1693353600000" data-listing-file-modified-sort="1703162522989" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="863">
 <div class="thumbnail">
-<p><a href="../posts/uniswap-v3-il/index.html"> <img src="../posts/uniswap-v3-il/thumbnail.png" class="thumbnail-image"> </a></p>
+<p><a href="../posts/uniswap-v3-il/index.html" class="no-external"></a></p><a href="../posts/uniswap-v3-il/index.html" class="no-external">
+<p><img src="../posts/uniswap-v3-il/thumbnail.png" class="thumbnail-image"></p>
+</a><p><a href="../posts/uniswap-v3-il/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../posts/uniswap-v3-il/index.html">
 <h3 class="no-anchor listing-title">
-Uniswap V3 Impermanent Loss on Ethereum
+<a href="../posts/uniswap-v3-il/index.html" class="no-external">Uniswap V3 Impermanent Loss on Ethereum</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../posts/uniswap-v3-il/index.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('uniswap'); return false;">
 uniswap
@@ -321,14 +351,12 @@ uniswap
 crypto
 </div>
 </div>
-<a href="../posts/uniswap-v3-il/index.html">
 <div class="listing-description">
-<p>Analyze the risk of providing liquidity into pools of Uniswap V3 on Ethereum.</p>
+<a href="../posts/uniswap-v3-il/index.html" class="no-external">Analyze the risk of providing liquidity into pools of Uniswap V3 on Ethereum.</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../posts/uniswap-v3-il/index.html">
+<a href="../posts/uniswap-v3-il/index.html" class="no-external">
 <div class="listing-date">
 Aug 30, 2023
 </div>
@@ -338,19 +366,19 @@ Lê Quang Phú
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="4" data-categories="uniswap,crypto" data-listing-date-sort="1690848000000" data-listing-file-modified-sort="1703143165342" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="31">
+<div class="quarto-post image-right" data-index="4" data-categories="uniswap,crypto" data-listing-date-sort="1690848000000" data-listing-file-modified-sort="1703162522989" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="31" data-listing-word-count-sort="6029">
 <div class="thumbnail">
-<p><a href="../posts/uniswap-user-origination/index.html"> <img src="../posts/uniswap-user-origination/thumbnail.png" class="thumbnail-image"> </a></p>
+<p><a href="../posts/uniswap-user-origination/index.html" class="no-external"></a></p><a href="../posts/uniswap-user-origination/index.html" class="no-external">
+<p><img src="../posts/uniswap-user-origination/thumbnail.png" class="thumbnail-image"></p>
+</a><p><a href="../posts/uniswap-user-origination/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../posts/uniswap-user-origination/index.html">
 <h3 class="no-anchor listing-title">
-Uniswap User Origination
+<a href="../posts/uniswap-user-origination/index.html" class="no-external">Uniswap User Origination</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../posts/uniswap-user-origination/index.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('uniswap'); return false;">
 uniswap
@@ -359,14 +387,12 @@ uniswap
 crypto
 </div>
 </div>
-<a href="../posts/uniswap-user-origination/index.html">
 <div class="listing-description">
-<p>Explore the routes which traders use to trade in Uniswap pools.</p>
+<a href="../posts/uniswap-user-origination/index.html" class="no-external">Explore the routes which traders use to trade in Uniswap pools.</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../posts/uniswap-user-origination/index.html">
+<a href="../posts/uniswap-user-origination/index.html" class="no-external">
 <div class="listing-date">
 Aug 1, 2023
 </div>
@@ -376,19 +402,19 @@ Lê Quang Phú
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="5" data-categories="uniswap,crypto" data-listing-date-sort="1688169600000" data-listing-file-modified-sort="1703143165362" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="21">
+<div class="quarto-post image-right" data-index="5" data-categories="uniswap,crypto" data-listing-date-sort="1688169600000" data-listing-file-modified-sort="1703162523009" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="21" data-listing-word-count-sort="4107">
 <div class="thumbnail">
-<p><a href="../posts/uniswap-vs-cex/index.html"> <img src="../posts/uniswap-vs-cex/thumbnail.png" class="thumbnail-image"> </a></p>
+<p><a href="../posts/uniswap-vs-cex/index.html" class="no-external"></a></p><a href="../posts/uniswap-vs-cex/index.html" class="no-external">
+<p><img src="../posts/uniswap-vs-cex/thumbnail.png" class="thumbnail-image"></p>
+</a><p><a href="../posts/uniswap-vs-cex/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../posts/uniswap-vs-cex/index.html">
 <h3 class="no-anchor listing-title">
-Uniswap vs.&nbsp;CEXs: Liquidity
+<a href="../posts/uniswap-vs-cex/index.html" class="no-external">Uniswap vs.&nbsp;CEXs: Liquidity</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../posts/uniswap-vs-cex/index.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('uniswap'); return false;">
 uniswap
@@ -397,14 +423,12 @@ uniswap
 crypto
 </div>
 </div>
-<a href="../posts/uniswap-vs-cex/index.html">
 <div class="listing-description">
-<p>Liquidity, the first half of crypto exchange battle.</p>
+<a href="../posts/uniswap-vs-cex/index.html" class="no-external">Liquidity, the first half of crypto exchange battle.</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../posts/uniswap-vs-cex/index.html">
+<a href="../posts/uniswap-vs-cex/index.html" class="no-external">
 <div class="listing-date">
 Jul 1, 2023
 </div>
@@ -414,19 +438,19 @@ Lê Quang Phú
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="6" data-categories="uniswap,crypto" data-listing-date-sort="1685836800000" data-listing-file-modified-sort="1703143165330" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="14">
+<div class="quarto-post image-right" data-index="6" data-categories="uniswap,crypto" data-listing-date-sort="1685836800000" data-listing-file-modified-sort="1703162522977" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="14" data-listing-word-count-sort="2720">
 <div class="thumbnail">
-<p><a href="../posts/uniswap-memecoin-mania/index.html"> <img src="../posts/uniswap-memecoin-mania/thumbnail.jpg" class="thumbnail-image"> </a></p>
+<p><a href="../posts/uniswap-memecoin-mania/index.html" class="no-external"></a></p><a href="../posts/uniswap-memecoin-mania/index.html" class="no-external">
+<p><img src="../posts/uniswap-memecoin-mania/thumbnail.jpg" class="thumbnail-image"></p>
+</a><p><a href="../posts/uniswap-memecoin-mania/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../posts/uniswap-memecoin-mania/index.html">
 <h3 class="no-anchor listing-title">
-Uniswap and The Rise of Meme
+<a href="../posts/uniswap-memecoin-mania/index.html" class="no-external">Uniswap and The Rise of Meme</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../posts/uniswap-memecoin-mania/index.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('uniswap'); return false;">
 uniswap
@@ -435,14 +459,12 @@ uniswap
 crypto
 </div>
 </div>
-<a href="../posts/uniswap-memecoin-mania/index.html">
 <div class="listing-description">
-As of Jun 4, 2023, there are 856 meme coins listed on Coinmarketcap.
+<a href="../posts/uniswap-memecoin-mania/index.html" class="no-external">As of Jun 4, 2023, there are 856 meme coins listed on Coinmarketcap.</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../posts/uniswap-memecoin-mania/index.html">
+<a href="../posts/uniswap-memecoin-mania/index.html" class="no-external">
 <div class="listing-date">
 Jun 4, 2023
 </div>
@@ -452,19 +474,19 @@ Lê Quang Phú
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="7" data-categories="uniswap,crypto" data-listing-date-sort="1682899200000" data-listing-file-modified-sort="1703143165354" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10">
+<div class="quarto-post image-right" data-index="7" data-categories="uniswap,crypto" data-listing-date-sort="1682899200000" data-listing-file-modified-sort="1703162523001" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-word-count-sort="1861">
 <div class="thumbnail">
-<p><a href="../posts/uniswap-v3-license/index.html"> <img src="../posts/uniswap-v3-license/thumbnail.jpeg" class="thumbnail-image"> </a></p>
+<p><a href="../posts/uniswap-v3-license/index.html" class="no-external"></a></p><a href="../posts/uniswap-v3-license/index.html" class="no-external">
+<p><img src="../posts/uniswap-v3-license/thumbnail.jpeg" class="thumbnail-image"></p>
+</a><p><a href="../posts/uniswap-v3-license/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../posts/uniswap-v3-license/index.html">
 <h3 class="no-anchor listing-title">
-Uniswap V3 License Expiry
+<a href="../posts/uniswap-v3-license/index.html" class="no-external">Uniswap V3 License Expiry</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../posts/uniswap-v3-license/index.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('uniswap'); return false;">
 uniswap
@@ -473,14 +495,12 @@ uniswap
 crypto
 </div>
 </div>
-<a href="../posts/uniswap-v3-license/index.html">
 <div class="listing-description">
-Since the license expiry, 8 protocols have forked Uniswap V3 to create their own V3. By Apr 30, 2023:
+<a href="../posts/uniswap-v3-license/index.html" class="no-external">Since the license expiry, 8 protocols have forked Uniswap V3 to create their own V3. By Apr 30, 2023:</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../posts/uniswap-v3-license/index.html">
+<a href="../posts/uniswap-v3-license/index.html" class="no-external">
 <div class="listing-date">
 May 1, 2023
 </div>
@@ -490,19 +510,19 @@ Lê Quang Phú
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="8" data-categories="uniswap,crypto" data-listing-date-sort="1681084800000" data-listing-file-modified-sort="1703143165338" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7">
+<div class="quarto-post image-right" data-index="8" data-categories="uniswap,crypto" data-listing-date-sort="1681084800000" data-listing-file-modified-sort="1703162522985" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1336">
 <div class="thumbnail">
-<p><a href="../posts/uniswap-stablecoin-depeg/index.html"> <img src="../posts/uniswap-stablecoin-depeg/thumbnail.png" class="thumbnail-image"> </a></p>
+<p><a href="../posts/uniswap-stablecoin-depeg/index.html" class="no-external"></a></p><a href="../posts/uniswap-stablecoin-depeg/index.html" class="no-external">
+<p><img src="../posts/uniswap-stablecoin-depeg/thumbnail.png" class="thumbnail-image"></p>
+</a><p><a href="../posts/uniswap-stablecoin-depeg/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../posts/uniswap-stablecoin-depeg/index.html">
 <h3 class="no-anchor listing-title">
-Stablecoin Depeg
+<a href="../posts/uniswap-stablecoin-depeg/index.html" class="no-external">Stablecoin Depeg</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../posts/uniswap-stablecoin-depeg/index.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('uniswap'); return false;">
 uniswap
@@ -511,14 +531,12 @@ uniswap
 crypto
 </div>
 </div>
-<a href="../posts/uniswap-stablecoin-depeg/index.html">
 <div class="listing-description">
-<p>Examine effect of the depeg event on Mar 10, 2023 to Dexs Volume on Ethereum.</p>
+<a href="../posts/uniswap-stablecoin-depeg/index.html" class="no-external">Examine effect of the depeg event on Mar 10, 2023 to Dexs Volume on Ethereum.</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../posts/uniswap-stablecoin-depeg/index.html">
+<a href="../posts/uniswap-stablecoin-depeg/index.html" class="no-external">
 <div class="listing-date">
 Apr 10, 2023
 </div>
@@ -528,19 +546,19 @@ Lê Quang Phú
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="9" data-categories="base,crypto" data-listing-date-sort="1679875200000" data-listing-file-modified-sort="1703143165302" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7">
+<div class="quarto-post image-right" data-index="9" data-categories="base,crypto" data-listing-date-sort="1679875200000" data-listing-file-modified-sort="1703162522949" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1252">
 <div class="thumbnail">
-<p><a href="../posts/base-supply-side-growth/index.html"> <img src="../posts/base-supply-side-growth/thumbnail.png" class="thumbnail-image"> </a></p>
+<p><a href="../posts/base-supply-side-growth/index.html" class="no-external"></a></p><a href="../posts/base-supply-side-growth/index.html" class="no-external">
+<p><img src="../posts/base-supply-side-growth/thumbnail.png" class="thumbnail-image"></p>
+</a><p><a href="../posts/base-supply-side-growth/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="../posts/base-supply-side-growth/index.html">
 <h3 class="no-anchor listing-title">
-Base’s Supply Side Growth
+<a href="../posts/base-supply-side-growth/index.html" class="no-external">Base’s Supply Side Growth</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="../posts/base-supply-side-growth/index.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('base'); return false;">
 base
@@ -549,14 +567,12 @@ base
 crypto
 </div>
 </div>
-<a href="../posts/base-supply-side-growth/index.html">
 <div class="listing-description">
-<p>Examine the growth of developers and contracts deployed on Base.</p>
+<a href="../posts/base-supply-side-growth/index.html" class="no-external">Examine the growth of developers and contracts deployed on Base.</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="../posts/base-supply-side-growth/index.html">
+<a href="../posts/base-supply-side-growth/index.html" class="no-external">
 <div class="listing-date">
 Mar 27, 2023
 </div>
@@ -650,10 +666,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn) {
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -663,8 +678,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -677,6 +701,120 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
       return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      return note.innerHTML;
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -720,6 +858,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -745,6 +884,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -805,6 +970,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+
 
 
 

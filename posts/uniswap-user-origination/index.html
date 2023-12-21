@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.450">
+<meta name="generator" content="quarto-1.4.533">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -48,7 +48,13 @@ ul.task-list li input[type="checkbox"] {
   "collapse-after": 3,
   "panel-placement": "end",
   "type": "overlay",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -57,6 +63,7 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
@@ -79,6 +86,33 @@ gtag('config', 'G-S7Y9SX5DXE', { 'anonymize_ip': true});
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
 <meta property="og:title" content="Uniswap User Origination">
 <meta property="og:description" content="Explore the routes which traders use to trade in Uniswap pools.">
 <meta property="og:image" content="https://lequangphu.github.io/posts/uniswap-user-origination/thumbnail.png">
@@ -97,9 +131,9 @@ gtag('config', 'G-S7Y9SX5DXE', { 'anonymize_ip': true});
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
+      <div class="navbar-brand-container mx-auto">
     <a href="../../index.html" class="navbar-brand navbar-brand-logo">
     <img src="../../pfp.png" alt="" class="navbar-logo">
     </a>
@@ -111,22 +145,22 @@ gtag('config', 'G-S7Y9SX5DXE', { 'anonymize_ip': true});
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../posts" rel="" target="">
- <span class="menu-text">Posts</span></a>
+    <a class="nav-link" href="../../posts"> 
+<span class="menu-text">Posts</span></a>
   </li>  
 </ul>
-            <div class="quarto-navbar-tools ms-auto">
-    <a href="https://twitter.com/iamlequangphu" rel="" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-twitter"></i></a>
-    <a href="https://github.com/lequangphu" rel="" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
-</div>
           </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+    <a href="https://twitter.com/iamlequangphu" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-twitter"></i></a>
+    <a href="https://github.com/lequangphu" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
+</div>
       </div> <!-- /container-fluid -->
     </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
@@ -194,7 +228,7 @@ gtag('config', 'G-S7Y9SX5DXE', { 'anonymize_ip': true});
   </ul>
 </nav>
 </nav>
-<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
     </div>
@@ -237,7 +271,9 @@ gtag('config', 'G-S7Y9SX5DXE', { 'anonymize_ip': true});
   </div>
   
 
+
 </header>
+
 
 <section id="introduction" class="level1 page-columns page-full" data-number="1">
 <h1 data-number="1"><span class="header-section-number">1</span> Introduction</h1>
@@ -260,13 +296,16 @@ gtag('config', 'G-S7Y9SX5DXE', { 'anonymize_ip': true});
 </ul>
 <p><em>Caveat: Uniswap Frontend has a few main contracts called router. Most of 1.8K contracts you see in the chart below are Uniswap v1 pools (exchanges in v1 technical term). In Uniswap v1, pools contract are called directly, which makes it hard to differentiate between (1) trade made on Uniswap application and (2) trade made through API. My assumption here is the v1 pools contracts were mainly called by the type (1) trade. Thus I include all of the contracts in Uniswap Frontend.</em></p>
 <p>Number of contract of the routes range between 1 (Oku) and 349K (Aggregators). For every 100 contracts called, 79 in Aggregators, 20 in Unknowns, MEV and Uniswap Frontend roughly equally split the rest.</p>
-<div class="column-screen-inset quarto-layout-panel">
-<div class="quarto-layout-row quarto-layout-valign-top">
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div>
+
+</div>
+<div class="column-screen-inset quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;display: flex;">
 <iframe src="https://dune.com/embeds/2785328/4637878" width="100%" height="400">
 </iframe>
 </div>
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;display: flex;">
 <iframe src="https://dune.com/embeds/2785328/4637963" width="100%" height="400">
 </iframe>
 </div>
@@ -292,13 +331,16 @@ gtag('config', 'G-S7Y9SX5DXE', { 'anonymize_ip': true});
 <h2 data-number="3.1" class="anchored" data-anchor-id="what-are-the-routes-contribution-in-onboarding-new-traders-to-uniswap"><span class="header-section-number">3.1</span> What are the routes’ contribution in onboarding new traders to Uniswap?</h2>
 <p><em>A trader is counted to a route if the route onboard the trader to Uniswap, i.e.&nbsp;the trader executed the first Uniswap trade on the route.</em></p>
 <p>Number of trader onboarded by the routes range between 2 (Oku) and 6.3M (Uniswap Frontend). For every 100 traders, 55 started with Uniswap Frontend, 35 started with Aggregators, 9 started with Unknowns, and 1 started with MEV.</p>
-<div class="column-screen-inset quarto-layout-panel">
-<div class="quarto-layout-row quarto-layout-valign-top">
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div>
+
+</div>
+<div class="column-screen-inset quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;display: flex;">
 <iframe src="https://dune.com/embeds/2760010/4594372" width="100%" height="400">
 </iframe>
 </div>
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;display: flex;">
 <iframe src="https://dune.com/embeds/2760010/4616670" width="100%" height="400">
 </iframe>
 </div>
@@ -308,13 +350,16 @@ gtag('config', 'G-S7Y9SX5DXE', { 'anonymize_ip': true});
 <section id="what-are-the-routes-contribution-to-total-uniswap-volume" class="level2 page-columns page-full" data-number="3.2">
 <h2 data-number="3.2" class="anchored" data-anchor-id="what-are-the-routes-contribution-to-total-uniswap-volume"><span class="header-section-number">3.2</span> What are the routes’ contribution to total Uniswap volume?</h2>
 <p>Volume of the routes range between $97K+ (Oku) and $678B+ (MEV). For every $100 in total volume, $42 from MEV, $29 from Uniswap Frontend, $15 from Aggregators, and $14 from Unknowns.</p>
-<div class="column-screen-inset quarto-layout-panel">
-<div class="quarto-layout-row quarto-layout-valign-top">
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div>
+
+</div>
+<div class="column-screen-inset quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;display: flex;">
 <iframe src="https://dune.com/embeds/2759820/4594595" width="100%" height="400">
 </iframe>
 </div>
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;display: flex;">
 <iframe src="https://dune.com/embeds/2759820/4616666" width="100%" height="400">
 </iframe>
 </div>
@@ -530,26 +575,32 @@ gtag('config', 'G-S7Y9SX5DXE', { 'anonymize_ip': true});
 <section id="version-breakdown" class="level3 page-columns page-full" data-number="7.1.1">
 <h3 data-number="7.1.1" class="anchored" data-anchor-id="version-breakdown"><span class="header-section-number">7.1.1</span> Version Breakdown</h3>
 <p>Volume of the versions range between $847M+ (v1) and $234B+ (v3). For every $10K in total Uniswap Frontend volume, $5K in v3, $4.99K in v2, and $1 in v1.</p>
-<div class="column-screen-inset quarto-layout-panel">
-<div class="quarto-layout-row quarto-layout-valign-top">
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div>
+
+</div>
+<div class="column-screen-inset quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;display: flex;">
 <iframe src="https://dune.com/embeds/2781640/4632011" width="100%" height="400">
 </iframe>
 </div>
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;display: flex;">
 <iframe src="https://dune.com/embeds/2781640/4632009" width="100%" height="400">
 </iframe>
 </div>
 </div>
 </div>
 <p>Traders onboarded by the versions range between 73K+ (v1) and 4M (v2). For every 100 traders onboarded to Uniswap Frontend, 55 in v2, 44 in v3, 1 in v1.</p>
-<div class="column-screen-inset quarto-layout-panel">
-<div class="quarto-layout-row quarto-layout-valign-top">
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div>
+
+</div>
+<div class="column-screen-inset quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;display: flex;">
 <iframe src="https://dune.com/embeds/2781808/4632286" width="100%" height="400">
 </iframe>
 </div>
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;display: flex;">
 <iframe src="https://dune.com/embeds/2781808/4632285" width="100%" height="400">
 </iframe>
 </div>
@@ -565,26 +616,32 @@ gtag('config', 'G-S7Y9SX5DXE', { 'anonymize_ip': true});
 <iframe src="https://dune.com/embeds/2804770/4672632" width="100%" height="400">
 </iframe>
 <p>Volume of the contract groups range between $531M+ (Uniswap_v1: Exchange) and $206B+ (Uniswap_v2: Router02). For every $100 in total Uniswap Frontend volume, $44 in Uniswap_v2: Router02, $23 in Uniswap_v3: SwapRouter02, $22 in Uniswap_v3: Router, $11 in Uniswap_v3: UniversalRouter, the other 2 contract groups volume shares are tiny.</p>
-<div class="column-screen-inset quarto-layout-panel">
-<div class="quarto-layout-row quarto-layout-valign-top">
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div>
+
+</div>
+<div class="column-screen-inset quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;display: flex;">
 <iframe src="https://dune.com/embeds/2781696/4632094" width="100%" height="400">
 </iframe>
 </div>
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;display: flex;">
 <iframe src="https://dune.com/embeds/2781696/4632091" width="100%" height="400">
 </iframe>
 </div>
 </div>
 </div>
 <p>Number of trader onboarded by the contract groups range between 4.6K (Uniswap_v2: Router01) and 3M (Uniswap_v2: Router02). For every 100 new trader, 41 in Uniswap_v2: Router02, 27 in Uniswap_v3: SwapRouter02, 20 in Uniswap_v3: UniversalRouter, 11 in Uniswap_v3: Router, 1 in the other 2 contract groups.</p>
-<div class="column-screen-inset quarto-layout-panel">
-<div class="quarto-layout-row quarto-layout-valign-top">
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div>
+
+</div>
+<div class="column-screen-inset quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;display: flex;">
 <iframe src="https://dune.com/embeds/2781841/4632351" width="100%" height="400">
 </iframe>
 </div>
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;display: flex;">
 <iframe src="https://dune.com/embeds/2781841/4632350" width="100%" height="400">
 </iframe>
 </div>
@@ -614,26 +671,32 @@ gtag('config', 'G-S7Y9SX5DXE', { 'anonymize_ip': true});
 <section id="aggregators" class="level2 page-columns page-full" data-number="7.2">
 <h2 data-number="7.2" class="anchored" data-anchor-id="aggregators"><span class="header-section-number">7.2</span> Aggregators</h2>
 <p>Volume of top 10 dapps range between $1.2B (Fei) and $109B+ (Oneinch). Volume of top 2 dapps are at least double those of the other dapps. For every $100 in total volume, $47 in Oneinch, $18 in Zeroex, $9 in Gnosis, $14 in not top 10 dapps, and $2 in top 4-10 dapps.</p>
-<div class="column-screen-inset quarto-layout-panel">
-<div class="quarto-layout-row quarto-layout-valign-top">
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div>
+
+</div>
+<div class="column-screen-inset quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;display: flex;">
 <iframe src="https://dune.com/embeds/2781885/4632432" width="100%" height="400">
 </iframe>
 </div>
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;display: flex;">
 <iframe src="https://dune.com/embeds/2781885/4632429" width="100%" height="400">
 </iframe>
 </div>
 </div>
 </div>
 <p>Number of new trader of top 10 dapps range between 2K+ (Fei) and 1.2M (Oneinch). Number of new trader of top 2 dapps are at least 5 folds of the other dapps. For every 100 new traders, 21 in Oneinch, 18 in Zeroex, 54 in not top 10 dapps, and 7 in top 3-10 dapps.</p>
-<div class="column-screen-inset quarto-layout-panel">
-<div class="quarto-layout-row quarto-layout-valign-top">
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div>
+
+</div>
+<div class="column-screen-inset quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;display: flex;">
 <iframe src="https://dune.com/embeds/2782037/4632672" width="100%" height="400">
 </iframe>
 </div>
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;display: flex;">
 <iframe src="https://dune.com/embeds/2782037/4632671" width="100%" height="400">
 </iframe>
 </div>
@@ -643,13 +706,16 @@ gtag('config', 'G-S7Y9SX5DXE', { 'anonymize_ip': true});
 <section id="mev" class="level2 page-columns page-full" data-number="7.3">
 <h2 data-number="7.3" class="anchored" data-anchor-id="mev"><span class="header-section-number">7.3</span> MEV</h2>
 <p>Volume of top 10 volume traders range between $7B+ and $16B+. Top 10 traders account for $14 in every $100 of total MEV volume.</p>
-<div class="column-screen-inset quarto-layout-panel">
-<div class="quarto-layout-row quarto-layout-valign-top">
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div>
+
+</div>
+<div class="column-screen-inset quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;display: flex;">
 <iframe src="https://dune.com/embeds/2806012/4675120" width="100%" height="400">
 </iframe>
 </div>
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;display: flex;">
 <iframe src="https://dune.com/embeds/2806012/4675122" width="100%" height="400">
 </iframe>
 </div>
@@ -673,9 +739,10 @@ gtag('config', 'G-S7Y9SX5DXE', { 'anonymize_ip': true});
 <li><p>If the order is filled, which returns the <code>OrderFilled</code> event, then the trader can claim the order, which calls the <code>claimOrder</code> function, which returns the <code>ClaimOrder</code> event.</p></li>
 </ul>
 <p>If you are familiar with developing smart contract on Ethereum, you can read more about the contract code <a href="https://etherscan.deth.net/address/0x54df9e11c7933a9ca3bd1e540b63da15edae40bf">here</a>. The diagram below roughly demonstrates the whole process.</p>
-<div class="cell" data-fig-width="100%">
+<div class="cell" data-fig-width="100%" data-layout-align="default">
 <div class="cell-output-display">
 <div>
+<p></p><figure class="figure"><p></p>
 <div>
 <pre class="mermaid mermaid-js">flowchart LR
     A[New Order] --&gt; B{Order Filled?}
@@ -683,6 +750,7 @@ gtag('config', 'G-S7Y9SX5DXE', { 'anonymize_ip': true});
     B --&gt;|Yes| D(Claim Order)
 </pre>
 </div>
+<p></p></figure><p></p>
 </div>
 </div>
 </div>
@@ -696,13 +764,16 @@ gtag('config', 'G-S7Y9SX5DXE', { 'anonymize_ip': true});
 <iframe src="https://dune.com/embeds/2762135/4616715" width="100%" height="400">
 </iframe>
 <p>32 traders placed $97K+ volume (NewOrder), 18 of 32 traders canceled $14K+, 14 of 32 traders claimed $3.6K out of $4.4K of total volume of filled orders, which means only 4.5% of total volume has been filled.</p>
-<div class="column-screen-inset quarto-layout-panel">
-<div class="quarto-layout-row quarto-layout-valign-top">
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div>
+
+</div>
+<div class="column-screen-inset quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;display: flex;">
 <iframe src="https://dune.com/embeds/2746018/4654270" width="100%" height="400">
 </iframe>
 </div>
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;display: flex;">
 <iframe src="https://dune.com/embeds/2746018/4653815" width="100%" height="400">
 </iframe>
 </div>
@@ -727,13 +798,16 @@ gtag('config', 'G-S7Y9SX5DXE', { 'anonymize_ip': true});
 <h2 data-number="7.5" class="anchored" data-anchor-id="unknowns"><span class="header-section-number">7.5</span> Unknowns</h2>
 <p>In Unknowns route, I identify 2 contracts of 2 market makers, which are <code>0x9507c04b10486547584c37bcbd931b2a4fee9a41</code> of <a href="https://www.jumptrading.com/">Jump Trading</a> and <code>0x00000000ae347930bd1e7b0f35588b92280f9e75</code> of <a href="http://wintermute.com">Wintermute</a>.</p>
 <p>The 2 contracts account for $11 in every $100 of total Unknowns volume, 8 trades in every 1000 trades of total Unknowns trades.</p>
-<div class="column-screen-inset quarto-layout-panel">
-<div class="quarto-layout-row quarto-layout-valign-top">
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div>
+
+</div>
+<div class="column-screen-inset quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;display: flex;">
 <iframe src="https://dune.com/embeds/2785813/4638587" width="100%" height="400">
 </iframe>
 </div>
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;display: flex;">
 <iframe src="https://dune.com/embeds/2785813/4638588" width="100%" height="400">
 </iframe>
 </div>
@@ -800,23 +874,26 @@ gtag('config', 'G-S7Y9SX5DXE', { 'anonymize_ip': true});
 <li><p>Weekly shares of Uniswap Frontend and Aggregators were mostly lower than all time shares, however the gaps were small compare to the gaps of MEV, which weekly shares were about half of all time volume share.</p></li>
 <li><p>Meanwhile, Unknowns weekly volume shares were mostly triple of all time volume share.</p></li>
 </ul>
-<div class="column-screen-inset quarto-layout-panel">
-<div class="quarto-layout-row quarto-layout-valign-top">
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div>
+
+</div>
+<div class="column-screen-inset quarto-layout-panel" data-layout-nrow="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;display: flex;">
 <iframe src="https://dune.com/embeds/2792215/4651766" width="100%" height="400">
 </iframe>
 </div>
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;display: flex;">
 <iframe src="https://dune.com/embeds/2792215/4651783" width="100%" height="400">
 </iframe>
 </div>
 </div>
-<div class="quarto-layout-row quarto-layout-valign-top">
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;display: flex;">
 <iframe src="https://dune.com/embeds/2792215/4651794" width="100%" height="400">
 </iframe>
 </div>
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;display: flex;">
 <iframe src="https://dune.com/embeds/2792215/4651802" width="100%" height="400">
 </iframe>
 </div>
@@ -826,23 +903,26 @@ gtag('config', 'G-S7Y9SX5DXE', { 'anonymize_ip': true});
 <ul>
 <li>Weekly new trader shares of Uniswap Frontend and MEV were lower than all time shares, while weekly new trader shares of Aggregators and Unknowns were higher than all time shares.</li>
 </ul>
-<div class="column-screen-inset quarto-layout-panel">
-<div class="quarto-layout-row quarto-layout-valign-top">
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div>
+
+</div>
+<div class="column-screen-inset quarto-layout-panel" data-layout-nrow="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;display: flex;">
 <iframe src="https://dune.com/embeds/2795043/4654716" width="100%" height="400">
 </iframe>
 </div>
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;display: flex;">
 <iframe src="https://dune.com/embeds/2795043/4654717" width="100%" height="400">
 </iframe>
 </div>
 </div>
-<div class="quarto-layout-row quarto-layout-valign-top">
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;display: flex;">
 <iframe src="https://dune.com/embeds/2795043/4654715" width="100%" height="400">
 </iframe>
 </div>
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;display: flex;">
 <iframe src="https://dune.com/embeds/2795043/4654718" width="100%" height="400">
 </iframe>
 </div>
@@ -1002,10 +1082,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn) {
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -1015,8 +1094,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -1029,6 +1117,120 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
       return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      return note.innerHTML;
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -1072,6 +1274,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -1097,6 +1300,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -1157,6 +1386,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+
 
 
 
