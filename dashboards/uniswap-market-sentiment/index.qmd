@@ -86,7 +86,7 @@ Which is the best metrics representing market's activities? ➡️ Trading Volum
 
 #### Tweets
 
-<iframe width="640px" height="360px" src="https://defillama.com/chart/protocol/uniswap?twitter=true&groupBy=monthly&tvl=false&events=false&theme=dark" title="Tweet Volume" frameborder="0"></iframe>
+<iframe width="640px" height="360px" src="https://defillama.com/chart/protocol/uniswap?tvl=false&twitter=true&groupBy=monthly&theme=dark" title="DefiLlama" frameborder="0"></iframe>
 
 #### Search
 
@@ -96,21 +96,24 @@ Which is the best metrics representing market's activities? ➡️ Trading Volum
 
 #### Price
 
-<iframe width="640px" height="360px" src="https://defillama.com/chart/protocol/uniswap?tokenPrice=true&groupBy=daily&theme=dark" title="UNI Price" frameborder="0"></iframe>
+<iframe width="640px" height="360px" src="https://defillama.com/chart/protocol/uniswap?tokenPrice=true&tvl=false&groupBy=daily&theme=dark" title="UNI Price" frameborder="0"></iframe>
 
 #### Market Cap
 
-<iframe width="640px" height="360px" src="https://defillama.com/chart/protocol/uniswap?groupBy=daily&mcap=true&theme=dark" title="Uniswap Marketcap" frameborder="0"></iframe>
+<iframe width="640px" height="360px" src="https://defillama.com/chart/protocol/uniswap?groupBy=daily&mcap=true&tvl=false&theme=dark" title="Uniswap Marketcap" frameborder="0"></iframe>
 
 ## two
 
-::: {.card title="Monthly Trade Volume"}
+### trade volume {title="Monthly Trade Volume"}
 
 <iframe width="640px" height="360px" src="https://defillama.com/chart/protocol/uniswap?volume=true&tvl=false&groupBy=monthly&theme=dark" title="Monthly Volume" frameborder="0"></iframe>
 
-:::
+### trader {.tabset title="Traders"}
 
-<iframe width="950" height="950" src="https://tokenterminal.com/terminal/projects/uniswap/embed/key-metrics" title="Token Terminal"></iframe>
+#### Total
 
-<!-- <iframe src="https://dune.com/embeds/3298427/5527221"></iframe> -->
-<!-- <iframe src="https://dune.com/embeds/3298476/5527220"></iframe> -->
+<iframe src="https://dune.com/embeds/3298427/5527221"></iframe>
+
+#### New
+
+<iframe src="https://dune.com/embeds/3298476/5527220"></iframe>
