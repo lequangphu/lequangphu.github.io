@@ -12,7 +12,7 @@ draft: true
 
 ## one
 
-::: {.card title="User Guide"}
+::: {.card title="User Guide" width=87%}
 Attention begets activities, activities moves prices, price's movement begets attention.
 
 Which are the best metrics representing attention of the whole market? ➡️ Fear & Greed Index, Tweets and Google Search.
@@ -20,13 +20,13 @@ Which are the best metrics representing attention of the whole market? ➡️ Fe
 Which is the best metrics representing market's activities? ➡️ Trading Volume on Centralized Exchanges (CEXs) and Decentralized Exchanges (DEXs).
 :::
 
-## two
-
 ::: {.card title="Fear & Greed Index"}
 
 <img height="300" src="https://alternative.me/crypto/fear-and-greed-index.png" alt="Latest Crypto Fear & Greed Index" />
 
 :::
+
+## two
 
 ### tweet volume {title="Tweet Volume"}
 
