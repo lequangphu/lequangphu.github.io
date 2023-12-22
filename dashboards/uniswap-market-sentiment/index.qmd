@@ -28,41 +28,89 @@ Which is the best metrics representing market's activities? ➡️ Trading Volum
 
 ## two
 
-### search volume {.tabset title="Search Volume of Bitcoin, Ethereum, & Solana"}
+### search volume {.tabset title="Search Volume"}
+
+#### Bitcoin
 
 <iframe width="100%" height="420" frameborder="0" src="https://www.theblock.co/data/alternative-crypto-metrics/web-traffic/google-search-volume-bitcoin/embed" title="Google Search Volume - Bitcoin"></iframe>
+
+#### Ethereum
+
 <iframe width="100%" height="420" frameborder="0" src="https://www.theblock.co/data/alternative-crypto-metrics/web-traffic/google-search-volume-ethereum/embed" title="Google Search Volume - Ethereum"></iframe>
+
+#### Solana
+
 <iframe width="100%" height="420" frameborder="0" src="https://www.theblock.co/data/alternative-crypto-metrics/web-traffic/google-search-volume-solana/embed" title="Google Search Volume - Solana"></iframe>
 
-### price {.tabset title="Price of Bitcoin & Ethereum"}
+### price {.tabset title="Price"}
+
+#### Bitcoin
 
 <iframe width="100%" height="420" frameborder="0" src="https://www.theblock.co/data/crypto-markets/prices/btc-price/embed" title="BTC Price"></iframe>
+
+#### Ethereum
+
 <iframe width="100%" height="420" frameborder="0" src="https://www.theblock.co/data/crypto-markets/prices/eth-price/embed" title="ETH Price"></iframe>
-<script src="https://widgets.coingecko.com/coingecko-coin-compare-chart-widget.js"></script><coingecko-coin-compare-chart-widget  coin-ids="bitcoin,ethereum,solana" currency="usd" locale="en"></coingecko-coin-compare-chart-widget>
+
+#### Solana
+
+<iframe width="640px" height="360px" src="https://defillama.com/chart/chain/Solana?price=true&tvl=false&theme=dark" title="DefiLlama" frameborder="0"></iframe>
 
 ## three
 
-### trade volume {.tabset title="Volume of CEX & DEX"}
+### trade volume {.tabset title="Trade Volume"}
+
+#### CEX
 
 <iframe width="100%" height="420" frameborder="0" src="https://www.theblock.co/data/crypto-markets/spot/cryptocurrency-exchange-volume-monthly/embed" title="Cryptocurrency Monthly Exchange Volume"></iframe>
+
+#### DEX
+
 <iframe width="100%" height="420" frameborder="0" src="https://www.theblock.co/data/decentralized-finance/dex-non-custodial/dex-volume-monthly/embed" title="DEX Volume"></iframe>
 
-### market share {.tabset title="Market Share of CEX & DEX"}
+### market share {.tabset title="Market Share by Trade Volume"}
+
+#### CEX
 
 <iframe width="100%" height="420" frameborder="0" src="https://www.theblock.co/data/crypto-markets/spot/the-block-legitimate-index-market-share/embed" title="Monthly Exchange Volume Market Share"></iframe>
+
+#### DEX
+
 <iframe width="100%" height="420" frameborder="0" src="https://www.theblock.co/data/decentralized-finance/dex-non-custodial/share-of-dex-volume-monthly/embed" title="Share of DEX Volume"></iframe>
 
 # Uniswap
 
 ## one
 
+### Tweets & Search {.tabset}
+
+#### Tweets
+
 <iframe width="640px" height="360px" src="https://defillama.com/chart/protocol/uniswap?twitter=true&groupBy=monthly&tvl=false&events=false&theme=dark" title="Tweet Volume" frameborder="0"></iframe>
-<iframe width="640px" height="360px" src="https://defillama.com/chart/protocol/uniswap?tokenPrice=true&groupBy=daily&theme=dark" title="UNI Price" frameborder="0"></iframe>
+
+#### Search
+
 <iframe width="100%" height="420" frameborder="0" src="https://www.theblock.co/data/alternative-crypto-metrics/web-traffic/google-search-volume-uniswap/embed" title="Google Search Volume - Uniswap"></iframe>
+
+### Price & Market Cap {.tabset}
+
+#### Price
+
+<iframe width="640px" height="360px" src="https://defillama.com/chart/protocol/uniswap?tokenPrice=true&groupBy=daily&theme=dark" title="UNI Price" frameborder="0"></iframe>
+
+#### Market Cap
+
 <iframe width="640px" height="360px" src="https://defillama.com/chart/protocol/uniswap?groupBy=daily&mcap=true&theme=dark" title="Uniswap Marketcap" frameborder="0"></iframe>
 
 ## two
 
+::: {.card title="Monthly Trade Volume"}
+
 <iframe width="640px" height="360px" src="https://defillama.com/chart/protocol/uniswap?volume=true&tvl=false&groupBy=monthly&theme=dark" title="Monthly Volume" frameborder="0"></iframe>
-<iframe src="https://dune.com/embeds/3298427/5527221"></iframe>
-<iframe src="https://dune.com/embeds/3298476/5527220"></iframe>
+
+:::
+
+<iframe width="950" height="950" src="https://tokenterminal.com/terminal/projects/uniswap/embed/key-metrics" title="Token Terminal"></iframe>
+
+<!-- <iframe src="https://dune.com/embeds/3298427/5527221"></iframe> -->
+<!-- <iframe src="https://dune.com/embeds/3298476/5527220"></iframe> -->

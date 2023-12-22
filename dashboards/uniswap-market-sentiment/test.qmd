@@ -1,0 +1,19 @@
+
+---
+title: "My Dashboard"
+format: dashboard
+---
+
+## row {.tabset}
+
+### Tabset 1
+
+<iframe></iframe>
+
+### Tabset 2
+
+<iframe></iframe>
+
+### Tabset 3
+
+<iframe></iframe>
