@@ -12,7 +12,7 @@ draft: true
 
 ## one
 
-::: {.card width=85%}
+::: {.card width=90%}
 Attention begets activities, activities moves prices, price's movement begets attention.
 
 Which are the best metrics representing attention of the whole market? ➡️ Fear & Greed Index, Tweets and Google Search.
