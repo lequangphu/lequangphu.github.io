@@ -28,41 +28,20 @@ Which is the best metrics representing market's activities? ➡️ Trading Volum
 
 ## two
 
+### tweet volume {.card title="Tweet Volume"}
+
 <iframe width="100%" height="420" frameborder="0" src="https://www.theblock.co/data/alternative-crypto-metrics/social/tweet-volume-weekly/embed" title="Tweet Volume"></iframe>
 
-### search volume {.tabset}
-
-::: {title="Bitcoin"}
+### search volume {.tabset title="Search Volume of Bitcoin, Ethereum, & Solana"}
 
 <iframe width="100%" height="420" frameborder="0" src="https://www.theblock.co/data/alternative-crypto-metrics/web-traffic/google-search-volume-bitcoin/embed" title="Google Search Volume - Bitcoin"></iframe>
-
-:::
-
-::: {title="Ethereum"}
-
 <iframe width="100%" height="420" frameborder="0" src="https://www.theblock.co/data/alternative-crypto-metrics/web-traffic/google-search-volume-ethereum/embed" title="Google Search Volume - Ethereum"></iframe>
-
-:::
-
-::: {title="Ethereum"}
-
 <iframe width="100%" height="420" frameborder="0" src="https://www.theblock.co/data/alternative-crypto-metrics/web-traffic/google-search-volume-solana/embed" title="Google Search Volume - Solana"></iframe>
 
-:::
-
-### price {.tabset}
-
-::: {title="Bitcoin"}
+### price {.tabset title="Price of Bitcoin & Ethereum"}
 
 <iframe width="100%" height="420" frameborder="0" src="https://www.theblock.co/data/crypto-markets/prices/btc-price/embed" title="BTC Price"></iframe>
-
-:::
-
-::: {title="Ethereum"}
-
 <iframe width="100%" height="420" frameborder="0" src="https://www.theblock.co/data/crypto-markets/prices/eth-price/embed" title="ETH Price"></iframe>
-
-:::
 
 ## three
 
