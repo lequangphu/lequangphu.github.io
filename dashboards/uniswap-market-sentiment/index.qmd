@@ -15,9 +15,9 @@ draft: true
 ::: {.card title="User Guide" width=87%}
 Attention begets activities, activities moves prices, price's movement begets attention.
 
-Which are the best metrics representing attention of the whole market? ➡️ Fear & Greed Index, Tweets and Google Search.
+Which are the best metrics representing attention of the whole market? ➡️ Fear & Greed Index, and Google Search.
 
-Which is the best metrics representing market's activities? ➡️ Trading Volume on Centralized Exchanges (CEXs) and Decentralized Exchanges (DEXs).
+Which is the best metrics representing market's activities? ➡️ Trading Volume on Centralized Exchanges (CEX) and Decentralized Exchanges (DEX).
 :::
 
 ::: {.card title="Fear & Greed Index"}
@@ -27,10 +27,6 @@ Which is the best metrics representing market's activities? ➡️ Trading Volum
 :::
 
 ## two
-
-### tweet volume {title="Tweet Volume"}
-
-<iframe width="100%" height="420" frameborder="0" src="https://www.theblock.co/data/alternative-crypto-metrics/social/tweet-volume-weekly/embed" title="Tweet Volume"></iframe>
 
 ### search volume {.tabset title="Search Volume of Bitcoin, Ethereum, & Solana"}
 
@@ -42,6 +38,9 @@ Which is the best metrics representing market's activities? ➡️ Trading Volum
 
 <iframe width="100%" height="420" frameborder="0" src="https://www.theblock.co/data/crypto-markets/prices/btc-price/embed" title="BTC Price"></iframe>
 <iframe width="100%" height="420" frameborder="0" src="https://www.theblock.co/data/crypto-markets/prices/eth-price/embed" title="ETH Price"></iframe>
+
+<script src="https://widgets.coingecko.com/coingecko-coin-compare-chart-widget.js"></script>
+<coingecko-coin-compare-chart-widget  coin-ids="bitcoin,ethereum,solana" currency="usd" locale="en"></coingecko-coin-compare-chart-widget>
 
 ## three
 
