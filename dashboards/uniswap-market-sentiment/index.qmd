@@ -28,11 +28,9 @@ Which is the best metrics representing market's activities? ➡️ Trading Volum
 
 :::
 
-::: {.card title="Tweet Volume"}
+### tweet volume {title="Tweet Volume"}
 
 <iframe width="100%" height="420" frameborder="0" src="https://www.theblock.co/data/alternative-crypto-metrics/social/tweet-volume-weekly/embed" title="Tweet Volume"></iframe>
-
-:::
 
 ### search volume {.tabset title="Search Volume of Bitcoin, Ethereum, & Solana"}
 
