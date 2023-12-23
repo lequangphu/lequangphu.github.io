@@ -120,6 +120,8 @@ Which is the best metrics representing market's activities? ➡️ Trading Volum
 
 <iframe width="100%" height="420" frameborder="0" src="https://www.theblock.co/data/on-chain-metrics/ethereum/number-of-new-addresses-on-the-ethereum-network-7dma/embed" title="Number of New Addresses on the Ethereum Network (7DMA)"></iframe>
 
+#### Address Balance
+
 <iframe width="100%" height="420" frameborder="0" src="https://www.theblock.co/data/on-chain-metrics/ethereum/ethereum-addresses-with-balance-over-x/embed" title="Ethereum Addresses with Balance Over $X"></iframe>
 
 ## three
