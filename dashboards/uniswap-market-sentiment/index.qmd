@@ -42,32 +42,6 @@ Which is the best metrics representing market's activities? ➡️ Trading Volum
 
 <iframe width="100%" height="420" frameborder="0" src="https://www.theblock.co/data/alternative-crypto-metrics/web-traffic/google-search-volume-solana/embed" title="Google Search Volume - Solana"></iframe>
 
-### exchanges inflow {.tabset title="Exchanges Inflow"}
-
-#### USD Inflows
-
-<iframe width="100%" height="420" frameborder="0" src="https://www.theblock.co/data/on-chain-metrics/flows/usd-inflows-to-exchanges/embed" title="USD Inflows to Exchanges"></iframe>
-
-#### BTC Mining Pool
-
-<iframe width="100%" height="420" frameborder="0" src="https://www.theblock.co/data/on-chain-metrics/flows/destination-of-mining-pool-btc-daily-7dma/embed" title="Destination of Mining Pool BTC (7DMA)"></iframe>
-
-#### ETH Mining Pool
-
-<iframe width="100%" height="420" frameborder="0" src="https://www.theblock.co/data/on-chain-metrics/flows/destination-of-mining-pool-btc-daily-7dma-2/embed" title="Destination of Mining Pool ETH (7DMA)"></iframe>
-
-## three
-
-### stablecoin supply {.tabset title="Stablecoin Supply"}
-
-#### Total
-
-<iframe width="100%" height="420" frameborder="0" src="https://www.theblock.co/data/stablecoins/usd-pegged/total-stablecoin-supply/embed" title="Total Stablecoin Supply"></iframe>
-
-#### Ethereum
-
-<iframe width="100%" height="420" frameborder="0" src="https://www.theblock.co/data/stablecoins/usd-pegged/total-stablecoin-supply-daily/embed" title="Total Ethereum Stablecoin Supply"></iframe>
-
 ### price {.tabset title="Price"}
 
 #### Bitcoin
@@ -81,6 +55,24 @@ Which is the best metrics representing market's activities? ➡️ Trading Volum
 #### Solana
 
 <iframe width="640px" height="360px" src="https://defillama.com/chart/chain/Solana?tvl=false&price=true" title="DefiLlama" frameborder="0"></iframe>
+
+## three
+
+### exchanges inflow {.tabset title="Exchanges Inflow"}
+
+#### USD Inflows
+
+<iframe width="100%" height="420" frameborder="0" src="https://www.theblock.co/data/on-chain-metrics/flows/usd-inflows-to-exchanges/embed" title="USD Inflows to Exchanges"></iframe>
+
+#### BTC Mining Pool
+
+<iframe width="100%" height="420" frameborder="0" src="https://www.theblock.co/data/on-chain-metrics/flows/destination-of-mining-pool-btc-daily-7dma/embed" title="Destination of Mining Pool BTC (7DMA)"></iframe>
+
+### stablecoin supply {.tabset title="Stablecoin Supply"}
+
+#### Total
+
+<iframe width="100%" height="420" frameborder="0" src="https://www.theblock.co/data/stablecoins/usd-pegged/total-stablecoin-supply/embed" title="Total Stablecoin Supply"></iframe>
 
 ## three
 
@@ -103,6 +95,32 @@ Which is the best metrics representing market's activities? ➡️ Trading Volum
 #### DEX
 
 <iframe width="100%" height="420" frameborder="0" src="https://www.theblock.co/data/decentralized-finance/dex-non-custodial/share-of-dex-volume-monthly/embed" title="Share of DEX Volume"></iframe>
+
+# Onchain Metrics - Ethereum
+
+## one
+
+<iframe width="100%" height="420" frameborder="0" src="https://www.theblock.co/data/on-chain-metrics/ethereum/transactions-on-the-ethereum-network-daily/embed" title="Transactions on the Ethereum Network (Daily, 7DMA)"></iframe>
+<iframe width="100%" height="420" frameborder="0" src="https://www.theblock.co/data/on-chain-metrics/ethereum/average-transaction-fee-on-ethereum/embed" title="Average Transaction Fee on Ethereum (7DMA)"></iframe>
+
+## two
+
+### active address {.tabset title="Active Addresses"}
+
+#### Total
+
+<iframe width="100%" height="420" frameborder="0" src="https://www.theblock.co/data/on-chain-metrics/ethereum/number-of-active-addresses-on-the-ethereum-network-7dma/embed" title="Number of Active Addresses on the Ethereum Network (7DMA)"></iframe>
+
+#### New
+
+<iframe width="100%" height="420" frameborder="0" src="https://www.theblock.co/data/on-chain-metrics/ethereum/number-of-new-addresses-on-the-ethereum-network-7dma/embed" title="Number of New Addresses on the Ethereum Network (7DMA)"></iframe>
+
+<iframe width="100%" height="420" frameborder="0" src="https://www.theblock.co/data/on-chain-metrics/ethereum/ethereum-addresses-with-balance-over-x/embed" title="Ethereum Addresses with Balance Over $X"></iframe>
+
+## three
+
+<iframe width="100%" height="420" frameborder="0" src="https://www.theblock.co/data/stablecoins/usd-pegged/total-stablecoin-supply-daily/embed" title="Total Ethereum Stablecoin Supply"></iframe>
+<iframe width="100%" height="420" frameborder="0" src="https://www.theblock.co/data/on-chain-metrics/ethereum/ethereums-adjusted-on-chain-volume-monthly/embed" title="Ethereum's On-Chain Volume (Monthly)"></iframe>
 
 # Uniswap
 
