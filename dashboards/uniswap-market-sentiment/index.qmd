@@ -42,6 +42,32 @@ Which is the best metrics representing market's activities? ➡️ Trading Volum
 
 <iframe width="100%" height="420" frameborder="0" src="https://www.theblock.co/data/alternative-crypto-metrics/web-traffic/google-search-volume-solana/embed" title="Google Search Volume - Solana"></iframe>
 
+### exchanges inflow {.tabset title="Exchanges Inflow"}
+
+#### USD Inflows
+
+<iframe width="100%" height="420" frameborder="0" src="https://www.theblock.co/data/on-chain-metrics/flows/usd-inflows-to-exchanges/embed" title="USD Inflows to Exchanges"></iframe>
+
+#### BTC Mining Pool
+
+<iframe width="100%" height="420" frameborder="0" src="https://www.theblock.co/data/on-chain-metrics/flows/destination-of-mining-pool-btc-daily-7dma/embed" title="Destination of Mining Pool BTC (7DMA)"></iframe>
+
+#### ETH Mining Pool
+
+<iframe width="100%" height="420" frameborder="0" src="https://www.theblock.co/data/on-chain-metrics/flows/destination-of-mining-pool-btc-daily-7dma-2/embed" title="Destination of Mining Pool ETH (7DMA)"></iframe>
+
+## three
+
+### stablecoin supply {.tabset title="Stablecoin Supply"}
+
+#### Total
+
+<iframe width="100%" height="420" frameborder="0" src="https://www.theblock.co/data/stablecoins/usd-pegged/total-stablecoin-supply/embed" title="Total Stablecoin Supply"></iframe>
+
+#### Ethereum
+
+<iframe width="100%" height="420" frameborder="0" src="https://www.theblock.co/data/stablecoins/usd-pegged/total-stablecoin-supply-daily/embed" title="Total Ethereum Stablecoin Supply"></iframe>
+
 ### price {.tabset title="Price"}
 
 #### Bitcoin
@@ -54,7 +80,7 @@ Which is the best metrics representing market's activities? ➡️ Trading Volum
 
 #### Solana
 
-<iframe width="640px" height="360px" src="https://defillama.com/chart/chain/Solana?price=true&tvl=false&theme=dark" title="DefiLlama" frameborder="0"></iframe>
+<iframe width="640px" height="360px" src="https://defillama.com/chart/chain/Solana?tvl=false&price=true" title="DefiLlama" frameborder="0"></iframe>
 
 ## three
 
@@ -82,31 +108,31 @@ Which is the best metrics representing market's activities? ➡️ Trading Volum
 
 ## one
 
-### Tweets & Search {.tabset}
+### tweets & search {.tabset title="Tweets & Search"}
 
 #### Tweets
 
-<iframe width="640px" height="360px" src="https://defillama.com/chart/protocol/uniswap?tvl=false&twitter=true&groupBy=monthly&theme=dark" title="DefiLlama" frameborder="0"></iframe>
+<iframe width="640px" height="360px" src="https://defillama.com/chart/protocol/uniswap?tvl=false&twitter=true&groupBy=monthly" title="DefiLlama" frameborder="0"></iframe>
 
 #### Search
 
 <iframe width="100%" height="420" frameborder="0" src="https://www.theblock.co/data/alternative-crypto-metrics/web-traffic/google-search-volume-uniswap/embed" title="Google Search Volume - Uniswap"></iframe>
 
-### Price & Market Cap {.tabset}
+### price & market cap {.tabset title="Price & Market Cap"}
 
 #### Price
 
-<iframe width="640px" height="360px" src="https://defillama.com/chart/protocol/uniswap?tokenPrice=true&tvl=false&groupBy=daily&theme=dark" title="UNI Price" frameborder="0"></iframe>
+<iframe width="640px" height="360px" src="https://defillama.com/chart/protocol/uniswap?tokenPrice=true&tvl=false&groupBy=daily" title="UNI Price" frameborder="0"></iframe>
 
 #### Market Cap
 
-<iframe width="640px" height="360px" src="https://defillama.com/chart/protocol/uniswap?groupBy=daily&mcap=true&tvl=false&theme=dark" title="Uniswap Marketcap" frameborder="0"></iframe>
+<iframe width="640px" height="360px" src="https://defillama.com/chart/protocol/uniswap?groupBy=daily&mcap=true&tvl=false" title="Uniswap Marketcap" frameborder="0"></iframe>
 
 ## two
 
 ### trade volume {title="Monthly Trade Volume"}
 
-<iframe width="640px" height="360px" src="https://defillama.com/chart/protocol/uniswap?volume=true&tvl=false&groupBy=monthly&theme=dark" title="Monthly Volume" frameborder="0"></iframe>
+<iframe width="640px" height="360px" src="https://defillama.com/chart/protocol/uniswap?volume=true&tvl=false&groupBy=monthly" title="Monthly Volume" frameborder="0"></iframe>
 
 ### trader {.tabset title="Traders"}
 
