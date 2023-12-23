@@ -8,9 +8,7 @@ format:
 draft: true
 ---
 
-# Market
-
-## one
+# Introduction
 
 ::: {.card title="User Guide" width=87%}
 Attention begets activities, activities moves prices, price's movement begets attention.
@@ -26,7 +24,9 @@ Which is the best metrics representing market's activities? ➡️ Trading Volum
 
 :::
 
-## two
+# Market
+
+## search & price
 
 ### search volume {.tabset title="Search Volume"}
 
@@ -56,9 +56,9 @@ Which is the best metrics representing market's activities? ➡️ Trading Volum
 
 <iframe width="640px" height="360px" src="https://defillama.com/chart/chain/Solana?tvl=false&price=true" title="DefiLlama" frameborder="0"></iframe>
 
-## three
+## inflows & stablecoin supply
 
-### exchanges inflow {.tabset title="Exchanges Inflow"}
+### exchanges inflows {.tabset title="Exchanges Inflow"}
 
 #### USD Inflows
 
@@ -74,7 +74,7 @@ Which is the best metrics representing market's activities? ➡️ Trading Volum
 
 <iframe width="100%" height="420" frameborder="0" src="https://www.theblock.co/data/stablecoins/usd-pegged/total-stablecoin-supply/embed" title="Total Stablecoin Supply"></iframe>
 
-## three
+## volume & market share
 
 ### trade volume {.tabset title="Trade Volume"}
 
@@ -96,7 +96,7 @@ Which is the best metrics representing market's activities? ➡️ Trading Volum
 
 <iframe width="100%" height="420" frameborder="0" src="https://www.theblock.co/data/decentralized-finance/dex-non-custodial/share-of-dex-volume-monthly/embed" title="Share of DEX Volume"></iframe>
 
-# Onchain Metrics - Ethereum
+# Ethereum
 
 ## one
 
