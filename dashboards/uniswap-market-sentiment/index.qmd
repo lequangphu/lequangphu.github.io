@@ -135,19 +135,25 @@ Which is the best metrics representing market's activities? ➡️ Trading Volum
 
 #### Tweets
 
-<iframe width="640px" height="360px" src="https://defillama.com/chart/protocol/uniswap?tvl=false&twitter=true&groupBy=monthly" title="DefiLlama" frameborder="0"></iframe>
+<iframe width="640px" height="360px" src="https://defillama.com/chart/protocol/uniswap?tvl=false&twitter=true&theme=dark" title="DefiLlama" frameborder="0"></iframe>
 
 #### Search
 
 <iframe width="100%" height="420" frameborder="0" src="https://www.theblock.co/data/alternative-crypto-metrics/web-traffic/google-search-volume-uniswap/embed" title="Google Search Volume - Uniswap"></iframe>
 
-### price & market cap {title="Price & Market Cap"}
+### price & market cap {.tabset title="Price & Market Cap"}
 
-<iframe width="640px" height="360px" src="https://defillama.com/chart/protocol/uniswap?tvl=false&mcap=true&tokenPrice=true&theme=dark" title="DefiLlama" frameborder="0"></iframe>
+#### Price
+
+<iframe width="640px" height="360px" src="https://defillama.com/chart/protocol/uniswap?tvl=false&tokenPrice=true&theme=dark" title="DefiLlama" frameborder="0"></iframe>
+
+#### Market Cap
+
+<iframe width="640px" height="360px" src="https://defillama.com/chart/protocol/uniswap?tvl=false&mcap=true&theme=dark" title="DefiLlama" frameborder="0"></iframe>
 
 ## two
 
-### volume {title="Volume"}
+### trade volume {title="Monthly Trade Volume"}
 
 <iframe width="640px" height="360px" src="https://defillama.com/chart/protocol/uniswap?volume=true&tvl=false&groupBy=monthly" title="Monthly Volume" frameborder="0"></iframe>
 
