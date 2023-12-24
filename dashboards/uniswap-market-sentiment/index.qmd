@@ -30,11 +30,11 @@ Insights (by December 2023, inclusive) written at the bottom of each page.
 
 ## fgi & search & price
 
-::: {.card title="Fear & Greed Index" width=436px}
+<!-- ::: {.card title="Fear & Greed Index" width=436px} -->
 
 <img width="400" height="359.375" src="https://alternative.me/crypto/fear-and-greed-index.png" alt="Latest Crypto Fear & Greed Index" />
 
-:::
+<!-- ::: -->
 
 ### search volume {.tabset title="Search Volume of Top 3 Tokens"}
 
