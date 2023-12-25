@@ -28,9 +28,19 @@ Insights (by December 2023, inclusive) written at the bottom of each page.
 
 # Market
 
-## fgi & search & price
+## tldr & fgi
+
+::: {.card title="TLDR"}
+How was the market in the last bull and bear?
+:::
+
+::: {.card title="Fear & Greed Index" height=356px width=456px}
 
 <img width="400" height="359.375" src="https://alternative.me/crypto/fear-and-greed-index.png" alt="Latest Crypto Fear & Greed Index" />
+
+:::
+
+## search & price
 
 ### search volume {.tabset title="Search Volume of Top 3 Tokens"}
 
@@ -60,11 +70,10 @@ Insights (by December 2023, inclusive) written at the bottom of each page.
 
 <iframe width="640px" height="360px" src="https://defillama.com/chart/chain/Solana?tvl=false&price=true" title="DefiLlama" frameborder="0"></iframe>
 
-## inflows & stablecoin supply
+## exchanges inflows
 
 <iframe width="100%" height="420" frameborder="0" src="https://www.theblock.co/data/on-chain-metrics/flows/usd-inflows-to-exchanges/embed" title="USD Inflows to Exchanges"></iframe>
 <iframe width="100%" height="420" frameborder="0" src="https://www.theblock.co/data/on-chain-metrics/flows/destination-of-mining-pool-btc-daily-7dma/embed" title="Destination of Mining Pool BTC (7DMA)"></iframe>
-<iframe width="100%" height="420" frameborder="0" src="https://www.theblock.co/data/stablecoins/usd-pegged/total-stablecoin-supply/embed" title="Total Stablecoin Supply"></iframe>
 
 ## volume & market share
 
@@ -116,16 +125,25 @@ Insights (by December 2023, inclusive) written at the bottom of each page.
 
 <iframe width="100%" height="420" frameborder="0" src="https://www.theblock.co/data/on-chain-metrics/ethereum/ethereum-addresses-with-balance-over-x/embed" title="Ethereum Addresses with Balance Over $X"></iframe>
 
-## three
+## stablecoin
 
 <iframe width="100%" height="420" frameborder="0" src="https://www.theblock.co/data/stablecoins/usd-pegged/total-stablecoin-supply-daily/embed" title="Total Ethereum Stablecoin Supply"></iframe>
-<iframe width="100%" height="420" frameborder="0" src="https://www.theblock.co/data/on-chain-metrics/ethereum/ethereums-adjusted-on-chain-volume-monthly/embed" title="Ethereum's On-Chain Volume (Monthly)"></iframe>
+<iframe width="100%" height="420" frameborder="0" src="https://www.theblock.co/data/stablecoins/usd-pegged/share-of-total-stablecoin-supply/embed" title="Share of Total Ethereum Stablecoin Supply"></iframe>
+<iframe width="100%" height="420" frameborder="0" src="https://www.theblock.co/data/stablecoins/usd-pegged/adjusted-on-chain-volume-of-stablecoins-monthly/embed" title="Ethereum On-chain Volume of Stablecoins"></iframe>
+
+## lending
+
+<iframe width="100%" height="420" frameborder="0" src="https://www.theblock.co/data/decentralized-finance/cryptocurrency-lending/ethereum-lending-tvl/embed" title="Ethereum Lending TVL"></iframe>
+<iframe width="100%" height="420" frameborder="0" src="https://www.theblock.co/data/decentralized-finance/cryptocurrency-lending/aave-outstanding-debt-weekly/embed" title="Aave Outstanding Debt"></iframe>
+<iframe width="100%" height="420" frameborder="0" src="https://www.theblock.co/data/decentralized-finance/cryptocurrency-lending/compound-outstanding-debt-weekly/embed" title="Compound Outstanding Debt"></iframe>
 
 # Uniswap
 
 ## one
 
-### search {.tabset title="Search"}
+### search {.tabset}
+
+#### Search
 
 <iframe width="100%" height="420" frameborder="0" src="https://www.theblock.co/data/alternative-crypto-metrics/web-traffic/google-search-volume-uniswap/embed" title="Google Search Volume - Uniswap"></iframe>
 
