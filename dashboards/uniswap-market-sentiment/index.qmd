@@ -125,6 +125,8 @@ Insights (by December 2023, inclusive) written at the bottom of each page.
 
 ## one
 
+### search
+
 <iframe width="100%" height="420" frameborder="0" src="https://www.theblock.co/data/alternative-crypto-metrics/web-traffic/google-search-volume-uniswap/embed" title="Google Search Volume - Uniswap"></iframe>
 
 ### price & market cap {.tabset title="Price & Market Cap of UNI token"}
