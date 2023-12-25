@@ -33,7 +33,15 @@ Insights (by December 2023, inclusive) written at the bottom of each page.
 ::: {.card title="TLDR"}
 How was the market in the last bull and bear?
 
+In December, Fear & Greed index shows us that the market has entered the Greed mode. It's not extreme yet so the market might have more room before reversing.
+
 Last 2 bull markets started with monthly search of Bitcoin surpassed 25, in November 2017, and December 2020. It just happened again in December 2023.
+
+YTD, prices, of the top 3 tokens: Bitcoin, Ethereum, Solana, have increased 160%, 90%, and 1000%.
+
+Since October, more and more BTC, ETH, and USDT have been sent to exchanges.
+
+Trade volume has also been in an uptrend. Monthly volume on CEX only exceeded $600b at the peak of 2017 bull, and since the start of 2021 bull. And it just happened again in December 2023.
 :::
 
 ::: {.card title="Fear & Greed Index" width=436px}
