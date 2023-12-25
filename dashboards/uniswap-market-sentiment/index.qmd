@@ -28,13 +28,15 @@ Insights (by December 2023, inclusive) written at the bottom of each page.
 
 # Market
 
-## tldr & fgi
+## tldr & fgi {height=440px}
 
 ::: {.card title="TLDR"}
 How was the market in the last bull and bear?
+
+Last 2 bull markets started with monthly search of Bitcoin surpassed 25, in November 2017, and December 2020. It just happened again in December 2023.
 :::
 
-::: {.card title="Fear & Greed Index" height=356px width=456px}
+::: {.card title="Fear & Greed Index" width=436px}
 
 <img width="400" height="359.375" src="https://alternative.me/crypto/fear-and-greed-index.png" alt="Latest Crypto Fear & Greed Index" />
 
@@ -77,23 +79,23 @@ How was the market in the last bull and bear?
 
 ## volume & market share
 
-### trade volume {.tabset title="Trade Volume of CEX & DEX"}
+### cex {.tabset title="Centralized Exchanges"}
 
-#### CEX
+#### Trade Volume
 
 <iframe width="100%" height="420" frameborder="0" src="https://www.theblock.co/data/crypto-markets/spot/cryptocurrency-exchange-volume-monthly/embed" title="Cryptocurrency Monthly Exchange Volume"></iframe>
 
-#### DEX
-
-<iframe width="100%" height="420" frameborder="0" src="https://www.theblock.co/data/decentralized-finance/dex-non-custodial/dex-volume-monthly/embed" title="DEX Volume"></iframe>
-
-### market share {.tabset title="Market Share by Trade Volume of CEX & DEX"}
-
-#### CEX
+#### Market Share
 
 <iframe width="100%" height="420" frameborder="0" src="https://www.theblock.co/data/crypto-markets/spot/the-block-legitimate-index-market-share/embed" title="Monthly Exchange Volume Market Share"></iframe>
 
-#### DEX
+### dex {.tabset title="Decentralized Exchanges"}
+
+#### Trade Volume
+
+<iframe width="100%" height="420" frameborder="0" src="https://www.theblock.co/data/decentralized-finance/dex-non-custodial/dex-volume-monthly/embed" title="DEX Volume"></iframe>
+
+#### Market Share
 
 <iframe width="100%" height="420" frameborder="0" src="https://www.theblock.co/data/decentralized-finance/dex-non-custodial/share-of-dex-volume-monthly/embed" title="Share of DEX Volume"></iframe>
 
@@ -127,14 +129,38 @@ How was the market in the last bull and bear?
 
 ## stablecoin
 
+### supply {.tabset title="Stablecoin Supply"}
+
+#### Total
+
 <iframe width="100%" height="420" frameborder="0" src="https://www.theblock.co/data/stablecoins/usd-pegged/total-stablecoin-supply-daily/embed" title="Total Ethereum Stablecoin Supply"></iframe>
+
+#### Share
+
 <iframe width="100%" height="420" frameborder="0" src="https://www.theblock.co/data/stablecoins/usd-pegged/share-of-total-stablecoin-supply/embed" title="Share of Total Ethereum Stablecoin Supply"></iframe>
+
+### volume {.tabset}
+
+#### Stablecoin Volume
+
 <iframe width="100%" height="420" frameborder="0" src="https://www.theblock.co/data/stablecoins/usd-pegged/adjusted-on-chain-volume-of-stablecoins-monthly/embed" title="Ethereum On-chain Volume of Stablecoins"></iframe>
 
 ## lending
 
+### tvl {.tabset}
+
+#### Lending TVL
+
 <iframe width="100%" height="420" frameborder="0" src="https://www.theblock.co/data/decentralized-finance/cryptocurrency-lending/ethereum-lending-tvl/embed" title="Ethereum Lending TVL"></iframe>
+
+### debt {.tabset title="Outstanding Debt"}
+
+#### Aave
+
 <iframe width="100%" height="420" frameborder="0" src="https://www.theblock.co/data/decentralized-finance/cryptocurrency-lending/aave-outstanding-debt-weekly/embed" title="Aave Outstanding Debt"></iframe>
+
+#### Compound
+
 <iframe width="100%" height="420" frameborder="0" src="https://www.theblock.co/data/decentralized-finance/cryptocurrency-lending/compound-outstanding-debt-weekly/embed" title="Compound Outstanding Debt"></iframe>
 
 # Uniswap
