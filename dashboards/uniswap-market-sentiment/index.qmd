@@ -107,7 +107,7 @@ Since October, inflows to exchanges of BTC, ETH, and USDT have been rising, so h
 
 ## tldr
 
-::: {.card title="State in December 2023"}
+::: {.card title="State in December 2023" height=180px}
 Ethereum network demand metrics, including number of transaction, number of active address, which increased in previous bulls, fell in previous bears, are showing the early sign of a bull market.
 
 Stablecoin supply, when rising, indicates that new capital is entering crypto market, is a leading indicator. And it's hard to tell where the market is heading based on this metric.
@@ -204,3 +204,17 @@ How is the sentiment on Ethereum?
 
 <iframe src="https://dune.com/embeds/3306361/5537409"></iframe>
 <iframe src="https://dune.com/embeds/3298476/5527220"></iframe>
+
+## three
+
+### tvl {.tabset}
+
+#### TVL
+
+<iframe width="640px" height="360px" src="https://defillama.com/chart/protocol/uniswap?&theme=dark" title="DefiLlama" frameborder="0"></iframe>
+
+### lp {.tabset}
+
+#### Monthly Active LP
+
+<iframe src="https://dune.com/embeds/3298427/5527221"></iframe>
