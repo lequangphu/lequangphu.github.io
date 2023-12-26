@@ -108,7 +108,11 @@ Since October, inflows to exchanges of BTC, ETH, and USDT have been rising, so h
 ## tldr
 
 ::: {.card title="State in December 2023"}
-On one hand, after 2021 bull, 1 million transaction per day, a new baseline of network demand on Ethereum is established. On the other hand, transaction fee still fluctuated wildly from bull to bear. In the 2021 bull market, transaction fee mostly stayed aboved 10$ per transaction. In December 2023, the level has been reached, however, whether it can be sustained or not remains to be seen.
+Ethereum network demand metrics, including number of transaction, number of active address, which increased in previous bulls, fell in previous bears, are showing the early sign of a bull market.
+
+Stablecoin supply, when rising, indicates that new capital is entering crypto market, is a leading indicator. And it's hard to tell where the market is heading based on this metric.
+
+Lending TVL is another leading indicator. Users are willing to take more debt in bull markets and derisk in bears. And lending TVL has been rising since October 2023.
 :::
 
 ## transaction
@@ -128,9 +132,9 @@ On one hand, after 2021 bull, 1 million transaction per day, a new baseline of n
 
 <iframe width="100%" height="420" frameborder="0" src="https://www.theblock.co/data/on-chain-metrics/ethereum/number-of-new-addresses-on-the-ethereum-network-7dma/embed" title="Number of New Addresses on the Ethereum Network (7DMA)"></iframe>
 
-### address balance {.tabset title="Address Balance"}
+### address balance {.tabset}
 
-#### Balance
+#### Address Balance
 
 <iframe width="100%" height="420" frameborder="0" src="https://www.theblock.co/data/on-chain-metrics/ethereum/ethereum-addresses-with-balance-over-x/embed" title="Ethereum Addresses with Balance Over $X"></iframe>
 
