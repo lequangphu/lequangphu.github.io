@@ -108,22 +108,17 @@ Since October, inflows to exchanges of BTC, ETH, and USDT have been rising, so h
 ## tldr
 
 ::: {.card title="State in December 2023"}
-How is the sentiment on Ethereum?
+On one hand, after 2021 bull, 1 million transaction per day, a new baseline of network demand on Ethereum is established. On the other hand, transaction fee still fluctuated wildly from bull to bear. In the 2021 bull market, transaction fee mostly stayed aboved 10$ per transaction. In December 2023, the level has been reached, however, whether it can be sustained or not remains to be seen.
 :::
 
-## one
-
-### transaction {.tabset title="Transactions & Fee"}
-
-#### Transactions
+## transaction
 
 <iframe width="100%" height="420" frameborder="0" src="https://www.theblock.co/data/on-chain-metrics/ethereum/transactions-on-the-ethereum-network-daily/embed" title="Transactions on the Ethereum Network (Daily, 7DMA)"></iframe>
-
-#### Fee
-
 <iframe width="100%" height="420" frameborder="0" src="https://www.theblock.co/data/on-chain-metrics/ethereum/average-transaction-fee-on-ethereum/embed" title="Average Transaction Fee on Ethereum (7DMA)"></iframe>
 
-### active address {.tabset title="Active Addresses: Total, New, & Balance Bucket"}
+## address
+
+### active address {.tabset title="Active Addresses"}
 
 #### Total
 
@@ -132,6 +127,8 @@ How is the sentiment on Ethereum?
 #### New
 
 <iframe width="100%" height="420" frameborder="0" src="https://www.theblock.co/data/on-chain-metrics/ethereum/number-of-new-addresses-on-the-ethereum-network-7dma/embed" title="Number of New Addresses on the Ethereum Network (7DMA)"></iframe>
+
+### address balance {.tabset title="Address Balance"}
 
 #### Balance
 
