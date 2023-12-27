@@ -50,12 +50,18 @@ Since October, inflows to exchanges of BTC, ETH, and USDT have been rising, so h
 
 ::: {.card title="Crypto Market Cap"}
 ![](images/market-cap_20130429_20231228_(Coinmarketcap).svg){height=420px width="100%"}
+
+[Source](https://coinmarketcap.com/charts/#market-cap)
 :::
 ::: {.card title="Crypto Market Volume"}
 ![](images/volume-24h_20130429_20231228_(Coinmarketcap).svg){height=420px width="100%"}
+
+[Source](https://coinmarketcap.com/charts/#volume-24h)
 :::
 ::: {.card title="Fear & Greed Index History"}
 ![](images/fear-and-greed-index_20130429_20231228_(Coinmarketcap).svg){height=420px width="100%"}
+
+[Source](https://coinmarketcap.com/charts/#fear-and-greed-index)
 :::
 
 ## search & price
