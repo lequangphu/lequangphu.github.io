@@ -28,7 +28,7 @@ Insights (by December 2023, inclusive) written at the top of each page.
 
 # Market
 
-## tldr & fgi {height=440px}
+## tldr & fgi {height=466px}
 
 ::: {.card title="State in December 2023"}
 In December 2023, Fear & Greed index shows us that the market has entered the Greed mode. It's not extreme yet so the market might have more room before reversing.
@@ -41,9 +41,9 @@ Since October, inflows to exchanges of BTC, ETH, and USDT have been rising, so h
 :::
 
 ::: {.card title="Fear & Greed Index Latest" width=436px}
-
 <img width="400" height="359.375" src="https://alternative.me/crypto/fear-and-greed-index.png" alt="Latest Crypto Fear & Greed Index" />
 
+[Source](https://alternative.me/crypto/fear-and-greed-index/)
 :::
 
 ## market cap & volume
