@@ -183,7 +183,7 @@ Since October 2023, Uniswap has seen the rise of both Google search volume and i
 
 Monthly active trader of Uniswap has been rising in both the 2021 bull and 2022-2023 bear market. Layer 2 networks now account for 60% of monthly active trader.
 
-In the past, monthly active LP of Uniswap rose and peaked in 2020, right ahead of the 2021 bull. During the 2021 bull, monthly active LP fell and bottomed a few months after ETH price peaked. During 2022-2023 bear, mothly active LP ri This observation tells us that LP seems to participate less when market enters the uptrend
+In the past, monthly active LP of Uniswap rose and peaked in 2020, right ahead of the 2021 bull. During the 2021 bull, monthly active LP fell and bottomed a few months after ETH price peaked. During 2022-2023 bear, mothly active LP rose and peaked again. This observation tells us that LPs are more active in bear than in bull market. It can be explain by looking at percentage impermanent loss of pool USDC-WETH, the largest pool of Uniswap V3. In a bull market, when price of ETH is more volatile, impermanent loss when providing liquidity in the pool is also higher.
 :::
 
 ## one
@@ -222,3 +222,7 @@ In the past, monthly active LP of Uniswap rose and peaked in 2020, right ahead o
 #### Monthly Active LP & ETH Price
 
 <iframe src="https://dune.com/embeds/3298427/5527221"></iframe>
+
+#### Price Volatility & Impermanent Loss
+
+<iframe src="https://dune.com/embeds/3311237/5545499"></iframe>
