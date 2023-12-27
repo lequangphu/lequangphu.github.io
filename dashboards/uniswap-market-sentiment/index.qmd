@@ -23,7 +23,7 @@ Indicators used to measure crypto market sentiment include the Fear and Greed In
 ::: {.card title="User Guide"}
 This dashboard is divided into pages. The navigation bar is at the top of the dashboard.
 
-Insights (by December 2023, inclusive) written at the bottom of each page.
+Insights (by December 2023, inclusive) written at the top of each page.
 :::
 
 # Market
@@ -40,10 +40,22 @@ YTD, prices of Bitcoin, Ethereum, Solana have increased 160%, 90%, and 1000%.
 Since October, inflows to exchanges of BTC, ETH, and USDT have been rising, so have trade volume. Monthly volume on CEX only exceeded $600b at the peak of 2017 bull, and since the start of 2021 bull. And it just happened again in December 2023.
 :::
 
-::: {.card title="Fear & Greed Index" width=436px}
+::: {.card title="Fear & Greed Index Latest" width=436px}
 
 <img width="400" height="359.375" src="https://alternative.me/crypto/fear-and-greed-index.png" alt="Latest Crypto Fear & Greed Index" />
 
+:::
+
+## market cap & volume
+
+::: {.card title="Crypto Market Cap"}
+![](images/market-cap_20130429_20231228_(Coinmarketcap).svg){height=420px width="100%"}
+:::
+::: {.card title="Crypto Market Volume"}
+![](images/volume-24h_20130429_20231228_(Coinmarketcap).svg){height=420px width="100%"}
+:::
+::: {.card title="Fear & Greed Index History"}
+![](images/fear-and-greed-index_20130429_20231228_(Coinmarketcap).svg){height=420px width="100%"}
 :::
 
 ## search & price
@@ -179,11 +191,11 @@ Lending TVL is another leading indicator. Users are willing to take more debt in
 ## tldr
 
 ::: {.card title="State in December 2023"}
-Since October 2023, Uniswap has seen the rise of both Google search volume and its token price. Monthly volume has surpassed $40b, which we rarely saw in bear market.
+Since October 2023, Uniswap has seen increases in Google search volume, its token price, as well as market cap.
 
-Monthly active trader of Uniswap has been rising in both the 2021 bull and 2022-2023 bear market. Layer 2 networks now account for 60% of monthly active trader.
+Monthly volume has surpassed $40b, which we rarely saw in bear market. Monthly active trader of Uniswap has been rising in both the 2021 bull and 2022-2023 bear market. Layer 2 networks now account for 60% of monthly active trader.
 
-In the past, monthly active LP of Uniswap rose and peaked in 2020, right ahead of the 2021 bull. During the 2021 bull, monthly active LP fell and bottomed a few months after ETH price peaked. During 2022-2023 bear, mothly active LP rose and peaked again. This observation tells us that LPs are more active in bear than in bull market. It can be explain by looking at percentage impermanent loss of pool USDC-WETH, the largest pool of Uniswap V3. In a bull market, when price of ETH is more volatile, impermanent loss when providing liquidity in the pool is also higher.
+In last 3 months, TVL of Uniswap has been around $3b--$4b, the level in early 2021 bull market. In the past, monthly active LP of Uniswap rose and peaked in 2020, right ahead of the 2021 bull. During the 2021 bull, monthly active LP fell and bottomed a few months after ETH price peaked. During 2022-2023 bear, mothly active LP rose and peaked again. This observation tells us that LPs are more active in bear than in bull market. It can be explain by looking at percentage impermanent loss of pool USDC-WETH, the largest pool of Uniswap V3. In a bull market, when price of ETH is more volatile, impermanent loss when providing liquidity in the pool is also higher.
 :::
 
 ## one
