@@ -226,3 +226,7 @@ In the past, monthly active LP of Uniswap rose and peaked in 2020, right ahead o
 #### Price Volatility & Impermanent Loss
 
 <iframe src="https://dune.com/embeds/3311237/5545499"></iframe>
+
+ETH price volatility of a given day is the absolute percentage difference between price of the day and the previous day.
+
+Impermanent loss when providing liquidity in a pool happened when prices of tokens in the pool change, read more [here](https://support.uniswap.org/hc/en-us/articles/20904453751693-What-is-Impermanent-Loss-).
