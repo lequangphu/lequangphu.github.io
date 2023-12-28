@@ -216,13 +216,13 @@ In last 3 months, TVL of Uniswap has been around $3b--$4b, the level in early 20
 
 <iframe frameborder="0" src="https://www.theblock.co/data/alternative-crypto-metrics/web-traffic/google-search-volume-uniswap/embed" title="Google Search Volume - Uniswap"></iframe>
 
-### price & market cap {.tabset title="Price & Market Cap of UNI token"}
+### price & market cap {.tabset}
 
-#### Price
+#### UNI Price
 
 <iframe src="https://defillama.com/chart/protocol/uniswap?tvl=false&tokenPrice=true&theme=dark" title="DefiLlama" frameborder="0"></iframe>
 
-#### Market Cap
+#### UNI Market Cap
 
 <iframe src="https://defillama.com/chart/protocol/uniswap?tvl=false&mcap=true&theme=dark" title="DefiLlama" frameborder="0"></iframe>
 
@@ -234,9 +234,13 @@ In last 3 months, TVL of Uniswap has been around $3b--$4b, the level in early 20
 
 <iframe src="https://dune.com/embeds/3306361/5537409"></iframe>
 
-#### Number of Pool created per Month
+#### Number of Pool Created per Month
 
 <iframe src="https://dune.com/embeds/3311343/5545645"></iframe>
+
+#### Meme Coin Interest
+
+<script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/3579_RC01/embed_loader.js"></script> <script type="text/javascript"> trends.embed.renderExploreWidget("TIMESERIES", {"comparisonItem":[{"keyword":"/g/11sfdkgmfn","geo":"","time":"today 12-m"}],"category":0,"property":""}, {"exploreQuery":"q=%2Fg%2F11sfdkgmfn&hl=en-US&date=today 12-m","guestPath":"https://trends.google.com:443/trends/embed/"}); </script>
 
 ### active trader {.tabset}
 
