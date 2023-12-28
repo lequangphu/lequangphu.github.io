@@ -230,21 +230,13 @@ In last 3 months, TVL of Uniswap has been around $3b--$4b, the level in early 20
 
 ### volume {.tabset}
 
-#### Monthly Volume & Share of New Trader
+#### Monthly Volume
 
 <iframe src="https://dune.com/embeds/3306361/5537409"></iframe>
 
-#### Number of Pool Created per Month
-
-<iframe src="https://dune.com/embeds/3311343/5545645"></iframe>
-
-#### Meme Coin Interest
-
-<script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/3579_RC01/embed_loader.js"></script> <script type="text/javascript"> trends.embed.renderExploreWidget("TIMESERIES", {"comparisonItem":[{"keyword":"/g/11sfdkgmfn","geo":"","time":"today 12-m"}],"category":0,"property":""}, {"exploreQuery":"q=%2Fg%2F11sfdkgmfn&hl=en-US&date=today 12-m","guestPath":"https://trends.google.com:443/trends/embed/"}); </script>
-
 ### active trader {.tabset}
 
-#### Monthly Active Trader & Share of Layer 2 Networks
+#### Monthly Active Trader
 
 <iframe src="https://dune.com/embeds/3298476/5527220"></iframe>
 
@@ -262,10 +254,20 @@ In last 3 months, TVL of Uniswap has been around $3b--$4b, the level in early 20
 
 <iframe src="https://dune.com/embeds/3298427/5527221"></iframe>
 
-#### Price Volatility & Impermanent Loss
+## four
+
+### impermanent loss {.tabset}
+
+#### Impermanent Loss & Price Volatility
 
 <iframe src="https://dune.com/embeds/3311237/5545499"></iframe>
 
 ETH price volatility of a given day is the absolute percentage difference between price of the day and the previous day.
 
 Impermanent loss when providing liquidity in a pool happened when prices of tokens in the pool change, read more [here](https://support.uniswap.org/hc/en-us/articles/20904453751693-What-is-Impermanent-Loss-).
+
+### new pool {.tabset}
+
+#### Number of Pool Created per Month
+
+<iframe src="https://dune.com/embeds/3311343/5545645"></iframe>
