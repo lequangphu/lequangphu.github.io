@@ -205,7 +205,11 @@ Since October 2023, Uniswap has seen increases in Google search volume, its toke
 
 Monthly volume has surpassed $40b, which we rarely saw in bear market. Monthly active trader of Uniswap has been rising in both the 2021 bull and 2022-2023 bear market. Layer 2 networks now account for 60% of monthly active trader.
 
-In last 3 months, TVL of Uniswap has been around $3b--$4b, the level in early 2021 bull market. In the past, monthly active LP of Uniswap rose and peaked in 2020, right ahead of the 2021 bull. During the 2021 bull, monthly active LP fell and bottomed a few months after ETH price peaked. During 2022-2023 bear, mothly active LP rose and peaked again. This observation tells us that LPs are more active in bear than in bull market. It can be explain by looking at percentage impermanent loss of pool USDC-WETH, the largest pool of Uniswap V3. In a bull market, when price of ETH is more volatile, impermanent loss when providing liquidity in the pool is also higher.
+In last 3 months, TVL of Uniswap has been around $3b--$4b, the level in early 2021 bull market. In the past, monthly active LP of Uniswap rose and peaked in 2020, right ahead of the 2021 bull. During the 2021 bull, monthly active LP fell and bottomed a few months after ETH price peaked. During 2022-2023 bear, mothly active LP rose and peaked again. This observation tells us that LPs are more active in bear than in bull market.
+
+LPs are less active in a bull market can be explain by looking at percentage impermanent loss of pool USDC-WETH, the largest pool of Uniswap V3. In a bull market, when price of ETH is more volatile, impermanent loss when providing liquidity in the pool is also higher.
+
+New pools seem to be created more prior to than during a bull market (e.g. 2021 bull). In the last few months, the creation of new pools increased significantly. Is it a signal of a new bull market in the near future?
 :::
 
 ## one
@@ -262,9 +266,7 @@ In last 3 months, TVL of Uniswap has been around $3b--$4b, the level in early 20
 
 <iframe src="https://dune.com/embeds/3311237/5545499"></iframe>
 
-ETH price volatility of a given day is the absolute percentage difference between price of the day and the previous day.
-
-Impermanent loss when providing liquidity in a pool happened when prices of tokens in the pool change, read more [here](https://support.uniswap.org/hc/en-us/articles/20904453751693-What-is-Impermanent-Loss-).
+Impermanent loss when providing liquidity in a pool happened when prices of tokens in the pool change, read more [here](https://support.uniswap.org/hc/en-us/articles/20904453751693-What-is-Impermanent-Loss-). ETH price volatility of a given day is the absolute percentage difference between price of the day and the previous day.
 
 ### new pool {.tabset}
 
