@@ -266,7 +266,7 @@ New pools seem to be created more prior to than during a bull market (e.g. 2021 
 
 <iframe src="https://dune.com/embeds/3311237/5545499"></iframe>
 
-Impermanent loss when providing liquidity in a pool happened when prices of tokens in the pool change, read more [here](https://support.uniswap.org/hc/en-us/articles/20904453751693-What-is-Impermanent-Loss-). ETH price volatility of a given day is the absolute percentage difference between price of the day and the previous day.
+Read more about impermanent loss [here](https://support.uniswap.org/hc/en-us/articles/20904453751693-What-is-Impermanent-Loss-). ETH price volatility of a given day is the absolute percentage difference between price of the day and the previous day.
 
 ### new pool {.tabset}
 
