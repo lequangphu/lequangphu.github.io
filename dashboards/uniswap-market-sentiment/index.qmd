@@ -31,13 +31,17 @@ Insights (by December 2023, inclusive) written at the top of each page.
 ## tldr & fgi {height=466px}
 
 ::: {.card title="State in December 2023"}
-In December 2023, Fear & Greed index shows us that the market has entered the Greed mode. It's not extreme yet so the market might have more room before reversing.
+In early December 2023, Fear & Greed Index (FGI) reached 80, the level of extreme greed. The market has cooled down a bit since then.
+
+The crypto market cap just surpassed $1.5T, the last time it happened was at the start of 2021 bull market. So did 24h volume, which reached $100b in December 2023.
 
 Last 2 bull markets started with monthly search of Bitcoin surpassed 25, in November 2017, and December 2020. It just happened again in December 2023.
 
 YTD, prices of Bitcoin, Ethereum, Solana have increased 160%, 90%, and 1000%.
 
-Since October, inflows to exchanges of BTC, ETH, and USDT have been rising, so have trade volume. Monthly volume on CEX only exceeded $600b at the peak of 2017 bull, and since the start of 2021 bull. And it just happened again in December 2023.
+Since October, inflows to exchanges of BTC, ETH, and USDT have been rising, so have trade volume. Monthly volume on CEX just exceeded $600b, the last time it happened was at the start of 2021 bull market.
+
+Onchain market (DEX) seems to cool down faster than market on Centralized Exchanges (CEX), as monthly volume of CEX has been rising through December while monthly volume of DEX has decreased after being atop in November 2023.
 :::
 
 ::: {.card title="Fear & Greed Index Latest" width=436px}
