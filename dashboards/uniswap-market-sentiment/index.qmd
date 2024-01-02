@@ -253,13 +253,31 @@ New pools seem to be created more prior to than during a bull market (e.g. 2021 
 
 <iframe src="https://defillama.com/chart/protocol/uniswap?&theme=dark" title="DefiLlama" frameborder="0"></iframe>
 
+### lp & pool {.tabset}
+
+#### Monthly Active LP
+
+<iframe src="https://dune.com/embeds/3322821/5565460"></iframe>
+
+#### Number of Pool Created per Month
+
+<iframe src="https://dune.com/embeds/3311343/5545645"></iframe>
+
+# Behaviors of Uniswap's Users
+
+## tldr
+
+::: {.card title="State in December 2023"}
+How did Uniswap's users behave during bull and bear markets?
+:::
+
+## one
+
 ### lp {.tabset}
 
 #### Monthly Active LP & ETH Price
 
 <iframe src="https://dune.com/embeds/3298427/5527221"></iframe>
-
-## four
 
 ### impermanent loss {.tabset}
 
@@ -269,13 +287,7 @@ New pools seem to be created more prior to than during a bull market (e.g. 2021 
 
 Read more about impermanent loss [here](https://support.uniswap.org/hc/en-us/articles/20904453751693-What-is-Impermanent-Loss-). ETH price volatility of a given day is the absolute percentage difference between price of the day and the previous day.
 
-### new pool {.tabset}
+## two
 
-#### Number of Pool Created per Month
-
-<iframe src="https://dune.com/embeds/3311343/5545645"></iframe>
-
-## five
-
-<iframe src="https://dune.com/embeds/3322617/5565039"></iframe>
+<iframe src="https://dune.com/embeds/3322617/5565040"></iframe>
 <iframe src="https://dune.com/embeds/3322726/5565290"></iframe>
