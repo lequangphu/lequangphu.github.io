@@ -489,7 +489,7 @@ grid-auto-rows: minmax(0, 1fr);">
 </div>
 </div>
 <div id="uniswap" class="dashboard-page tab-pane grid-skip html-fill-item html-fill-container" data-orientation="rows" aria-labelledby="tab-uniswap">
-<div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-rows: minmax(3em, 1fr) minmax(3em, 1fr) minmax(3em, 1fr) minmax(3em, 1fr); grid-auto-columns: minmax(0, 1fr);">
+<div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-rows: 450px minmax(3em, 1fr) minmax(3em, 1fr) minmax(3em, 1fr); grid-auto-columns: minmax(0, 1fr);">
 <div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-columns: minmax(3em, 1fr);
 grid-auto-rows: minmax(0, 1fr);">
 <div class="card html-fill-item html-fill-container bslib-card" data-title="State in December 2023" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
@@ -646,8 +646,9 @@ grid-auto-rows: minmax(0, 1fr);">
 <div class="card-header"><div class="card-title">State in December 2023</div></div>
 <div class="card-body html-fill-item html-fill-container">
 <p>LPs are less active in a bull market because when tokens’ price are more volatile, losses from providing liquidity are more severe (larger impermanent loss), which can be observed by looking at historical percentage impermanent loss of USDC-WETH, the largest pool of Uniswap V3.</p>
-<p>Since September 2023:</p>
-<p>Number of time LPs remove liquidity (burns) has exceeded number of time LPs add liquidity (mints), mostly happened on Arbitrum and Polygon. This is unprecedented.</p>
+<p>Since September 2023, number of time LPs remove liquidity (burns) has exceeded number of time LPs add liquidity (mints), mostly happened on Arbitrum and Polygon. This is unprecedented.</p>
+<p>Do LPs mint &amp; burn differently in bull vs.&nbsp;bear market? Is there any difference between new &amp; return LP?</p>
+<p>Number of mint and burn per month of new LPs don’t change much in bear markets (2020, 2022–2023) to bull market (2021). Meanwhile, number of mint and burn per month of return LPs increased significantly in 2022 and 2023.</p>
 </div>
 <bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
     <template>Expand</template>
@@ -705,15 +706,15 @@ grid-auto-rows: minmax(0, 1fr);">
 <div class="card tabset html-fill-item html-fill-container bslib-card" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
 <div class="card-header dashboard-card-no-title bslib-navs-card-title">
 
-<ul class="nav nav-tabs card-header-tabs" role="tablist" data-tabsetid="card-tabset-31"><li class="nav-item" role="presentation"><a href="#card-tabset-31-1" role="tab" data-toggle="tab" data-bs-toggle="tab" data-value="Monthly Mints &amp; Burns" aria-selected="true" class="nav-link active">Monthly Mints &amp; Burns</a></li><li class="nav-item" role="presentation"><a href="#card-tabset-31-2" role="tab" data-toggle="tab" data-bs-toggle="tab" data-value="Monthly Net Action (Mints - Burns)" aria-selected="false" class="nav-link">Monthly Net Action (Mints - Burns)</a></li></ul></div>
+<ul class="nav nav-tabs card-header-tabs" role="tablist" data-tabsetid="card-tabset-31"><li class="nav-item" role="presentation"><a href="#card-tabset-31-1" role="tab" data-toggle="tab" data-bs-toggle="tab" data-value="Mints &amp; Burns" aria-selected="true" class="nav-link active">Mints &amp; Burns</a></li><li class="nav-item" role="presentation"><a href="#card-tabset-31-2" role="tab" data-toggle="tab" data-bs-toggle="tab" data-value="Net Action (Mints - Burns)" aria-selected="false" class="nav-link">Net Action (Mints - Burns)</a></li></ul></div>
 
 
-<div class="tab-content html-fill-item html-fill-container" data-tabset-id="card-tabset-31"><div class="tab-pane active show html-fill-item html-fill-container" role="tabpanel" id="card-tabset-31-1"><div class="card-body html-fill-item html-fill-container" data-title="Monthly Mints &amp; Burns">
+<div class="tab-content html-fill-item html-fill-container" data-tabset-id="card-tabset-31"><div class="tab-pane active show html-fill-item html-fill-container" role="tabpanel" id="card-tabset-31-1"><div class="card-body html-fill-item html-fill-container" data-title="Mints &amp; Burns">
 <div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-rows: minmax(3em, 1fr); grid-auto-columns: minmax(0, 1fr);">
 <iframe src="https://dune.com/embeds/3322617/5565040">
 </iframe>
 </div>
-</div></div><div class="tab-pane html-fill-item html-fill-container" role="tabpanel" id="card-tabset-31-2"><div class="card-body html-fill-item html-fill-container" data-title="Monthly Net Action (Mints - Burns)">
+</div></div><div class="tab-pane html-fill-item html-fill-container" role="tabpanel" id="card-tabset-31-2"><div class="card-body html-fill-item html-fill-container" data-title="Net Action (Mints - Burns)">
 <div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-rows: minmax(3em, 1fr); grid-auto-columns: minmax(0, 1fr);">
 <iframe src="https://dune.com/embeds/3322726/5565290">
 </iframe>
@@ -723,18 +724,16 @@ grid-auto-rows: minmax(0, 1fr);">
     <span class="bslib-full-screen-enter badge rounded-pill">
         <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
     </span>
-</bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div><div class="card tabset html-fill-item html-fill-container bslib-card" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
-<div class="card-header dashboard-card-no-title bslib-navs-card-title">
-
-<ul class="nav nav-tabs card-header-tabs" role="tablist" data-tabsetid="card-tabset-32"><li class="nav-item" role="presentation"><a href="#card-tabset-32-1" role="tab" data-toggle="tab" data-bs-toggle="tab" data-value="Mints of New &amp; Return LPs" aria-selected="true" class="nav-link active">Mints of New &amp; Return LPs</a></li><li class="nav-item" role="presentation"><a href="#card-tabset-32-2" role="tab" data-toggle="tab" data-bs-toggle="tab" data-value="Burns of New &amp; Return LPs" aria-selected="false" class="nav-link">Burns of New &amp; Return LPs</a></li></ul></div>
+</bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div><div class="card tabset html-fill-item html-fill-container bslib-card" data-title="New vs. Return LP" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
+<div class="card-header bslib-navs-card-title"><div class="card-title">New vs. Return LP</div><ul class="nav nav-tabs card-header-tabs" role="tablist" data-tabsetid="card-tabset-32"><li class="nav-item" role="presentation"><a href="#card-tabset-32-1" role="tab" data-toggle="tab" data-bs-toggle="tab" data-value="Mints" aria-selected="true" class="nav-link active">Mints</a></li><li class="nav-item" role="presentation"><a href="#card-tabset-32-2" role="tab" data-toggle="tab" data-bs-toggle="tab" data-value="Burns" aria-selected="false" class="nav-link">Burns</a></li></ul></div>
 
 
-<div class="tab-content html-fill-item html-fill-container" data-tabset-id="card-tabset-32"><div class="tab-pane active show html-fill-item html-fill-container" role="tabpanel" id="card-tabset-32-1"><div class="card-body html-fill-item html-fill-container" data-title="Mints of New &amp; Return LPs">
+<div class="tab-content html-fill-item html-fill-container" data-tabset-id="card-tabset-32"><div class="tab-pane active show html-fill-item html-fill-container" role="tabpanel" id="card-tabset-32-1"><div class="card-body html-fill-item html-fill-container" data-title="Mints">
 <div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-rows: minmax(3em, 1fr); grid-auto-columns: minmax(0, 1fr);">
 <iframe src="https://dune.com/embeds/3323003/5565843">
 </iframe>
 </div>
-</div></div><div class="tab-pane html-fill-item html-fill-container" role="tabpanel" id="card-tabset-32-2"><div class="card-body html-fill-item html-fill-container" data-title="Burns of New &amp; Return LPs">
+</div></div><div class="tab-pane html-fill-item html-fill-container" role="tabpanel" id="card-tabset-32-2"><div class="card-body html-fill-item html-fill-container" data-title="Burns">
 <div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-rows: minmax(3em, 1fr); grid-auto-columns: minmax(0, 1fr);">
 <iframe src="https://dune.com/embeds/3323003/5565885">
 </iframe>
