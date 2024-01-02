@@ -139,7 +139,7 @@ gtag('config', 'G-S7Y9SX5DXE', { 'anonymize_ip': true});
         <div class="navbar-author">Lê Quang Phú</div>
       </div>
     </div>
-<div id="dashboard-collapse" class="navbar-collapse collapse"><ul class="navbar-nav navbar-nav-scroll me-auto" role="tablist"><li class="nav-item" role="presentation"><a id="tab-sentiment" class="nav-link active" data-bs-toggle="tab" role="tab" data-bs-target="#sentiment" data-scrolling="true" href="#sentiment" aria-controls="sentiment" aria-selected="true"><span class="nav-link-text">Sentiment?</span></a></li><li class="nav-item" role="presentation"><a id="tab-market" class="nav-link" data-bs-toggle="tab" role="tab" data-bs-target="#market" data-scrolling="true" href="#market" aria-controls="market" aria-selected="false"><span class="nav-link-text">Market</span></a></li><li class="nav-item" role="presentation"><a id="tab-ethereum-2" class="nav-link" data-bs-toggle="tab" role="tab" data-bs-target="#ethereum-2" data-scrolling="true" href="#ethereum-2" aria-controls="ethereum-2" aria-selected="false"><span class="nav-link-text">Ethereum</span></a></li><li class="nav-item" role="presentation"><a id="tab-uniswap" class="nav-link" data-bs-toggle="tab" role="tab" data-bs-target="#uniswap" data-scrolling="true" href="#uniswap" aria-controls="uniswap" aria-selected="false"><span class="nav-link-text">Uniswap</span></a></li></ul></div></div>
+<div id="dashboard-collapse" class="navbar-collapse collapse"><ul class="navbar-nav navbar-nav-scroll me-auto" role="tablist"><li class="nav-item" role="presentation"><a id="tab-sentiment" class="nav-link active" data-bs-toggle="tab" role="tab" data-bs-target="#sentiment" data-scrolling="true" href="#sentiment" aria-controls="sentiment" aria-selected="true"><span class="nav-link-text">Sentiment?</span></a></li><li class="nav-item" role="presentation"><a id="tab-market" class="nav-link" data-bs-toggle="tab" role="tab" data-bs-target="#market" data-scrolling="true" href="#market" aria-controls="market" aria-selected="false"><span class="nav-link-text">Market</span></a></li><li class="nav-item" role="presentation"><a id="tab-ethereum-2" class="nav-link" data-bs-toggle="tab" role="tab" data-bs-target="#ethereum-2" data-scrolling="true" href="#ethereum-2" aria-controls="ethereum-2" aria-selected="false"><span class="nav-link-text">Ethereum</span></a></li><li class="nav-item" role="presentation"><a id="tab-uniswap" class="nav-link" data-bs-toggle="tab" role="tab" data-bs-target="#uniswap" data-scrolling="true" href="#uniswap" aria-controls="uniswap" aria-selected="false"><span class="nav-link-text">Uniswap</span></a></li><li class="nav-item" role="presentation"><a id="tab-behaviors-of-uniswaps-users" class="nav-link" data-bs-toggle="tab" role="tab" data-bs-target="#behaviors-of-uniswaps-users" data-scrolling="true" href="#behaviors-of-uniswaps-users" aria-controls="behaviors-of-uniswaps-users" aria-selected="false"><span class="nav-link-text">Behaviors of Uniswap’s Users</span></a></li></ul></div></div>
 </nav>
 </header></header>
 <!-- content -->
@@ -489,7 +489,7 @@ grid-auto-rows: minmax(0, 1fr);">
 </div>
 </div>
 <div id="uniswap" class="dashboard-page tab-pane grid-skip html-fill-item html-fill-container" data-orientation="rows" aria-labelledby="tab-uniswap">
-<div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-rows: minmax(3em, 1fr) minmax(3em, 1fr) minmax(3em, 1fr) minmax(3em, 1fr) minmax(3em, 1fr) minmax(3em, max-content); grid-auto-columns: minmax(0, 1fr);">
+<div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-rows: minmax(3em, 1fr) minmax(3em, 1fr) minmax(3em, 1fr) minmax(3em, 1fr); grid-auto-columns: minmax(0, 1fr);">
 <div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-columns: minmax(3em, 1fr);
 grid-auto-rows: minmax(0, 1fr);">
 <div class="card html-fill-item html-fill-container bslib-card" data-title="State in December 2023" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
@@ -603,14 +603,38 @@ grid-auto-rows: minmax(0, 1fr);">
 </bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div><div class="card tabset html-fill-item html-fill-container bslib-card" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
 <div class="card-header dashboard-card-no-title bslib-navs-card-title">
 
-<ul class="nav nav-tabs card-header-tabs" role="tablist" data-tabsetid="card-tabset-25"><li class="nav-item" role="presentation"><a href="#card-tabset-25-1" role="tab" data-toggle="tab" data-bs-toggle="tab" data-value="Monthly Active LP &amp; ETH Price" aria-selected="true" class="nav-link active">Monthly Active LP &amp; ETH Price</a></li></ul></div>
+<ul class="nav nav-tabs card-header-tabs" role="tablist" data-tabsetid="card-tabset-25"><li class="nav-item" role="presentation"><a href="#card-tabset-25-1" role="tab" data-toggle="tab" data-bs-toggle="tab" data-value="Monthly Active LP" aria-selected="true" class="nav-link active">Monthly Active LP</a></li><li class="nav-item" role="presentation"><a href="#card-tabset-25-2" role="tab" data-toggle="tab" data-bs-toggle="tab" data-value="Number of Pool Created per Month" aria-selected="false" class="nav-link">Number of Pool Created per Month</a></li></ul></div>
 
-<div class="tab-content html-fill-item html-fill-container" data-tabset-id="card-tabset-25"><div class="tab-pane active show html-fill-item html-fill-container" role="tabpanel" id="card-tabset-25-1"><div class="card-body html-fill-item html-fill-container" data-title="Monthly Active LP &amp; ETH Price">
+
+<div class="tab-content html-fill-item html-fill-container" data-tabset-id="card-tabset-25"><div class="tab-pane active show html-fill-item html-fill-container" role="tabpanel" id="card-tabset-25-1"><div class="card-body html-fill-item html-fill-container" data-title="Monthly Active LP">
 <div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-rows: minmax(3em, 1fr); grid-auto-columns: minmax(0, 1fr);">
-<iframe src="https://dune.com/embeds/3298427/5527221">
+<iframe src="https://dune.com/embeds/3322821/5565460">
+</iframe>
+</div>
+</div></div><div class="tab-pane html-fill-item html-fill-container" role="tabpanel" id="card-tabset-25-2"><div class="card-body html-fill-item html-fill-container" data-title="Number of Pool Created per Month">
+<div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-rows: minmax(3em, 1fr); grid-auto-columns: minmax(0, 1fr);">
+<iframe src="https://dune.com/embeds/3311343/5545645">
 </iframe>
 </div>
 </div></div></div><bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
+    <template>Expand</template>
+    <span class="bslib-full-screen-enter badge rounded-pill">
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
+    </span>
+</bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
+</div>
+</div>
+</div>
+<div id="behaviors-of-uniswaps-users" class="dashboard-page tab-pane grid-skip html-fill-item html-fill-container" data-orientation="rows" aria-labelledby="tab-behaviors-of-uniswaps-users">
+<div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-rows: minmax(3em, 1fr) minmax(3em, 1fr) minmax(3em, max-content); grid-auto-columns: minmax(0, 1fr);">
+<div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-columns: minmax(3em, 1fr);
+grid-auto-rows: minmax(0, 1fr);">
+<div class="card html-fill-item html-fill-container bslib-card" data-title="State in December 2023" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
+<div class="card-header"><div class="card-title">State in December 2023</div></div>
+<div class="card-body html-fill-item html-fill-container">
+<p>How did Uniswap’s users behave during bull and bear markets?</p>
+</div>
+<bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
     <template>Expand</template>
     <span class="bslib-full-screen-enter badge rounded-pill">
         <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
@@ -622,9 +646,24 @@ grid-auto-rows: minmax(0, 1fr);">
 <div class="card tabset html-fill-item html-fill-container bslib-card" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
 <div class="card-header dashboard-card-no-title bslib-navs-card-title">
 
-<ul class="nav nav-tabs card-header-tabs" role="tablist" data-tabsetid="card-tabset-26"><li class="nav-item" role="presentation"><a href="#card-tabset-26-1" role="tab" data-toggle="tab" data-bs-toggle="tab" data-value="Impermanent Loss &amp; Price Volatility" aria-selected="true" class="nav-link active">Impermanent Loss &amp; Price Volatility</a></li></ul></div>
+<ul class="nav nav-tabs card-header-tabs" role="tablist" data-tabsetid="card-tabset-27"><li class="nav-item" role="presentation"><a href="#card-tabset-27-1" role="tab" data-toggle="tab" data-bs-toggle="tab" data-value="Monthly Active LP &amp; ETH Price" aria-selected="true" class="nav-link active">Monthly Active LP &amp; ETH Price</a></li></ul></div>
 
-<div class="tab-content html-fill-item html-fill-container" data-tabset-id="card-tabset-26"><div class="tab-pane active show html-fill-item html-fill-container" role="tabpanel" id="card-tabset-26-1"><div class="card-body html-fill-item html-fill-container" data-title="Impermanent Loss &amp; Price Volatility">
+<div class="tab-content html-fill-item html-fill-container" data-tabset-id="card-tabset-27"><div class="tab-pane active show html-fill-item html-fill-container" role="tabpanel" id="card-tabset-27-1"><div class="card-body html-fill-item html-fill-container" data-title="Monthly Active LP &amp; ETH Price">
+<div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-rows: minmax(3em, 1fr); grid-auto-columns: minmax(0, 1fr);">
+<iframe src="https://dune.com/embeds/3298427/5527221">
+</iframe>
+</div>
+</div></div></div><bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
+    <template>Expand</template>
+    <span class="bslib-full-screen-enter badge rounded-pill">
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
+    </span>
+</bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div><div class="card tabset html-fill-item html-fill-container bslib-card" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
+<div class="card-header dashboard-card-no-title bslib-navs-card-title">
+
+<ul class="nav nav-tabs card-header-tabs" role="tablist" data-tabsetid="card-tabset-28"><li class="nav-item" role="presentation"><a href="#card-tabset-28-1" role="tab" data-toggle="tab" data-bs-toggle="tab" data-value="Impermanent Loss &amp; Price Volatility" aria-selected="true" class="nav-link active">Impermanent Loss &amp; Price Volatility</a></li></ul></div>
+
+<div class="tab-content html-fill-item html-fill-container" data-tabset-id="card-tabset-28"><div class="tab-pane active show html-fill-item html-fill-container" role="tabpanel" id="card-tabset-28-1"><div class="card-body html-fill-item html-fill-container" data-title="Impermanent Loss &amp; Price Volatility">
 <div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-rows: minmax(3em, max-content); grid-auto-columns: minmax(0, 1fr);">
 <div class="card html-fill-item html-fill-container bslib-card" data-fill="false" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
 <div class="card-body html-fill-item html-fill-container">
@@ -644,26 +683,11 @@ grid-auto-rows: minmax(0, 1fr);">
     <span class="bslib-full-screen-enter badge rounded-pill">
         <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
     </span>
-</bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div><div class="card tabset html-fill-item html-fill-container bslib-card" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
-<div class="card-header dashboard-card-no-title bslib-navs-card-title">
-
-<ul class="nav nav-tabs card-header-tabs" role="tablist" data-tabsetid="card-tabset-28"><li class="nav-item" role="presentation"><a href="#card-tabset-28-1" role="tab" data-toggle="tab" data-bs-toggle="tab" data-value="Number of Pool Created per Month" aria-selected="true" class="nav-link active">Number of Pool Created per Month</a></li></ul></div>
-
-<div class="tab-content html-fill-item html-fill-container" data-tabset-id="card-tabset-28"><div class="tab-pane active show html-fill-item html-fill-container" role="tabpanel" id="card-tabset-28-1"><div class="card-body html-fill-item html-fill-container" data-title="Number of Pool Created per Month">
-<div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-rows: minmax(3em, 1fr); grid-auto-columns: minmax(0, 1fr);">
-<iframe src="https://dune.com/embeds/3311343/5545645">
-</iframe>
-</div>
-</div></div></div><bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
-    <template>Expand</template>
-    <span class="bslib-full-screen-enter badge rounded-pill">
-        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
-    </span>
 </bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
 </div>
 <div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-columns: minmax(3em, 1fr) minmax(3em, 1fr);
 grid-auto-rows: minmax(0, 1fr);">
-<iframe src="https://dune.com/embeds/3322617/5565039"></iframe><iframe src="https://dune.com/embeds/3322726/5565290"></iframe><div id="3ade8a4a-fb1d-4a6c-8409-ac45482d5fc9" class="hidden html-fill-item html-fill-container">
+<iframe src="https://dune.com/embeds/3322617/5565040"></iframe><iframe src="https://dune.com/embeds/3322726/5565290"></iframe><div id="3ade8a4a-fb1d-4a6c-8409-ac45482d5fc9" class="hidden html-fill-item html-fill-container">
 
 </div>
 </div>
