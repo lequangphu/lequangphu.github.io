@@ -207,12 +207,10 @@ Monthly volume has surpassed $40b, which we rarely saw in bear market. Monthly a
 
 In last 3 months, TVL of Uniswap has been around $3b--$4b, the level in early 2021 bull market. In the past, monthly active LP of Uniswap rose and peaked in 2020, right ahead of the 2021 bull. During the 2021 bull, monthly active LP fell and bottomed a few months after ETH price peaked. During 2022-2023 bear, mothly active LP rose and peaked again. This observation tells us that LPs are more active in bear than in bull market.
 
-LPs are less active in a bull market can be explain by looking at percentage impermanent loss of pool USDC-WETH, the largest pool of Uniswap V3. In a bull market, when price of ETH is more volatile, impermanent loss when providing liquidity in the pool is also higher.
-
 New pools seem to be created more prior to than during a bull market (e.g. 2021 bull). In the last few months, the creation of new pools increased significantly. Is it a signal of a new bull market in the near future?
 :::
 
-## one
+## search & price
 
 ### search {.tabset}
 
@@ -230,22 +228,7 @@ New pools seem to be created more prior to than during a bull market (e.g. 2021 
 
 <iframe src="https://defillama.com/chart/protocol/uniswap?tvl=false&mcap=true&theme=dark" title="DefiLlama" frameborder="0"></iframe>
 
-## two
-
-### volume {.tabset}
-
-#### Monthly Volume
-
-<!-- <iframe src="https://dune.com/embeds/3306361/5537409"></iframe> -->
-<iframe src="https://defillama.com/chart/protocol/uniswap?volume=true&groupBy=monthly&tvl=false&theme=dark" title="DefiLlama" frameborder="0"></iframe>
-
-### active trader {.tabset}
-
-#### Monthly Active Trader
-
-<iframe src="https://dune.com/embeds/3298476/5527220"></iframe>
-
-## three
+## tvl
 
 ### tvl {.tabset}
 
@@ -259,19 +242,35 @@ New pools seem to be created more prior to than during a bull market (e.g. 2021 
 
 <iframe src="https://dune.com/embeds/3322821/5565460"></iframe>
 
+`% New` is percentage of new LP in total LP. `% Layer 2` is percentage of LPs who are more active on other chains than on Ethereum.
+
 #### Number of Pool Created per Month
 
 <iframe src="https://dune.com/embeds/3311343/5545645"></iframe>
 
-# Behaviors of Uniswap's Users
+## volume
+
+### volume {.tabset}
+
+#### Monthly Volume
+
+<iframe src="https://defillama.com/chart/protocol/uniswap?volume=true&groupBy=monthly&tvl=false&theme=dark" title="DefiLlama" frameborder="0"></iframe>
+
+### active trader {.tabset}
+
+#### Monthly Active Trader
+
+<iframe src="https://dune.com/embeds/3298476/5527220"></iframe>
+
+# Behaviors of Uniswap's LPs
 
 ## tldr
 
 ::: {.card title="State in December 2023"}
-How did Uniswap's users behave during bull and bear markets?
+LPs are less active in a bull market can be explain by looking at percentage impermanent loss of pool USDC-WETH, the largest pool of Uniswap V3. In a bull market, when price of ETH is more volatile, impermanent loss when providing liquidity in the pool is also higher.
 :::
 
-## one
+## lp
 
 ### lp {.tabset}
 
@@ -285,9 +284,9 @@ How did Uniswap's users behave during bull and bear markets?
 
 <iframe src="https://dune.com/embeds/3311237/5545499"></iframe>
 
-Read more about impermanent loss [here](https://support.uniswap.org/hc/en-us/articles/20904453751693-What-is-Impermanent-Loss-). ETH price volatility of a given day is the absolute percentage difference between price of the day and the previous day.
+Read more about `% Impermanent Loss` [here](https://support.uniswap.org/hc/en-us/articles/20904453751693-What-is-Impermanent-Loss-). `ETH Price Volatility` is the absolute percentage difference between price of a given day and the previous day.
 
-## two
+## mint & burn
 
 <iframe src="https://dune.com/embeds/3322617/5565040"></iframe>
 <iframe src="https://dune.com/embeds/3322726/5565290"></iframe>
