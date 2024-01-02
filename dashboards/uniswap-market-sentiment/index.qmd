@@ -198,7 +198,7 @@ Lending TVL is another leading indicator. Users are willing to take more debt in
 
 # Uniswap
 
-## tldr
+## tldr {height=450px}
 
 ::: {.card title="State in December 2023"}
 Since October 2023:
@@ -279,9 +279,11 @@ Why do Uniswap's LPs tend to be more active prior to a bull market than during a
 ::: {.card title="State in December 2023"}
 LPs are less active in a bull market because when tokens' price are more volatile, losses from providing liquidity are more severe (larger impermanent loss), which can be observed by looking at historical percentage impermanent loss of USDC-WETH, the largest pool of Uniswap V3.
 
-Since September 2023:
+Since September 2023, number of time LPs remove liquidity (burns) has exceeded number of time LPs add liquidity (mints), mostly happened on Arbitrum and Polygon. This is unprecedented.
 
-Number of time LPs remove liquidity (burns) has exceeded number of time LPs add liquidity (mints), mostly happened on Arbitrum and Polygon. This is unprecedented.
+Do LPs mint & burn differently in bull vs. bear market? Is there any difference between new & return LP?
+
+Number of mint and burn per month of new LPs don't change much in bear markets (2020, 2022--2023) to bull market (2021). Meanwhile, number of mint and burn per month of return LPs increased significantly in 2022 and 2023.
 :::
 
 ## lp
@@ -304,20 +306,20 @@ Read more about `% Impermanent Loss` [here](https://support.uniswap.org/hc/en-us
 
 ### total {.tabset}
 
-#### Monthly Mints & Burns
+#### Mints & Burns
 
 <iframe src="https://dune.com/embeds/3322617/5565040"></iframe>
 
-#### Monthly Net Action (Mints - Burns)
+#### Net Action (Mints - Burns)
 
 <iframe src="https://dune.com/embeds/3322726/5565290"></iframe>
 
-### new & return {.tabset}
+### new & return {.tabset title="New vs. Return LP"}
 
-#### Mints of New & Return LPs
+#### Mints
 
 <iframe src="https://dune.com/embeds/3323003/5565843"></iframe>
 
-#### Burns of New & Return LPs
+#### Burns
 
 <iframe src="https://dune.com/embeds/3323003/5565885"></iframe>
