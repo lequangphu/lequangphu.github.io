@@ -31,9 +31,9 @@ Insights (by December 2023, inclusive) written at the top of each page.
 ## tldr & fgi {height=466px}
 
 ::: {.card title="State in December 2023"}
-In early December 2023, Fear & Greed Index (FGI) reached 80, the level of extreme greed. The market has cooled down a bit since then.
+Historically, bull market happened when the FGI exceeds 80 and sustains for a few months. In early December 2023, Fear & Greed Index (FGI) reached 80, the level of extreme greed. Since then, it has decreased a bit and is stayin around 70.
 
-The crypto market cap just surpassed $1.5T, the last time it happened was at the start of 2021 bull market. So did 24h volume, which reached $100b in December 2023.
+The crypto market cap ended 2023 at $1.66 trillion, the last time it happened was at the start of 2021 bull market. So did 24h volume, which reached $100b in December 2023.
 
 Last 2 bull markets started with monthly search of Bitcoin surpassed 25, in November 2017, and December 2020. It just happened again in December 2023.
 
@@ -42,6 +42,8 @@ YTD, prices of Bitcoin, Ethereum, Solana have increased 160%, 90%, and 1000%.
 Since October, inflows to exchanges of BTC, ETH, and USDT have been rising, so have trade volume. Monthly volume on CEX just exceeded $600b, the last time it happened was at the start of 2021 bull market.
 
 Onchain market (DEX) seems to cool down faster than market on Centralized Exchanges (CEX), as monthly volume of CEX has been rising through December while monthly volume of DEX has decreased after being atop in November 2023.
+
+We have looked at market sentiment of the crypto market as a whole, in the next page, let's take a look at market sentiment on Ethereum network.
 :::
 
 ::: {.card title="Fear & Greed Index Latest" width=436px}
@@ -130,11 +132,17 @@ Onchain market (DEX) seems to cool down faster than market on Centralized Exchan
 ## tldr {height=200px}
 
 ::: {.card title="State in December 2023"}
-Ethereum network demand metrics, including number of transaction, number of active address, which increased in previous bulls, fell in previous bears, are showing the early sign of a bull market.
+Ethereum network demand metrics, including number of transaction, number of active address, which increased in previous bulls, fell in previous bears, are showing the early sign of a bull market:
+
+- After ranging below 1.1 million transaction per day in the last 12 months, daily transaction has exceeded the level.
+- Daily transaction fee seems to has formed a higher baseline.
+- Number of active address, and balance of each address have been increasing in the last few months.
 
 Stablecoin supply, when rising, indicates that new capital is entering crypto market, is a leading indicator. And it's hard to tell where the market is heading based on this metric.
 
 Lending TVL is another leading indicator. Users are willing to take more debt in bull markets and derisk in bears. And lending TVL has been rising since October 2023.
+
+In the next page, let's take a look at market sentiment of Uniswap, the largest DEX by TVL and Volume of all EVM networks.
 :::
 
 ## transaction
@@ -283,7 +291,7 @@ Since September 2023, number of time LPs remove liquidity (burns) has exceeded n
 
 Do LPs mint & burn differently in bull vs. bear market? Is there any difference between new & return LP?
 
-Number of mint and burn per month of new LPs don't change much in bear markets (2020, 2022--2023) to bull market (2021). Meanwhile, number of mint and burn per month of return LPs increased significantly in 2022 and 2023.
+Average number of mint and burn per month of new LPs don't change much in bear markets (2020, 2022--2023) to bull market (2021). Meanwhile, average number of mint and burn per month of return LPs increased significantly in 2022--2023 bear market.
 :::
 
 ## lp
@@ -323,3 +331,9 @@ Read more about `% Impermanent Loss` [here](https://support.uniswap.org/hc/en-us
 #### Burns
 
 <iframe src="https://dune.com/embeds/3323003/5565885"></iframe>
+
+# Conclusion
+
+::: {.card title="When is the bull market?"}
+Based on price action, fear and greed index, Ethereum onchain activities, my guess is the next bull market is coming in the next 6--12 months.
+:::
