@@ -21,9 +21,15 @@ Indicators used to measure crypto market sentiment include the Fear and Greed In
 :::
 
 ::: {.card title="User Guide"}
-This dashboard is divided into pages. The navigation bar is at the top of the dashboard.
+This dashboard has 6 pages, can be seen and clicked to go to on the navigation bar, located at the top of the dashboard.
+
+The first page is this one, the last page is for conclusion. In between are pages of examinations of market sentiment, from the whole crypto market to Uniswap.
 
 Insights (by December 2023, inclusive) written at the top of each page.
+
+The dashboard is divided into rows. Most row have 2 columns, which are cards used to show charts. Each card has at least one chart, organized in tabs at the top of each card.
+
+Enjoy reading!
 :::
 
 # Market ₿
