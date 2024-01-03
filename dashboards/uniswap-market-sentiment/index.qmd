@@ -26,7 +26,7 @@ This dashboard is divided into pages. The navigation bar is at the top of the da
 Insights (by December 2023, inclusive) written at the top of each page.
 :::
 
-# Market
+# Market ₿
 
 ## tldr & fgi {height=466px}
 
@@ -127,7 +127,7 @@ We have looked at market sentiment of the crypto market as a whole, in the next 
 
 <iframe frameborder="0" src="https://www.theblock.co/data/decentralized-finance/dex-non-custodial/share-of-dex-volume-monthly/embed" title="Share of DEX Volume"></iframe>
 
-# Ethereum
+# Ethereum Ξ
 
 ## tldr {height=200px}
 
@@ -204,7 +204,7 @@ In the next page, let's take a look at market sentiment of Uniswap, the largest 
 
 <iframe frameborder="0" src="https://www.theblock.co/data/decentralized-finance/cryptocurrency-lending/compound-outstanding-debt-weekly/embed" title="Compound Outstanding Debt"></iframe>
 
-# Uniswap
+# Uniswap 🦄
 
 ## tldr {height=450px}
 
@@ -280,9 +280,9 @@ Why do Uniswap's LPs tend to be more active prior to a bull market than during a
 
 <iframe src="https://dune.com/embeds/3298476/5527220"></iframe>
 
-# Behaviors of Uniswap's LPs
+# Behaviors of Uniswap's LPs 🧐
 
-## tldr
+## tldr {height=230px}
 
 ::: {.card title="State in December 2023"}
 LPs are less active in a bull market because when tokens' price are more volatile, losses from providing liquidity are more severe (larger impermanent loss), which can be observed by looking at historical percentage impermanent loss of USDC-WETH, the largest pool of Uniswap V3.
@@ -335,5 +335,30 @@ Read more about `% Impermanent Loss` [here](https://support.uniswap.org/hc/en-us
 # Conclusion
 
 ::: {.card title="When is the bull market?"}
-Based on price action, fear and greed index, Ethereum onchain activities, my guess is the next bull market is coming in the next 6--12 months.
+In this dashboard, we have tried to answer "When is the next bull market?" by examining a few numbers.
+
+What signals do the numbers give us?
+
+They are mixed, from hard to tell to early sign of a bull market.
+
+What numbers tell us the bull market is near?
+
+- The rises of Crypto Market Cap & Volume,
+- From Greed to Extreme Greed of Fear & Greed Index,
+- Volatile price action of Bitcoin, Ethereum, Solana, the top 3 coins by market cap,
+- The rise of money inflow to Crypto Exchanges,
+- The rise of Ethereum's onchain activities: number of transaction per day, transaction fee, active address, address balance, lending TVL, outstanding debt,
+- The rise of Uniswap's TVL, volume,
+- More Uniswap's active LP and trader,
+- Return LPs are more active, mint and burn more in number of action.
+
+What numbers don't tell us the bull market is near?
+
+- Ethereum stablecoin's supply, and stablecoin's onchain volume.
+
+Are the numbers examined here exhausted? No. Are they good signals? Yes.
+
+My guess is we have 6--12 months till the next bull market.
+
+Thanks for reading!
 :::
