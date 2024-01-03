@@ -282,7 +282,7 @@ Why do Uniswap's LPs tend to be more active prior to a bull market than during a
 
 # Behaviors of Uniswap's LPs 🧐
 
-## tldr {height=230px}
+## tldr {height=250px}
 
 ::: {.card title="State in December 2023"}
 LPs are less active in a bull market because when tokens' price are more volatile, losses from providing liquidity are more severe (larger impermanent loss), which can be observed by looking at historical percentage impermanent loss of USDC-WETH, the largest pool of Uniswap V3.
