@@ -129,7 +129,7 @@ We have looked at market sentiment of the crypto market as a whole, in the next 
 
 # Ethereum Ξ
 
-## tldr {height=400px}
+## tldr {height=330px}
 
 ::: {.card title="State in December 2023"}
 Ethereum network demand metrics, including number of transaction, number of active address, which increased in previous bulls, fell in previous bears, are showing the early sign of a bull market:
