@@ -1,7 +1,8 @@
 ---
 title: "More Chart than Text"
 listing:
-  contents: .
+  contents:
+    - "uniswap-market-sentiment/index.qmd"
   sort: "date desc"
   type: default
   categories: true
