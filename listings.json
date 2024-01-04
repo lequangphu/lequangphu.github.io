@@ -1,9 +1,7 @@
 [
   {
     "listing": "/dashboards/index.html",
-    "items": [
-      "/dashboards/uniswap-market-sentiment/test.html"
-    ]
+    "items": []
   },
   {
     "listing": "/posts/index.html",
