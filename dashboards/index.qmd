@@ -1,5 +1,5 @@
 ---
-title: "More Text than Chart"
+title: "More Chart than Text"
 listing:
   contents: .
   sort: "date desc"
