@@ -1,5 +1,11 @@
 [
   {
+    "listing": "/dashboards/index.html",
+    "items": [
+      "/dashboards/uniswap-market-sentiment/test.html"
+    ]
+  },
+  {
     "listing": "/posts/index.html",
     "items": [
       "/posts/uniswap-l2s-dynamic/index.html",
