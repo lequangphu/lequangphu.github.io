@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - main # or master, depending on your default branch name
+permissions:
+  contents: write
 
 jobs:
   deploy:
@@ -30,5 +32,3 @@ jobs:
         with:
           folder: dist # The folder containing your built files
           branch: gh-pages # The branch to deploy to
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
