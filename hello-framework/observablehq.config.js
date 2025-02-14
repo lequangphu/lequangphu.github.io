@@ -12,6 +12,7 @@ export default {
       open: false,
       pages: [
         { name: "Uniswap Memecoin Mania", path: "/uniswap-memecoin-mania" },
+        { name: "Uniswap User Origin", path: "/uniswap-user-origin" },
       ],
     },
   ],
