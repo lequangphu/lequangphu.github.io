@@ -1,8 +1,0 @@
----
-title: "More Chart than Text"
-listing:
-  contents: .
-page-layout: full
----
-
-

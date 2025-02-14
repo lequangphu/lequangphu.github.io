@@ -1,9 +1,0 @@
-freeze: auto
-
-author: "Lê Quang Phú"
-
-toc: true
-toc-location: left
-execute: 
-  echo: false
-number-sections: true
