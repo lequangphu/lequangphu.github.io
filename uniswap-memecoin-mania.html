@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="generator" content="Observable Framework v1.13.2">
+<title>Uniswap Memecoin Mania | Hello Framework</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
+<link rel="preload" as="style" href="./_observablehq/theme-air,near-midnight.dcdbf18e.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
+<link rel="stylesheet" type="text/css" href="./_observablehq/theme-air,near-midnight.dcdbf18e.css">
+<link rel="modulepreload" href="./_observablehq/client.2930a115.js">
+<link rel="modulepreload" href="./_observablehq/runtime.e080113b.js">
+<link rel="modulepreload" href="./_observablehq/stdlib.046b693f.js">
+<link rel="icon" href="./_file/observable.1af93621.png" type="image/png" sizes="32x32">
+<script type="module">
+
+import "./_observablehq/client.2930a115.js";
+
+</script>
+</head>
+<body>
+<input id="observablehq-sidebar-toggle" type="checkbox" title="Toggle sidebar">
+<label id="observablehq-sidebar-backdrop" for="observablehq-sidebar-toggle"></label>
+<nav id="observablehq-sidebar">
+  <ol>
+    <label id="observablehq-sidebar-close" for="observablehq-sidebar-toggle"></label>
+    <li class="observablehq-link"><a href="./">Hello Framework</a></li>
+  </ol>
+  <details open class="observablehq-section-active">
+    <summary>Winners of Uniswap Grant</summary>
+    <ol>
+    <li class="observablehq-link observablehq-link-active"><a href="./uniswap-memecoin-mania">Uniswap Memecoin Mania</a></li>
+    <li class="observablehq-link"><a href="./uniswap-user-origin">Uniswap User Origin</a></li>
+    </ol>
+  </details>
+</nav>
+<script>{const e=document.querySelector("#observablehq-sidebar"),o=document.querySelector("#observablehq-sidebar-toggle"),r=sessionStorage.getItem("observablehq-sidebar");r?o.checked=r==="true":o.indeterminate=!0;for(const t of document.querySelectorAll("#observablehq-sidebar summary")){const s=t.parentElement;switch(sessionStorage.getItem(`observablehq-sidebar:${t.textContent}`)){case"true":s.open=!0;break;case"false":s.classList.contains("observablehq-section-active")||(s.open=!1);break}}addEventListener("beforeunload",()=>sessionStorage.setItem("observablehq-sidebar-scrolly",`${e.scrollTop}`));const a=sessionStorage.getItem("observablehq-sidebar-scrolly");a!=null&&(e.style.cssText="overflow: hidden;",e.scrollTop=+a,e.style.cssText="");}</script>
+<div id="observablehq-center">
+<aside id="observablehq-toc" data-selector="h1:not(:first-of-type)[id], h2:first-child[id], :not(h1) + h2[id]">
+<nav>
+<div>Contents</div>
+<ol>
+<li class="observablehq-secondary-link"><a href="#key-highlights">Key Highlights</a></li>
+<li class="observablehq-secondary-link"><a href="#the-meme-effects-on-uniswap-v3">The Meme Effects on Uniswap V3</a></li>
+<li class="observablehq-secondary-link"><a href="#trader-of-meme">Trader of Meme</a></li>
+<li class="observablehq-secondary-link"><a href="#new-trading-pool">New Trading Pool</a></li>
+<li class="observablehq-secondary-link"><a href="#other-pool-i-e-not-meme-pool">Other Pool (i.e. not meme pool)</a></li>
+<li class="observablehq-secondary-link"><a href="#the-meme-effects-on-ethereum">The Meme Effects on Ethereum</a></li>
+<li class="observablehq-secondary-link"><a href="#conclusion">Conclusion</a></li>
+<li class="observablehq-secondary-link"><a href="#updates">Updates</a></li>
+</ol>
+</nav>
+</aside>
+<main id="observablehq-main" class="observablehq">
+<h1 id="uniswap-memecoin-mania" tabindex="-1"><a class="observablehq-header-anchor" href="#uniswap-memecoin-mania">Uniswap Memecoin Mania</a></h1>
+<p>As of Jun 4, 2023, there are 856 meme coins listed on <a href="https://coinmarketcap.com/view/memes/" target="_blank" rel="noopener noreferrer">Coinmarketcap</a>.</p>
+<blockquote>
+<p>What is a meme coin?</p>
+<ul>
+<li>
+<p>A meme coin is a cryptocurrency that doesn't take itself as seriously as leading digital currencies like Bitcoin and Ethereum. Dogecoin (DOGE) - widely regarded as the first meme cryptocurrency.</p>
+</li>
+<li>
+<p>A meme coin doesn't need to have a purpose that is as closely tied to their underlying value, like Bitcoin and Ethereum. A meme coin often seems to have the sole purpose of "going to the moon," a phrase popularized by Dogecoin's skyrocketing price in early 2021.</p>
+</li>
+</ul>
+</blockquote>
+<p>Since Apr 17, Uniswap V3 daily volume peaked on May 6 with $1.2B. And by Jun 4, the aggregate volume is $31B.</p>
+<p><img src="./_file/assets/uniswap-memecoin-mania/uniswap-memecoin-mania-1.911f21d7.webp" alt=""></p>
+<p><em>Top 5 coins with the most TVL are WETH, USDC, USDT, WBTC, and DAI. Pools which consist of 2 in these coins are also top pools with the most trading volume. I call these pools major pools.</em></p>
+<p>Of $31B, 12 major pools account for 76%, despite only account for 0.3% in total # pool.</p>
+<p><img src="./_file/assets/uniswap-memecoin-mania/uniswap-memecoin-mania-2.d9a90a98.webp" alt=""></p>
+<p>There are more than 4k pools in the minor pools group. The pools of meme coins are in this group.</p>
+<p><img src="./_file/assets/uniswap-memecoin-mania/uniswap-memecoin-mania-3.597388e6.webp" alt=""></p>
+<p><em>Pools in the minor group are mostly pairs of a minor coin with a major coin. Let's breakdown volume of minor pools from the angle of swap from or to a minor coin to have a better sense of minor coins share in total minor pools volume.</em></p>
+<p>Volume from and to PEPE is almost 1/4 of total minor pools volume.</p>
+<p><img src="./_file/assets/uniswap-memecoin-mania/uniswap-memecoin-mania-4.f0c25f72.webp" alt=""></p>
+<p>From another angle, as PEPE led the rise of meme, almost 60% of minor pools volume is from and to minor coins which are PEPE or created after PEPE. These coins are likely meme coins.</p>
+<p><img src="./_file/assets/uniswap-memecoin-mania/uniswap-memecoin-mania-5.f1f6d1d4.webp" alt=""></p>
+<p>When zoom into the group of PEPE or created after PEPE coins, which has 1420 coins, top 10 coins account for more than 80% of total volume.</p>
+<p><img src="./_file/assets/uniswap-memecoin-mania/uniswap-memecoin-mania-6.b9d6c48c.webp" alt=""></p>
+<p>With a quick check on etherscan.io, all of the coins in top 10 are meme coins. Without checking all of them, my assumption is all of these 1420 coins are all meme coins.</p>
+<p><img src="./_file/assets/uniswap-memecoin-mania/uniswap-memecoin-mania-7.e3d31bac.webp" alt=""></p>
+<p>At its peak, meme pools acounted for 21% in total trading volume per day, more than half of total # trader per day, and total # trade per day on Uniswap V3.</p>
+<p><img src="./_file/assets/uniswap-memecoin-mania/uniswap-memecoin-mania-8.dd0a7d39.webp" alt=""></p>
+<p><img src="./_file/assets/uniswap-memecoin-mania/uniswap-memecoin-mania-9.1ff6963d.webp" alt=""></p>
+<p><img src="./_file/assets/uniswap-memecoin-mania/uniswap-memecoin-mania-10.c250a360.webp" alt=""></p>
+<p>Now meme coins are identified, let's dive into the effect of the rise of meme on Uniswap V3 trading activity on Ethereum.</p>
+<h1 id="key-highlights" tabindex="-1"><a class="observablehq-header-anchor" href="#key-highlights">Key Highlights</a></h1>
+<p>Meme have attracted new users to Uniswap.</p>
+<ul>
+<li>
+<p>At its peak, meme coins accounted for 3/4 of new trader per day. New trader share in meme pools was also higher than that in other pools.</p>
+</li>
+<li>
+<p>By cohort, meme traders also return to Uniswap V3 more than average traders. When meme traders return, they return for not only the meme coins but also for the major coins.</p>
+</li>
+<li>
+<p>And almost half of new mem traders are also new to Ethereum.</p>
+</li>
+</ul>
+<p>Most active meme traders are young, most profitable traders are older. Whale traders have played important role in the rise of meme.</p>
+<ul>
+<li>
+<p>Meme traders can be very young (0 weeks old), or very old (108 weeks old). Generally, the older a trader, the less active the trader is. The most active meme traders are 6 weeks old or less. However, the most profitable traders are 17 weeks old or more. Experience, not activeness, dictates a meme trader's profitability. The more volume they trade, the less return they yield.</p>
+</li>
+<li>
+<p>Whale &amp; blue whale traders only account for 0.2% of total # traders, but account for 52% of total volume. And they achieve such high volume not by having big volume in one trade but by having high frequency in trading.</p>
+</li>
+<li>
+<p>Meme traders generated the most profit from trading PEPE. While they yield the most per investment unit (i.e. profit margin) from trading PEEPO.</p>
+</li>
+</ul>
+<p>Pools of meme coins have been a big part of new pool created on Uniswap.</p>
+<ul>
+<li>
+<p>Number of pool created on Uniswap V3 increased during the rise of meme. And meme pools account for at least 70% of new pool created per day.</p>
+</li>
+<li>
+<p>Meme coins are mostly paired with WETH. Meme coins also paired with other meme coins. For every 2 pools where base coins are meme, another pool created where quoted token is meme.</p>
+</li>
+</ul>
+<p>Overall, other pools which don't consist of meme coins appears to gain more than loss in the rise of meme.</p>
+<ul>
+<li>
+<p>The rise of meme had no clear adverse effects on other pools trading activities. Quite the opposite, trading activities in other pools increased and decreased with meme pools.</p>
+</li>
+<li>
+<p>On the other hand, # LPs in other pools and meme pools were highly correlated in a negative way. When one rise, the other fall. That said, liquidity in other pools saw mix correlation with liquidity in meme pools. In aggregate, other pools saw net liquidity decrease while meme pools saw net liquidity increase from Apr 17 to Jun 4.</p>
+</li>
+</ul>
+<p>The rise of meme have onboarded more than 180k Defi users to Ethereum in total. And most of them were onboarded to Uniswap.</p>
+<h1 id="the-meme-effects-on-uniswap-v3" tabindex="-1"><a class="observablehq-header-anchor" href="#the-meme-effects-on-uniswap-v3">The Meme Effects on Uniswap V3</a></h1>
+<h2 id="new-trader" tabindex="-1"><a class="observablehq-header-anchor" href="#new-trader">New Trader</a></h2>
+<p>Total new trader was highly correlated to new meme trader. As the share of new meme trader increased, total new trader increased. The situation was the same on the way down. During the period, meme pools have accounted for at least 54% of total new trader per day. At its peak, on May 5, meme pools accounted for 3/4 of total new trader per day on Uniswap V3.</p>
+<p><img src="./_file/assets/uniswap-memecoin-mania/uniswap-memecoin-mania-11.cb5304de.webp" alt=""></p>
+<p>In a few days that trading activity of meme coins surged, new trader share in meme pools rose higher than that in other pools, the largest difference was almost 3x (31% vs. 11% on May 5).</p>
+<p><img src="./_file/assets/uniswap-memecoin-mania/uniswap-memecoin-mania-12.9697bfbd.webp" alt=""></p>
+<p>Thus, it is safe to say that the rise of meme did attract new trader to Uniswap V3.</p>
+<p>However, it raised another question 👇.</p>
+<h3 id="how-sticky-are-these-meme-traders" tabindex="-1"><a class="observablehq-header-anchor" href="#how-sticky-are-these-meme-traders">How sticky are these meme traders?</a></h3>
+<p><em>I use retention rate to measure traders stickiness. Retention rate is % of a trader cohort return (to swap on Uniswap).</em></p>
+<p>Retention rate of meme traders in the first 3 weeks is at least 1.5x retention rate of average traders. From week 4th, the former appears to drop faster than the latter. However, in the first 6 weeks, meme traders' retention rate are still higher than that of average traders on Uniswap V3.</p>
+<p><img src="./_file/assets/uniswap-memecoin-mania/uniswap-memecoin-mania-13.45f48cc4.webp" alt=""></p>
+<h3 id="when-they-returned-what-did-they-return-for" tabindex="-1"><a class="observablehq-header-anchor" href="#when-they-returned-what-did-they-return-for">When they returned, what did they return for?</a></h3>
+<p>When meme traders returned, almost 90% of their acitivities were in the meme pools. And those activity only accounted for 60% in their total return volume.</p>
+<p><img src="./_file/assets/uniswap-memecoin-mania/uniswap-memecoin-mania-14.007185c2.webp" alt=""></p>
+<p><img src="./_file/assets/uniswap-memecoin-mania/uniswap-memecoin-mania-15.1ac09db8.webp" alt=""></p>
+<p>Of 40% in total return volume which was not in meme pools, 3/4 was in pools consist of 2 in 3 most popular coins: USDC, USDT, and WETH.</p>
+<p><img src="./_file/assets/uniswap-memecoin-mania/uniswap-memecoin-mania-16.bcad814f.webp" alt=""></p>
+<h3 id="how-old-are-these-new-meme-trader-on-ethereum" tabindex="-1"><a class="observablehq-header-anchor" href="#how-old-are-these-new-meme-trader-on-ethereum">How old are these new meme trader on Ethereum?</a></h3>
+<p>These new meme trader on Uniswap V3 have Ethereum ages range from 0 to 372 weeks old. And almost half of them are also new to Ethereum (i.e trade meme coins on Uniswap V3 within the first week on Ethereum).</p>
+<p><img src="./_file/assets/uniswap-memecoin-mania/uniswap-memecoin-mania-17.26b4c861.webp" alt=""></p>
+<p>Next, let's examine activity of traders in the meme pools.</p>
+<h2 id="trader-of-meme" tabindex="-1"><a class="observablehq-header-anchor" href="#trader-of-meme">Trader of Meme</a></h2>
+<p>Looking at meme trading activity on Uniswap V3 by volume bucket, we can see that most of volume is in the buckets &gt; $100K per trader. Meanwhile, most of trader is in the buckets &lt; $1k per trader.</p>
+<p><img src="./_file/assets/uniswap-memecoin-mania/uniswap-memecoin-mania-18.7cf9258e.webp" alt=""></p>
+<p>To get better insights, let's break them down further.</p>
+<p><em>I use <a href="https://en.wikipedia.org/wiki/Interquartile_range#Outliers" target="_blank" rel="noopener noreferrer">IQR</a> to group and find outliers. The result is meme traders grouped by trader types, separated by volume range, with summary table below.</em></p>
+<p><img src="./_file/assets/uniswap-memecoin-mania/uniswap-memecoin-mania-19.0207b8de.webp" alt=""></p>
+<p>There are 265k retail traders, account for 85% of total # trader, with $220M in total volume, this is only $60M higher than volume of the biggest meme trader, more on that later.</p>
+<p>Meanwhile, there are 708 whale &amp; blue whale traders, with $2.8B in total volume, this is more than the other 3 trader types combined.</p>
+<p><img src="./_file/assets/uniswap-memecoin-mania/uniswap-memecoin-mania-20.af4ed31a.webp" alt=""></p>
+<p><img src="./_file/assets/uniswap-memecoin-mania/uniswap-memecoin-mania-21.5f277ad1.webp" alt=""></p>
+<h3 id="retail-degen-and-chad-trader" tabindex="-1"><a class="observablehq-header-anchor" href="#retail-degen-and-chad-trader">Retail, Degen, &amp; Chad Trader</a></h3>
+<h4 id="volume-and-age" tabindex="-1"><a class="observablehq-header-anchor" href="#volume-and-age">Volume &amp; Age</a></h4>
+<p>Trader's volume &amp; age of 3 trader groups: retail, degen, &amp; chad are quite similar to one another. The most active traders cluster is 6 weeks old or less.</p>
+<p>Additionally, the 20-70 weeks old traders are noticably less active than the others in term of both volume and # traders, especially in the high volume cluster of each group. These traders were onboarded from around Jan 2022 to Jan 2023, when crypto market was on the way down.</p>
+<p><img src="./_file/assets/uniswap-memecoin-mania/uniswap-memecoin-mania-22.ef428e10.webp" alt=""></p>
+<p><img src="./_file/assets/uniswap-memecoin-mania/uniswap-memecoin-mania-23.9d4cdd8e.webp" alt=""></p>
+<p><img src="./_file/assets/uniswap-memecoin-mania/uniswap-memecoin-mania-24.a15b84b0.webp" alt=""></p>
+<h4 id="behavior" tabindex="-1"><a class="observablehq-header-anchor" href="#behavior">Behavior</a></h4>
+<p>Between degen and retail, what set degen apart from retail are both trade size (i.e. volume per trade) and trade frequency (i.e. # trade per week).</p>
+<p><img src="./_file/assets/uniswap-memecoin-mania/uniswap-memecoin-mania-25.4287dbc4.webp" alt=""></p>
+<p>However, between chad and degen, trade size has a more important role than trade frequency in what set chad apart from degen.</p>
+<p><img src="./_file/assets/uniswap-memecoin-mania/uniswap-memecoin-mania-26.42c88e9f.webp" alt=""></p>
+<h3 id="whale-and-blue-whale-trader" tabindex="-1"><a class="observablehq-header-anchor" href="#whale-and-blue-whale-trader">Whale &amp; Blue Whale Trader</a></h3>
+<h4 id="volume-and-age-1" tabindex="-1"><a class="observablehq-header-anchor" href="#volume-and-age-1">Volume &amp; Age</a></h4>
+<p>While whale traders have volume range of $876K - $5m, age range of 0 - 108 weeks old, the most active cluster has $1m - $2m in volume, and is 2 - 6 weeks old.</p>
+<p><img src="./_file/assets/uniswap-memecoin-mania/uniswap-memecoin-mania-27.a9ded857.webp" alt=""></p>
+<p>Blue whale <strong>0xd985c35f566c9de55df16ade36852b0c40f4bf59</strong> is 5 weeks old, has $156M in total volume, and is the biggest meme trader on Uniswap V3.</p>
+<p>The most active cluster is 67 weeks old with 11 blue whales. Following by the 40 weeks old cluster with 8 blue whales. Unlike the trader types above, blue whales are more evenly distributed along the age spectrum.</p>
+<p>Generally, the older a blue whale is the less volume traded.</p>
+<p><img src="./_file/assets/uniswap-memecoin-mania/uniswap-memecoin-mania-28.9ca26e7a.webp" alt=""></p>
+<h4 id="behavior-1" tabindex="-1"><a class="observablehq-header-anchor" href="#behavior-1">Behavior</a></h4>
+<p>On average, blue whales' trade size are bigger than that of whales. However, what set blue whales apart from whales is trade frequency. Top blue whales stand out by having trade frequency much higher than average.</p>
+<p><img src="./_file/assets/uniswap-memecoin-mania/uniswap-memecoin-mania-29.2f7cf33e.webp" alt=""></p>
+<p>A quick check on etherscan shows that these traders are actually bots which have a lot of MEV transactions.</p>
+<p><img src="./_file/assets/uniswap-memecoin-mania/uniswap-memecoin-mania-30.63854871.webp" alt=""></p>
+<p>Next, let's examine blue whale traders profit to understand more about the top traders performance.</p>
+<h4 id="blue-whale-profit" tabindex="-1"><a class="observablehq-header-anchor" href="#blue-whale-profit">Blue Whale Profit</a></h4>
+<p><em>I only consider blue whales who had bought and sold meme coins and realized profit.</em></p>
+<p>Not all blue whales are profitble trading meme. Their realized profit vary from - $1.5M to $2m, and margin vary from -16% to 36%. The most profitable trader is not in top 5 volume. And top 5 volume traders' profits are less than $1m each, with margin of 8% or less.</p>
+<p><img src="./_file/assets/uniswap-memecoin-mania/uniswap-memecoin-mania-31.c3907cf1.webp" alt=""></p>
+<p>None of top 10 profitable blue whale traders are new (6 weeks old or less). They are at least 17 weeks old. Most of them are not in top traders with most trade size or most trade frequency. A half of them have 2 digits % profit margin, the other half have 1 digit % profit margin (mostly 1% - 2%). Top profitable traders may not have the same trading strategies, however they are all experienced traders.</p>
+<p><img src="./_file/assets/uniswap-memecoin-mania/uniswap-memecoin-mania-32.efd519aa.webp" alt=""></p>
+<p>PEPE generates the most profit to traders with $3m, while blue whale traders yield the most profit per investment from trading PEEPO. Blue whale traders realized $79 profit from $100 investment in PEEPO.</p>
+<p><img src="./_file/assets/uniswap-memecoin-mania/uniswap-memecoin-mania-33.8e4b2c7a.webp" alt=""></p>
+<p>Only top 10 meme coins in term of profit generate more than $100K in total profit each, and they all rank low in profit margin. This is quite predictable as most of them are top trading volume coins which deminish the profit margin.</p>
+<p><img src="./_file/assets/uniswap-memecoin-mania/uniswap-memecoin-mania-34.997c6dbb.webp" alt=""></p>
+<h2 id="new-trading-pool" tabindex="-1"><a class="observablehq-header-anchor" href="#new-trading-pool">New Trading Pool</a></h2>
+<p>Number of pool created per day on Uniswap V3 was up from Apr 17 to May 24 then down till Jun 4. During the period, pools of meme coins accounted for at least 70% most of the time, peaked at 97% on May 7.</p>
+<p><img src="./_file/assets/uniswap-memecoin-mania/uniswap-memecoin-mania-35.4e1bb9b2.webp" alt=""></p>
+<p>Of 1847 new pools created, 1577 pools are of meme coins.</p>
+<p><img src="./_file/assets/uniswap-memecoin-mania/uniswap-memecoin-mania-36.a4487d4a.webp" alt=""></p>
+<h3 id="meme-pool-breakdown" tabindex="-1"><a class="observablehq-header-anchor" href="#meme-pool-breakdown">Meme Pool Breakdown</a></h3>
+<p>Meme coins are mostly paired with WETH. WETH has 359 pools where it is the base token (token0 - the first category), and 1k pools where it is the quoted token (token1 - the second category). In both categories, WETH leads with a large margin vs. the followings coins.</p>
+<p>Surprisingly, PEPE is no.3 base token, not no.2. BURN is no.2 despite not in top 10 trading volume of meme coins.</p>
+<p><img src="./_file/assets/uniswap-memecoin-mania/uniswap-memecoin-mania-37.d003f8ea.webp" alt=""></p>
+<p>Top 3 quoted coins are all major coins. PEPE is no.5, again trailing to BURN at no.4.</p>
+<p><img src="./_file/assets/uniswap-memecoin-mania/uniswap-memecoin-mania-38.a1ae99c1.webp" alt=""></p>
+<p>Another observation here about the ratio of # base pool / # quoted pool is that, on one hand, except for WETH's ratio, which is around 1/3, the other major coins' ratios are around 1/2. On the other hand, meme coins (at least with the top ones) have an opposite ratio, which is around 2.</p>
+<p>In other words, for every 2 pools created where base coins are meme, another pool created where quoted token is meme. And for every 2-3 pools created where quoted coins are WETH or USDC, another pool created where base token is one of them.</p>
+<h2 id="other-pool-i-e-not-meme-pool" tabindex="-1"><a class="observablehq-header-anchor" href="#other-pool-i-e-not-meme-pool">Other Pool (i.e. not meme pool)</a></h2>
+<p>Though trading activity in other pools have been down. There was no clear adverse effects of meme pools on other pools. We even saw favorite effects as we learned <a href="https://lequangphu.github.io/blog/posts/uniswap-memecoin-mania/#when-they-returned-what-did-they-return-for" target="_blank" rel="noopener noreferrer">above</a> that meme coins attracted new traders to Uniswap V3 and when they returned, they also traded in other pools.</p>
+<p>As trading activity (volume, # trader, # trade) in meme pools surged, trading activity in other pools also surged. And in those surges, other pools' peaks lagged those of meme pools 1 day (as seen on May 5 and May 23). This could be resulted from meme traders exitting their meme position to major coins.</p>
+<p><img src="./_file/assets/uniswap-memecoin-mania/uniswap-memecoin-mania-39.48baca3a.webp" alt=""></p>
+<p><img src="./_file/assets/uniswap-memecoin-mania/uniswap-memecoin-mania-40.7dc0ace8.webp" alt=""></p>
+<p><img src="./_file/assets/uniswap-memecoin-mania/uniswap-memecoin-mania-41.02c56426.webp" alt=""></p>
+<p>About liquidity, if only consider liquidity providers (LPs) actions during the period, tvl of meme pools and other pools saw correlation changed overtime. In one period, they increased together, in other period, one rose while the other fell.</p>
+<p><img src="./_file/assets/uniswap-memecoin-mania/uniswap-memecoin-mania-42.4e5c7e91.webp" alt=""></p>
+<p>The negative correlation between meme pools and other pools is easier to observe in # LPs. From Apr 17 to May 1, while the number was increasing in meme pools, it was decreasing in other pools. After that, the trends reversed.</p>
+<p><img src="./_file/assets/uniswap-memecoin-mania/uniswap-memecoin-mania-43.de75bb91.webp" alt=""></p>
+<h3 id="lps-overlap" tabindex="-1"><a class="observablehq-header-anchor" href="#lps-overlap">LPs Overlap</a></h3>
+<p>8% of LPs in other pools provide liquidity in meme pools. It's a small share, however, in aggregate, they have - $1.81B in net tvl, while the rest have $1.76B in net tvl. In other words, 8% of LPs have reduced more tvl than 92% of LPs increased tvl in the same period.</p>
+<p>→ LPs in other pools who also provide liquidity to meme pools played a major role in other pools liquidity.</p>
+<p><img src="./_file/assets/uniswap-memecoin-mania/uniswap-memecoin-mania-44.1cc54f14.webp" alt=""></p>
+<p><img src="./_file/assets/uniswap-memecoin-mania/uniswap-memecoin-mania-45.05d9fdbb.webp" alt=""></p>
+<p>Those overlap LPs account for 22% in total LPs of meme pools. Interestingly, they have also been net decrease tvl in meme pools, however the amount is much smaller with - $29M.</p>
+<p><img src="./_file/assets/uniswap-memecoin-mania/uniswap-memecoin-mania-46.cbae48f4.webp" alt=""></p>
+<p><img src="./_file/assets/uniswap-memecoin-mania/uniswap-memecoin-mania-47.ee5882ae.webp" alt=""></p>
+<h1 id="the-meme-effects-on-ethereum" tabindex="-1"><a class="observablehq-header-anchor" href="#the-meme-effects-on-ethereum">The Meme Effects on Ethereum</a></h1>
+<p>We have learned above that new meme traders on Uniswap V3 are also new to Ethereum. But exactly how many Defi users have meme coins onboarded to Ethereum?</p>
+<p>From Apr 17 to Jun 4, meme coins have onboarded at least 2k Defi users per day to Ethereum. In aggregate, meme coins have onboarded 180k Defi users to Ethereum.</p>
+<p><img src="./_file/assets/uniswap-memecoin-mania/uniswap-memecoin-mania-48.5dc34bb5.webp" alt=""></p>
+<p>And most of them were onboarded to Uniswap.</p>
+<p><img src="./_file/assets/uniswap-memecoin-mania/uniswap-memecoin-mania-49.df402a87.webp" alt=""></p>
+<h1 id="conclusion" tabindex="-1"><a class="observablehq-header-anchor" href="#conclusion">Conclusion</a></h1>
+<p>Even though meme is for fun, the rise of it recently has had a great impact on Uniswap, especially in onboarding new users. New and amature traders are majority in total # meme traders. However, the main driver of total trading volume and yield most of profit in the rise of meme are very large traders, most of them are experienced and use bot to trade meme coins.</p>
+<h1 id="updates" tabindex="-1"><a class="observablehq-header-anchor" href="#updates">Updates</a></h1>
+<p>This post won the 1st prize of the bounty #25 of Unigrants Community Analytics Program (UGPCA) 🥳.</p>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">🎉<a href="https://twitter.com/UniswapFND?ref_src=twsrc%5Etfw" target="_blank" rel="noopener noreferrer">@UniswapFND</a> - Community Analytics - Bounty #25 winners 🎉 <br>Our community analysed Memecoins and its impact on Uniswap! <br><br>Kudos to our winners: <br>🥇 <a href="https://twitter.com/0xphu?ref_src=twsrc%5Etfw" target="_blank" rel="noopener noreferrer">@0xphu</a><br>🥈 <a href="https://twitter.com/Mtitus6?ref_src=twsrc%5Etfw" target="_blank" rel="noopener noreferrer">@Mtitus6</a> <br>🥉 Zohan<br><br>Be sure to explore the analyses below as our winners offer valuable observations 👇</p>— 0xMartijnB (@0xMartijnB) <a href="https://twitter.com/0xMartijnB/status/1668990975593656323?ref_src=twsrc%5Etfw" target="_blank" rel="noopener noreferrer">June 14, 2023</a></blockquote> <script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</main>
+<footer id="observablehq-footer">
+<nav><a rel="prev" href="./"><span>Hello Framework</span></a><a rel="next" href="./uniswap-user-origin"><span>Uniswap User Origin</span></a></nav>
+<div>Built with <a href="https://observablehq.com/" target="_blank" rel="noopener noreferrer">Observable</a> on <a title="2025-02-14T16:10:27">Feb 14, 2025</a>.</div>
+</footer>
+</div>
+</body>
+</html>
