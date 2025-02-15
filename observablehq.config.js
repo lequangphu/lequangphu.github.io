@@ -9,7 +9,7 @@ export default {
   pages: [
     {
       name: "Winners of Uniswap Grant",
-      open: false,
+      open: true,
       pages: [
         { name: "Uniswap Memecoin Mania", path: "/uniswap-memecoin-mania" },
         { name: "Uniswap User Origin", path: "/uniswap-user-origin" },
