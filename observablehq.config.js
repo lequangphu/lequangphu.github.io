@@ -15,6 +15,13 @@ export default {
         { name: "Uniswap User Origin", path: "/uniswap-user-origin" },
       ],
     },
+    {
+      name: "Others",
+      open: true,
+      pages: [
+        { name: "Binance Staked SOL (BNSOL) Overview", path: "/binance-staked-sol" }
+      ],
+    }
   ],
 
   // Content to add to the head of the page, e.g. for a favicon:
