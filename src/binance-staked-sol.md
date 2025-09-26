@@ -37,8 +37,13 @@ Below are weekly Mint, Burn, and Transfer volume of BNSOL.
 ![](./assets/binance-staked-sol/Traders%20traded%20BNSOL.webp)
 ![](./assets/binance-staked-sol/BNSOL%20traded.webp)
 
-1314 is the number of wallets which minted and also traded BNSOL
+1314 is the number of wallets which minted and also traded BNSOL. Below are the wallets in graph:
 
+All 1314 wallets
 ![All wallets](./assets/binance-staked-sol/minter_trader_BNSOL.png)
+
+Top 25 wallets by BNSOL minted
 ![Top 25 wallets by BNSOL minted](./assets/binance-staked-sol/top25_minter_trader_BNSOL.png)
+
+Top 25 wallets by BNSOL traded
 ![Top 25 wallets by BNSOL traded](./assets/binance-staked-sol/top25_trader_minter_BNSOL.png)
