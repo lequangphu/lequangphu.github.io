@@ -1,10 +1,10 @@
 ---
-title: "Credit Card Fraud Detection: EDA & Rules Engine"
-description: "Analyzing 1.3M transactions to understand fraud patterns and build detection rules using Polars"
-date: "Mar 3 2026"
+title: "Credit Card Fraud Detection: Rules vs Machine Learning"
+description: "Comparing rule-based detection with Random Forest ML on 1.3M credit card transactions"
+date: "Mar 18 2026"
 ---
 
-Credit card fraud is a massive problem for financial institutions and consumers alike. In this analysis, I'll explore a dataset of 1.3 million credit card transactions to understand fraud patterns and build a simple rules-based detection system.
+Credit card fraud is a massive problem for financial institutions and consumers alike. In this analysis, I explore a dataset of 1.3 million credit card transactions to understand fraud patterns, build rule-based detection systems, and compare them against a machine learning approach.
 
 ## Data Overview
 
@@ -266,9 +266,116 @@ print(f"  False positives: {false_positives:,}")
 
 3. **Category helps but creates noise**: High-risk categories catch more fraud (58% recall) but with massive false positives (280K). Better as a feature weight than a standalone rule.
 
-4. **Simple rules have limits**: Even the best rule only catches ~50% of fraud with ~25% precision. A production system would need ML models to improve these numbers.
+4. **Simple rules have limits**: Even the best rule only catches ~50% of fraud with ~25% precision.
 
 **The data tells a clear story**: Fraudsters prefer high-value transactions during off-hours when victims are likely asleep. A smart fraud system should flag high amounts in late-night transactions from high-risk categories.
+
+---
+
+## Machine Learning Approach
+
+While rule-based systems are interpretable and easy to implement, they have significant limitations. Let's see how a machine learning model compares.
+
+### Feature Engineering
+
+I engineered the following features for the ML model:
+
+| Feature | Description | Type |
+|---------|-------------|------|
+| `amt` | Transaction amount | Numerical |
+| `log_amt` | Log-transformed amount | Numerical (handles skew) |
+| `hour` | Hour of day (0-23) | Temporal |
+| `day_of_week` | Day of week (0-6) | Temporal |
+| `is_weekend` | Binary weekend flag | Temporal |
+| `age` | Customer age | Demographic |
+| `category` | Merchant category | Categorical (encoded) |
+| `gender` | Customer gender | Categorical (encoded) |
+| `state` | State location | Categorical (encoded) |
+| `job` | Customer job | Categorical (encoded) |
+
+### Handling Class Imbalance
+
+The dataset has a severe class imbalance problem: only **0.58%** of transactions are fraudulent. To address this, I used **SMOTE** (Synthetic Minority Over-sampling Technique) to balance the training data.
+
+```python
+from imblearn.over_sampling import SMOTE
+from sklearn.ensemble import RandomForestClassifier
+
+# Apply SMOTE to balance the classes
+smote = SMOTE(random_state=42)
+X_train_resampled, y_train_resampled = smote.fit_resample(X_train, y_train)
+
+# Train Random Forest
+rf = RandomForestClassifier(
+    n_estimators=100,
+    max_depth=15,
+    min_samples_split=10,
+    min_samples_leaf=5,
+    class_weight='balanced',
+    random_state=42
+)
+rf.fit(X_train_resampled, y_train_resampled)
+```
+
+### Results Comparison
+
+| Approach | Precision | Recall | F1 Score | ROC-AUC |
+|----------|-----------|--------|----------|---------|
+| High Amount Rule ($500+) | 23.3% | 48.6% | 0.315 | N/A |
+| Outlier Rule (Top 1%) | 27.8% | 48.0% | 0.253 | N/A |
+| **Random Forest + SMOTE** | **28.8%** | **92.5%** | **0.439** | **0.993** |
+
+### Key Improvements with ML
+
+The Random Forest classifier significantly outperforms rule-based approaches:
+
+- **+70% improvement in precision** (16.9% → 28.8%)
+- **+85% improvement in recall** (50.1% → 92.5%)
+- **+74% improvement in F1 score** (0.253 → 0.439)
+- **Excellent discrimination** with 0.993 ROC-AUC
+
+### Feature Importance
+
+The most important features for fraud detection are:
+
+| Feature | Importance |
+|---------|------------|
+| Transaction amount (`amt`) | 43% |
+| Log-transformed amount (`log_amt`) | 28% |
+| Hour of day (`hour`) | 11% |
+| Merchant category (`category`) | 10% |
+| Other features (age, state, job, etc.) | 8% |
+
+### Confusion Matrix (Random Forest on Test Set)
+
+| | Predicted Legitimate | Predicted Fraud |
+|---|---|---|
+| **Actual Legitimate** | 254,399 (TN) | 3,435 (FP) |
+| **Actual Fraud** | 113 (FN) | 1,388 (TP) |
+
+**Interpretation**: The model correctly identified 1,388 out of 1,501 fraud cases (92.5% recall) while maintaining reasonable precision (28.8%).
+
+### ML vs Rule-Based: Why the Big Difference?
+
+1. **Non-linear relationships**: Random Forest can learn complex interactions between features (e.g., high amount + late night + specific category)
+
+2. **Optimal thresholding**: The model learns the optimal decision boundary across all features simultaneously, rather than using arbitrary thresholds
+
+3. **Feature weighting**: Each feature contributes proportionally to its predictive power, as shown in the feature importance chart
+
+4. **Class imbalance handling**: SMOTE ensures the model sees enough fraud examples during training to learn the patterns effectively
+
+### Updated Takeaways
+
+1. **ML dramatically outperforms simple rules**: The Random Forest catches **92.5% of fraud** compared to ~50% for rule-based approaches, with similar or better precision.
+
+2. **Feature engineering matters**: Log-transforming the amount and extracting temporal features significantly improved model performance.
+
+3. **Class imbalance is critical**: Without SMOTE or proper weighting, models struggle to learn fraud patterns due to the extreme imbalance (0.58% fraud rate).
+
+4. **Interpretability vs performance**: Rule-based systems are more interpretable, but ML models offer substantially better performance. In production, a hybrid approach often works best—use ML for scoring and rules for explainability.
+
+**Code available at**: [github.com/lequangphu/credit-card-fraud-detection](https://github.com/lequangphu/credit-card-fraud-detection)
 
 ---
 
