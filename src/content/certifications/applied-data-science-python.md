@@ -11,3 +11,5 @@ Comprehensive data science specialization covering:
 - Applied Machine Learning in Python
 - Applied Text Mining in Python
 - Applied Social Network Analysis
+
+[Verify credential](https://www.coursera.org/account/accomplishments/specialization/certificate/F9TCJW9DLEBN)

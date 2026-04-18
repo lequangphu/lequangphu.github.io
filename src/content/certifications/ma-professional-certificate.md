@@ -10,3 +10,5 @@ Professional certification in Mergers & Acquisitions covering:
 - Financial modeling and due diligence
 - Legal and regulatory frameworks
 - Post-merger integration strategies
+
+[Verify credential](https://courses.edx.org/certificates/4b26ffd533d947ca914d16fe74bd1539)

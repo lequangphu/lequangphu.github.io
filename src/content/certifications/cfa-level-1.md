@@ -11,3 +11,5 @@ Chartered Financial Analyst Level I examination covering:
 - Economics and Financial Reporting
 - Corporate Finance and Equity Investments
 - Fixed Income and Derivatives
+
+[Verify credential](https://basno.com/g6rlef98)
