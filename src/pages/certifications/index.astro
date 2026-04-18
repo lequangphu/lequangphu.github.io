@@ -1,0 +1,47 @@
+---
+import { getCollection } from "astro:content";
+import PageLayout from "@layouts/PageLayout.astro";
+import Container from "@components/Container.astro";
+import { formatDate } from "@lib/utils";
+import { CERTIFICATIONS } from "@consts";
+
+const collection = (await getCollection("certifications"))
+  .sort((a, b) => new Date(b.data.date).valueOf() - new Date(a.data.date).valueOf());
+
+const certifications = await Promise.all(
+  collection.map(async (item) => {
+    const { Content } = await item.render();
+    return { ...item, Content };
+  })
+);
+---
+
+<PageLayout title={CERTIFICATIONS.TITLE} description={CERTIFICATIONS.DESCRIPTION}>
+  <Container>
+    <div class="space-y-10">
+      <div class="animate font-semibold text-black dark:text-white">
+        Certifications
+      </div>
+      <ul class="flex flex-col space-y-4">
+        {
+          certifications.map(entry => (
+            <li class="animate">
+              <div class="text-sm opacity-75">
+                {formatDate(entry.data.date)}
+              </div>
+              <div class="font-semibold text-black dark:text-white">
+                {entry.data.title}
+              </div>
+              <div class="text-sm opacity-75">
+                {entry.data.provider}
+              </div>
+              <article>
+                <entry.Content />
+              </article>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </Container>
+</PageLayout>

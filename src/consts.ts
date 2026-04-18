@@ -33,6 +33,11 @@ export const PROJECTS: Metadata = {
   DESCRIPTION: "A collection of my projects, with links to repositories and demos.",
 };
 
+export const CERTIFICATIONS: Metadata = {
+  TITLE: "Certifications",
+  DESCRIPTION: "Professional certifications and training programs completed.",
+};
+
 export const SOCIALS: Socials = [
   {
     NAME: "x (twitter)",

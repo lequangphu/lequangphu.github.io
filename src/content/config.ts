@@ -32,4 +32,14 @@ const projects = defineCollection({
   }),
 });
 
-export const collections = { blog, work, projects };
+const certifications = defineCollection({
+  type: "content",
+  schema: z.object({
+    provider: z.string(),
+    title: z.string(),
+    date: z.coerce.date(),
+    credentialURL: z.string().optional(),
+  }),
+});
+
+export const collections = { blog, work, projects, certifications };
