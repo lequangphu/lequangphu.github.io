@@ -1,7 +1,7 @@
 ---
 provider: "Snowflake"
 title: "Snowflake Data Workshop"
-date: 2025-04-01
+date: 2026-03-01
 ---
 
 Earned 3/6 badges in Snowflake's free Hands-On Badge Series:
