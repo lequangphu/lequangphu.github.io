@@ -2,7 +2,7 @@
 provider: "New York Institute of Finance"
 title: "M&A Professional Certificate"
 date: 2018-08-01
-credentialURL: "https://credentials.nyif.com/verify/4b26ffd533d947ca914d16fe74bd1539"
+credentialURL: "https://courses.edx.org/certificates/4b26ffd533d947ca914d16fe74bd1539"
 ---
 
 Professional certification in Mergers & Acquisitions covering:

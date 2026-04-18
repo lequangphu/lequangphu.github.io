@@ -2,6 +2,7 @@
 provider: "CFA Institute"
 title: "CFA Level I"
 date: 2018-06-01
+credentialURL: "https://basno.com/g6rlef98"
 ---
 
 Chartered Financial Analyst Level I examination covering:
